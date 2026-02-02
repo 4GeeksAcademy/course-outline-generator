@@ -25,7 +25,8 @@
 3. Upload `syllabus.md`
 
 ### 4. Test It
-Type in the project chat:
+I usually refer to the excel sheet to get the Week, Day, and Title of the Learnpack.
+Then, type in the project chat:
 ```markdown
 Generate Week 1 Skill 2 Web app layouts
 ```
@@ -36,6 +37,12 @@ Generate Week 1 Skill 2 Web app layouts
 3. Claude shows simple structure outline (with emoji markers)
 4. Claude waits for approval
 5. After approval, Claude generates full detailed outline
+6. I download the outline as markdown, and convert to PDF using a PandaDoc extension in VSCode.
+7. I ask Claude:
+    ```markdown
+    Give me 1 short paragprah to use as a prompt for Rigobot to generate this course. Make sure it follows the structure strictly.
+    ```
+8. I generate the Learnpack with the prompt and seed PDF, then I review the outline to make sure it matches what Claude generated. If all is correct, I proceed to generate and review the Learnpack.
 
 ---
 
