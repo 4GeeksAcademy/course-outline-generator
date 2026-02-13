@@ -4,6 +4,59 @@ Comprehensive methodology for generating 4Geeks Academy course outlines.
 
 ---
 
+## ⚠️ CRITICAL RULE - READ FIRST ⚠️
+
+### ONE LEARNPACK = ONE `+` BLOCK (NO EXCEPTIONS)
+
+**Each line starting with `+` in syllabus.md is a SEPARATE, INDEPENDENT learnpack.**
+
+**PRE-GENERATION VERIFICATION CHECKLIST:**
+- [ ] User specified EXACT `+` block name? (e.g., "HTML" not "Skill 1")
+- [ ] Found the specific `+` line in syllabus.md?
+- [ ] Extracted ONLY the `-` bullets under THAT `+` block?
+- [ ] Stopped at the NEXT `+` line? (Did NOT continue past it)
+- [ ] Confirmed ZERO content from other `+` blocks is included?
+- [ ] Can quote the EXACT `+` line being used?
+
+**If ANY box is unchecked, STOP and ask user for clarification.**
+
+---
+
+### Bad vs Good Examples
+
+❌ **WRONG - Mixing Multiple `+` Blocks:**
+```
+User: "Generate Week 1 Skill 1"
+Claude: [sees HTML + CSS + Accesibilidad under Skill 1]
+Claude: [generates one massive course combining all three]
+```
+
+✅ **CORRECT - One `+` Block Only:**
+```
+User: "Generate Week 1 Skill 1"
+Claude: "I found 3 separate learnapacks under Skill 1:"
+        "1. + HTML"
+        "2. + CSS"  
+        "3. + Accesibilidad web"
+        "Which ONE should I generate?"
+User: "HTML"
+Claude: [generates course using ONLY the bullets under + HTML]
+```
+
+❌ **WRONG - Assuming Which Block:**
+```
+User: "Generate the frontend basics course"
+Claude: [picks random + block without asking]
+```
+
+✅ **CORRECT - Always Confirm:**
+```
+User: "Generate the frontend basics course"
+Claude: "I found several learnapacks that could fit. Please specify the EXACT + block name from syllabus.md"
+```
+
+---
+
 ## Core Philosophy
 
 **4Geeks Educational Principles:**
@@ -116,13 +169,77 @@ Anti-patterns are regular conceptual lessons (📖) that teach what NOT to do.
 - Content: Indented `-` lines following the `+` block
 - Boundary: Stops at the next `+` line (new learnpack starts)
 
-**CRITICAL RULE: One Learnpack Per Generation**
+### ⚠️ MANDATORY RULE: One Learnpack Per Generation
 
-When generating:
-1. Find the EXACT `+` line user requests
-2. Extract ONLY the `-` lines under that `+`
-3. STOP at the next `+` line (different learnpack)
-4. Never mix content from multiple `+` blocks
+**THE PROCESS:**
+
+1. **User requests a course** (e.g., "Generate Week 1 Skill 1")
+
+2. **YOU MUST:**
+   - Locate the Skill section in syllabus.md
+   - List ALL `+` blocks found under that Skill
+   - Ask: "I found these learnapacks: [list all + blocks]. Which ONE should I generate?"
+   - Wait for user to specify the EXACT `+` block name
+
+3. **Find the EXACT `+` line user requests**
+   - Example: User says "HTML" → Find `+ HTML` line
+
+4. **Extract ONLY the `-` lines under that `+`**
+   - Start: First `-` after the `+` line
+   - Stop: Immediately when you hit the NEXT `+` line
+   - Result: A list of required topics for THIS learnpack only
+
+5. **VERIFY before proceeding:**
+   ```
+   ✓ Extracted from one `+` block only?
+   ✓ Stopped at next `+` line?
+   ✓ Zero content from other `+` blocks?
+   ```
+
+**NEVER:**
+- Combine multiple `+` blocks into one generation
+- Continue past the next `+` line
+- Assume which `+` block user wants
+- Generate without explicit `+` block confirmation
+
+### Example Extraction
+
+```markdown
+Skill 1: Frontend Basics
+
++ HTML
+    - Main tags
+    - Semantic HTML
+    - Best practices
++ CSS
+    - Flexbox
+    - DRY in CSS
+    - Selectors
+```
+
+**User:** "Generate Week 1 Skill 1"
+
+**YOU RESPOND:**
+"I found 2 learnapacks under Skill 1:
+1. + HTML
+2. + CSS
+
+Which ONE should I generate?"
+
+**User:** "HTML"
+
+**YOU EXTRACT:**
+```
++ HTML
+    - Main tags
+    - Semantic HTML  
+    - Best practices
+[STOP HERE - next line is + CSS]
+```
+
+**YOU GENERATE:** A complete course covering these 3 topics only.
+
+---
 
 ### Understanding Coverage Requirements
 
@@ -229,6 +346,13 @@ When generating:
 - [ ] Outro: 400-450 words
 - [ ] Total: ±2,000 words from target
 
+### Syllabus Compliance
+- [ ] Extracted from ONE `+` block only
+- [ ] Stopped at next `+` line
+- [ ] User confirmed which `+` block to use
+- [ ] All `-` bullets from that block covered
+- [ ] No content from other `+` blocks included
+
 ---
 
 ## Assessment Approach
@@ -251,6 +375,9 @@ When generating:
 ## Common Mistakes to Avoid
 
 ### DON'T:
+- Mix content from multiple `+` blocks in syllabus mode
+- Generate without confirming which `+` block user wants
+- Continue past the next `+` line in syllabus
 - Use the same lesson count for every course (optimize each time)
 - Create sections with only 1-2 lessons (except intro/outro)
 - Place anti-patterns before teaching the correct approach
@@ -259,11 +386,13 @@ When generating:
 - Forget emoji markers on content lessons (📖, 💻, 🧠)
 - Add theory or exercises to outro lesson
 - Have multiple lessons in final section
-- Mix content from different `+` blocks (syllabus mode)
-- Continue past the next `+` line (syllabus mode)
 - Invent content for framework sections marked as "Not introduced"
 
 ### DO:
+- Ask user to specify EXACT `+` block name from syllabus
+- Extract from ONE `+` block only (verify before proceeding)
+- Stop immediately at the next `+` line
+- List all available `+` blocks if user request is ambiguous
 - Optimize lesson count based on actual content needs
 - Vary content section sizes appropriately (3-5 lessons)
 - Place anti-patterns after students know the correct approach
@@ -272,7 +401,6 @@ When generating:
 - Include clear practice tasks for all hands-on lessons
 - Mark every content lesson with appropriate emoji
 - End with single outro lesson only (no content, no exercises)
-- Extract from ONE `+` block only (syllabus mode)
 - Examine ALL previous learnapacks to avoid repetition
 - Examine upcoming learnapacks to avoid premature coverage
 - Design optimal structure (don't map 1:1 to bullet points)
@@ -281,7 +409,23 @@ When generating:
 
 ## Two-Step Generation Process
 
-### Step 1: Simple Structure (Always First)
+### Step 1: Identify and Confirm the Learnpack (MANDATORY)
+
+**When user requests generation:**
+
+1. **Locate the section** in syllabus.md
+2. **List ALL `+` blocks** found in that section
+3. **Ask user:** "I found these learnapacks: [list]. Which ONE should I generate?"
+4. **Wait for user** to specify EXACT `+` block name
+5. **Confirm extraction:**
+   - "Generating [+block name] only"
+   - "Topics to cover: [list - bullets]"
+   - "Proceed with simple structure?"
+
+**NEVER skip this confirmation step, even if only one `+` block exists.**
+
+### Step 2: Simple Structure (Always Before Detail)
+
 Present concise overview:
 - Course title and source
 - Total lessons (optimized number)
@@ -290,14 +434,65 @@ Present concise overview:
 - Word count estimates
 - **Wait for approval**
 
-### Step 2: Full Detailed Outline (After Approval)
+**Template:**
+```markdown
+# Course Outline: [Course Title]
+
+**Source:** Week X, Skill Y - [+ Block Name]
+**Learnpack:** + [Exact name from syllabus]
+**Total Lessons:** XX (optimized)
+**Estimated Words:** ~X,XXX
+
+---
+
+## Proposed Structure
+
+**Section 00: Welcome** (1 lesson, ~450 words)
+- 00.0 [Lesson Title] 📖
+
+**Section 01: [Title]** (X lessons, ~X,XXX words)
+- 01.0 [Title] 📖
+- 01.1 [Title] 💻
+- 01.2 [Title] 📖
+
+[... continue for all sections ...]
+
+**Section [X-1]: [Assessment Title]** (X lessons, ~X,XXX words)
+- [X].0 [Title] 💻
+- [X].1 [Title] 🧠
+
+**Section [X]: [Outro Title]** (1 lesson, ~450 words)
+- [X].0 [Outro Lesson]
+
+---
+
+**Course Format:** [Mixed/Practical/Conceptual] (X% hands-on = X lessons)
+
+**Lesson Distribution:**
+- Conceptual (📖): X lessons
+- Hands-on (💻): X lessons
+- Assessment (🧠): 1 lesson
+
+---
+
+**Confirm to proceed with full detailed outline?**
+```
+
+### Step 3: Wait for Approval
+
+- User reviews the structure
+- User approves OR requests modifications
+- Do NOT generate full detail until approved
+
+### Step 4: Full Detailed Outline (After Approval Only)
+
 Generate complete outline with:
 - Full lesson details (objectives, content, transitions, principles, examples)
 - Hands-on exercises for 💻 lessons
 - Assessment questions for 🧠 lesson
-- All formatting per template
+- All formatting per template below
 
-**Never skip Step 1. Never generate full detail without approval.**
+**Never skip the simple structure step. Never generate full detail without approval.**
 
 ---
 
@@ -307,7 +502,8 @@ Generate complete outline with:
 ```markdown
 # Course Outline: [Course Title]
 
-**Source:** Week X, Skill Y
+**Source:** Week X, Skill Y - [+ Block Name]
+**Learnpack:** + [Exact name from syllabus]
 **Total Lessons:** XX (optimized)
 **Estimated Words:** ~X,XXX
 
@@ -351,6 +547,7 @@ Generate complete outline with:
 # Course Outline: [Course Title]
 
 **Title:** [Full Course Title]
+**Learnpack:** + [Exact name from syllabus]
 **Prerequisite:** [Previous course or "None"]
 **Target Audience:** [Specific description]
 **Total Lessons:** XX
@@ -437,10 +634,26 @@ This course emphasizes:
 
 1. **Always generate in English only** (translate Spanish topics)
 2. **One learnpack = one generation** (never mix `+` blocks)
-3. **Simple structure first** (with subsections and emoji markers)
-4. **Wait for approval** before full generation
-5. **Every lesson needs emoji** (📖, 💻, or 🧠) except outro
-6. **Final section = 1 lesson only** (outro with no content/exercises)
-7. **Examine context** (ALL previous and upcoming learnapacks)
-8. **Optimize lesson count** (don't default to fixed numbers)
-9. **Guidelines are flexible** (serve educational quality, not arbitrary rules)
+3. **Ask user which `+` block** if request is ambiguous
+4. **Simple structure first** (with subsections and emoji markers)
+5. **Wait for approval** before full generation
+6. **Every lesson needs emoji** (📖, 💻, or 🧠) except outro
+7. **Final section = 1 lesson only** (outro with no content/exercises)
+8. **Examine context** (ALL previous and upcoming learnapacks)
+9. **Optimize lesson count** (don't default to fixed numbers)
+10. **Guidelines are flexible** (serve educational quality, not arbitrary rules)
+
+---
+
+## Pre-Generation Final Verification
+
+**Before presenting ANY structure, answer:**
+
+1. ✓ Did user specify which `+` block? (If no → ASK)
+2. ✓ Am I extracting from ONE `+` block only? (Count = 1)
+3. ✓ Did I stop at the next `+` line? (No content beyond it)
+4. ✓ Can I quote the EXACT `+` line I'm using? (Be specific)
+5. ✓ Examined previous learnapacks for context? (Avoid repetition)
+6. ✓ Examined upcoming learnapacks for context? (Avoid premature topics)
+
+**If any answer is NO, STOP and resolve before proceeding.**
