@@ -2245,7 +2245,7 @@ _Not introduced in this learnpack_
     - LocalStorage vs SessionStorage
     - Dependencia de los datos:
       -- ¿Cómo el useEffect se usa para controlar la dependencia de datos?
-      -- ¿Qué es lo mínimo que el componente necesita para renderizarse?
+ 
   + Promises
     - ¿Qué es una promesa? ¿Por qué es importante en el frontend?
     - Estados: pending, fulfilled (resolve), rejected (reject)
