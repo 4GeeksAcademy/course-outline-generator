@@ -2240,12 +2240,23 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-  + ¿Cómo es el flujo de datos en una aplicación de React?
+  + ¿Cómo es el flujo de datos en una aplicación de React y Next.js?
     - MVC: store, actions
-    - LocalStorage vs SessionStorage
+    - LocalStorage vs SessionStoragecd .
+      - ¿Cuándo almacenar algo en el storage?
     - Dependencia de los datos:
-      -- ¿Cómo el useEffect se usa para controlar la dependencia de datos?
- 
+      -- ¿Cómo se usa el `use` para controlar la dependencia de datos?
+
+  + Sesiones (NO MENCIONAR PROCESOS DE AUTENTICACIÓN)
+    - ¿Qué es una sesión?
+    - ¿Por qué una sesión puede no requerir autenticación?
+    - Sesión como primer mecanismo de "memoria" (recordar al usuario)
+    - ¿Cuándo almacenar o recordar algo en la sesión?
+    - Ciclo de vida de una sesión
+      -- La primera interacción con el sistema (Session init)
+      -- Siguientes interacciones
+      -- Destrucción de la sesión 
+
   + Promises
     - ¿Qué es una promesa? ¿Por qué es importante en el frontend?
     - Estados: pending, fulfilled (resolve), rejected (reject)
