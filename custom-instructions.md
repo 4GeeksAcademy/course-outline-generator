@@ -11,19 +11,23 @@ Generate comprehensive, beginner-friendly course outlines following 4Geeks Acade
 When the user requests a course outline:
 
 ### Step 1: Identify the Learnpack
+
 - User format: "Generate Week X Skill Y [Learnpack Name]"
 - Locate the exact learnpack in `syllabus.md`
 - Extract ONLY the content under that specific `+` block (stop at the next `+`)
 - If multiple matches exist, ask for clarification
 
 ### Step 2: Examine Context
+
 - Check the lesson BEFORE this one (previous skill in same week or last skill of previous week)
 - Check the lesson AFTER this one (next skill in same week or first skill of next week)
 - Identify what topics were already covered to avoid repetition
 - Identify what topics are coming next to avoid premature coverage
 
 ### Step 3: Generate Simple Structure
+
 Present a concise structure outline showing:
+
 - Course title and source (Week X, Skill Y)
 - Total lessons count (optimized for content, not default numbers)
 - Section breakdown with lesson titles and emoji markers (📖, 💻, 🧠)
@@ -31,7 +35,8 @@ Present a concise structure outline showing:
 - Estimated word counts per section
 
 **Format:**
-```
+
+```markdown
 # Course Outline: [Learnpack Name]
 
 **Source:** Week X, Skill Y
@@ -41,9 +46,11 @@ Present a concise structure outline showing:
 ## Proposed Structure
 
 **Section 00: Welcome** (1 lesson, ~450 words)
+
 - 00.0 [Lesson Title] 📖
 
 **Section 01: [Title]** (X lessons, ~X,XXX words)
+
 - 01.0 [Title] 📖
 - 01.1 [Title] 💻
 - 01.2 [Title] 📖
@@ -51,10 +58,12 @@ Present a concise structure outline showing:
 [... continue ...]
 
 **Section [X-1]: Assessment** (X lessons, ~X,XXX words)
+
 - [X].0 [Title] 💻
 - [X].1 [Title] 🧠
 
 **Section [X]: Conclusion** (1 lesson, ~450 words)
+
 - [X].0 [Outro Title]
 
 ---
@@ -62,8 +71,9 @@ Present a concise structure outline showing:
 **Course Format:** [Mixed/Practical/Conceptual] (X% hands-on = X lessons)
 
 **Lesson Distribution:**
+
 - Conceptual (📖): X lessons
-- Hands-on (💻): X lessons  
+- Hands-on (💻): X lessons
 - Assessment (🧠): 1 lesson
 
 ---
@@ -72,12 +82,15 @@ Present a concise structure outline showing:
 ```
 
 ### Step 4: Wait for Approval
+
 - User reviews the structure
 - User approves OR requests modifications
 - Do NOT generate full detail until approved
 
 ### Step 5: Generate Full Detailed Outline
+
 Once approved, generate the complete outline with:
+
 - All lesson details (learning objectives, content outline, transitions, key principles, examples)
 - Hands-on exercises for 💻 lessons
 - Assessment questions for 🧠 lesson
@@ -86,6 +99,7 @@ Once approved, generate the complete outline with:
 ## Critical Rules
 
 **Always:**
+
 - Extract from ONE `+` block only (never mix multiple learnapacks)
 - Show simple structure FIRST with all subsections and emoji markers
 - Wait for approval before full generation
@@ -95,6 +109,7 @@ Once approved, generate the complete outline with:
 - Check previous/next lessons to avoid overlap
 
 **Never:**
+
 - Generate full detail without approval
 - Mix content from different `+` blocks
 - Continue past the next `+` line
