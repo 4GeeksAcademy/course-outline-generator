@@ -13,15 +13,15 @@ Generates `README.md` + `README.es.md` for one milestone of a transversal projec
 
 Confirm all inputs before generating. If any are missing, ask for all of them at once — never in multiple rounds.
 
-| Input                | Description                                                               | Default                                                |
-| -------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------ |
-| `milestone_number`   | The milestone number (e.g., `6`)                                          | — Must ask —                                           |
-| `milestone_topic`    | Core skill(s) this milestone teaches (e.g., `Telemetry & Data Pipelines`) | — Must ask —                                           |
-| `milestone_position` | Position in the course: `early`, `mid`, or `late`                         | — Must ask —                                           |
-| `prior_milestones`   | What students have already built in previous milestones                   | — Must ask —                                           |
-| `tech_stack`         | Technologies required (e.g., `FastAPI + PostgreSQL + Next.js`)            | — Must ask —                                           |
-| `template_repo`      | Starter repo URL students will fork                                       | `https://github.com/4GeeksAcademy/transversal-project` |
-| `authors`            | GitHub username(s) for the metadata block                                 | — Must ask —                                           |
+| Input                | Description                                                               | Default                                                            |
+| -------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| `milestone_number`   | The milestone number (e.g., `6`)                                          | — Must ask —                                                       |
+| `milestone_topic`    | Core skill(s) this milestone teaches (e.g., `Telemetry & Data Pipelines`) | — Must ask —                                                       |
+| `milestone_position` | Position in the course: `early`, `mid`, or `late`                         | — Must ask —                                                       |
+| `prior_milestones`   | What students have already built in previous milestones                   | — Must ask —                                                       |
+| `tech_stack`         | Technologies required (e.g., `FastAPI + PostgreSQL + Next.js`)            | — Must ask —                                                       |
+| `template_repo`      | Starter repo URL students will fork                                       | `https://github.com/4GeeksAcademy/ai-engineering-project-template` |
+| `authors`            | GitHub username(s) for the metadata block                                 | — Must ask —                                                       |
 
 ---
 

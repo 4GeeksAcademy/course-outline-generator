@@ -13,12 +13,12 @@ This skill is the single entry point for transversal project generation. It dete
 
 Before asking for any inputs, determine which artifacts the request requires:
 
-| Situation | What to generate | Skills to invoke |
-|---|---|---|
+| Situation                           | What to generate           | Skills to invoke                                                      |
+| ----------------------------------- | -------------------------- | --------------------------------------------------------------------- |
 | No README exists for this milestone | README + all CONTEXT files | `transversal-readme-generator` → then `transversal-context-generator` |
-| README exists, new company needed | CONTEXT file(s) only | `transversal-context-generator` |
-| README exists, needs rewrite | README only | `transversal-readme-generator` |
-| Explicit "everything" request | README + all CONTEXT files | Both skills in order |
+| README exists, new company needed   | CONTEXT file(s) only       | `transversal-context-generator`                                       |
+| README exists, needs rewrite        | README only                | `transversal-readme-generator`                                        |
+| Explicit "everything" request       | README + all CONTEXT files | Both skills in order                                                  |
 
 If the situation is ambiguous, ask one clarifying question before proceeding:
 
@@ -34,23 +34,23 @@ Collect only the inputs needed for the detected scope. Never ask for inputs that
 
 **If README needs to be generated**, collect:
 
-| Input | Description | Default |
-|---|---|---|
-| `milestone_number` | Milestone number (e.g., `6`) | — Must ask — |
-| `milestone_topic` | Core skill(s) this milestone teaches | — Must ask — |
-| `milestone_position` | `early`, `mid`, or `late` in the course | — Must ask — |
-| `prior_milestones` | What students have already built | — Must ask — |
-| `tech_stack` | Technologies required | — Must ask — |
-| `template_repo` | Starter repo URL | `https://github.com/4GeeksAcademy/transversal-project` |
-| `authors` | GitHub username(s) | — Must ask — |
+| Input                | Description                             | Default                                                            |
+| -------------------- | --------------------------------------- | ------------------------------------------------------------------ |
+| `milestone_number`   | Milestone number (e.g., `6`)            | — Must ask —                                                       |
+| `milestone_topic`    | Core skill(s) this milestone teaches    | — Must ask —                                                       |
+| `milestone_position` | `early`, `mid`, or `late` in the course | — Must ask —                                                       |
+| `prior_milestones`   | What students have already built        | — Must ask —                                                       |
+| `tech_stack`         | Technologies required                   | — Must ask —                                                       |
+| `template_repo`      | Starter repo URL                        | `https://github.com/4GeeksAcademy/ai-engineering-project-template` |
+| `authors`            | GitHub username(s)                      | — Must ask —                                                       |
 
 **If CONTEXT files need to be generated**, collect:
 
-| Input | Description | Default |
-|---|---|---|
-| `existing_readme` | The milestone README — read it in full | — Must ask if not already available — |
-| `company_scenarios` | Company descriptions to generate CONTEXT files for | — Must ask — |
-| `reference_context` | An existing CONTEXT file for parity calibration | Optional |
+| Input               | Description                                        | Default                               |
+| ------------------- | -------------------------------------------------- | ------------------------------------- |
+| `existing_readme`   | The milestone README — read it in full             | — Must ask if not already available — |
+| `company_scenarios` | Company descriptions to generate CONTEXT files for | — Must ask —                          |
+| `reference_context` | An existing CONTEXT file for parity calibration    | Optional                              |
 
 > If both README and CONTEXT are needed, collect all inputs together in a single round before generating anything.
 
@@ -75,6 +75,7 @@ Pass the completed README as the `existing_readme` input to the context generato
 ## Step 4 — Delivery
 
 Deliver files in this order:
+
 1. `README.md` (if generated)
 2. `README.es.md` (if generated)
 3. `CONTEXT-[slug].md` for each company variant (if generated)
