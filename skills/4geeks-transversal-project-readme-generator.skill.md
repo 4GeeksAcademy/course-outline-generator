@@ -36,7 +36,7 @@ Write in second person, direct professional tone. The company is always "your co
 
 ### The CONTEXT anchor — mandatory
 
-The README must reference `CONTEXT.md` in exactly two places:
+The README must reference `CONTEXT-company.md` (link to https://github.com/4GeeksAcademy/ai-engineeirng-milestone-contexts) in exactly two places:
 
 1. **In the hidden metadata block** — a note before the student starts.
 2. **In the task checklist** — a `⚠️ IMPORTANT` warning that a generic implementation ignoring the context will not be accepted.
@@ -63,16 +63,16 @@ If the milestone requires operational context not covered in lessons (e.g., what
 
 Follow this structure exactly, in this order:
 
-```
-1. Milestone Title  (e.g., "Milestone 6 — Telemetry & Data Pipelines")
+```markdown
+1. Milestone Title (e.g., "Milestone 6 — Telemetry & Data Pipelines")
 2. Hidden metadata block
 3. --- separator
 4. The Challenge (🎯)
    └── [optional] complementary knowledge subsection
    └── CTO/manager brief in nested blockquotes
 5. How to Start the Project (🌱)
-6. What You Need to Do (💻)  — checklist
-7. What We Will Evaluate (✅)  — checklist
+6. What You Need to Do (💻) — checklist
+7. What We Will Evaluate (✅) — checklist
 8. How to Submit (📦)
 9. --- separator + Footer
 ```
@@ -89,7 +89,7 @@ By [@username](https://github.com/username) and [other contributors](https://git
 
 _Estas instrucciones están [disponibles en español](./README.es.md)._
 
-**Before you start**: Read your **[CONTEXT.md](./CONTEXT.md)** before writing any code — it defines the specific company data, field names, KPIs, and constraints for your implementation. Also read the [instructions](https://4geeks.com/lesson/how-to-start-a-coding-project) on how to start a coding project.
+**Before you start**: Read your **[CONTEXT-company.md](https://github.com/4GeeksAcademy/ai-engineeirng-milestone-contexts)** before writing any code — it defines the specific company data, field names, KPIs, and constraints for your implementation.
 
 <!-- endhide -->
 ```
