@@ -2808,7 +2808,16 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-  (Referencia a la Skill 13)
+  + Arquitecturas más comunes en el backend
+    - MVC
+    - Arquitectura en capas (introducción a la arquitectura hexagonal, muy light)
+    - Serverless
+
+  + Separación por dominios o responsabilidades en Python: 
+    - PEP8
+    - Imports : absoluta y relativa (__init__.py)
+    - Importación con alias
+    - ¿Cómo evitar importaciones circulares?
 
   + Introduction to FastAPI
     - ¿Qué es un framework?
@@ -2818,17 +2827,7 @@ _Not introduced in this learnpack_
     - Instalando FastAPI
       -- ¿Qué es un virtual env?
       -- ¿Qué es Pipenv?
-      -- pipenv vs. pip + venv
-
-  + Building a Python API to serve the frontend
-    - ¿Qué es una API? (refrescamiento de conocimientos)
-    - ¿Qué es un endpoint? ¿Para qué sirven?
-    - Construyendo los endpoints que necesita el frontend
-      -- ¿Qué significa CRUD?
-      -- Trabajando con llamadas GET, POST, PATCH/PUT, DELETE (sin almacenamiento)
-    - ¿Por qué es fundamental realizar validaciones en todos los endpoints?
-    - Serializando la respuesta como la quiere el frontend 
-    - Documentación con FastAPI
+      -- pipenv vs. pip + venv"
   
 
 ### Thinking Framework
