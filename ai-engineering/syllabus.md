@@ -8,6 +8,7 @@ Prework -
 Skill 0.1: Familiarizarse con la plataforma de 4Geeks
 Skill 0.2: Comprender cómo funciona internet
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -31,6 +32,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría: 
 + Introducción a 4Geeks Academy
   - Importancia del prework (crear nuevo)
   - Intro a la plataforma de 4Geeks.com (crear nuevo)
@@ -48,14 +50,13 @@ _Not introduced in this learnpack_
   - ¿Cómo pedir ayuda?
 
 
-
-
 + La Internet
   - ¿Qué es internet?
   - Funcionamiento: HTTP y sus verbos (GET, POST, PUT/PATCH, DELETE), Cliente - Servidor
   - Navegadores
   - Cómo funciona una web: frontend, backend - APIs, bases de datos, llamadas a APIs (HTTP)
   - Cómo se transmite una solicitud por Internet
+
 
 ### Thinking Framework
 
@@ -64,7 +65,7 @@ _Not introduced in this learnpack_
 - Conocer los componentes principales del proceso de aprendizaje en 4Geeks
 - Conocer los medios y mecanismos para solicitar y obtener ayuda en 4Geeks
 - Saber entregar proyectos en 4Geeks usando Git y Github
-- Concientizar la necesidad del hábito de leer y atender a los detalles 
+- Concientizar la necesidad del hábito de leer y atender a los detalles
 
 #### Best Practices
 _Not introduced in this learnpack_
@@ -88,6 +89,7 @@ _Not introduced in this learnpack_
 Prework - 
 Skill 0.3: Conocer los fundamentos de HTML, CSS y Git para entregar un primer proyecto
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -111,6 +113,8 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría: 
+
 + Introducción a HTML y CSS (Se dejará lo actual)
 
 + ¿Cómo entregar tus proyectos en 4Geeks? 
@@ -118,6 +122,7 @@ _Not introduced in this learnpack_
   - Breve reseña sobre GitHub y Git, de forma poco técnica
   - (Esto no existe) Esenciales de Github y Git para entregar proyectos
     -- git add, git commit, git push
+
 
 ### Thinking Framework
 
@@ -139,37 +144,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No IA
 
-## Week 0 — Day -5
-
-**Status:** Aprobado
-
-### Proyecto
-
-  - Postcard (entregada en un repo)
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 0 — Day -4 y -3
 
 ### Content
 
 Prework - 
 Skill 0.4: Conocer y aplicar los fundamentos de la programación
+
 
 ### Thinking Framework
 
@@ -194,6 +175,8 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
+
 + Introducción a la programación (Javascript) (Referencia rápida a los conceptos)
   - Pensamiento lógico-matemático
   - Algoritmos
@@ -202,6 +185,7 @@ _Not introduced in this learnpack_
   - Bucles
   - Cómo representar listados en JavaScript (Arrays)
   - Cómo objetos en JavaScript (Literal Objects)
+
 
 ### Thinking Framework
 
@@ -234,7 +218,9 @@ Algoritmos:
 
 ### Práctica
 
-  - Beginner JS (nuevo) 
+> Practica:
+  - Beginner JS (nuevo)
+
 
 ### Thinking Framework
 
@@ -261,6 +247,7 @@ Prework -
 Skill 0.5: Comprender cómo funciona la IA Generativa y los principales modelos z
 Skill 0.6: Conocer los distintos formatos para comunicarse con la IA Generativa
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -284,6 +271,8 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
+
 + Introducción a la IA generativa
   - ¿Qué es un LLM?
   - ¿Y cómo funciona la IA?
@@ -295,6 +284,7 @@ _Not introduced in this learnpack_
   - JSON
   - YML
   - TOON  (nuevo formato, potencial de convertirse en tendencia)
+
 
 ### Thinking Framework
 
@@ -317,31 +307,6 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No IA
 
-## Week 0 — Day -2
-
-**Status:** Aprobado
-
-### Práctica
-
-  - Escribir una configuración en YML y JSON
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 0 — Day -1
 
 ### Content
@@ -349,6 +314,7 @@ _Not introduced in this learnpack_
 Prework - 
 Skill 0.7: Conocer qué son los Coding Agents y cómo funcionan
 Skill 0.8: Conocer los fundamentos de la AI Engineering
+
 
 ### Thinking Framework
 
@@ -373,6 +339,8 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
+
 + Using Coding agents 
   - ¿Cómo funciona la IA en desarrollo?
   - Configuración básica de Coding Agent en Github Codespaces
@@ -384,6 +352,7 @@ _Not introduced in this learnpack_
   - Programación asistida con IA
   - Human in the loop / Humanos en el proceso
   - Camino de menor resistencia
+
 
 ### Thinking Framework
 
@@ -407,45 +376,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 0 — Day -1
-
-**Status:** Aprobado
-
-### Proyecto
-
-+ Proyecto final: Excuse generator para imprimir por consola
-  1. Pedir a Copilot que cree un fichero JS
-  2. Pedir a Copilot que cree un array de quién
-  3. Pedir a Copilot que cree un array de acción
-  4. Pedir a Copilot que cree un array de qué
-  5. Pedir a Copilot que cree un array de cuándo
-  6. Pedir a Copilot que genere una línea de código para obtener un valor aleatorio del array quién, otro valor aleatorio del array acción y otro del array qué y el array cuándo
-  7. Pedir a Copilot que concatene todos los valores obtenidos con un espacio en blanco de por medio y lo inserte en una variable
-  8. Pedir a Copilot que inserte un console.log para imprimir el valor de la variable en la terminal.
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-- No se imprime por html para reducir la complejidad con el tema del DOM, que los estudiantes se ponen a investigar porque no entienden por qué esos comandos
-
 ## Week 1 — Day 1
 
 ### Content
 
 Skill 1: Desarrollar interfaces sencillas con HTML y CSS cumpliendo con normas de accesibilidad y principios de SEO/GEO
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -465,7 +402,7 @@ _Not introduced in this learnpack_
 
 ## Week 1 — Day 1
 
-**Status:** Approved
+**Status:** Aprobado
 
 ### Content
 
@@ -489,6 +426,7 @@ _Not introduced in this learnpack_
     - Principales problemas de accesibilidad
   + SEO y GEO 
     - Schema.org
+
 
 ### Thinking Framework
 
@@ -519,43 +457,12 @@ _Not introduced in this learnpack_
 - Especificamente pedirle a la ia que no queremos plantilla
 - Usar un modelo viejo como sonnet 3.5
 
-## Week 1 — Day 1
-
-**Status:** Proyecto
-pendiente
-aprobación
+## Week 1 — Day 2
 
 ### Content
 
-> Proyecto 1: Un website para mostrar el talento de tu amigo artista
-   
-   La entrega debe tener un markdown llamado PROMPTS.md con todos los prompts utilizados para el resultado
+Skill 2: Desarrollar interfaces complejas utilizando librerías de CSS en lugar de CSS y reconociendo los componentes más comunes utilizados en un website
 
-   Indicar los requisitos (HTML, CSS, Accesibilidad y Schema.org)
-
-
-> Instrucciones al profesor:
-  - Este curso solo puede tener HTML y CSS, incluyendo etiquetas de Accesibilidad 
-  - Guiar el ejercicio y hacer que algunas personas compartan pantalla y muestren su resultado
-  - HTML y CSS deben quedar en archivos separados.
-  - Crear un único documento HTML con distintas secciones: Bienvenida, sobre mí, mi trabajo y contacto
-  - No permitir que se use un único prompt para hacer todo el ejercicio
-  - Asegurar el cumplimiento, con mejores prácticas de código y de diseño, etc.
-  
-> Propuesta para guiar el ejercicio:
-    - Se deben incorporar elementos poco a poco (el body, luego una barra superior, luego un logo a la izquierda y una lista de enlaces a la derecha)
-
-  1. Se pide (de forma vaga, sin detalle, aunque limitado para que no resuelva todo el proyecto) a la IA que haga una web personal de AI Engineer con solo HTML y CSS.  
-  2. Se revisa el código.
-  3. Se pide que haga una nueva versión, refinando la solicitud, y se le pasa pasa la foto.
-  4. Se revisa el código resultante.
-  5. Se contrasta con lighthouse (disponible en crhome y brave de forma nativa). Se pulen los puntos bajos 
-  6. Se revisa el código "final"
-
-  7. Se analizan las diferencias entre las solicitudes y entre los resultados
-
-  + Actividad extra (en caso de que el proyecto salga rápido):
-    - Hacer que la vista sea un Feed de Instagram, repitiendo la estructura del post con distintas imágenes y texto. 
 
 ### Thinking Framework
 
@@ -576,33 +483,11 @@ _Not introduced in this learnpack_
 
 ## Week 1 — Day 2
 
-### Content
-
-Skill 2: Desarrollar interfaces complejas utilizando librerías de CSS en lugar de CSS y reconociendo los componentes más comunes utilizados en un website 
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 1 — Day 2
-
-**Status:** Approved
+**Status:** Aprobado
 
 ### Teoría
 
+> Teoría:
   + Web app layouts
     - ¿Qué es el layout? 
     - Formas de navegación: Sidebar, topbar, bottombar, etc...
@@ -625,6 +510,7 @@ _Not introduced in this learnpack_
     - Ask Rigobot: ¿Qué es un CDN?
     - Ventajas de usar una biblioteca de estilos
     - Situaciones comunes: ir sobre casos de uso (spacing: padding y margin, sizing: width, height..., overflow y scrolling, posicionamiento de elementos)
+
 
 ### Thinking Framework
 
@@ -663,51 +549,13 @@ It should include [key elements]. Follow the [theme] and use Tailwind utilities 
 #### Constraints & Limitations
 - Usar un modelo viejo como sonnet 3.5
 
-## Week 1 — Day 2
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Content
-
-> Proyecto: Mi primer dashboard para mostrar datos
- 
-  1. Se pide a la IA que haga un dashboard con Tailwind, solo HTML y CSS
-  2. Se revisa el código
-  3. Si no resulta satisfactorio el resultado, se refinan detalles con la IA (describiendo las dos vistas en detalle)
-  4. Se revisa el resultado y se evalúa el cumplimiento de mejores prácticas y patrones en el código
-  5. Pedirle a la IA que haga que desde la barra de navegación se pueda cambiar el tipo de visualización
-
-  + Actividades extra:
-    - Agregar efectos visuales avanzados y animaciones
-
-> Instrucciones al profesor:
-  - Guiar el ejercicio y hacer que algunas personas compartan pantalla y muestren su resultado
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-- Usar Tailwind CSS sin bibliotecas de componentes como ShadCN
-
 ## Week 1 — Day 3
 
 ### Content
 
 Skill 3: Desarrollar formularios complejos pero con interacciones sencillas, utilizando bibliotectas de CSS + JS muy sencillo
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -727,10 +575,11 @@ _Not introduced in this learnpack_
 
 ## Week 1 — Day 3
 
-**Status:** Approved
+**Status:** Aprobado
 
 ### Teoría
 
+> Teoría:
   + Formularios
     - Etiquetas principales
       - Inputs de texto (text, email, autocomplete)
@@ -760,6 +609,7 @@ _Not introduced in this learnpack_
       -- Por redundancia (fecha inicio + fecha fin + duración)
       -- Por pertinencia (dirección de casa para crear una cuenta de usuario)
       -- Puede solicitarse en otro momento (pedir datos fiscales para crear una cuenta de usuario)
+
 
 ### Thinking Framework
 
@@ -794,55 +644,13 @@ Patrones de diseño:
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 1 — Day 3
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Content
-
-> Proyecto (Hito 1): Web pública de "mi empresa"
- 1. Pide a la IA que haga la landing page de tu producto. Ten en cuenta las características descritas arriba.
- 2. Revisa el contenido generado y su código.
- 3. Solicitar a la IA un documento nuevo con un formulario de postulación para probar el futuro producto.
- 4. El formulario deberá tener al menos un campo nombre, un campo correo, un campo fecha de nacimiento (para verificar si es un adulto) y un campo de texto largo para la motivación de la postulación.
- 5. Se pueden agregar campos opcionales como ¿Cuánto pagarías por este producto? (campo numérico)
- 6. Revisar el resultado y las buenas prácticas empleadas en el código.
- 7. Después de revisar, hazle las observaciones que consideres pertinentes para que la IA las corrija
- 8. Agrega validación de campos con VanillaJS para cada formulario (aunque no sepas hacerlo, la IA lo hará por ti si se lo explicas adecuadamente)
- 9. Verifica que las validaciones funcionan correctamente y que los mensajes de error tienen estilos adecuados
- 10. Agregar botón secundario para borrar los datos del formulario
-
-
-> Instrucciones al profesor:
-  - Guiar el ejercicio y hacer que algunas personas compartan pantalla y muestren su resultado
-  - Debe tener 2 "vistas" Una con el portafolio + el contacto y otra con el formulario de cotización. 
-  - Se deberá hacer un repositorio nuevo, no reutilizar el del dia 1, pueden reutilizar los prompts
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 2 — Day 4
 
 ### Content
 
 Skill 4: Utilizar la línea de comando para interacciones basicas en el dia a dia en la vida de un desarrollador
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -862,10 +670,11 @@ _Not introduced in this learnpack_
 
 ## Week 2 — Day 4
 
-**Status:** Approved
+**Status:** Aprobado
 
 ### Teoría
 
+> Teoría:
   + Sistema de archivos (Jerarquía)
     - Rutas relativas vs Rutas absolutas
     - Entry point
@@ -873,6 +682,7 @@ _Not introduced in this learnpack_
     - 10 comandos más usados por un programador (+ 1: incluir grep)
     - Editores de archivos más comunes: vi, nano (comandos principales: salida, edición y escritura)
     - Conexiones SSH
+
 
 ### Thinking Framework
 
@@ -899,43 +709,13 @@ _Not introduced in this learnpack_
 - No IA
 - No se creará un Shell Script, pero se les explicará en qué consisten
 
-## Week 2 — Day 4
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Content
-
-> Proyecto 1: exercise-command-line-challenge (reemplazar https://cmdchallenge.com/)
-
-> Proyecto 2 (a evaluar viabilidad):
-  - ¿Conectarse a un servidor remoto por SSH y encontrar un texto?
-  - Pedir a la IA que genere los comandos por nosotros
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-- No IA
-
 ## Week 2 — Day 5
 
 ### Content
 
 Skill 5: Git + Github => Aprender a trabajar colaborar y comandar una IA de forma eficiente y con bajo riesgo
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -955,10 +735,11 @@ _Not introduced in this learnpack_
 
 ## Week 2 — Day 5
 
-**Status:** Approved
+**Status:** Aprobado
 
 ### Teoría
 
+> Teoría:
   + Git para devs
     - Cómo funciona
     - Cómo saber dónde estoy (concepto de HEAD)
@@ -976,7 +757,7 @@ _Not introduced in this learnpack_
     - Forks vs Templates
     - Pull Requests (entre ramas y entre repos)
     - Buenas prácticas en Github
-  
+
 
 ### Thinking Framework
 
@@ -1017,53 +798,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 2 — Day 5
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Content
-
-> Proyecto colaborativo en pareja (Equipo + IA + Git): maquetación de una tienda estática colaborativa con IA (Solo HTML y Tailwind)
-  1. Preguntar a la IA ¿Qué elementos básicos debe tener la maqueta de una tienda en línea?
-  2. Validar la respuesta de la IA y analizar se se adecúa a lo que se busca
-  3. Distribuir tareas por características/vistas (crear el repo común y actividades)
-  4. Desarrollar características en ramas
-  5. Unificar desarrollos en rama principal
-  6. Conectar vistas (commits y merges adicionales)
- 
-Debe contener todo lo que se ha visto anteriormente (HTML semántico, Tailwind, Schema.org, diseño responsivo) y conformarse por 5 vistas
-- Home (con una barra de navegación, un Hero, listado de productos nuevos, listado de productos más comprados, footer)
-- Catálogo (listado de productos y barra de filtros)
-- Producto (Foto de producto, detalles de producto, precio y descripción)
-- Carrito (vista completa del contenido de un carrito con sus productos, la totalización y botón de comprar)
-- Formulario de pago (datos personales, dirección de entrega y datos de tarjeta)
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-- Solo HTML y Tailwind
-- Nada de React.
-- Puede haber alguna acción con JS
-
 ## Week 2 — Day 6
 
 ### Content
 
-Skill 6: Representar y estructurar de forma determinista la lógica de un sistema usando flujos secuenciales con contextos variables 
+Skill 6: Representar y estructurar de forma determinista la lógica de un sistema usando flujos secuenciales con contextos variables
+
 
 ### Thinking Framework
 
@@ -1084,10 +824,11 @@ _Not introduced in this learnpack_
 
 ## Week 2 — Day 6
 
-**Status:** Approved
+**Status:** Aprobado
 
 ### Teoría
 
+> Teoría:
   + ¿Qué es la programación? -> Darle instrucciones a una máquina
    - Pensamiento Algorítmico -> Escribir en pseudocódigo.
    - Variables 
@@ -1105,6 +846,7 @@ _Not introduced in this learnpack_
    - Flujos anidados
    - Flujos reutilizables (introduccion teórica a "funciones")
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -1117,7 +859,7 @@ _Not introduced in this learnpack_
 - Identificar el uso del concepto que se esta aprendiendo ( que el alumno comprenda "cuanto necesita entender" de un concepto para poder avanzar, por ejemplo para usar un taladro para colgar un cuadro no necesito comprender la electronica del mismo mientras que si lo que busco es mejorar el taladro si que requira comprender sus componentes y funcionamiento interno para esa tarea)
 - Plantear soluciones en tu idioma nativo primero, luego pseudocódigo
 - Comprender el próposito para alcanzar el objetivo
-- Comprender que no necesito conocer y dominar todo para plantear una solución en pasos y procesos (pueden existir cajas negras) 
+- Comprender que no necesito conocer y dominar todo para plantear una solución en pasos y procesos (pueden existir cajas negras)
 
 #### Best Practices
 Analogías con el mundo real
@@ -1154,39 +896,13 @@ Partes del diagrama o algoritmo a las que es imposible llegar porque la lógica 
 #### Constraints & Limitations
 - No IA
 
-## Week 2 — Day 6
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Práctica
-
-  - Learnpacks Con múltiples retos de diseños de flujo y "state machine" (ejercicio tipo los del Command Line) para validar que lo hagan correctamente
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-- No IA
-
 ## Week 3 — Day 7
 
 ### Content
 
 Skill 7.1: Entender los fundamentos de TypeScript, su sintaxis y cómo aplicar el concepto de algoritmos en Typescript
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -1206,9 +922,9 @@ _Not introduced in this learnpack_
 
 ## Week 3 — Day 7
 
-**Status:** Approved
+**Status:** Aprobado
 
-### Content
+### Teoría
 
 > Teoría 
   + Fundamentos de Javascript y Typescript: 
@@ -1235,6 +951,7 @@ _Not introduced in this learnpack_
       -- interruptores de flujo: break (para cortar la ejecución) y continue (para saltar esta iteración)
       -- Bucles anidados
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -1255,7 +972,7 @@ _Not introduced in this learnpack_
 #### Best Practices
 Escribe el codigo, no lo copies
 
-Identacion 
+Identacion
 
 #### Patterns
 - lowerCamelCase
@@ -1279,34 +996,7 @@ Identacion
 
 - Condiciones kilométricas 
 
-- Arrow Code / Hadouken: if dentro de if dentro de if... formando una flecha a la derecha. 
-
-#### Constraints & Limitations
-- No IA
-
-## Week 3 — Day 7
-
-**Status:** Approved
-
-### Content
-
-> Prácticas:
-  - Learnpack co varios códigos generados por IA para revisar y corregir o aprobar.
-  - Learnpack (aparte del Beginner TS) orientado a condicionales y flujos llegando a una mayor dificultad que el Beginner JS (aquí podrían estar Beatles, Bottles of milk...)
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
+- Arrow Code / Hadouken: if dentro de if dentro de if... formando una flecha a la derecha.
 
 #### Constraints & Limitations
 - No IA
@@ -1317,6 +1007,7 @@ _Not introduced in this learnpack_
 
 Skill 7.2: Aprender a nombrar/etiquetar los flujos
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -1336,9 +1027,9 @@ _Not introduced in this learnpack_
 
 ## Week 3 — Day 8
 
-**Status:** Approved
+**Status:** Aprobado
 
-### Content
+### Teoría
 
 > Teoría 
   
@@ -1348,7 +1039,8 @@ _Not introduced in this learnpack_
     - Párametros (cómo pasar valores a una función)   
     - ¿Cómo devuelve valores una función? (funcionamiento del return y especificación del tipo de dato devuelto) 
     - Métodos vs funciones vs procedimientos (funciones que devuelven valor y funciones que no)
-    - Métodos y funciones para trabajar con datos primitivos (string, number, etc)  
+    - Métodos y funciones para trabajar con datos primitivos (string, number, etc)
+
 
 ### Thinking Framework
 
@@ -1361,7 +1053,7 @@ _Not introduced in this learnpack_
 
 - Reconocer el tipo de funcion que requiero
 
-- Mantener el principio de responsabilidad única 
+- Mantener el principio de responsabilidad única
 
 #### Best Practices
 - Escribir funciones en sus diferentes versiones
@@ -1384,39 +1076,13 @@ Leer errores
 #### Constraints & Limitations
 - No IA
 
-## Week 3 — Day 8
-
-**Status:** Approved
-
-### Content
-
-> Sólo práctica:
-  - Learnpack con varios códigos con funciones (con y sin parámetros, con y sin devolución de resultado) y sus llamadas generados por IA para revisar y corregir o aprobar.
-  - Mastering JS (adecuarlo explicando que es un learnpack que usará a lo largo de todo el contenido de JS y que conforme avancen las clases irá aprendiendo a solucionar más problemas)
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-- No IA
-
 ## Week 3 — Day 9
 
 ### Content
 
 Skill 8.1: Manipular datos estructurados de tipo colecciones: transformándolas, recorriendolas y buscando informacion de forma óptima
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -1436,10 +1102,11 @@ _Not introduced in this learnpack_
 
 ## Week 3 — Day 9
 
-**Status:** Approved
+**Status:** Aprobado
 
 ### Teoría
 
+> Teoría:
   + Arreglos/Colecciones de elementos (arrays)
     - ¿Qué es un array?
     - ¿Cómo definir un array? (Sintaxis)
@@ -1455,7 +1122,7 @@ _Not introduced in this learnpack_
     - Búsqueda lineal o secuencial en un array (Arrays desordenados - Métodos .find() e .includes())
     - Búsqueda eficiente en un array ordenado (Algoritmo de búsqueda binaria)
     - Búsqueda en matrices
- 
+
 
 ### Thinking Framework
 
@@ -1498,54 +1165,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No IA
 
-## Week 3 — Day 9
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Práctica
-
-  - Mastering JS (ejercicios con Arrays)
-
-> Proyecto 1: Gestor de butacas de cine
-  - Crear una matriz de butacas con ocupadas (1) y libres (0)
-  - Visualizar la sala imprimiendo la matriz con L (libre) y X (ocupado)
-  - Poder reservar un asiento (marcarlo con 1)
-  - Contar cuántas butacas están llenas y cuántas están vacías
-  + Actividad extra: 
-    - Buscar asientos contiguos para parejas (dos personas)
-    - Darle a la IA el código desarrollado y pedirle que genere una interfaz para usarlo en modo web
-
-> Proyecto 2: Almacén inteligente:
-  - Crear un listado de ids de paquetes que siempre esté ordenado
-  - Agregar nuevos paquetes (y reordenar)
-  - Verificar si un paquetes está en el listado por búsqueda binaria
-  + Actividad extra: 
-    - Filtrar y eliminar paquetes "viejos" menores a un id de paquete
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-- No IA
-
 ## Week 4 — Day 10
 
 ### Content
 
 Skill 8.2: Modelar datos estructurados de tipo objeto
+
 
 ### Thinking Framework
 
@@ -1570,6 +1195,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   + Objetos: 
     - Concepto de modelos vs objetos
     - Propiedad vs Valor
@@ -1578,6 +1204,7 @@ _Not introduced in this learnpack_
       -- Ej: array de objetos, objetos anidados
 
   + Modelado de objetos mediante diagramas de clases
+
 
 ### Thinking Framework
 
@@ -1606,50 +1233,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No IA
 
-## Week 4 — Day 10
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Content
-
-> Proyecto 1:
-  1. Usando `https://online.visual-paradigm.com/app/diagrams/#diagram:proj=0&type=ClassDiagram` modela "Un reproductor de Playlist de Música" como Spotify, donde las canciones son objetos individuales que viven dentro de una lista.
-  2. Se debe colocar los tipos de datos a las propiedades. 
-  3. Debe tener al menos 5 modelos. 
-  4. Se debe indicar qué modelos se relacionan entre sí.
-  5. Exporta el resultado en PNG para entregar
-
-> Proyecto 1:
-  1. Usando https://online.visual-paradigm.com/ modela "Una billeta digital" como Wise, donde exista un historial de movimientos.
-  2. Se debe colocar los tipos de datos a las propiedades. 
-  3. Debe tener al menos 3 entidades. 
-  3. Se debe indicar qué modelos se relacionan entre sí.
-  4. Exporta el resultado en PNG para entregar
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 4 — Day 11
 
 ### Content
 
 Skill 8.3: Trabajar con datos estructurados de tipo objeto en TypeScript
+
 
 ### Thinking Framework
 
@@ -1674,6 +1263,8 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
+
   + Representación de objetos en TS: 
     - Interfaces vs Objetos literales 
       - Sintaxis 
@@ -1688,6 +1279,7 @@ _Not introduced in this learnpack_
   + Mutaciones (ej real: un libro -inmutable- vs un cuaderno -mutable- ) 
    - Paso por referencia vs paso por valor
    - Tipos de datos que admiten pasos por referencias o por valor
+
 
 ### Thinking Framework
 
@@ -1724,38 +1316,12 @@ Asumir que un dato anidado existe
 - No IA
 - No se abordan la herencia ni el polimorfismo
 
-## Week 4 — Day 11
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Práctica
-
-  - Mastering JS (ejercicios de objetos)
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 4 — Day 12
 
 ### Content
 
 Skill 9: Comunicarse efectivamente con la IA para la creación de interfaces
+
 
 ### Thinking Framework
 
@@ -1780,6 +1346,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría: 
   + Estrategias en la comunicación con la IA (Context & Anatomy):
     - Context Engineering
     - Word efficiency  
@@ -1798,6 +1365,7 @@ _Not introduced in this learnpack_
       -- Estilizado (Colores/Espaciado).
     - Camino de menor resistencia
     - Feedback Loop: Cómo decirle a la IA que algo "se ve mal" usando la terminología correcta (padding, margen, alineación).
+
 
 ### Thinking Framework
 
@@ -1844,49 +1412,12 @@ El Prompt "Adivina": "Hazme una página bonita para una tienda". (Demasiada entr
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 4 — Day 12
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Content
-
-> Proyecto con IA: Replicar una website con React 
-  - Replicar la home de airbnb.com  
-  - Elaborar Prompts de visión a especificación y generación de componentes.
-  - Recordar que debe ser mobile first
-  - Pedir que comience el proyecto con un archivo "readme.md" o un defecto un .txt que contenga "el contexto" de la interfaz que desea construir.
-  - Preparar al alumno con un discurso sobre el motivo de usar un stack que aún no maneja del todo, en este caso React.
-
-> Instrucciones para el profesor:
-  - Se evulará únicamente el resultado (no el código en sí), dentro de ello que sea responsive, accesibilidad, html semantico. 
-  - Elaborar Prompts de visión a especificación y generación de componentes.
-  - El profesor debe especificarles el stack 
-  - Se evaluará el "readme.md" con el prompt o contexto inicial
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 5 — Day 13
 
 ### Content
 
 Skill 10: Construir un banco de memoria y reglas de contexto a partir de un código base preexistente
+
 
 ### Thinking Framework
 
@@ -1911,6 +1442,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
  + ¿Qué son las reglas para una IA de programación?
    - Alcances de las configuraciones y reglas de contextos: User vs Project. ¿Qué reglas son de preferencia personal y cuáles son de necesidad del proyecto?
    - Aplicación de reglas: description, globs, alwaysApply
@@ -1930,6 +1462,7 @@ _Not introduced in this learnpack_
    - ¿Cómo puedo enseñarle nuevas skills al agente?
    - ¿Dónde puedo conseguir skills ya existentes? (https://skills.sh/)
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -1942,7 +1475,7 @@ https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agent
 #### Best Practices
 - Usar Globs para reglas de formatos, utilidades y pruebas y agrupar por carpetas
 - Mencionar ficheros 
-- Comprender la estructura actual del proyecto. 
+- Comprender la estructura actual del proyecto.
 
 #### Patterns
 - Crear un plan de implementación y luego señir el desarrollo a su ejecución
@@ -1965,51 +1498,12 @@ https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agent
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 13
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Content
-
-> Proyecto 1: 
-  1. Rehacer el proyecto colaborativo (las vistas de un e-commerce), pero de forma individual, agregando progresivamente reglas para que la IA trabaje mejor
-  + Instrucciones al profesor
-    - Identificar reglas mediante el análisis del qué se hizo, qué errores se cometieron, qué buenas prácticas se quieren implementar, qué acciones siempre se deben realizar...
-    - Elaborar Prompts de visión a especificación y generación de componentes.
-    - Reconstruir la UI mediante IA definiendo reglas
-> Proyecto 2: 
-  🎨 Hito 3 — Ingeniería de UI impulsada por IA
-  - Abrir el proyecto generado y comenzar a establecer reglas para ir modificando la versión actual con todo lo aprendido.
-  - El proyecto debe resultar en un website creado con Tailwind CSS (HTML + CSS + Vanilla JS) que pueda incluir elementos componentes web comunes como dropdowns, modales... y tener todas las validaciones necesarias con Javascript (correo bien validad, por ejemplo)
-
-  + Instrucciones al profesor
-    - Elaborar Prompts de visión a especificación y generación de componentes.
-    - Reconstruir la UI de la empresa mediante IA.
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 5 — Day 14
 
 ### Content
 
 Skill 11: Identificar y definir componentes de una aplicación web
+
 
 ### Thinking Framework
 
@@ -2034,7 +1528,9 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-  + Arquitectura de Single Page Applications (SPA) y Empaquetado. 
+> Teoría:
+
+  + Arquitectura de Single Page Applications (SPA) y Empaquetado.
      - Building or compiling your app
      - Build time vs Runtime
      - Arquitectura SPA (Single Page Application):
@@ -2057,12 +1553,13 @@ _Not introduced in this learnpack_
      - Introducción a componentes: Creando mi primer componente React en Next.js
        -- Introducción superficial a props, useState y useEffect (estandar hasta React 18)
 
+
 ### Thinking Framework
 
 #### Thinking Development
 Poder leer la estructura de archivos de un website con React y determinar si tiene mejores prácticas. 
 
-Verificar que las rutas sean "url friendly" y "website taxonomi": pensar en como "agrupar" el website, por ejemplo, /product/id/1asfa-fgasf-afsasd-asd
+Verificar que las rutas sean "url friendly" y "website taxonomy": pensar en como "agrupar" el website, por ejemplo, /product/id/1asfa-fgasf-afsasd-asd
 si no que sea producto/bateria-carro
 
 Pensamiento Estructural/Jerárquico: Diferenciar entre un componente que es una "Vista" (ej. Home.jsx) y uno que es un "Widget" (ej. Button.jsx).
@@ -2071,7 +1568,7 @@ La Ilusión de la Persistencia: Comprender que al navegar en una SPA, el navegad
 
 Abstracción del Layout: Habilidad para identificar qué partes de la web son constantes (Navbar, Footer) y qué partes son dinámicas (Outlet).
 
-Poder estar familirizado/cómodo navegando el "codebase" del proyecto. 
+Poder estar familirizado/cómodo navegando el "codebase" del proyecto.
 
 #### Best Practices
 Clean Routing: Definir las rutas en un archivo separado o claramente en el entry point, no esparcidas.
@@ -2107,6 +1604,7 @@ _Not introduced in this learnpack_
 
 Skill 12: Implementar interfaces interactivas con React + Next.js
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -2130,6 +1628,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría :
    + Fundamentos de React y Next.JS
      - Props
        -- Props más comunes
@@ -2143,6 +1642,7 @@ _Not introduced in this learnpack_
        -- ¿Qué son las Query strings?
      - Renderización
        -- Controlando los renderings (re renderizado)
+       -- ¿Qué es lo mínimo que el componente necesita para renderizarse?
        -- Error: Si se renderiza el padre, lo hará también el hijo
        -- Error: useEffect sin limitación de disparadores
      - Renderizado del lado del cliente (CSR) vs del lado del servidor (SSR)
@@ -2154,6 +1654,7 @@ _Not introduced in this learnpack_
     - Ejercicio donde se plantea una modal en la raíz de los componentes y en el que debería crear una nueva modal, para que responda cómo reorganizaría los archivos y se evalúe su respuesta 
       -- (la respuesta debería ser crear una carpeta "modals" con las variantes modal1 y modal2)
     - Referencia a las carpetas más importantes adicionales a la estructura de Next (como libs, types, hooks, entre otras...)
+
 
 ### Thinking Framework
 
@@ -2169,7 +1670,6 @@ _Not introduced in this learnpack_
 #### Best Practices
 - Un use, una acción
 - Limitar los disparadores del useEffect
-- 
 
 #### Patterns
 - CustomHooks para promover DRY (y siempre con return)
@@ -2184,38 +1684,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 15
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Práctica
-
-  - Juegos tipo Kahoot! 
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 6 — Day 16
 
 ### Content
 
 Skill 13: Entender la web architecture y el flujos de datos en ella
+
 
 ### Thinking Framework
 
@@ -2240,9 +1714,10 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoria: 
   + ¿Cómo es el flujo de datos en una aplicación de React y Next.js?
     - MVC: store, actions
-    - LocalStorage vs SessionStoragecd .
+    - LocalStorage vs SessionStorage
       - ¿Cuándo almacenar algo en el storage?
     - Dependencia de los datos:
       -- ¿Cómo se usa el `use` para controlar la dependencia de datos?
@@ -2274,8 +1749,6 @@ _Not introduced in this learnpack_
       -- try - catch (en async / await)
 
 
-      
-
 ### Thinking Framework
 
 #### Thinking Development
@@ -2306,37 +1779,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - Llamadas a APIs solo con GET
 
-## Week 6 — Day 16
-
-**Status:** Approved
-
-### Content
-
-⚛️ Hito 4 — Fundamentos de Next.js (React)
- Arquitectura SPA (Single Page Applications) y multipágina, props/state/effects, debugging. Construir el frontend interactivo de la empresa.
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 6 — Day 17
 
 ### Content
 
 Skill 14: Interacting with APIs
+
 
 ### Thinking Framework
 
@@ -2361,6 +1809,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   
   + Comunicarse con APIs externas: 
     - ¿Qué son las APIs y cómo funcionan?
@@ -2378,10 +1827,8 @@ _Not introduced in this learnpack_
 
   + Stateless comunication: El servidor tiene amnesia
     - Hay que pasarle al endpoint toda la informacion que necesita, siempre, no hay manera que el backend te avise algo hay que pedirselo
-    - Lo más parecido a un state se llama polling que es hacer request/peticion cada x segundos 
+    - Lo más parecido a un state se llama polling que es hacer request/peticion cada x segundos
 
-
-  
 
 ### Thinking Framework
 
@@ -2398,7 +1845,7 @@ _Not introduced in this learnpack_
 
 - Identificar las necesidades de la petición (text, json, files) 
 
-- Aprender a leer los payload, responses, headers, etc. 
+- Aprender a leer los payload, responses, headers, etc.
 
 #### Best Practices
 - Separar las llamadas a APIs fuera de las actions del Store.
@@ -2425,6 +1872,7 @@ _Not introduced in this learnpack_
 
 Skill 15: Debugging and optimizing the frontend
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -2448,6 +1896,8 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+Teoría:
+
    + Debugging: 
      - Dev Tool: Evidencia sobre suposición. 
        -- Elements
@@ -2468,6 +1918,7 @@ _Not introduced in this learnpack_
       -- React.memo
     - Patrones de Reutilización: Custom Hooks vs. HOCs vs. Render Props 
     - Cache memory: La petición más rápida es la que no se hace.
+
 
 ### Thinking Framework
 
@@ -2531,39 +1982,12 @@ Console Driven Development: Llenar el código de console.log("entré"), console.
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 6 — Day 18
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Proyecto
-
-  - Generar una aplicación de frontend con V0 (de Vercel) o Stitch (de Google)
-  - Incorporarla al 
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 7 — Day 19
 
 ### Content
 
 Skill 16.1: Coding in python as programming language in backend
+
 
 ### Thinking Framework
 
@@ -2588,6 +2012,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   - (Mención a Skills 6 y 7)
 
   + Introducción al backend
@@ -2615,6 +2040,7 @@ _Not introduced in this learnpack_
       - Bucles anidados
     - Ciclos: for..in (con range, con listas de elementos clave-valor) y for en línea (List Comprehensions)
     - Identificar oportunidades de mejora en ciclos anidados: Big O Notation (contenido referencial no muy profundo)
+
 
 ### Thinking Framework
 
@@ -2658,32 +2084,7 @@ Escribe el codigo, no lo copies
 
 - Condiciones kilométricas 
 
-- Exceso de anidación de condicionales: if dentro de if dentro de if... formando una flecha a la derecha. 
-
-#### Constraints & Limitations
-- No IA
-
-## Week 7 — Day 19
-
-**Status:** Approved
-
-### Content
-
-Ejercicios de JS que deban traducirse a Python.
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
+- Exceso de anidación de condicionales: if dentro de if dentro de if... formando una flecha a la derecha.
 
 #### Constraints & Limitations
 - No IA
@@ -2694,6 +2095,7 @@ _Not introduced in this learnpack_
 
 Skill 16.2: Escribir bloques de código con nombres (funciones)
 Skill 17: Trabajar con tipos de datos estructurados de tipo listas y diccionarios
+
 
 ### Thinking Framework
 
@@ -2718,6 +2120,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   - (Hacer mención a Skill 8.1)
 
   + Funciones Python
@@ -2738,6 +2141,7 @@ _Not introduced in this learnpack_
     - Diccionarios
       -- Notación corchete (nombre['atributo'])
       -- Métodos útiles: get(), update(), defaultdict()
+
 
 ### Thinking Framework
 
@@ -2760,7 +2164,7 @@ _Not introduced in this learnpack_
 
 - No memorizar.  Investiga cada que necesites usar un método
 
-- Elegir un nombre adecuado en las funciones, el nombre debe ser descriptivo a lo quehace la misma 
+- Elegir un nombre adecuado en las funciones, el nombre debe ser descriptivo a lo quehace la misma
 
 #### Patterns
 - Homogeneidad en arrays/colección
@@ -2783,7 +2187,8 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 18: Answering front end user-triggered requests
+Skill 18: Diseñar la arquitectura del backend
+
 
 ### Thinking Framework
 
@@ -2808,6 +2213,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   + Arquitecturas más comunes en el backend
     - MVC
     - Arquitectura en capas (introducción a la arquitectura hexagonal, muy light)
@@ -2827,8 +2233,77 @@ _Not introduced in this learnpack_
     - Instalando FastAPI
       -- ¿Qué es un virtual env?
       -- ¿Qué es Pipenv?
-      -- pipenv vs. pip + venv"
+      -- pipenv vs. pip + venv
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 8 — Day 22
+
+### Content
+
+Skill 19: Answering front end user-triggered requests
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 8 — Day 22
+
+**Status:** Approved
+
+### Teoría
+
+> Teoría: 
+  (Referencia a la Skill 14)
+
+  + Building a Python API to serve the frontend
+    - ¿Qué es una API? (refrescamiento de conocimientos)
+    - ¿Qué es un endpoint? ¿Para qué sirven?
+    - Construyendo los endpoints que necesita el frontend
+      -- ¿Qué significa CRUD?
+      -- Trabajando con llamadas GET, POST, PATCH/PUT, DELETE (sin almacenamiento)
+    - ¿Por qué es fundamental realizar validaciones en todos los endpoints?
+    - Serializando la respuesta como la quiere el frontend 
   
+  + Documentación de APIs
+    - ¿En qué consiste documentar una API?
+    - ¿Por qué es importante documentar una API?
+      -- Relevancia para LLMs y agentes
+    - Buenas prácticas en documentación de APIs
+      -- Para humanos
+      -- Para agentes
+    - Documentación en FastAPI
+
 
 ### Thinking Framework
 
@@ -2864,11 +2339,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - Sin BD
 
-## Week 8 — Day 22
+## Week 8 — Day 23
 
 ### Content
 
-Skill 19: Almacenar información desde el backend
+Skill 20: Creating basic Agents integrating LLMs with APIs
+
 
 ### Thinking Framework
 
@@ -2887,11 +2363,112 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 22
+## Week 8 — Day 23
 
 **Status:** Approved
 
 ### Teoría
+
+> Teoría:
+
++ Introducción a agentes
+  - Qué es un agente
+    -- LLMs vs Agentes
+  - ¿cómo funciona un agente?
+    -- Pensamos en: input → LLM → respuesta
+    -- Pero el agente hace: input → loop → decisión → acción → nueva información → loop
+  - Componentes básicos de un agente (breve referencia en pseudo código): 
+    -- Objetivo
+    -- Modelo (LLM)
+    -- Memoria / contexto
+    -- Tools
+    -- Agent Loop
+
+  
++ Creación de un agente de IA básico en Python
+  - Qué es un Agent Loop?
+    -- Ciclo básico: Observe, Think / Reason, Act, Update, Repeat
+  - ¿Qué son las Tools? 
+    -- Cómo el agente decide usar una Tool
+  - Estructura básica de una tool
+    -- Instrucciones al agente (Observe, Decide, Act...)
+    -- Lógica del método
+  - Instrucciones para el agente (Agent Prompting)
+    -- Observe
+    -- Decide
+    -- Act
+  - Buenas prácticas
+  - Errores comunes
+
+
+### Thinking Framework
+
+#### Thinking Development
+- Pensar en ciclos, no en respuestas únicas
+- El agente observa, decide, actúa, vuelve a observar
+- LLM es razonamiento, Código es ejecución, Tool es acción, Loop es control
+- Un agente siempre debe tener
+- ¿Cuál es el objetivo del agente?
+- ¿Qué tools necesita?
+- ¿Qué información debe observar?
+- ¿Cuándo termina el proceso?
+- ¿Qué errores pueden ocurrir?
+
+#### Best Practices
+- Mantener tools simples y específicas
+- Descripciones claras de las tools
+- Validar siempre los inputs
+- Limitar el número de iteraciones del loop
+- Registrar decisiones del agente (logging)
+- Diseñar tools deterministas
+- 2-4 tools
+
+#### Patterns
+- Observe → Decide → Act
+- Tool selection (El agente elige entre varias herramientas)
+- Result injection (Después de ejecutar una tool, el resultado vuelve al contexto)
+
+#### Anti-patterns
+- Poner demasiada lógica dentro de la tool. 
+- Tools ambiguas
+- Demasiadas tools
+- Prompt demasiado complejo
+- No definir condición de finalización
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 8 — Day 24
+
+### Content
+
+Skill 21: Almacenar información desde el backend
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 8 — Day 24
+
+**Status:** Approved
+
+### Teoría
+
+> Teoría:
 
   + Trabajar con ficheros en Python
     - ¿Qué es un archivo? Datos persistentes en disco.
@@ -2902,6 +2479,7 @@ _Not introduced in this learnpack_
     - ¿Qué es un archivo CSV?
       -- Crear una lista de diccionarios a raíz de un CSV
       -- Volcar una lista de diccionarios en un CSV
+
 
 ### Thinking Framework
 
@@ -2927,25 +2505,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 22
-
-**Status:** Approved
+## Week 9 — Day 25
 
 ### Content
 
-> Proyectos: 
-+ Importador simple:
-1. Lee students.csv
-2. Genera report.json con:
-  - total estudiantes
-  - promedio score
-  - top 3 scores
-  - lista de errores (filas mal formadas)"
+Skill 22: Alimentar datos estructurados a partir de archivos
 
-+ Exportador simple
-1. Obtiene un listado de productos a partir de una BD
-  - nombre, marca, código, precio, unidades disponibles
-2. Generar un CSV para exportar
 
 ### Thinking Framework
 
@@ -2964,36 +2529,14 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 23
-
-### Content
-
-Skill 20: Alimentar datos estructurados a partir de archivos
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 8 — Day 23
+## Week 9 — Day 25
 
 **Status:** Approved
 
 ### Teoría
 
-  + Almacenando información para el frontend (en cualquier lugar)
+> Teoría: 
+  + Almacenando información (en cualquier lugar)
     - ¿Qué es una base de datos? Como concepto general
     - ¿Por qué es necesario el almacenamiento de datos?
     - Cómo guardar datos de forma simple con TinyDB y el método .save()  
@@ -3001,7 +2544,8 @@ _Not introduced in this learnpack_
       -- insert, search, delete, update
     - Cargando datos iniciales en mi aplicación
       -- Cómo crear un seeder bastante simple
-      -- Ejecutar seeders con pipenv run 
+      -- Ejecutar seeders con pipenv run
+
 
 ### Thinking Framework
 
@@ -3025,37 +2569,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No queremos dar SQL todavia, pero si poder persistir datos en una BD
 
-## Week 8 — Day 23
-
-**Status:** Proyecto
-pendiente
-aprobación
-
-### Proyecto
-
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 8 — Day 24
+## Week 9 — Day 26
 
 ### Content
 
-Skill 21: Implementar mecanismos de autenticación
+Skill 23: Implementar mecanismos de autenticación
+
 
 ### Thinking Framework
 
@@ -3074,12 +2593,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 24
+## Week 9 — Day 26
 
 **Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + Autenticación
     - ¿Qué es la autenticación y por qué es importante?
       -- Resaltar la importancia de encriptar una contraseña
@@ -3114,6 +2634,7 @@ _Not introduced in this learnpack_
       -- Mantener la SECRET_KEY en ENV VARS, no en el código ni en el repositorio
     - Cómo implementar un flujo de autenticación con JWT + FastAPI + Contraseñas Cifradas + TinyDB
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -3135,16 +2656,16 @@ _Not introduced in this learnpack_
 - Rutas protegidas
 
 #### Anti-patterns
-- Introducir datos sensibles en Payload: contraseñas, tokens de sesión, o cualquier dato que no deba ser público. 
+- Introducir datos sensibles en Payload: contraseñas, tokens de sesión, o cualquier dato que no deba ser público.
 
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 24
-
-**Status:** Approved
+## Week 9 — Day 27
 
 ### Content
+
+Skill 24: Creating authentication flows
 
 
 ### Thinking Framework
@@ -3164,35 +2685,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 25
-
-### Content
-
-Skill 22: Creating authentication flows
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 8 — Day 25
+## Week 9 — Day 27
 
 **Status:** Approved
 
 ### Teoría
 
+> Teoría:
    + Sesiones en el Frontend
      - ¿Qué es una sesión? ¿Para qué sirve?
      - Mecanismos vs. Almacenamiento: Diferencia entre el protocolo (CÓMO me identifico) y la persistencia (DÓNDE guardo la credencial).
@@ -3210,6 +2709,7 @@ _Not introduced in this learnpack_
        -- Eliminar token
        -- Redirigin a login
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -3218,7 +2718,7 @@ _Not introduced in this learnpack_
 - Identificar el flujo de la autenticación que deseas manejar o cual se adapta mejor al requerimiento (forma de autenticar la cuenta del usuario o recuperar contraseña, etc.)
 
 #### Best Practices
-- Al dar feedback al usuario, evitar "dar información de más" por ejemplo: usuario no registrado o contraseña invalida, en vez de usuario o contraseña invalida. 
+- Al dar feedback al usuario, evitar "dar información de más" por ejemplo: usuario no registrado o contraseña invalida, en vez de usuario o contraseña invalida.
 
 #### Patterns
 - Verificación Real: Intentar usar el token en una llamada a la API. Si devuelve 401, borrarlo y mandar al usuario al Login.
@@ -3248,20 +2748,17 @@ _Not introduced in this learnpack_
 
 - Uso en Producción: Enviar usuario y contraseña en cada petición (Basic Auth) sin HTTPS.
 
-- No enviar datos sensibles en el payload del token 
+- No enviar datos sensibles en el payload del token
 
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 25
-
-**Status:** Proyecto
-pendiente
-aprobación
+## Week 10 — Day 28
 
 ### Content
 
-> Proyecto: Utilizar el proyecto del día anterior. Crear un flujo de autenticación en el frontend y conectarlo con el backend desarrollado en la clase anterior.
+Skill 25: Managing errors
+
 
 ### Thinking Framework
 
@@ -3280,35 +2777,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 7 — Day 26
-
-### Content
-
-Skill 23: Managing errors
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 7 — Day 26
+## Week 10 — Day 28
 
 **Status:** Approved
 
 ### Teoría
 
+> Teoría:
     
   + Error handling: La aplicación no debe explotar
     - Try/catch/finally
@@ -3322,7 +2797,8 @@ _Not introduced in this learnpack_
       -- Comunicar errores al usuario de forma adecuada (no entregar error técnico, explicar qué puede hacer)
 
   + Debugging with Python
-    - 
+    -
+
 
 ### Thinking Framework
 
@@ -3331,7 +2807,7 @@ _Not introduced in this learnpack_
 
 - Saber gestionar adecuadamente los errores de código
 
-- Comunicar el error o estado de la aplicación en términos adecuados según tipo el usuario. 
+- Comunicar el error o estado de la aplicación en términos adecuados según tipo el usuario.
 
 #### Best Practices
 _Not introduced in this learnpack_
@@ -3359,13 +2835,12 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 7 — Day 26
-
-**Status:** Approved
+## Week 10 — Day 29
 
 ### Content
 
->
+Skill 26: Implementar pruebas unitarias para validar las funcionalidades
+
 
 ### Thinking Framework
 
@@ -3384,35 +2859,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 27
-
-### Content
-
-Skill 23: Implementar pruebas unitarias para validar las funcionalidades
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 9 — Day 27
+## Week 10 — Day 29
 
 **Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + Introducción al testing
     - ¿Por qué probar un código?
     - Tipos de pruebas más conocidas:
@@ -3432,6 +2885,7 @@ _Not introduced in this learnpack_
     - Frameworks de testing más conocidos: Jest, Mocha/Chai, Vitest
     - Pruebas unitarias con Jest
     - Planificación de pruebas unitarias
+
 
 ### Thinking Framework
 
@@ -3455,20 +2909,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 27
-
-**Status:** Proyecto
-pendiente
-aprobación
+## Week 10 — Day 30
 
 ### Content
 
-> Proyecto: Al proyecto de autenticación en la API, agregarle las pruebas unitarias de sus endpoints
- 1. Plantear el problema a la IA e identificar los casos de estudio, los casos límite y aspectos a tener en cuenta
- 2. Generar las pruebas unitarias para los distintos endpoints según sus casos de uso y casos límite
- 3. Verificar que todas las pruebas se ejecutan correctamente y que el código funciona adecuadamente.
- + Actividad extra:
-    - Revisar todos los proyectos de backend anteriores y aplicar pruebas unitarias
+Skill 27.1: Consultar tablas y gestionar filas en bases de datos
+
 
 ### Thinking Framework
 
@@ -3487,35 +2933,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 28
-
-### Content
-
-Skill 24.1: Consultar tablas y gestionar filas en bases de datos
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 10 — Day 28
+## Week 10 — Day 30
 
 **Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + Bases de datos (solo informativo)
     - ¿Qué es una base de datos?
     - ¿Para qué sirven las bases de datos?
@@ -3560,6 +2984,7 @@ _Not introduced in this learnpack_
     - ¿Cómo gestionar una BD en Supabase?
     - ¿Cómo hacer consultas a una BD de Supabase desde mi backend?
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -3584,17 +3009,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No IA para la generación de Consultas SQL
 
-## Week 10 — Day 28
-
-**Status:** Proyecto
-pendiente
-aprobación
+## Week 11 — Day 31
 
 ### Content
 
-> Proyecto en clases:
-  Se provee un SQL que poble una BD con un conjunto de datos para que se busquen filtren filas y se extraigan ciertos datos.
-  Luego, al estilo de CMD Challenge, deberán borrar una fila en específico, actualizar otra...
+Skill 27.2: Consultar tablas relacionadas con SQL
+
 
 ### Thinking Framework
 
@@ -3613,35 +3033,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 29
-
-### Content
-
-Skill 24.2: Consultar tablas relacionadas con SQL
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 10 — Day 29
+## Week 11 — Day 31
 
 **Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + Gestionando tablas relacionadas con SQL
     - ¿Qué es una relación en bases de datos?
     - ¿Qué es un diagrama entidad/relación?
@@ -3656,6 +3054,7 @@ _Not introduced in this learnpack_
       -- OUTER JOIN
     - Qué es la normalización y por qué es aconsejable
     - (Solo informativo) ¿Cómo funciona un borrado en cascada?
+
 
 ### Thinking Framework
 
@@ -3679,17 +3078,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 29
-
-**Status:** Proyecto
-pendiente
-aprobación
+## Week 11 — Day 32
 
 ### Content
 
-> Práctica: Ejercicios de modelados con diagram.4geeks.com
-> Proyecto en clases:
-  Se provee un SQL que poble una BD con diversas tablas relacionadas entre sí con un conjunto de datos para trabajar con ellas
+Skill 28: Trabajar con datos estructurados de tipo objeto en Python
+
 
 ### Thinking Framework
 
@@ -3708,35 +3102,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 30
+## Week 11 — Day 32
 
-### Content
-
-Skill 25: Trabajar con datos estructurados de tipo objeto en Python
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 10 — Day 30
-
-**Status:** Approved
+**Status:** Teoría pendiente aprobación
 
 ### Teoría
 
+> Teoría:
   + Programación Orientada a Objetos:
     - ¿Qué es una clase?
     - Clases vs Objetos
@@ -3754,6 +3126,7 @@ _Not introduced in this learnpack_
     - Acceso a propiedades
     - Métodos
     - Manipulación de objetos
+
 
 ### Thinking Framework
 
@@ -3794,11 +3167,12 @@ Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se d
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 31
+## Week 11 — Day 33
 
 ### Content
 
-Skill 26: Relacionando objetos y tablas utilizando un ORM
+Skill 29: Relacionando objetos y tablas utilizando un ORM
+
 
 ### Thinking Framework
 
@@ -3817,12 +3191,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 31
+## Week 11 — Day 33
 
-**Status:** Approved
+**Status:** Teoría pendiente aprobación
 
 ### Teoría
 
+> Teoría:
   + Object-Relational Mapping: El traductor universal
     - ¿Qué es un ORM?
       -- El ORM no exime el dconocimiento sobre SQL
@@ -3847,10 +3222,11 @@ _Not introduced in this learnpack_
     - ¿Cómo se crean y usan las migraciones en FastAPI?
     - ¿Cuándo usarlas y cuándo no usarlas?
 
+
 ### Thinking Framework
 
 #### Thinking Development
-_Not introduced in this learnpack_
+- Entender que una tabla en la base de datos es equivalente a una clase en Python: la clase User representa la tabla users, y cada instancia de esa clase (user1, user2) representa una fila distinta con sus propios datos.
 
 #### Best Practices
 _Not introduced in this learnpack_
@@ -3864,17 +3240,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 31
-
-**Status:** Proyecto
-pendiente
-aprobación
+## Week 12 — Day 34
 
 ### Content
 
-> Proyecto 1: API con conexión a BD haciendo consultas SQL (consultas + Pydantic)
-  - Obtener 
-> Proyecto 2: Replicar la misma API y conectarla a una BD usando ORM (SQLModel)
+Skill 30: Construyendo mi aplicación en contenedores
+
 
 ### Thinking Framework
 
@@ -3893,11 +3264,14 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 32
+## Week 12 — Day 34
 
 ### Content
 
-Skill 27: Diseñar la arquitectura del backend
+> Teoría:
+  + Contenedores
+    - ¿Qué es un contenedor?
+
 
 ### Thinking Framework
 
@@ -3916,55 +3290,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 32
-
-**Status:** Approved
-
-### Teoría
-
-  + Arquitecturas más comunes en el backend
-    - MVC
-    - Arquitectura en capas (introducción a la arquitectura hexagonal, muy light)
-    - Serverless
-
-  + Web App Architecture optimized for front-end user traffic
-    - Caching
-      -- cache en memoria (app)
-      -- cache distribuida (Redis)
-      -- cache HTTP/CDN (si aplica)
-    - Serializers
-      -- validación de inputs (prompt, parámetros)
-      -- outputs grandes (streaming, chunking)
-      -- formatos (JSON, multipart)
- 
-  + Modularización en Python: PEP8
-    - Imports : absoluta y relativa (__init__.py)
-    - Importación con ali (as)
-    - ¿Cómo evitar importaciones circulares?
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 11 — Day 33
+## Week 12 — Day 22
 
 ### Content
 
 Skill 28: Cómo optimizar el almacenamiento para reporte, integridad, consulta o transporte
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -3982,11 +3314,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 33
+## Week 12 — Day 22
 
-**Status:** Approved
+**Status:** Teoría pendiente aprobación
 
 ### Teoría
+
+Teoria: 
 
 - Elegir el engine de base de datos (SQL o NoSQL)
 
@@ -3996,7 +3330,8 @@ _Not introduced in this learnpack_
      -  Los reportes estan normalizados para velocidad de consulta y usualmente no se usan BD relacionales porque estan optimizadas para escritura
      - Las acciones del usuario y sus consecuencias son escrituras constantes, se almacenan en 3ra forma normal para evitar redundancia y garantizar integridad
 
- - Tabla comparativa entre los modelos más grandes del mundo (Dynamo, MySQL, Postgres, MS Server, BigQuery, Redis, Mongo, etc) 
+ - Tabla comparativa entre los modelos más grandes del mundo (Dynamo, MySQL, Postgres, MS Server, BigQuery, Redis, Mongo, etc)
+
 
 ### Thinking Framework
 
@@ -4015,12 +3350,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 34
+## Week 12 — Day 23
 
 ### Content
 
 Skill 29: Collecting telemetry and context-related info from the user and your application
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -4038,12 +3374,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 34
+## Week 12 — Day 23
 
-**Status:** Approved
+**Status:** Teoría pendiente aprobación
 
 ### Teoría
 
+> Teoría:
 + Entendiendo la telemetría desde el frontend
   - ¿Qué es la telemetría? ¿Por qué es importante y útil?
   - ¿Qué datos almacenar? (categorías mínimas)
@@ -4099,6 +3436,7 @@ _Not introduced in this learnpack_
   - Sampling: performance/verbose logs con muestreo (p.ej. 10%).
   - Ambientes: dev vs prod (no mezclar).
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -4140,11 +3478,12 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 35
+## Week 12 — Day 24
 
 ### Content
 
 Skill 30: Anwsering front end telemetry requests
+
 
 ### Thinking Framework
 
@@ -4163,9 +3502,9 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 35
+## Week 12 — Day 24
 
-**Status:** Approved
+**Status:** Teoría pendiente aprobación
 
 ### Content
 
@@ -4173,7 +3512,8 @@ _Not introduced in this learnpack_
 - Batch vs stream
       - Processing a stream (atomic activity)
       - Procesing a batch (big chunks)
-- Throttling 
+- Throttling
+
 
 ### Thinking Framework
 
@@ -4192,12 +3532,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 36
+## Week 12 — Day 25
 
 ### Content
 
 Skill 31: Manejar datasets con Pandas
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -4215,11 +3556,11 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 36
+## Week 12 — Day 25
 
-**Status:** Approved
+**Status:** Teoría pendiente aprobación
 
-### Content
+### Teoría
 
 > Teoría: (Reutilizar contenido de Data Science)
   + Introducción a Numpy
@@ -4229,6 +3570,7 @@ _Not introduced in this learnpack_
     - Nuevas columnas
     - Datos nulos
     - Limpieza y reporte
+
 
 ### Thinking Framework
 
@@ -4247,37 +3589,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No loops, solo acumuladores
 
-## Week 12 — Day 36
-
-**Status:** Approved
-
-### Content
-
-> Prácticas de numpy y pandas creadas en DS.
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 13 — Day 37
+## Week 13 — Day 26
 
 ### Content
 
 Skill 32: Building a report from the telemetry or user data
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -4295,17 +3613,20 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 37
+## Week 13 — Day 26
 
-**Status:** Approved
+**Status:** Teoría pendiente aprobación
 
 ### Teoría
+
+Teoria:
 
 - Construyendo el report a partir de un cronjob (introduccion a background processing)
 - Introduccion a data pipelines (el pipeline de datos mas sencillo de todos)
 -  Modificar los datos que teniamos almacenados precariamente en el backend y montar un reporte, por ejemplo: cuantos TODOs completa el usuario semanalmente por día. 
 - Agregación, agrupamiento y métrica
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -4323,12 +3644,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 38
+## Week 13 — Day 27
 
 ### Content
 
 Skill 33: Background processing
 
+
 ### Thinking Framework
 
 #### Thinking Development
@@ -4346,9 +3668,9 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 38
+## Week 13 — Day 27
 
-**Status:** Approved
+**Status:** Teoría pendiente aprobación
 
 ### Content
 
@@ -4363,153 +3685,8 @@ Triggers for background processing:
 - 3rd part triggered background processing
 - Chained processing (internal workflow or data pipeline)
 - Observability : poder saber lo que pasó
-- Durability: que la "función" no se detenga en su ejecución, si no cuando deba detenerse. 
+- Durability: que la "función" no se detenga en su ejecución, si no cuando deba detenerse.
 
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 17 — Day #REF!
-
-### Content
-
-Docker
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 13 — Day 39
-
-### Content
-
-Skill x: Predictions Model 
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 13 — Day 39
-
-**Status:** Approved
-
-### Content
-
-- Entrenamiento de un clasificador (predice una categoría)
-- Regresión (predice un número) 
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 14 — Day 40
-
-### Content
-
-Building a data pipeline for create a dataset for an LLM or ML Model to use
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 14 — Day 40
-
-**Status:** Approved
-
-### Content
-
-0. Collect
-Create a source scrapping, api fetching, mining, etc.
-
-1. Ingest
-
-Bring data from a source into the pipeline.
-Patterns: batch, streaming, file drops.
-
-2. Transform
-
-Modify data so it becomes useful.
-Includes: cleaning, validation, normalization, enrichment, deduplication, business rules.
-
-3. Load
-
-Persist the transformed data into a target system.
-Targets: lake, warehouse, analytics DB, feature store.
-
-4. Orchestrate
-
-Coordinate the steps and define dependencies.
-Includes: scheduling, DAGs, retries, notifications.
-
-5. Monitor
-
-Track health, quality, freshness, and failures.
-Includes: metrics, lineage, alerts, SLAs, anomaly detection.
 
 ### Thinking Framework
 
