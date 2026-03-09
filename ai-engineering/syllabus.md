@@ -32,7 +32,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría: 
 + Introducción a 4Geeks Academy
   - Importancia del prework (crear nuevo)
   - Intro a la plataforma de 4Geeks.com (crear nuevo)
@@ -113,7 +112,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría: 
 
 + Introducción a HTML y CSS (Se dejará lo actual)
 
@@ -175,7 +173,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
 
 + Introducción a la programación (Javascript) (Referencia rápida a los conceptos)
   - Pensamiento lógico-matemático
@@ -271,7 +268,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
 
 + Introducción a la IA generativa
   - ¿Qué es un LLM?
@@ -339,7 +335,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
 
 + Using Coding agents 
   - ¿Cómo funciona la IA en desarrollo?
@@ -487,7 +482,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Web app layouts
     - ¿Qué es el layout? 
     - Formas de navegación: Sidebar, topbar, bottombar, etc...
@@ -579,7 +573,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Formularios
     - Etiquetas principales
       - Inputs de texto (text, email, autocomplete)
@@ -674,7 +667,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Sistema de archivos (Jerarquía)
     - Rutas relativas vs Rutas absolutas
     - Entry point
@@ -739,7 +731,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Git para devs
     - Cómo funciona
     - Cómo saber dónde estoy (concepto de HEAD)
@@ -828,7 +819,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + ¿Qué es la programación? -> Darle instrucciones a una máquina
    - Pensamiento Algorítmico -> Escribir en pseudocódigo.
    - Variables 
@@ -1106,7 +1096,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Arreglos/Colecciones de elementos (arrays)
     - ¿Qué es un array?
     - ¿Cómo definir un array? (Sintaxis)
@@ -1195,7 +1184,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Objetos: 
     - Concepto de modelos vs objetos
     - Propiedad vs Valor
@@ -1263,7 +1251,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
 
   + Representación de objetos en TS: 
     - Interfaces vs Objetos literales 
@@ -1346,7 +1333,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría: 
   + Estrategias en la comunicación con la IA (Context & Anatomy):
     - Context Engineering
     - Word efficiency  
@@ -1442,7 +1428,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
  + ¿Qué son las reglas para una IA de programación?
    - Alcances de las configuraciones y reglas de contextos: User vs Project. ¿Qué reglas son de preferencia personal y cuáles son de necesidad del proyecto?
    - Aplicación de reglas: description, globs, alwaysApply
@@ -1528,7 +1513,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
 
   + Arquitectura de Single Page Applications (SPA) y Empaquetado.
      - Building or compiling your app
@@ -1809,7 +1793,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   
   + Comunicarse con APIs externas: 
     - ¿Qué son las APIs y cómo funcionan?
@@ -2012,7 +1995,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   - (Mención a Skills 6 y 7)
 
   + Introducción al backend
@@ -2120,7 +2102,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   - (Hacer mención a Skill 8.1)
 
   + Funciones Python
@@ -2213,7 +2194,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Arquitecturas más comunes en el backend
     - MVC
     - Arquitectura en capas (introducción a la arquitectura hexagonal, muy light)
@@ -2282,9 +2262,6 @@ _Not introduced in this learnpack_
 **Status:** Approved
 
 ### Teoría
-
-> Teoría: 
-  (Referencia a la Skill 14)
 
   + Building a Python API to serve the frontend
     - ¿Qué es una API? (refrescamiento de conocimientos)
@@ -2369,7 +2346,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
 
 + Introducción a agentes
   - Qué es un agente
@@ -2468,7 +2444,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
 
   + Trabajar con ficheros en Python
     - ¿Qué es un archivo? Datos persistentes en disco.
@@ -2535,7 +2510,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría: 
   + Almacenando información (en cualquier lugar)
     - ¿Qué es una base de datos? Como concepto general
     - ¿Por qué es necesario el almacenamiento de datos?
@@ -2599,7 +2573,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Autenticación
     - ¿Qué es la autenticación y por qué es importante?
       -- Resaltar la importancia de encriptar una contraseña
@@ -2691,7 +2664,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
    + Sesiones en el Frontend
      - ¿Qué es una sesión? ¿Para qué sirve?
      - Mecanismos vs. Almacenamiento: Diferencia entre el protocolo (CÓMO me identifico) y la persistencia (DÓNDE guardo la credencial).
@@ -2783,7 +2755,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
     
   + Error handling: La aplicación no debe explotar
     - Try/catch/finally
@@ -2865,7 +2836,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Introducción al testing
     - ¿Por qué probar un código?
     - Tipos de pruebas más conocidas:
@@ -2939,7 +2909,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Bases de datos (solo informativo)
     - ¿Qué es una base de datos?
     - ¿Para qué sirven las bases de datos?
@@ -3039,7 +3008,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Gestionando tablas relacionadas con SQL
     - ¿Qué es una relación en bases de datos?
     - ¿Qué es un diagrama entidad/relación?
@@ -3108,7 +3076,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Programación Orientada a Objetos:
     - ¿Qué es una clase?
     - Clases vs Objetos
@@ -3197,7 +3164,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
   + Object-Relational Mapping: El traductor universal
     - ¿Qué es un ORM?
       -- El ORM no exime el dconocimiento sobre SQL
@@ -3268,7 +3234,6 @@ _Not introduced in this learnpack_
 
 ### Content
 
-> Teoría:
   + Contenedores
     - ¿Qué es un contenedor?
 
@@ -3380,7 +3345,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría:
 + Entendiendo la telemetría desde el frontend
   - ¿Qué es la telemetría? ¿Por qué es importante y útil?
   - ¿Qué datos almacenar? (categorías mínimas)
@@ -3562,7 +3526,6 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría: (Reutilizar contenido de Data Science)
   + Introducción a Numpy
 
   + Manejo de datasets con Pandas
