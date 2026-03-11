@@ -34,15 +34,15 @@ Collect only the inputs needed for the detected scope. Never ask for inputs that
 
 **If README needs to be generated**, collect:
 
-| Input                | Description                             | Default                                                            |
-| -------------------- | --------------------------------------- | ------------------------------------------------------------------ |
-| `milestone_number`   | Milestone number (e.g., `6`)            | — Must ask —                                                       |
-| `milestone_topic`    | Core skill(s) this milestone teaches    | — Must ask —                                                       |
-| `milestone_position` | `early`, `mid`, or `late` in the course | — Must ask —                                                       |
-| `prior_milestones`   | What students have already built        | — Must ask —                                                       |
-| `tech_stack`         | Technologies required                   | — Must ask —                                                       |
-| `template_repo`      | Starter repo URL                        | `https://github.com/4GeeksAcademy/ai-engineering-project-template` |
-| `authors`            | GitHub username(s)                      | — Must ask —                                                       |
+| Input                | Description                             | Default                                                                    |
+| -------------------- | --------------------------------------- | -------------------------------------------------------------------------- |
+| `milestone_number`   | Milestone number (e.g., `6`)            | — Must ask —                                                               |
+| `milestone_topic`    | Core skill(s) this milestone teaches    | — Must ask —                                                               |
+| `milestone_position` | `early`, `mid`, or `late` in the course | — Must ask —                                                               |
+| `prior_milestones`   | What students have already built        | — Must ask —                                                               |
+| `tech_stack`         | Technologies required                   | — Must ask —                                                               |
+| `template_repo`      | Starter repo URL                        | `https://github.com/4GeeksAcademy/ai-engineering-company-project-template` |
+| `authors`            | GitHub username(s)                      | — Must ask —                                                               |
 
 **If CONTEXT files need to be generated**, collect:
 

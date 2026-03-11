@@ -13,15 +13,15 @@ Generates `README.md` + `README.es.md` for one milestone of a transversal projec
 
 Confirm all inputs before generating. If any are missing, ask for all of them at once — never in multiple rounds.
 
-| Input                | Description                                                               | Default                                                            |
-| -------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| `milestone_number`   | The milestone number (e.g., `6`)                                          | — Must ask —                                                       |
-| `milestone_topic`    | Core skill(s) this milestone teaches (e.g., `Telemetry & Data Pipelines`) | — Must ask —                                                       |
-| `milestone_position` | Position in the course: `early`, `mid`, or `late`                         | — Must ask —                                                       |
-| `prior_milestones`   | What students have already built in previous milestones                   | — Must ask —                                                       |
-| `tech_stack`         | Technologies required (e.g., `FastAPI + PostgreSQL + Next.js`)            | — Must ask —                                                       |
-| `template_repo`      | Starter repo URL students will fork                                       | `https://github.com/4GeeksAcademy/ai-engineering-project-template` |
-| `authors`            | GitHub username(s) for the metadata block                                 | — Must ask —                                                       |
+| Input                | Description                                                               | Default                                                                    |
+| -------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| `milestone_number`   | The milestone number (e.g., `6`)                                          | — Must ask —                                                               |
+| `milestone_topic`    | Core skill(s) this milestone teaches (e.g., `Telemetry & Data Pipelines`) | — Must ask —                                                               |
+| `milestone_position` | Position in the course: `early`, `mid`, or `late`                         | — Must ask —                                                               |
+| `prior_milestones`   | What students have already built in previous milestones                   | — Must ask —                                                               |
+| `tech_stack`         | Technologies required (e.g., `FastAPI + PostgreSQL + Next.js`)            | — Must ask —                                                               |
+| `template_repo`      | Starter repo URL students will fork                                       | `https://github.com/4GeeksAcademy/ai-engineering-company-project-template` |
+| `authors`            | GitHub username(s) for the metadata block                                 | — Must ask —                                                               |
 
 ---
 
@@ -36,7 +36,7 @@ Write in second person, direct professional tone. The company is always "your co
 
 ### The CONTEXT anchor — mandatory
 
-The README must reference `CONTEXT-company.md` (link to https://github.com/4GeeksAcademy/ai-engineeirng-milestone-contexts) in exactly two places:
+The README must reference `CONTEXT-company.md` (link to https://github.com/4GeeksAcademy/ai-engineering-milestone-contexts) in exactly two places:
 
 1. **In the hidden metadata block** — a note before the student starts.
 2. **In the task checklist** — a `⚠️ IMPORTANT` warning that a generic implementation ignoring the context will not be accepted.
@@ -89,7 +89,7 @@ By [@username](https://github.com/username) and [other contributors](https://git
 
 _Estas instrucciones están [disponibles en español](./README.es.md)._
 
-**Before you start**: Read your **[CONTEXT-company.md](https://github.com/4GeeksAcademy/ai-engineeirng-milestone-contexts)** before writing any code — it defines the specific company data, field names, KPIs, and constraints for your implementation.
+**Before you start**: Read your **[CONTEXT-company.md](https://github.com/4GeeksAcademy/ai-engineering-milestone-contexts)** before writing any code — it defines the specific company data, field names, KPIs, and constraints for your implementation.
 
 <!-- endhide -->
 ```
