@@ -1,6 +1,6 @@
 ---
 name: project-solution-file
-description: Define and maintain a canonical solution file per project under reference/ and link it from learn.json via a solution attribute. Use when creating or updating project solutions so students and LLMs can compare their work against a reference implementation.
+description: Define and maintain a canonical solution file per project under .learn/ and link it from the project's .learn/learn.json via a solution attribute. Use when creating or updating project solutions so students and LLMs can compare their work against a reference implementation.
 ---
 
 # Project Solution File
@@ -11,24 +11,24 @@ Use this skill whenever:
 
 - You are creating a new project that will be evaluated (milestones, guided or collaborative projects, etc.).
 - You are adding or updating a reference solution for an existing project.
-- You are checking that a project has its solution file properly linked in `learn.json`.
+- You are checking that a project has its solution file properly linked in `.learn/learn.json`.
 
-The goal is for **every project to have exactly one canonical solution file**, stored under the `reference/` folder and linked from `learn.json` via the `solution` attribute, so that:
+The goal is for **every project to have exactly one canonical solution file**, stored under the `.learn/` folder (together with `learn.json`) and linked from `learn.json` via the `solution` attribute, so that:
 
 - Students can compare their submissions with the key aspects covered by the reference solution.
 - An LLM can use the reference to evaluate and contrast a student's submission.
 
 ## General Conventions
 
-- **Location of the solution file**: always inside a `reference/` folder at the project’s root.
-  - Example: `projects/ai-engineering-projects/ai-eng-milestone-coding-fundamentals/reference/solution.html`
+- **Location of the solution file**: always inside a `.learn/` folder at the project’s root.
+  - Example: `projects/ai-engineering-syllabus/ai-eng-milestone-coding-fundamentals/.learn/solution.html`
 - **Linking from `learn.json`**: add a `solution` attribute with the path relative to the project root.
-  - Example inside the project’s `learn.json`:
-    - `"solution": "reference/solution.html"`
-    - `"solution": "reference/solution.md"`
-    - `"solution": "reference/solution.py"`
+  - Example inside the project’s `.learn/learn.json`:
+    - `"solution": ".learn/solution.html"`
+    - `"solution": ".learn/solution.md"`
+    - `"solution": ".learn/solution.py"`
 - **One main solution file per project**:
-  - If additional context is required (e.g., auxiliary files), keep those in `reference/` as well and link them from the main file (HTML or MD).
+  - If additional context is required (e.g., auxiliary files), keep those in `.learn/` as well and link them from the main file (HTML or MD).
 - **Language**: The solution file content (comments, explanatory text, prose in `.md`, visible copy in HTML) must **always be in English**, regardless of the project’s README or UI language. Code identifiers and literals follow the project’s requirements; human-readable text in the solution is English-only.
 
 ## Allowed Types of Solution Files
@@ -51,7 +51,7 @@ The goal is for **every project to have exactly one canonical solution file**, s
 
 **Recommended path**:
 
-- `reference/solution.html`
+- `.learn/solution.html`
 
 ### 2. Solution as a code (`.py`, `.js`, `.jsx`, `.ts` or `.tsx`)
 
@@ -77,7 +77,7 @@ The goal is for **every project to have exactly one canonical solution file**, s
 
 **Recommended path**:
 
-- `reference/solution.py` or `reference/solution.ts` accordingly.
+- `.learn/solution.py` or `.learn/solution.ts` accordingly.
 
 ### 3. Solution as an Explanatory Document (`.md`)
 
@@ -106,17 +106,17 @@ The goal is for **every project to have exactly one canonical solution file**, s
 
 **Recommended path**:
 
-- `reference/solution.md`
+- `.learn/solution.md`
 
 ## Steps to Create or Update a Project Solution
 
 Always follow this workflow:
 
 1. **Identify the project**
-   - Locate the project’s root folder (e.g., `projects/ai-engineering-projects/ai-eng-milestone-coding-fundamentals/`).
+   - Locate the project’s root folder (e.g., `projects/ai-engineering-syllabus/ai-eng-milestone-coding-fundamentals/`).
 
-2. **Check or create `reference/`**
-   - If it doesn’t exist, create a `reference/` folder at the root of the project.
+2. **Check or create `.learn/`**
+   - If it doesn’t exist, create a `.learn/` folder at the root of the project (this is where `learn.json` and the solution file live).
 
 3. **Choose the solution file type**
    - If the main deliverable is a web page or UI → **`solution.html`**.
@@ -127,7 +127,7 @@ Always follow this workflow:
      - Include partial examples (HTML, Python, or TypeScript) as sections.
 
 4. **Create the solution file**
-   - Place the file in `reference/` with one of these names:
+   - Place the file in `.learn/` with one of these names:
      - `solution.html`
      - `solution.md`
      - `solution.py`
@@ -137,11 +137,11 @@ Always follow this workflow:
      - It is readable and sufficiently complete as a reference for students and LLMs.
 
 5. **Link the solution in `learn.json`**
-   - Open the project’s `learn.json`.
+   - Open the project’s `.learn/learn.json`.
    - Add or update the `"solution"` attribute in the root object, or wherever project content metadata is located.
    - Use a **path relative to the project root**, for example:
-     - `"solution": "reference/solution.html"`
-     - `"solution": "reference/solution.md"`
+     - `"solution": ".learn/solution.html"`
+     - `"solution": ".learn/solution.md"`
    - Check that there aren’t multiple `solution` attributes with different paths for the same project; if so, unify them.
 
 6. **Review consistency**
@@ -165,8 +165,8 @@ Always follow this workflow:
     - To check if a student’s submission meets the minimal criteria.
     - To provide feedback based on the reference (without requiring exact text match).
   - When using this skill as an agent:
-    - Read the `README`, milestone context, and `learn.json` first.
-    - Use the `reference/solution.*` file as the main reference for:
+    - Read the `README`, milestone context, and `.learn/learn.json` first.
+    - Use the `.learn/solution.*` file as the main reference for:
       - Validating the submission covers key aspects.
       - Suggesting improvements aligned with that solution.
 
@@ -174,10 +174,10 @@ Always follow this workflow:
 
 Before considering the project’s solution configuration as complete, check:
 
-- [ ] Is there a `reference/` folder at the project root?
-- [ ] Is there exactly one main solution file (`solution.html`, `solution.md`, `solution.py`, or `solution.ts`)?
+- [ ] Is there a `.learn/` folder at the project root (with `learn.json` inside)?
+- [ ] Is there exactly one main solution file (`solution.html`, `solution.md`, `solution.py`, or `solution.ts`) inside `.learn/`?
 - [ ] Does the solution file cover all aspects to be evaluated as described in the README/context?
-- [ ] Does `learn.json` have a `"solution"` attribute pointing to `reference/solution.*`?
+- [ ] Does `.learn/learn.json` have a `"solution"` attribute pointing to `.learn/solution.*`?
 - [ ] Is the `solution` attribute’s path correct and relative to the project root?
 - [ ] Is the solution clear and useful as a reference for students and LLMs?
 - [ ] Is all human-readable content in the solution (comments, prose, copy) in English?
