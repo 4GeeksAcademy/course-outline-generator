@@ -5,7 +5,7 @@ description: Generates pedagogical guidelines (lineamientos) for the theoretical
 
 # 4Geeks Academy — Module Guidelines (Lineamientos) Generator
 
-This skill generates **two guideline texts per skill/module** for 4Geeks Academy: one aimed at **students** and one at **professors**. They frame the theoretical and practical content of each skill and connect it to the module project.
+This skill generates **two guideline texts per skill/module** for 4Geeks Academy: one aimed at **students** and one at **professors**. They frame the theoretical and practical content of each skill and connect it to the module project. **All outputs must be returned in Markdown format**, following the structures defined below.
 
 ---
 
@@ -56,7 +56,7 @@ Before generating, confirm you have (or ask for) the following. If any are missi
 
 ## Output: Two Texts per Skill
 
-Always produce **two distinct texts** for the same skill.
+Always produce **two distinct texts** for the same skill, both formatted in valid Markdown.
 
 ### 1. Guidelines for Students (Lineamientos para estudiantes)
 
@@ -79,13 +79,23 @@ Always produce **two distinct texts** for the same skill.
    - Experiment beyond minimum instructions
    - Ask for feedback early (from instructor and peers) on clarity and good practices
 
-**Length:** Short version ~80–120 words; extended version ~150–220 words. Prefer the short version unless the user asks for "extended" or "detailed" student guidelines.
+**Length:** ~80–150 words **per language**. Keep it short, concrete and motivating.
 
-**Template (Spanish — adapt to English if `language: en`):**
+**Output structure — always deliver student guidelines in both languages, in Markdown**, using this exact structure:
 
 ```markdown
-En este módulo vas a trabajar la skill de **[NOMBRE DEL SKILL]**. El objetivo es que entiendas **para qué sirve en el mundo real**, practiques con **ejercicios guiados** y lo apliques en un **proyecto concreto**. Al terminar, deberías sentirte capaz de **[2–3 acciones clave]**. No busques hacerlo perfecto a la primera: **prioriza entender los conceptos, preguntar tus dudas y avanzar de forma constante**. El proyecto te ayudará a conectar la teoría con casos reales.
+### Español
+
+<Lineamientos para estudiantes en español>
+
+---
+
+### English
+
+<Student guidelines in English>
 ```
+
+Generate the Spanish version first, then the English version. Both must convey the same learning goals, flow and recommendations; only the language changes.
 
 ---
 
@@ -111,7 +121,7 @@ En este módulo vas a trabajar la skill de **[NOMBRE DEL SKILL]**. El objetivo e
 
 **Length:** ~120–180 words per language. Dense and scannable (short paragraphs or bullet lists).
 
-**Output structure — always deliver professor guidelines in both languages**, using this exact structure:
+**Output structure — always deliver professor guidelines in both languages, in Markdown**, using this exact structure:
 
 ```markdown
 ### Español
@@ -137,9 +147,9 @@ Generate the Spanish version first, then the English version. Both must convey t
    - **Web (HTML/CSS/SEO/accessibility):** semantics, accessibility basics, on-page SEO; justify structural and UX decisions.
    - **Tailwind / dashboards:** utility-first, dashboard structure (KPI / drivers / operational), information design; mobile/responsive.
    - **Programming / TypeScript:** types, control flow, edge cases, small testable functions; TDD-light, tracing algorithms, clarity and correctness.
-4. **Generate student guidelines** — Apply the student template; fill in skill name, key actions, and optional recommendations. Keep tone friendly and motivating. Ensure alignment with the theory and framework from the syllabus.
-5. **Generate professor guidelines** — Apply the professor template; fill in core concepts, practice approach, project link, and evaluation priorities. Base these on the syllabus content for this skill. **Always output professor guidelines in the bilingual structure:** first "### Español" with the Spanish text, then "---", then "### English" with the English text. Both versions must convey the same content.
-6. **Deliver both texts** — Present clearly labeled: "Para estudiantes" and "Para profesor". For "Para profesor", use the structure with ### Español, separator, ### English. If the user requested a specific format (e.g. Markdown section, JSON, copy-paste block), follow it.
+4. **Generate student guidelines** — Apply the student template; fill in skill name, key actions, and optional recommendations. Keep tone friendly and motivating. Ensure alignment with the theory and framework from the syllabus. **Always output student guidelines in the bilingual Markdown structure:** first "### Español" with the Spanish text, then "---", then "### English" with the English text. Both versions must convey the same learning goals and flow.
+5. **Generate professor guidelines** — Apply the professor template; fill in core concepts, practice approach, project link, and evaluation priorities. Base these on the syllabus content for this skill. **Always output professor guidelines in the bilingual Markdown structure:** first "### Español" with the Spanish text, then "---", then "### English" with the English text. Both versions must convey the same content.
+6. **Deliver both texts** — Present clearly labeled: "Para estudiantes" and "Para profesor". For both, use the bilingual structure with ### Español, separator, ### English. If the user requested a specific format (e.g. Markdown section, JSON, copy-paste block), follow it.
 
 ---
 
@@ -180,26 +190,34 @@ Use these as reference when tailoring guidelines; do not copy verbatim unless th
 
 ## Output Format Suggestion
 
-Present the result in a single block. For **Para profesor**, always use the bilingual structure (Español first, then English):
+Present the result in a single block, with both audiences and both languages:
 
 ```markdown
 ## Lineamientos — [Nombre del skill]
 
 ### Para estudiantes
 
-[Texto generado en el idioma solicitado.]
-
-### Para profesor
-
 ### Español
 
-[Lineamientos en español.]
+[Lineamientos para estudiantes en español.]
 
 ---
 
 ### English
 
-[Lineamientos en inglés.]
+[Student guidelines in English.]
+
+### Para profesor
+
+### Español
+
+[Lineamientos para profesor en español.]
+
+---
+
+### English
+
+[Professor guidelines in English.]
 ```
 
-If the user needs integration into a platform (e.g. fields in a CMS or learn.json), offer a compact version or key-value structure (e.g. `guidelines_student`, `guidelines_professor_es`, `guidelines_professor_en`) upon request.
+If the user needs integration into a platform (e.g. fields in a CMS or learn.json), offer a compact version or key-value structure (e.g. `guidelines_student_es`, `guidelines_student_en`, `guidelines_professor_es`, `guidelines_professor_en`) upon request.
