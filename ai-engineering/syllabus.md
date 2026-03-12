@@ -1,376 +1,5 @@
 # Syllabus (Clean Extract)
 
-## Week 0 — Day -6
-
-### Content
-
-Prework - 
-Skill 0.1: Familiarizarse con la plataforma de 4Geeks
-Skill 0.2: Comprender cómo funciona internet
-
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 0 — Day -6
-
-**Status:** Aprobado
-
-### Teoría
-
-+ Introducción a 4Geeks Academy
-  - Importancia del prework (crear nuevo)
-  - Intro a la plataforma de 4Geeks.com (crear nuevo)
-  - Breve intro a Github como perfil profesional en tecnología
-    -- Importancia de conectar la cuenta de Github con la plataforma de 4Geeks.com
-
-+ Herramientas a tu disposición en 4Geeks Academy
-  - Intro a Slack
-  - ¿Qué es LearnPack?
-  - ¿Qué es Rigobot?
-  - ¿Qué es Github Codespaces?
-
-+ Consejos para estudiar con éxito en 4Geeks
-  - ¿Cómo aprovechar al máximo el curso?
-  - ¿Cómo pedir ayuda?
-
-
-+ La Internet
-  - ¿Qué es internet?
-  - Funcionamiento: HTTP y sus verbos (GET, POST, PUT/PATCH, DELETE), Cliente - Servidor
-  - Navegadores
-  - Cómo funciona una web: frontend, backend - APIs, bases de datos, llamadas a APIs (HTTP)
-  - Cómo se transmite una solicitud por Internet
-
-
-### Thinking Framework
-
-#### Thinking Development
-- Aprender cómo aprender en 4Geeks
-- Conocer los componentes principales del proceso de aprendizaje en 4Geeks
-- Conocer los medios y mecanismos para solicitar y obtener ayuda en 4Geeks
-- Saber entregar proyectos en 4Geeks usando Git y Github
-- Concientizar la necesidad del hábito de leer y atender a los detalles
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-- No pedir ayuda
-- No investigar
-- Esperar a que todo me lo expliquen
-- No usar los canales de comunicación
-
-#### Constraints & Limitations
-- No IA
-
-## Week 0 — Day -5
-
-### Content
-
-Prework - 
-Skill 0.3: Conocer los fundamentos de HTML, CSS y Git para entregar un primer proyecto
-
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 0 — Day -5
-
-**Status:** Aprobado
-
-### Teoría
-
-
-+ Introducción a HTML y CSS (Se dejará lo actual)
-
-+ ¿Cómo entregar tus proyectos en 4Geeks? 
-  (Esto ya existe pero requiere revisión: mejorar organización) 
-  - Breve reseña sobre GitHub y Git, de forma poco técnica
-  - (Esto no existe) Esenciales de Github y Git para entregar proyectos
-    -- git add, git commit, git push
-
-
-### Thinking Framework
-
-#### Thinking Development
-- Entender flujos (http es movimiento de información y hay un objetivo para ese movimiento, un flujo). Esto incluye , git, internet, algoritmos, etc.  
-- Comprender los principales componentes de la comunicación en Internet
-- Conocer los principales elementos de un sitio web
-- Familiarizarse con algunos de los principales conceptos del programa de estudios
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-- No IA
-
-## Week 0 — Day -4 y -3
-
-### Content
-
-Prework - 
-Skill 0.4: Conocer y aplicar los fundamentos de la programación
-
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 0 — Day -4 y -3
-
-**Status:** Aprobado
-
-### Teoría
-
-
-+ Introducción a la programación (Javascript) (Referencia rápida a los conceptos)
-  - Pensamiento lógico-matemático
-  - Algoritmos
-  - Variables
-  - Condiciones
-  - Bucles
-  - Cómo representar listados en JavaScript (Arrays)
-  - Cómo objetos en JavaScript (Literal Objects)
-
-
-### Thinking Framework
-
-#### Thinking Development
-- Pensamiento lógico - matemático, algoritmos. 
-- Concientizar la necesidad del hábito de leer y atender a los detalles 
-- Reconocer la importancia de desarrollar la autonomía en la resolución de problemas
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-- Plantear la solución antes que el código
-- Divide y venceras. Dividir un problema grande en subproblemas más pequeños del mismo tipo, resolver cada uno, y luego combinar las soluciones.
-- Clean code
-
-#### Anti-patterns
-Algoritmos: 
-- Fijación en la Sintaxis: Centrarse únicamente en recordar la sintaxis del lenguaje de programación antes de tener una lógica clara.
-- Pensamiento lineal: Intentar escribir toda la solución de una vez, de principio a fin, sin planificación.
-- Aplicar correacciones por reacción a lo que aparece en la consola y no por análisis del código
-- Test de Único Caso. Probar el algoritmo solo con el caso de ejemplo proporcionado, sin considerar casos límite (vacíos, negativos, máximos) o casos de borde.
-
-#### Constraints & Limitations
-- No IA
-
-## Week 0 — Day -4 y -3
-
-**Status:** Aprobado
-
-### Práctica
-
-> Practica:
-  - Beginner JS (nuevo)
-
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 0 — Day -2
-
-### Content
-
-Prework - 
-Skill 0.5: Comprender cómo funciona la IA Generativa y los principales modelos z
-Skill 0.6: Conocer los distintos formatos para comunicarse con la IA Generativa
-
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 0 — Day -2
-
-**Status:** Aprobado
-
-### Teoría
-
-
-+ Introducción a la IA generativa
-  - ¿Qué es un LLM?
-  - ¿Y cómo funciona la IA?
-  - ¿Cuáles son las principales opciones (OpenAI ChatGPT, Google Gemini, Anthropic Claude, xAI Grok, Mistral LeChat...)?
-  - Diferencias: Ventajas y desventajas entre modelos
-
-+ Hablar en el lenguaje de la IA:
-  - Markdown
-  - JSON
-  - YML
-  - TOON  (nuevo formato, potencial de convertirse en tendencia)
-
-
-### Thinking Framework
-
-#### Thinking Development
-- Entender cómo funciona los modelos de IA generativa
-- Desarrollar criterio para escoger entre un modelo u otro
-- Comprender cómo desarrollar un buen contexto para la IA
-- Reconocer la importancia de desarrollar la autonomía en la resolución de problemas
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-- Tratar a todas las IAs por igual
-- Escribir sin estructura ni formato
-
-#### Constraints & Limitations
-- No IA
-
-## Week 0 — Day -1
-
-### Content
-
-Prework - 
-Skill 0.7: Conocer qué son los Coding Agents y cómo funcionan
-Skill 0.8: Conocer los fundamentos de la AI Engineering
-
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 0 — Day -1
-
-**Status:** Aprobado
-
-### Teoría
-
-
-+ Using Coding agents 
-  - ¿Cómo funciona la IA en desarrollo?
-  - Configuración básica de Coding Agent en Github Codespaces
-  - Herramientas más conocidas: https://agents.4geeks.com/
-  - Using LLMs
-  - Token consumption, pricing, parameters
-
-+ Fundamentos del AI Engineer
-  - Programación asistida con IA
-  - Human in the loop / Humanos en el proceso
-  - Camino de menor resistencia
-
-
-### Thinking Framework
-
-#### Thinking Development
-- Entender cómo funcionan los Coding Agents
-- Desarrollar criterio para escoger entre un modelo u otro
-- Comprender cómo desarrollar un buen contexto para la IA
-- Concientizar la necesidad del hábito de leer y atender a los detalles 
-- Reconocer la importancia de desarrollar la autonomía en la resolución de problemas
-
-#### Best Practices
-- Iterar vs crear de nuevo: vibecoding manifest
-https://vibemanifesto.org/
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 1 — Day 1
 
 ### Content
@@ -397,7 +26,7 @@ _Not introduced in this learnpack_
 
 ## Week 1 — Day 1
 
-**Status:** Aprobado
+**Status:** Approved
 
 ### Content
 
@@ -478,10 +107,11 @@ _Not introduced in this learnpack_
 
 ## Week 1 — Day 2
 
-**Status:** Aprobado
+**Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + Web app layouts
     - ¿Qué es el layout? 
     - Formas de navegación: Sidebar, topbar, bottombar, etc...
@@ -569,10 +199,11 @@ _Not introduced in this learnpack_
 
 ## Week 1 — Day 3
 
-**Status:** Aprobado
+**Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + Formularios
     - Etiquetas principales
       - Inputs de texto (text, email, autocomplete)
@@ -663,10 +294,11 @@ _Not introduced in this learnpack_
 
 ## Week 2 — Day 4
 
-**Status:** Aprobado
+**Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + Sistema de archivos (Jerarquía)
     - Rutas relativas vs Rutas absolutas
     - Entry point
@@ -727,10 +359,11 @@ _Not introduced in this learnpack_
 
 ## Week 2 — Day 5
 
-**Status:** Aprobado
+**Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + Git para devs
     - Cómo funciona
     - Cómo saber dónde estoy (concepto de HEAD)
@@ -815,10 +448,11 @@ _Not introduced in this learnpack_
 
 ## Week 2 — Day 6
 
-**Status:** Aprobado
+**Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + ¿Qué es la programación? -> Darle instrucciones a una máquina
    - Pensamiento Algorítmico -> Escribir en pseudocódigo.
    - Variables 
@@ -912,7 +546,7 @@ _Not introduced in this learnpack_
 
 ## Week 3 — Day 7
 
-**Status:** Aprobado
+**Status:** Approved
 
 ### Teoría
 
@@ -1017,7 +651,7 @@ _Not introduced in this learnpack_
 
 ## Week 3 — Day 8
 
-**Status:** Aprobado
+**Status:** Approved
 
 ### Teoría
 
@@ -1092,10 +726,11 @@ _Not introduced in this learnpack_
 
 ## Week 3 — Day 9
 
-**Status:** Aprobado
+**Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + Arreglos/Colecciones de elementos (arrays)
     - ¿Qué es un array?
     - ¿Cómo definir un array? (Sintaxis)
@@ -1184,6 +819,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   + Objetos: 
     - Concepto de modelos vs objetos
     - Propiedad vs Valor
@@ -1221,6 +857,33 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No IA
 
+## Week 4 — Day 10
+
+**Status:** Approved
+
+### Content
+
+- Modelar "Una billeta digital" como Wise
+- Modelar "Un reproductor de Playlist de Música"
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
 ## Week 4 — Day 11
 
 ### Content
@@ -1251,6 +914,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
 
   + Representación de objetos en TS: 
     - Interfaces vs Objetos literales 
@@ -1333,6 +997,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría: 
   + Estrategias en la comunicación con la IA (Context & Anatomy):
     - Context Engineering
     - Word efficiency  
@@ -1428,6 +1093,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
  + ¿Qué son las reglas para una IA de programación?
    - Alcances de las configuraciones y reglas de contextos: User vs Project. ¿Qué reglas son de preferencia personal y cuáles son de necesidad del proyecto?
    - Aplicación de reglas: description, globs, alwaysApply
@@ -1513,6 +1179,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
 
   + Arquitectura de Single Page Applications (SPA) y Empaquetado.
      - Building or compiling your app
@@ -1793,6 +1460,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   
   + Comunicarse con APIs externas: 
     - ¿Qué son las APIs y cómo funcionan?
@@ -1995,6 +1663,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   - (Mención a Skills 6 y 7)
 
   + Introducción al backend
@@ -2102,6 +1771,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   - (Hacer mención a Skill 8.1)
 
   + Funciones Python
@@ -2194,6 +1864,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   + Arquitecturas más comunes en el backend
     - MVC
     - Arquitectura en capas (introducción a la arquitectura hexagonal, muy light)
@@ -2262,6 +1933,9 @@ _Not introduced in this learnpack_
 **Status:** Approved
 
 ### Teoría
+
+> Teoría: 
+  (Referencia a la Skill 14)
 
   + Building a Python API to serve the frontend
     - ¿Qué es una API? (refrescamiento de conocimientos)
@@ -2346,6 +2020,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
 
 + Introducción a agentes
   - Qué es un agente
@@ -2444,6 +2119,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
 
   + Trabajar con ficheros en Python
     - ¿Qué es un archivo? Datos persistentes en disco.
@@ -2510,6 +2186,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría: 
   + Almacenando información (en cualquier lugar)
     - ¿Qué es una base de datos? Como concepto general
     - ¿Por qué es necesario el almacenamiento de datos?
@@ -2573,6 +2250,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   + Autenticación
     - ¿Qué es la autenticación y por qué es importante?
       -- Resaltar la importancia de encriptar una contraseña
@@ -2664,6 +2342,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
    + Sesiones en el Frontend
      - ¿Qué es una sesión? ¿Para qué sirve?
      - Mecanismos vs. Almacenamiento: Diferencia entre el protocolo (CÓMO me identifico) y la persistencia (DÓNDE guardo la credencial).
@@ -2755,6 +2434,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
     
   + Error handling: La aplicación no debe explotar
     - Try/catch/finally
@@ -2836,6 +2516,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   + Introducción al testing
     - ¿Por qué probar un código?
     - Tipos de pruebas más conocidas:
@@ -2909,6 +2590,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   + Bases de datos (solo informativo)
     - ¿Qué es una base de datos?
     - ¿Para qué sirven las bases de datos?
@@ -3008,6 +2690,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
+> Teoría:
   + Gestionando tablas relacionadas con SQL
     - ¿Qué es una relación en bases de datos?
     - ¿Qué es un diagrama entidad/relación?
@@ -3072,10 +2755,11 @@ _Not introduced in this learnpack_
 
 ## Week 11 — Day 32
 
-**Status:** Teoría pendiente aprobación
+**Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + Programación Orientada a Objetos:
     - ¿Qué es una clase?
     - Clases vs Objetos
@@ -3160,10 +2844,11 @@ _Not introduced in this learnpack_
 
 ## Week 11 — Day 33
 
-**Status:** Teoría pendiente aprobación
+**Status:** Approved
 
 ### Teoría
 
+> Teoría:
   + Object-Relational Mapping: El traductor universal
     - ¿Qué es un ORM?
       -- El ORM no exime el dconocimiento sobre SQL
@@ -3192,16 +2877,28 @@ _Not introduced in this learnpack_
 ### Thinking Framework
 
 #### Thinking Development
-- Entender que una tabla en la base de datos es equivalente a una clase en Python: la clase User representa la tabla users, y cada instancia de esa clase (user1, user2) representa una fila distinta con sus propios datos.
+- Entender que un ORM es un traductor entre clases Python y tablas SQL donde clase = tabla, instancia = fila, atributo = columna, pero que esto no reemplaza saber SQL: conocer lo que el ORM genera por debajo es lo que permite usarlo bien y depurar errores.
+- Comprender que las relaciones entre tablas (1:1, 1:N, N:M) se expresan con ForeignKey y relationship(), y que acceder a datos relacionados sin control genera el problema N+1, que degrada el rendimiento silenciosamente.
+- Entender que la sesión es la conversación activa con la base de datos (commit = guardar, rollback = deshacer), y que las migraciones son el historial controlado de cambios del esquema: imprescindibles en producción, opcionales en desarrollo temprano.
 
 #### Best Practices
-_Not introduced in this learnpack_
+- Separar responsabilidades: modelos ORM en models.py, schemas Pydantic en schemas.py. Nunca exponer el modelo ORM directamente al cliente, siempre usar un schema de respuesta.
+- Gestionar sesiones correctamente: usar get_db() con yield como dependency injection, hacer commit() solo cuando todo fue exitoso y rollback() ante errores. En contextos async, usar AsyncSession con create_async_engine.
+- Cargar relaciones de forma consciente: usar selectinload o joinedload explícitamente para evitar el problema N+1. Nunca confiar en el lazy loading por defecto en FastAPI async.
+- Usar Alembic desde el inicio: nunca usar create_all() en producción, revisar siempre las migraciones autogeneradas y nunca modificar tablas manualmente en entornos compartidos.
 
 #### Patterns
-_Not introduced in this learnpack_
+- Modelo bien definido: declarar __tablename__, tipos con límites explícitos y relaciones con back_populates para que el ORM tenga información completa y predecible.
+- Sesión como dependency: usar get_db() con yield garantiza que la sesión siempre se abra y cierre correctamente, incluso si ocurre un error en el endpoint.
+- Carga explícita de relaciones: usar selectinload o joinedload en la query indica al ORM exactamente qué datos relacionados traer, evitando queries inesperadas.
+- Commit controlado: envolver las operaciones en try/except y hacer rollback() ante cualquier error garantiza que la base de datos nunca quede en un estado inconsistente.
 
 #### Anti-patterns
-_Not introduced in this learnpack_
+- Lazy loading en async: acceder a una relación sin haberla cargado explícitamente explota en contextos async con el error MissingGreenlet, porque el ORM intenta abrir una sesión que ya está cerrada.
+- Exponer el modelo ORM directamente: devolver el objeto ORM sin un schema de respuesta puede filtrar campos sensibles y acopla la estructura interna de la base de datos a la API.
+- Problema N+1: iterar sobre una lista de objetos y acceder a sus relaciones dentro del loop genera una query adicional por cada elemento, degradando el rendimiento silenciosamente.
+- Sesión global: crear la sesión fuera de cualquier contexto de request genera condiciones de carrera cuando múltiples usuarios hacen peticiones simultáneas.
+- create_all() en producción: sobreescribe o ignora cambios de esquema existentes y no deja historial de cambios, haciendo imposible revertir o reproducir el estado de la base de datos.
 
 #### Constraints & Limitations
 _Not introduced in this learnpack_
@@ -3210,7 +2907,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 30: Construyendo mi aplicación en contenedores
+Skill 30: Construir aplicaciones en contenedores
 
 
 ### Thinking Framework
@@ -3232,34 +2929,170 @@ _Not introduced in this learnpack_
 
 ## Week 12 — Day 34
 
-### Content
+**Status:** Approved
 
-  + Contenedores
+### Teoría
+
+> Teoría:
+  + Contenedores (Sin hablar de Docker)
     - ¿Qué es un contenedor?
+    - Para qué sirven los contenedores 
+      -- Solución al "En mi máquina funciona"
+    - VM vs Contenedores
+    - Beneficios para proyectos de IA y backend moderno:
+      -- reproducibilidad
+      -- despliegue
+      -- aislamiento de dependencias
+      -- consistencia entre equipos
+  
+  + Docker
+    - ¿Qué es Docker? ¿Por qué es tan útil?
+    - Conceptos principales:
+      -- Contenedor
+      -- Imagen
+      -- Dockerfile
+      -- Docker Hub
+    - Comandos principales de Docker
+    - Cómo configurar un Dockerfile
+      -- FROM → imagen base
+      -- WORKDIR
+      -- COPY
+      -- RUN
+      -- CMD
+    - Buenas prácticas en Docker
+    
+  + Docker Composer
+    - Para qué se usa Docker Compose
+    - Conceptos clave:
+    - docker-compose.yml
+      -- servicios
+      -- puertos
+      -- networking entre contenedores
+      -- variables de entorno
+    - Cómo configurar un docker-compose.yml
+    - Arquitectura de un proyecto dockerizado con docker-compose.yml
+    - Buenas prácticas
+      -- .dockerignore
+      -- Imágenes ligeras
+      -- Variables de entorno en .env
+    - Errores comunes
 
 
 ### Thinking Framework
 
 #### Thinking Development
-_Not introduced in this learnpack_
+- Software = Código + Dependencias + Entorno de ejecución
+- Aplicación = Imagen ejecutable
+- principios: Reproducibilidad, Portabilidad, Automatización, Infraestructura como código
+
+- Preguntas que el estudiante debe aprender a hacerse: ¿Puede ejecutarse este proyecto en otra máquina? ¿Qué depende de mi sistema local? ¿Qué pasará en producción?
+- Comprender que los proyectos modernos deben evitar: conflictos de librerías, contaminación del sistema, dependencias globales
+- Un proyecto debe ejecutarse igual para todos los miembros del equipo.
+
+- El entorno se define en código (Dockerfile).
+- layered systems (Docker funciona con capas de imágenes)
+- Pensamiento de entornos idénticos (todos los entornos deben ejecutar la misma imagen)
+
+- arquitectura de servicios
+- Docker Compose simula infraestructura distribuida en local
+- Los servicios no se comunican por localhost, sino por nombre de servicio
+- Las configuraciones no deben estar hardcodeadas.
 
 #### Best Practices
-_Not introduced in this learnpack_
+- Definir entornos reproducibles desde el inicio del proyecto
+- Versionar dependencias
+- Evitar dependencias globales del sistema
+- Pensar siempre en entornos de ejecución replicables
+
+- Usar imágenes base oficiales
+- Mantener imágenes pequeñas
+- Orden correcto de instrucciones (caching de capas)
+- Evitar instalar herramientas innecesarias
+- Usar .dockerignore
+
+- Usar nombres claros de servicios
+- Un servicio por responsabilidad
+- Usar .env para configuración
+- Versionar docker-compose.yml
+- > Teoría:
+  + Contenedores (Sin hablar de Docker)
+    - ¿Qué es un contenedor?
+    - Para qué sirven los contenedores 
+      -- Solución al "En mi máquina funciona"
+    - VM vs Contenedores
+    - Beneficios para proyectos de IA y backend moderno:
+      -- reproducibilidad
+      -- despliegue
+      -- aislamiento de dependencias
+      -- consistencia entre equipos
+  
+  + Docker
+    - ¿Qué es Docker? ¿Por qué es tan útil?
+    - Conceptos principales:
+      -- Contenedor
+      -- Imagen
+      -- Dockerfile
+      -- Docker Hub
+    - Comandos principales de Docker
+    - Cómo configurar un Dockerfile
+      -- FROM → imagen base
+      -- WORKDIR
+      -- COPY
+      -- RUN
+      -- CMD
+    - Buenas prácticas en Docker
+    
+  + Docker Composer
+    - Para qué se usa Docker Compose
+    - Conceptos clave:
+    - docker-compose.yml
+      -- servicios
+      -- puertos
+      -- networking entre contenedores
+      -- variables de entorno
+    - Cómo configurar un docker-compose.yml
+    - Arquitectura de un proyecto dockerizado con docker-compose.yml
+    - Buenas prácticas
+      -- .dockerignore
+      -- Imágenes ligeras
+      -- Variables de entorno en .env
+    - Errores comunes
 
 #### Patterns
-_Not introduced in this learnpack_
+- Encapsular el entorno junto con la aplicación.
+- El entorno no se modifica manualmente, se reconstruye.
+- El entorno se define en archivos declarativos versionados.
+
+- Single Responsibility Container
+- Build once, run anywhere
+- Immutable Infrastructure
+- Declarative Infrastructure
+
+- Multi-service architecture
+- Service discovery
+- Configuration externalization
 
 #### Anti-patterns
-_Not introduced in this learnpack_
+- "Funciona en mi máquina"
+- Entornos globales compartidos
+- Configuración manual
+- Contenedores "masivos"
+- Usar latest en producción
+- Instalar dependencias manualmente dentro del contenedor
+- Incluir secretos en imágenes
+- Hardcodear configuraciones
+- Mezclar responsabilidades
+- Usar localhost entre contenedores
+- No manejar persistencia
 
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 22
+## Week 12 — Day 35
 
 ### Content
 
-Skill 28: Cómo optimizar el almacenamiento para reporte, integridad, consulta o transporte
+Skill 31.1: Optimizar la arquitectura para alto tráfico - Serializers
 
 
 ### Thinking Framework
@@ -3279,47 +3112,72 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 22
+## Week 12 — Day 35
 
-**Status:** Teoría pendiente aprobación
+**Status:** Approved
 
 ### Teoría
 
-Teoria: 
-
-- Elegir el engine de base de datos (SQL o NoSQL)
-
-- Elegir el transporte de datos (JSON, CSV, YAML, TOON)
-
-- Elegir la forma de los datos (1ra or 3 forma normal)
-     -  Los reportes estan normalizados para velocidad de consulta y usualmente no se usan BD relacionales porque estan optimizadas para escritura
-     - Las acciones del usuario y sus consecuencias son escrituras constantes, se almacenan en 3ra forma normal para evitar redundancia y garantizar integridad
-
- - Tabla comparativa entre los modelos más grandes del mundo (Dynamo, MySQL, Postgres, MS Server, BigQuery, Redis, Mongo, etc)
+> Teoría:
+  + Serializers
+    - ¿Qué es un serializador?
+    - ¿Para qué se utiliza?
+      -- validación de inputs (prompt, parámetros)
+      -- outputs grandes (streaming, chunking)
+      -- formatos (JSON, multipart)
+    - Data Transfer Objects (DTOs) vs Modelos de BD: Por qué NUNCA se debe serializar el modelo de la base de datos directamente hacia el frontend.
+    - Seguridad en la Deserialización
+  + Optimización de Payload (Over-fetching): (Contenido corto)
+    - Solo devolver exactamente lo que la pantalla actual necesita. 
+    - Mención rápida a GraphQL vs REST optimizado.
 
 
 ### Thinking Framework
 
 #### Thinking Development
-_Not introduced in this learnpack_
+- El serializer define el contrato de comunicación
+- El serializer se convierte en una capa de seguridad y validación
+- Los modelos internos no deben exponerse directamente
+- La serialización también implica: tamaño de datos, formato, velocidad de transferencia.
+- Especialmente relevante en: resultados de IA, embeddings, streaming de texto.
+- La API debe diseñarse pensando en la pantalla que consume los datos.
+- ¿El cliente realmente necesita todos estos datos?
 
 #### Best Practices
-_Not introduced in this learnpack_
+- Validar siempre inputs
+- Usar DTOs para APIs
+- Devolver solo los campos necesarios
+- Limitar tamaño de payloads
+
+- Sanitizar datos antes de serializar
+-
 
 #### Patterns
-_Not introduced in this learnpack_
+- DTOs
+- Input Validation Layer
+- Output Transformation
+- Streaming Serialization
+
+- Response Shaping
+- Pagination
+- Backend for Frontend (BFF)
 
 #### Anti-patterns
-_Not introduced in this learnpack_
+- Serializar modelos de base de datos directamente
+- Validar en la lógica de negocio
+- Deserialización insegura
+- Payloads excesivos - over-fetching
+- Payloads insuficientes - Under-fetching
+- Exponer estructura interna
 
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 23
+## Week 12 — Day 36
 
 ### Content
 
-Skill 29: Collecting telemetry and context-related info from the user and your application
+Skill 31.2: Optimizar la arquitectura para alto tráfico - Caching
 
 
 ### Thinking Framework
@@ -3339,12 +3197,221 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 23
+## Week 12 — Day 36
 
-**Status:** Teoría pendiente aprobación
+**Status:** Approved
 
 ### Teoría
 
+> Teoría:
+  + Caching
+    - ¿Qué es el caching?
+    - ¿Qué es la memoria caché?
+    - ¿Cómo funciona el caching?
+    - ¿Cómo saber cuándo cachear?
+      -- Costo de cálculo vs costo de almacenamiento
+      -- Si algo se consulta muchas veces → probablemente deba cachearse
+      -- Datos frescos vs velocidad (consistencia vs performance)
+    - ¿Dónde ubicar la caché?
+      -- cache en memoria (app)
+      -- cache distribuida (Redis)
+      -- cache HTTP/CDN (si aplica)
+     - Invalidación:
+      -- Time-To-Live (TTL)
+      -- Invalidación basada en eventos
+    - Estrategias de Caching
+      -- Cache-Aside (Lazy Loading)
+      -- Write-Through
+      -- Write-Behind
+      -- TTL-Based Cache
+  + Serializers
+    - ¿Qué es un serializador?
+    - ¿Para qué se utiliza?
+      -- validación de inputs (prompt, parámetros)
+      -- outputs grandes (streaming, chunking)
+      -- formatos (JSON, multipart)
+    - Data Transfer Objects (DTOs) vs Modelos de BD: Por qué NUNCA se debe serializar el modelo de la base de datos directamente hacia el frontend.
+    - Seguridad en la Deserialización
+  + Optimización de payload: 
+    - Solo devolver exactamente lo que la pantalla actual necesita. 
+    - Mención rápida a GraphQL vs REST optimizado.
+
+
+### Thinking Framework
+
+#### Thinking Development
+- Costo de cálculo vs costo de almacenamiento
+- ¿Realmente necesito recalcular esto cada vez?
+- El caching introduce el concepto de optimización de latencia.
+- Pensamiento de sistemas multicapa
+- consistencia vs performance
+- la caché puede contener datos desactualizados
+- Cache de inferencias
+
+#### Best Practices
+- Cachear solo lo que se reutiliza
+- Usar TTL razonables
+- Diseñar claves de caché claras
+- Separar cache de datos críticos
+
+#### Patterns
+Vary Headers / Caché por Sesión: Asegurar que los datos autenticados solo vivan en la caché en memoria local o con llaves únicas por usuario en Redis.
+
+#### Anti-patterns
+- Caché Global de Datos Privados: Guardar el "Carrito de compras" en la caché CDN (pública). Otro usuario podría ver el carrito del primero.
+
+- Data Leak (Fuga de datos): Hacer return user.to_json(), enviando accidentalmente el password_hash y el internal_id al frontend, aunque la UI no los muestre.
+
+- Cachear todo
+- No invalidar caché
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 12 — Day 36
+
+### Content
+
+Skill 32: Cómo optimizar el almacenamiento para reporte, integridad, consulta o transporte
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 12 — Day 36
+
+**Status:** Approved
+
+### Teoría
+
+> Teoría: 
+  + ¿Cómo escoger el formato de transporte de los datos?
+    - ¿Por qué es importante escoger el formato de datos adecuado?
+    - ¿Cuándo usar JSON?
+    - ¿Cuándo usar CSV?
+    - ¿Cuándo usar YAML?
+
+  + ¿Cómo escoger la base de datos adecuada para datos?
+    - ¿Cuándo usar SQL y cuándo usar NoSQL?
+      -- Orientación a reportes
+      -- Cuando el requisito es la integridad
+      -- Cuando el principal tráfico es para consulta
+    - Tabla comparativa entre los modelos más grandes del mundo (Dynamo, MySQL, Postgres, MS Server, BigQuery, Redis, Mongo, etc)
+  
+  + Normalización en bases de datos  
+    - ¿Qué es la normalización?
+    - ¿Qué es la primera forma normal?
+    - ¿Qué es la tercera forma normal?
+    - 1ra forma normal vs 3ra forma normal
+    - Elegir la forma de los datos (1ra o 3ra forma normal)
+    - ¿Cuándo normalizar y cuándo no? 
+    - Ejemplos
+      -- Reportes desnormalizados para velocidad de consulta 
+      -- Usualmente no se usan BD relacionales para reportes porque están optimizadas para escritura
+      -- Las acciones del usuario y sus consecuencias son escrituras constantes, se almacenan en 3ra forma normal para evitar redundancia y garantizar integridad
+
+
+### Thinking Framework
+
+#### Thinking Development
+- Comprender que el formato de transporte no es una elección estética, sino de eficiencia y contexto
+
+- Desarrollar el pensamiento arquitectónico de "Trade-offs" (costo-beneficio) al elegir bases de datos
+
+- Interiorizar la dualidad y fricción entre la Escritura y la Lectura de datos (OLTP vs OLAP)
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+- CSV para datos tabulares masivos: Usar CSV para reportes. Solo tiene una fila de cabecera y el resto son datos puros 1,A \n 2,B. Es ligero y fácil de procesar.
+
+- JSON como Rey de la Web: Usar JSON para comunicación Cliente-Servidor. Es nativo de JavaScript, ligero y soporta jerarquías.
+
+- YAML para Configuración: Usar YAML (docker-compose.yml). Permite comentarios #, es muy legible para humanos y limpio.
+
+- SQL para Integridad / NoSQL para Flexibilidad:
+
+• SQL: Facturación, inventario, usuarios (Relaciones estrictas).
+
+• NoSQL (Doc): Catálogos de productos con atributos dinámicos, logs, perfiles flexibles.
+
+- Persistencia según proósito:
+• Transacciones -> SQL.
+• Caché/Sesiones -> Redis (Clave-Valor).
+• Búsqueda de texto -> ElasticSearch.
+
+- Bases Columnares (BigQuery / Redshift): Usar bases de datos analíticas donde los datos se guardan por columnas, no por filas, optimizando agregaciones masivas a segundos.
+
+- Tercera Forma Normal (3NF): Las facturas solo guardan el cliente_id. La tabla Clientes tiene el nombre. Si el nombre cambia, se actualiza en un solo lugar. Garantiza integridad.
+
+- Desnormalización (Flattening): Crear una tabla separada (o usar una DB orientada a reportes) donde los datos ya estén pre-calculados y "aplanados" (ej. tabla Ventas_Diarias_Resumen). Optimizado para lectura rápida.
+
+#### Anti-patterns
+- JSON para exportaciones masivas: Enviar un reporte de 1 millón de filas en JSON. Cada fila repite el nombre de las columnas {"id":1, "nombre":"A"}, {"id":2, "nombre":"B"}, inflando el peso del archivo un 300%.
+
+- XML o YAML para respuestas de API Web: Usar YAML en el tráfico de red de una app React. Sus parsers son lentos y no es nativo del navegador.
+
+- JSON para archivos de configuración humana: Usar JSON para un archivo de CI/CD. No permite comentarios y una coma faltante rompe todo.
+
+- NoSQL por pereza (Hype Driven Development): Usar MongoDB para un sistema bancario "porque no quiero escribir esquemas rígidos". (Resultado: transferencias perdidas y dinero fantasma porque no hay transacciones ACID fuertes).
+
+- La Base de Datos "Ombligo": Usar una única base de datos Postgres para todo: guardar compras, manejar el chat en vivo, servir métricas y guardar caché. El servidor colapsará.
+
+- Big Data en SQL Tradicional: Intentar hacer un SELECT AVG(ventas) sobre 5 billones de filas en MySQL. Tomará horas.
+
+- Datos Redundantes (1NF): Guardar el "Nombre del Cliente" en cada registro de la tabla Facturas. Si el cliente cambia su nombre, tienes que actualizar 1,000 facturas (Riesgo de inconsistencia).
+
+- JOINs Masivos en Producción: Generar un "Dashboard de Ventas Anuales" haciendo 15 JOINs en vivo contra la base de datos de producción a las 12:00 PM. Los usuarios no podrán comprar porque la DB estará bloqueada pensando.
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 13 — Day 37
+
+### Content
+
+Skill 33: Collecting telemetry and context-related info from the user and your application
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 13 — Day 37
+
+**Status:** Approved
+
+### Teoría
+
+> Teoría:
 + Entendiendo la telemetría desde el frontend
   - ¿Qué es la telemetría? ¿Por qué es importante y útil?
   - ¿Qué datos almacenar? (categorías mínimas)
@@ -3442,11 +3509,11 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 24
+## Week 13 — Day 38
 
 ### Content
 
-Skill 30: Anwsering front end telemetry requests
+Skill 34: Anwsering front end telemetry requests
 
 
 ### Thinking Framework
@@ -3466,7 +3533,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 24
+## Week 13 — Day 38
 
 **Status:** Teoría pendiente aprobación
 
@@ -3475,7 +3542,7 @@ _Not introduced in this learnpack_
 - Data and telemetry has become more and more important, we need to collect and process telemetry
 - Batch vs stream
       - Processing a stream (atomic activity)
-      - Procesing a batch (big chunks)
+      - Processing a batch (big chunks)
 - Throttling
 
 
@@ -3496,11 +3563,11 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 25
+## Week 13 — Day 39
 
 ### Content
 
-Skill 31: Manejar datasets con Pandas
+Skill 35: Manejar datasets con Pandas
 
 
 ### Thinking Framework
@@ -3520,12 +3587,13 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 25
+## Week 13 — Day 39
 
 **Status:** Teoría pendiente aprobación
 
 ### Teoría
 
+> Teoría: (Reutilizar contenido de Data Science)
   + Introducción a Numpy
 
   + Manejo de datasets con Pandas
@@ -3552,11 +3620,11 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No loops, solo acumuladores
 
-## Week 13 — Day 26
+## Week 14 — Day 40
 
 ### Content
 
-Skill 32: Building a report from the telemetry or user data
+Skill 36: Building a data pipeline from the telemetry or user data
 
 
 ### Thinking Framework
@@ -3576,27 +3644,43 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 26
+## Week 14 — Day 40
 
 **Status:** Teoría pendiente aprobación
 
 ### Teoría
 
-Teoria:
+> Teoria:
+  + ¿Cómo fluyen los datos en un sistema?
+    - Flujo de datos en un sistema
+      -- Fuente de datos: ¿De dónde puedo obtener datos en mi aplicación: usuario (comportamiento, interacción), integraciones (fuentes de datos externas, bulks), almacenamiento (mi base de datos)
+      -- Ingesta
+      -- Transformación
+      -- Entrenamiento / Inferencia
+      -- Almacenamiento / API
+    - Buenas prácticas en flujos de datos:
+    - Los modelos de IA no consumen datos directamente de la fuente
+    - Los datos necesitan procesamiento reproducible
+    - Los sistemas deben funcionar igual en cualquier máquina
 
-- Construyendo el report a partir de un cronjob (introduccion a background processing)
-- Introduccion a data pipelines (el pipeline de datos mas sencillo de todos)
--  Modificar los datos que teniamos almacenados precariamente en el backend y montar un reporte, por ejemplo: cuantos TODOs completa el usuario semanalmente por día. 
-- Agregación, agrupamiento y métrica
+  + Introducción a Data Pipelines
+    - ¿Qué es un Data Pipeline?
+    - ¿Por qué se automatizan procesos de datos?
+    - ¿Qué es un ETL?
+    - Componentes principales de un Data Pipeline básico
+    - Buenas prácticas en Data Pipelines
+    - Principales errores al diseñar Data Pipelines
+    - Ejemplo de Data Pipeline básico en Python (FastAPI con numpy y pandas)
 
 
 ### Thinking Framework
 
 #### Thinking Development
-_Not introduced in this learnpack_
+- Los datos en una aplicación no fluyen solos: pasan por etapas definidas 
+- Saltarse etapas del flujo de datos produce datos incorrectos o no usables por un modelo de AI.
 
 #### Best Practices
-_Not introduced in this learnpack_
+- Los modelos de AI nunca consumen datos directamente de la fuente: siempre existe una etapa de transformación intermedia reproducible.
 
 #### Patterns
 _Not introduced in this learnpack_
@@ -3607,11 +3691,11 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 27
+## Week 13 — Day 41
 
 ### Content
 
-Skill 33: Background processing
+Skill 36: Building a report from the telemetry or user data
 
 
 ### Thinking Framework
@@ -3631,11 +3715,111 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 27
+## Week 13 — Day 41
 
 **Status:** Teoría pendiente aprobación
 
+### Teoría
+
+> Teoria:
+  + De datos crudos a reportes: transformando lo que ya tienes
+    - Cómo transformar datos existentes para generar reportes
+      -- Cargar los datos crudos en un DataFrame de Pandas
+      -- Filtrar por criterio relevante (solo completados, solo última semana)
+      -- Convertir timestamps a datetime para agrupar por día/semana
+      -- Agrupar con groupby() por dimensión temporal
+      -- Aplicar la función de agregación (count, sum, mean)
+      -- Servir el resultado como JSON o almacenarlo para consulta
+    - Datos transaccionales vs datos analíticos
+      -- Datos almacenados para CRUD no sirven directamente para reportes
+      -- Una tabla de TODOs no responde "¿cuántos TODOs completa el usuario por día?"
+    - Ejemplo paso a paso de un reporte semanal de TODOs completados por día
+
+  + Agregación, agrupamiento y métrica
+    - Una métrica es la pregunta que quieres responder
+      -- Tasa de completitud, promedio diario, total semanal
+      -- Siempre combina una agregación con una dimensión de agrupamiento
+      -- "TODOs completados por día" = count + groupby fecha
+    - El agrupamiento es cómo segmentas los datos
+      -- Por día, por usuario, por categoría, por estado
+      -- Sin agrupamiento solo tienes un número global; con agrupamiento tienes contexto
+      -- df['status'].count() = 45 (poco útil) vs df.groupby('date')['status'].count() (accionable)
+    - La agregación es la operación que reduce muchas filas a un valor
+      -- .count(), .sum(), .mean(), .min(), .max(), .agg()
+      -- .agg() permite múltiples agregaciones a la vez
+    - La fórmula mental es MÉTRICA = AGREGACIÓN(columna) agrupada por DIMENSIÓN
+      -- El ejemplo es df.groupby('date')['id'].count().mean() que da el promedio diario de TODOs completados
+    - Los mismos conceptos aparecen en SQL (GROUP BY, COUNT, SUM) y en herramientas de dashboards
+
+
+### Thinking Framework
+
+#### Thinking Development
+- Comprender que los datos crudos nunca son la respuesta: una tabla de TODOs almacenada para CRUD responde "¿qué hay guardado?" pero no responde "¿cuántos TODOs completa el usuario por día?". Transformar es obligatorio.
+- Entender que la fórmula mental de cualquier métrica es siempre la misma: agregación sobre una columna, agrupada por una dimensión. Antes de escribir código, definir qué pregunta se quiere responder.
+- Comprender que un pipeline de datos es simplemente una secuencia de pasos reproducible: el mismo código debe producir el mismo resultado en cualquier máquina, con cualquier subconjunto de datos válido.
+- Entender que agrupar antes de agregar es el orden correcto de pensamiento: primero decido cómo segmento (por día, por usuario) y luego qué calculo sobre cada grupo, no al revés.
+
+#### Best Practices
+- Definir la métrica antes de escribir código: saber exactamente qué pregunta responde el reporte evita transformaciones innecesarias.
+- Separar datos transaccionales (CRUD) de datos analíticos (reportes): no diseñar la base de datos pensando en ambos usos a la vez.
+- Usar groupby() + función de agregación como unidad mínima del pipeline, combinable y reutilizable en cualquier contexto.
+- Convertir siempre los timestamps a datetime antes de agrupar por dimensión temporal para evitar agrupamientos incorrectos.
+
+#### Patterns
+- Fórmula estándar de reporte: cargar → filtrar → convertir tipos → agrupar → agregar → servir o persistir. Siempre en ese orden.
+- Métrica como función reutilizable: encapsular cada cálculo (todos_completados_por_dia()) en una función independiente, testeable y llamable desde el pipeline o desde un endpoint.
+- Separación transaccional/analítica: los datos se almacenan optimizados para escritura (CRUD) y se transforman en una capa separada optimizada para lectura (reportes).
+
+#### Anti-patterns
+- Calcular el reporte en el endpoint: recalcular agregaciones en cada request es costoso e innecesario cuando los datos no cambian en segundos.
+- Agrupar sin limpiar tipos primero: hacer groupby('date') sobre una columna que mezcla strings y timestamps produce grupos incorrectos sin lanzar ningún error visible.
+- Diseñar una sola tabla para CRUD y reportes: los datos almacenados para operaciones transaccionales rara vez tienen la estructura correcta para responder preguntas analíticas sin transformación.
+- Métricas sin dimensión de agrupamiento: un único número global (count = 45) no es accionable. Sin contexto de agrupamiento no hay información útil.
+- Pipelines no reproducibles: transformaciones que dependen del entorno, del orden de llegada de los datos o de variables externas producen resultados distintos en cada ejecución.
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 13 — Day 42
+
 ### Content
+
+Skill 37: Background processing
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 13 — Day 42
+
+**Status:** Teoría pendiente aprobación
+
+### Teoría
+
+> Teoría:
+  + Introducción procesamiento en segundo plano
+    - ¿Qué es la ejecución en segundo plano (Background processing)? (Ejecución fuera del ciclo request-response)
+    - ¿Qué es un Cronjob?
+    - Observabilidad de un cronjob (Timestamp y estado éxito/fallo)
+    - ¿Cómo configurar cronjobs?
+      - Por sistema (crontab)
+      - Por framework (fastapi-utilities)
+    - Cómo usar cronjobs para construir un reporte
 
 General concepts:
        - Background processing is better done if we assign status to the data chunk that is being procesed
