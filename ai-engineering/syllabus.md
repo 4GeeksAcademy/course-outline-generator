@@ -1,5 +1,381 @@
 # Syllabus (Clean Extract)
 
+## Week 0 — Day -6
+
+### Content
+
+Prework - 
+Skill 0.1: Familiarizarse con la plataforma de 4Geeks
+Skill 0.2: Comprender cómo funciona internet
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 0 — Day -6
+
+**Status:** Aprobado
+
+### Teoría
+
+> Teoría: 
++ Introducción a 4Geeks Academy
+  - Importancia del prework (crear nuevo)
+  - Intro a la plataforma de 4Geeks.com (crear nuevo)
+  - Breve intro a Github como perfil profesional en tecnología
+    -- Importancia de conectar la cuenta de Github con la plataforma de 4Geeks.com
+
++ Herramientas a tu disposición en 4Geeks Academy
+  - Intro a Slack
+  - ¿Qué es LearnPack?
+  - ¿Qué es Rigobot?
+  - ¿Qué es Github Codespaces?
+
++ Consejos para estudiar con éxito en 4Geeks
+  - ¿Cómo aprovechar al máximo el curso?
+  - ¿Cómo pedir ayuda?
+
+
++ La Internet
+  - ¿Qué es internet?
+  - Funcionamiento: HTTP y sus verbos (GET, POST, PUT/PATCH, DELETE), Cliente - Servidor
+  - Navegadores
+  - Cómo funciona una web: frontend, backend - APIs, bases de datos, llamadas a APIs (HTTP)
+  - Cómo se transmite una solicitud por Internet
+
+
+### Thinking Framework
+
+#### Thinking Development
+- Aprender cómo aprender en 4Geeks
+- Conocer los componentes principales del proceso de aprendizaje en 4Geeks
+- Conocer los medios y mecanismos para solicitar y obtener ayuda en 4Geeks
+- Saber entregar proyectos en 4Geeks usando Git y Github
+- Concientizar la necesidad del hábito de leer y atender a los detalles
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+- No pedir ayuda
+- No investigar
+- Esperar a que todo me lo expliquen
+- No usar los canales de comunicación
+
+#### Constraints & Limitations
+- No IA
+
+## Week 0 — Day -5
+
+### Content
+
+Prework - 
+Skill 0.3: Conocer los fundamentos de HTML, CSS y Git para entregar un primer proyecto
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 0 — Day -5
+
+**Status:** Aprobado
+
+### Teoría
+
+> Teoría: 
+
++ Introducción a HTML y CSS (Se dejará lo actual)
+
++ ¿Cómo entregar tus proyectos en 4Geeks? 
+  (Esto ya existe pero requiere revisión: mejorar organización) 
+  - Breve reseña sobre GitHub y Git, de forma poco técnica
+  - (Esto no existe) Esenciales de Github y Git para entregar proyectos
+    -- git add, git commit, git push
+
+
+### Thinking Framework
+
+#### Thinking Development
+- Entender flujos (http es movimiento de información y hay un objetivo para ese movimiento, un flujo). Esto incluye , git, internet, algoritmos, etc.  
+- Comprender los principales componentes de la comunicación en Internet
+- Conocer los principales elementos de un sitio web
+- Familiarizarse con algunos de los principales conceptos del programa de estudios
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+- No IA
+
+## Week 0 — Day -4 y -3
+
+### Content
+
+Prework - 
+Skill 0.4: Conocer y aplicar los fundamentos de la programación
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 0 — Day -4 y -3
+
+**Status:** Aprobado
+
+### Teoría
+
+> Teoría:
+
++ Introducción a la programación (Javascript) (Referencia rápida a los conceptos)
+  - Pensamiento lógico-matemático
+  - Algoritmos
+  - Variables
+  - Condiciones
+  - Bucles
+  - Cómo representar listados en JavaScript (Arrays)
+  - Cómo objetos en JavaScript (Literal Objects)
+
+
+### Thinking Framework
+
+#### Thinking Development
+- Pensamiento lógico - matemático, algoritmos. 
+- Concientizar la necesidad del hábito de leer y atender a los detalles 
+- Reconocer la importancia de desarrollar la autonomía en la resolución de problemas
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+- Plantear la solución antes que el código
+- Divide y venceras. Dividir un problema grande en subproblemas más pequeños del mismo tipo, resolver cada uno, y luego combinar las soluciones.
+- Clean code
+
+#### Anti-patterns
+Algoritmos: 
+- Fijación en la Sintaxis: Centrarse únicamente en recordar la sintaxis del lenguaje de programación antes de tener una lógica clara.
+- Pensamiento lineal: Intentar escribir toda la solución de una vez, de principio a fin, sin planificación.
+- Aplicar correacciones por reacción a lo que aparece en la consola y no por análisis del código
+- Test de Único Caso. Probar el algoritmo solo con el caso de ejemplo proporcionado, sin considerar casos límite (vacíos, negativos, máximos) o casos de borde.
+
+#### Constraints & Limitations
+- No IA
+
+## Week 0 — Day -4 y -3
+
+**Status:** Aprobado
+
+### Práctica
+
+> Practica:
+  - Beginner JS (nuevo)
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 0 — Day -2
+
+### Content
+
+Prework - 
+Skill 0.5: Comprender cómo funciona la IA Generativa y los principales modelos z
+Skill 0.6: Conocer los distintos formatos para comunicarse con la IA Generativa
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 0 — Day -2
+
+**Status:** Aprobado
+
+### Teoría
+
+> Teoría:
+
++ Introducción a la IA generativa
+  - ¿Qué es un LLM?
+  - ¿Y cómo funciona la IA?
+  - ¿Cuáles son las principales opciones (OpenAI ChatGPT, Google Gemini, Anthropic Claude, xAI Grok, Mistral LeChat...)?
+  - Diferencias: Ventajas y desventajas entre modelos
+
++ Hablar en el lenguaje de la IA:
+  - Markdown
+  - JSON
+  - YML
+  - TOON  (nuevo formato, potencial de convertirse en tendencia)
+
+
+### Thinking Framework
+
+#### Thinking Development
+- Entender cómo funciona los modelos de IA generativa
+- Desarrollar criterio para escoger entre un modelo u otro
+- Comprender cómo desarrollar un buen contexto para la IA
+- Reconocer la importancia de desarrollar la autonomía en la resolución de problemas
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+- Tratar a todas las IAs por igual
+- Escribir sin estructura ni formato
+
+#### Constraints & Limitations
+- No IA
+
+## Week 0 — Day -1
+
+### Content
+
+Prework - 
+Skill 0.7: Conocer qué son los Coding Agents y cómo funcionan
+Skill 0.8: Conocer los fundamentos de la AI Engineering
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 0 — Day -1
+
+**Status:** Aprobado
+
+### Teoría
+
+> Teoría:
+
++ Using Coding agents 
+  - ¿Cómo funciona la IA en desarrollo?
+  - Configuración básica de Coding Agent en Github Codespaces
+  - Herramientas más conocidas: https://agents.4geeks.com/
+  - Using LLMs
+  - Token consumption, pricing, parameters
+
++ Fundamentos del AI Engineer
+  - Programación asistida con IA
+  - Human in the loop / Humanos en el proceso
+  - Camino de menor resistencia
+
+
+### Thinking Framework
+
+#### Thinking Development
+- Entender cómo funcionan los Coding Agents
+- Desarrollar criterio para escoger entre un modelo u otro
+- Comprender cómo desarrollar un buen contexto para la IA
+- Concientizar la necesidad del hábito de leer y atender a los detalles 
+- Reconocer la importancia de desarrollar la autonomía en la resolución de problemas
+
+#### Best Practices
+- Iterar vs crear de nuevo: vibecoding manifest
+https://vibemanifesto.org/
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
 ## Week 1 — Day 1
 
 ### Content
@@ -3833,6 +4209,634 @@ Triggers for background processing:
 - Chained processing (internal workflow or data pipeline)
 - Observability : poder saber lo que pasó
 - Durability: que la "función" no se detenga en su ejecución, si no cuando deba detenerse.
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 17 — Day 53
+
+### Content
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 13 — Day 43
+
+### Content
+
+Skill x: Predictions Model
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 14 — Day 44
+
+### Content
+
+Building a data pipeline for create a dataset for an LLM or ML Model to use
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 14 — Day 45
+
+### Content
+
+Skill: Rag
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 14 — Day 46
+
+### Content
+
+Building an AI Agent loop capable of calling tools (funcions)
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 14 — Day 1
+
+### Content
+
+Guardrails
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 13 — Day 51
+
+### Content
+
+Skill 31: Using queues and tasks to delegate
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 13 — Day 51
+
+**Status:** Teoría pendiente aprobación
+
+### Content
+
+Building a queue that process incoming leads and detects entry errors
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 15 — Day 47
+
+### Content
+
+Skill x: MCPs
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 15 — Day 47
+
+**Status:** Teoría pendiente aprobación
+
+### Teoría
+
+> Teoría:
+ - MCP: Definición y analogías
+ - Tipos de MCP: Host, Client, Server
+ - Arquitectura general
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+- Fine-tuning
+- Criterios de comportamiento y tipo de respuesta
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 15 — Day 48
+
+### Content
+
+Skill 35: Workflows and Integrations with multiple services and applications using N8N.
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 15 — Day 48
+
+**Status:** Teoría pendiente aprobación
+
+### Teoría
+
+Teoría:
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 15 — Day 49
+
+### Content
+
+Skill 34: Dont assign status and send to 3rd party workflow trigger like N8N
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 15 — Day 50
+
+### Content
+
+Multi-Agent Systems
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 14 — Day 52
+
+### Content
+
+Skill 32:  Assign status to the chunk and start a cronjob every day to process
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 14 — Day 53
+
+### Content
+
+Skill 33: Calling a serverless durable funcion
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 14 — Day 53
+
+**Status:** Teoría pendiente aprobación
+
+### Content
+
+Using vercel to build a user-machin chat with an LLM in the background
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 16 — Day 44
+
+### Content
+
+Building a customer support chat with real time communication to an LLM
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 16 — Day 51
+
+### Content
+
+Skill x: Integration Plan
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 16 — Day 51
+
+### Teoría
+
+> Teoría:
+ - Introducción a la gestión de proyectos ágil y profesional 
+ - Plan de implementación
+ - Historias de usuario
+ - Intro a CS
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+- MCP
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 17 — Day 52
+
+### Content
+
+Skill x: Usando LLMs para auditorias de CS
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 17 — Day 54
+
+### Content
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 18 — Day 55
+
+### Content
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 18 — Day 56
+
+### Content
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 18 — Day 57
+
+### Content
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 19 — Day 58
+
+### Content
 
 
 ### Thinking Framework

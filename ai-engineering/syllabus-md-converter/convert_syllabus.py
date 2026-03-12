@@ -80,6 +80,14 @@ def determine_status(day_str, current_week):
 def convert(input_path, output_path):
     df = pd.read_excel(input_path, sheet_name="Planificación del programa")
 
+    # Drop columns that must be ignored entirely (may or may not be present)
+    ignore_cols = [
+        "Rúbrica (evaluación del proyecto)",
+        "URLs de Learnpack",
+        "Review Learnpack",
+    ]
+    df = df.drop(columns=[c for c in ignore_cols if c in df.columns])
+
     output = ["# Syllabus (Clean Extract)", ""]
     last_heading = None
     current_week = None  # track which week we're in for status mapping

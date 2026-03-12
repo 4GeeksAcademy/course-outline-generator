@@ -8,6 +8,8 @@ This document describes every rule needed to convert the 4Geeks Academy syllabus
 
 **Sheet name:** `Planificación del programa`
 
+The Excel file may contain additional sheets (e.g., `Control de contenidos`, `Control de ejercicios y proyect`, `Required capabilities`, `Consenso para FS with AI`, `Índice de Skills`). **All sheets other than `Planificación del programa` must be ignored entirely.** Only read from this one sheet.
+
 **Columns (in order):**
 
 | Column | Internal Name | Purpose |
@@ -21,6 +23,8 @@ This document describes every rule needed to convert the 4Geeks Academy syllabus
 | G | `Anti patrones` | Anti-patterns text |
 | H | `Limitaciones` | Constraints & Limitations text |
 | I | `Rúbrica (evaluación del proyecto)` | Rubric (ignore entirely) |
+| J | `URLs de Learnpack` | Learnpack URLs (ignore entirely) |
+| K | `Review Learnpack` | Learnpack review status (ignore entirely) |
 
 ---
 
@@ -176,7 +180,10 @@ For **Orphan Rows** (category 2.5) that follow a Skill Header:
 
 ## 5. What to Ignore Entirely
 
+- **All sheets except `Planificación del programa`** — the Excel file contains other sheets (`Control de contenidos`, `Control de ejercicios y proyect`, `Required capabilities`, `Consenso para FS with AI`, `Índice de Skills`, and possibly others). Never read or process any of them.
 - Column I (`Rúbrica`) — never read or output.
+- Column J (`URLs de Learnpack`) — never read or output.
+- Column K (`Review Learnpack`) — never read or output.
 - All HITO rows — these are milestone/project markers.
 - All project/práctica-only rows (see section 2.3).
 - Section divider rows (see section 2.1).
