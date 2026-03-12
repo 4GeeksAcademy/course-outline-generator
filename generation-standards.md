@@ -110,6 +110,8 @@ Claude: "I found several learnapacks that could fit. Please specify the EXACT + 
   3. **Challenge code** — the starter file the student receives (with stubs or `// your code here` markers)
 - These three components are converted to files when Learnpack generates them
 - **💻 lessons never teach** — if a topic needs both teaching and practice, the teaching goes in a 📖 lesson and the practice goes in a separate 💻 lesson added after it in the same section
+- **Single-task challenge prompts (HARD RULE):** Each 💻 challenge prompt must describe ONE focused task in 1-2 sentences. NEVER use numbered sub-tasks, multi-step lists, or multiple objectives inside a single challenge prompt. If a challenge naturally has multiple parts, describe it as one cohesive goal (e.g., "Build a complete CRUD API for a contacts resource" NOT "1. Create GET, 2. Create POST, 3. Create DELETE"). Numbered lists and multi-step prompts cause downstream tools (Rigobot) to split one challenge into many, breaking the course structure.
+- **Code block length:** Both the solution code and challenge code should be concise and readable — aim for under 30 lines each. If the code is getting longer, the challenge scope is too broad.
 - Word count: ~500-700 words
 - **Mark with 💻 emoji**
 
@@ -294,9 +296,9 @@ Which ONE should I generate?"
 5. Examples (2-3 concrete illustrations)
 
 ### Every Hands-On Lesson (💻) Must Include:
-1. Challenge Prompt (clear instructions on what the student must do)
-2. Solution Code (complete working answer)
-3. Challenge Code (starter file with stubs or `// your code here` markers)
+1. Challenge Prompt — ONE focused task described in 1-2 sentences (never numbered sub-tasks or multi-step lists)
+2. Solution Code — complete working answer, under 30 lines
+3. Challenge Code — starter file with stubs or `// your code here` markers, under 30 lines
 
 ### Every Assessment Lesson (🧠) Must Include:
 1. Learning Objectives (2-4 specific, measurable outcomes)
@@ -349,6 +351,8 @@ Which ONE should I generate?"
 - [ ] No theory or explanation inside any 💻 lesson
 - [ ] Every 💻 lesson is the last lesson in its section
 - [ ] Teaching content preceding a 💻 is covered in a 📖 lesson in the same section
+- [ ] Every challenge prompt is ONE focused task in 1-2 sentences (no numbered sub-tasks or multi-step lists)
+- [ ] Solution code and challenge code are each under 30 lines
 
 ### Word Counts
 - [ ] Conceptual (📖): 400-600 words
@@ -400,6 +404,8 @@ Which ONE should I generate?"
 - Invent content for framework sections marked as "Not introduced"
 - Include any theory or explanation inside a 💻 lesson
 - Place a 💻 lesson anywhere other than last in its section
+- Use numbered sub-tasks or multi-step lists in 💻 challenge prompts (causes Rigobot to split one challenge into many)
+- Write solution or challenge code blocks longer than 30 lines
 
 ### DO:
 - Ask user to specify EXACT `+` block name from syllabus
@@ -412,6 +418,8 @@ Which ONE should I generate?"
 - Write specific, measurable learning objectives
 - Choose ONE assessment format per lesson (not mixed)
 - Keep 💻 lessons as pure code challenges (prompt + solution code + challenge code)
+- Write each 💻 challenge prompt as ONE focused task in 1-2 sentences (e.g., "Build a complete CRUD API for a contacts resource" NOT "1. Create GET, 2. Create POST, 3. Create DELETE")
+- Keep solution and challenge code under 30 lines each
 - Ensure all teaching for a 💻 challenge is covered in a preceding 📖 in the same section
 - Mark every content lesson with appropriate emoji
 - End with single outro lesson only (no content, no exercises)
@@ -685,6 +693,7 @@ This course emphasizes:
 10. **Guidelines are flexible** (serve educational quality, not arbitrary rules)
 11. **💻 lessons are pure code challenges only** (prompt + solution code + challenge code — no theory)
 12. **💻 lessons are always last in their section** (no lesson follows a 💻 in the same section)
+13. **💻 challenge prompts = ONE task, 1-2 sentences** (never numbered sub-tasks — Rigobot splits them into multiple lessons)
 
 ---
 
@@ -700,5 +709,6 @@ This course emphasizes:
 6. ✓ Examined upcoming learnapacks for context? (Avoid premature topics)
 7. ✓ Are all 💻 lessons placed last in their section?
 8. ✓ Do all 💻 lessons contain only challenge prompt, solution code, and challenge code?
+9. ✓ Is every 💻 challenge prompt ONE focused task in 1-2 sentences? (No numbered sub-tasks)
 
 **If any answer is NO, STOP and resolve before proceeding.**
