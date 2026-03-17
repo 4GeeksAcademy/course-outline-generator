@@ -4071,7 +4071,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 36: Building a report from the telemetry or user data
+Skill 37: Building a report from the telemetry or user data
 
 
 ### Thinking Framework
@@ -4161,7 +4161,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 37: Background processing
+Skill 38: Background processing
 
 
 ### Thinking Framework
@@ -4188,50 +4188,81 @@ _Not introduced in this learnpack_
 ### Teoría
 
 > Teoría:
-  + Introducción procesamiento en segundo plano
-    - ¿Qué es la ejecución en segundo plano (Background processing)? (Ejecución fuera del ciclo request-response)
+  + Introducción procesamiento en segundo plano (Background processing)
+    - ¿Qué es la ejecución en segundo plano? (Ejecución fuera del ciclo request-response)
+    - Principios indispensables en el procesamiento del segundo plano
+      -- Delegación de tareas: Mueve tareas de larga duración (envío de emails, procesamiento de imágenes, generación de reportes) fuera del hilo principal de la aplicación.
+      -- Idempotencia: si una tarea se ejecuta varias veces debido a reintentos, el resultado final debe ser el mismo que si se hubiera ejecutado una sola vez (Evitar la duplicación de datos)
+      -- Desacoplamiento: Permitir que el sistema emisor y el receptor funcionen de manera independiente (colas de mensajes)
+      -- Observabilidad (poder saber qué pasó)
+      -- Durabilidad: que la "función" no se detenga en su ejecución, sino cuando deba detenerse.
+    - Buenas prácticas en procesamiento de segundo plano
+      -- Reintentos automáticos (Retry Logic)
+      -- Manejo de Errores
+      -- Persistencia
+
+  + Tipos de disparadores de procesamiento en segundo plano:
+    - ¿Qué es un disparador o trigger?
+    - User-triggered background processing
+    - Telemetry (or machine) triggered background processing
+    - Cronjob triggered background processing
+    - 3rd part triggered background processing
+    - Chained processing (internal workflow or data pipeline)
+    - ¿Cuándo utilizar cada uno?
+
+  + Procesamiento en segundo plano con Cronjobs:
     - ¿Qué es un Cronjob?
-    - Observabilidad de un cronjob (Timestamp y estado éxito/fallo)
     - ¿Cómo configurar cronjobs?
       - Por sistema (crontab)
       - Por framework (fastapi-utilities)
+    - Observabilidad de un cronjob (Timestamp y estado éxito/fallo)
+      -- Background processing is better done if we assign a status to the data chunk that is being processed
     - Cómo usar cronjobs para construir un reporte
-
-General concepts:
-       - Background processing is better done if we assign status to the data chunk that is being procesed
-
-Triggers for background processing:
-
-- User triggered background processing
-- Telemetry (or machine) triggered backgorund processing
-- Cronjob triggered backgorund processing
-- 3rd part triggered background processing
-- Chained processing (internal workflow or data pipeline)
-- Observability : poder saber lo que pasó
-- Durability: que la "función" no se detenga en su ejecución, si no cuando deba detenerse.
+    - Casos comunes:
+      -- Solapamiento de cronjobs (Overlapping)
+      -- Gestión de fallos: poder saber lo que pasó
+    - Buenas prácticas
 
 
 ### Thinking Framework
 
 #### Thinking Development
-_Not introduced in this learnpack_
+- Entender que en sistemas de alto tráfico no podemos prometerle al usuario un resultado inmediato.
+- Desarrollar la empatía técnica para diseñar interfaces y flujos de datos asíncronos (prometer que la tarea se hará "eventualmente" y diseñar mecanismos como polling o notificaciones para avisar cuando esté lista).
+- Comprender que un dato en procesamiento en segundo plano no existe solo como "datos", sino que tiene un ciclo de vida (Pendiente, Procesando, Completado, Fallido)
+- Asumir "como regla inquebrantable" que todo script en segundo plano fallará en algún momento (por reinicios, caídas de red o timeouts)
+- Desarrollar la habilidad de escribir código que, si se ejecuta dos o cien veces sobre la misma orden, el resultado final siempre sea el mismo sin duplicar operaciones.
 
 #### Best Practices
-_Not introduced in this learnpack_
+- Generar logs de ejecución
 
 #### Patterns
-_Not introduced in this learnpack_
+- Máquina de Estados (State Machine): El chunk de datos cambia de estado: pending -> processing (para que otro worker no lo tome) -> completed o failed.
+
+- Distributed Locks (Bloqueos Mutuos): Al iniciar, el cronjob escribe un "candado" en la BD o en Redis (lock_reporte_mensual = true). Si la siguiente ejecución ve el candado, aborta silenciosamente.
+
+- Dead Letter Queue / Max Retries: Establecer un max_retries = 3. Si falla 3 veces, el estado pasa a failed y lanza una alerta al equipo (Observabilidad).
 
 #### Anti-patterns
-_Not introduced in this learnpack_
+- Solapamiento (Race Conditions): Dos ejecuciones del mismo cronjob corriendo en paralelo pisándose los datos porque el primero fue muy lento.
+
+- Lectura Ciega (Blind Read): El cronjob hace un SELECT * FROM reportes_pendientes, empieza a procesarlos y falla. En el siguiente ciclo, vuelve a intentar los mismos sin saber dónde se quedó.
+
+- Procesamiento en RAM (In-Memory BackgroundTasks): Usar las utilidades básicas de FastAPI (que corren en el mismo hilo de la app) para tareas críticas de 1 hora. Si FastAPI se reinicia por un deploy, se pierde el trabajo para siempre.
+
+- Fallo Silencioso / Infinito: Si falla un envío de email, el estado se queda en processing para siempre (Zombie task).
+
+- El Secuestro de la API (Blocking): El usuario pide un reporte PDF, el backend lo genera durante 30 segundos y luego responde. Si el usuario cierra el navegador al segundo 15, el proceso se corta o queda huérfano.
 
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 17 — Day 53
+## Week 17 — Day 43
 
 ### Content
 
+Skill 39:  ¿Colas?
+
 
 ### Thinking Framework
 
@@ -4250,7 +4281,40 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 43
+## Week 17 — Day 43
+
+**Status:** Teoría pendiente aprobación
+
+### Content
+
+Principio LIFO (Colas)
+Colas de Mensajes / Message Brokers (Concepto): Mencionas "User triggered", pero ¿dónde "espera" ese trabajo si el servidor está ocupado? Debes introducir conceptualmente las Colas (Queues) y los Workers (ej. Redis Queue, Celery, o AWS SQS), que son la verdadera garantía de Durabilidad.
+
+Gestión de Reintentos y Fallos (Dead Letter Queue - DLQ): ¿Qué pasa si el procesamiento falla por un error de red externo? ¿Se reintenta automáticamente? ¿Se descarta? ¿Se guarda en una "tabla de fallos" para revisión manual?
+
+   + Procesamiento Asíncrono (Offloading)
+     - El Patrón "Worker"
+     - Comunicación del progreso al Frontend
+
+
+### Thinking Framework
+
+#### Thinking Development
+- Interiorizar que cambiar el estado antes de hacer el trabajo es la única forma de evitar la concurrencia destructiva (que dos workers procesen lo mismo).
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 13 — Day 44
 
 ### Content
 
@@ -4274,7 +4338,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 44
+## Week 14 — Day 45
 
 ### Content
 
@@ -4298,7 +4362,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 45
+## Week 14 — Day 46
 
 ### Content
 
@@ -4322,7 +4386,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 46
+## Week 14 — Day 47
 
 ### Content
 
@@ -4370,7 +4434,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 51
+## Week 13 — Day 52
 
 ### Content
 
@@ -4394,7 +4458,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 51
+## Week 13 — Day 52
 
 **Status:** Teoría pendiente aprobación
 
@@ -4420,7 +4484,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 47
+## Week 15 — Day 48
 
 ### Content
 
@@ -4444,7 +4508,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 47
+## Week 15 — Day 48
 
 **Status:** Teoría pendiente aprobación
 
@@ -4474,7 +4538,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 48
+## Week 15 — Day 49
 
 ### Content
 
@@ -4498,7 +4562,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 48
+## Week 15 — Day 49
 
 **Status:** Teoría pendiente aprobación
 
@@ -4524,7 +4588,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 49
+## Week 15 — Day 50
 
 ### Content
 
@@ -4548,7 +4612,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 50
+## Week 15 — Day 51
 
 ### Content
 
@@ -4572,7 +4636,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 52
+## Week 14 — Day 53
 
 ### Content
 
@@ -4596,7 +4660,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 53
+## Week 14 — Day 54
 
 ### Content
 
@@ -4620,7 +4684,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 53
+## Week 14 — Day 54
 
 **Status:** Teoría pendiente aprobación
 
@@ -4646,7 +4710,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 16 — Day 44
+## Week 16 — Day 45
 
 ### Content
 
@@ -4670,7 +4734,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 16 — Day 51
+## Week 16 — Day 52
 
 ### Content
 
@@ -4694,7 +4758,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 16 — Day 51
+## Week 16 — Day 52
 
 ### Teoría
 
@@ -4722,7 +4786,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 17 — Day 52
+## Week 17 — Day 53
 
 ### Content
 
@@ -4749,6 +4813,8 @@ _Not introduced in this learnpack_
 ## Week 17 — Day 54
 
 ### Content
+
+Skill x: Desarrollar con IA orientad
 
 
 ### Thinking Framework
