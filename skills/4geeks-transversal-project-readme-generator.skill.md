@@ -36,7 +36,7 @@ Write in second person, direct professional tone. The company is always "your co
 
 ### The CONTEXT anchor — mandatory
 
-The README must reference `CONTEXT-company.md` (link to https://github.com/4GeeksAcademy/ai-engineering-milestone-contexts) in exactly two places:
+The README must reference `CONTEXT-company.md` (link to <https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/contexts>) in exactly two places:
 
 1. **In the hidden metadata block** — a note before the student starts.
 2. **In the task checklist** — a `⚠️ IMPORTANT` warning that a generic implementation ignoring the context will not be accepted.
@@ -89,7 +89,7 @@ By [@username](https://github.com/username) and [other contributors](https://git
 
 _Estas instrucciones están [disponibles en español](./README.es.md)._
 
-**Before you start**: Read your **[CONTEXT-company.md](https://github.com/4GeeksAcademy/ai-engineering-milestone-contexts)** before writing any code — it defines the specific company data, field names, KPIs, and constraints for your implementation.
+**Before you start**: Read your **[CONTEXT-company.md](https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/contexts)** before writing any code — it defines the specific company data, field names, KPIs, and constraints for your implementation.
 
 <!-- endhide -->
 ```
