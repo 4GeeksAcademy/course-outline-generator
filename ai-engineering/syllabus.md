@@ -1418,6 +1418,7 @@ Entender que la calidad de la respuesta depende de la calidad de la restricción
 -   El problema no suele ser el modelo, sino la calidad del encuadre del trabajo.
 - Una buena especificación permite delegar mejor, revisar menos y reducir el retrabajo.
 - Comprender que las prompts no deben ser exageradamente extensas sino tener la información realmente necesaria para que el modelo comprenda lo que se quiere obtener.
+- Identificar reglas mediante el análisis del qué se hizo, qué errores se cometieron, qué buenas prácticas se quieren implementar, qué acciones siempre se deben realizar...
 
 #### Best Practices
 _Not introduced in this learnpack_
@@ -1671,7 +1672,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 11: Identificar y definir componentes de una aplicación web
+Skill 13: Identificar y definir componentes de una aplicación web
 
 
 ### Thinking Framework
@@ -1771,7 +1772,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 12: Implementar interfaces interactivas con React + Next.js
+Skill 14: Implementar interfaces interactivas con React + Next.js
 
 
 ### Thinking Framework
@@ -1857,7 +1858,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 13: Entender la web architecture y el flujos de datos en ella
+Skill 15: Entender la web architecture y el flujos de datos en ella
 
 
 ### Thinking Framework
@@ -1952,7 +1953,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 14: Interacting with APIs
+Skill 16: Interacting with APIs
 
 
 ### Thinking Framework
@@ -2039,7 +2040,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 15: Debugging and optimizing the frontend
+Skill 17: Debugging and optimizing the frontend
 
 
 ### Thinking Framework
@@ -2155,7 +2156,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 16.1: Coding in python as programming language in backend
+Skill 18.1: Coding in python as programming language in backend
 
 
 ### Thinking Framework
@@ -2262,8 +2263,8 @@ Escribe el codigo, no lo copies
 
 ### Content
 
-Skill 16.2: Escribir bloques de código con nombres (funciones)
-Skill 17: Trabajar con tipos de datos estructurados de tipo listas y diccionarios
+Skill 18.2: Escribir bloques de código con nombres (funciones)
+Skill 19: Trabajar con tipos de datos estructurados de tipo listas y diccionarios
 
 
 ### Thinking Framework
@@ -2356,7 +2357,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 18: Diseñar la arquitectura del backend
+Skill 20: Diseñar la arquitectura del backend
 
 
 ### Thinking Framework
@@ -2426,7 +2427,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 19: Answering front end user-triggered requests
+Skill 21: Answering front end user-triggered requests
 
 
 ### Thinking Framework
@@ -2512,7 +2513,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 20: Creating basic Agents integrating LLMs with APIs
+Skill 22: Creating basic Agents integrating LLMs with APIs
 
 
 ### Thinking Framework
@@ -2611,7 +2612,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 21: Almacenar información desde el backend
+Skill 23: Almacenar información desde el backend
 
 
 ### Thinking Framework
@@ -2678,7 +2679,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 22: Alimentar datos estructurados a partir de archivos
+Skill 24: Alimentar datos estructurados a partir de archivos
 
 
 ### Thinking Framework
@@ -2742,7 +2743,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 23: Implementar mecanismos de autenticación
+Skill 25: Implementar mecanismos de autenticación
 
 
 ### Thinking Framework
@@ -2834,7 +2835,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 24: Creating authentication flows
+Skill 26: Creating authentication flows
 
 
 ### Thinking Framework
@@ -2926,7 +2927,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 25: Managing errors
+Skill 27: Managing errors
 
 
 ### Thinking Framework
@@ -3008,7 +3009,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 26: Implementar pruebas unitarias para validar las funcionalidades
+Skill 28: Implementar pruebas unitarias para validar las funcionalidades
 
 
 ### Thinking Framework
@@ -3082,7 +3083,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 27.1: Consultar tablas y gestionar filas en bases de datos
+Skill 29.1: Consultar tablas y gestionar filas en bases de datos
 
 
 ### Thinking Framework
@@ -3182,7 +3183,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 27.2: Consultar tablas relacionadas con SQL
+Skill 29.2: Consultar tablas relacionadas con SQL
 
 
 ### Thinking Framework
@@ -3251,7 +3252,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 28: Trabajar con datos estructurados de tipo objeto en Python
+Skill 30: Trabajar con datos estructurados de tipo objeto en Python
 
 
 ### Thinking Framework
@@ -3340,7 +3341,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 29: Relacionando objetos y tablas utilizando un ORM
+Skill 31: Relacionando objetos y tablas utilizando un ORM
 
 
 ### Thinking Framework
@@ -3425,7 +3426,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 30: Construir aplicaciones en contenedores
+Skill 32: Construir aplicaciones en contenedores
 
 
 ### Thinking Framework
@@ -3610,7 +3611,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 31.1: Optimizar la arquitectura para alto tráfico - Serializers
+Skill 33.1: Optimizar la arquitectura para alto tráfico - Serializers
 
 
 ### Thinking Framework
@@ -3695,7 +3696,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 31.2: Optimizar la arquitectura para alto tráfico - Caching
+Skill 33.2: Optimizar la arquitectura para alto tráfico - Caching
 
 
 ### Thinking Framework
@@ -3790,7 +3791,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 32: Cómo optimizar el almacenamiento para reporte, integridad, consulta o transporte
+Skill 34: Cómo optimizar el almacenamiento para reporte, integridad, consulta o transporte
 
 
 ### Thinking Framework
@@ -3903,7 +3904,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 33: Collecting telemetry and context-related info from the user and your application
+Skill 35: Collecting telemetry and context-related info from the user and your application
 
 
 ### Thinking Framework
@@ -4031,7 +4032,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 34: Identificar oportunidades de recolección de datos en escenarios reales que permitan optimizar compañías
+Skill 36: Identificar oportunidades de recolección de datos en escenarios reales que permitan optimizar compañías
 
 
 ### Thinking Framework
@@ -4112,7 +4113,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 35: Manejar datasets con Pandas
+Skill 37: Manejar datasets con Pandas
 
 
 ### Thinking Framework
@@ -4169,7 +4170,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 36: Building a data pipeline from the telemetry or user data
+Skill 38: Building a data pipeline from the telemetry or user data
 
 
 ### Thinking Framework
@@ -4240,7 +4241,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 37: Building a report from the telemetry or user data
+Skill 39: Building a report from the telemetry or user data
 
 
 ### Thinking Framework
@@ -4330,7 +4331,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 38: Background processing
+Skill 40: Background processing
 
 
 ### Thinking Framework
@@ -4430,7 +4431,7 @@ _Not introduced in this learnpack_
 
 ### Content
 
-Skill 39:  ¿Colas?
+Skill 41:  ¿Colas?
 
 
 ### Thinking Framework
