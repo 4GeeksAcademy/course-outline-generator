@@ -431,8 +431,15 @@ _Not introduced in this learnpack_
 ### Thinking Framework
 
 #### Thinking Development
-- Reconocer una interfaz y saber rapidamente en que cajas se va a dividir.
+- Reconocer una interfaz y saber rápidamente en qué cajas se va a dividir.
 - Poder seleccionar un elemento del DOM
+- Comprender la teoría de esquemas de colores frente a indicar colores genéricos
+- Reconocer si el código ha sido generado en función de estándares HTML y CSS
+- Verificar la correcta implementación de un etiquetado JSON-LD efectivo.
+- Comprender la necesidad de una aplicación accesible para incluir a personas con discapacidad y, por tanto, llegar a más visitantes y clientes.
+- Saber identificar la necesidad de un buen SEO/GEO para una mayor visibilidad en internet.
+- Saber verificar la estructura del documento a través del inspector de las DevTools
+- Saber identificar las reglas de estilo que tiene asociadaas cada elemento HTML a través del inspector de las DevTools
 
 #### Best Practices
 - Uso de tags generales ✅
@@ -515,12 +522,15 @@ _Not introduced in this learnpack_
 ### Thinking Framework
 
 #### Thinking Development
-- Saber identificar componentes en función del diseño (Pensar en interfaces de usuario con piezas reutilizables) 
+- Saber identificar componentes en función del diseño 
+- Pensar en interfaces de usuario con piezas reutilizables
 - compositional thinking: la idea es que el desarrollador vaya del macro al micro, empezando por el componente más externo hasta el más específico
 - Iteración top-bottom con IA: de la estructura principal a las características, terminando con colores y tipografías
 - Describir conceptualmente y no visualmente
 - Reconocer componentes en una interfaz
-- Identificar qué elementos cambiar según el dispositivo
+- Saber indicar a la IA qué componentes implementar
+- Identificar qué elementos adaptar según el dispositivo de visualización
+- Comprender que un sitio web atractivo y útil no necesariamente es el que tiene más elementos visuales, sino el que tiene la mejor organización y el contenido relevante.
 
 #### Best Practices
 - Using CDN
@@ -614,8 +624,12 @@ _Not introduced in this learnpack_
 ### Thinking Framework
 
 #### Thinking Development
-- Identificar que informacion precisas
+- Identificar que información se precisa de un usuario en un momento dado
+- Diferenciar datos según necesidades técnicas y necesidades comerciales (ej: para registro, el correo es indispensable para identificar al usuario, pero la ubicación puede ser opcional y solo una necesidad de marketing que no debe obstaculizar el registro. En cambio, si es una web que restringe el acceso a menores, la fecha de nacimiento no es un requisito secundario sino que se convierte en técnico y parte de la lógica del negocio.)
 - Cosas que no tienes que aprender en este punto (entrañas de JS en la validación, condiciones de dependencia entre los formularios)
+- Comprender que una correcta notificación facilita la corrección de errores en un formulario e incrementa la satisfacción de la persona
+- Comprender que un formulario corto y fácil de rellenar incrementa el éxito del mismo.
+- Identificar formas de distribuir el contenido de un formulario para que no se vea sobrecargado.
 
 #### Best Practices
 - Uso del correcto input type
@@ -769,6 +783,7 @@ _Not introduced in this learnpack_
 - Incorporar el uso de PR como mecanismo para incorporar funcionalidades/características por ramas
 - Cómo colaborar o contribuir de forma organizada
 - Como deshacer o revertir cambios
+- Comprender que Github es la vitrina técnica para mostrar nuestro talento y hay que mimar cada proyecto.
 
 #### Best Practices
 - Selección de archivos de un commit
@@ -850,9 +865,9 @@ _Not introduced in this learnpack_
 ### Thinking Framework
 
 #### Thinking Development
-- Pensamiento lógico / matemático.
-- Ir de los específico a lo general: comenzar por las excepciones al construir el algoritmo.
-- Saber diferenciar entre el crontrol flow y el state flow
+- Comprender la importancia del pensamiento lógico matemático como herramienta fundamental para el criterio técnico.
+- Identificar casos generales y casos específicos en un flujo.
+- Saber diferenciar entre el control flow y el state flow
 - Saber predecir state flow (ejecución en frio)
 - Identificar y evaluar los casos borde/límite de un problema
 - Reducir los condicionales al mínimo: bifurcar es agregar complejidad
@@ -1049,9 +1064,9 @@ _Not introduced in this learnpack_
  -- Mutar un valor de un proceso global
  -- obtener un valor y retornarlo
  
-- Reconocer los valores que necesita mi funcion para lograr su objetivo
+- Reconocer los valores que necesita mi función para lograr su objetivo
 
-- Reconocer el tipo de funcion que requiero
+- Reconocer el tipo de función que requiero
 
 - Mantener el principio de responsabilidad única
 
@@ -1127,7 +1142,7 @@ _Not introduced in this learnpack_
 ### Thinking Framework
 
 #### Thinking Development
-- Defnir y gestionar un array
+- Definir y gestionar un array
 - Definir y gestionar matrices
 - Diferenciar arrays y matrices
 - Entender cuando un elemento es iterable
@@ -1313,7 +1328,7 @@ _Not introduced in this learnpack_
 #### Thinking Development
 - Representar el mundo real en objetos literales / clases
 - Diferenciar un objeto de clase a un objeto literal 
-- Identificar cuando existe un "paso por referencia" y cuando es un "paso por valor"
+- Identificar cuándo existe un "paso por referencia" y cuándo es un "paso por valor"
 - Construir y manipular objetos
 
 #### Best Practices
@@ -1379,58 +1394,41 @@ _Not introduced in this learnpack_
     - Word efficiency  
     - Mención de skill 0.4 (Hablar el lenguaje de la IA) para refrescar los tipos de formatos.
 
-  + Convertir lo visual en especificaciones para la IA:
-    - Introducción al "Vision-to-Spec": Cómo traducir un diseño visual (mental o imagen) a especificaciones técnicas en lenguaje natural.
-    - Anatomía de un Prompt de UI: Rol (Senior Frontend Dev), Stack (React + Tailwind/Bootstrap), Restricciones y Contenido.
-    - Descomposición Visual (The Box Model Mental): Aprender a pedir "contenedores", "filas", "columnas" y "grid" sin escribir CSS.
-      -- Mención de skills (0 - 3) - aplicadas a este contexto/skill. 
-
-  + El Proceso Constructivo del frontend:
-    - Iteración Constructiva (The Painter’s Algo):
-      -- Estructura (Wireframe).
-      -- Contenido (Textos/Imágenes).
-      -- Estilizado (Colores/Espaciado).
-    - Camino de menor resistencia
-    - Feedback Loop: Cómo decirle a la IA que algo "se ve mal" usando la terminología correcta (padding, margen, alineación).
++ Spec Driven Design
+  - ¿Qué es una especificación?
+  - del “hazme esto” a "construye esto bajo estas reglas"
+  - ¿Qué es el Spec Driven Design?
+  - Relación entre Spec-Driven Design y agentes de código
+  - Anatomía de una spec bien hecha
+  - Buenas prácticas: Cómo escribir specs que los agentes ejecuten bien
+  - Uso de criterios de aceptación como contrato
 
 
 ### Thinking Framework
 
 #### Thinking Development
-Desarrollar abstracción Espacial: Capacidad de ver una web (ej. Spotify) y no ver "música", sino ver: Sidebar (fixed) + Main Content (scrollable) + Player (sticky footer).
-
 Desarrollar  pensamiento Declarativo: Pasar de pensar en "cómo hacerlo" (imperativo) a "qué quiero obtener" (declarativo).
 
-Entender que una Landing Page no es una sola instrucción, sino la suma de Navbar + Hero + Features + Footer. (Descomposición de Problemas)
 
 Entender que la calidad de la respuesta depende de la calidad de la restricción
 
-#### Best Practices
-Mobile First (Mentalidad): Instruir al LLM para que el diseño sea responsive por defecto. "Asegúrate de que en móvil se vea en una columna y en desktop en dos".
+  - Entender qué es Spec-Driven Design y por qué mejora el trabajo con agentes de código.
+  - Aprender a convertir una idea vaga en una especificación ejecutable y verificable.
+  - Diseñar flujos donde el agente no solo programa, sino que trabaja con contexto, restricciones y criterios de aceptación claros.
+-   El problema no suele ser el modelo, sino la calidad del encuadre del trabajo.
+- Una buena especificación permite delegar mejor, revisar menos y reducir el retrabajo.
+- Comprender que las prompts no deben ser exageradamente extensas sino tener la información realmente necesaria para que el modelo comprenda lo que se quiere obtener.
 
-Atomic Design (Simplificado): Enseñarles a pedirle a la IA que separe el código en archivos/componentes pequeños si el output es muy largo.
+#### Best Practices
+_Not introduced in this learnpack_
 
 #### Patterns
 El Patrón "Matrioshka" (Component Isolation)        Nunca pedir la página entera de una vez. Pedir componente por componente, de afuera hacia adentro o por secciones.
 
-El Patrón "Role & Stack Priming"        Definir el contexto técnico antes de pedir nada para evitar código "vanilla" o librerías obsoletas.
-
-El Patrón "Reference Injection"        Si el modelo es multimodal (acepta imágenes), subir un screenshot. Si no, describir la estructura basada en una grilla.
-
-El Patrón "Dummy Data First"        Pedir a la IA que hardcodee datos falsos (arrays de objetos) para visualizar la UI antes de conectar lógica real.
-
-El Patrón de Refinamiento (Drill-Down)        Ir de lo general a lo específico (Layout -> Componentes -> Estilos finos).
-
 #### Anti-patterns
 El "One-Shot Wonder" (La Bala de Plata):        Intentar generar el clon de Airbnb completo (Home, Detail, Checkout) en un solo prompt gigante.
 
-El "Vague Designer" (Diseñador Vago) : Usar adjetivos subjetivos en lugar de técnicos.
-
-El "Frankenstein Stack":        No especificar librerías, resultando en una mezcla de CSS puro, Bootstrap, estilos en línea y librerías raras.
-
-La "Lógica Prematura":        Intentar programar la funcionalidad (ej. autenticación, base de datos) mientras se está diseñando la UI.
-
-Asumir que la IA sabe qué todo lo que has estado "hablando" durante todo el projecto (ej. librerías usaste hace 3 prompts).
+Asumir que la IA sabe qué todo lo que has estado "hablando" durante todo el proyecto (ej. librerías usaste hace 3 prompts).
 
 Escribir 4 párrafos de historia de la empresa que no afectan el código. (Desperdicia tokens y confunde la atención de la IA).
 
@@ -1439,7 +1437,7 @@ El Prompt "Adivina": "Hazme una página bonita para una tienda". (Demasiada entr
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 13
+## Week 6 — Day 14
 
 ### Content
 
@@ -1463,7 +1461,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 13
+## Week 6 — Day 14
 
 **Status:** Approved
 
@@ -1482,12 +1480,6 @@ _Not introduced in this learnpack_
    - ¿Qué es un banco de memoria? ¿Para qué sirve?
    - ¿Qué es el contexto del producto? Descripción general del producto y del negocio para un mejor contexto de lo que se quiere desarrollar
    - ¿Qué es el plan de implementación? ¿Cómo construirlo con la IA? ¿Cómo gestionarlo con la IA?
-   
- + Skills: ¿Cómo tu agente puede aprender habilidades casi como Neo en Matrix?
-   - ¿Qué son las skills para los agentes?
-     -- ¿Cómo funcionan?
-   - ¿Cómo puedo enseñarle nuevas skills al agente?
-   - ¿Dónde puedo conseguir skills ya existentes? (https://skills.sh/)
 
 
 ### Thinking Framework
@@ -1496,6 +1488,8 @@ _Not introduced in this learnpack_
 - Comprender la importancia y funcionamiento de la jerarquía de reglas
 - Controlar el uso de los contextos de aplicación de las reglas
 - Saber crear y gestionar el banco de memoria 
+- Comprender la relevancia de un contexto bien mantenido para una estrategia de desarrollo exitosa.
+- Comprender que el código también es contexto y que las buenas prácticas se replican y que las malas prácticas de un código también se potencian con la IA.
 
 https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
 
@@ -1525,7 +1519,155 @@ https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agent
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 14
+## Week 5 — Day 13
+
+### Content
+
+Skill 11: Sintentizar acciones y reglas como habilidades (Skills) para los agentes
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 5 — Day 13
+
+### Teoría
+
+> Teoría: 
+ + Skills: ¿Cómo puede tu agente aprender habilidades casi como Neo en Matrix?
+   - ¿Qué son las skills para los agentes?
+     -- ¿Cómo funcionan?
+   - ¿Cómo puedo enseñarle nuevas skills al agente?
+   - ¿Dónde puedo conseguir skills ya existentes? (https://skills.sh/) 
+
+  + Creación de Skills:
+    - ¿Por qué es beneficioso crear una skill?
+    - ¿Cuándo crear una skill?
+    - ¿Cómo añadir mis propias skills a mi agente?
+    - ¿Qué estructura debe tener una skill para ser efectiva?
+    - Checklist de criterios de calidad de una buena Agent Skill
+      -- ¿Tiene un objetivo único y claro?
+      -- ¿Sus inputs están definidos y validados?
+      -- ¿El output es estructurado y verificable?
+      -- ¿Tiene criterios de aceptación explícitos?
+      -- ¿Es reusable en otros contextos?
+      -- ¿Se puede testear automáticamente?
+      -- ¿Minimiza ambigüedad?
+      -- ¿Tiene manejo de errores?
+      -- ¿Se puede componer con otras skills?
+
+
+### Thinking Framework
+
+#### Thinking Development
+- Entender que las skills son una evolución de las reglas con un propósito y contexto más claro
+- Concebir las skills descripción de funciones, acciones y habilidades concretas para enfocar el trabajo de un agente 
+- Reconocer nuestras habilidades como potenciales skills a transmitir a un agente
+- Comprender la importancia de las skills como un contexto enfocado a la acción
+- Identificar cuándo es conveniente crear una skill para hacer más eficiente el trabajo de un agente de código
+- Comprender que no hay una estrategia única y que la configuración es un balance entre reglas, contexto, skills, especificaciones y la base de código existente.
+
+#### Best Practices
+- Diseñar skills como unidades pequeñas y composables
+- Especificación explícita (Spec-first)
+- Inputs y outputs estructurados
+- Minimizar variabilidad innecesaria
+- Contexto mínimo pero suficiente
+- Manejo explícito de errores
+- Las skills deben dejar trazabilidad
+- Separar “pensar” de “hacer”
+-
+
+#### Patterns
+- Spec → Plan → Execute
+- Generator + Validator: una skill genera y otra valida
+- Chain of Skills: Varias skills pequeñas encadenadas
+- Tool Wrapper: Skill que encapsula herramientas
+- Guardrails First: Antes de ejecutar, validar.
+- Retry with constraints
+- Self-critique / reflection: El agente evalúa su propio output antes de devolverlo
+
+#### Anti-patterns
+- God Skill (skill monolítica)
+- Inputs implícitos: Depender de contexto no declarado
+- Outputs ambiguos: Respuestas abiertas cuando se necesita estructura
+- Overprompting: Incluir demasiadas instrucciones irrelevantes
+- Under-specification
+- Mezclar responsabilidades: Una misma skill que decide, implementa, valida y despliega.
+- No manejar edge cases
+- No validar inputs o outputs
+- Side effects no controlados
+- Dependencia excesiva del lenguaje natural
+-
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 5 — Day 13
+
+### Teoría
+
+> Teoría:
+  + Convertir lo visual en especificaciones para la IA:
+    - Introducción al "Vision-to-Spec": Cómo traducir un diseño visual (mental o imagen) a especificaciones técnicas en lenguaje natural.
+    - Anatomía de un Prompt de UI: Rol (Senior Frontend Dev), Stack (React + Tailwind/Bootstrap), Restricciones y Contenido.
+    - Descomposición Visual (The Box Model Mental): Aprender a pedir "contenedores", "filas", "columnas" y "grid" sin escribir CSS.
+      -- Mención de skills (0 - 3) - aplicadas a este contexto/skill. 
+
+  + El Proceso Constructivo del frontend:
+    - Iteración Constructiva (The Painter’s Algo):
+      -- Estructura (Wireframe).
+      -- Contenido (Textos/Imágenes).
+      -- Estilizado (Colores/Espaciado).
+    - Camino de menor resistencia
+    - Feedback Loop: Cómo decirle a la IA que algo "se ve mal" usando la terminología correcta (padding, margen, alineación).
+
+
+### Thinking Framework
+
+#### Thinking Development
+Desarrollar abstracción Espacial: Capacidad de ver una web (ej. Spotify) y no ver "música", sino ver: Sidebar (fixed) + Main Content (scrollable) + Player (sticky footer).
+Entender que una Landing Page no es una sola instrucción, sino la suma de Navbar + Hero + Features + Footer. (Descomposición de Problemas)
+
+#### Best Practices
+Mobile First (Mentalidad): Instruir al LLM para que el diseño sea responsive por defecto. "Asegúrate de que en móvil se vea en una columna y en desktop en dos".
+
+Atomic Design (Simplificado): Enseñarles a pedirle a la IA que separe el código en archivos/componentes pequeños si el output es muy largo.
+
+#### Patterns
+El Patrón "Role & Stack Priming"        Definir el contexto técnico antes de pedir nada para evitar código "vanilla" o librerías obsoletas.
+
+El Patrón "Reference Injection"        Si el modelo es multimodal (acepta imágenes), subir un screenshot. Si no, describir la estructura basada en una grilla.
+
+El Patrón "Dummy Data First"        Pedir a la IA que hardcodee datos falsos (arrays de objetos) para visualizar la UI antes de conectar lógica real.
+
+El Patrón de Refinamiento (Drill-Down)        Ir de lo general a lo específico (Layout -> Componentes -> Estilos finos).
+
+#### Anti-patterns
+El "Vague Designer" (Diseñador Vago) : Usar adjetivos subjetivos en lugar de técnicos.
+
+El "Frankenstein Stack":        No especificar librerías, resultando en una mezcla de CSS puro, Bootstrap, estilos en línea y librerías raras.
+
+La "Lógica Prematura":        Intentar programar la funcionalidad (ej. autenticación, base de datos) mientras se está diseñando la UI.
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 5 — Day 15
 
 ### Content
 
@@ -1549,7 +1691,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 14
+## Week 5 — Day 15
 
 **Status:** Approved
 
@@ -1625,7 +1767,7 @@ Ignorar el Build Error: Tratar de arreglar errores de compilación (Build Time) 
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 15
+## Week 5 — Day 16
 
 ### Content
 
@@ -1649,7 +1791,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 15
+## Week 5 — Day 16
 
 **Status:** Approved
 
@@ -1711,7 +1853,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 6 — Day 16
+## Week 6 — Day 17
 
 ### Content
 
@@ -1735,7 +1877,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 6 — Day 16
+## Week 6 — Day 17
 
 **Status:** Approved
 
@@ -1806,7 +1948,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - Llamadas a APIs solo con GET
 
-## Week 6 — Day 17
+## Week 6 — Day 18
 
 ### Content
 
@@ -1830,7 +1972,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 6 — Day 17
+## Week 6 — Day 18
 
 **Status:** Approved
 
@@ -1893,7 +2035,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 6 — Day 18
+## Week 6 — Day 19
 
 ### Content
 
@@ -1917,7 +2059,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 6 — Day 18
+## Week 6 — Day 19
 
 **Status:** Approved
 
@@ -2009,7 +2151,7 @@ Console Driven Development: Llenar el código de console.log("entré"), console.
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 7 — Day 19
+## Week 7 — Day 20
 
 ### Content
 
@@ -2033,7 +2175,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 7 — Day 19
+## Week 7 — Day 20
 
 **Status:** Approved
 
@@ -2116,7 +2258,7 @@ Escribe el codigo, no lo copies
 #### Constraints & Limitations
 - No IA
 
-## Week 7 — Day 20
+## Week 7 — Day 21
 
 ### Content
 
@@ -2141,7 +2283,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 7 — Day 20
+## Week 7 — Day 21
 
 **Status:** Approved
 
@@ -2210,7 +2352,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No IA
 
-## Week 7 — Day 21
+## Week 7 — Day 22
 
 ### Content
 
@@ -2234,7 +2376,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 7 — Day 21
+## Week 7 — Day 22
 
 **Status:** Approved
 
@@ -2280,7 +2422,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 22
+## Week 8 — Day 23
 
 ### Content
 
@@ -2304,7 +2446,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 22
+## Week 8 — Day 23
 
 **Status:** Approved
 
@@ -2366,7 +2508,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - Sin BD
 
-## Week 8 — Day 23
+## Week 8 — Day 24
 
 ### Content
 
@@ -2390,7 +2532,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 23
+## Week 8 — Day 24
 
 **Status:** Approved
 
@@ -2465,7 +2607,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 24
+## Week 8 — Day 25
 
 ### Content
 
@@ -2489,7 +2631,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 24
+## Week 8 — Day 25
 
 **Status:** Approved
 
@@ -2532,7 +2674,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 25
+## Week 9 — Day 26
 
 ### Content
 
@@ -2556,7 +2698,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 25
+## Week 9 — Day 26
 
 **Status:** Approved
 
@@ -2596,7 +2738,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No queremos dar SQL todavia, pero si poder persistir datos en una BD
 
-## Week 9 — Day 26
+## Week 9 — Day 27
 
 ### Content
 
@@ -2620,7 +2762,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 26
+## Week 9 — Day 27
 
 **Status:** Approved
 
@@ -2688,7 +2830,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 27
+## Week 9 — Day 28
 
 ### Content
 
@@ -2712,7 +2854,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 27
+## Week 9 — Day 28
 
 **Status:** Approved
 
@@ -2780,7 +2922,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 28
+## Week 10 — Day 29
 
 ### Content
 
@@ -2804,7 +2946,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 28
+## Week 10 — Day 29
 
 **Status:** Approved
 
@@ -2862,7 +3004,7 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 29
+## Week 10 — Day 30
 
 ### Content
 
@@ -2886,7 +3028,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 29
+## Week 10 — Day 30
 
 **Status:** Approved
 
@@ -2936,7 +3078,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 30
+## Week 10 — Day 31
 
 ### Content
 
@@ -2960,7 +3102,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 30
+## Week 10 — Day 31
 
 **Status:** Approved
 
@@ -3036,7 +3178,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No IA para la generación de Consultas SQL
 
-## Week 11 — Day 31
+## Week 11 — Day 32
 
 ### Content
 
@@ -3060,7 +3202,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 31
+## Week 11 — Day 32
 
 **Status:** Approved
 
@@ -3105,7 +3247,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 32
+## Week 11 — Day 33
 
 ### Content
 
@@ -3129,7 +3271,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 32
+## Week 11 — Day 33
 
 **Status:** Approved
 
@@ -3194,7 +3336,7 @@ Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se d
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 33
+## Week 11 — Day 34
 
 ### Content
 
@@ -3218,7 +3360,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 33
+## Week 11 — Day 34
 
 **Status:** Approved
 
@@ -3279,7 +3421,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 34
+## Week 12 — Day 35
 
 ### Content
 
@@ -3303,7 +3445,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 34
+## Week 12 — Day 35
 
 **Status:** Approved
 
@@ -3464,7 +3606,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 35
+## Week 12 — Day 36
 
 ### Content
 
@@ -3488,7 +3630,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 35
+## Week 12 — Day 36
 
 **Status:** Approved
 
@@ -3549,7 +3691,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 36
+## Week 12 — Day 37
 
 ### Content
 
@@ -3573,7 +3715,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 36
+## Week 12 — Day 37
 
 **Status:** Approved
 
@@ -3644,7 +3786,7 @@ Vary Headers / Caché por Sesión: Asegurar que los datos autenticados solo viva
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 36
+## Week 12 — Day 37
 
 ### Content
 
@@ -3668,7 +3810,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 36
+## Week 12 — Day 37
 
 **Status:** Approved
 
@@ -3757,7 +3899,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 37
+## Week 13 — Day 38
 
 ### Content
 
@@ -3781,7 +3923,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 37
+## Week 13 — Day 38
 
 **Status:** Approved
 
@@ -3885,41 +4027,11 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 38
+## Week 13 — Day 39
 
 ### Content
 
-Skill 34: Anwsering front end telemetry requests
-
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 13 — Day 38
-
-**Status:** Teoría pendiente aprobación
-
-### Content
-
-- Data and telemetry has become more and more important, we need to collect and process telemetry
-- Batch vs stream
-      - Processing a stream (atomic activity)
-      - Processing a batch (big chunks)
-- Throttling
+Skill 34: Identificar oportunidades de recolección de datos en escenarios reales que permitan optimizar compañías
 
 
 ### Thinking Framework
@@ -3940,6 +4052,63 @@ _Not introduced in this learnpack_
 _Not introduced in this learnpack_
 
 ## Week 13 — Day 39
+
+**Status:** Teoría pendiente aprobación
+
+### Teoría
+
+> Teoría: 
+- Data and telemetry have become more and more important, we need to collect and process telemetry
+- Batch vs stream
+      - Processing a stream (atomic activity)
+      - Processing a batch (big chunks)
+- Throttling 
+
++  Casos más representativos en telemetría: 
+  - Telemetría de producto y experiencia de usuario
+    -- Spotify registra cada skip, replay y búsqueda fallida para ajustar su algoritmo de recomendación.
+    -- Netflix mide el tiempo hasta el primer play, la tasa de abandono por episodio y los patrones de pausa para decidir qué contenido renovar.
+  - Infraestructura y DevOps (Observabilidad)
+    -- Google fue pionero con sus SRE y el concepto de error budget (si tu servicio tiene 99,9% de SLA, tienes exactamente 8,7 horas de caída tolerada al año).
+    -- OpenTelemetry como estándar emergente
+  - Ciberseguridad (SIEM y EDR)
+    -- Cloudflare procesa más de 50 millones de peticiones HTTP por segundo y usa esa telemetría para mitigar ataques DDoS en tiempo real
+  - IoT e industria (Mantenimiento predictivo)
+    -- Tesla recibe de cada vehículo datos de batería, temperatura, frenado y comportamiento del motor que alimentan actualizaciones OTA y predicen fallos
+    -- Sanz Clima, empresa española de alcance internacional especializada en climatización, obtiene datos de funcionamiento de sus equipos de climatización para analizar el funcionamiento y predecir la necesidad de mantenimiento.
+  - Negocio y conversión (Business Analytics)
+    -- Amazon usa telemetría para la optimización de funnels: cada clic, scroll y tiempo en página tiene un peso en decisiones de pricing, layouts y recomendaciones. 
+    -- Stripe monitoriza patrones de transacción para detectar fraude en milisegundos. 
+    -- Airbnb para sus modelos de precios dinámicos por zona, temporada y demanda observada.
+  - Vehículos conectados y logística
+    -- Waymo, los famosos vehículos autónomos de San Francisco con tecnologías (LiDAR, cámaras, radar y GPS generan terabytes de telemetría por hora de conducción)
+    -- Uber combina GPS, datos de tráfico y comportamiento del conductor para optimizar rutas en tiempo real. 
+    -- DHL usa telemetría de flota para prever retrasos, optimizar la "última milla" y reducir emisiones.
+
+
+### Thinking Framework
+
+#### Thinking Development
+- La telemetría no se genera por tener datos
+- La telemetría es la oportunidad para obtener datos de tus clientes
+- Cada dato en telemetría debe tener un propósito (con capto el clic de un estudiante solo porque puede ser un dato en el futuro)
+- Empezar por una hipótesis. 
+- AI es un commodity; los datos no. 
+- Una IA es tan buena como sus datos
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 13 — Day 40
 
 ### Content
 
@@ -3963,7 +4132,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 39
+## Week 13 — Day 40
 
 **Status:** Teoría pendiente aprobación
 
@@ -3996,7 +4165,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No loops, solo acumuladores
 
-## Week 14 — Day 40
+## Week 14 — Day 41
 
 ### Content
 
@@ -4020,7 +4189,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 40
+## Week 14 — Day 41
 
 **Status:** Teoría pendiente aprobación
 
@@ -4067,7 +4236,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 41
+## Week 13 — Day 42
 
 ### Content
 
@@ -4091,7 +4260,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 41
+## Week 13 — Day 42
 
 **Status:** Teoría pendiente aprobación
 
@@ -4157,7 +4326,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 42
+## Week 13 — Day 43
 
 ### Content
 
@@ -4181,7 +4350,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 42
+## Week 13 — Day 43
 
 **Status:** Teoría pendiente aprobación
 
@@ -4257,7 +4426,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 17 — Day 43
+## Week 17 — Day 44
 
 ### Content
 
@@ -4281,7 +4450,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 17 — Day 43
+## Week 17 — Day 44
 
 **Status:** Teoría pendiente aprobación
 
@@ -4314,7 +4483,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 44
+## Week 13 — Day 45
 
 ### Content
 
@@ -4338,7 +4507,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 45
+## Week 14 — Day 46
 
 ### Content
 
@@ -4362,7 +4531,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 46
+## Week 14 — Day 47
 
 ### Content
 
@@ -4386,7 +4555,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 47
+## Week 14 — Day 48
 
 ### Content
 
@@ -4434,7 +4603,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 52
+## Week 13 — Day 53
 
 ### Content
 
@@ -4458,7 +4627,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 52
+## Week 13 — Day 53
 
 **Status:** Teoría pendiente aprobación
 
@@ -4484,7 +4653,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 48
+## Week 15 — Day 49
 
 ### Content
 
@@ -4508,7 +4677,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 48
+## Week 15 — Day 49
 
 **Status:** Teoría pendiente aprobación
 
@@ -4538,7 +4707,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 49
+## Week 15 — Day 50
 
 ### Content
 
@@ -4562,7 +4731,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 49
+## Week 15 — Day 50
 
 **Status:** Teoría pendiente aprobación
 
@@ -4588,7 +4757,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 50
+## Week 15 — Day 51
 
 ### Content
 
@@ -4612,7 +4781,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 15 — Day 51
+## Week 15 — Day 52
 
 ### Content
 
@@ -4636,7 +4805,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 53
+## Week 14 — Day 54
 
 ### Content
 
@@ -4660,7 +4829,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 54
+## Week 14 — Day 55
 
 ### Content
 
@@ -4684,7 +4853,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 14 — Day 54
+## Week 14 — Day 55
 
 **Status:** Teoría pendiente aprobación
 
@@ -4710,7 +4879,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 16 — Day 45
+## Week 16 — Day 46
 
 ### Content
 
@@ -4734,7 +4903,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 16 — Day 52
+## Week 16 — Day 53
 
 ### Content
 
@@ -4758,7 +4927,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 16 — Day 52
+## Week 16 — Day 53
 
 ### Teoría
 
@@ -4786,7 +4955,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 17 — Day 53
+## Week 17 — Day 54
 
 ### Content
 
@@ -4810,33 +4979,11 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 17 — Day 54
+## Week 17 — Day 55
 
 ### Content
 
 Skill x: Desarrollar con IA orientad
-
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 18 — Day 55
-
-### Content
 
 
 ### Thinking Framework
@@ -4900,7 +5047,29 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 19 — Day 58
+## Week 18 — Day 58
+
+### Content
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 19 — Day 59
 
 ### Content
 
