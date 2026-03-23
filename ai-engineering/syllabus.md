@@ -1394,7 +1394,7 @@ _Not introduced in this learnpack_
     - Word efficiency  
     - Mención de skill 0.4 (Hablar el lenguaje de la IA) para refrescar los tipos de formatos.
 
-+ Spec Driven Design
+  + Spec Driven Design
   - ¿Qué es una especificación?
   - del “hazme esto” a "construye esto bajo estas reglas"
   - ¿Qué es el Spec Driven Design?
@@ -1402,6 +1402,14 @@ _Not introduced in this learnpack_
   - Anatomía de una spec bien hecha
   - Buenas prácticas: Cómo escribir specs que los agentes ejecuten bien
   - Uso de criterios de aceptación como contrato
+  
+ + ¿Qué son las reglas para una IA de programación?
+   - Alcances de las configuraciones y reglas de contextos: User vs Project. ¿Qué reglas son de preferencia personal y cuáles son de necesidad del proyecto?
+   - Aplicación de reglas: description, globs, alwaysApply
+     -- Eficiencia de tokens: 
+        --- Ir de lo general a los especifico. Muchos contextos con pequeños. 
+        --- Ir de los específico a lo general. Minímo contextos necesarios a la vez.
+   - Tipos de aplicación: Always, Auto Attached (pattern), Agent Requested (agent decides), Manual (mention), LLM Oriented
 
 
 ### Thinking Framework
@@ -1420,11 +1428,22 @@ Entender que la calidad de la respuesta depende de la calidad de la restricción
 - Comprender que las prompts no deben ser exageradamente extensas sino tener la información realmente necesaria para que el modelo comprenda lo que se quiere obtener.
 - Identificar reglas mediante el análisis del qué se hizo, qué errores se cometieron, qué buenas prácticas se quieren implementar, qué acciones siempre se deben realizar...
 
+- Comprender la importancia y funcionamiento de la jerarquía de reglas
+- Controlar el uso de los contextos de aplicación de las reglas
+
 #### Best Practices
-_Not introduced in this learnpack_
+- Definir especificaciones antes de empezar a desarrollar
+- Especificaciones pequeñas, claras y precisas
+
+- Usar Globs para reglas de formatos, utilidades y pruebas y agrupar por carpetas
+- Mencionar ficheros
 
 #### Patterns
 El Patrón "Matrioshka" (Component Isolation)        Nunca pedir la página entera de una vez. Pedir componente por componente, de afuera hacia adentro o por secciones.
+
+- Reglas claras, limitadas y específicas
+
+- Agregar nuevas reglas en función de las necesidades repetitivas que se van identificando
 
 #### Anti-patterns
 El "One-Shot Wonder" (La Bala de Plata):        Intentar generar el clon de Airbnb completo (Home, Detail, Checkout) en un solo prompt gigante.
@@ -1469,33 +1488,32 @@ _Not introduced in this learnpack_
 ### Teoría
 
 > Teoría:
- + ¿Qué son las reglas para una IA de programación?
-   - Alcances de las configuraciones y reglas de contextos: User vs Project. ¿Qué reglas son de preferencia personal y cuáles son de necesidad del proyecto?
-   - Aplicación de reglas: description, globs, alwaysApply
-     -- Eficiencia de tokens: 
-        --- Ir de lo general a los especifico. Muchos contextos con pequeños. 
-        --- Ir de los específico a lo general. Minímo contextos necesarios a la vez.
-   - Tipos de aplicación: Always, Auto Attached (pattern), Agent Requested (agent decides), Manual (mention), LLM Oriented
+
  
  + Memory bank: Persistencia del conocimiento más allá del chat actual
    - ¿Qué es un banco de memoria? ¿Para qué sirve?
    - ¿Qué es el contexto del producto? Descripción general del producto y del negocio para un mejor contexto de lo que se quiere desarrollar
    - ¿Qué es el plan de implementación? ¿Cómo construirlo con la IA? ¿Cómo gestionarlo con la IA?
+   
++ Skills: ¿Cómo puede tu agente aprender habilidades casi como Neo en Matrix?
+   - ¿Qué son las skills para los agentes?
+     -- ¿Cómo funcionan?
+   - ¿Cómo puedo enseñarle nuevas skills al agente?
+   - ¿Dónde puedo conseguir skills ya existentes? (https://skills.sh/)
 
 
 ### Thinking Framework
 
 #### Thinking Development
-- Comprender la importancia y funcionamiento de la jerarquía de reglas
-- Controlar el uso de los contextos de aplicación de las reglas
 - Saber crear y gestionar el banco de memoria 
 - Comprender la relevancia de un contexto bien mantenido para una estrategia de desarrollo exitosa.
 - Comprender que el código también es contexto y que las buenas prácticas se replican y que las malas prácticas de un código también se potencian con la IA.
 
 https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
 
+- Entender que las skills son una evolución de las reglas con un propósito y contexto más claro
+
 #### Best Practices
-- Usar Globs para reglas de formatos, utilidades y pruebas y agrupar por carpetas
 - Mencionar ficheros 
 - Comprender la estructura actual del proyecto.
 
@@ -1503,8 +1521,6 @@ https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agent
 - Crear un plan de implementación y luego señir el desarrollo a su ejecución
 - Mantener un plan de implementación dinámico según las necesidades del proyecto
 - Gestionar y mantener actualizado el banco de memoria
-- Reglas claras, limitadas y específicas
-- Agregar nuevas reglas en función de las necesidades repetitivas que se van identificando
 - Contenidos curados y concretos, no ambigüedades o divagaciones
 - Respetar las reglas del preexistentes del proyecto y sólo modifcar bajo consenso
 
@@ -1549,12 +1565,7 @@ _Not introduced in this learnpack_
 ### Teoría
 
 > Teoría: 
- + Skills: ¿Cómo puede tu agente aprender habilidades casi como Neo en Matrix?
-   - ¿Qué son las skills para los agentes?
-     -- ¿Cómo funcionan?
-   - ¿Cómo puedo enseñarle nuevas skills al agente?
-   - ¿Dónde puedo conseguir skills ya existentes? (https://skills.sh/) 
-
+ 
   + Creación de Skills:
     - ¿Por qué es beneficioso crear una skill?
     - ¿Cuándo crear una skill?
@@ -1575,8 +1586,7 @@ _Not introduced in this learnpack_
 ### Thinking Framework
 
 #### Thinking Development
-- Entender que las skills son una evolución de las reglas con un propósito y contexto más claro
-- Concebir las skills descripción de funciones, acciones y habilidades concretas para enfocar el trabajo de un agente 
+- Concebir las skills como descripción de funciones, acciones y habilidades concretas para enfocar el trabajo de un agente 
 - Reconocer nuestras habilidades como potenciales skills a transmitir a un agente
 - Comprender la importancia de las skills como un contexto enfocado a la acción
 - Identificar cuándo es conveniente crear una skill para hacer más eficiente el trabajo de un agente de código
@@ -1618,7 +1628,31 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 13
+## Week 5 — Day 15
+
+### Content
+
+Skill 12: Comunicarse efectivamente con la IA para la creación de interfaces
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 5 — Day 15
 
 ### Teoría
 
@@ -1668,7 +1702,7 @@ La "Lógica Prematura":        Intentar programar la funcionalidad (ej. autentic
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 15
+## Week 6 — Day 16
 
 ### Content
 
@@ -1692,7 +1726,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 15
+## Week 6 — Day 16
 
 **Status:** Approved
 
@@ -1768,7 +1802,7 @@ Ignorar el Build Error: Tratar de arreglar errores de compilación (Build Time) 
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 16
+## Week 6 — Day 17
 
 ### Content
 
@@ -1792,7 +1826,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 5 — Day 16
+## Week 6 — Day 17
 
 **Status:** Approved
 
@@ -1854,7 +1888,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 6 — Day 17
+## Week 6 — Day 18
 
 ### Content
 
@@ -1878,7 +1912,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 6 — Day 17
+## Week 6 — Day 18
 
 **Status:** Approved
 
@@ -1949,11 +1983,11 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - Llamadas a APIs solo con GET
 
-## Week 6 — Day 18
+## Week 7 — Day 19
 
 ### Content
 
-Skill 16: Interacting with APIs
+Skill 16: Connecting frontends with AI and Data APIs
 
 
 ### Thinking Framework
@@ -1973,7 +2007,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 6 — Day 18
+## Week 7 — Day 19
 
 **Status:** Approved
 
@@ -2036,7 +2070,38 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 6 — Day 19
+## Week 7 — Day 19
+
+**Status:** Approved
+
+### Content
+
+EJERCICIOS: Learnpack incremental que pida hacer diversas consultas a una API (a desarrollar) y registrar la respuesta como resultado.
+Ejemplo: Cuál es la sintaxis para obtener el valor "X" en el JSON obtenido
+
+Proyecto: 
+ - Crear una interfaz de mensajes con una IA (Groq) en el que se registren los datos de generación y consumo de tokens de la conversacion entera.
+ - Crear cuenta en Groq, generar API Key y comunicarse con un modelo desde su frontend.
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 7 — Day 20
 
 ### Content
 
@@ -2060,7 +2125,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 6 — Day 19
+## Week 7 — Day 20
 
 **Status:** Approved
 
@@ -2152,7 +2217,7 @@ Console Driven Development: Llenar el código de console.log("entré"), console.
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 7 — Day 20
+## Week 7 — Day 21
 
 ### Content
 
@@ -2176,7 +2241,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 7 — Day 20
+## Week 7 — Day 21
 
 **Status:** Approved
 
@@ -2259,7 +2324,7 @@ Escribe el codigo, no lo copies
 #### Constraints & Limitations
 - No IA
 
-## Week 7 — Day 21
+## Week 7 — Day 22
 
 ### Content
 
@@ -2284,7 +2349,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 7 — Day 21
+## Week 7 — Day 22
 
 **Status:** Approved
 
@@ -2353,7 +2418,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No IA
 
-## Week 7 — Day 22
+## Week 7 — Day 23
 
 ### Content
 
@@ -2377,7 +2442,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 7 — Day 22
+## Week 7 — Day 23
 
 **Status:** Approved
 
@@ -2423,7 +2488,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 23
+## Week 8 — Day 24
 
 ### Content
 
@@ -2447,7 +2512,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 23
+## Week 8 — Day 24
 
 **Status:** Approved
 
@@ -2509,7 +2574,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - Sin BD
 
-## Week 8 — Day 24
+## Week 8 — Day 25
 
 ### Content
 
@@ -2533,7 +2598,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 24
+## Week 8 — Day 25
 
 **Status:** Approved
 
@@ -2608,7 +2673,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 25
+## Week 8 — Day 26
 
 ### Content
 
@@ -2632,7 +2697,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 8 — Day 25
+## Week 8 — Day 26
 
 **Status:** Approved
 
@@ -2675,7 +2740,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 26
+## Week 9 — Day 27
 
 ### Content
 
@@ -2699,7 +2764,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 26
+## Week 9 — Day 27
 
 **Status:** Approved
 
@@ -2739,7 +2804,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No queremos dar SQL todavia, pero si poder persistir datos en una BD
 
-## Week 9 — Day 27
+## Week 9 — Day 28
 
 ### Content
 
@@ -2763,7 +2828,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 27
+## Week 9 — Day 28
 
 **Status:** Approved
 
@@ -2831,7 +2896,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 28
+## Week 9 — Day 29
 
 ### Content
 
@@ -2855,7 +2920,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 9 — Day 28
+## Week 9 — Day 29
 
 **Status:** Approved
 
@@ -2923,7 +2988,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 29
+## Week 10 — Day 30
 
 ### Content
 
@@ -2947,7 +3012,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 29
+## Week 10 — Day 30
 
 **Status:** Approved
 
@@ -3005,7 +3070,7 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 30
+## Week 10 — Day 31
 
 ### Content
 
@@ -3029,7 +3094,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 30
+## Week 10 — Day 31
 
 **Status:** Approved
 
@@ -3079,7 +3144,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 31
+## Week 10 — Day 32
 
 ### Content
 
@@ -3103,7 +3168,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 10 — Day 31
+## Week 10 — Day 32
 
 **Status:** Approved
 
@@ -3179,7 +3244,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 - No IA para la generación de Consultas SQL
 
-## Week 11 — Day 32
+## Week 11 — Day 33
 
 ### Content
 
@@ -3203,7 +3268,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 32
+## Week 11 — Day 33
 
 **Status:** Approved
 
@@ -3248,7 +3313,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 33
+## Week 11 — Day 34
 
 ### Content
 
@@ -3272,7 +3337,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 33
+## Week 11 — Day 34
 
 **Status:** Approved
 
@@ -3337,7 +3402,7 @@ Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se d
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 34
+## Week 11 — Day 35
 
 ### Content
 
@@ -3361,7 +3426,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 11 — Day 34
+## Week 11 — Day 35
 
 **Status:** Approved
 
@@ -3422,7 +3487,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 35
+## Week 12 — Day 36
 
 ### Content
 
@@ -3446,7 +3511,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 35
+## Week 12 — Day 36
 
 **Status:** Approved
 
@@ -3607,7 +3672,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 36
+## Week 12 — Day 37
 
 ### Content
 
@@ -3631,7 +3696,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 36
+## Week 12 — Day 37
 
 **Status:** Approved
 
@@ -3692,7 +3757,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 37
+## Week 12 — Day 38
 
 ### Content
 
@@ -3716,7 +3781,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 37
+## Week 12 — Day 38
 
 **Status:** Approved
 
@@ -3787,7 +3852,7 @@ Vary Headers / Caché por Sesión: Asegurar que los datos autenticados solo viva
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 37
+## Week 12 — Day 38
 
 ### Content
 
@@ -3811,7 +3876,7 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 12 — Day 37
+## Week 12 — Day 38
 
 **Status:** Approved
 
@@ -3900,11 +3965,11 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 38
+## Week 13 — Day 39
 
 ### Content
 
-Skill 35: Collecting telemetry and context-related info from the user and your application
+Skill 35: Identificar oportunidades de recolección de datos en escenarios reales que permitan optimizar compañías
 
 
 ### Thinking Framework
@@ -3924,7 +3989,92 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 38
+## Week 13 — Day 39
+
+**Status:** Teoría pendiente aprobación
+
+### Teoría
+
+> Teoría: 
++ Arquitectura y diseño de mecanismos de telemetría
+- Data and telemetry have become more and more important; we need to collect and process telemetry
+- Throttling 
+- Batch vs stream
+      - Processing a stream (atomic activity)
+      - Processing a batch (big chunks)
+- Viabilidad de enviar los datos (serialización, mecanismo/formato de envío)
+- Procesar en el dispositivo cliente (frontend, dispositivo, otro backend) vs procesar en el dispositivo servidor (backend)
+
++ Casos más representativos en telemetría: 
+  - Telemetría de producto y experiencia de usuario
+    -- Spotify registra cada skip, replay y búsqueda fallida para ajustar su algoritmo de recomendación.
+    -- Netflix mide el tiempo hasta el primer play, la tasa de abandono por episodio y los patrones de pausa para decidir qué contenido renovar.
+  - Infraestructura y DevOps (Observabilidad)
+    -- Google fue pionero con sus SRE y el concepto de error budget (si tu servicio tiene 99,9% de SLA, tienes exactamente 8,7 horas de caída tolerada al año).
+    -- OpenTelemetry como estándar emergente
+  - Ciberseguridad (SIEM y EDR)
+    -- Cloudflare procesa más de 50 millones de peticiones HTTP por segundo y usa esa telemetría para mitigar ataques DDoS en tiempo real
+  - IoT e industria (Mantenimiento predictivo)
+    -- Tesla recibe de cada vehículo datos de batería, temperatura, frenado y comportamiento del motor que alimentan actualizaciones OTA y predicen fallos
+  - Negocio y conversión (Business Analytics)
+    -- Amazon usa telemetría para la optimización de funnels: cada clic, scroll y tiempo en página tiene un peso en decisiones de pricing, layouts y recomendaciones. 
+    -- Stripe monitoriza patrones de transacción para detectar fraude en milisegundos. 
+    -- Airbnb para sus modelos de precios dinámicos por zona, temporada y demanda observada.
+  - Vehículos conectados y logística
+    -- Waymo, los famosos vehículos autónomos de San Francisco con tecnologías (LiDAR, cámaras, radar y GPS generan terabytes de telemetría por hora de conducción)
+    -- Uber combina GPS, datos de tráfico y comportamiento del conductor para optimizar rutas en tiempo real. 
+    -- DHL usa telemetría de flota para prever retrasos, optimizar la "última milla" y reducir emisiones.
+
+
+### Thinking Framework
+
+#### Thinking Development
+- La telemetría no se genera por tener datos
+- La telemetría es la oportunidad para obtener datos de tus clientes
+- Cada dato en telemetría debe tener un propósito (con capto el clic de un estudiante solo porque puede ser un dato en el futuro)
+- Empezar por una hipótesis. 
+- AI es un commodity; los datos no. 
+- Una IA es tan buena como sus datos
+
+- Pensar cómo se van a enviar los datos para definir cómo se van a formatear: Si tengo que medir cada segundo es mucha información enviarlo de forma individual. Si acumulo muchos mensajes puede tardar mucho el envío.
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 13 — Day 40
+
+### Content
+
+Skill 36: Collecting telemetry and context-related info from the user and your application
+
+
+### Thinking Framework
+
+#### Thinking Development
+_Not introduced in this learnpack_
+
+#### Best Practices
+_Not introduced in this learnpack_
+
+#### Patterns
+_Not introduced in this learnpack_
+
+#### Anti-patterns
+_Not introduced in this learnpack_
+
+#### Constraints & Limitations
+_Not introduced in this learnpack_
+
+## Week 13 — Day 40
 
 **Status:** Approved
 
@@ -4028,87 +4178,6 @@ _Not introduced in this learnpack_
 #### Constraints & Limitations
 _Not introduced in this learnpack_
 
-## Week 13 — Day 39
-
-### Content
-
-Skill 36: Identificar oportunidades de recolección de datos en escenarios reales que permitan optimizar compañías
-
-
-### Thinking Framework
-
-#### Thinking Development
-_Not introduced in this learnpack_
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
-## Week 13 — Day 39
-
-**Status:** Teoría pendiente aprobación
-
-### Teoría
-
-> Teoría: 
-- Data and telemetry have become more and more important, we need to collect and process telemetry
-- Batch vs stream
-      - Processing a stream (atomic activity)
-      - Processing a batch (big chunks)
-- Throttling 
-
-+  Casos más representativos en telemetría: 
-  - Telemetría de producto y experiencia de usuario
-    -- Spotify registra cada skip, replay y búsqueda fallida para ajustar su algoritmo de recomendación.
-    -- Netflix mide el tiempo hasta el primer play, la tasa de abandono por episodio y los patrones de pausa para decidir qué contenido renovar.
-  - Infraestructura y DevOps (Observabilidad)
-    -- Google fue pionero con sus SRE y el concepto de error budget (si tu servicio tiene 99,9% de SLA, tienes exactamente 8,7 horas de caída tolerada al año).
-    -- OpenTelemetry como estándar emergente
-  - Ciberseguridad (SIEM y EDR)
-    -- Cloudflare procesa más de 50 millones de peticiones HTTP por segundo y usa esa telemetría para mitigar ataques DDoS en tiempo real
-  - IoT e industria (Mantenimiento predictivo)
-    -- Tesla recibe de cada vehículo datos de batería, temperatura, frenado y comportamiento del motor que alimentan actualizaciones OTA y predicen fallos
-    -- Sanz Clima, empresa española de alcance internacional especializada en climatización, obtiene datos de funcionamiento de sus equipos de climatización para analizar el funcionamiento y predecir la necesidad de mantenimiento.
-  - Negocio y conversión (Business Analytics)
-    -- Amazon usa telemetría para la optimización de funnels: cada clic, scroll y tiempo en página tiene un peso en decisiones de pricing, layouts y recomendaciones. 
-    -- Stripe monitoriza patrones de transacción para detectar fraude en milisegundos. 
-    -- Airbnb para sus modelos de precios dinámicos por zona, temporada y demanda observada.
-  - Vehículos conectados y logística
-    -- Waymo, los famosos vehículos autónomos de San Francisco con tecnologías (LiDAR, cámaras, radar y GPS generan terabytes de telemetría por hora de conducción)
-    -- Uber combina GPS, datos de tráfico y comportamiento del conductor para optimizar rutas en tiempo real. 
-    -- DHL usa telemetría de flota para prever retrasos, optimizar la "última milla" y reducir emisiones.
-
-
-### Thinking Framework
-
-#### Thinking Development
-- La telemetría no se genera por tener datos
-- La telemetría es la oportunidad para obtener datos de tus clientes
-- Cada dato en telemetría debe tener un propósito (con capto el clic de un estudiante solo porque puede ser un dato en el futuro)
-- Empezar por una hipótesis. 
-- AI es un commodity; los datos no. 
-- Una IA es tan buena como sus datos
-
-#### Best Practices
-_Not introduced in this learnpack_
-
-#### Patterns
-_Not introduced in this learnpack_
-
-#### Anti-patterns
-_Not introduced in this learnpack_
-
-#### Constraints & Limitations
-_Not introduced in this learnpack_
-
 ## Week 13 — Day 40
 
 ### Content
@@ -4139,7 +4208,7 @@ _Not introduced in this learnpack_
 
 ### Teoría
 
-> Teoría: (Reutilizar contenido de Data Science)
+> Teoría: (Reutilizar Los  de Data Science)
   + Introducción a Numpy
 
   + Manejo de datasets con Pandas
