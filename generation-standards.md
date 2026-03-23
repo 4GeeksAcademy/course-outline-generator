@@ -73,22 +73,29 @@ Claude: "I found several learnapacks that could fit. Please specify the EXACT + 
 ## Structure Guidelines
 
 ### Lesson Count
-**Optimize based on content complexity:**
-- Simple topics: 15-22 lessons
-- Moderate topics: 23-28 lessons
-- Complex topics: 29-35 lessons
+**Quality-first principle:** The right number of lessons is the minimum that covers the material without losing depth. Every lesson must earn its place — if two lessons cover tightly related ideas that work better as one, merge them. If a lesson feels thin, it probably should be absorbed into its neighbor.
 
-**Goal:** Match lesson count to actual teaching needs. Never default to a fixed number.
+**Goal:** Match lesson count to actual teaching needs. Never default to a fixed number. Never pad to hit a range.
 
 ### Section Count
-- **Total:** 7-9 sections (including Section 00 and final outro)
+- **Total:** 5-9 sections (including Section 00 and final outro)
 - **Section 00:** Welcome/Introduction (1 lesson)
-- **Content sections:** 5-7 sections (3-5 lessons each)
+- **Content sections:** Typically 2-5 lessons each. Sections with 2 lessons are acceptable when those two lessons form a tight, cohesive unit. Avoid sections with only 1 content lesson — that content should merge into an adjacent section.
 - **Second-to-last section:** Assessment (includes 🧠 lesson)
 - **Final section:** Outro/Conclusion (exactly 1 lesson only)
 
+### Section Cohesion (HARD RULE)
+Every section must have a **single teaching goal**. All lessons in that section must serve that goal. Apply this test:
+- Can you describe the section's purpose in one sentence? If not, it's doing too much — split it.
+- Does every lesson in the section clearly belong? If a lesson serves a different goal, move it to the section where it fits or create a new section.
+- Do two adjacent sections cover the same goal? If so, they should be one section.
+
+**This prevents two common problems:**
+- Cramming unrelated topics into one section because they're "in the same area" (e.g., "adding skills to an agent" + "testing skills" + "composable architectures" are three different goals, not one section)
+- Splitting one topic across two sections, creating artificial thinness in both (e.g., "what is a spec?" and "what is spec driven design?" are the same goal — understanding the concept)
+
 ### 💻 Lesson Placement (HARD RULE)
-- **💻 lessons are always the last lesson in their section** — no lesson of any type follows a 💻 within the same section.
+**💻 lessons are always the last lesson in their section** — no lesson of any type follows a 💻 within the same section.
 
 ---
 
@@ -98,8 +105,7 @@ Claude: "I found several learnapacks that could fit. Please specify the EXACT + 
 
 ### Conceptual Lessons (📖)
 - Theory, explanations, principles, concepts
-- Includes anti-pattern lessons (just regular conceptual lessons)
-- Word count: ~400-600 words
+- Anti-patterns are woven into relevant conceptual lessons (not standalone lessons — see Anti-Patterns section)
 - **Mark with 📖 emoji**
 
 ### Hands-On Lessons (💻)
@@ -112,62 +118,61 @@ Claude: "I found several learnapacks that could fit. Please specify the EXACT + 
 - **💻 lessons never teach** — if a topic needs both teaching and practice, the teaching goes in a 📖 lesson and the practice goes in a separate 💻 lesson added after it in the same section
 - **Single-task challenge prompts (HARD RULE):** Each 💻 challenge prompt must describe ONE focused task in 1-2 sentences. NEVER use numbered sub-tasks, multi-step lists, or multiple objectives inside a single challenge prompt. If a challenge naturally has multiple parts, describe it as one cohesive goal (e.g., "Build a complete CRUD API for a contacts resource" NOT "1. Create GET, 2. Create POST, 3. Create DELETE"). Numbered lists and multi-step prompts cause downstream tools (Rigobot) to split one challenge into many, breaking the course structure.
 - **Code block length:** Both the solution code and challenge code should be concise and readable — aim for under 30 lines each. If the code is getting longer, the challenge scope is too broad.
-- Word count: ~500-700 words
 - **Mark with 💻 emoji**
 
-**Distribution guidelines:**
-- Practical courses (coding, tools): 40-50% hands-on
-- Conceptual courses (theory, strategy): 20-30% hands-on
-- Mixed courses: 30-40% hands-on
+**When to include 💻 lessons (decision test):**
+Ask: "Does the student write code that **produces output when executed?**" If yes → 💻 is appropriate. If no → don't force it. A file that configures, instructs, or is read by an agent is not code that runs — it's a document. Structured format (JSON, YAML, markdown with fields) does not make something executable code.
 
-**Flexibility:** These are guidelines. Some subjects naturally need more/less practice. Ask: "Does this % make sense for THIS topic?"
+**💻 lessons make sense when:**
+- The skill is writing functional code (functions, APIs, components, queries, scripts)
+- The code can be executed in the IDE and **produces observable output** (a return value, a rendered component, a server response, a test result)
+- Auto-testing or self-verification is meaningful (the student can see if it works)
+
+**💻 lessons do NOT make sense when:**
+- The student's deliverable is natural language (writing specs, prompts, documentation, communication strategies)
+- The topic is about methodology, planning, or thinking frameworks
+- The student writes structured documents that an agent *reads* but that don't *execute* — even if they use JSON, YAML, or markdown with structured fields
+- The practice would be better served by the assessment (🧠) or by examples within a 📖 lesson
+- You'd have to invent an artificial coding exercise just to have a 💻 — if it feels forced, it is
+
+**Common 4Geeks topics that are NOT 💻 material** (these are frequently misidentified as code because they involve structured formats):
+- Agent skills, agent rules, agent memory banks — these are natural-language configuration documents, not executable code
+- Specifications (specs) — structured descriptions of what to build, not code that runs
+- Implementation plans — project planning documents
+- Context engineering — writing effective context for AI, not code
+
+**Zero 💻 lessons is a valid course structure.** Many topics (strategy, design methodology, communication, project planning) produce better learning with strong conceptual lessons and a good assessment than with shoehorned code challenges.
 
 ### Assessment Lessons (🧠)
 - 5-7 questions (multiple choice OR scenario-based, not mixed)
 - Include in second-to-last section
-- Word count: ~600-800 words
 - **Mark with 🧠 emoji**
+
+### Welcome Lessons (00.0)
+The Welcome lesson introduces the core problem this course solves, previews what students will be able to do by the end, and gives a brief overview of the course sections. It does NOT teach content — it motivates and orients. Think of it as the "why should I care?" lesson.
 
 ### Outro Lessons
 - Final section only (exactly 1 lesson)
 - No emoji marker needed
 - No theory, no exercises, no assessment
-- Word count: ~400-450 words
 - Content: Course recap, next steps, resources, encouragement
 
 ---
 
-## Anti-Pattern Lessons
+## Anti-Patterns
 
-Anti-patterns are regular conceptual lessons (📖) that teach what NOT to do.
+Anti-patterns are NOT standalone lessons. They are woven into the conceptual lessons (📖) where the correct approach is taught, so students learn what to do and what to avoid in the same context.
 
-**Distribution:**
-- Short courses (15-22 lessons): 1 anti-pattern
-- Medium courses (23-28 lessons): 2 anti-patterns
-- Long courses (29+ lessons): 2-3 anti-patterns
+**How to integrate:**
+- When a 📖 lesson teaches a concept or best practice, include the relevant anti-pattern(s) as a natural contrast within that same lesson
+- Present the correct approach first, then show the anti-pattern as a "what NOT to do" with consequences
+- This means anti-patterns appear organically where they're most useful — not collected into a separate lesson the student reads out of context
 
-**Placement:** Always AFTER teaching the correct approach
-
-**Content:**
-- Clear anti-pattern examples
-- Consequences of each anti-pattern
-- Correct approach shown side-by-side
-- Explanation of why the anti-pattern is common/tempting
-
----
-
-## Word Count Guidelines
-
-| Lesson Type | Word Count | Purpose |
-|-------------|------------|---------|
-| Conceptual (📖) | 400-600 | Understanding principles |
-| Hands-on (💻) | 500-700 | Practical application |
-| Assessment (🧠) | 600-800 | Testing comprehension |
-| Outro | 400-450 | Reflection and next steps |
-
-**Total Course:** Lesson count × 500 (e.g., 26 lessons = ~13,000 words)
-
-**Acceptable variance:** ±2,000 words from target
+**Content per anti-pattern (within its host lesson):**
+- Clear anti-pattern example
+- Why it's tempting
+- What goes wrong
+- The correct approach (already taught earlier in the same lesson)
 
 ---
 
@@ -256,7 +261,7 @@ Which ONE should I generate?"
 
 **The `-` bullet points are REQUIRED TOPICS, not structural templates.**
 
-**Correct approach:** Design the optimal course structure (maybe 6-8 sections) ensuring these topics are covered within it.
+**Correct approach:** Design the optimal course structure ensuring these topics are covered. Let the content determine how many sections and lessons are needed.
 
 **Wrong approach:** Create one section per bullet point.
 
@@ -268,8 +273,21 @@ Which ONE should I generate?"
     - Best practices
 ```
 
-✅ Design optimal HTML course (6-8 sections) covering these 3 required topics
+✅ Design optimal HTML course covering these 3 required topics — as many sections and lessons as quality demands
 ❌ Create exactly 3 sections matching the bullets
+
+### Using the Thinking Framework
+
+The `-` bullets under the `+` block define the **required topics**. The **Thinking Framework** section for that day (Thinking Development, Best Practices, Patterns, Anti-patterns) provides additional material that must be woven into the lessons where relevant:
+
+- **Anti-patterns** → woven into the 📖 lessons that teach the correct approach they violate
+- **Patterns** → woven into the 📖 lessons that cover the related concept
+- **Best Practices** → woven into the 📖 lessons where the practice applies
+- **Thinking Development** → shapes the overall course philosophy and learning objectives
+
+Do not ignore the Thinking Framework. Do not create separate lessons for individual framework items unless the content genuinely warrants a standalone lesson. The framework enriches the required topics — it does not replace or expand the topic list.
+
+**Important:** Some Thinking Framework items belong to the overall Day/Skill and span multiple `+` blocks. Only use framework items that are relevant to THIS `+` block's topics. If a framework item clearly belongs to a different `+` block (e.g., a rule about "globs" when you're generating the "Spec Driven Design" block, not the "Rules" block), do not include it.
 
 ### Examining Context
 
@@ -277,6 +295,7 @@ Which ONE should I generate?"
 - **ALL previous learnapacks:** What has been taught so far in the syllabus? (avoid repetition)
 - **Upcoming learnapacks:** What's coming later in the curriculum? (avoid premature coverage)
 - **Learning progression:** Where does this learnpack fit in the complete journey?
+- **Same-topic prerequisite:** If a previous learnpack already introduced this same concept at a surface level, this learnpack must NOT re-introduce it. Assume students already know the basics and start where the previous learnpack stopped. (e.g., if a prior learnpack covered "What are skills?" and "How do they work?", this learnpack should skip those questions and begin with the deeper material.)
 
 **How to examine:**
 - Review all `+` blocks from Week 1 up to the current learnpack
@@ -318,118 +337,20 @@ Which ONE should I generate?"
 
 ---
 
-## Quality Checklist
+## Hard Rules vs Flexible Guidelines
 
-### Structure
-- [ ] Lesson count optimized for content (15-35 range, not default)
-- [ ] 7-9 total sections
-- [ ] Logical progression (simple → complex)
-- [ ] Each content section has 3-5 lessons
-- [ ] Anti-patterns (📖) placed AFTER teaching correct approach
-- [ ] Hands-on percentage matches course type
-- [ ] Assessment (🧠) in second-to-last section
-- [ ] Final section has exactly 1 lesson (outro only)
-- [ ] Every content lesson marked with emoji (📖, 💻, or 🧠)
-- [ ] Every 💻 lesson is the last lesson in its section
+Some rules in this document are labeled **(HARD RULE)** — these are structural constraints that exist for technical or downstream-tool reasons and must always be followed:
+- Section Cohesion
+- 💻 Lesson Placement (last in section)
+- 💻 Single-task challenge prompts (Rigobot splits multi-step prompts)
+- One learnpack per generation
+- 💻 Declaration Gate (must declare before structuring)
 
-### Content
-- [ ] Specific learning objectives (not vague)
-- [ ] Concrete, relevant examples
-- [ ] Logical transitions between lessons
-- [ ] Key principles aligned with 4Geeks philosophy
-- [ ] No repetition from ANY previous learnapacks in syllabus (full context examined)
-- [ ] No premature coverage of topics scheduled for later learnapacks
-
-### Lesson Balance
-- [ ] Appropriate mix of conceptual/hands-on for subject matter
-- [ ] 1-3 anti-pattern lessons (📖) properly placed
-- [ ] One assessment lesson (🧠) in second-to-last section
-- [ ] Single outro lesson concludes course
-
-### 💻 Lesson Integrity
-- [ ] Every 💻 lesson contains only: challenge prompt, solution code, challenge code
-- [ ] No theory or explanation inside any 💻 lesson
-- [ ] Every 💻 lesson is the last lesson in its section
-- [ ] Teaching content preceding a 💻 is covered in a 📖 lesson in the same section
-- [ ] Every challenge prompt is ONE focused task in 1-2 sentences (no numbered sub-tasks or multi-step lists)
-- [ ] Solution code and challenge code are each under 30 lines
-
-### Word Counts
-- [ ] Conceptual (📖): 400-600 words
-- [ ] Hands-on (💻): 500-700 words
-- [ ] Assessment (🧠): 600-800 words
-- [ ] Outro: 400-450 words
-- [ ] Total: ±2,000 words from target
-
-### Syllabus Compliance
-- [ ] Extracted from ONE `+` block only
-- [ ] Stopped at next `+` line
-- [ ] User confirmed which `+` block to use
-- [ ] All `-` bullets from that block covered
-- [ ] No content from other `+` blocks included
+Everything else is a **guideline** that serves educational quality. If something breaks a guideline but genuinely improves learning, it's good design. But "I didn't feel like following it" is not a valid reason to break a guideline — there should be a concrete pedagogical justification.
 
 ---
 
-## Assessment Approach
-
-**Good Review = Educational Quality Assessment**
-- Does content flow naturally?
-- Will students retain this information?
-- Is practice placed effectively?
-- Does the structure serve the subject matter?
-
-**Bad Review = Rigid Compliance Checking**
-- Are percentages exact?
-- Do numbers match arbitrary rules?
-- Does it check all boxes regardless of context?
-
-**Remember:** Guidelines exist to promote quality, not restrict it. If something breaks a guideline but improves learning, it's good design.
-
----
-
-## Common Mistakes to Avoid
-
-### DON'T:
-- Mix content from multiple `+` blocks in syllabus mode
-- Generate without confirming which `+` block user wants
-- Continue past the next `+` line in syllabus
-- Use the same lesson count for every course (optimize each time)
-- Create sections with only 1-2 lessons (except intro/outro)
-- Place anti-patterns before teaching the correct approach
-- Write vague objectives ("understand X", "learn about Y")
-- Mix multiple-choice and scenario questions in assessments
-- Forget emoji markers on content lessons (📖, 💻, 🧠)
-- Add theory or exercises to outro lesson
-- Have multiple lessons in final section
-- Invent content for framework sections marked as "Not introduced"
-- Include any theory or explanation inside a 💻 lesson
-- Place a 💻 lesson anywhere other than last in its section
-- Use numbered sub-tasks or multi-step lists in 💻 challenge prompts (causes Rigobot to split one challenge into many)
-- Write solution or challenge code blocks longer than 30 lines
-
-### DO:
-- Ask user to specify EXACT `+` block name from syllabus
-- Extract from ONE `+` block only (verify before proceeding)
-- Stop immediately at the next `+` line
-- List all available `+` blocks if user request is ambiguous
-- Optimize lesson count based on actual content needs
-- Vary content section sizes appropriately (3-5 lessons)
-- Place anti-patterns after students know the correct approach
-- Write specific, measurable learning objectives
-- Choose ONE assessment format per lesson (not mixed)
-- Keep 💻 lessons as pure code challenges (prompt + solution code + challenge code)
-- Write each 💻 challenge prompt as ONE focused task in 1-2 sentences (e.g., "Build a complete CRUD API for a contacts resource" NOT "1. Create GET, 2. Create POST, 3. Create DELETE")
-- Keep solution and challenge code under 30 lines each
-- Ensure all teaching for a 💻 challenge is covered in a preceding 📖 in the same section
-- Mark every content lesson with appropriate emoji
-- End with single outro lesson only (no content, no exercises)
-- Examine ALL previous learnapacks to avoid repetition
-- Examine upcoming learnapacks to avoid premature coverage
-- Design optimal structure (don't map 1:1 to bullet points)
-
----
-
-## Two-Step Generation Process
+## Generation Process
 
 ### Step 1: Identify and Confirm the Learnpack (MANDATORY)
 
@@ -439,9 +360,15 @@ Which ONE should I generate?"
 2. **List ALL `+` blocks** found in that section
 3. **Ask user:** "I found these learnapacks: [list]. Which ONE should I generate?"
 4. **Wait for user** to specify EXACT `+` block name
-5. **Confirm extraction:**
+5. **💻 Declaration Gate (HARD RULE):** Before proposing any structure, declare whether this course will include 💻 lessons.
+   - State **yes** or **no**
+   - If yes: describe specifically what code the student will write and what **observable output** it produces when executed in the IDE (a return value, rendered component, server response, test result)
+   - If the student's deliverable is a document that an agent or tool *reads* rather than code that *executes and produces output* — the answer is **no**, even if the document uses structured formats like JSON, YAML, or markdown
+   - This decision must be made NOW, before Step 2. Do not decide later while building the structure.
+6. **Confirm extraction:**
    - "Generating [+block name] only"
    - "Topics to cover: [list - bullets]"
+   - "💻 lessons: [yes — what they'll code] or [no — reason]"
    - "Proceed with simple structure?"
 
 **NEVER skip this confirmation step, even if only one `+` block exists.**
@@ -450,10 +377,9 @@ Which ONE should I generate?"
 
 Present concise overview:
 - Course title and source
-- Total lessons (optimized number)
+- Total lessons (optimized for quality)
 - Section breakdown WITH lesson titles and emoji markers
-- Lesson distribution percentages
-- Word count estimates
+- Lesson distribution
 - **Wait for approval**
 
 **Template:**
@@ -462,29 +388,28 @@ Present concise overview:
 
 **Source:** Week X, Skill Y - [+ Block Name]
 **Learnpack:** + [Exact name from syllabus]
-**Total Lessons:** XX (optimized)
-**Estimated Words:** ~X,XXX
+**Total Lessons:** XX (optimized for quality)
 
 ---
 
 ## Proposed Structure
 
-**Section 00: Welcome** (1 lesson, ~450 words)
+**Section 00: Welcome** (1 lesson)
 - 00.0 [Lesson Title] 📖
 
-**Section 01: [Title]** (X lessons, ~X,XXX words)
+**Section 01: [Title]** (X lessons)
 - 01.0 [Title] 📖
 - 01.1 [Title] 📖
 - 01.2 [Title] 💻
 
 [... continue for all sections ...]
 
-**Section [X-1]: [Assessment Title]** (X lessons, ~X,XXX words)
+**Section [X-1]: [Assessment Title]** (X lessons)
 - [X].0 [Title] 📖
 - [X].1 [Title] 💻
 - [X].2 [Title] 🧠
 
-**Section [X]: [Outro Title]** (1 lesson, ~450 words)
+**Section [X]: [Outro Title]** (1 lesson)
 - [X].0 [Outro Lesson]
 
 ---
@@ -501,13 +426,45 @@ Present concise overview:
 **Confirm to proceed with full detailed outline?**
 ```
 
-### Step 3: Wait for Approval
+### Step 3: Quality Analysis (Before Approval)
+
+Before asking for approval, run a quality analysis on the proposed structure. Check:
+
+**Content Flow & Pedagogical Quality:**
+- Are any sections artificially split? (Two thin sections covering tightly related ideas should be one.)
+- Are any sections overloaded with loosely related topics? (A section mixing a pattern, a thinking style, and unrelated concepts may need restructuring.)
+- Does every section have a single teaching goal? Can you describe it in one sentence? (If not, split or restructure.)
+- Does every lesson have a clear, distinct purpose? (If you can't explain why a lesson is separate from its neighbor, merge them.)
+- Do pre-assessment lessons have a sharp identity? (Vague "putting it all together" lessons should be replaced with concrete synthesis activities.)
+
+**Context Overlap:**
+- Does any lesson drift into territory covered by the previous learnpack?
+- If a previous learnpack introduced this same topic, does this course skip the introduction and start where the previous one stopped?
+- Does any lesson teach content reserved for the next learnpack?
+- Are boundary topics scoped tightly enough? (A pattern that exists in both this and the next learnpack must be taught only in the context relevant to THIS learnpack.)
+
+If the analysis reveals issues, fix the structure before presenting it. If you present and the user requests the analysis, show the full results.
+
+### Required Topic Coverage (HARD RULE)
+
+All syllabus bullets for the selected `+` learnpack are mandatory scope. The outline must cover every required bullet at least once.
+
+- Bullets may be merged naturally into cohesive lessons, but none may be omitted.
+- "Optimizing lesson count" never means dropping required bullets.
+- If scope pressure exists, reduce depth per bullet or merge related bullets, but preserve full coverage.
+- Nested bullets (`--`) are also required and must be reflected in section/lesson design.
+- Before finalizing, perform a coverage check: confirm all provided bullets are represented in the proposed structure.
+- If any required bullet is not represented, regenerate the structure before responding.
+
+### Step 4: Wait for Approval
 
 - User reviews the structure
 - User approves OR requests modifications
 - Do NOT generate full detail until approved
 
-### Step 4: Full Detailed Outline (After Approval Only)
+**Structural re-run rule:** If user feedback results in removing or adding 💻 lessons, or any other significant change to lesson composition (merging sections, dropping lessons, changing the hands-on ratio), **re-run Step 2 from scratch.** Do not patch the existing structure by simply deleting or inserting lessons — rebuild the section structure to reflect the actual course shape. Sections that existed to set up a code challenge may no longer need to exist, topics that were split to make room for practice may now belong together, and the overall pacing should be re-optimized.
+
+### Step 5: Full Detailed Outline (After Approval Only)
 
 Generate complete outline with:
 - Full lesson details (objectives, content, transitions, principles, examples) for 📖 lessons
@@ -527,29 +484,28 @@ Generate complete outline with:
 
 **Source:** Week X, Skill Y - [+ Block Name]
 **Learnpack:** + [Exact name from syllabus]
-**Total Lessons:** XX (optimized)
-**Estimated Words:** ~X,XXX
+**Total Lessons:** XX (optimized for quality)
 
 ---
 
 ## Proposed Structure
 
-**Section 00: Welcome** (1 lesson, ~450 words)
+**Section 00: Welcome** (1 lesson)
 - 00.0 [Lesson Title] 📖
 
-**Section 01: [Title]** (X lessons, ~X,XXX words)
+**Section 01: [Title]** (X lessons)
 - 01.0 [Title] 📖
 - 01.1 [Title] 📖
 - 01.2 [Title] 💻
 
 [... continue for all sections ...]
 
-**Section [X-1]: [Assessment Title]** (X lessons, ~X,XXX words)
+**Section [X-1]: [Assessment Title]** (X lessons)
 - [X].0 [Title] 📖
 - [X].1 [Title] 💻
 - [X].2 [Title] 🧠
 
-**Section [X]: [Outro Title]** (1 lesson, ~450 words)
+**Section [X]: [Outro Title]** (1 lesson)
 - [X].0 [Outro Lesson]
 
 ---
@@ -575,7 +531,6 @@ Generate complete outline with:
 **Prerequisite:** [Previous course or "None"]
 **Target Audience:** [Specific description]
 **Total Lessons:** XX
-**Estimated Total Length:** ~X,XXX words
 **Format:** [Mixed/Practical/Conceptual] (X% hands-on)
 
 ---
@@ -597,19 +552,19 @@ This course emphasizes:
 
 ## Course Statistics Summary
 
-| Section | Lessons | Estimated Words |
-|---------|---------|----------------|
-| 00 - Welcome | 1 | ~400 |
-| 01 - [Title] | X | ~X,XXX |
-| ... | ... | ... |
-| [X] - Outro | 1 | ~450 |
-| **Total** | **XX** | **~X,XXX** |
+| Section | Lessons |
+|---------|---------|
+| 00 - Welcome | 1 |
+| 01 - [Title] | X |
+| ... | ... |
+| [X] - Outro | 1 |
+| **Total** | **XX** |
 
 ---
 
 ## Section 00: [Welcome Title]
 
-### 00.0 [Lesson Title] 📖 (XXX words)
+### 00.0 [Lesson Title] 📖
 
 **Learning Objectives:**
 - [Specific outcome 1]
@@ -634,13 +589,13 @@ This course emphasizes:
 
 ## Section 01: [Section Title]
 
-### 01.0 [Lesson Title] 📖 (XXX words)
+### 01.0 [Lesson Title] 📖
 
 [... same structure as above ...]
 
 ---
 
-### 01.X [Challenge Title] 💻 (XXX words)
+### 01.X [Challenge Title] 💻
 
 **Challenge Prompt:**
 [Clear instructions telling the student what to do]
@@ -663,7 +618,7 @@ This course emphasizes:
 
 ## Section [X]: [Outro Title]
 
-### [X].0 [Outro Lesson Title] (~450 words)
+### [X].0 [Outro Lesson Title]
 
 **Content Outline:**
 - Course recap: what students accomplished
@@ -679,36 +634,29 @@ This course emphasizes:
 
 ---
 
-## Final Reminders
+## Pre-Generation Checklist
 
-1. **Always generate in English only** (translate Spanish topics)
-2. **One learnpack = one generation** (never mix `+` blocks)
-3. **Ask user which `+` block** if request is ambiguous
-4. **Simple structure first** (with subsections and emoji markers)
-5. **Wait for approval** before full generation
-6. **Every lesson needs emoji** (📖, 💻, or 🧠) except outro
-7. **Final section = 1 lesson only** (outro with no content/exercises)
-8. **Examine context** (ALL previous and upcoming learnapacks)
-9. **Optimize lesson count** (don't default to fixed numbers)
-10. **Guidelines are flexible** (serve educational quality, not arbitrary rules)
-11. **💻 lessons are pure code challenges only** (prompt + solution code + challenge code — no theory)
-12. **💻 lessons are always last in their section** (no lesson follows a 💻 in the same section)
-13. **💻 challenge prompts = ONE task, 1-2 sentences** (never numbered sub-tasks — Rigobot splits them into multiple lessons)
+**Before presenting ANY structure, answer every item. If any answer is NO, STOP and resolve before proceeding.**
 
----
+### Syllabus Extraction
+- [ ] User specified which `+` block
+- [ ] Extracting from ONE `+` block only (count = 1)
+- [ ] Stopped at the next `+` line (no content beyond it)
+- [ ] Can quote the EXACT `+` line being used
 
-## Pre-Generation Final Verification
+### Context
+- [ ] Examined previous learnapacks for overlap
+- [ ] Examined upcoming learnapacks for premature coverage
+- [ ] If a previous learnpack introduced this topic, starting where it stopped (no re-introducing)
 
-**Before presenting ANY structure, answer:**
+### 💻 Gate
+- [ ] Declared 💻 yes/no with justification (before structuring)
+- [ ] If 💻 = yes: student writes code that **produces observable output when executed** (not documents an agent reads)
 
-1. ✓ Did user specify which `+` block? (If no → ASK)
-2. ✓ Am I extracting from ONE `+` block only? (Count = 1)
-3. ✓ Did I stop at the next `+` line? (No content beyond it)
-4. ✓ Can I quote the EXACT `+` line I'm using? (Be specific)
-5. ✓ Examined previous learnapacks for context? (Avoid repetition)
-6. ✓ Examined upcoming learnapacks for context? (Avoid premature topics)
-7. ✓ Are all 💻 lessons placed last in their section?
-8. ✓ Do all 💻 lessons contain only challenge prompt, solution code, and challenge code?
-9. ✓ Is every 💻 challenge prompt ONE focused task in 1-2 sentences? (No numbered sub-tasks)
-
-**If any answer is NO, STOP and resolve before proceeding.**
+### Structure Quality
+- [ ] Every section has a single teaching goal (cohesion test)
+- [ ] Every lesson earns its place (no artificial splits, no padding)
+- [ ] Anti-patterns woven into relevant 📖 lessons (not standalone)
+- [ ] Thinking Framework material integrated where relevant
+- [ ] Ran quality analysis on content flow and context overlap
+- [ ] Generated in English only
