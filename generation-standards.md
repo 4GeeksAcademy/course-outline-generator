@@ -90,9 +90,10 @@ Every section must have a **single teaching goal**. All lessons in that section 
 - Does every lesson in the section clearly belong? If a lesson serves a different goal, move it to the section where it fits or create a new section.
 - Do two adjacent sections cover the same goal? If so, they should be one section.
 
-**This prevents two common problems:**
+**This prevents three common problems:**
 - Cramming unrelated topics into one section because they're "in the same area" (e.g., "adding skills to an agent" + "testing skills" + "composable architectures" are three different goals, not one section)
 - Splitting one topic across two sections, creating artificial thinness in both (e.g., "what is a spec?" and "what is spec driven design?" are the same goal — understanding the concept)
+- Creating a section for "Best Practices and Anti-Patterns" — this is not a teaching goal, it's a grab bag of material that belongs distributed across the sections that teach the related concepts
 
 ### 💻 Lesson Placement (HARD RULE)
 **💻 lessons are always the last lesson in their section** — no lesson of any type follows a 💻 within the same section.
@@ -159,14 +160,16 @@ The Welcome lesson introduces the core problem this course solves, previews what
 
 ---
 
-## Anti-Patterns
+## Anti-Patterns and Best Practices
 
-Anti-patterns are NOT standalone lessons. They are woven into the conceptual lessons (📖) where the correct approach is taught, so students learn what to do and what to avoid in the same context.
+Anti-patterns and best practices are NOT standalone lessons or sections. They are woven into the conceptual lessons (📖) where the related concept is taught, so students learn the correct approach, the best practices that reinforce it, and the anti-patterns that violate it — all in the same context.
+
+**Never create a section or lesson called "Best Practices" or "Anti-Patterns."** These are not teaching goals — they are material that enriches lessons with real teaching goals. A lesson about "Test Planning" should include TDD best practices and the anti-pattern of only testing happy paths. A lesson about "Skill Structure" should include the best practice of small composable skills and the anti-pattern of the God Skill. The material goes where the concept lives.
 
 **How to integrate:**
-- When a 📖 lesson teaches a concept or best practice, include the relevant anti-pattern(s) as a natural contrast within that same lesson
-- Present the correct approach first, then show the anti-pattern as a "what NOT to do" with consequences
-- This means anti-patterns appear organically where they're most useful — not collected into a separate lesson the student reads out of context
+- When a 📖 lesson teaches a concept, include the relevant best practice(s) and anti-pattern(s) as natural complements within that same lesson
+- Present the correct approach first, then the best practice that reinforces it, then the anti-pattern as a "what NOT to do" with consequences
+- This means best practices and anti-patterns appear organically where they're most useful — not collected into a separate lesson or section the student reads out of context
 
 **Content per anti-pattern (within its host lesson):**
 - Clear anti-pattern example
@@ -445,17 +448,6 @@ Before asking for approval, run a quality analysis on the proposed structure. Ch
 
 If the analysis reveals issues, fix the structure before presenting it. If you present and the user requests the analysis, show the full results.
 
-### Required Topic Coverage (HARD RULE)
-
-All syllabus bullets for the selected `+` learnpack are mandatory scope. The outline must cover every required bullet at least once.
-
-- Bullets may be merged naturally into cohesive lessons, but none may be omitted.
-- "Optimizing lesson count" never means dropping required bullets.
-- If scope pressure exists, reduce depth per bullet or merge related bullets, but preserve full coverage.
-- Nested bullets (`--`) are also required and must be reflected in section/lesson design.
-- Before finalizing, perform a coverage check: confirm all provided bullets are represented in the proposed structure.
-- If any required bullet is not represented, regenerate the structure before responding.
-
 ### Step 4: Wait for Approval
 
 - User reviews the structure
@@ -656,7 +648,7 @@ This course emphasizes:
 ### Structure Quality
 - [ ] Every section has a single teaching goal (cohesion test)
 - [ ] Every lesson earns its place (no artificial splits, no padding)
-- [ ] Anti-patterns woven into relevant 📖 lessons (not standalone)
+- [ ] Anti-patterns and best practices woven into relevant 📖 lessons (no standalone lessons or sections for these)
 - [ ] Thinking Framework material integrated where relevant
 - [ ] Ran quality analysis on content flow and context overlap
 - [ ] Generated in English only
