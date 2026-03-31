@@ -1,6 +1,6 @@
 ---
 name: 4geeks-project-readme-generator
-description: Generates professional project README files (project statements) for 4Geeks Academy bootcamp modules. Use this skill whenever a user asks to create, write, or generate a project README, project statement, or module instructions for 4Geeks Academy — including any course track (Full-Stack, Data Science, Cybersecurity, AI Engineering). Trigger even if the user says things like "write a new project for the syllabus", "create a module statement", "generate README for this topic", or "I need a bootcamp project about X". Always use this skill when 4Geeks Academy context is present and a project document is needed.
+description: 'Generates professional project README files (project statements) for 4Geeks Academy bootcamp modules. Use this skill whenever a user asks to create, write, or generate a project README, project statement, or module instructions for 4Geeks Academy — including any course track (Full-Stack, Data Science, Cybersecurity, AI Engineering). Trigger even if the user says things like "write a new project for the syllabus", "create a module statement", "generate README for this topic", or "I need a bootcamp project about X". Always use this skill when 4Geeks Academy context is present and a project document is needed.'
 ---
 
 # 4Geeks Academy — Project Statement Generator
@@ -11,18 +11,21 @@ This skill generates bilingual project READMEs (`README.md` + `README.es.md`) fo
 
 ## Step 1 — Collect Required Inputs
 
-Before generating anything, verify all required inputs are available. If any are missing, ask for **all missing items at once** — never in multiple rounds.
+Before generating anything, scan the conversation for every input below. For each one **not** already provided, add it to your "missing" list. Then ask for **all missing items in a single message** — never spread across multiple rounds.
 
-| Input              | Description                                              | Default                                       |
-| ------------------ | -------------------------------------------------------- | --------------------------------------------- |
-| `module_topic`     | Core concept(s) this module teaches                      | — Must ask —                                  |
-| `module_position`  | Position in syllabus: `early`, `mid`, or `late`          | — Must ask —                                  |
-| `prior_concepts`   | Skills from previous modules available for reinforcement | — Must ask —                                  |
-| `project_context`  | Professional scenario, industry, or client type          | — Must ask —                                  |
-| `template_repo`    | Starter repo URL students will fork                      | `https://github.com/4GeeksAcademy/html-hello` |
-| `authors`          | GitHub username(s) — one or two authors                  | — Must ask —                                  |
-| `team_type`        | `individual`, `pair`, or `team of N`                     | `individual`                                  |
-| `primary_language` | Language for the main README                             | `English`                                     |
+| Input              | Description                                                                                                                                                       | Default                                       |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| `module_topic`     | Core concept(s) this module teaches                                                                                                                               | — Must ask —                                  |
+| `module_class`     | Syllabus classification: a **skill** name (e.g. "CSS Flexbox"), a **week/day** slot (e.g. "Week 3 / Day 2"), or a **subject** area (e.g. "Frontend Fundamentals") | — Must ask —                                  |
+| `module_position`  | Position in syllabus: `early`, `mid`, or `late`                                                                                                                   | — Must ask —                                  |
+| `prior_concepts`   | Skills from previous modules available for reinforcement                                                                                                          | — Must ask —                                  |
+| `project_context`  | Professional scenario, industry, or client type                                                                                                                   | — Must ask —                                  |
+| `template_repo`    | Starter repo URL students will fork                                                                                                                               | `https://github.com/4GeeksAcademy/html-hello` |
+| `authors`          | GitHub username(s) — one or two authors                                                                                                                           | — Must ask —                                  |
+| `team_type`        | `individual`, `pair`, or `team of N`                                                                                                                              | `individual`                                  |
+| `primary_language` | Language for the main README                                                                                                                                      | `English`                                     |
+
+> **Missing-fields rule:** Never proceed to generation with unknown required fields. If `module_topic`, `module_class`, `authors`, `module_position`, `prior_concepts`, or `project_context` are missing, list them clearly and wait for the user's reply before continuing.
 
 > **Note on template repos:** The default is `html-hello`. For TypeScript, Next.js, FastAPI, or other stacks, confirm the correct boilerplate with the author before generating.
 
@@ -45,7 +48,7 @@ Before writing, internalize these rules:
 
 ### Required Structure (exact order)
 
-```markdown
+```
 1. Project Title
 2. Hidden metadata block
 3. --- separator
@@ -53,8 +56,8 @@ Before writing, internalize these rules:
    └── [optional] complementary knowledge subsection
    └── [optional] client spec in blockquotes
 5. 🌱 How to Start the Project
-6. 💻 What You Need to Do (checklist)
-7. ✅ What We Will Evaluate (checklist)
+6. 💻 What You Need to Do  (checklist)
+7. ✅ What We Will Evaluate  (checklist)
 8. 📦 How to Submit
 9. --- separator + Footer
 ```
@@ -76,14 +79,18 @@ Place this immediately after the title, before the first `---`.
 **One author:**
 
 ```markdown
+<!-- hide -->
+
 By [@username](https://github.com/username) and [other contributors](https://github.com/4GeeksAcademy/repo-name/graphs/contributors) at [4Geeks Academy](https://4geeksacademy.com/)
 
 [![build by developers](https://img.shields.io/badge/build_by-Developers-blue)](https://4geeks.com)
 [![4Geeks Academy](https://img.shields.io/twitter/follow/4geeksacademy?style=social&logo=x)](https://x.com/4geeksacademy)
 
-_These instructions are [available in Spanish](./README.es.md)._
+_Estas instrucciones están [disponibles en español](./README.es.md)._
 
 **Before you start**: 📗 [Read the instructions](https://4geeks.com/lesson/how-to-start-a-coding-project) on how to start a coding project.
+
+<!-- endhide -->
 ```
 
 **Two authors:** Replace the first line with:
@@ -114,7 +121,7 @@ By [@firstusername](https://github.com/firstusername) and [@secondusername](http
 > - Footer with links
 ```
 
-1. Close with a short **motivating call to action**.
+6. Close with a short **motivating call to action**.
 
 **Avoid:**
 
@@ -170,7 +177,7 @@ By [@firstusername](https://github.com/firstusername) and [@secondusername](http
 ```markdown
 ---
 
-This and many other projects are built by students as part of the [Career Programs](https://4geeksacademy.com/) at 4Geeks Academy. By [@username](https://github.com/username) and [other contributors](https://github.com/4GeeksAcademy/repo-name/graphs/contributors). Find out more about [Full-Stack Software Developer](https://4geeksacademy.com/en/career-programs/full-stack), [Data Science & Machine Learning](https://4geeksacademy.com/en/career-programs/data-science-ml), [Cybersecurity](https://4geeksacademy.com/en/career-programs/cybersecurity) and [AI Engineering](https://4geeksacademy.com/en/career-programs/ai-engineering).
+This and many other projects are built by students as part of the [Career Programs](https://4geeksacademy.com/compare-programs) at [4Geeks Academy](https://4geeksacademy.com). By [@username](https://github.com/username) and [other contributors](https://github.com/4GeeksAcademy/repo-name/graphs/contributors). Find out more about [AI Engineering](https://4geeksacademy.com/en/coding-bootcamps/ai-engineering), [Data Science & Machine Learning](https://4geeksacademy.com/en/coding-bootcamps/data-science-ml), [Cybersecurity](https://4geeksacademy.com/en/coding-bootcamps/cybersecurity) and [Full-Stack Software Developer with AI](https://4geeksacademy.com/en/coding-bootcamps/full-stack-developer).
 ```
 
 **Spanish (README.es.md):**
@@ -178,7 +185,7 @@ This and many other projects are built by students as part of the [Career Progra
 ```markdown
 ---
 
-Este y muchos otros proyectos son construidos por estudiantes como parte de los [Programas de Carrera](https://4geeksacademy.com/) de 4Geeks Academy. Encuentra más acerca de los [cursos](https://4geeksacademy.com/es/comparar-programas) de [Full-Stack Software Developer](https://4geeksacademy.com/es/programas-de-carrera/desarrollo-full-stack), [Data Science & Machine Learning](https://4geeksacademy.com/es/programas-de-carrera/ciencia-de-datos-ml), [Ciberseguridad](https://4geeksacademy.com/es/programas-de-carrera/ciberseguridad) e [Ingeniería de IA](https://4geeksacademy.com/es/programas-de-carrera/ingenieria-ia).
+Este y muchos otros proyectos son construidos por estudiantes como parte de los [Coding Bootcamps](https://4geeksacademy.com/) de 4Geeks Academy. Encuentra más acerca de los [cursos](https://4geeksacademy.com/es/comparar-programas) de [Ingeniería de IA](https://4geeksacademy.com/es/coding-bootcamps/ingenieria-ia), [Data Science & Machine Learning](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning), [Ciberseguridad](https://4geeksacademy.com/es/coding-bootcamps/curso-ciberseguridad) y [Full-Stack Software Developer con IA](https://4geeksacademy.com/es/coding-bootcamps/programador-full-stack).
 ```
 
 ---
@@ -190,16 +197,16 @@ Always generate **both files**:
 - `README.md` — English version (primary)
 - `README.es.md` — Spanish translation (consistent with English, same structure)
 
-Each file must include a link to its counterpart:
+Each file must include a link to its counterpart, **written in the target language** (i.e. the language the reader would switch _to_):
 
-- English: `_These instructions are [available in Spanish](./README.es.md)._`
-- Spanish: `_Estas instrucciones están [disponibles en inglés](./README.md)._`
+- English README → link is in Spanish: `_Estas instrucciones están [disponibles en español](./README.es.md)._`
+- Spanish README → link is in English: `_These instructions are [available in English](./README.md)._`
 
 ---
 
 ## Quality Self-Check Before Delivering
 
-- [ ] All required inputs were collected before generation
+- [ ] All required inputs were collected before generation (topic, class, position, prior concepts, context, authors, template)
 - [ ] Challenge opens with a realistic professional scenario (not academic framing)
 - [ ] Some requirements are embedded in the narrative, not only in bullet lists
 - [ ] Complementary knowledge included only where lessons don't cover it, and it's concise

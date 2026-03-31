@@ -41,7 +41,7 @@ Collect only the inputs needed for the detected scope. Never ask for inputs that
 | `milestone_position` | `early`, `mid`, or `late` in the course | — Must ask —                                                               |
 | `prior_milestones`   | What students have already built        | — Must ask —                                                               |
 | `tech_stack`         | Technologies required                   | — Must ask —                                                               |
-| `template_repo`      | Starter repo URL                        | `https://github.com/4GeeksAcademy/ai-engineering-company-project-template` |
+| `template_repo`      | Starter repo URL                        | `https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo` |
 | `authors`            | GitHub username(s)                      | — Must ask —                                                               |
 
 **If CONTEXT files need to be generated**, collect:
