@@ -232,6 +232,8 @@ Nexova should appear in project statements as **the student's client or employer
 
 The student always knows that what they build **goes to production at Nexova** — it is not a throwaway exercise.
 
+Language note for project generation: multilingual implementations are **optional but highly recommended** because Nexova operates between Spain and Miami. The student chooses the base language for the project and can add a second language as an enhancement.
+
 ---
 
 _Internal document — 4Geeks Academy · AI Engineering Track_

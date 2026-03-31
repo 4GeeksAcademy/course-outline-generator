@@ -100,7 +100,7 @@ The CEO, **Thomas Harry**, has created an internal unit called **TrackFlow Tech*
 
 **Automation and AI needs:**
 
-- First-line CX agent: bilingual chatbot (Spanish + English) that automatically resolves tracking queries, return status, and frequent questions.
+- First-line CX agent: chatbot that automatically resolves tracking queries, return status, and frequent questions. Multilingual support (Spanish + English) is optional but highly recommended; the team can choose a base language first and expand later.
 - Semantic knowledge base: return policies, SLAs per country, incident procedures — indexed for RAG.
 - Unified ticketing system: all channels in one place with automatic prioritisation.
 - Real-time CX dashboard: open tickets, average response time, CSAT, backlog per agent and per country.
@@ -217,6 +217,8 @@ TrackFlow appears in project statements as **the student's employer within the T
 - **Ticket from the project management system** (Linear or Jira) assigned by the tech lead.
 
 The student always knows that what they build **goes to production at TrackFlow** and that warehouse operatives and account managers in Los Angeles and Zaragoza will be using it tomorrow.
+
+Language note for project generation: multilingual implementations are **optional but highly recommended** due to cross-country operations. The student chooses the base language for the project and may add a second language as an enhancement.
 
 ---
 

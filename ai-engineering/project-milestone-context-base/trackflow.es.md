@@ -98,7 +98,7 @@ El CEO, **Thomas Harry**, ha creado una unidad interna llamada **TrackFlow Tech*
 
 **Necesidades de automatización e IA:**
 
-- Agente de CX de primera línea: chatbot bilingüe (español + inglés) que resuelve automáticamente tracking, estado de devoluciones y preguntas frecuentes.
+- Agente de CX de primera línea: chatbot que resuelve automáticamente tracking, estado de devoluciones y preguntas frecuentes. El soporte multiidioma (español + inglés) es opcional pero altamente recomendado; el equipo puede arrancar con un idioma base y ampliar después.
 - Base de conocimiento semántica: políticas de devolución, SLAs por país, procedimientos de incidencias — indexada para RAG.
 - Sistema de ticketing unificado: todos los canales en un solo lugar con priorización automática.
 - Dashboard de CX en tiempo real: tickets abiertos, tiempo medio de respuesta, CSAT, backlog por agente y por país.
@@ -212,6 +212,8 @@ TrackFlow aparece en los enunciados siempre como **el empleador del estudiante d
 - **Ticket del sistema de gestión de proyectos** (Linear o Jira) asignado por el tech lead.
 
 El estudiante siempre sabe que lo que construye **va a producción en TrackFlow** y que los operarios de Los Ángeles y Zaragoza van a usarlo mañana.
+
+Nota de idioma para la generación de proyectos: las implementaciones multiidioma son **opcionales pero altamente recomendadas** por la operación en dos países. El estudiante escoge el idioma base del proyecto y puede añadir un segundo idioma como mejora.
 
 ---
 

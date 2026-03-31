@@ -232,6 +232,8 @@ Nexova debe aparecer en los enunciados como **el cliente o el empleador** del es
 
 El estudiante siempre sabe que lo que construye **va a producción en Nexova**, no es un ejercicio desechable.
 
+Nota de idioma para la generación de proyectos: las implementaciones multiidioma son **opcionales pero altamente recomendadas** porque Nexova opera entre España y Miami. El estudiante escoge el idioma base del proyecto y puede añadir un segundo idioma como mejora.
+
 ---
 
 _Documento interno — 4Geeks Academy · AI Engineering Track_

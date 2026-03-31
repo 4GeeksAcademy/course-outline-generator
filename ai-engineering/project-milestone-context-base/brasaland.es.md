@@ -35,7 +35,7 @@ La CEO, **Mariana Restrepo**, hija del fundador, ha creado un equipo interno lla
 - Sistema de pedidos de materia prima: basado en ventas históricas y stock disponible, el sistema genera el pedido sugerido automáticamente.
 - Control de mermas digitalizado: el manager registra las mermas en una app, el sistema detecta anomalías y alerta a operaciones.
 - Alertas operativas: si un local lleva dos horas sin ventas en horario de apertura, notificación automática a Felipe.
-- Agente de soporte al manager: responde preguntas operativas frecuentes en español o inglés según el local.
+- Agente de soporte al manager: responde preguntas operativas frecuentes en el idioma base seleccionado. El soporte en español/inglés es opcional pero altamente recomendado.
 
 ---
 
@@ -77,7 +77,7 @@ La CEO, **Mariana Restrepo**, hija del fundador, ha creado un equipo interno lla
 
 **Necesidades de automatización e IA:**
 
-- App de pedidos y fidelización digital: pedido online, pago, puntos digitales, historial de visitas — bilingüe (español/inglés).
+- App de pedidos y fidelización digital: pedido online, pago, puntos digitales, historial de visitas. El soporte multiidioma (español/inglés) es opcional pero altamente recomendado, empezando por un idioma base.
 - CRM de clientes: perfil unificado con historial de pedidos, frecuencia de visita, preferencias y puntos acumulados.
 - Motor de personalización: sugerir productos u ofertas basadas en el historial del cliente.
 - Dashboard de marketing: CAC, LTV, frecuencia media de visita, conversión de campañas, evolución de Brasa Points — por mercado.
@@ -101,10 +101,10 @@ La CEO, **Mariana Restrepo**, hija del fundador, ha creado un equipo interno lla
 
 **Necesidades de automatización e IA:**
 
-- Portal interno de RRHH: solicitudes de vacaciones, consulta de contratos, gestión de ausencias — bilingüe.
+- Portal interno de RRHH: solicitudes de vacaciones, consulta de contratos, gestión de ausencias. El soporte multiidioma es opcional pero altamente recomendado.
 - Flujo de onboarding automatizado: checklist, envío de documentos, seguimiento de pasos completados.
 - Dashboard de KPIs de RRHH: headcount por local, rotación mensual, absentismo, tiempo de cobertura — por país.
-- Agente interno de RRHH: responde preguntas del equipo sobre políticas, horarios y beneficios en español o inglés.
+- Agente interno de RRHH: responde preguntas del equipo sobre políticas, horarios y beneficios en el idioma base seleccionado. El soporte en español/inglés es opcional pero altamente recomendado.
 
 ---
 
@@ -123,11 +123,11 @@ La CEO, **Mariana Restrepo**, hija del fundador, ha creado un equipo interno lla
 
 **Necesidades de automatización e IA:**
 
-- Plataforma de formación: catálogo con buscador de recetas, guías de técnica y estándares de calidad — en español e inglés.
+- Plataforma de formación: catálogo con buscador de recetas, guías de técnica y estándares de calidad. El soporte en español/inglés es opcional pero altamente recomendado.
 - Manual de procedimientos digital: siempre actualizado, accesible desde cualquier dispositivo en cocina.
 - Flujo de onboarding del personal nuevo: itinerario de aprendizaje estructurado con checkpoints.
-- Sistema de actualización de estándares: cuando cambia una receta, todos los locales reciben la notificación inmediata en ambos idiomas.
-- Agente de soporte de formación: el personal puede preguntar en español o inglés y obtener la respuesta oficial al momento.
+- Sistema de actualización de estándares: cuando cambia una receta, todos los locales reciben la notificación inmediata en el idioma base seleccionado. Un segundo idioma es opcional pero altamente recomendado.
+- Agente de soporte de formación: el personal puede preguntar en el idioma base seleccionado y obtener la respuesta oficial al momento. El soporte en español/inglés es opcional pero altamente recomendado.
 
 ---
 
@@ -177,7 +177,7 @@ La CEO, **Mariana Restrepo**, hija del fundador, ha creado un equipo interno lla
 | Hito              | Departamento principal         | Entregable de negocio                                                                |
 | ----------------- | ------------------------------ | ------------------------------------------------------------------------------------ |
 | 0 — Prework       | Todos                          | Configuración del entorno, primeros prompts sobre Brasaland                          |
-| 1 — Web           | Marketing                      | Web corporativa bilingüe renovada                                                    |
+| 1 — Web           | Marketing                      | Web corporativa renovada (multiidioma opcional, altamente recomendado)               |
 | 2 — Programación  | Finanzas / Operaciones         | Lógica de márgenes, scoring de locales, control de mermas                            |
 | 3 — UI con IA     | Formación / Producto           | Interfaces generadas con IA para la plataforma de formación y el catálogo de fichas  |
 | 4 — Next.js       | Marketing / Clientes           | App de fidelización o portal operativo para el personal                              |
@@ -215,6 +215,8 @@ Brasaland debe aparecer en los enunciados como **el empleador del estudiante den
 - **Ticket asignado** por el tech lead.
 
 El estudiante siempre sabe que lo que construye **va a ser usado mañana por los managers de 14 locales en Colombia y Florida** — no es un ejercicio desechable.
+
+Nota de idioma para la generación de proyectos: las implementaciones multiidioma son **opcionales pero altamente recomendadas** por la operación en dos países. El estudiante escoge el idioma base del proyecto y puede añadir un segundo idioma como mejora.
 
 ---
 

@@ -36,7 +36,7 @@ The CEO, **Mariana Restrepo**, daughter of the founder, has created an internal 
 - Ingredient ordering system: based on historical sales and available stock, the system generates the suggested order for the supplier automatically.
 - Digitised waste tracking: the manager logs waste in an app, the system detects anomalies and alerts the operations team.
 - Operations alerts: if a location has no registered sales for two hours during opening hours, automatic notification to Felipe.
-- Manager support agent: answers frequent operational questions in Spanish or English depending on the location.
+- Manager support agent: answers frequent operational questions according to the selected base language. Spanish/English support is optional but highly recommended.
 
 ---
 
@@ -78,7 +78,7 @@ The CEO, **Mariana Restrepo**, daughter of the founder, has created an internal 
 
 **Automation and AI needs:**
 
-- Digital loyalty and ordering app: online ordering, payment, digital point accumulation, visit history — bilingual (Spanish/English).
+- Digital loyalty and ordering app: online ordering, payment, digital point accumulation, visit history. Multilingual support (Spanish/English) is optional but highly recommended, starting from one base language.
 - Customer CRM: unified customer profile with order history, visit frequency, preferences, and accumulated points.
 - Personalisation engine: based on customer history, suggest products or launch personalised offers.
 - Marketing dashboard: CAC, LTV, average visit frequency, campaign conversion, Brasa Points evolution — by market.
@@ -102,10 +102,10 @@ The CEO, **Mariana Restrepo**, daughter of the founder, has created an internal 
 
 **Automation and AI needs:**
 
-- Internal HR portal: holiday requests, contract consultation, absence management — bilingual.
+- Internal HR portal: holiday requests, contract consultation, absence management. Multilingual support is optional but highly recommended.
 - Automated onboarding flow for new hires: checklist, document delivery, step completion tracking.
 - HR KPI dashboard: headcount per location, monthly turnover, absenteeism rate, average time to fill vacancies — by country.
-- Internal HR agent: answers frequent questions from team members about policies, schedules, and benefits in Spanish or English.
+- Internal HR agent: answers frequent questions from team members about policies, schedules, and benefits in the selected base language. Spanish/English support is optional but highly recommended.
 
 ---
 
@@ -124,11 +124,11 @@ The CEO, **Mariana Restrepo**, daughter of the founder, has created an internal 
 
 **Automation and AI needs:**
 
-- Training platform: searchable catalogue of recipes, technique guides, and quality standards — available in Spanish and English.
+- Training platform: searchable catalogue of recipes, technique guides, and quality standards. Spanish/English support is optional but highly recommended.
 - Digital procedure manual: always up to date, accessible from any device in the kitchen.
 - New staff onboarding flow: structured learning path with confirmation checkpoints.
-- Standards update system: when a recipe changes, all locations are notified immediately with the updated version in both languages.
-- Training support agent: staff can ask "how is the house sauce prepared?" in Spanish or English and get the official answer immediately.
+- Standards update system: when a recipe changes, all locations are notified immediately in the selected base language. A second language is optional but highly recommended.
+- Training support agent: staff can ask "how is the house sauce prepared?" in the selected base language and get the official answer immediately. Spanish/English support is optional but highly recommended.
 
 ---
 
@@ -178,7 +178,7 @@ The CEO, **Mariana Restrepo**, daughter of the founder, has created an internal 
 | Milestone        | Primary Department                | Business Deliverable                                                           |
 | ---------------- | --------------------------------- | ------------------------------------------------------------------------------ |
 | 0 — Prework      | All                               | Environment setup, first prompts about Brasaland                               |
-| 1 — Web          | Marketing                         | Renewed bilingual corporate website                                            |
+| 1 — Web          | Marketing                         | Renewed corporate website (multilingual optional, highly recommended)          |
 | 2 — Programming  | Finance / Operations              | Margin calculation logic, location scoring, waste control                      |
 | 3 — AI-driven UI | Training / Product                | AI-generated interfaces for the training platform and recipe catalogue         |
 | 4 — Next.js      | Marketing / Customers             | Customer loyalty app or staff-facing operations portal                         |
@@ -216,6 +216,8 @@ Brasaland should appear in project statements as **the student's employer within
 - **Task ticket** assigned by the tech lead.
 
 The student always knows that what they build **will be used tomorrow by the managers of 14 locations across Colombia and Florida** — it is not a throwaway exercise.
+
+Language note for project generation: multilingual implementations are **optional but highly recommended** due to cross-country operations. The student chooses the base language for the project and may add a second language as an enhancement.
 
 ---
 
