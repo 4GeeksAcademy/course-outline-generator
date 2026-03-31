@@ -6,11 +6,11 @@
 
 ## General Overview
 
-**TrackFlow** is a last-mile delivery and warehouse management company founded in 2009 in Monterrey, Mexico. It operates in two markets — **Mexico and Spain (Zaragoza)** — and offers three services: warehouse management for e-commerce brands that sell in both countries, last-mile delivery (the final leg from warehouse to end customer), and reverse logistics (returns and product reconditioning). The company has approximately **130 employees** and generates around **9 million euros in annual revenue**.
+**TrackFlow** is a last-mile delivery and warehouse management company founded in 2009 in Los Angeles, United States. It operates in two markets — **United States (Los Angeles) and Spain (Zaragoza)** — and offers three services: warehouse management for e-commerce brands that sell in both countries, last-mile delivery (the final leg from warehouse to end customer), and reverse logistics (returns and product reconditioning). The company has approximately **130 employees** and generates around **9 million euros in annual revenue**.
 
-Its clients are mid-sized fashion, electronics, and cosmetics brands that sell online and outsource their entire logistics operation to TrackFlow. The company grew steadily during the e-commerce boom, but that growth left an uneven technical foundation: the Monterrey and Zaragoza operations use different tools, data doesn't flow between the two countries, and the leadership team makes decisions based on information that arrives late and incomplete. Margins are under pressure because competitors are automating what TrackFlow still does by hand.
+Its clients are mid-sized fashion, electronics, and cosmetics brands that sell online and outsource their entire logistics operation to TrackFlow. The company grew steadily during the e-commerce boom, but that growth left an uneven technical foundation: the Los Angeles and Zaragoza operations use different tools, data doesn't flow between the two countries, and the leadership team makes decisions based on information that arrives late and incomplete. Margins are under pressure because competitors are automating what TrackFlow still does by hand.
 
-The CEO, **Daniel Espinoza**, has created an internal unit called **TrackFlow Tech** to lead the company's digital transformation. You are part of that unit.
+The CEO, **Thomas Harry**, has created an internal unit called **TrackFlow Tech** to lead the company's digital transformation. You are part of that unit.
 
 ---
 
@@ -23,7 +23,7 @@ The CEO, **Daniel Espinoza**, has created an internal unit called **TrackFlow Te
 
 **Current situation:**
 
-- The warehouse in Monterrey and the warehouse in Zaragoza each use a different warehouse management system (WMS). One is commercial software; the other is an advanced spreadsheet.
+- The warehouse in Los Angeles and the warehouse in Zaragoza each use a different warehouse management system (WMS). One is commercial software; the other is an advanced spreadsheet.
 - Real-time inventory visibility doesn't exist at a global level. To know how many units of a given product are available across both countries, someone has to call both warehouses.
 - Inbound orders arrive by email in different formats depending on the client. An operative transcribes them into the local system manually.
 - Picking is done with printed paper lists.
@@ -46,7 +46,7 @@ The CEO, **Daniel Espinoza**, has created an internal unit called **TrackFlow Te
 
 **Current situation:**
 
-- TrackFlow works with 8 carriers: Estafeta, FedEx, and DHL in Mexico; MRW, SEUR, and DHL in Spain, plus two local carriers.
+- TrackFlow works with 8 carriers: UPS, FedEx, and DHL in the United States; MRW, SEUR, and DHL in Spain, plus two local carriers.
 - Carrier assignment for each shipment is done manually by the coordinator based on experience.
 - Package tracking is inconsistent: each carrier has its own portal. When clients ask where their parcel is, the team has to check multiple systems.
 - Incidents (lost parcel, failed delivery, wrong address) arrive by email with no ticket management system.
@@ -88,7 +88,7 @@ The CEO, **Daniel Espinoza**, has created an internal unit called **TrackFlow Te
 ### 📞 Customer Experience
 
 **Manager:** Valentina Cruz, CX Manager
-**Team:** 15 agents distributed between Monterrey and Zaragoza
+**Team:** 15 agents distributed between Los Angeles and Zaragoza
 
 **Current situation:**
 
@@ -138,7 +138,7 @@ The CEO, **Daniel Espinoza**, has created an internal unit called **TrackFlow Te
 **Current situation:**
 
 - TrackFlow's tech architecture is the result of years of unplanned growth: two different WMS systems, a corporate ERP from the early 2010s, point-to-point integrations built with undocumented Python scripts, and databases in two different cloud providers.
-- There is no centralised telemetry. When an endpoint fails in Monterrey, the Zaragoza team finds out via WhatsApp.
+- There is no centralised telemetry. When an endpoint fails in Los Angeles, the Zaragoza team finds out via WhatsApp.
 - Deployment of a new feature takes one to two weeks. There is no CI/CD.
 - Andrés wants to build a unified platform, but the team is 100% busy putting out fires.
 
@@ -154,12 +154,12 @@ The CEO, **Daniel Espinoza**, has created an internal unit called **TrackFlow Te
 
 ### 📊 Executive Direction and Reporting
 
-**Manager:** Daniel Espinoza, CEO (Monterrey)
+**Manager:** Thomas Harry, CEO (Los Angeles)
 **Leadership team:** CTO, Commercial Director, Head of Warehouse Operations, CX Manager
 
 **Current situation:**
 
-- Daniel receives a consolidated report every Monday that his directors prepare on Sunday evening by combining data from different systems. The process consumes 3 to 4 hours per director.
+- Thomas receives a consolidated report every Monday that his directors prepare on Sunday evening by combining data from different systems. The process consumes 3 to 4 hours per director.
 - The report arrives at 10am Monday. By then, some data is already two days old.
 - There is no unified view of the business by country.
 - Strategic decisions are made with partial data.
@@ -168,9 +168,9 @@ The CEO, **Daniel Espinoza**, has created an internal unit called **TrackFlow Te
 
 - Global executive dashboard: KPIs from both operations in real time — shipment volume, on-time delivery rate, operational cost, returns, customer satisfaction.
 - Automatically generated weekly executive report: the agent consolidates data from both countries, drafts the report, and sends it every Monday at 7am.
-- Country comparisons: Daniel can explore "how did Q3 go in Mexico vs. Spain" without calling anyone.
-- Strategic alerts: if the delivery SLA falls below 90% in either country, immediate notification to Daniel and Ana.
-- AI executive assistant: Daniel can ask in natural language "which carrier has the most incidents in Monterrey this month?" and get a data-backed answer.
+- Country comparisons: Thomas can explore "how did Q3 go in the United States vs. Spain" without calling anyone.
+- Strategic alerts: if the delivery SLA falls below 90% in either country, immediate notification to Thomas and Ana.
+- AI executive assistant: Thomas can ask in natural language "which carrier has the most incidents in Los Angeles this month?" and get a data-backed answer.
 
 ---
 
@@ -194,16 +194,16 @@ The CEO, **Daniel Espinoza**, has created an internal unit called **TrackFlow Te
 
 ## Recurring Characters
 
-| Character           | Role                          | Origin                      | Gender | Communication Style                                                                                           |
-| ------------------- | ----------------------------- | --------------------------- | ------ | ------------------------------------------------------------------------------------------------------------- |
-| **Daniel Espinoza** | CEO                           | Mexican (Latin)             | M      | Direct and data-driven. Always asks "how much does it cost?" and "when will it be done?" Not very technical.  |
-| **Sofía Ramos**     | Returns Manager               | Mexican (Latin)             | F      | Organised, high tolerance for ambiguity. Wants clear rules and controlled exceptions.                         |
-| **Valentina Cruz**  | CX Manager                    | Latin American (Venezuelan) | F      | Empathetic and demanding. Always thinks from the end customer's perspective. Bilingual (Spanish/English).     |
-| **Ashley Morris**   | Head of Commercial Operations | American                    | F      | Structured and metrics-driven. Clear, concise emails. Wants dashboards she can share with clients directly.   |
-| **Brian Calloway**  | Senior Data Analyst           | American                    | M      | Analytical and precise. Speaks in percentages and trends. Loves a well-structured dataset.                    |
-| **Andrés Kim**      | CTO                           | Other (Korean-Mexican)      | M      | Meticulous and systematic. Detailed technical specs. Obsessed with scalability and observability.             |
-| **Carlos Vega**     | Head of Carrier Operations    | Spanish                     | M      | Knows the carriers better than anyone. Very detail-oriented in integration requirements.                      |
-| **Ana Whitfield**   | Head of Warehouse Operations  | Spanish                     | F      | Pragmatic and operational. Thinks in physical processes. Distrustful of technology until she sees it working. |
+| Character          | Role                          | Origin                      | Gender | Communication Style                                                                                           |
+| ------------------ | ----------------------------- | --------------------------- | ------ | ------------------------------------------------------------------------------------------------------------- |
+| **Thomas Harry**   | CEO                           | American                    | M      | Direct and data-driven. Always asks "how much does it cost?" and "when will it be done?" Not very technical.  |
+| **Sofía Ramos**    | Returns Manager               | American (Latin)            | F      | Organised, high tolerance for ambiguity. Wants clear rules and controlled exceptions.                         |
+| **Valentina Cruz** | CX Manager                    | Latin American (Venezuelan) | F      | Empathetic and demanding. Always thinks from the end customer's perspective. Bilingual (Spanish/English).     |
+| **Ashley Morris**  | Head of Commercial Operations | American                    | F      | Structured and metrics-driven. Clear, concise emails. Wants dashboards she can share with clients directly.   |
+| **Brian Calloway** | Senior Data Analyst           | American                    | M      | Analytical and precise. Speaks in percentages and trends. Loves a well-structured dataset.                    |
+| **Andrés Kim**     | CTO                           | Other (Korean-American)     | M      | Meticulous and systematic. Detailed technical specs. Obsessed with scalability and observability.             |
+| **Carlos Vega**    | Head of Carrier Operations    | Spanish                     | M      | Knows the carriers better than anyone. Very detail-oriented in integration requirements.                      |
+| **Ana Whitfield**  | Head of Warehouse Operations  | American                    | F      | Pragmatic and operational. Thinks in physical processes. Distrustful of technology until she sees it working. |
 
 ---
 
@@ -211,12 +211,12 @@ The CEO, **Daniel Espinoza**, has created an internal unit called **TrackFlow Te
 
 TrackFlow appears in project statements as **the student's employer within the TrackFlow Tech unit**. Projects arrive as:
 
-- **Email from Daniel (CEO)** with an urgent business need and a tight deadline.
+- **Email from Thomas (CEO)** with an urgent business need and a tight deadline.
 - **Technical spec from Andrés (CTO)** with architecture requirements and acceptance criteria.
 - **Request from a department head** (Ana, Carlos, Sofía, Valentina) describing their operational problem.
 - **Ticket from the project management system** (Linear or Jira) assigned by the tech lead.
 
-The student always knows that what they build **goes to production at TrackFlow** and that warehouse operatives and account managers in Monterrey and Zaragoza will be using it tomorrow.
+The student always knows that what they build **goes to production at TrackFlow** and that warehouse operatives and account managers in Los Angeles and Zaragoza will be using it tomorrow.
 
 ---
 

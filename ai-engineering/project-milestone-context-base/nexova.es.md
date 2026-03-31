@@ -6,7 +6,7 @@
 
 ## Descripción general
 
-**Nexova** es una empresa de consultoría de recursos humanos y selección de talento fundada en 2011, con sede en Santiago de Chile y una oficina comercial en Buenos Aires, Argentina. Cuenta con **120 empleados** y opera en tres líneas de negocio: headhunting para perfiles de mandos medios y directivos, outsourcing de equipos de soporte al cliente para empresas tecnológicas, y formación corporativa en habilidades blandas y liderazgo. Factura aproximadamente **8 millones de dólares anuales**.
+**Nexova** es una empresa de consultoría de recursos humanos y selección de talento fundada en 2011, con sede en Valencia, España, y una oficina de expansión en Miami, Florida. Cuenta con **120 empleados** y opera en tres líneas de negocio: headhunting para perfiles de mandos medios y directivos, outsourcing de equipos de soporte al cliente para empresas tecnológicas, y formación corporativa en habilidades blandas y liderazgo. Factura aproximadamente **8 millones de dólares anuales**.
 
 Sus clientes son principalmente medianas empresas del sector tecnológico, retail y servicios financieros que externalizan parte de su gestión de talento. Nexova lleva años funcionando bien, pero siente la presión competitiva de nuevas plataformas de recruiting automatizadas que empiezan a quitarle cuota de mercado.
 
@@ -208,16 +208,16 @@ La CEO, **Laura Mendoza**, ha apostado por la IA como ventaja competitiva y ha f
 
 ## Personajes recurrentes del proyecto
 
-| Personaje          | Rol                   | Origen                    | Género | Estilo de comunicación                                                                                        |
-| ------------------ | --------------------- | ------------------------- | ------ | ------------------------------------------------------------------------------------------------------------- |
-| **Laura Mendoza**  | CEO                   | Chilena (Latinoamérica)   | M      | Directa, orientada a resultados. Comunica por email con ideas de alto nivel. Poco técnica.                    |
-| **Javier Almeida** | Operations Manager    | Chileno (Latinoamérica)   | H      | Pragmático. Describe los problemas con mucho detalle operativo. Poco paciente con la tecnología.              |
-| **Elena Vargas**   | L&D Manager           | Argentina (Latinoamérica) | M      | Creativa, detallista. Quiere que los alumnos tengan la mejor experiencia posible.                             |
-| **Megan Clarke**   | Head of Sales         | Estadounidense            | M      | Impaciente, orientada a números. Quiere resultados rápidos y dashboards claros. Mensajes cortos y directos.   |
-| **Tom Reeves**     | Senior Sales Analyst  | Estadounidense            | H      | Metódico y con cultura de datos. Siempre quiere los números de fondo, no el resumen.                          |
-| **Sergio Molina**  | CTO                   | Español                   | H      | Técnico, meticuloso. Entrega specs detalladas. Valora la escalabilidad y la seguridad.                        |
-| **Carmen Ruiz**    | Head of Marketing     | Española                  | M      | Orientada a marca y experiencia. Sabe lo que quiere visualmente pero no cómo construirlo.                     |
-| **Roberto Díaz**   | Customer Support Lead | Otro (dominicano-chileno) | H      | Bajo presión constante. Necesita visibilidad en tiempo real y herramientas que su equipo adopte sin fricción. |
+| Personaje          | Rol                   | Origen                         | Género | Estilo de comunicación                                                                                        |
+| ------------------ | --------------------- | ------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------- |
+| **Laura Mendoza**  | CEO                   | Española                       | M      | Directa, orientada a resultados. Comunica por email con ideas de alto nivel. Poco técnica.                    |
+| **Javier Almeida** | Operations Manager    | Español                        | H      | Pragmático. Describe los problemas con mucho detalle operativo. Poco paciente con la tecnología.              |
+| **Elena Vargas**   | L&D Manager           | Estadounidense (Latinoamérica) | M      | Creativa, detallista. Quiere que los alumnos tengan la mejor experiencia posible.                             |
+| **Megan Clarke**   | Head of Sales         | Estadounidense                 | M      | Impaciente, orientada a números. Quiere resultados rápidos y dashboards claros. Mensajes cortos y directos.   |
+| **Tom Reeves**     | Senior Sales Analyst  | Estadounidense                 | H      | Metódico y con cultura de datos. Siempre quiere los números de fondo, no el resumen.                          |
+| **Sergio Molina**  | CTO                   | Español                        | H      | Técnico, meticuloso. Entrega specs detalladas. Valora la escalabilidad y la seguridad.                        |
+| **Carmen Ruiz**    | Head of Marketing     | Española                       | M      | Orientada a marca y experiencia. Sabe lo que quiere visualmente pero no cómo construirlo.                     |
+| **Roberto Díaz**   | Customer Support Lead | Español (Latinoamérica)        | H      | Bajo presión constante. Necesita visibilidad en tiempo real y herramientas que su equipo adopte sin fricción. |
 
 ---
 

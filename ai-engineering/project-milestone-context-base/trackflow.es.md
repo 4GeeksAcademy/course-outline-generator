@@ -6,11 +6,11 @@
 
 ## Descripción general
 
-**TrackFlow** es una empresa de logística de última milla y gestión de almacenes fundada en 2009 en Monterrey, México. Opera en dos mercados — **México y España (Zaragoza)** — y ofrece tres servicios: gestión de almacenes para marcas de e-commerce que venden en ambos países, transporte de última milla (la última vuelta desde el almacén al cliente final) y logística inversa (devoluciones y reacondicionamiento de producto). Cuenta con unos **130 empleados** y factura alrededor de **9 millones de euros anuales**.
+**TrackFlow** es una empresa de logística de última milla y gestión de almacenes fundada en 2009 en Los Ángeles, Estados Unidos. Opera en dos mercados — **Estados Unidos (Los Ángeles) y España (Zaragoza)** — y ofrece tres servicios: gestión de almacenes para marcas de e-commerce que venden en ambos países, transporte de última milla (la última vuelta desde el almacén al cliente final) y logística inversa (devoluciones y reacondicionamiento de producto). Cuenta con unos **130 empleados** y factura alrededor de **9 millones de euros anuales**.
 
-Sus clientes son marcas de moda, electrónica y cosmética de tamaño medio que venden online y externalizan en TrackFlow toda su operación logística. La empresa creció de forma constante durante el auge del e-commerce, pero ese crecimiento dejó una base tecnológica desigual: las operaciones de Monterrey y Zaragoza usan herramientas distintas, los datos no fluyen entre los dos países y el equipo directivo toma decisiones con información que llega tarde e incompleta. Los márgenes están bajo presión porque los competidores están automatizando lo que TrackFlow aún hace a mano.
+Sus clientes son marcas de moda, electrónica y cosmética de tamaño medio que venden online y externalizan en TrackFlow toda su operación logística. La empresa creció de forma constante durante el auge del e-commerce, pero ese crecimiento dejó una base tecnológica desigual: las operaciones de Los Ángeles y Zaragoza usan herramientas distintas, los datos no fluyen entre los dos países y el equipo directivo toma decisiones con información que llega tarde e incompleta. Los márgenes están bajo presión porque los competidores están automatizando lo que TrackFlow aún hace a mano.
 
-El CEO, **Daniel Espinoza**, ha creado una unidad interna llamada **TrackFlow Tech** para liderar la transformación digital de la empresa. Tú formas parte de esa unidad.
+El CEO, **Thomas Harry**, ha creado una unidad interna llamada **TrackFlow Tech** para liderar la transformación digital de la empresa. Tú formas parte de esa unidad.
 
 ---
 
@@ -23,7 +23,7 @@ El CEO, **Daniel Espinoza**, ha creado una unidad interna llamada **TrackFlow Te
 
 **Situación actual:**
 
-- El almacén de Monterrey y el de Zaragoza usan sistemas de gestión de almacén (WMS) distintos. Uno es software comercial; el otro es una hoja de cálculo avanzada.
+- El almacén de Los Ángeles y el de Zaragoza usan sistemas de gestión de almacén (WMS) distintos. Uno es software comercial; el otro es una hoja de cálculo avanzada.
 - El inventario en tiempo real no existe a nivel global. Para saber cuántas unidades de un producto hay disponibles en los dos países, alguien tiene que llamar a los dos almacenes.
 - Las órdenes de entrada llegan por email en formatos distintos según el cliente. Un operario las transcribe al sistema local manualmente.
 - El picking se hace con listas impresas en papel. Las discrepancias de inventario son frecuentes y se detectan tarde.
@@ -45,7 +45,7 @@ El CEO, **Daniel Espinoza**, ha creado una unidad interna llamada **TrackFlow Te
 
 **Situación actual:**
 
-- TrackFlow trabaja con 8 transportistas: Estafeta, FedEx y DHL en México; MRW, SEUR y DHL en España, más dos carriers locales.
+- TrackFlow trabaja con 8 transportistas: UPS, FedEx y DHL en Estados Unidos; MRW, SEUR y DHL en España, más dos carriers locales.
 - La asignación de transportista para cada envío se hace manualmente por experiencia del coordinador.
 - El tracking de los paquetes es inconsistente: cada transportista tiene su propio portal. El equipo tiene que consultar varios sistemas para responder al cliente.
 - Las incidencias llegan por email sin ningún sistema de gestión de tickets.
@@ -87,7 +87,7 @@ El CEO, **Daniel Espinoza**, ha creado una unidad interna llamada **TrackFlow Te
 ### 📞 Atención al Cliente
 
 **Responsable:** Valentina Cruz, CX Manager
-**Equipo:** 15 agentes distribuidos entre Monterrey y Zaragoza
+**Equipo:** 15 agentes distribuidos entre Los Ángeles y Zaragoza
 
 **Situación actual:**
 
@@ -136,7 +136,7 @@ El CEO, **Daniel Espinoza**, ha creado una unidad interna llamada **TrackFlow Te
 **Situación actual:**
 
 - La arquitectura tecnológica de TrackFlow es el resultado de años de crecimiento no planificado: dos WMS distintos, un ERP de principios de los 2010, integraciones punto a punto con scripts Python sin documentar y bases de datos en dos proveedores cloud distintos.
-- No hay telemetría centralizada. Cuando falla un endpoint en Monterrey, el equipo de Zaragoza se entera por WhatsApp.
+- No hay telemetría centralizada. Cuando falla un endpoint en Los Ángeles, el equipo de Zaragoza se entera por WhatsApp.
 - El tiempo de despliegue de una nueva feature es de una a dos semanas. No hay CI/CD.
 
 **Necesidades de automatización e IA:**
@@ -151,11 +151,11 @@ El CEO, **Daniel Espinoza**, ha creado una unidad interna llamada **TrackFlow Te
 
 ### 📊 Dirección y Reporting Ejecutivo
 
-**Responsable:** Daniel Espinoza, CEO (Monterrey)
+**Responsable:** Thomas Harry, CEO (Los Ángeles)
 
 **Situación actual:**
 
-- Daniel recibe cada lunes un informe consolidado que sus directores preparan juntando datos de distintos sistemas. El proceso consume entre 3 y 4 horas por director.
+- Thomas recibe cada lunes un informe consolidado que sus directores preparan juntando datos de distintos sistemas. El proceso consume entre 3 y 4 horas por director.
 - El informe llega a las 10h del lunes con datos ya envejecidos. No hay vista unificada por país.
 - Las decisiones estratégicas se toman con datos parciales.
 
@@ -163,9 +163,9 @@ El CEO, **Daniel Espinoza**, ha creado una unidad interna llamada **TrackFlow Te
 
 - Dashboard ejecutivo global: KPIs de las dos operaciones en tiempo real — volumen de envíos, tasa de entrega a tiempo, coste operativo, devoluciones, satisfacción del cliente.
 - Informe ejecutivo semanal generado automáticamente: el agente consolida los datos y lo envía cada lunes a las 7h.
-- Comparativas por país y periodo: Daniel puede explorar "cómo fue el Q3 en México vs. España" sin llamar a nadie.
-- Alertas estratégicas: si el SLA de entrega cae por debajo del 90% en alguno de los dos países, notificación inmediata a Daniel y a Ana.
-- Asistente ejecutivo de IA: Daniel puede preguntar en lenguaje natural y obtener respuestas con datos del sistema.
+- Comparativas por país y periodo: Thomas puede explorar "cómo fue el Q3 en Estados Unidos vs. España" sin llamar a nadie.
+- Alertas estratégicas: si el SLA de entrega cae por debajo del 90% en alguno de los dos países, notificación inmediata a Thomas y a Ana.
+- Asistente ejecutivo de IA: Thomas puede preguntar en lenguaje natural y obtener respuestas con datos del sistema.
 
 ---
 
@@ -189,16 +189,16 @@ El CEO, **Daniel Espinoza**, ha creado una unidad interna llamada **TrackFlow Te
 
 ## Personajes recurrentes del proyecto
 
-| Personaje           | Rol                           | Origen                       | Género | Estilo de comunicación                                                                                             |
-| ------------------- | ----------------------------- | ---------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------ |
-| **Daniel Espinoza** | CEO                           | Mexicano (Latinoamérica)     | H      | Directo y orientado a datos. Pregunta siempre "¿cuánto cuesta?" y "¿cuándo lo tenemos?" Poco técnico.              |
-| **Sofía Ramos**     | Returns Manager               | Mexicana (Latinoamérica)     | M      | Organizada, con alta tolerancia a la ambigüedad. Quiere reglas claras y excepciones controladas.                   |
-| **Valentina Cruz**  | CX Manager                    | Latinoamericana (venezolana) | M      | Empática y exigente. Piensa siempre desde la experiencia del cliente final. Bilingüe (español/inglés).             |
-| **Ashley Morris**   | Head of Commercial Operations | Estadounidense               | M      | Estructurada y orientada a métricas. Emails claros y concisos. Quiere dashboards que pueda mostrar a los clientes. |
-| **Brian Calloway**  | Senior Data Analyst           | Estadounidense               | H      | Analítico y preciso. Habla en porcentajes y tendencias. Le encanta un dataset bien estructurado.                   |
-| **Andrés Kim**      | CTO                           | Otro (coreano-mexicano)      | H      | Meticuloso y sistemático. Specs técnicas detalladas. Obsesionado con la escalabilidad y la observabilidad.         |
-| **Carlos Vega**     | Head of Carrier Operations    | Español                      | H      | Conoce los transportistas mejor que nadie. Muy detallista en los requisitos de integración.                        |
-| **Ana Whitfield**   | Head of Warehouse Operations  | Española                     | M      | Pragmática y operativa. Piensa en procesos físicos. Desconfía de la tecnología hasta que la ve funcionar.          |
+| Personaje          | Rol                           | Origen                         | Género | Estilo de comunicación                                                                                             |
+| ------------------ | ----------------------------- | ------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------ |
+| **Thomas Harry**   | CEO                           | Estadounidense                 | H      | Directo y orientado a datos. Pregunta siempre "¿cuánto cuesta?" y "¿cuándo lo tenemos?" Poco técnico.              |
+| **Sofía Ramos**    | Returns Manager               | Estadounidense (Latinoamérica) | M      | Organizada, con alta tolerancia a la ambigüedad. Quiere reglas claras y excepciones controladas.                   |
+| **Valentina Cruz** | CX Manager                    | Latinoamericana (venezolana)   | M      | Empática y exigente. Piensa siempre desde la experiencia del cliente final. Bilingüe (español/inglés).             |
+| **Ashley Morris**  | Head of Commercial Operations | Estadounidense                 | M      | Estructurada y orientada a métricas. Emails claros y concisos. Quiere dashboards que pueda mostrar a los clientes. |
+| **Brian Calloway** | Senior Data Analyst           | Estadounidense                 | H      | Analítico y preciso. Habla en porcentajes y tendencias. Le encanta un dataset bien estructurado.                   |
+| **Andrés Kim**     | CTO                           | Otro (coreano-estadounidense)  | H      | Meticuloso y sistemático. Specs técnicas detalladas. Obsesionado con la escalabilidad y la observabilidad.         |
+| **Carlos Vega**    | Head of Carrier Operations    | Español                        | H      | Conoce los transportistas mejor que nadie. Muy detallista en los requisitos de integración.                        |
+| **Ana Whitfield**  | Head of Warehouse Operations  | Estadounidense                 | M      | Pragmática y operativa. Piensa en procesos físicos. Desconfía de la tecnología hasta que la ve funcionar.          |
 
 ---
 
@@ -206,12 +206,12 @@ El CEO, **Daniel Espinoza**, ha creado una unidad interna llamada **TrackFlow Te
 
 TrackFlow aparece en los enunciados siempre como **el empleador del estudiante dentro de la unidad TrackFlow Tech**. Los proyectos llegan como:
 
-- **Email de Daniel (CEO)** con una necesidad de negocio urgente y un plazo ajustado.
+- **Email de Thomas (CEO)** con una necesidad de negocio urgente y un plazo ajustado.
 - **Spec técnica de Andrés (CTO)** con requisitos de arquitectura y criterios de aceptación.
 - **Solicitud de un responsable de área** (Ana, Carlos, Sofía, Valentina) describiendo su problema operativo.
 - **Ticket del sistema de gestión de proyectos** (Linear o Jira) asignado por el tech lead.
 
-El estudiante siempre sabe que lo que construye **va a producción en TrackFlow** y que los operarios de Monterrey y Zaragoza van a usarlo mañana.
+El estudiante siempre sabe que lo que construye **va a producción en TrackFlow** y que los operarios de Los Ángeles y Zaragoza van a usarlo mañana.
 
 ---
 

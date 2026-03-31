@@ -6,7 +6,7 @@
 
 ## General Overview
 
-**Nexova** is a human resources consulting and talent acquisition firm founded in 2011, headquartered in Santiago, Chile, with a commercial office in Buenos Aires, Argentina. It has **120 employees** and operates across three business lines: executive and mid-management headhunting, customer support team outsourcing for technology companies, and corporate training in soft skills and leadership. The company generates approximately **8 million dollars in annual revenue**.
+**Nexova** is a human resources consulting and talent acquisition firm founded in 2011, headquartered in Valencia, Spain, with an expansion office in Miami, Florida. It has **120 employees** and operates across three business lines: executive and mid-management headhunting, customer support team outsourcing for technology companies, and corporate training in soft skills and leadership. The company generates approximately **8 million dollars in annual revenue**.
 
 Its clients are primarily mid-sized companies in the technology, retail, and financial services sectors that outsource part of their talent management. Nexova has operated successfully for years, but is now feeling competitive pressure from new automated recruiting platforms that are beginning to take market share.
 
@@ -208,16 +208,16 @@ The CEO, **Laura Mendoza**, has bet on AI as a competitive advantage and has ass
 
 ## Recurring Characters
 
-| Character          | Role                  | Origin                    | Gender | Communication Style                                                                          |
-| ------------------ | --------------------- | ------------------------- | ------ | -------------------------------------------------------------------------------------------- |
-| **Laura Mendoza**  | CEO                   | Chilean (Latin)           | F      | Direct, results-oriented. Communicates by email with high-level ideas. Not very technical.   |
-| **Javier Almeida** | Operations Manager    | Chilean (Latin)           | M      | Pragmatic. Describes problems with a lot of operational detail. Low patience for technology. |
-| **Elena Vargas**   | L&D Manager           | Argentine (Latin)         | F      | Creative, detail-oriented. Wants learners to have the best possible experience.              |
-| **Megan Clarke**   | Head of Sales         | American                  | F      | Impatient, numbers-driven. Wants fast results and clear dashboards. Short, direct messages.  |
-| **Tom Reeves**     | Senior Sales Analyst  | American                  | M      | Methodical and data-literate. Always wants the underlying numbers, not the summary.          |
-| **Sergio Molina**  | CTO                   | Spanish                   | M      | Technical, meticulous. Delivers detailed specs. Values scalability and security.             |
-| **Carmen Ruiz**    | Head of Marketing     | Spanish                   | F      | Brand and experience-focused. Knows what she wants visually but not how to build it.         |
-| **Roberto Díaz**   | Customer Support Lead | Other (Dominican-Chilean) | M      | Under constant pressure. Needs real-time visibility and tools his team will actually adopt.  |
+| Character          | Role                  | Origin           | Gender | Communication Style                                                                          |
+| ------------------ | --------------------- | ---------------- | ------ | -------------------------------------------------------------------------------------------- |
+| **Laura Mendoza**  | CEO                   | Spanish          | F      | Direct, results-oriented. Communicates by email with high-level ideas. Not very technical.   |
+| **Javier Almeida** | Operations Manager    | Spanish          | M      | Pragmatic. Describes problems with a lot of operational detail. Low patience for technology. |
+| **Elena Vargas**   | L&D Manager           | American (Latin) | F      | Creative, detail-oriented. Wants learners to have the best possible experience.              |
+| **Megan Clarke**   | Head of Sales         | American         | F      | Impatient, numbers-driven. Wants fast results and clear dashboards. Short, direct messages.  |
+| **Tom Reeves**     | Senior Sales Analyst  | American         | M      | Methodical and data-literate. Always wants the underlying numbers, not the summary.          |
+| **Sergio Molina**  | CTO                   | Spanish          | M      | Technical, meticulous. Delivers detailed specs. Values scalability and security.             |
+| **Carmen Ruiz**    | Head of Marketing     | Spanish          | F      | Brand and experience-focused. Knows what she wants visually but not how to build it.         |
+| **Roberto Díaz**   | Customer Support Lead | Spanish (Latin)  | M      | Under constant pressure. Needs real-time visibility and tools his team will actually adopt.  |
 
 ---
 
