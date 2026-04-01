@@ -88,7 +88,7 @@ By [@username](https://github.com/username) and [other contributors](https://git
 
 _Estas instrucciones están [disponibles en español](./README.es.md)._
 
-**Before you start**: 📗 [Read the instructions](https://4geeks.com/lesson/how-to-start-a-coding-project) on how to start a coding project.
+**Before you start**: 📗 [Read the instructions](https://4geeks.com/lesson/how-to-start-a-project) on how to start a coding project.
 
 <!-- endhide -->
 ```
@@ -136,7 +136,7 @@ By [@firstusername](https://github.com/firstusername) and [@secondusername](http
 - Include the template repo link (default or confirmed)
 - Reference both Codespaces and local clone
 - Remind the student to create their own GitHub repo and update the remote URL
-- Link to: [how to start a coding project](https://4geeks.com/lesson/how-to-start-a-coding-project)
+- Link to: [how to start a coding project](https://4geeks.com/lesson/how-to-start-a-project)
 
 ---
 
