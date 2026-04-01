@@ -1,5 +1,5 @@
 ---
-name: 4geeks-module-guidelines-generator
+name: module-guidelines-generator
 description: Generates pedagogical guidelines (lineamientos) for the theoretical and practical content of each skill or module in 4Geeks Academy courses. Produces two texts per skill: (1) for students — friendly, motivating, with main learning aspects; (2) for professors — concrete, with emphasis on key concepts and the module project. Use when asked to "generate guidelines for module X", "create lineamientos for this skill", "write student and professor instructions for the module", "add pedagogical guidelines to the syllabus", or when preparing content briefs for each skill's theory and practice. Trigger on "lineamientos", "guidelines for students and teachers", "instrucciones para módulo", or "contenido teórico y práctico por skill".
 ---
 
@@ -35,8 +35,8 @@ Use this skill when:
 
 **Do NOT use this skill to:**
 
-- Generate project READMEs (use `4geeks-project-readme-generator` or `4geeks-transversal-project-readme-generator`)
-- Generate CONTEXT files (use `4geeks-transversal-project-context-generator`)
+- Generate project READMEs (use `project-readme-generator` or `transversal-project-readme-generator`)
+- Generate CONTEXT files (use `transversal-project-context-generator`)
 
 ---
 

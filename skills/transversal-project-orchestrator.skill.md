@@ -1,5 +1,5 @@
 ---
-name: 4geeks-transversal-project-generator
+name: transversal-project-generator
 description: Orchestrates the generation of all artifacts for a 4Geeks Academy transversal project milestone — the universal project statement and the company-specific context files. Use this skill when a user wants to generate everything for a milestone at once, or when it is unclear whether they need only the README, only the CONTEXT files, or both. Trigger on phrases like "generate milestone N", "create all the files for hito X", "set up milestone N for these companies", or any request that involves a milestone number and one or more company descriptions without specifying which artifact they want. For targeted requests ("only generate the README", "only generate the context"), this skill will detect the intent and delegate accordingly. Always use this skill as the entry point when the scope of the request is ambiguous.
 ---
 
@@ -62,11 +62,11 @@ When both artifacts are needed, always generate the README first and the CONTEXT
 
 ### Generating the README
 
-Read and follow `/mnt/skills/user/4geeks-transversal-readme-generator/SKILL.md` in full before writing any README content.
+Read and follow `/mnt/skills/user/transversal-project-readme-generator/SKILL.md` in full before writing any README content.
 
 ### Generating the CONTEXT files
 
-Once the README is complete (either just generated or provided as input), read and follow `/mnt/skills/user/4geeks-transversal-context-generator/SKILL.md` in full before writing any CONTEXT content.
+Once the README is complete (either just generated or provided as input), read and follow `/mnt/skills/user/transversal-project-context-generator/SKILL.md` in full before writing any CONTEXT content.
 
 Pass the completed README as the `existing_readme` input to the context generator — even when it was just generated in the same session. The context generator must read it to extract the implied structure.
 
