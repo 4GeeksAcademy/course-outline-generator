@@ -1,196 +1,175 @@
 ---
 name: project-solution-file
-description: Define and maintain a canonical solution file per project under .learn/ and link it from the project's .learn/learn.json via a solution attribute. Use when creating or updating project solutions so students and LLMs can compare their work against a reference implementation.
+description: Define and maintain a canonical solution file per project under .learn/solution and link it from the project's .learn/learn.json via a solution attribute. Use when creating or updating project solutions so students and LLMs can compare their work against a reference implementation.
 ---
 
 # Project Solution File
 
-## When to Use This Skill
+## Purpose
+
+Use this skill to ensure each project has one canonical reference solution under `.learn/solution/`, documented with a README, and linked from `.learn/learn.json` using `solution`.
+
+This enables:
+
+- Students to compare their submission against a clear reference, including what a correct deliverable looks like in practice.
+- LLM-based evaluators to contrast submissions with a canonical solution and expected outputs.
+
+## When to use
 
 Use this skill whenever:
 
-- You are creating a new project that will be evaluated (milestones, guided or collaborative projects, etc.).
-- You are adding or updating a reference solution for an existing project.
-- You are checking that a project has its solution file properly linked in `.learn/learn.json`.
+- You create a new evaluable project (milestones, guided projects, collaborative projects).
+- You add or update a reference solution for an existing project.
+- You audit whether a project has a valid solution link in `.learn/learn.json`.
 
-The goal is for **every project to have exactly one canonical solution**, stored under the `.learn/solution/` folder (together with its README) and linked from `learn.json` via the `solution` attribute, so that:
+## Required conventions
 
-- Students can compare their submissions with the key aspects covered by the reference solution.
-- An LLM can use the reference to evaluate and contrast a student's submission.
+1. **Solution location**
+   - Keep all reference solution files in `.learn/solution/` at project root.
+   - Example: `content/projects/<project-slug>/.learn/solution/`
 
-## General Conventions
+2. **Mandatory README**
+   - Always include `.learn/solution/README.md` (or `README.html` only if explicitly needed).
+   - The README is the canonical entry point and must explain:
+     - Solution structure and purpose of each file
+     - Key implementation decisions and trade-offs
+     - How solution files connect and interact
+     - **Indicative examples** of what a correct deliverable looks like — e.g., expected output samples, sample API responses, annotated screenshots, or representative code snippets that illustrate the expected behavior. These help students self-assess and give LLM evaluators concrete anchors.
+     - **Solution architecture** when the project involves multiple services or components (e.g., message queues, background workers, agent orchestration, multi-service pipelines, LLM tool-use flows). In these cases include:
+       - A brief description or ASCII/Mermaid diagram of how services interact
+       - Data flow between components (inputs, outputs, events)
+       - Component responsibilities and boundaries
+       - Any relevant deployment or infrastructure considerations
 
-- **Location of the solution**: always inside a `.learn/solution/` folder at the project’s root.
-  - Example: `projects/ai-engineering-syllabus/ai-eng-milestone-coding-fundamentals/.learn/solution/`
-  - All solution files (TypeScript, HTML, CSS, etc.) must live inside this folder.
-- **Mandatory README in the solution folder**:
-  - Always create a **README** inside `.learn/solution/` that explains the reference solution.
-  - The README must be `.md`.
-  - The README must describe the structure of the solution, key decisions, and how the files inside `.learn/solution/` work together.
-- **Linking from `learn.json`**: add a `solution` attribute whose value is the **full URL in the repository** of the main README of the solution (not a relative path).
-  - Example inside the project’s `.learn/learn.json`:
-    - `"solution": "https://github.com/ORG/REPO/blob/BRANCH/path/to/project/.learn/solution/README.md"`
-- **One main solution entry point per project**:
-  - The README in `.learn/solution/` acts as the canonical entry point and should link to any auxiliary files in the same folder (HTML, TS, CSS, etc.).
-- **Language**: The solution README and any explanatory content (comments, prose in `.md`, visible copy in HTML) must **always be in English**, regardless of the project’s README or UI language. Code identifiers and literals follow the project’s requirements; human-readable text in the solution is English-only.
+3. **`learn.json` linkage**
+   - Add/update `"solution"` in `.learn/learn.json`.
+   - The value must be the **full URL in the repository** pointing to `.learn/solution/README.*` (not a relative path).
+   - Example: `"solution": "https://github.com/ORG/REPO/blob/BRANCH/path/to/project/.learn/solution/README.md"`
+   - Use the repository's canonical pattern consistently.
 
-## Allowed Types of Solution Files
+4. **One canonical solution per project**
+   - Avoid multiple competing reference implementations.
+   - If there are auxiliary files, reference them from `.learn/solution/README.*`.
+   - If you find multiple `solution` attributes in `learn.json`, unify them.
 
-### 1. Solution as an HTML View
+5. **Language**
+   - Human-readable explanatory content inside the solution (README/comments/documentation) must always be in English, regardless of the project's README or UI language.
+   - Code identifiers and literals follow the project's requirements.
 
-**When to use**:
+## Allowed solution formats
 
-- When the expected output is a web page, landing page, interface, or HTML/CSS structure (with or without JS).
+### 1) HTML/CSS/JS solution
 
-**Requirements**:
+Use when the deliverable is a web interface, layout, or page.
 
-- Must be a **well-structured** HTML file, including:
-  - Correct semantics (`header`, `main`, `footer`, `section`, `article`, etc.).
-  - Optional comments only to clarify non-obvious decisions (don’t narrate every line).
-  - The inclusion of all elements/attributes specifically assessed in the project:
-    - Example: if the project requires schema.org for `Event`, `CreativeWork`, and `Person`, the solution must mark them accordingly.
-- If the project evaluates accessibility or SEO:
-  - Include the `lang` attribute in `<html>`, hierarchical headings (`h1`, `h2`, ...), key meta tags, alt text for images, etc.
+Requirements:
 
-**Recommended paths inside `.learn/solution/`**:
+- Semantic HTML structure (`header`, `main`, `section`, `footer`, `article`, etc.) when applicable.
+- Include all elements/attributes specifically assessed in the project (e.g., schema.org markup, accessibility metadata, headings hierarchy, `lang` attribute, alt text).
+- Keep non-obvious comments only — don't narrate every line.
+- README should include a screenshot or description of the expected rendered result so students know what "done" looks like.
 
-- Main explanation: `.learn/solution/README.md` or `.learn/solution/README.html`
-- HTML implementation (if applicable): `.learn/solution/solution.html`
+Recommended files in `.learn/solution/`:
 
-### 2. Solution as code files (`.py`, `.js`, `.jsx`, `.ts`, `.tsx`, etc.)
+- `README.md` (mandatory)
+- `solution.html`
+- `styles.css`
+- `script.js`
 
-**When to use**:
+### 2) Source-code solution (`.py`, `.js`, `.ts`, etc.)
 
-- When the expected output is:
-  - A script or module in a programming language such as Python, JavaScript, TypeScript or similar.
-  - Automation logic, core business logic, data processing, standalone CLI tools, backend modules, or source code for compiled languages.
+Use when the deliverable is programming logic, scripts, modules, or backend code (automation, data processing, CLI tools, backend modules, etc.).
 
-- _Supported solution file types_ include, but are not limited to:
-  - Python: `.py`
-  - JavaScript/TypeScript: `.js`, `.jsx`, `.ts`, `.tsx`
-  - Bash or Shell: `.sh`
-  - Other languages/formats as needed by the project specification.
+Supported file types include, but are not limited to: `.py`, `.js`, `.jsx`, `.ts`, `.tsx`, `.sh`.
 
-**Requirements**:
+Requirements:
 
-- Must contain a **clear and readable implementation** that:
-  - Solves the full target problem.
-  - Uses data structures, algorithms, or patterns that serve as “model” examples for students.
-  - Includes reasonable error handling or key validations, if required for grading.
-- May include helper functions and, if useful, a small usage example (e.g., in Python, under `if __name__ == "__main__":`).
+- Complete, readable implementation covering expected grading criteria.
+- Uses data structures, algorithms, or patterns that serve as model examples for students.
+- Reasonable validations/error handling where relevant.
+- Optional helper utilities (e.g., under `if __name__ == "__main__":` in Python).
+- README should include sample inputs and their expected outputs (e.g., function call → return value, CLI invocation → stdout) so students and evaluators can verify behavior without running code.
 
-**Recommended paths inside `.learn/solution/`**:
+For projects with multiple interacting services or background processing:
 
-- Main explanation (mandatory): `.learn/solution/README.md`
-- Code files (one or more): for example
-  - `.learn/solution/solution.py`
-  - `.learn/solution/solution.ts`
-  - `.learn/solution/solution.js`
-  - or more granular filenames like `.learn/solution/main.ts`, `.learn/solution/utils.ts`, etc.
+- Document the architecture clearly: which service does what, how they communicate (HTTP, queues, events), and the expected data flow.
+- Include a Mermaid diagram or ASCII flow in the README when component interaction is non-trivial.
 
-### 3. Solution as an Explanatory Document (`.md`)
+Recommended files in `.learn/solution/`:
 
-**When to use**:
+- `README.md` (mandatory)
+- `solution.py` / `solution.ts` / `solution.js` (or split files like `main.ts`, `utils.ts`)
+- Architecture diagram (inline in README or as a separate `architecture.md`) when applicable
 
-- When:
-  - The exercise is very open and does not have a single correct implementation.
-  - The most important thing is to specify the **aspects to be included** (visual, structural, or code), not provide a literal implementation.
-  - You want to show **multiple valid solution alternatives** and explain why they are acceptable.
+### 3) Explanatory solution (`.md`)
 
-**What it should contain**:
+Use when there is no single valid implementation and the key is evaluating criteria or approach.
 
-- A clear description of:
-  - **Expected visual aspects**:
-    - Important CSS classes.
-    - Required layouts (e.g., use of grid, flexbox, columns, responsive, dark mode, etc.).
-  - **Code aspects**:
-    - Recommended data structures.
-    - Main algorithms or key logical steps.
-    - Relevant design patterns (if applicable).
-  - **Structural aspects**:
-    - Proper organization of HTML.
-    - Separation of concerns (files, modules, components).
-    - Correct hierarchy and semantics.
-- Where possible, include **small code snippets** highlighting key points, but a full line-by-line solution is not necessary.
+Should include:
 
-**Recommended path inside `.learn/solution/`**:
+- Expected visual, structural, and code criteria.
+- Recommended algorithms, data structures, or design patterns.
+- Small snippets for key points (a full line-by-line solution is not necessary).
+- At least one concrete example demonstrating what an acceptable deliverable looks like vs. a common mistake or incomplete attempt.
+- For complex systems, a description of the expected architecture (components, responsibilities, interactions) even if no single implementation is prescribed.
 
-- Main explanation: `.learn/solution/README.md`
+Recommended files in `.learn/solution/`:
 
-## Steps to Create or Update a Project Solution
+- `README.md` (mandatory)
+- Optional auxiliary example files
 
-Always follow this workflow:
+## Workflow (create/update)
 
-1. **Identify the project**
-   - Locate the project’s root folder (e.g., `projects/ai-engineering-syllabus/ai-eng-milestone-coding-fundamentals/`).
+1. **Identify project root**
+   - Locate project folder under `content/projects/...`.
 
-2. **Check or create `.learn/` and `.learn/solution/`**
-   - If `.learn/` doesn’t exist, create it at the root of the project (this is where `learn.json` lives).
-   - Inside `.learn/`, create a `solution/` folder if it doesn’t exist.
+2. **Ensure `.learn/solution/` exists**
+   - Create `.learn/` and `.learn/solution/` if missing.
 
-3. **Choose the solution file types**
-   - There must **always** be a README inside `.learn/solution/`:
-     - Prefer `README.md` unless the project requires an HTML explanation (`README.html`).
-   - For implementation files:
-     - If the main deliverable is a web page or UI → create e.g. **`solution.html`** (and any CSS/JS files needed) inside `.learn/solution/`.
-     - If a concrete script (Python/TypeScript) is required → create e.g. **`solution.py`** or **`solution.ts`** inside `.learn/solution/`.
-     - If the key is to describe criteria, patterns, or aspects, this goes in `README.md` and you may include additional partial examples as separate files or snippets inside the README.
+3. **Choose format**
+   - Always include `.learn/solution/README.md`.
+   - If the main deliverable is a web page or UI → add `solution.html` (and CSS/JS as needed).
+   - If a concrete script is required → add `solution.py`, `solution.ts`, etc.
+   - If the key is to describe criteria or patterns → document in `README.md` with optional partial examples.
 
-4. **Create the solution files**
-   - Place **all solution-related files** in `.learn/solution/`, for example:
-     - `.learn/solution/README.md` (mandatory)
-     - `.learn/solution/solution.html`
-     - `.learn/solution/styles.css`
-     - `.learn/solution/solution.ts`
-   - Ensure that:
-     - The README explains the overall structure, key decisions, and how to interpret the implementation files.
-     - The implementation files cover all **aspects to be evaluated** in the README and/or project context.
-     - Everything is readable and sufficiently complete as a reference for students and LLMs.
+4. **Create/update solution files**
+   - Keep all solution files inside `.learn/solution/`.
+   - Ensure README explains structure, key decisions, and how files connect.
+   - Include indicative examples (sample outputs, screenshots, annotated snippets) that make the expected result concrete.
+   - If the project involves multiple services, queues, agent pipelines, or background processing, add an architecture section to the README.
 
-5. **Link the solution in `learn.json`**
-   - Open the project’s `.learn/learn.json`.
-   - Add or update the `"solution"` attribute in the root object, or wherever project content metadata is located.
-   - Use the **full URL to the README file in the repository** (no relative paths), for example:
-     - `"solution": "https://github.com/ORG/REPO/blob/BRANCH/path/to/project/.learn/solution/README.md"`
-     - `"solution": "https://github.com/ORG/REPO/blob/BRANCH/path/to/project/.learn/solution/README.html"`
-   - Check that there aren’t multiple `solution` attributes with different URLs for the same project; if so, unify them.
+5. **Link in `.learn/learn.json`**
+   - Add/update `"solution"` with the full repository URL to `README.*`.
+   - Ensure no duplicated or conflicting `solution` entries.
 
-6. **Review consistency**
-   - Make sure that:
-     - The `README` and milestone context describe the same elements that the solution implements.
-     - There are no contradictions between requirements and the solution (e.g., README requires schema.org and the solution doesn’t include it).
-     - If the project has multiple language versions (`README.md`, `README.es.md`), the solution is valid for all.
+6. **Consistency review**
+   - Verify project README/context and solution are aligned.
+   - Ensure no missing evaluated requirements in the reference solution.
+   - If the project has multiple language versions (`README.md`, `README.es.md`), confirm the solution is valid for all.
+   - Confirm that indicative examples match the actual solution behavior.
+   - Confirm that architecture documentation (if applicable) reflects the actual component design.
 
-## Use by Students and LLMs
+## LLM and student usage guidance
 
-- **For students**:
-  - The solution is **not for copy-paste**, but a reference:
-    - To check if all assessed elements have been considered.
-    - To see examples of recommended data structures, algorithms, or layouts.
-  - Encourage comparing their submission with the solution and ask:
-    - “Am I covering all the key points included in the solution?”
-    - “Is my structure reasonably similar, even if the code isn’t identical?”
+- **Students**: use as a comparison reference, not copy-paste output. Pay attention to indicative examples to self-assess whether your deliverable matches the expected behavior. Ask yourself: "Am I covering all the key points in the solution?" and "Is my structure reasonably similar, even if the code isn't identical?"
+- **LLM evaluators**: treat the solution as the golden reference for criteria coverage. Use indicative examples as concrete anchors when assessing whether a submission meets expectations. For multi-service projects, use the architecture description to verify that the student's design choices are coherent.
 
-- **For LLMs**:
-  - The solution serves as the **golden reference**:
-    - To check if a student’s submission meets the minimal criteria.
-    - To provide feedback based on the reference (without requiring exact text match).
-  - When using this skill as an agent:
-    - Read the `README`, milestone context, and `.learn/learn.json` first.
-    - Use the `.learn/solution.*` file as the main reference for:
-      - Validating the submission covers key aspects.
-      - Suggesting improvements aligned with that solution.
+When evaluating:
 
-## Quick Checklist
+1. Read project instructions/context and `.learn/learn.json`.
+2. Read `.learn/solution/README.*` as the primary reference.
+3. Compare submission against required aspects from the reference solution.
+4. Use indicative examples to assess correctness of outputs or behavior.
+5. For architecture-based projects, verify component responsibilities, data flow, and service boundaries match the described solution.
 
-Before considering the project’s solution configuration as complete, check:
+## Quick checklist
 
-- [ ] Is there a `.learn/` folder at the project root (with `learn.json` inside)?
-- [ ] Is there a `.learn/solution/` folder at the project root?
-- [ ] Is there a **README** inside `.learn/solution/` (preferably `README.md`) that explains the solution?
-- [ ] Do all implementation files for the reference solution live inside `.learn/solution/` (e.g., `.ts`, `.html`, `.css`, etc.)?
-- [ ] Does the README cover all aspects to be evaluated as described in the README/context?
-- [ ] Does `.learn/learn.json` have a `"solution"` attribute pointing to `.learn/solution/README.*`?
-- [ ] Is the `solution` attribute’s path correct and relative to the project root?
-- [ ] Is the solution (README + files) clear and useful as a reference for students and LLMs?
-- [ ] Is all human-readable content in the solution (comments, prose, copy) in English?
+- [ ] Project has `.learn/` and `.learn/learn.json`.
+- [ ] Project has `.learn/solution/`.
+- [ ] `.learn/solution/README.md` exists and is clear.
+- [ ] All solution files are inside `.learn/solution/`.
+- [ ] `.learn/learn.json` includes a valid `"solution"` attribute with a full repository URL pointing to `README.*`.
+- [ ] Solution covers all evaluated project requirements.
+- [ ] README includes indicative examples of correct deliverables (sample outputs, snippets, screenshots).
+- [ ] README includes architecture documentation if the project involves multiple services, queues, agent orchestration, or background processing.
+- [ ] All human-readable content in the solution (README, comments, prose) is in English.
