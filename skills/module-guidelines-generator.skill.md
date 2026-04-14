@@ -1,161 +1,149 @@
 ---
 name: module-guidelines-generator
-description: Generates pedagogical guidelines (lineamientos) for the theoretical and practical content of each skill or module in 4Geeks Academy courses. Produces two texts per skill: (1) for students — friendly, motivating, with main learning aspects; (2) for professors — concrete, with emphasis on key concepts and the module project. Use when asked to "generate guidelines for module X", "create lineamientos for this skill", "write student and professor instructions for the module", "add pedagogical guidelines to the syllabus", or when preparing content briefs for each skill's theory and practice. Trigger on "lineamientos", "guidelines for students and teachers", "instrucciones para módulo", or "contenido teórico y práctico por skill".
+description: Generates pedagogical guidelines (lineamientos) for the theoretical and practical content of each skill or module in 4Geeks Academy courses. Produces two bilingual texts per skill (Spanish and English): (1) for students — short, motivating header (3–5 lines, plain text); (2) for professors — outcome-focused guide covering what students must learn, reflect on, be aware of, do, and avoid, plus project link and evaluation priorities. Use when asked to "generate guidelines for module X", "create lineamientos for this skill", "haz cabecera para estudiantes y guía para profesor", "lineamientos por skill/día", or "instrucciones del módulo según syllabus". Trigger on "lineamientos", "guidelines for students and teachers", "instrucciones para módulo", "cabecera de módulo", or "guía docente por resultados esperados".
 ---
 
-# 4Geeks Academy — Module Guidelines (Lineamientos) Generator
+# 4Geeks Academy — Module Guidelines Generator
 
-This skill generates **two guideline texts per skill/module** for 4Geeks Academy: one aimed at **students** and one at **professors**. They frame the theoretical and practical content of each skill and connect it to the module project. **All outputs must be returned in Markdown format**, following the structures defined below.
+This skill generates **two bilingual guideline texts per skill/module**: one for **students** (short motivating header) and one for **professors** (outcome-focused teaching guide). Both are always delivered in **Spanish and English**. All outputs must be returned in **Markdown**.
 
 ---
 
-## Required Reference: Syllabus
+## Source of Truth: Syllabus
 
-**Before generating any guidelines**, you must read and use the syllabus as the source of truth for the program structure and for each skill:
+**Before generating any output**, fetch and read the syllabus from its canonical URL:
 
-- **Path:** `course-outline-generator/ai-engineering/syllabus.md` (relative to the project root) or `ai-engineering/syllabus.md` from within the course-outline-generator repo.
-- **Purpose:** Use the syllabus to understand:
-  - The exact name and position of each skill/milestone in the program.
-  - The theory (Teoría) and thinking framework (Thinking Development, Best Practices, Patterns, Anti-patterns, Constraints) associated with that skill.
-  - The sequence of topics and how the skill connects to previous and next content.
-  - The project(s) or context referenced for that week/skill.
-- **Usage:** When generating lineamientos for a given skill, locate that skill in the syllabus, extract its theory and framework, and align the student and professor guidelines with that content. Do not invent learning objectives or concepts that are not present or implied in the syllabus.
+- <https://raw.githubusercontent.com/4GeeksAcademy/course-outline-generator/refs/heads/main/ai-engineering/syllabus.md>
+
+Use it to extract, for the target skill:
+
+- Exact skill name, day/week position, and scope.
+- Theory content (Teoría).
+- Thinking Framework sections: **Thinking Development, Best Practices, Patterns, Anti-patterns, Constraints & Limitations**.
+- Project(s) or context referenced for that skill.
+
+Do not invent learning objectives or concepts that are not present or clearly implied by the syllabus. If a Thinking Framework section is missing (`_Not introduced in this learnpack_`), infer only from the available theory and avoid adding advanced assumptions.
 
 ---
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 
-1. Adding or documenting a new skill or module in the syllabus
-2. Creating "lineamientos" or content briefs for theory + practice per skill
-3. Preparing student-facing and professor-facing instructions for a module
-4. Standardizing how each skill explains its focus, main concepts, and project link
-5. A user asks for "guidelines", "lineamientos", or "instrucciones para estudiantes y profesor" for a skill/module
+1. Adding or documenting a new skill or module in the syllabus.
+2. Creating "lineamientos" or content briefs for theory + practice per skill.
+3. Preparing student-facing and professor-facing instructions for a module.
+4. A user asks for "guidelines", "lineamientos", "cabecera de módulo", or "guía docente por resultados esperados".
 
 **Do NOT use this skill to:**
 
-- Generate project READMEs (use `project-readme-generator` or `transversal-project-readme-generator`)
-- Generate CONTEXT files (use `transversal-project-context-generator`)
+- Generate project READMEs (use `project-readme-generator` or `transversal-project-readme-generator`).
+- Generate CONTEXT files (use `transversal-project-context-generator`).
 
 ---
 
 ## Required Inputs
 
-Before generating, confirm you have (or ask for) the following. If any are missing, ask for **all missing items at once**.
+Confirm you have (or ask for) the following. If any are missing, ask for **all missing items at once**.
 
-- **`skill_name`** — Name of the skill or module. _Required._
-- **`skill_type`** — Category: web-fundamentals, styling-ui, programming-logic, milestone. _Optional; helps tailor tone and focus._
-- **`main_concepts`** — 3–5 core concepts this skill teaches. _Required._
-- **`key_actions`** — 2–4 things the student should be able to do by the end (e.g. "maquetar una landing accesible", "escribir funciones TypeScript testeables"). _Required._
-- **`project_name`** — Name or short description of the module project (e.g. "Artist landing", "Simple dashboard with Tailwind", "Cinema Seat Manager"). _Required._
-- **`project_focus`** — What the project emphasizes (e.g. semantic structure, KPIs, edge cases). _Optional but recommended._
-- **`language`** — `es` or `en` for the output language. _Default: `es`._
+| Input           | Description                                                                  | Required                     |
+| --------------- | ---------------------------------------------------------------------------- | ---------------------------- |
+| `skill_name`    | Name of the skill or module                                                  | Required                     |
+| `skill_type`    | Category: `web-fundamentals`, `styling-ui`, `programming-logic`, `milestone` | Optional — helps tailor tone |
+| `main_concepts` | 3–5 core concepts this skill teaches                                         | Required                     |
+| `key_actions`   | 2–4 things the student should be able to do by the end                       | Required                     |
+| `project_name`  | Name or short description of the module project                              | Required                     |
+| `project_focus` | What the project emphasizes (e.g. KPIs, edge cases, semantic structure)      | Optional but recommended     |
+
+If the syllabus already provides these values, extract them from there; ask the user only for items not found in the syllabus.
 
 ---
 
-## Output: Two Texts per Skill
+## Output: Two Bilingual Texts per Skill
 
-Always produce **two distinct texts** for the same skill, both formatted in valid Markdown.
+Always produce **two distinct texts** for the same skill. Both must be **bilingual (Spanish and English)** regardless of any language preference.
 
-### 1. Guidelines for Students (Lineamientos para estudiantes)
+---
 
-**Purpose:** Friendly, motivating, and clear. Highlight what they will learn and why it matters.
+### 1. Student Guidelines (Lineamientos para estudiantes)
 
-**Tone and style:**
+**Purpose:** A short, motivating header that tells the student what they will learn and what they should be able to do by the end.
 
-- Second person (tú/vos or usted, according to course convention)
-- Encouraging: "Al terminar deberías sentirte capaz de…", "No busques hacerlo perfecto a la primera"
-- Emphasize understanding and steady progress over perfection
-- Connect theory → small exercises → project in simple terms
+**Rules:**
 
-**Required elements:**
+- **Target: 3 lines per language. Maximum: 5 lines**, only if strictly necessary for clarity.
+- **Plain text preferred** — avoid bullet lists unless explicitly requested.
+- Motivating and clear; use second person (tú/vos or usted, per course convention).
+- Must state: what the student will learn + what they should be able to do by the end.
+- Encourage steady progress: "Al terminar deberías sentirte capaz de…", "No busques hacerlo perfecto a la primera".
+- Both language versions must convey the same meaning.
 
-1. **Opening:** What this skill is and what they will work on in the module.
-2. **Goal:** What they should be able to do by the end (use `key_actions`).
-3. **Flow:** Brief description of the path: concepts → guided practice → project application.
-4. **Recommendations (optional but recommended):**
-   - Take notes in their own words
-   - Experiment beyond minimum instructions
-   - Ask for feedback early (from instructor and peers) on clarity and good practices
-
-**Length:** ~80–150 words **per language**. Keep it short, concrete and motivating.
-
-**Output structure — always deliver student guidelines in both languages, in Markdown**, using this exact structure:
+**Output structure:**
 
 ```markdown
 ### Español
 
-<Lineamientos para estudiantes en español>
+[Texto corto para estudiantes — 3 líneas, máx 5]
 
 ---
 
 ### English
 
-<Student guidelines in English>
+[Short student header — 3 lines, max 5]
 ```
-
-Generate the Spanish version first, then the English version. Both must convey the same learning goals, flow and recommendations; only the language changes.
 
 ---
 
-### 2. Guidelines for Professors (Lineamientos para profesor)
+### 2. Professor Guidelines (Lineamientos para profesor)
 
-**Purpose:** Concrete and actionable. Emphasize what to stress in theory, how to run practice, and how everything ties to the project.
+**Purpose:** Concrete, outcome-focused teaching guide. Emphasizes what must be achieved **by the end of class**, grounded in the syllabus Thinking Framework.
 
-**Tone and style:**
+**Rules:**
 
-- Direct, imperative or neutral third person
-- Focus on: key concepts, common mistakes, evaluation priorities, and the project as the main application
+- Direct, imperative or neutral third person.
+- Dense and scannable (short paragraphs or bullet lists).
+- Must explicitly address the following **5 outcome dimensions** (derived from the syllabus Thinking Framework):
+  1. **Learn** — Concepts students must understand (theory + Thinking Development).
+  2. **Reflect** — Criteria, trade-offs, and decisions students should have thought through.
+  3. **Be aware of** — Risks, constraints, and quality criteria students must keep in mind.
+  4. **Do** — Observable actions students must complete in exercises or during class.
+  5. **Avoid** — Anti-patterns explicitly listed in the syllabus for this skill.
+- Include:
+  - **Project link:** how theory and practice connect to the module project; what "good" looks like (clarity, structure, accessibility, correctness, etc.).
+  - **Evaluation priorities:** understanding over memorization; application in the project over ticking checklists; good practices and meaningful intent.
+- **~120–180 words per language.**
+- Both language versions must convey the same content.
 
-**Required elements:**
-
-1. **Theory focus:** List 3–4 **core concepts** to emphasize; avoid scattering attention.
-2. **Real-world link:** Explicitly connect the skill to AI Engineering or professional use when relevant.
-3. **Practice:** Start with small, observable exercises where typical errors can be spotted and corrected in group.
-4. **Project link:** All practice should point toward the module project; state what "good" looks like (clarity, structure, naming, accessibility, performance, or logical correctness, as appropriate).
-5. **Evaluation priorities:**
-   - Understanding of key concepts over memorization
-   - Ability to apply the skill in the project (not only ticking a technical checklist)
-   - Use of good practices and meaningful comments where they add intent
-
-**Length:** ~120–180 words per language. Dense and scannable (short paragraphs or bullet lists).
-
-**Output structure — always deliver professor guidelines in both languages, in Markdown**, using this exact structure:
+**Output structure:**
 
 ```markdown
 ### Español
 
-<Lineamientos en español>
+[Lineamientos para profesor — ~120–180 palabras]
 
 ---
 
 ### English
 
-<Lineamientos en inglés>
+[Professor guidelines — ~120–180 words]
 ```
-
-Generate the Spanish version first, then the English version. Both must convey the same content (same concepts, practice approach, project link, evaluation priorities); only the language changes.
 
 ---
 
 ## Workflow
 
-1. **Consult the syllabus** — Read `course-outline-generator/ai-engineering/syllabus.md` (or `ai-engineering/syllabus.md` from the repo root). Locate the skill or module for which you are generating guidelines. Extract the relevant theory (Teoría), thinking framework, and any project or context mentioned for that skill. Use this to align and ground the lineamientos.
-2. **Gather inputs** — Confirm `skill_name`, `main_concepts`, `key_actions`, `project_name`, and optionally `skill_type`, `project_focus`, `language`. If the syllabus already defines these, use it; otherwise ask the user for missing items.
-3. **Choose skill type** — If `skill_type` or project name suggests a known pattern, use the corresponding example focus:
-   - **Web (HTML/CSS/SEO/accessibility):** semantics, accessibility basics, on-page SEO; justify structural and UX decisions.
-   - **Tailwind / dashboards:** utility-first, dashboard structure (KPI / drivers / operational), information design; mobile/responsive.
-   - **Programming / TypeScript:** types, control flow, edge cases, small testable functions; TDD-light, tracing algorithms, clarity and correctness.
-4. **Generate student guidelines** — Apply the student template; fill in skill name, key actions, and optional recommendations. Keep tone friendly and motivating. Ensure alignment with the theory and framework from the syllabus. **Always output student guidelines in the bilingual Markdown structure:** first "### Español" with the Spanish text, then "---", then "### English" with the English text. Both versions must convey the same learning goals and flow.
-5. **Generate professor guidelines** — Apply the professor template; fill in core concepts, practice approach, project link, and evaluation priorities. Base these on the syllabus content for this skill. **Always output professor guidelines in the bilingual Markdown structure:** first "### Español" with the Spanish text, then "---", then "### English" with the English text. Both versions must convey the same content.
-6. **Deliver both texts** — Present clearly labeled: "Para estudiantes" and "Para profesor". For both, use the bilingual structure with ### Español, separator, ### English. If the user requested a specific format (e.g. Markdown section, JSON, copy-paste block), follow it.
+1. **Fetch the syllabus** — Read the canonical URL above. Locate the target skill. Extract: title, theory, Thinking Framework (Thinking Development, Best Practices, Patterns, Anti-patterns, Constraints).
+2. **Gather inputs** — Confirm `skill_name`, `main_concepts`, `key_actions`, `project_name`. Use syllabus values where available; ask only for missing items.
+3. **Choose skill type** — If `skill_type` or project name matches a known pattern, apply the corresponding focus (see Skill-Type Examples below).
+4. **Generate student guidelines** — 3 lines per language (max 5), plain text, motivating. Same meaning in both languages. Deliver with `### Español` / `### English` structure.
+5. **Generate professor guidelines** — Cover all 5 outcome dimensions + project link + evaluation priorities. ~120–180 words per language. Same content in both languages. Deliver with `### Español` / `### English` structure.
+6. **Deliver both texts** — Present clearly labeled: "Para estudiantes" and "Para profesor". Follow the output format below.
 
 ---
 
 ## Skill-Type Examples (Reference)
 
-Use these as reference when tailoring guidelines; do not copy verbatim unless the skill matches exactly.
+Use these to tailor tone and focus; do not copy verbatim.
 
 ### Web fundamentals (HTML, CSS, SEO, accessibility)
 
@@ -174,50 +162,54 @@ Use these as reference when tailoring guidelines; do not copy verbatim unless th
 
 ---
 
-## Quality Self-Check Before Delivering
+## Output Format
 
-- [ ] Syllabus (`ai-engineering/syllabus.md`) was consulted; guidelines align with the skill’s theory and thinking framework as defined there
-- [ ] Both texts generated (student + professor) for the same skill
-- [ ] Student text: friendly, motivating, includes goal and key actions
-- [ ] Professor text: concrete, includes theory focus, practice approach, project link, evaluation priorities
-- [ ] Professor guidelines delivered in the bilingual structure: ### Español, content, ---, ### English, content (same content in both languages)
-- [ ] No mixed audience: one text is clearly "para estudiantes", the other "para profesor"
-- [ ] Skill name, project name, and main concepts reflected correctly in both texts
-- [ ] If language was specified for student guidelines, that language is used; professor guidelines are always in both Spanish and English
-- [ ] Length within suggested ranges (student short ~80–120 words unless extended requested; professor ~120–180 words per language)
-
----
-
-## Output Format Suggestion
-
-Present the result in a single block, with both audiences and both languages:
+Present the result in a single block:
 
 ```markdown
 ## Lineamientos — [Nombre del skill]
 
 ### Para estudiantes
 
-### Español
+#### Español
 
 [Lineamientos para estudiantes en español.]
 
 ---
 
-### English
+#### English
 
 [Student guidelines in English.]
 
 ### Para profesor
 
-### Español
+#### Español
 
 [Lineamientos para profesor en español.]
 
 ---
 
-### English
+#### English
 
 [Professor guidelines in English.]
 ```
 
-If the user needs integration into a platform (e.g. fields in a CMS or learn.json), offer a compact version or key-value structure (e.g. `guidelines_student_es`, `guidelines_student_en`, `guidelines_professor_es`, `guidelines_professor_en`) upon request.
+If the user needs integration into a platform (e.g. CMS fields or `learn.json`), offer a compact key-value structure (`guidelines_student_es`, `guidelines_student_en`, `guidelines_professor_es`, `guidelines_professor_en`) upon request.
+
+---
+
+## Quality Self-Check Before Delivering
+
+- [ ] Syllabus URL consulted; guidelines align with the skill's theory and Thinking Framework.
+- [ ] Both texts generated (student + professor) for the same skill.
+- [ ] Student text: 3 lines per language (max 5), plain text, motivating.
+- [ ] Student text states what the student will learn and what they should be able to do.
+- [ ] Student text is bilingual (### Español and ### English) with the same meaning.
+- [ ] Professor text covers all 5 outcome dimensions: learn, reflect, be aware, do, avoid.
+- [ ] Anti-patterns explicitly mentioned under "avoid".
+- [ ] Professor text includes project link and evaluation priorities.
+- [ ] Professor text is bilingual (### Español and ### English) with the same content.
+- [ ] Professor text is ~120–180 words per language.
+- [ ] No mixed audiences: one text is clearly "para estudiantes", the other "para profesor".
+- [ ] Skill name, project name, and main concepts reflected correctly in both texts.
+- [ ] Output is valid Markdown.
