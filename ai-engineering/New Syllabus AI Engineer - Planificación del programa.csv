@@ -1,0 +1,2963 @@
+Week,Day,,How to think,Best practices,Patterns,Anti pattern,Limitaciones
+,,--- PREWORK ---,,,,,
+,,### AI ENGINEERING COURSE INTRODUCTION ###,,,,,
+0,-6,"Skill: Familiarizarse con la plataforma de 4Geeks
+Skill: Comprender cómo funciona internet",,,,,
+,En Syllabus,"> Teoría: 
++ Introducción a 4Geeks Academy
+  - Importancia del prework (crear nuevo)
+  - Intro a la plataforma de 4Geeks.com (crear nuevo)
+  - Breve intro a Github como perfil profesional en tecnología
+    -- Importancia de conectar la cuenta de Github con la plataforma de 4Geeks.com
+
++ Herramientas a tu disposición en 4Geeks Academy
+  - Intro a Slack
+  - ¿Qué es LearnPack?
+  - ¿Qué es Rigobot?
+  - ¿Qué es Github Codespaces?
+
++ Consejos para estudiar con éxito en 4Geeks
+  - ¿Cómo aprovechar al máximo el curso?
+  - ¿Cómo pedir ayuda?
+
+
+
+
++ La Internet
+  - ¿Qué es internet?
+  - Funcionamiento: HTTP y sus verbos (GET, POST, PUT/PATCH, DELETE), Cliente - Servidor
+  - Navegadores
+  - Cómo funciona una web: frontend, backend - APIs, bases de datos, llamadas a APIs (HTTP)
+  - Cómo se transmite una solicitud por Internet
+
+","- Aprender cómo aprender en 4Geeks
+- Conocer los componentes principales del proceso de aprendizaje en 4Geeks
+- Conocer los medios y mecanismos para solicitar y obtener ayuda en 4Geeks
+- Saber entregar proyectos en 4Geeks usando Git y Github
+- Concientizar la necesidad del hábito de leer y atender a los detalles ",,,"- No pedir ayuda
+- No investigar
+- Esperar a que todo me lo expliquen
+- No usar los canales de comunicación",- No IA
+0,-5,"Skill: Conocer los fundamentos de HTML, CSS y Git para entregar un primer proyecto",,,,,
+,En Syllabus,"> Teoría: 
+
++ Introducción a HTML y CSS (Se dejará lo actual)
+
++ ¿Cómo entregar tus proyectos en 4Geeks? 
+  (Esto ya existe pero requiere revisión: mejorar organización) 
+  - Breve reseña sobre GitHub y Git, de forma poco técnica
+  - (Esto no existe) Esenciales de Github y Git para entregar proyectos
+    -- git add, git commit, git push","- Entender flujos (http es movimiento de información y hay un objetivo para ese movimiento, un flujo). Esto incluye , git, internet, algoritmos, etc.  
+- Comprender los principales componentes de la comunicación en Internet
+- Conocer los principales elementos de un sitio web
+- Familiarizarse con algunos de los principales conceptos del programa de estudios",,,,- No IA
+,En Syllabus,"> Proyecto:
+  - Postcard (entregada en un repo)",,,,,
+0,-4 y -3,Skill: Conocer y aplicar los fundamentos de la programación,,,,,
+,En Syllabus,"> Teoría:
+
++ Introducción a la programación (Javascript) (Referencia rápida a los conceptos)
+  - Pensamiento lógico-matemático
+  - Algoritmos
+  - Variables
+  - Condiciones
+  - Bucles
+  - Cómo representar listados en JavaScript (Arrays)
+  - Cómo objetos en JavaScript (Literal Objects)","- Pensamiento lógico - matemático, algoritmos. 
+- Concientizar la necesidad del hábito de leer y atender a los detalles 
+- Reconocer la importancia de desarrollar la autonomía en la resolución de problemas",,"
+- Plantear la solución antes que el código
+- Divide y venceras. Dividir un problema grande en subproblemas más pequeños del mismo tipo, resolver cada uno, y luego combinar las soluciones.
+- Clean code","Algoritmos: 
+- Fijación en la Sintaxis: Centrarse únicamente en recordar la sintaxis del lenguaje de programación antes de tener una lógica clara.
+- Pensamiento lineal: Intentar escribir toda la solución de una vez, de principio a fin, sin planificación.
+- Aplicar correacciones por reacción a lo que aparece en la consola y no por análisis del código
+- Test de Único Caso. Probar el algoritmo solo con el caso de ejemplo proporcionado, sin considerar casos límite (vacíos, negativos, máximos) o casos de borde.",- No IA
+,En Syllabus,"> Practica:
+  - Beginner JS (nuevo) ",,,,,
+0,-2,"Skill: Comprender cómo funciona la IA Generativa, los principales modelos y los distintos formatos para comunicarse",,,,,
+,En Syllabus,"> Teoría:
+
++ Introducción a la IA generativa
+  - ¿Qué es un LLM?
+  - ¿Y cómo funciona la IA?
+  - ¿Cuáles son las principales opciones (OpenAI ChatGPT, Google Gemini, Anthropic Claude, xAI Grok, Mistral LeChat...)?
+  - Diferencias: Ventajas y desventajas entre modelos
+
++ Hablar en el lenguaje de la IA:
+  - Markdown
+  - JSON
+  - YML
+  - TOON  (nuevo formato, potencial de convertirse en tendencia)
+","- Entender cómo funciona los modelos de IA generativa
+- Desarrollar criterio para escoger entre un modelo u otro
+- Comprender cómo desarrollar un buen contexto para la IA
+- Reconocer la importancia de desarrollar la autonomía en la resolución de problemas",,,"- Tratar a todas las IAs por igual
+- Escribir sin estructura ni formato
+",- No IA
+,Proyecto pendiente evaluación,"> Práctica:
+  - Escribir una configuración en YML y JSON",,,,,
+0,-1,"Skill: Conocer los fundamentos de la AI Engineering y cómo funcionan los Coding Agents
+",,,,,
+,En Syllabus,"> Teoría:
+
++ Using Coding agents 
+  - ¿Cómo funciona la IA en desarrollo?
+  - Configuración básica de Coding Agent en Github Codespaces
+  - Herramientas más conocidas: https://agents.4geeks.com/
+  - Using LLMs
+  - Token consumption, pricing, parameters
+
++ Fundamentos del AI Engineer
+  - Programación asistida con IA
+  - Human in the loop / Humanos en el proceso
+  - Camino de menor resistencia
+","- Entender cómo funcionan los Coding Agents
+- Desarrollar criterio para escoger entre un modelo u otro
+- Comprender cómo desarrollar un buen contexto para la IA
+- Concientizar la necesidad del hábito de leer y atender a los detalles 
+- Reconocer la importancia de desarrollar la autonomía en la resolución de problemas","
+- Iterar vs crear de nuevo: vibecoding manifest
+https://vibemanifesto.org/
+",,,
+,En Syllabus,"> Proyecto: 
+
++ Proyecto final: Excuse generator para imprimir por consola
+  1. Pedir a Copilot que cree un fichero JS
+  2. Pedir a Copilot que cree un array de quién
+  3. Pedir a Copilot que cree un array de acción
+  4. Pedir a Copilot que cree un array de qué
+  5. Pedir a Copilot que cree un array de cuándo
+  6. Pedir a Copilot que genere una línea de código para obtener un valor aleatorio del array quién, otro valor aleatorio del array acción y otro del array qué y el array cuándo
+  7. Pedir a Copilot que concatene todos los valores obtenidos con un espacio en blanco de por medio y lo inserte en una variable
+  8. Pedir a Copilot que inserte un console.log para imprimir el valor de la variable en la terminal.",,,,,"- No se imprime por html para reducir la complejidad con el tema del DOM, que los estudiantes se ponen a investigar porque no entienden por qué esos comandos"
+,,--- INICIO DEL CURSO ---,,,,,
+,,### WEB UI FUNDAMENTALS WITH TAILWIND ###,,,,,
+1,1,Skill: Desarrollar interfaces sencillas con HTML y CSS cumpliendo con normas de accesibilidad y principios de SEO/GEO,,,,,
+,En Syllabus,"- Se dan 30 minutos de repaso de prework
+  - Coding Agents
+  - Fundamentos de AI Software Engineer
+
+> Teoría (30 minutos): 
+  + HTML
+    - Principales etiquetas
+    - HTML semántico y contextual
+    - Buenas prácticas
+  + CSS
+    - Flexbox
+    - DRY en CSS
+    - Selectores avanzados
+    - Buenas prácticas
+  + Accesibilidad web
+    - Principios
+    - Etiquetas principales (aria-label y role)
+    - Principales problemas de accesibilidad
+  + SEO y GEO 
+    - Schema.org","- Reconocer una interfaz y saber rápidamente en qué cajas se va a dividir.
+- Poder seleccionar un elemento del DOM
+- Comprender la teoría de esquemas de colores frente a indicar colores genéricos
+- Reconocer si el código ha sido generado en función de estándares HTML y CSS
+- Verificar la correcta implementación de un etiquetado JSON-LD efectivo.
+- Comprender la necesidad de una aplicación accesible para incluir a personas con discapacidad y, por tanto, llegar a más visitantes y clientes.
+- Saber identificar la necesidad de un buen SEO/GEO para una mayor visibilidad en internet.
+- Saber verificar la estructura del documento a través del inspector de las DevTools
+- Saber identificar las reglas de estilo que tiene asociadaas cada elemento HTML a través del inspector de las DevTools","- Uso de tags generales ✅
+- DRY ⚠️
+- Uso de html contextual (section, footer, header, head, body, atributo 'alt') ⚠️
+- SEO/GEO (schema org) ⚠️
+- Accesabilidad (principios, aria-label, alt...)⚠️","-Flexbox
+-Semantic HTML
+-BEM Methodology
+-Mobile First","- display: inline-block
+- float","- No hay backend
+- No hay javascript
+- Especificamente pedirle a la ia que no queremos plantilla
+- Usar un modelo viejo como sonnet 3.5"
+,En Syllabus,"
+> Proyecto 1: Un website para mostrar el talento de tu amigo artista
+   
+   La entrega debe tener un markdown llamado PROMPTS.md con todos los prompts utilizados para el resultado
+
+   Indicar los requisitos (HTML, CSS, Accesibilidad y Schema.org)
+
+
+> Instrucciones al profesor:
+  - Este curso solo puede tener HTML y CSS, incluyendo etiquetas de Accesibilidad 
+  - Guiar el ejercicio y hacer que algunas personas compartan pantalla y muestren su resultado
+  - HTML y CSS deben quedar en archivos separados.
+  - Crear un único documento HTML con distintas secciones: Bienvenida, sobre mí, mi trabajo y contacto
+  - No permitir que se use un único prompt para hacer todo el ejercicio
+  - Asegurar el cumplimiento, con mejores prácticas de código y de diseño, etc.
+  
+> Propuesta para guiar el ejercicio:
+    - Se deben incorporar elementos poco a poco (el body, luego una barra superior, luego un logo a la izquierda y una lista de enlaces a la derecha)
+
+  1. Se pide (de forma vaga, sin detalle, aunque limitado para que no resuelva todo el proyecto) a la IA que haga una web personal de AI Engineer con solo HTML y CSS.  
+  2. Se revisa el código.
+  3. Se pide que haga una nueva versión, refinando la solicitud, y se le pasa pasa la foto.
+  4. Se revisa el código resultante.
+  5. Se contrasta con lighthouse (disponible en crhome y brave de forma nativa). Se pulen los puntos bajos 
+  6. Se revisa el código ""final""
+
+  7. Se analizan las diferencias entre las solicitudes y entre los resultados
+
+  + Actividad extra (en caso de que el proyecto salga rápido):
+    - Hacer que la vista sea un Feed de Instagram, repitiendo la estructura del post con distintas imágenes y texto. 
+
+",,,,,
+1,2,Skill: Desarrollar interfaces complejas incorporando los componentes más comunes utilizando librerías de CSS ,,,,,
+,En Syllabus,"> Teoría:
+  + Web app layouts
+    - ¿Qué es el layout? 
+    - Formas de navegación: Sidebar, topbar, bottombar, etc...
+    - Todos los tipos de diagramación de vistas y contenido en una sola página
+    - Introducción al diseño compuesto (old atomic desing) aplicado a web: átomos, moléculas, organismos, plantillas, páginas
+
+  + Componentes web
+    - Elementos típicos para representar tus datos (card, modal, toggle, dropdown)
+    - Listados de elementos: Tablas, acordión, lista de cards, cards desplegables, widget box.
+
+  + Diseño responsivo
+    - ¿Qué es el diseño responsivo?
+    - ¿Por qué es importante que el contenido se adapte a cada tipo de pantalla?
+    - Principales pantallas: Móvil, Tablet, Portátil, Monitor o TV
+    - ¿Cómo se gestiona el diseño responsivo? media queries vs bibliotecas CSS (referencia genérica, se puede usar ejemplo con Tailwind)
+    - Mobile-first design
+
+
+  + Tailwind
+    - Ask Rigobot: ¿Qué es un CDN?
+    - Ventajas de usar una biblioteca de estilos
+    - Situaciones comunes: ir sobre casos de uso (spacing: padding y margin, sizing: width, height..., overflow y scrolling, posicionamiento de elementos)
+","- Saber identificar componentes en función del diseño 
+- Pensar en interfaces de usuario con piezas reutilizables
+- compositional thinking: la idea es que el desarrollador vaya del macro al micro, empezando por el componente más externo hasta el más específico
+- Iteración top-bottom con IA: de la estructura principal a las características, terminando con colores y tipografías
+- Describir conceptualmente y no visualmente
+- Reconocer componentes en una interfaz
+- Saber indicar a la IA qué componentes implementar
+- Identificar qué elementos adaptar según el dispositivo de visualización
+- Comprender que un sitio web atractivo y útil no necesariamente es el que tiene más elementos visuales, sino el que tiene la mejor organización y el contenido relevante.","- Using CDN
+- Style normalization (https://tailwindcss.com/docs/preflight)
+- Responsive Breakspoints at least 3 devices (phone, portrait tablet, desktop)
+- Mobile-first design
+- Rows vs Columns
+- Flex vs GRID ⚠️
+- Using tailwing utility classes
+","- Componentes reutilizables
+- Section based architecture
+- Slot and layout pattern
+- Prompt as pattern: Generate a [section_type] using [framework].
+It should include [key elements]. Follow the [theme] and use Tailwind utilities for spacing and alignment.
+- Mobile pattern","- Pixel based thinking (e.g.: button de 30px)
+- Single prompt page generation
+- Ignorar la jerarquía de los componentes
+- Overstyling / Estilos excesivos
+- Hacer componentes muy específicos en lugar de reutilizar anteriores
+",- Usar un modelo viejo como sonnet 3.5
+,En Syllabus,"
+> Proyecto: Mi primer dashboard para mostrar datos
+ 
+  1. Se pide a la IA que haga un dashboard con Tailwind, solo HTML y CSS
+  2. Se revisa el código
+  3. Si no resulta satisfactorio el resultado, se refinan detalles con la IA (describiendo las dos vistas en detalle)
+  4. Se revisa el resultado y se evalúa el cumplimiento de mejores prácticas y patrones en el código
+  5. Pedirle a la IA que haga que desde la barra de navegación se pueda cambiar el tipo de visualización
+
+  + Actividades extra:
+    - Agregar efectos visuales avanzados y animaciones
+
+> Instrucciones al profesor:
+  - Guiar el ejercicio y hacer que algunas personas compartan pantalla y muestren su resultado",,,,,- Usar Tailwind CSS sin bibliotecas de componentes como ShadCN
+1,3,Skill: Implementar formularios complejos con validación de campos mediante JS,,,,,
+,En Syllabus,"> Teoría:
+  + Formularios
+    - Etiquetas principales
+      - Inputs de texto (text, email, autocomplete)
+      - Inputs de selección: radiobutton y checkbox
+      - Otros inputs (numéricos, fechas...)
+      - Textarea
+      - Selects (y options)
+      - Botones: input=submit vs button
+    - Identificando y agrupando campos: Labels, placeholders y fieldgroups
+    - Validaciones en formularios con navegador
+    - Casos especiales: required, disabled, read-only
+    - Casos de uso más comunes en formularios (login, contacto, búsqueda, registros, compra)
+
+  + Tailwind en formularios
+    - Form layouts (login, inline, grid)
+    - Elementos típicos para representar en tus formularios (alerts, form, modal, dropdown, switch, toggle groups)
+    - Situaciones comunes Tailwind en forms (spacing y sizing, señalización de errores)
+
+  + Flujos con formularios
+    - Campos condicionados / interdependientes
+    - Adaptive stepped forms
+    - Formularios compuestos (""Modal para Creación de Dependencia"")
+    - Validaciones avanzadas (JS para formularios)
+
+  + Buenas prácticas en formularios / Formularios efectivos (pocos datos)
+    - Campos innecesarios:
+      -- Por redundancia (fecha inicio + fecha fin + duración)
+      -- Por pertinencia (dirección de casa para crear una cuenta de usuario)
+      -- Puede solicitarse en otro momento (pedir datos fiscales para crear una cuenta de usuario)
+","- Identificar que información se precisa de un usuario en un momento dado
+- Diferenciar datos según necesidades técnicas y necesidades comerciales (ej: para registro, el correo es indispensable para identificar al usuario, pero la ubicación puede ser opcional y solo una necesidad de marketing que no debe obstaculizar el registro. En cambio, si es una web que restringe el acceso a menores, la fecha de nacimiento no es un requisito secundario sino que se convierte en técnico y parte de la lógica del negocio.)
+- Cosas que no tienes que aprender en este punto (entrañas de JS en la validación, condiciones de dependencia entre los formularios)
+- Comprender que una correcta notificación facilita la corrección de errores en un formulario e incrementa la satisfacción de la persona
+- Comprender que un formulario corto y fácil de rellenar incrementa el éxito del mismo.
+- Identificar formas de distribuir el contenido de un formulario para que no se vea sobrecargado.","- Uso del correcto input type
+- Uso del label y el atributo for
+- Agrupar campos con un mismo propósito (fieldset y legend)
+- Validación por defecto y campos requeridos
+- Diagramación de formularios
+- Consistencia Visual","- utility-first
+- Validación inmediata
+Patrones de diseño:
+- Componentes de Campos de Entrada
+- Contenedor de Grupos de Campos
+- Mensajes de Alerta/Feedback
+","- no label / placeholder as a label / label confuso
+- input type text para todo
+- Campos innecesarios
+- Formularios largos
+- Ocultar los errores hasta el final
+- No responsive",
+HITO 01,En Syllabus,"> Proyecto (Hito 1): Web pública de ""mi empresa""
+ 1. Pide a la IA que haga el sitio web de tu empresa
+ 2. Revisa el contenido generado y su código.
+ 3. Solicitar a la IA un documento nuevo con un formulario de postulación para probar el futuro producto.
+ 4. El formulario deberá incluir al menos un campo de nombre, un campo de correo electrónico, un campo de fecha de nacimiento (para verificar si es adulto) y un campo de texto largo para la motivación de la postulación.
+ 5. Se pueden agregar campos opcionales como ¿Cuánto pagarías por este producto? (campo numérico)
+ 6. Revisar el resultado y las buenas prácticas empleadas en el código.
+ 7. Después de revisar, hazle las observaciones que consideres pertinentes para que la IA las corrija
+ 8. Agrega validación de campos con VanillaJS para cada formulario (aunque no sepas hacerlo, la IA lo hará por ti si se lo explicas adecuadamente)
+ 9. Verifica que las validaciones funcionan correctamente y que los mensajes de error tienen estilos adecuados
+ 10. Agregar botón secundario para borrar los datos del formulario
+
+
+> Instrucciones al profesor:
+  - Guiar el ejercicio y hacer que algunas personas compartan pantalla y muestren su resultado
+  - Debe tener 2 ""vistas"" Una con el portafolio + el contacto y otra con el formulario de cotización. 
+  - Se deberá hacer un repositorio nuevo, no reutilizar el del dia 1, pueden reutilizar los prompts",,,,,
+,,"### COMMAND LINE, GIT AND GITHUB ###",,,,,
+2,4,Skill: Utilizar la línea de comandos para interacciones esenciales en el día a día de un desarrollador,,,,,
+,En Syllabus,"> Teoría:
+  + Sistema de archivos (Jerarquía)
+    - Rutas relativas vs Rutas absolutas
+    - Entry point
+  + Command Line / Terminal
+    - 10 comandos más usados por un programador (+ 1: incluir grep)
+    - Editores de archivos más comunes: vi, nano (comandos principales: salida, edición y escritura)
+    - Conexiones SSH
+","- Comprensión del sistema de archivos y su jerarquía
+- ¿Dónde estoy cuando estoy en la Terminal?
+- Cómo referenciar rutas desde mi ubicación
+- Cómo ubicar un proceso en la estructura
+- La raíz de un proceso no es la raíz del proyecto. Es la ruta del entry file (entrypoint)
+- Usualmente los comandos de terminal se preparan como un ""one-shoot"" y por eso pensar en los argumentos
+- Las LLM son particularmente excepcionales usando CLIs, esto es para ellas.
+- Se pueden ejecutar varios commands a la vez si creas un bash/shell script
+","- Uso de rutas absolutas antes que relativas
+- Evaluar dónde estoy antes de intentar moverme en el sistema de archivos","- navegación por directorios (\(cd\), \(pwd\))
+- la gestión de archivos (\(ls\), \(cp\), \(mv\), \(rm\))
+- la ejecución de comandos para interactuar con el sistema operativo","- Trabajar en modo root (superuser / admin)
+- No usar los argumentos
+- No pensar en donde estas ubicado","- No IA
+- No se creará un Shell Script, pero se les explicará en qué consisten"
+,En Syllabus,"> Proyecto 1: exercise-command-line-challenge (reemplazar https://cmdchallenge.com/)
+
+> Proyecto 2 (a evaluar viabilidad):
+  - ¿Conectarse a un servidor remoto por SSH y encontrar un texto?
+  - Pedir a la IA que genere los comandos por nosotros",,,,,- No IA
+2,5,Skill: Aprender a trabajar en colaboración con una IA y otros desarrolladores de forma eficiente y con bajo riesgo,,,,,
+,En Syllabus,"> Teoría:
+  + Git para devs
+    - Cómo funciona
+    - Cómo saber dónde estoy (concepto de HEAD)
+    - Principales comandos (git status, git add, git commit, git pull, git push, git remote)
+    - Algunos comandos avanzados (git merge, git log [y --stat], git revert,  git stash, git reset)
+    - Gestión de cambios: Línea de comandos vs Interfaz del editor (IDE) vs hechos por IA
+    - Ramas (git branch, concepto de HEAD)
+    - Gitflow simplificado (main, dev, feature/, bugfix/) <--- Establecer lineamientos de base para homologar entre profesores y evitar ""ramas personales""
+    - git switch vs git checkout [y -b]
+    - git merge vs git rebase
+    - Buenas prácticas en Git
+  + Github
+    - ¿Qué es Github? 
+    - Issues
+    - Forks vs Templates
+    - Pull Requests (entre ramas y entre repos)
+    - Buenas prácticas en Github
+  
+","- Relacionar commits con características o funcionalidades
+- Identificar los principales comandos de Git y su uso en el IDE
+- Saber dónde estoy en un proyecto git
+- Cómo moverme entre ramas
+- Incorporar el uso de PR como mecanismo para incorporar funcionalidades/características por ramas
+- Cómo colaborar o contribuir de forma organizada
+- Como deshacer o revertir cambios
+- Comprender que Github es la vitrina técnica para mostrar nuestro talento y hay que mimar cada proyecto.","- Selección de archivos de un commit
+- Una característica (vista, en este caso), una rama
+- Hacer PR
+- Mantener limpieza de ramas","- Git por línea de comandos
+- Git por IDE
+- Gitflow (simplificado: trabajo con ramas principales y nomenclatura base)
+- Partir de un core (main) y hacer PRs al core
+- Configuraciones y claves fuera del repositorio
+- ¿¿¿Fusionar ramas muy antiguas sin git rebase???
+- ¿¿¿ Git rebase (es un patrón pero puede agregar complejidad) ???","- Uso del git add . o añadir todo al commit siempre 
+- Trabajo directo en main
+- No describir adecuadamente los commits
+- Commits muy grandes
+- --force
+- Subir los .env y configuraciones al proyecto
+- PR sin revisiones",
+,En Syllabus,"> Proyecto colaborativo en pareja (Equipo + IA + Git): maquetación de una tienda estática colaborativa con IA (Solo HTML y Tailwind)
+  1. Preguntar a la IA ¿Qué elementos básicos debe tener la maqueta de una tienda en línea?
+  2. Validar la respuesta de la IA y analizar se se adecúa a lo que se busca
+  3. Distribuir tareas por características/vistas (crear el repo común y actividades)
+  4. Desarrollar características en ramas
+  5. Unificar desarrollos en rama principal
+  6. Conectar vistas (commits y merges adicionales)
+ 
+Debe contener todo lo que se ha visto anteriormente (HTML semántico, Tailwind, Schema.org, diseño responsivo) y conformarse por 5 vistas
+- Home (con una barra de navegación, un Hero, listado de productos nuevos, listado de productos más comprados, footer)
+- Catálogo (listado de productos y barra de filtros)
+- Producto (Foto de producto, detalles de producto, precio y descripción)
+- Carrito (vista completa del contenido de un carrito con sus productos, la totalización y botón de comprar)
+- Formulario de pago (datos personales, dirección de entrega y datos de tarjeta)",,,,,"- Solo HTML y Tailwind
+- Nada de React.
+- Puede haber alguna acción con JS"
+,,### PERSONAL ASSISTANTS WITH OPENCLAW ###,,,,,
+2,6,Skill: Configurar un agente de IA de código abierto y autoalojado como un asistente personal básico,,,,,
+,Approved,"> Teoría: 
+
+  + Introducción a SSH
+
+  + Introducción a los VPS
+
+  + Introducción a OpenClaw
+    - ¿Qué es Openclaw?
+    - ¿Qué beneficios ofrece OpenClaw?
+    - ¿Cómo escoger el modelo adecuado para cada tarea que va a realizar OpenClaw?
+      -- Openclaw no es ""nada"" sin un modelo.
+      -- ¿Por qué es importante seleccionar distintos modelos según las tareas del agente?
+    - Riesgos de seguridad al configurar un OpenClaw 
+      -- No es un multi-tenant boundry.
+    - Importancia de seguir las indicaciones de instalación de 4Geeks para la configuración de Openclaw.
+  
+  + Instalación y Configuración de OpenClaw en un VPS 
+    - Mención de las formas de configuración (1 click, Docker, manual) y entornos (vps, local, etc) 
+    - Instalación paso a paso en un VPS
+    - Paso a paso sobre el proceso (detalles sobre cada paso de configuración, una vez ejecutas OpenClaw, debes ir realizando una serie de configuraciones)
+      -- Provedor Litellm
+      -- Ingresar API Key
+      -- Saltar skills (se atenderá luego)
+      -- Habilitar hooks
+      -- Saltar channels works (se atenderá luego)
+      -- Try local chat
+    - ¿Qué es el openclaw.json? Principales atributos
+
+","- ¿Qué significa que Openclaw sea un asistente personal?
+- Openclaw no sabe hacer nada, a menos que le enseñen.
+- Es un error pensar que Openclaw va a saber hacer algo con solo instalarlo.
+- Openclaw solo sirve para cosas elementales si no conoces su arquitectura
+- ¿Por qué es importante seleccionar distintos modelos según las tareas del agente?
+- Comprender los riesgos de seguridad a los que se puede estar expuesto al usar Openclaw
+- ",,,,
+,Approved,Proyecto: entregar validación de que lo ha configurado correctamente. ,,,,,
+3,7,Skill: Asignar tareas sencillas e integrar aplicaciones a OpenClaw,,,,,
+,Approved,"> Teoría: 
+
++ Asignación tareas simples a Openclaw 
+  - Basic Channel Configuration
+  - Basic Skill Installation: Install necessary skills (e.g., Telegram for messaging)
+  - Basic Task Setup (tareas diarias: buscar en internet, redactar, trabajar con archivos...)
+
++ Configurar Zapier vía MCP 
+  - Introducción a MCP (como herramienta para conectar a agentes con otros servicios)
+  - Cómo agregar un MCP a OpenClaw
+  - Configurando Zapier
+  - ¿Por qué estamos usando Zapier-MCP? (Explicar que es un puente para que se logre dimensionar las capacidades del agente -como crear documentos, agendar eventos, etc- , dejar en claro que estas tools o skills se puede configurar de forma nativa en el agente de OpenClaw) 
+
++ Conectar OpenClaw con Telegram
+  - Mención rápida de qué es Telegram
+  - Cómo crear un bot en Telegram
+  - Configurar OpenClaw para usar Telegram
+  - Validación de conexión exitosa con Telegram
+
++ Riesgos y vulnerabilidades en el uso de OpenClaw
+  - Concientización sobre los riesgos de seguridad que representa OpenClaw
+  - Cuidados y restricciones a aplicar al usar cuentas personales
+  - Cómo evitar la exposición de credenciales.
+  - Qué se recomienda evitar conectar con OpenClaw","Como transformar una api en una serie de skill: para que tu agente pueda interactuar con un sistema (workflow > api)
+
+",- Restringir su actuación y habilidades a necesidades concretas,,"- Exponer claves de configuración y secretos
+- Darle acceso a contenido sensible
+- Dar acceso total
+","- Uso de elementos preexistentes, sin creación propia"
+,Approved,"Proyecto: 
+- Pedirle por Telegram que cree un documento
+- Crear un documento en Google Drive, 
+- Crear un evento en el calendario para apartar el tiempo para reservarlo
+- enviar un mensaje por Telegram confirmando que se ha ejecutado la solicitud",,,,,
+,,### CODING FUNDAMENTALS WITH TYPESCRIPT ###,,,,,
+3,8,Skill: Representar y estructurar de forma determinista la lógica de un sistema usando flujos secuenciales con contextos variables ,,,,,
+,En Syllabus,"> Teoría:
+  + ¿Qué es la programación? -> Darle instrucciones a una máquina
+   - Pensamiento Algorítmico -> Escribir en pseudocódigo.
+   - Variables 
+   - Direcciones de memoria
+   - Tipos de datos básicos o primitivos (character, integer, float, boolean)
+   - Tipos de datos estructurados o complejos (mención superficial a cadenas de texto, colecciones (arrays) y objetos)
+   - Operadores (aritméticos, de asignación, de comparación y lógicos) : versión simple de cada uno. 
+
+  + Dominando el Flujo del Programa (Lógica de Programación y Control de Ejecución):
+   - Control de flujo (condicionales) - Control flow
+     -- Identificación de casos borde/límite
+   - Estado del flujo - State flow
+   - Conceptos de iteración y bucles (for, while) 
+   - Scope / Contexto
+   - Flujos anidados
+   - Flujos reutilizables (introduccion teórica a ""funciones"")","- Comprender la importancia del pensamiento lógico matemático como herramienta fundamental para el criterio técnico.
+- Identificar casos generales y casos específicos en un flujo.
+- Saber diferenciar entre el control flow y el state flow
+- Saber predecir state flow (ejecución en frio)
+- Identificar y evaluar los casos borde/límite de un problema
+- Reducir los condicionales al mínimo: bifurcar es agregar complejidad
+- Identificar el uso del concepto que se esta aprendiendo ( que el alumno comprenda ""cuanto necesita entender"" de un concepto para poder avanzar, por ejemplo para usar un taladro para colgar un cuadro no necesito comprender la electronica del mismo mientras que si lo que busco es mejorar el taladro si que requira comprender sus componentes y funcionamiento interno para esa tarea)
+- Plantear soluciones en tu idioma nativo primero, luego pseudocódigo
+- Comprender el próposito para alcanzar el objetivo
+- Comprender que no necesito conocer y dominar todo para plantear una solución en pasos y procesos (pueden existir cajas negras) 
+","Analogías con el mundo real
+
+","El Patrón ""Sándwich"" (IPO: Input-Process-Output)
+Es la estructura fundamental. Todo algoritmo debe tener tres fases claras.
+-Entrada (Input): Definir qué necesito (ingredientes). Inicializar variables (Contador = 0).
+-Proceso: La lógica, cálculos y bucles.
+-Salida (Output): Mostrar el resultado o devolver el valor.
+
+El Patrón de ""Salida Única"" (Single Exit Point)
+Idealmente, un algoritmo o una sub-rutina debe tener un solo punto de inicio y un solo punto de fin.
+
+El Patrón del ""Centinela"" (Para Bucles)
+Al diseñar bucles mientras (while) o repetir (for), debe existir una condición clara de parada controlada por una variable.
+
+Modularización (Sub-procesos)
+Cuando un diagrama de flujo se hace muy largo, se debe colapsar una sección lógica en un ""Proceso Predefinido"" (generalmente un rectángulo con barras laterales).","El Flujo Espagueti (Unstructured Jumps)
+El uso indiscriminado de flechas que cruzan todo el diagrama para volver a un punto arbitrario anterior (el equivalente al temido GOTO).
+
+El ""Paso Milagro"" (The Miracle Step)
+Un paso en el algoritmo que es demasiado ambiguo o complejo para ser una sola instrucción.
+
+El Bucle Infinito Visual (The Black Hole)
+Un ciclo donde las flechas de ""No"" o ""Sí"" vuelven al inicio del ciclo, pero ninguna acción dentro del ciclo cambia la condición.
+
+Código Muerto (Unreachable Code)
+Partes del diagrama o algoritmo a las que es imposible llegar porque la lógica anterior las excluye.",- No IA
+,En Syllabus,"> Práctica: 
+  - Learnpacks Con múltiples retos de diseños de flujo y ""state machine"" (ejercicio tipo los del Command Line) para validar que lo hagan correctamente",,,,,- No IA
+3,9,Skill: Entender los fundamentos de TypeScript y su sintaxis para aplicar el concepto de algoritmos medianto código,,,,,
+,En Syllabus,"> Teoría 
+  + Fundamentos de Javascript y Typescript: 
+    - ¿Qué es JavaScript?
+    - ¿Qué es TypeScript?
+      -- Relación entre JS y TS (JS vs TS)
+      -- ¿Cómo funciona TS? 
+    - ¿Cómo se escribe código en TS?
+      -- ¿Qué es la sintaxis?
+      -- Reglas principales de TS
+    - ¿Para qué sirve el console.log()?
+    - Variables (const, let, var)
+
+  + Tipos de datos y operadores básicos de TS: 
+    - Tipos de Datos primitivos (number, boolean, string, symbol, null, undefined) 
+    - Operadores en JavaScript (aritméticos, asignación, comparación, lógicos) : versión simple de cada uno. 
+  
+  + Control de flujos en JavaScript y Typescript
+    - Flujos simples: Condicionales (if, else if, else, switch)
+    - Flujos repetitivos: Bucles 
+      -- for
+      -- while
+      -- for..in, for..of y do-while como referencias adicionales
+      -- interruptores de flujo: break (para cortar la ejecución) y continue (para saltar esta iteración)
+      -- Bucles anidados","- Convertir soluciones de pseudocódigo a la sintaxis del lenguaje.
+ 
+- Aprender a investigar siempre que sea necesario. (memorizar no es una habilidad a desarrollar, se dará con la práctica) 
+
+- Identificar cuándo se hace uso de una palabra reservada. 
+
+- Aprender a identificar tipos de datos por su valor (su composicion). 
+
+- Comprender las diferencias de los tipos de datos
+
+- Identificar los casos de uso de cada tipo de dato
+
+- Escribir una instrucción por línea. Usar punto y coma ; (aunque sea opcional, para enseñar disciplina).
+","
+
+Escribe el codigo, no lo copies
+
+Identacion 
+
+","- lowerCamelCase
+
+- Logs Etiquetados: console.log(""El valor de x es:"", x)
+
+- Const-First: Usar const por defecto, y let solo si el valor va a cambiar.
+
+- Nombres Semánticos
+
+- Igualdad Estricta
+","- Buscar la sintaxis perfecta. 
+
+- Usar código mágico (copiar y pegar, no tener concimiento de lo que hace código)
+
+- Inconsistencia en la sintaxis (no mantener decisiones anteriores en estructura, patrones, etc)
+
+- Crear bucles infinitos
+
+- Condiciones kilométricas 
+
+- Arrow Code / Hadouken: if dentro de if dentro de if... formando una flecha a la derecha. ",- No IA
+,En Syllabus,"> Prácticas:
+  - Learnpack con varios códigos generados por IA para revisar y corregir o aprobar.
+  - Learnpack (aparte del Beginner TS) orientado a condicionales y flujos llegando a una mayor dificultad que el Beginner JS (aquí podrían estar Beatles, Bottles of milk...)",,,,,- No IA
+4,10,Skill: Implementar funciones para identificar bloques de código reutilizables en Typescript,,,,,
+,En Syllabus,"> Teoría 
+  
+  + Funciones en Javascript y Typescript
+    - ¿Qué es un bloque de código?
+    - Dar nombre a un bloque de código (creando una función)
+    - Párametros (cómo pasar valores a una función)   
+    - ¿Cómo devuelve valores una función? (funcionamiento del return y especificación del tipo de dato devuelto) 
+    - Métodos vs funciones vs procedimientos (funciones que devuelven valor y funciones que no)
+    - Métodos y funciones para trabajar con datos primitivos (string, number, etc)  ","- Desarrollar un flujo si hay un objetivo solo, que son: 
+ -- Mutar un valor de un proceso global
+ -- obtener un valor y retornarlo
+ 
+- Reconocer los valores que necesita mi función para lograr su objetivo
+
+- Reconocer el tipo de función que requiero
+
+- Mantener el principio de responsabilidad única ","- Escribir funciones en sus diferentes versiones
+- Leer un código existente y reescribirlo en funciones
+Console.log tu mejor amigo
+Usar variables en vez ""código cableado"" 
+Leer errores","- DRY
+- Return Early (Cláusulas de Guarda)
+- Funciones Puras (Concepto): La función debe trabajar solo con lo que recibe en sus parámetros ((a, b)).
+- Single Responsibility (SOLID): Una función hace UNA sola cosa y la hace bien (calcularIva()).","-God Function: Una función que calcula, imprime, guarda y valida.
+
+- Dependencia Global: Usar variables que están fuera de la función sin pasarlas como argumentos.",- No IA
+,En Syllabus,"> Sólo práctica:
+  - Learnpack con varios códigos con funciones (con y sin parámetros, con y sin devolución de resultado) y sus llamadas generados por IA para revisar y corregir o aprobar.
+  - Mastering JS (adecuarlo explicando que es un learnpack que usará a lo largo de todo el contenido de JS y que conforme avancen las clases irá aprendiendo a solucionar más problemas)",,,,,- No IA
+4,11,"Skill: Manipular colecciones en Typescript transformándolas, recorriéndolas y buscando información de forma óptima",,,,,
+,En Syllabus,"
+> Teoría:
+  + Arreglos/Colecciones de elementos (arrays)
+    - ¿Qué es un array?
+    - ¿Cómo definir un array? (Sintaxis)
+    - ¿Cómo acceder a posiciones en un array? ¿Cómo agregarlas o eliminarlas?
+    - ¿Cómo recorrer un array? (for o while)
+    - Principales métodos para recorrer arrays
+    - ¿Qué es una matriz? (Arrays de arrays)
+    - ¿Cómo acceder a las posiciones de una matriz? ¿Cómo agregar o eliminar posiciones?
+    - ¿Cómo recorrer una matriz?
+    
+  + Ordenamiento y búsqueda en arrays
+    - Ordenamiento de arrays con .sort() (con Botón Ask to Rigobot ""What are the Sorting Algorithms"")
+    - Búsqueda lineal o secuencial en un array (Arrays desordenados - Métodos .find() e .includes())
+    - Búsqueda eficiente en un array ordenado (Algoritmo de búsqueda binaria)
+    - Búsqueda en matrices
+ ","- Definir y gestionar un array
+- Definir y gestionar matrices
+- Diferenciar arrays y matrices
+- Entender cuando un elemento es iterable
+- Buscar elementos en un array
+- Buscar elementos en una matriz
+- Ordenar arrays","-  Aprender a gestionar arrays con bucles y con métodos del lenguaje.
+
+- No memorizar.  Investiga cada que necesites usar un método","- Reasignación Explícita: texto = texto.toUpperCase() o guardar en nueva variable: const grito = texto.toUpperCase().
+
+- Homogeneidad en arrays/colección
+
+- Usar sintaxis literal > [ ]
+
+- Iterar copia o Inversa","- Chaining Infinito: Encadenar 5 métodos sin saber qué devuelve cada uno: str.split().reverse().join()....
+
+- El Cajón de Sastre: listas con varios tipos de datos.
+
+- new Array() 
+
+- Mutación durante iteración 
+
+-Hardcoding del límite (en bucles for para arrays)
+
+- Acceso:        Usar array[100] sin verificar el tamaño. Devuelve undefined y rompe operaciones posteriores.",- No IA
+,En Syllabus,"> Práctica:
+  - Mastering JS (ejercicios con Arrays)
+
+> Proyecto 1: Gestor de butacas de cine
+  - Crear una matriz de butacas con ocupadas (1) y libres (0)
+  - Visualizar la sala imprimiendo la matriz con L (libre) y X (ocupado)
+  - Poder reservar un asiento (marcarlo con 1)
+  - Contar cuántas butacas están llenas y cuántas están vacías
+  + Actividad extra: 
+    - Buscar asientos contiguos para parejas (dos personas)
+    - Darle a la IA el código desarrollado y pedirle que genere una interfaz para usarlo en modo web
+
+> Proyecto 2: Almacén inteligente:
+  - Crear un listado de ids de paquetes que siempre esté ordenado
+  - Agregar nuevos paquetes (y reordenar)
+  - Verificar si un paquetes está en el listado por búsqueda binaria
+  + Actividad extra: 
+    - Filtrar y eliminar paquetes ""viejos"" menores a un id de paquete
+
+",,,,,- No IA
+4,12,Skill: Modelar objetos mediante datos estructurados usando diagramas de clase,,,,,
+,En Syllabus,"> Teoría:
+  + Objetos: 
+    - Concepto de modelos vs objetos
+    - Propiedad vs Valor
+    - Métodos (propiedades que son funciones)
+    - Combinación de tipos de Datos: 
+      -- Ej: array de objetos, objetos anidados
+
+  + Modelado de objetos mediante diagramas de clases","- Aplicar el concepto de abstración para representar objetos del mundo real en modelos
+- Entender la diferencia entre un modelo y un objeto
+- Entender la diferencia entre una propiedad y un valor
+- Diferenciar entre una propiedad y método
+- Identificar relaciones entre objetos
+",- El modelo debe partir desde lo más general,"- Mantener los modelos lo más general posible 
+
+- Schema Uniforme: Mantener la estructura de los objetos","- Objetos ""Copo de Nieve"": Crear objetos que deberían representar lo mismo (ej: usuarios) pero con estructuras diferentes.
+
+{ nom: ""Ana"" } vs { nombre: ""Juan"" }.
+
+- Relaciones circulares entre modelos/clases
+",- No IA
+,En Syllabus,"- Modelar ""Una billeta digital"" como Wise
+- Modelar ""Un reproductor de Playlist de Música""
+
+",,,,,
+5,13,Skill: Trabajar con datos estructurados de tipo objeto en TypeScript,,,,,
+,En Syllabus,"> Teoría:
+
+  + Representación de objetos en TS: 
+    - Interfaces vs Objetos literales 
+      - Sintaxis 
+      - Atributo vs Valor 
+      - Acceso a propiedades
+        - Notación punto (nombre.atributo) vs Notación corchete (nombre['atributo'])
+        - Operador ""opcional"": nombre?.atributo
+      - Métodos
+    - Manipulación de objetos 
+    - Combinación de tipos de Datos: 
+      -- Ej: array de objetos, objetos anidados
+  + Mutaciones (ej real: un libro -inmutable- vs un cuaderno -mutable- ) 
+   - Paso por referencia vs paso por valor
+   - Tipos de datos que admiten pasos por referencias o por valor","- Representar el mundo real en objetos literales / clases
+- Diferenciar un objeto de clase a un objeto literal 
+- Identificar cuándo existe un ""paso por referencia"" y cuándo es un ""paso por valor""
+- Construir y manipular objetos","- Si varias variables tienen relación entre sí (parecen atributos de algo más), estudiar la posibilidad de un objeto","CamelCase: { nombreUsuario: ""Juan"" }. Facilita el uso del punto (.nombreUsuario).
+
+Bracket Notation: Entender que si la key viene en una variable, es obligatorio usar corchetes: objeto[variable]
+
+Tipado correcto: { activo: true, edad: 25 }. Facilita operaciones matemáticas y lógicas después.
+
+Optional Chaining: Enseñar el operador ?.: usuario.direccion?.cp. (Si direccion falta, devuelve undefined en vez de romper todo).","Atributos con espacios: { ""nombre del usuario"": ""Juan"" }. Obliga a usar sintaxis compleja ['...'] siempre.
+
+La confusión del punto: Intentar usar una variable como key con notación de punto: objeto.variable (busca literalmente la key ""variable"").
+
+Valores como texto: Guardar números o booleanos como strings innecesariamente: { activo: ""true"", edad: ""25"" }.
+
+Hardcoding repetitivo: Escribir manualmente 20 objetos literales.
+
+Asumir que un dato anidado existe","- No IA
+- No se abordan la herencia ni el polimorfismo"
+HITO 02,En Syllabus,"> Práctica: 
+  - Mastering JS (ejercicios de objetos)
+
+🧠 Hito 2 — Fundamentos de Programación
+ Algoritmos, control de estados y flujos, dominio de Typescript (Javascript con tipado de datos). Implementar pequeñas funcionalidades para la empresa.",,,,,
+,,### ADVANCED PERSONAL ASSISTANTS WITH OPENCLAW ###,,,,,
+5,14,Skill: Identificar escenarios en los que un agente puede resolver problemas de la empresa e implementar su solución,,,,,
+,Approved,"> Teoría: 
+
++ Conceptos avanzados de Openclaw
+  - ¿Qué es un workspace? 
+    -- ¿Por qué crear más de un workspace? (Dar ejemplos reales en los que un segundo workspace es necesario)
+  - Estructura de .openclaw (openclaw.json, /devices para asociar devices que acceden al agente, /workspace, /workspace/HEARTBEAT.md es un prompt pero no exactitud)
+    -- Channels y privacidad
+  - Para qué sirve cada uno de los 5 .md de la configuración de Openclaw
+  - Openclaw comandos más avanzados: 
+    -- doctor
+ 
++ Enseñar a Openclaw a hacer cosas (skills)
+  - ¿Qué es una Skill en Openclaw?
+  - ¿Cómo implementar skills propias en Openclaw?
+","- Dada una situación real:
+  -- ¿Qué datos necesita el agente para funcionar de manera independiente? (imaginar que somos el agente y queremos resolverlo)
+  -- ¿Qué acciones puede tomar el agente para resolverla? (Tools, API, CLI, MCP)
+  -- ¿Quién revisa que el agente terminó? ¿Cuál es el 'eval'? ¿Cuál será el resultado esperado (formato, tipo de documento, etc...)?
+  -- ¿Qué skills/habilidades se requieren para apoyar los puntos anteriores?
+- Openclaw no sirve si no entiendes la arquitectura completa.
+",,- MCP,,
+,Pending,"Proyecto: 
+- Usando su token de estudiante de 4Geeks haz que OpenClaw se encargue de verificar qué proyectos tienes pendientes por entregar.",,,,,
+5,15,Skill: Desarrollar habilidades (skills) para Openclaw según las necesidades del problema a resolver,,,,,
+,Approved,"Teoría:
+
++ Cómo hacer que tu agente pueda interactuar con un sistema 
+  - Transformar una Api en una serie de skills
+  - Entender los pasos replicables que debe realizar el agente
+
++ Conectar Openclaw con tu cuenta de 4Geeks
+  - Cómo conectar Openclaw con la API de 4Geeks
+  - Cómo obtener tu token de estudiante en 4Geeks
+  - Cómo configurar de forma segura tu token de 4Geeks en OpenClaw",Cómo transformar una api en una serie de skills: para que tu agente pueda interactuar con un sistema (workflow > api),,,,
+,Pending,,,,,,
+6,16,Skill: Identificar e implementar el tipo de memoria adecuado para Openclaw según cada caso de uso en la empresa,,,,,
+,Approved,"Teoría:
++ Openclaw y su memoria
+  - `Memory.md` vs `/memory` folder (daily notes)
+  - Usar QMD como método de búsqueda en lugar del método por defecto (memory_search)
+    -- QMD: búsqueda por keyword, por semántica (similitud) y reranking.
+  - ¿Cómo instalar y configurar QMD?
+
++ Reestructurando la memoria de Openclaw
+  - Tipos de arquitectura para la memoria: 
+    -- contexto
+    -- estructura de carpetas
+    -- mem0
+    -- SQLite
+  - Análisis de `mem0`y cómo funciona (graph style memory con almacenamiento propio de memoria) 
+  ","- ¿Cómo funciona la memoria de Openclaw?
+- Con QMD la memoria se sigue alojando en Memory.md y /memory folder pero la búsqueda es más eficiente (memory retrieval)
+- ¿Cómo saber el tipo de memoria que me funciona para un caso de uso concreto? (Eficiencia de solución: No matar una hormiga con un cañón).
+- ¿Cómo verificar el funcionamiento de la memoria?
+- ",,,,
+,Pending,"> Proyecto: Implementar memoria al agente de OpenClaw
+
+> Proyecto transversal: Generar cada semana un reporte de coste promedio del mercado y la competencia",,,,,
+,,### FRONTEND DEVELOPMENT WITH CODING AGENTS ###,,,,,
+6,17,Skill: Escribir especificaciones visuales claras y ejecutables garantizando que la interfaz del producto cumpla con los requisitos definidos,,,,,
+,En Syllabus,"> Teoría: 
+
+
++ Convertir lo visual en especificaciones para la IA:
+    - ¿Qué es una especificación y como escribilar para que un agente pueda desarrollarla (SDD)?
+    - del “hazme esto” a ""construye esto bajo estas reglas""
+    - Introducción al ""Vision-to-Spec"": Cómo traducir un diseño visual (mental o imagen) a especificaciones técnicas en lenguaje natural.
+    - Anatomía de un Prompt de UI: Rol (Senior Frontend Dev), Stack (React + Tailwind/Bootstrap), Restricciones y Contenido.
+    - Descomposición Visual (The Box Model Mental): Aprender a pedir ""contenedores"", ""filas"", ""columnas"" y ""grid"" sin escribir CSS.
+      -- Mención de skills (0 - 3) - aplicadas a este contexto/skill. 
+  
++ El Proceso Constructivo del frontend:
+    - Iteración Constructiva (The Painter’s Algo):
+      -- Estructura (Wireframe).
+      -- Contenido (Textos/Imágenes).
+      -- Estilizado (Colores/Espaciado).
+    - Camino de menor resistencia
+    - Feedback Loop: Cómo decirle a la IA que algo ""se ve mal"" usando la terminología correcta (padding, margen, alineación).
+","
+
+Desarrollar  pensamiento Declarativo: Pasar de pensar en ""cómo hacerlo"" (imperativo) a ""qué quiero obtener"" (declarativo).
+
+Entender que la calidad de la respuesta depende de la calidad de la restricción
+
+  - Entender qué es Spec-Driven Design y por qué mejora el trabajo con agentes de código.
+  - Aprender a convertir una idea vaga en una especificación ejecutable y verificable.
+  - Diseñar flujos donde el agente no solo programa, sino que trabaja con contexto, restricciones y criterios de aceptación claros.
+-   El problema no suele ser el modelo, sino la calidad del encuadre del trabajo.
+- Una buena especificación permite delegar mejor, revisar menos y reducir el retrabajo.
+- Comprender que las prompts no deben ser exageradamente extensas sino tener la información realmente necesaria para que el modelo comprenda lo que se quiere obtener.
+- Identificar reglas mediante el análisis del qué se hizo, qué errores se cometieron, qué buenas prácticas se quieren implementar, qué acciones siempre se deben realizar...
+
+Desarrollar abstracción Espacial: Capacidad de ver una web (ej. Spotify) y no ver ""música"", sino ver: Sidebar (fixed) + Main Content (scrollable) + Player (sticky footer).
+Entender que una Landing Page no es una sola instrucción, sino la suma de Navbar + Hero + Features + Footer. (Descomposición de Problemas)
+
+- Comprender la importancia y funcionamiento de la jerarquía de reglas
+- Controlar el uso de los contextos de aplicación de las reglas","- Definir especificaciones antes de empezar a desarrollar
+- Especificaciones pequeñas, claras y precisas
+
+- Usar Globs para reglas de formatos, utilidades y pruebas y agrupar por carpetas
+- Mencionar ficheros ","El Patrón ""Matrioshka"" (Component Isolation)        Nunca pedir la página entera de una vez. Pedir componente por componente, de afuera hacia adentro o por secciones.
+
+- Reglas claras, limitadas y específicas
+
+- Agregar nuevas reglas en función de las necesidades repetitivas que se van identificando
+
+El Patrón ""Role & Stack Priming""        Definir el contexto técnico antes de pedir nada para evitar código ""vanilla"" o librerías obsoletas.
+
+El Patrón ""Reference Injection""        Si el modelo es multimodal (acepta imágenes), subir un screenshot. Si no, describir la estructura basada en una grilla.
+
+El Patrón ""Dummy Data First""        Pedir a la IA que hardcodee datos falsos (arrays de objetos) para visualizar la UI antes de conectar lógica real.
+
+El Patrón de Refinamiento (Drill-Down)        Ir de lo general a lo específico (Layout -> Componentes -> Estilos finos).","El ""One-Shot Wonder"" (La Bala de Plata):        Intentar generar el clon de Airbnb completo (Home, Detail, Checkout) en un solo prompt gigante.
+
+Asumir que la IA sabe qué todo lo que has estado ""hablando"" durante todo el proyecto (ej. librerías usaste hace 3 prompts).
+
+Escribir 4 párrafos de historia de la empresa que no afectan el código. (Desperdicia tokens y confunde la atención de la IA).
+
+El Prompt ""Adivina"": ""Hazme una página bonita para una tienda"". (Demasiada entropía, la IA alucinará estilos aleatorios).
+
+El ""Vague Designer"" (Diseñador Vago) : Usar adjetivos subjetivos en lugar de técnicos.
+
+El ""Frankenstein Stack"":        No especificar librerías, resultando en una mezcla de CSS puro, Bootstrap, estilos en línea y librerías raras.
+
+La ""Lógica Prematura"":        Intentar programar la funcionalidad (ej. autenticación, base de datos) mientras se está diseñando la UI.",
+,En Syllabus,"> Proyecto 1: 
+  -  Desarrollar un panel de administración con Visual to Spec
++ Instrucciones al profesor
+    - Elaborar prompts de especificación y generación de componentes.
+    - Reconstruir la UI mediante IA definiendo reglas",,,,,
+6,18,Skill: Construir la arquitectura en un proyecto Next.js,,,,,
+,En Syllabus,"> Teoría:
+
+  + Arquitectura de Single Page Applications (SPA) y Empaquetado.
+     - Building or compiling your app
+     - Build time vs Runtime
+     - Arquitectura SPA (Single Page Application):
+       -- Juzgando una página web (múltiples páginas)
+       -- La ilusión de la navegación: Hashstring (#) vs Browser History.
+  + Introducción a React y Next.js
+     - ¿Qué es un Componente Web (en React)?
+       -- ¿Cómo se crean?
+       -- ¿Cómo se modifica el contenido en la web?
+     - ¿Qué es Next?
+       -- React vs Next
+     - Organización del Proyecto: Estructura de carpetas: /pages (vistas) vs /components (piezas) vs /layouts
+     - App Router: Folder and file conventions
+       - Top-level folders & files
+       - Routing Files
+       - Nested routes
+       - Route groups and private folders
+       - Metadata file conventions
+     - Renderizado del lado del cliente (CSR) vs del lado del servidor (SSR)
+     - Introducción a componentes: Creando mi primer componente React en Next.js
+       -- Introducción superficial a props, useState y useEffect (estandar hasta React 18)
+
+  + Organizando mi frontend
+    - Modularización: ¿Qué es un módulo?
+      -- Por qué modularizar mi aplicación
+    - Ejercicio donde se plantea una modal en la raíz de los componentes y en el que debería crear una nueva modal, para que responda cómo reorganizaría los archivos y se evalúe su respuesta 
+      -- (la respuesta debería ser crear una carpeta ""modals"" con las variantes modal1 y modal2)
+    - Referencia a las carpetas más importantes adicionales a la estructura de Next (como libs, types, hooks, entre otras...)","Poder leer la estructura de archivos de un website con React y determinar si tiene mejores prácticas. 
+
+Verificar que las rutas sean ""url friendly"" y ""website taxonomy"": pensar en como ""agrupar"" el website, por ejemplo, /product/id/1asfa-fgasf-afsasd-asd
+si no que sea producto/bateria-carro
+
+Pensamiento Estructural/Jerárquico: Diferenciar entre un componente que es una ""Vista"" (ej. Home.jsx) y uno que es un ""Widget"" (ej. Button.jsx).
+
+La Ilusión de la Persistencia: Comprender que al navegar en una SPA, el navegador no ""refresca"". El alumno debe mentalizarse en que está inyectando contenido dinámicamente, no cambiando de archivo HTML.
+
+Abstracción del Layout: Habilidad para identificar qué partes de la web son constantes (Navbar, Footer) y qué partes son dinámicas (Outlet).
+
+Poder estar familirizado/cómodo navegando el ""codebase"" del proyecto. ","
+Clean Routing: Definir las rutas en un archivo separado o claramente en el entry point, no esparcidas.
+
+Componentes Funcionales: Prohibido usar Class Components (la IA a veces recurre a ellos si aprendió de datos antiguos).
+
+Nombrado Semántico: Las vistas se llaman HomePage, ContactPage para diferenciarlas de componentes pequeños.","El Patrón ""Layout Wrapper"": Instruir explícitamente a la IA para crear un componente ""Layout"" que contenga el Navbar y el Footer, y use un Outlet (o children) para el contenido. Evita repetir código en cada página.
+
+El Patrón ""Route Map Definition"":  Antes de pedir código, definir el mapa del sitio en una lista. Esto ayuda al LLM a visualizar la totalidad del router main.jsx.
+
+El Patrón ""Folder Structure Enforcement"" :Los LLMs tienden a poner todo en la raíz. Hay que forzar la separación de conceptos.
+
+El Patrón ""Link over Anchor"":  Instruir específicamente el uso del componente <Link> en lugar de etiquetas <a> para mantener el estado de SPA.","El ""Hard Refresh"" Trap (La Trampa del <a>): Dejar que la IA use <a href=""/contact"">.
+
+El ""Redundant Layout"" (Copy-Paste): Pedir ""Crea la página Home"" y luego ""Crea la página Contacto"" por separado sin contexto.
+
+El ""Monolithic App"" :  Dejar que la IA meta todo el código de las 3 vistas dentro de App.js usando renderizado condicional manual (if (page === 'home')...).
+
+Ignorar el Build Error: Tratar de arreglar errores de compilación (Build Time) como si fueran de lógica (Runtime).",
+,En Syllabus,"> Proyecto con IA: Replicar una website con React 
+  - Replicar la home, catálogo y vista de una habitación de airbnb.com con Next.js y React básico 
+  - Elaborar prompts de visión a especificación y generación de componentes.
+  - Recordar que debe ser mobile first
+
+Pedir que comience el proyecto con un archivo ""readme.md"" que contenga ""el contexto"" de la interfaz que desea construir.",,,,,
+7,19,Skill: Implementar interfaces interactivas con React y Next.js,,,,,
+,En Syllabus,"> Teoría :
+   + Fundamentos de React y Next.JS
+     - Props
+       -- Props más comunes
+       -- Prop 'Children'
+     - Hook pattern
+       -- use (sustituto de useState y useEffect a partir de React 19)
+       -- Custom hooks
+     - Principales Hooks de Next.js
+       -- usePathname
+       -- useSearchParams
+       -- ¿Qué son las Query strings?
+     - Renderización
+       -- Controlando los renderings (re renderizado)
+       -- ¿Qué es lo mínimo que el componente necesita para renderizarse?
+       -- Error: Si se renderiza el padre, lo hará también el hijo
+       -- Error: useEffect sin limitación de disparadores
+     - Renderizado del lado del cliente (CSR) vs del lado del servidor (SSR)
+
+   + Debugging frontend: 
+     - Dev Tool: Evidencia sobre suposición. 
+       -- Elements
+       -- Console
+       -- Network tab
+       -- React developer tools. (tal vez) ","- Saber identificar y aplicar propiedades a un componente.
+
+- Saber modificar el renderizado (output) de un componente basado en variables. 
+
+- Entender y diseñar estados de los datos de los componentes y modificar el renderizado de componentes basado en estos estados.
+
+- Identificar los efectos secundarios que produciran el cambio de los datos en el componente y sus dependencias para la renderizacion o comunicación de otros componentes","- Un use, una acción
+- Limitar los disparadores del useEffect","- CustomHooks para promover DRY (y siempre con return)
+- Callback function props para ampliar la reutilizabilidad del componente
+- Estados objeto para datos estructurados","- Prop Drilling
+- Props maestros (configuración masiva en un prop)
+- Repetir fetch entre componentes en lugar de usar un CustomHook",
+,En Syllabus,"
+  > Proyecto 1: 
+  - Crear un catálogo con búsquedas y filtrado para incorporar query strings
+",,,,,
+7,20,Skill: Entender la arquitectura de la web y el flujo de datos en ella,,,,,
+,En Syllabus,"> Teoria: 
+  + ¿Cómo es el flujo de datos en una aplicación de React y Next.js?
+    - MVC: store, actions
+    - LocalStorage vs SessionStorage
+      - ¿Cuándo almacenar algo en el storage?
+    - Dependencia de los datos:
+      -- ¿Cómo se usa el `use` para controlar la dependencia de datos?
+
+  + Sesiones (NO MENCIONAR PROCESOS DE AUTENTICACIÓN)
+    - ¿Qué es una sesión?
+    - ¿Por qué una sesión puede no requerir autenticación?
+    - Sesión como primer mecanismo de ""memoria"" (recordar al usuario)
+    - ¿Cuándo almacenar o recordar algo en la sesión?
+    - Ciclo de vida de una sesión
+      -- La primera interacción con el sistema (Session init)
+      -- Siguientes interacciones
+      -- Destrucción de la sesión 
+
+  + Promises
+    - ¿Qué es una promesa? ¿Por qué es importante en el frontend?
+    - Estados: pending, fulfilled (resolve), rejected (reject)
+    - Gestión de promesas:
+      -- ¿Qué pasa si no llegan o llegan tarde los datos?
+      -- .then(...)
+      -- async / await
+      -- ¿Cuándo usar el Promise.all()?
+    - Ejemplos de Promesas:
+      -- Obtener datos de una dirección web (Solo con GET)
+      -- Promesas en el manejo del LocalStorage
+      -- Validación dentro de promesas (condicionando los resolve y reject)
+    - Introducción al error handling
+      -- .catch() (en Promise directas y fetch)
+      -- try - catch (en async / await)
+
+
+      
+
+","- ¿cómo superar la pantalla blanca de error en la que no carga la vista? 
+- utilizando el network tab (DevTools) y entendiendo el flujo de los datos
+- Comprender el funcionamiento e importancia de las promesas
+- Gestionar adecuadamente las promesas (resueltas y rechazadas)
+- Diferenciar la función del LocalStorage y el SessionStorage","- Promise.all para no encadenar múltiples async / await no relacionados entre sí
+","- MVC 
+- Promise
+- Async / Await
+- One way data flow: Datos padre->hijo, Eventos hijo->padre
+- Store solo modificado por función pura
+- Actions de Store solo para acceder y modificar información del Store
+- UI de tres estados: Pending: Spinner/Skeleton; Fulfilled: Datos; Rejected: Mensaje de error.","- Gestión de errores con if/else
+- Emplear el LocalStorage para almacenar datos sensibles
+- Optimismo ciego: asumir que siempre se resuelve la interfaz
+- Gestionar errores dentro de la promesa en lugar de esperar a resolver la promesa.",- Llamadas a APIs solo con GET
+,En Syllabus,"EJERCICIOS: Learnpack incremental que pida hacer diversas consultas a una API (a desarrollar) y registrar la respuesta como resultado.
+Ejemplo: Cuál es la sintaxis para obtener el valor ""X"" en el JSON obtenido
+
+Proyecto: 
+
+""""""
+Tu empresa comienza su tránsito hacia una compañía automatizada en IA y te ha pedido diseñar una estrategia para concientizar sobre el consumo de tokens en la comunicación con la IA, de cara a las futuras soluciones de IA que implementarán, para así evitar que los costes se escapen de las manos y la gente use las herramientas con conciencia. Para eso, has propuesto utilizar una API multimodelo muy conocida (Groq) que permite seleccionar diversos modelos y chatear con ellos, aprovechando que Groq devuelve el consumo de tokens realizado según indica su API (POST https://console.groq.com/docs/api-reference) 
+
+En la vista principal se permitirá seleccionar un modelo y se ofrecerán dos opciones: Chatear | Optimizar prompts.
+
+La opción de prompts mostrará una entrada de texto con un botón de enviar que le envíe a la IA un mensaje indicando que debe optimizar el texto y mostrando la respuesta y cuántos tokens consumiría.
+
+La opción de Chat abrirá una interfaz que muestre una interfaz de Chat con IA (como la de ChatGPT, Gemini, Claude, Mistral...) que permitirá conversar y mostrar la cantidad de tokens de cada mensaje y respuesta Se irá actualizando un contador en la parte superior del chat (tokens enviados y tokens recibidos). Al marcar ""terminar chat"" (o ""ver resumen de conversación"") Mostrar una vista con la totalización de tokens enviados, tokens recibidos y mensaje más largo enviado. Suma el total de tokens e investiga un precio promedio de coste de tokens para dar una referencia de cuánto dinero se consumió en esa conversación.
+""""""
+
+Actividades:
+ - Crear cuenta en Groq, generar API Key para comunicarse con un modelo desde el proyecto.
+ - Crear con Vercel V0 la interfaz de una aplicación que conste de las siguientes vistas:
+ - 1. Home como aplicación interna de la empresa que explique el propósito de la misma y selección del modelo a emplear (GET
+https://api.groq.com/openai/v1/models) y botón de acceso al chat
+ - 2. Una interfaz de conversación con el modelo seleccionado y mostrando los datos de generación y consumo de tokens.
+ - 3. Una vista de resumen que al terminar la conversación mediante un botón de terminar (en la vista de chat): Mostrar la totalización de tokens enviados, tokens recibidos y mensaje más largo enviado. Suma el total de tokens y e investiga un precio promedio de coste de tokens para dar una referencia de cuánto dinero se consumió en esa conversación.
+ - 4. Una vista de consejos para ahorrar tokens
+
+ ",,,,,
+7,21,Skill: Communicate frontends with AI and Data connecting with APIs,,,,,
+,En Syllabus,"> Teoría:
+  
+  + Comunicarse con APIs externas: 
+    - ¿Qué son las APIs y cómo funcionan?
+    - Métodos principales: GET, POST, PUT, PATCH, DELETE
+    - Request:
+      -- Headers: Principalmente Content-Type y Authentication
+      -- Body (html encode, params raw) 
+        --- Files (mención)
+    - Response: No todo error es un crash.
+      -- Status Code
+      -- Body/data
+    - Herramientas y Autenticación: 
+      - Postman
+      - Autenticacion básica. 
+
+  + Stateless comunication: El servidor tiene amnesia
+    - Hay que pasarle al endpoint toda la informacion que necesita, siempre, no hay manera que el backend te avise algo hay que pedirselo
+    - Lo más parecido a un state se llama polling que es hacer request/peticion cada x segundos 
+
+
+  ","- Comprender cómo se comunican los distintos entornos (frontend,backend, base de datos)
+
+- Identificar semanticamente qué tipo de petición se necesita (get, post, ...) 
+
+- Analizar la respuesta e identificar su cohorencia con la petición realizada. 
+
+- Aprender a usar herramientas: postman, network tab, etc. 
+
+- Realizar las peticiones basadas en el comprendimiento de ""stateless comunication"" 
+
+- Identificar las necesidades de la petición (text, json, files) 
+
+- Aprender a leer los payload, responses, headers, etc. ","- Separar las llamadas a APIs fuera de las actions del Store.
+- Custom hooks para gestionar las peticiones a APIs","- Lectura de Códigos: 200, 300, etc. 
+
+- La Mochila Completa: Cada petición es un viaje nuevo. Debes llevar tu pasaporte (Token) y tu dirección (IDs) cada vez que sales.
+
+- Headers Explícitos: Configurar siempre el Content-Type y el Authorization antes de enviar.","""Ya te dije quién soy"": Hacer el Login en la petición 1, y en la petición 2 no enviar el Token, esperando que el servidor recuerde la sesión anterior.
+
+- El Header Olvidado: Enviar un JSON en el Body pero olvidar poner Content-Type: application/json. El servidor no sabe cómo leerlo y falla.",
+HITO 03,En Syllabus,"
+
+⚛️ Hito 3 — Fundamentos de Next.js (React)
+ Arquitectura SPA (Single Page Applications) y multipágina, props/state/effects, debugging. Construir el frontend interactivo de la empresa.
+ 
+
+",,,,,
+,,### WORKING WITH AI CODING AGENTS ###,,,,,
+8,22,Skill: Construir un banco de memoria y reglas de contexto a partir de un código base preexistente,,,,,
+,En Syllabus,"> Teoría:
+
++ Estrategias en la comunicación con la IA (Context & Anatomy):
+    - Context Engineering
+    - Word efficiency  
+    - Mención de la skill ""Hablar el lenguaje de la IA"" para refrescar los formatos.
+
++ ¿Qué son las reglas para una IA de programación?
+   - Alcances de las configuraciones y reglas de contextos: User vs Project. ¿Qué reglas son de preferencia personal y cuáles son de necesidad del proyecto?
+   - Aplicación de reglas: description, globs, alwaysApply
+     -- Eficiencia de tokens: 
+        --- Ir de lo general a lo específico. Muchos contextos con pequeños. 
+        --- Ir de lo específico a lo general. Mínimos contextos necesarios a la vez.
+   - Tipos de aplicación: Always, Auto Attached (pattern), Agent Requested (agent decides), Manual (mention), LLM Oriented
+
+ + Memory bank: Persistencia del conocimiento más allá del chat actual
+   - ¿Qué es un banco de memoria? ¿Para qué sirve?
+   - ¿Qué es el contexto del producto? Descripción general del producto y del negocio para un mejor contexto de lo que se quiere desarrollar
+   - ¿Qué es el plan de implementación? ¿Cómo construirlo con la IA? ¿Cómo gestionarlo con la IA?","
+- Saber crear y gestionar el banco de memoria 
+- Comprender la relevancia de un contexto bien mantenido para una estrategia de desarrollo exitosa.
+- Comprender que el código también es contexto y que las buenas prácticas se replican y que las malas prácticas de un código también se potencian con la IA.
+
+https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
+- Entender que las skills son una evolución de las reglas con un propósito y contexto más claro
+","- Mencionar ficheros 
+- Comprender la estructura actual del proyecto. ","- Crear un plan de implementación y luego señir el desarrollo a su ejecución
+- Mantener un plan de implementación dinámico según las necesidades del proyecto
+- Gestionar y mantener actualizado el banco de memoria
+- Contenidos curados y concretos, no ambigüedades o divagaciones
+- Respetar las reglas del preexistentes del proyecto y sólo modifcar bajo consenso","- Desarrollar de forma imperativa (saltar el plan de implementación, dándole órdenes nuevas a la IA)
+- Dictador Global: Sobreescribir reglas de proyecto o de equipo por preferencias personales
+- Ser muy descriptivo y ambiguo en la definición de reglas
+- Confianza ciega en la proactividad del agente
+- Pegar conversaciones muy largas y difíciles de procesar.
+- Crear un contexto únicamente técnico y omitir el negocio.
+- Sobreescribir las reglas preexistente ""solo porque no me gusta""",
+,En Syllabus,"> Proyecto:
+
++ Obtener el código de un proyecto y preparar el contexto para que la IA desarrolle
+- Haz fork del repositorio `https://github.com/4GeeksAcademy/ai-eng-financial-dashboard-context-project` y prepara tu entorno local.
+> 2. Pídele a tu asistente de IA un resumen del proyecto y valida ese resumen contra la estructura y el código reales.
+> 3. Haz un commit separado por cada paso importante (sin un mega-commit para todo).
+> 4. Identifica buenas y malas prácticas de ingeniería en el código y conviértelas en reglas explícitas del proyecto.
+> 5. Documenta esas reglas dentro de `.agents/rules` e itera hasta que sean aplicables al flujo real del proyecto.
+> 6. Genera una carpeta `memory-bank` con al menos: descripción del producto, stack tecnológico y estado actual del proyecto.
+
+",,,,,
+8,23,Skill: Escribir especificaciones claras y ejecutables garantizando que el producto cumpla con los requisitos definidos,,,,,
+,En Syllabus,">Teoría: 
+
++ Spec Driven Development
+ - ¿Qué es una especificación?
+ - del “hazme esto” a ""construye esto bajo estas reglas""
+ - ¿Qué es el Spec Driven Design?
+ - Relación entre Spec-Driven Design y agentes de código
+ - Anatomía de una spec bien hecha
+ - Buenas prácticas: Cómo escribir specs que los agentes ejecuten bien
+ - Uso de criterios de aceptación como contrato
+
+",,,,,
+,En Syllabus,Proyecto: Desarrollar algunas especificaciones adicionales en el proyecto del día anterior,,,,,
+8,24,Skill: Sintentizar acciones y reglas como habilidades (Skills) para que los agentes puedan ejecutar acciones claras y precisas,,,,,
+,En Syllabus,"> Teoría: 
+  + Skills: ¿Cómo puede tu agente aprender habilidades casi como Neo en Matrix?
+   - ¿Qué son las skills para los agentes?
+     -- ¿Cómo funcionan?
+   - ¿Cómo puedo enseñarle nuevas skills al agente?
+   - ¿Dónde puedo conseguir skills ya existentes? (https://skills.sh/)
+ 
+  + Creación de Skills:
+    - ¿Por qué es beneficioso crear una skill?
+    - ¿Cuándo crear una skill?
+    - ¿Cómo añadir mis propias skills a mi agente?
+    - ¿Qué estructura debe tener una skill para ser efectiva?
+    - Checklist de criterios de calidad de una buena Agent Skill
+      -- ¿Tiene un objetivo único y claro?
+      -- ¿Sus inputs están definidos y validados?
+      -- ¿El output es estructurado y verificable?
+      -- ¿Tiene criterios de aceptación explícitos?
+      -- ¿Es reusable en otros contextos?
+      -- ¿Se puede testear automáticamente?
+      -- ¿Minimiza ambigüedad?
+      -- ¿Tiene manejo de errores?
+      -- ¿Se puede componer con otras skills?
+","- Concebir las skills como descripción de funciones, acciones y habilidades concretas para enfocar el trabajo de un agente 
+- Reconocer nuestras habilidades como potenciales skills a transmitir a un agente
+- Comprender la importancia de las skills como un contexto enfocado a la acción
+- Identificar cuándo es conveniente crear una skill para hacer más eficiente el trabajo de un agente de código
+- Comprender que no hay una estrategia única y que la configuración es un balance entre reglas, contexto, skills, especificaciones y la base de código existente.","- Diseñar skills como unidades pequeñas y composables
+- Especificación explícita (Spec-first)
+- Inputs y outputs estructurados
+- Minimizar variabilidad innecesaria
+- Contexto mínimo pero suficiente
+- Manejo explícito de errores
+- Las skills deben dejar trazabilidad
+- Separar “pensar” de “hacer”
+- ","- Spec → Plan → Execute
+- Generator + Validator: una skill genera y otra valida
+- Chain of Skills: Varias skills pequeñas encadenadas
+- Tool Wrapper: Skill que encapsula herramientas
+- Guardrails First: Antes de ejecutar, validar.
+- Retry with constraints
+- Self-critique / reflection: El agente evalúa su propio output antes de devolverlo","- God Skill (skill monolítica)
+- Inputs implícitos: Depender de contexto no declarado
+- Outputs ambiguos: Respuestas abiertas cuando se necesita estructura
+- Overprompting: Incluir demasiadas instrucciones irrelevantes
+- Under-specification
+- Mezclar responsabilidades: Una misma skill que decide, implementa, valida y despliega.
+- No manejar edge cases
+- No validar inputs o outputs
+- Side effects no controlados
+- Dependencia excesiva del lenguaje natural
+- ",
+HITO 04,En Syllabus,"
+> Proyecto 1: 
+  Usar el proyecto del banco de memoria para:
+  1) Instalar en el Copilot una Skill de skills.sh para auditoría de accesibilidad y buenas prácticas.
+  2) Realizar ambas auditorías y registrar las propuestas de mejora en accesibilidad y buenas prácticas en dos documentos: seo-audit-result.md y accessibility-audit-result.md.
+  3) Generar un plan de implementación de las mejoras a incorporar en un Markdown.
+
+
+  🎨 Hito 4 — Ingeniería de UI impulsada por IA
+  - Abrir el proyecto generado y comenzar a establecer reglas para ir modificando la versión actual con todo lo aprendido.
+  - El proyecto debe resultar en un website creado con Tailwind CSS (HTML + CSS + Typescript) que pueda incluir elementos componentes web comunes como dropdowns, modales... y tener todas las validaciones necesarias con Typescript (correo bien validado, por ejemplo)
+
+  + Instrucciones al profesor
+    - Elaborar prompts de especificaciones y generación de componentes.
+    - Reconstruir la UI de la empresa mediante IA.",,,,,
+,,### CODING FUNDAMENTALS WITH PYTHON ###,,,,,
+9,25,Skill: Entender los fundamentos de Python y su sintaxis aplicar el concepto de algoritmos mediante código,,,,,
+,En Syllabus,"> Teoría:
+  - (Mención a Skills 6 y 7)
+
+  + Introducción al backend
+    - ¿Qué es el backend?
+      -- ¿Cuál es el rol del backend?
+      -- Lenguajes de backend más utilizados
+
+  + Intro to Python
+    - ¿Qué es Python?
+      -- ¿Cómo funciona Python?
+    - ¿Cómo se escribe código en Python?
+        -- ¿Qué es la sintaxis?
+        -- Reglas principales de la sintaxis de Python
+    - Variables
+
+  + Tipos de datos y operadores básicos de Python: 
+    - Tipos de Datos primitivos (int, float, bool, str, None)
+    - Operadores en Python (aritméticos, asignación, comparación, lógicos) 
+  
+  + Control de flujos en Python
+    - Flujos simples: Condicionales (if, elif, else)
+    - Flujos repetitivos: Bucles
+      - for..in (con range, con listas de elementos clave-valor) y for en línea (List Comprehensions)
+      - interruptores de flujo: break (para cortar la ejecución) y continue (para saltar esta iteración)
+      - Bucles anidados
+    - Ciclos: for..in (con range, con listas de elementos clave-valor) y for en línea (List Comprehensions)
+    - Identificar oportunidades de mejora en ciclos anidados: Big O Notation (contenido referencial no muy profundo)","- Aprender una nueva sintaxis asociando con un lenguaje ya aprendido.
+
+- Convertir soluciones de pseudocódigo a la sintaxis del lenguaje.
+ 
+- Aprender a investigar siempre que sea necesario. (memorizar no es una habilidad a desarrollar, se dará con la práctica) 
+
+- Identificar cuándo se hace uso de una palabra reservada. 
+
+- Aprender a identificar tipos de datos por su valor (su composicion). 
+
+- Comprender las diferencias de los tipos de datos
+
+- Identificar los casos de uso de cada tipo de dato
+
+","
+
+Escribe el codigo, no lo copies
+
+
+
+","- snake_case para variables y funciones
+
+- para definir clases: PascalCase 
+
+- Logs Etiquetados: print(""El valor de x es:"", x)
+
+- Nombres Semánticos
+
+- Identacion y "" : "" como indicador de bloques","- Buscar la sintaxis perfecta. 
+
+- Usar código mágico (copiar y pegar, no tener concimiento de lo que hace código)
+
+- Inconsistencia en la sintaxis (no mantener decisiones anteriores en estructura, patrones, etc)
+
+- Crear bucles infinitos
+
+- Condiciones kilométricas 
+
+- Exceso de anidación de condicionales: if dentro de if dentro de if... formando una flecha a la derecha. ",- No IA
+,En Syllabus,Ejercicios de JS que deban traducirse a Python.,,,,,- No IA
+9,26,Skill: Implementar colecciones y diccionarios en Python siguiendo la lógica de la solución a implementar,,,,,
+,En Syllabus,"> Teoría:
+  - (Hacer mención a Skill 8.1)
+
+  + Funciones Python
+    - ¿Qué es un bloque de código?
+    - Dar nombre a un bloque de código (creando una función)
+    - Párametros (cómo pasar valores a una función)  
+      - Incluye breve referencia a *args y **kwargs
+    - ¿Cómo devuelve valores una función? (funcionamiento del return y especificación del tipo de dato devuelto) 
+    - Métodos vs funciones vs procedimientos (funciones que devuelven valor y funciones que no)
+    - Métodos y funciones para trabajar con datos primitivos (string, number, etc)  
+    - funciones anónimas (lambdas)
+
+  + Listas y diccionarios en Python
+    - Listas (Array)
+      -- Iteradores más comunes: Map y Filter
+    - Tuplas (Lista ordenada inmutable)
+    - Conjuntos (Set - Listas no ordenadas sin duplicados)
+    - Diccionarios
+      -- Notación corchete (nombre['atributo'])
+      -- Métodos útiles: get(), update(), defaultdict()
+
+","""- Desarrollar un flujo si hay un objetivo solo, que son: 
+ -- Mutar un valor de un proceso global
+ -- obtener un valor y retornarlo
+- Reconocer los valores que necesita mi funcion para lograr su objetivo
+- Reconocer el tipo de funcion que requiero
+- Mantener el principio de responsabilidad única
+- Comprender diferencia entre listas, duplas, conjuntos
+- Definir y manipular una lista, dupla o conjunto
+- Buscar elementos en una lista, dupla o conjunto
+- Ordenar listas
+- Identificar cuando existe un """"paso por referencia"""" y cuando es un """"paso por valor""""
+- Construir y manipular diccionarios","-  Aprender a gestionar listas con bucles y con métodos del lenguaje.
+
+- No memorizar.  Investiga cada que necesites usar un método
+
+- Elegir un nombre adecuado en las funciones, el nombre debe ser descriptivo a lo quehace la misma ","
+
+- Homogeneidad en arrays/colección
+
+- Iterar copia o Inversa","- El Cajón de Sastre: listas con varios tipos de datos.
+
+- Mutación durante iteración 
+
+- Acceso:        Usar lista[100] sin verificar el tamaño, devuelve error.
+
+- Abuso de funciones lambda",- No IA
+,En Syllabus,> Proyecto: To-do List CLI (Reutilizado),,,,,
+,,### BACKEND DEVELOPMENT WITH CODING AGENTS ###,,,,,
+9,27,Skill: Diseñar la arquitectura del backend según la naturaleza de la solución y las necesidades del negocio,,,,,
+,En Syllabus,"> Teoría:
+  + Arquitecturas más comunes en el backend
+    - MVC
+    - Arquitectura en capas (introducción a la arquitectura hexagonal, muy light)
+    - Serverless
+
+  + Separación por dominios o responsabilidades en Python: 
+    - PEP8
+    - Imports : absoluta y relativa (__init__.py)
+    - Importación con alias
+    - ¿Cómo evitar importaciones circulares?
+
+  + Introduction to FastAPI
+    - ¿Qué es un framework?
+    - ¿Por qué es importante un framework para construir una API?
+    - ¿Qué es FastAPI?
+    - Elementos principales de FastAPI (estructura base, endpoints, ApiRouter, modelos)
+    - Instalando FastAPI
+      -- ¿Qué es un virtual env?
+      -- ¿Qué es Pipenv?
+      -- pipenv vs. pip + venv","- Pensar en la arquitectura desde el inicio, sin sobrediseño.
+- Reconocer la importancia de generar estructura en el backend
+- Identificar las ventajas de una estructura modularizada en cuanto a organización, mantenibilidad y eficiencia de código
+- Reconocer los elementos principales de la estructura de un proyecto usando un framework como FastAPI",,,,
+,Proyecto pendiente aprobación,Proyecto: Hacer una propuesta de organización de la arquitectura de backend para el proyecto transversal.,,,,,
+10,28,Skill: Answering front end user-triggered requests using APIs,,,,,
+,En Syllabus,"> Teoría: 
+  (Referencia a la Skill 14)
+
+  + Building a Python API to serve the frontend
+    - ¿Qué es una API? (refrescamiento de conocimientos)
+    - ¿Qué es un endpoint? ¿Para qué sirven?
+    - Construyendo los endpoints que necesita el frontend
+      -- ¿Qué significa CRUD?
+      -- Trabajando con llamadas GET, POST, PATCH/PUT, DELETE (sin almacenamiento)
+    - ¿Por qué es fundamental realizar validaciones en todos los endpoints?
+    - Serializando la respuesta como la quiere el frontend 
+  
+  + Documentación de APIs
+    - ¿En qué consiste documentar una API?
+    - ¿Por qué es importante documentar una API?
+      -- Relevancia para LLMs y agentes
+    - Buenas prácticas en documentación de APIs
+      -- Para humanos
+      -- Para agentes
+    - Documentación en FastAPI","- Las APIs se prueban con tests y clientes HTTP (Postman, Insomnia...) no con frontend
+- Asociar métodos HTTP con acciones concretas de un endpoint
+- Comprender que el backend no persiste datos.
+- Entender las necesidades del frontend para dar respuestas acordes
+- Validar la documentación generada por FastAPI
+- la documentación se genera sola si usas bien los tipos Pydantic.
+- FastAPI usa Pydantic para validar que los datos sean correctos antes de que entren a tu función.
+- Recursos (Sustantivos): POST /users, GET /users. La URL define qué es, el método define qué haces.
+",- Acompañar un código HTTP con un mensaje siempre que se considere necesario y útil.,"- Endpoints con métodos HTTP específicos (no generalistas)
+- Serializar las respuestas de los endpoints
+- Principio de única responsabilidad (single-responsibility, S en SOLID)
+- Siempre responder con el código HTTP correcto
+- Un endpoint, una responsabilidad
+
+- Apalancamiento: Usar FastAPI para lo que es bueno: Validación de datos, Enrutamiento y Generación de documentación automática.
+- Python Moderno (Type Hints)
+- Recursos (Sustantivos): POST /users, GET /users.
+- Consistencia de recursos: mantener el sustantivo de recurso, una vez definido para todos sus metodos http.
+- Mapping / Alias: Configurar Pydantic para que acepte/envíe camelCase (JSON) pero tu código Python use snake_case. O acordar un estándar único.","
+
+
+- Reinventar la Rueda: Intentar parsear el JSON del body manualmente o escribir un servidor de sockets desde cero ""para aprender"".",- Sin BD
+,En Syllabus,"> Proyecto: Voice Agent
+ - Se proveerá de una interfaz de voz al estudiante que genere la transcripción (via navegador).
+ - La interfaz hace una llamada a la API de Groq y envía la transcripción con la instrucción par obtener una etiqueta de lo que quiere el usuario.
+ ¿Qué debe hacer el estudiante?
+ - Conectar su API Key de Groq.
+ - Construir una API con X endpoints que ejecutarán diversas acciones.
+   -- Un endpoint (instruction) está encargado de obtener la transcripción del mensaje y determinar (mediante consulta a modelos en Groq) la instrucción deseada y devolverla
+ - Conectar la API con el frontend de audio
+ - Emplear el resultado para definir qué endpoint debe ser llamado
+ - Obtener el resultado y mostrarlo en la interfaz
+",,,,,
+10,29,Skill: Procesar datos almacenados en archivos de tipo CSV mediante scripts de Python,,,,,
+,En Syllabus,"> Teoría:
+
+  + Trabajar con ficheros en Python
+    - ¿Qué es un archivo? Datos persistentes en disco.
+      -- Codificación de archivos (encoding, utf-8 por defecto)
+      -- Rutas (path) absolutas y relativas
+    - Abrir y leer archivos
+    - Crear y escribir en archivos
+    - ¿Qué es un archivo CSV?
+      -- Crear una lista de diccionarios a raíz de un CSV
+      -- Volcar una lista de diccionarios en un CSV","- Saber alimentar un listado de datos estructurados desde un archivo CSV
+- Saber volcar un listado de datos estructurados a un archivo CSV",,"- with open(...): siempre
+- encoding=""utf-8"" explícito
+- Validar exists() antes de leer si aplica
+- Procesar en streaming para grandes","- open() sin with (archivos “colgados”)
+- Usar w sin querer (pierdes datos)
+- Meter texto libre sin \n (salida pegada)
+- readlines() en archivos grandes",
+,En Syllabus,"> Proyecto: Incident Report File Processor
+",,,,,
+10,30,"Skill: Creating basic Agent Loops in Python, integrating LLMs with APIs",,,,,
+,En Syllabus,"> Teoría:
+
++ Introducción a agentes
+  - Qué es un agente
+    -- LLMs vs Agentes
+  - ¿cómo funciona un agente?
+    -- Pensamos en: input → LLM → respuesta
+    -- Pero el agente hace: input → loop → decisión → acción → nueva información → loop
+  - Componentes básicos de un agente (breve referencia en pseudo código): 
+    -- Objetivo
+    -- Modelo (LLM)
+    -- Memoria / contexto
+    -- Tools
+    -- Agent Loop
+
+  
++ Creación de un agente de IA básico en Python
+  - Qué es un Agent Loop?
+    -- Ciclo básico: Observe, Think / Reason, Act, Update, Repeat
+  - ¿Qué son las Tools? 
+    -- Cómo el agente decide usar una Tool
+  - Estructura básica de una tool
+    -- Instrucciones al agente (Observe, Decide, Act...)
+    -- Lógica del método
+  - Instrucciones para el agente (Agent Prompting)
+    -- Observe
+    -- Decide
+    -- Act
+  - Buenas prácticas
+  - Errores comunes","- Pensar en ciclos, no en respuestas únicas
+- El agente observa, decide, actúa, vuelve a observar
+- LLM es razonamiento, Código es ejecución, Tool es acción, Loop es control
+- Un agente siempre debe tener
+- ¿Cuál es el objetivo del agente?
+- ¿Qué tools necesita?
+- ¿Qué información debe observar?
+- ¿Cuándo termina el proceso?
+- ¿Qué errores pueden ocurrir?","- Mantener tools simples y específicas
+- Descripciones claras de las tools
+- Validar siempre los inputs
+- Limitar el número de iteraciones del loop
+- Registrar decisiones del agente (logging)
+- Diseñar tools deterministas
+- 2-4 tools","- Observe → Decide → Act
+- Tool selection (El agente elige entre varias herramientas)
+- Result injection (Después de ejecutar una tool, el resultado vuelve al contexto)
+","- Poner demasiada lógica dentro de la tool. 
+- Tools ambiguas
+- Demasiadas tools
+- Prompt demasiado complejo
+- No definir condición de finalización",
+,En Syllabus,"Proyecto: Crear un Agent Loop (con un .py que llame a la API mediante tools). Guardar la conversación en un CSV a medida que se genera (actor, message, tool_call, timestamp)
+",,,,,
+11,31,Skill: Implementar mecanismos de almacenamiento con bases de datos ligeras,,,,,
+,En Syllabus,"> Teoría: 
+  + Almacenando información (en cualquier lugar)
+    - ¿Qué es una base de datos? Como concepto general
+    - ¿Por qué es necesario el almacenamiento de datos?
+    - Cómo guardar datos de forma simple con TinyDB y el método .save()  
+      -- Usando TinyDB como base de datos de rápida implementación (No queremos dar SQL todavía, pero si poder persistir datos en una BD)
+      -- insert, search, delete, update
+    - Cargando datos iniciales en mi aplicación
+      -- Cómo crear un seeder bastante simple
+      -- Ejecutar seeders con pipenv run ","When teaching TinyDB, pair it with Pydantic as a lightweight schema/DTO layer to validate, serialize, and document data shapes, while TinyDB handles persistence of plain dictionaries.
+
+- Generar datos iniciales ""reales"" en la base datos para realizar pruebas en la aplicación",,"- Uso del .save()
+- Aplicar persistencia en aplicaciones","- Almacenar información sin orden
+- Almacenar información sin validar o verificar
+- Hacer múltiples consultas del mismo recurso porque lo necesito de nuevo.","- No queremos dar SQL todavia, pero si poder persistir datos en una BD"
+,Approved,"> Proyecto: Implementar un directorio de proveedores sencillo con TinyDB como base de datos (Directorio de Proveedores)
+ ",,,,,
+,,### WEB APPLICATION AUTHENTICATION ###,,,,,
+11,32,Skill 27: Implementar mecanismos de autenticación y restricción de rutas en FastAPI,,,,,
+,Approved,"> Teoría:
+  + Autenticación
+    - ¿Qué es la autenticación y por qué es importante?
+      -- Resaltar la importancia de encriptar una contraseña
+    - Autenticación vs. Autorización
+    - Tipos de autenticación más conocidas
+      -- Basic Auth: El abuelo (Usuario + Password en base64).
+      -- Token-Based (JWT): El estándar actual. Estructura (Header, Payload, Signature).
+      -- OAuth (Mención): ""Entrar con Google/GitHub"" (Delegación de identidad).
+      -- Passwordless: Conocidos como Magic Links o Token Url
+    - ¿Qué es la autenticación multifactor (MFA): Una breve referencia informativa
+   
+  + Seguridad de contraseñas en backend: Protegiendo las cuentas de nuestros usuarios
+    - Cuáles son los requisitos mínimos actuales para que una contraseña sea segura (12 caracteres: letras, números y símbolos)
+      -- ¿Por qué es peligroso guardar las contraseñas en texto plano?
+    - ¿Qué es el cifrado de contraseñas?
+      -- Hash y Salting (Nunca guardar texto plano)
+      -- Algoritmos de cifrado más seguros actualmente
+      -- Algoritmos de cifrado desaconsejados por inseguros
+    - Cómo cifrar una contraseña en Python
+   
+  + Autenticando con JWT
+    - ¿Cómo funciona la autenticación por JWT?
+    - ¿Cómo está estructurado el token de JWT? (Header, Payload, Firma)
+    - Flujo de los datos en una autenticación por JWT
+      -- Solicitudes y respuestas
+      -- Alternativas de almacenamiento en frontend (LocalStorage, SessionStorage, Cookies seguras - HttpOnly)
+    - Revocación: 
+      -- Limpieza de tokens: Cierre o reinicio de la sesión de forma manual
+      -- Expiración: Tiempo máximo de validez del token
+    - Prácticas seguras:
+      -- No introducir datos sensibles en el payload del token
+      -- Mantener la SECRET_KEY en ENV VARS, no en el código ni en el repositorio
+    - Cómo implementar un flujo de autenticación con JWT + FastAPI + Contraseñas Cifradas + TinyDB
+","- Saber diferenciar entre autenticación y autorización
+- Conocer los principales tipos de autenticación
+- Concientizar sobre la importancia de una autenticación segura
+- Implementar una autenticación con JWT
+- Concientizar sobre la importancia de almacenar las contraseñas cifradas","- Almacenamiento en el Cliente
+- Establecer una expiración (Exp)
+- Claves Secretas en ENV VARS: Mantén la SECRET_KEY segura y no la expongas en el frontend.
+- Validación en el Servidor
+","- JWT
+- Contraseñas cifradas
+- Rutas protegidas","- Introducir datos sensibles en Payload: contraseñas, tokens de sesión, o cualquier dato que no deba ser público. ",
+,Approved,"Proyecto: autenticación de la API del monorepo (Securing the API: Authentication and Route Restriction in FastAPI)
+
+",,,,,
+11,33,Skill: Creating authentication flows,,,,,
+,Approved,"> Teoría:
+   + Sesiones en el Frontend
+     - ¿Qué es una sesión? ¿Para qué sirve?
+     - Mecanismos vs. Almacenamiento: Diferencia entre el protocolo (CÓMO me identifico) y la persistencia (DÓNDE guardo la credencial).
+     - Stateful o centralizada (Session IDs) vs. Stateless o descentralizada (JWT)
+     - Gestión de Tokens de sesión (El ""Qué"")
+       -- Anatomía del Header: ""Authorization: Bearer <token>"".
+       -- Formas de almacenamiento: LocalStorage. 
+   
+   + Implementando el ciclo de vida de un usuario en sesión: La autenticación no es una pantalla, es un sistema de estados.
+     - Protected Routes: ¿Cómo evitar que un usuario vea /dashboard si no tiene token?
+     - Creando sesiones (como sucede en el login)
+     - Persistencia de Sesión: Manejo de LocalStorage/SessionStorage vs. Cookies (HttpOnly).
+     - Terminando la sesión (como en un logout): Limpieza de estado y redirección.
+     - ¿Qué hacer cuando el token expira?
+       -- Eliminar token
+       -- Redirigin a login
+","- Distinguir entre ""el mecanismo"" (ej: JWT) y el almacenamiento (LocalStorage/Cookies).
+
+- Identificar el flujo de la autenticación que deseas manejar o cual se adapta mejor al requerimiento (forma de autenticar la cuenta del usuario o recuperar contraseña, etc.)
+
+
+","- Al dar feedback al usuario, evitar ""dar información de más"" por ejemplo: usuario no registrado o contraseña invalida, en vez de usuario o contraseña invalida. ","- Verificación Real: Intentar usar el token en una llamada a la API. Si devuelve 401, borrarlo y mandar al usuario al Login.
+
+- Estándar Bearer: Respetar el prefijo: Authorization: Bearer <token>. (""Bearer"" significa ""Portador"").
+
+- ""Flujo Primero"": Definir el diagrama de estados: Unauth -> Login -> Auth -> Logout -> Expired.
+
+- Protección de Rutas (Guards): Crear un componente <PrivateRoute> que verifique el token antes de renderizar la página, y redirija si no es válido.
+
+- Hydration (Hidratación): Al iniciar la app (useEffect inicial), buscar si existe un token guardado y validarlo para restaurar la sesión automáticamente.
+
+- Solo Tokens: En el storage del navegador solo se guarda el Token. Los datos sensibles se piden al servidor usando ese token.
+
+- Token-Based: Usar Basic Auth solo una vez para obtener el Token, y luego usar el Token (Bearer) para todo lo demás.","- Fe Ciega: Asumir que si hay algo guardado en LocalStorage, el usuario está logueado. (Podría ser un token viejo o texto basura).
+
+- Decode != Verify: Creer que decodificar un JWT en el frontend (jwt-decode) garantiza que es válido.
+
+- ""Pantalla Primero"": Diseñar el Login visualmente sin saber dónde guardarás el token o cómo protegerás las rutas.
+
+- Seguridad por Ocultación (UI): Solo ocultar el botón ""Admin"" con CSS (display: none). Si el usuario conoce la URL /admin, entra igual.
+
+- Datos Sensibles: Guardar la contraseña o datos de tarjeta de crédito en el LocalStorage. (Es accesible por cualquier script malicioso - XSS).
+
+- Uso en Producción: Enviar usuario y contraseña en cada petición (Basic Auth) sin HTTPS.
+
+- No enviar datos sensibles en el payload del token ",
+,Approved,Proyecto: Flujo de autenticación en eI frontend del monorepo (Connecting the Lock: Authentication Flows in the Frontend),,,,,
+,,"### ERROR HANDLING, DEBUGGING AND TESTING ###",,,,,
+12,34,Skill: Comprender la naturaleza de los errores de ejecución en un código y cómo gestionarlos,,,,,
+,Approved,"> Teoría:
+    
+  + Error handling: La aplicación no debe explotar
+    - Try/catch/finally
+    - Prepararse para el peor escenario posible
+      -- Defaults
+      -- Renderizado condicional
+      -- Optional chainning
+      -- Fallbacks
+    - Buenas prácticas
+      -- Ningún error debe romper la aplicación
+      -- Comunicar errores al usuario de forma adecuada (no entregar error técnico, explicar qué puede hacer)
+
+  + Debugging with Python
+    - ","- Reconocer los tipos de casos de uso más comunes que conllevan errores
+
+- Saber gestionar adecuadamente los errores de código
+
+- Comunicar el error o estado de la aplicación en términos adecuados según tipo el usuario. ",,"- UI de tres estados: Pending: Spinner/Skeleton; Fulfilled: Datos; Rejected: Mensaje de error.
+
+- Scope Específico: Usar try/catch específicamente donde ocurren operaciones peligrosas (llamadas a API, parseo de JSON, async/await).
+
+Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner de carga desaparezca, tanto si tuvo éxito como si falló.
+
+- Traducción Humana: Mostrar: ""Lo sentimos, no pudimos cargar tus datos. Por favor revisa tu conexión e intenta de nuevo.""
+
+- Call to Action (CTA): Ofrecer una salida: Botón ""Reintentar"", ""Volver al inicio"" o ""Contactar soporte"".","- Wrapping Gigante: Envolver toda la aplicación o funciones enormes en un solo try/catch.
+
+- Mostrar al usuario: Error 500: Unexpected token < in JSON at position 0.
+
+- Callejón sin salida: Mostrar un mensaje de error que solo dice ""Error"".
+
+- Exponer datos sensibles debido a un proceso de depuración",
+,Proyecto pendiente aprobación,"> Proyecto 1: Generar un gestor de incidentes centralizado para la empresa del proyecto transversal
+
+> Proyecto 2: Aplicar gestión de errores y excepciones a todo el código previamente generado en el monorepo",,,,,
+12,35,Skill: Desarrollo de aplicaciones robustas mediante la implementación de baterías de pruebas,,,,,
+,Approved,"> Teoría:
+  + Introducción al testing
+    - ¿Por qué probar un código?
+    - Tipos de pruebas más conocidas:
+      -- Pruebas unitarias (donde estará el foco del contenido)
+      -- Pruebas funcionales (Introducción referencial)
+      -- Pruebas de integración (Introducción referencial)
+      -- Pruebas de rendimiento (Introducción referencial)
+    - Introducción al TDD (Test-Driven-Development)
+
+  + Unit testing with FastAPI:
+    - Frameworks de testing más conocidos: unittest, pytest, doctest
+    - Pruebas unitarias en FastAPI
+         --- Prueba sobre la lógica del endpoint no sobre su serialización
+    - Planificación de pruebas unitarias
+
+  + Unit testing en Typescript:
+    - Frameworks de testing más conocidos: Jest, Mocha/Chai, Vitest
+    - Pruebas unitarias con Jest
+    - Planificación de pruebas unitarias
+","- Reconocer la importancia de las pruebas unitarias como verificación adicional para la consistencia y robustez de una aplicación
+- Comprender el valor de un desarrollo orientado a pruebas, más allá de aplicación en trabajos reales
+- Saber implementar  pruebas unitarias en backend
+- Entender cómo funcionan las pruebas unitarias",- Hacer pruebas de error (probar cómo reacciona cuando el resultado es erróneo),"- Test Driven Development
+- Identificar los casos límite y los casos más representativos
+","- Sobregeneración de pruebas
+- Probar solo el resultado esperado",
+,Proyecto pendiente aprobación,"> Proyecto: Al proyecto de autenticación en la API, agregarle las pruebas unitarias de sus endpoints
+ 1. Plantear el problema a la IA e identificar los casos de estudio, los casos límite y aspectos a tener en cuenta
+ 2. Generar las pruebas unitarias para los distintos endpoints según sus casos de uso y casos límite
+ 3. Verificar que todas las pruebas se ejecutan correctamente y que el código funciona adecuadamente.
+ + Actividad extra:
+    - Revisar todos los proyectos de backend anteriores y aplicar pruebas unitarias",,,,,
+,,### MANAGING RELATIONAL DATABASES WITH FASTAPI ###,,,,,
+12,36,Skill: Construir consultas SQL para la obtención de tablas en bases de datos relacionales,,,,,
+,Approved,"> Teoría:
+  + Bases de datos (solo informativo)
+    - ¿Qué es una base de datos?
+    - ¿Para qué sirven las bases de datos?
+    - Tipos de bases de datos más comunes
+      -- Relacionales (SQL: Postgres, MariaDB/MySQL, SQL Server)
+      -- Documentales (TinyDB, SQLite, MongoDB)
+      -- Clave-Valor (Redis)
+      -- Otros tipos de BB.DD.: Mención rápida a Grafos (para relaciones complejas) y Columnares (Cassandra)
+  
+  + Consultando bases de datos con SQL en PostgreSQL (Fundamentos de SQL)
+    - ¿Qué es SQL y para qué se usa?
+    - ¿Cómo funcionan las tablas relacionales? (Tablas, filas y columnas)
+    - Identificadores primarios (Primary key)
+      - Números autoincrementales
+    - Tipos de valores
+      -- numéricos
+      -- texto
+      -- booleanos
+      -- fechas y horas
+    - CRUD básico: SELECT, INSERT, UPDATE, DELETE
+      -- ¿Por qué pedir columnas específicas en lugar de usar * en el SELECT?
+      -- ¿Qué es un soft-delete? ¿Cuándo usar una columna para soft-delete en lugar de ejecutar un DELETE?
+    - Filtrado: WHERE
+      -- Operadores matemáticos (=, !=, <, >, <=, >=)
+      -- Operadores lógicos (AND, OR, NOT)
+      -- Operadores de rango (IN, BETWEEN)
+      -- Operadores de texto (LIKE, ILIKE)
+    - Ordenamiento y limitación: ORDER BY y LIMIT
+    - Agregación: 
+      -- GROUP BY
+      -- COUNT, SUM, AVG, MIN, MAX, DISTINCT
+      -- HAVING (al menos conceptual)
+    - NULL (como concepto)
+      -- ¿qué significa NULL en bases de datos?
+      -- por qué = no funciona con NULL
+      -- impacto en agregaciones
+      -- Operador vacío (IS NULL)
+
+
+  + Utilizando PostgreSQL en remoto con Supabase
+    - ¿Qué es Supabase? (Orientado a BD en remoto)
+    - ¿Cómo gestionar una BD en Supabase?
+    - ¿Cómo hacer consultas a una BD de Supabase desde mi backend?","- Comprender formalmente el concepto de base de datos
+- Conocer los tipos de bases de datos más populares y sus principales representantes
+- Saber estructurar una consulta SQL
+- Aprender a realizar los principales tipos de consultas SQL 
+- Saber representar en bases de datos las relaciones entre objetos como tablas relacionadas",- nombres de tablas en plural,"
+- Atomicidad: Una celda = Un valor. Si hay muchas tallas, o son muchas filas o es otra tabla relacionada.
+- Tipado Estricto: Entender que si la columna dice INTEGER, nadie puede escribir ""Hola"" ahí. La rigidez es una virtud, no un defecto.
+- Modo Seguro: Primero haz un SELECT * FROM usuarios WHERE id = 5. Si devuelve lo que esperas, cambia el SELECT * por DELETE.
+- Proyección Explícita: Pedir solo las columnas que se necesitan.",,- No IA para la generación de Consultas SQL
+,Proyecto pendiente aprobación,"> Proyecto en clases:
+  Se provee un SQL que poble una BD con un conjunto de datos para que se busquen filtren filas y se extraigan ciertos datos.
+  Luego, al estilo de CMD Challenge, deberán borrar una fila en específico, actualizar otra...",,,,,
+13,37,Skill: Gestionar datos en bases de datos relacionales mediante consultas SQL involucrando múltiples tablas,,,,,
+,Approved,"> Teoría:
+  + Gestionando tablas relacionadas con SQL
+    - ¿Qué es una relación en bases de datos?
+    - ¿Qué es un diagrama entidad/relación?
+      -- Representar elementos de la vida real y sus relaciones como tablas en un diagrama E/R
+    - Relaciones entre tablas
+      -- Identificadores foráneos (foreign keys)
+      -- Relaciones 1:1, 1:n, n:m
+    - ¿Qué es una tabla pivote?
+    - Cómo obtener construir un resultado con dos tablas relacionadas
+      -- INNER JOIN
+      -- LEFT/RIGHT JOIN
+      -- OUTER JOIN
+    - Qué es la normalización y por qué es aconsejable
+    - (Solo informativo) ¿Cómo funciona un borrado en cascada?
+","- Comprender cómo se relacionan las tablas de una base de datos a través de una Foreign Key
+- Entender la diferencia entre los tipos de JOIN y cuándo son útiles
+- Crear consultas SQL que relacionen tablas usando JOIN
+- Entender cómo funciona un borrado en cascada",- foreing key formato `nombre_tabla_id`,"- Normalización 
+- Foreign keys para relacionar dos tablas
+- Borrado en cascada para evitar datos huérfanos",- Usar columnas de tipo texto con múltiples valores en lugar de una tabla pivote,
+,Proyecto pendiente aprobación,"> Práctica: Ejercicios de modelados con diagram.4geeks.com
+> Proyecto en clases:
+  Se provee un SQL que poble una BD con diversas tablas relacionadas entre sí con un conjunto de datos para trabajar con ellas",,,,,
+13,38,Skill: Trabajar con datos estructurados de tipo objeto en Python,,,,,
+,Approved,"> Teoría:
+  + Programación Orientada a Objetos:
+    - ¿Qué es una clase?
+    - Clases vs Objetos
+    - Principios de la Programación Orientada a Objetos
+      -- Abstracción
+      -- Herencia
+      -- Polimorfismo
+      -- Encapsulación
+
+  + Representación de objetos en Python: 
+    - Clases (Base Class)
+      -- Sintaxis
+    - Atributo vs Valor
+    - Notación punto (nombre.atributo)
+    - Acceso a propiedades
+    - Métodos
+    - Manipulación de objetos
+","- Entender que con una sola Clase (Enemigo) puedo crear 100 Objetos distintos (orco1, orco2), cada uno con su propia vida y posición.
+
+- Comprender que la aplicación de esta teoría es principalmente para la creación de modelos para la base de datos y leer código existente",,"Estado + Comportamiento: Una clase debe tener datos (self.vida) y métodos que modifiquen esos datos (recibir_daño()).
+
+El Primer Parámetro: Explicar que self no es mágico, es solo una convención para el primer argumento. ""Cuando el objeto actúa, necesita saber sobre quién actuar"".
+
+Atributos de Instancia: Siempre definir los atributos dentro del constructor:
+
+Objetos dentro de Objetos: La clase Coche tiene un atributo self.ruedas, que es una lista de objetos Rueda.
+
+Lista de Objetos: Una sola lista usuarios = [] donde cada elemento es una instancia de la clase Usuario.","La Clase Estática: Enseñar clases que solo son contenedores de funciones (como una clase Matematicas con métodos sumar). Eso no es POO, es agrupación de funciones.
+
+Acceso Total: Modificar atributos desde fuera sin control: jugador.xp += 100. Si luego quieres poner un límite de nivel, tendrás que buscar en todo el código.
+
+Herencia Profunda (Deep Hierarchy): Animal -> Mamifero -> Canino -> Perro -> Caniche. Es imposible de mantener.
+
+Funciones Externas: Crear funciones fuera de la clase que manipulan al objeto.
+
+Declarar variables fuera del __init__.
+
+Datos Primitivos: coche.rueda1_presion, coche.rueda2_presion.
+
+Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se desincroniza.",
+,Proyecto pendiente aprobación,,,,,,
+13,39,Skill: Relacionar objetos de una aplicación con su representación en tablas en bases de datos mediante la utilización de ORMs,,,,,
+,Approved,"> Teoría:
+  + Object-Relational Mapping: El traductor universal
+    - ¿Qué es un ORM?
+      -- El ORM no exime el dconocimiento sobre SQL
+    - Definición de Modelos y Tipos de Datos
+      -- La correspondencia:
+         Clase (Python) -> Modelo (sqlmodel) = Tabla (SQL).
+         Instancia/Objeto = Fila/Registro.
+         Atributo = Columna.
+    - Migraciones
+    - Relaciones
+      -- 1:1
+      -- 1:n
+      -- n:m
+    - Sesiones y Transacciones (introducción debido a los métodos necesarios)
+      -- db.session
+      -- Commit vs Rollback (sólo para actualizar datos y ""manejo de errores"")
+    - ORM bien usado (evitar N+1, eager/lazy loading consciente, límites de transacciones)
+ 
+  + Gestionando la evolución de la base de datos con FastAPI
+    - ¿Qué son las migraciones de un BD?
+    - ¿Qué ventajas tienen?
+    - ¿Cómo se crean y usan las migraciones en FastAPI?
+    - ¿Cuándo usarlas y cuándo no usarlas?
+","- Entender que un ORM es un traductor entre clases Python y tablas SQL donde clase = tabla, instancia = fila, atributo = columna, pero que esto no reemplaza saber SQL: conocer lo que el ORM genera por debajo es lo que permite usarlo bien y depurar errores.
+- Comprender que las relaciones entre tablas (1:1, 1:N, N:M) se expresan con ForeignKey y relationship(), y que acceder a datos relacionados sin control genera el problema N+1, que degrada el rendimiento silenciosamente.
+- Entender que la sesión es la conversación activa con la base de datos (commit = guardar, rollback = deshacer), y que las migraciones son el historial controlado de cambios del esquema: imprescindibles en producción, opcionales en desarrollo temprano.","- Separar responsabilidades: modelos ORM en models.py, schemas Pydantic en schemas.py. Nunca exponer el modelo ORM directamente al cliente, siempre usar un schema de respuesta.
+- Gestionar sesiones correctamente: usar get_db() con yield como dependency injection, hacer commit() solo cuando todo fue exitoso y rollback() ante errores. En contextos async, usar AsyncSession con create_async_engine.
+- Cargar relaciones de forma consciente: usar selectinload o joinedload explícitamente para evitar el problema N+1. Nunca confiar en el lazy loading por defecto en FastAPI async.
+- Usar Alembic desde el inicio: nunca usar create_all() en producción, revisar siempre las migraciones autogeneradas y nunca modificar tablas manualmente en entornos compartidos.","- Modelo bien definido: declarar __tablename__, tipos con límites explícitos y relaciones con back_populates para que el ORM tenga información completa y predecible.
+- Sesión como dependency: usar get_db() con yield garantiza que la sesión siempre se abra y cierre correctamente, incluso si ocurre un error en el endpoint.
+- Carga explícita de relaciones: usar selectinload o joinedload en la query indica al ORM exactamente qué datos relacionados traer, evitando queries inesperadas.
+- Commit controlado: envolver las operaciones en try/except y hacer rollback() ante cualquier error garantiza que la base de datos nunca quede en un estado inconsistente.","- Lazy loading en async: acceder a una relación sin haberla cargado explícitamente explota en contextos async con el error MissingGreenlet, porque el ORM intenta abrir una sesión que ya está cerrada.
+- Exponer el modelo ORM directamente: devolver el objeto ORM sin un schema de respuesta puede filtrar campos sensibles y acopla la estructura interna de la base de datos a la API.
+- Problema N+1: iterar sobre una lista de objetos y acceder a sus relaciones dentro del loop genera una query adicional por cada elemento, degradando el rendimiento silenciosamente.
+- Sesión global: crear la sesión fuera de cualquier contexto de request genera condiciones de carrera cuando múltiples usuarios hacen peticiones simultáneas.
+- create_all() en producción: sobreescribe o ignora cambios de esquema existentes y no deja historial de cambios, haciendo imposible revertir o reproducir el estado de la base de datos.",
+,Proyecto pendiente aprobación,"> Proyecto 1: API con conexión a BD haciendo consultas SQL (consultas + Pydantic)
+  - Obtener 
+> Proyecto 2: Replicar la misma API y conectarla a una BD usando ORM (SQLModel)",,,,,
+,,### CONTAINER APPLICATIONS WITH DOCKER ###,,,,,
+14,40,Skill: Construir aplicaciones production-ready empleando contenedores,,,,,
+,Approved,"> Teoría:
+  + Contenedores (Sin hablar de Docker)
+    - ¿Qué es un contenedor?
+    - Para qué sirven los contenedores 
+      -- Solución al ""En mi máquina funciona""
+    - VM vs Contenedores
+    - Beneficios para proyectos de IA y backend moderno:
+      -- reproducibilidad
+      -- despliegue
+      -- aislamiento de dependencias
+      -- consistencia entre equipos
+  
+  + Docker
+    - ¿Qué es Docker? ¿Por qué es tan útil?
+    - Conceptos principales:
+      -- Contenedor
+      -- Imagen
+      -- Dockerfile
+      -- Docker Hub
+    - Comandos principales de Docker
+    - Cómo configurar un Dockerfile
+      -- FROM → imagen base
+      -- WORKDIR
+      -- COPY
+      -- RUN
+      -- CMD
+    - Buenas prácticas en Docker
+    
+  + Docker Composer
+    - Para qué se usa Docker Compose
+    - Conceptos clave:
+    - docker-compose.yml
+      -- servicios
+      -- puertos
+      -- networking entre contenedores
+      -- variables de entorno
+    - Cómo configurar un docker-compose.yml
+    - Arquitectura de un proyecto dockerizado con docker-compose.yml
+    - Buenas prácticas
+      -- .dockerignore
+      -- Imágenes ligeras
+      -- Variables de entorno en .env
+    - Errores comunes","- Software = Código + Dependencias + Entorno de ejecución
+- Aplicación = Imagen ejecutable
+- principios: Reproducibilidad, Portabilidad, Automatización, Infraestructura como código
+
+- Preguntas que el estudiante debe aprender a hacerse: ¿Puede ejecutarse este proyecto en otra máquina? ¿Qué depende de mi sistema local? ¿Qué pasará en producción?
+- Comprender que los proyectos modernos deben evitar: conflictos de librerías, contaminación del sistema, dependencias globales
+- Un proyecto debe ejecutarse igual para todos los miembros del equipo.
+
+- El entorno se define en código (Dockerfile).
+- layered systems (Docker funciona con capas de imágenes)
+- Pensamiento de entornos idénticos (todos los entornos deben ejecutar la misma imagen)
+
+- arquitectura de servicios
+- Docker Compose simula infraestructura distribuida en local
+- Los servicios no se comunican por localhost, sino por nombre de servicio
+- Las configuraciones no deben estar hardcodeadas.","- Definir entornos reproducibles desde el inicio del proyecto
+- Versionar dependencias
+- Evitar dependencias globales del sistema
+- Pensar siempre en entornos de ejecución replicables
+
+- Usar imágenes base oficiales
+- Mantener imágenes pequeñas
+- Orden correcto de instrucciones (caching de capas)
+- Evitar instalar herramientas innecesarias
+- Usar .dockerignore
+
+- Usar nombres claros de servicios
+- Un servicio por responsabilidad
+- Usar .env para configuración
+- Versionar docker-compose.yml
+- > Teoría:
+  + Contenedores (Sin hablar de Docker)
+    - ¿Qué es un contenedor?
+    - Para qué sirven los contenedores 
+      -- Solución al ""En mi máquina funciona""
+    - VM vs Contenedores
+    - Beneficios para proyectos de IA y backend moderno:
+      -- reproducibilidad
+      -- despliegue
+      -- aislamiento de dependencias
+      -- consistencia entre equipos
+  
+  + Docker
+    - ¿Qué es Docker? ¿Por qué es tan útil?
+    - Conceptos principales:
+      -- Contenedor
+      -- Imagen
+      -- Dockerfile
+      -- Docker Hub
+    - Comandos principales de Docker
+    - Cómo configurar un Dockerfile
+      -- FROM → imagen base
+      -- WORKDIR
+      -- COPY
+      -- RUN
+      -- CMD
+    - Buenas prácticas en Docker
+    
+  + Docker Composer
+    - Para qué se usa Docker Compose
+    - Conceptos clave:
+    - docker-compose.yml
+      -- servicios
+      -- puertos
+      -- networking entre contenedores
+      -- variables de entorno
+    - Cómo configurar un docker-compose.yml
+    - Arquitectura de un proyecto dockerizado con docker-compose.yml
+    - Buenas prácticas
+      -- .dockerignore
+      -- Imágenes ligeras
+      -- Variables de entorno en .env
+    - Errores comunes","- Encapsular el entorno junto con la aplicación.
+- El entorno no se modifica manualmente, se reconstruye.
+- El entorno se define en archivos declarativos versionados.
+
+- Single Responsibility Container
+- Build once, run anywhere
+- Immutable Infrastructure
+- Declarative Infrastructure
+
+- Multi-service architecture
+- Service discovery
+- Configuration externalization
+","- ""Funciona en mi máquina""
+- Entornos globales compartidos
+- Configuración manual
+- Contenedores ""masivos""
+- Usar latest en producción
+- Instalar dependencias manualmente dentro del contenedor
+- Incluir secretos en imágenes
+- Hardcodear configuraciones
+- Mezclar responsabilidades
+- Usar localhost entre contenedores
+- No manejar persistencia",
+,,,,,,,
+,,### ARCHITECHTURE OPTIMIZATION ###,,,,,
+14,41,Skill: Implementar estrategias para la optimización del desempeño de aplicaciones de frontend,,,,,
+,Approved,"Teoría:
+
+
+
+  + Midiendo el desempeño del frontend (Core Web Vitals)
+    - ¿Por qué es importante medir y optimizar el frontend?: No puedes mejorar lo que no mides. 
+    - Métricas principales: First Contentful Paint, Total Blocking Time, Largest Contentful Paint
+
+  + Estrategias de optimización del frontend:
+    - Carga de Código (Code Splitting & Lazy Loading)
+    - Rendimiento en Runtime (Memoization & SRP)
+    - Principio de responsabilidad única (SRP)
+    - Memoization
+      -- Hook useMemo
+      -- React.memo
+    - Patrones de Reutilización: Custom Hooks vs. HOCs vs. Render Props 
+    - Cache memory: La petición más rápida es la que no se hace.
+","- Identificar el tipo de problema utilizar la herramienta adecuada. 
+
+- Reconocer los tipos de casos de uso más comunes que conllevan errores
+
+- Identificar qué componentes son reutilizables
+- Identificar qué componentes necesita el usuario para interactuar (evitar carga innecesaria de componentes) 
+- Identificar qué lógica es reutilizable para convertir en un CustomHook
+- Aprender a seperar """"preocupaciones"""" para entender el alcance de SRP o evaluar qué tan pequeños seran los módulos (componentes)","- Limpiar el código de mensajes de debugging cuando se hace el pase a producción
+
+- Evitar que un error rompa el flujo de la aplicación","- UI de tres estados: Pending: Spinner/Skeleton; Fulfilled: Datos; Rejected: Mensaje de error.
+
+- Breakpoints (Debugger)
+
+- Prototipado en Browser: Modificar estilos directamente en la pestaña ""Elements"" para ver el resultado instantáneo y luego copiar al código.
+
+- Autopsia de Petición: Abrir Network, filtrar por ""Fetch/XHR"", hacer clic en la petición roja y revisar las pestañas Payload (lo que envié) y Response (lo que me respondieron).
+
+""- Network Throttling: Usar las DevTools para simular """"Fast 3G"""" y """"CPU Slowdown"""". Optimizar para el dispositivo promedio, no el gama alta.
+
+- Percepción de Usuario: Priorizar LCP (que se vea algo rápido) y TBT (que los botones funcionen). Si carga en 0.5s pero no clickea, el usuario se va.
+
+- Route-Based Splitting: Lo primero que se debe dividir son las Rutas/Páginas. Si estoy en /home, no necesito cargar el código de /dashboard. Después, modales pesados o componentes muy abajo en el scroll.
+
+- Componentes Grandes: Lazy load solo para cosas pesadas: Gráficos (Chart.js), Mapas, Editores de Texto, o Rutas completas.
+
+- Usar useMemo solo para cálculos costosos. 
+
+- Custom Hooks: Usar hooks para compartir lógica (useAuth, useTheme). Es más limpio, no añade anidación al DOM y sigue el flujo natural de funciones.
+
+- Stale-While-Revalidate: Usar librerías (TanStack Query, SWR) o caché de Next.js. Muestra los datos viejos instantáneamente mientras busca los nuevos en segundo plano.""","Console Driven Development: Llenar el código de console.log(""entré""), console.log(""aquí"") y recargar la página 20 veces.
+
+- CSS a ciegas: Cambiar el CSS en el editor de código, guardar, mirar, volver a cambiar. (Lento).En este caso, gasto de tokens inecesarios
+
+- ""No funciona"": Decir que la API falló sin abrir la pestaña Network.
+
+- ""En mi máquina funciona"": Probar el rendimiento en una MacBook Pro con Fibra Óptica. Todo se ve rápido ahí.
+
+- Lighthouse al 100%: Gastar 20 horas para subir de 95 a 100 puntos en métricas que el usuario no nota.
+
+- Micro-Splitting: Hacer lazy import de un botón o un ícono pequeño.
+
+- Memoización por Defecto: Envolver const valor = a + b en useMemo.
+
+- Wrapper Hell (HOCs): Envolver componentes en 5 capas: withRouter(withAuth(withTheme(Component))). Hace el árbol de React inleible en DevTools.
+
+- Fetch en cada Click: Volver a pedir la lista de usuarios cada vez que vuelves a la pestaña ""Usuarios"".
+
+",
+,Proyecto pendiente aprobación,">  Proyecto:
+",,,,,
+14,42,Skill: Preparar la arquitectura del backend para alto tráfico empleando Serializers,,,,,
+,Approved,"> Teoría:
+  + Serializers
+    - ¿Qué es un serializador?
+    - ¿Para qué se utiliza?
+      -- validación de inputs (prompt, parámetros)
+      -- outputs grandes (streaming, chunking)
+      -- formatos (JSON, multipart)
+    - Data Transfer Objects (DTOs) vs Modelos de BD: Por qué NUNCA se debe serializar el modelo de la base de datos directamente hacia el frontend.
+    - Seguridad en la Deserialización
+
+  + Optimización de Payload (Over-fetching): (Contenido corto)
+    - Solo devolver exactamente lo que la pantalla actual necesita. 
+    - Mención rápida a GraphQL vs REST optimizado.
+ 
+","- El serializer define el contrato de comunicación
+- El serializer se convierte en una capa de seguridad y validación
+- Los modelos internos no deben exponerse directamente
+- La serialización también implica: tamaño de datos, formato, velocidad de transferencia.
+- Especialmente relevante en: resultados de IA, embeddings, streaming de texto.
+- La API debe diseñarse pensando en la pantalla que consume los datos.
+- ¿El cliente realmente necesita todos estos datos?","- Validar siempre inputs
+- Usar DTOs para APIs
+- Devolver solo los campos necesarios
+- Limitar tamaño de payloads
+
+- Sanitizar datos antes de serializar
+- ","- DTOs
+- Input Validation Layer
+- Output Transformation
+- Streaming Serialization
+
+- Response Shaping
+- Pagination
+- Backend for Frontend (BFF)","- Serializar modelos de base de datos directamente
+- Validar en la lógica de negocio
+- Deserialización insegura
+- Payloads excesivos - over-fetching
+- Payloads insuficientes - Under-fetching
+- Exponer estructura interna",
+,,,,,,,
+15,43,Skill: Optimizar la arquitectura del backend para alto tráfico empleando Caching,,,,,
+,Approved,"> Teoría:
+  + Caching
+    - ¿Qué es el caching?
+    - ¿Qué es la memoria caché?
+    - ¿Cómo funciona el caching?
+    - ¿Cómo saber cuándo cachear?
+      -- Costo de cálculo vs costo de almacenamiento
+      -- Si algo se consulta muchas veces → probablemente deba cachearse
+      -- Datos frescos vs velocidad (consistencia vs performance)
+    - ¿Dónde ubicar la caché?
+      -- cache en memoria (app)
+      -- cache distribuida (Redis)
+      -- cache HTTP/CDN (si aplica)
+     - Invalidación:
+      -- Time-To-Live (TTL)
+      -- Invalidación basada en eventos
+    - Estrategias de Caching
+      -- Cache-Aside (Lazy Loading)
+      -- Write-Through
+      -- Write-Behind
+      -- TTL-Based Cache
+
+","- Costo de cálculo vs costo de almacenamiento
+- ¿Realmente necesito recalcular esto cada vez?
+- El caching introduce el concepto de optimización de latencia.
+- Pensamiento de sistemas multicapa
+- consistencia vs performance
+- la caché puede contener datos desactualizados
+- Cache de inferencias","- Cachear solo lo que se reutiliza
+- Usar TTL razonables
+- Diseñar claves de caché claras
+- Separar cache de datos críticos","Vary Headers / Caché por Sesión: Asegurar que los datos autenticados solo vivan en la caché en memoria local o con llaves únicas por usuario en Redis.
+","- Caché Global de Datos Privados: Guardar el ""Carrito de compras"" en la caché CDN (pública). Otro usuario podría ver el carrito del primero.
+
+- Data Leak (Fuga de datos): Hacer return user.to_json(), enviando accidentalmente el password_hash y el internal_id al frontend, aunque la UI no los muestre.
+
+- Cachear todo
+- No invalidar caché
+
+",
+HITO 05,Proyecto pendiente aprobación,"> Proyecto: Utilizar el proyecto del día anterior. Crear un flujo de autenticación en el frontend y conectarlo con el backend desarrollado en la clase anterior.
+
+🗄️ Hito 5 — Backend para Frontends con IA
+ APIs, fundamentos de BD, serialización, autenticación, funciones serverless. Crear el backend de la empresa.
+
+",,,,,
+,,### DATA PIPELINES ###,,,,,
+15,44,Skill: Manipular conjuntos de datos y prepararlos para ,,,,,
+,NO GENERAR LEARNPACK,"> Teoría: (Reutilizar Los  de Data Science)
+  + Introducción a Numpy
+
+  + Manejo de datasets con Pandas
+    - Observabilidad, Introspección, Acumulación, 
+    - Nuevas columnas
+    - Datos nulos
+    - Limpieza y reporte",,,,,"- No loops, solo acumuladores"
+,Proyecto pendiente aprobación,> Prácticas de numpy y pandas creadas en DS.,,,,,
+15,45,Skill: Building a data pipeline from the application data,,,,,
+,Approved,"> Teoria:
+  + ¿Cómo fluyen los datos en un sistema?
+    - Flujo de datos en un sistema
+      -- Fuente de datos: ¿De dónde puedo obtener datos en mi aplicación: usuario (comportamiento, interacción), integraciones (fuentes de datos externas, bulks), almacenamiento (mi base de datos)
+      -- Ingesta
+      -- Transformación
+      -- Entrenamiento / Inferencia
+      -- Almacenamiento / API
+    - Buenas prácticas en flujos de datos:
+    - Los modelos de IA no consumen datos directamente de la fuente
+    - Los datos necesitan procesamiento reproducible
+    - Los sistemas deben funcionar igual en cualquier máquina
+
+  + Introducción a Data Pipelines
+    - ¿Qué es un Data Pipeline?
+    - ¿Por qué se automatizan procesos de datos?
+    - ¿Qué es un ETL?
+    - Componentes principales de un Data Pipeline básico
+    - Buenas prácticas en Data Pipelines
+    - Principales errores al diseñar Data Pipelines
+    - Ejemplo de Data Pipeline básico en Python (FastAPI con numpy y pandas)
+
+","- Los datos en una aplicación no fluyen solos: pasan por etapas definidas 
+- Saltarse etapas del flujo de datos produce datos incorrectos o no usables por un modelo de AI.",- Los modelos de AI nunca consumen datos directamente de la fuente: siempre existe una etapa de transformación intermedia reproducible.,,,
+,,,,,,,
+,,### TELEMETRY ### ,,,,,
+16,46,"Skill: Cómo optimizar el almacenamiento para reporte, integridad, consulta o transporte",,,,,
+,Approved,"> Teoría: 
+  + ¿Cómo escoger el formato de transporte de los datos?
+    - ¿Por qué es importante escoger el formato de datos adecuado?
+    - ¿Cuándo usar JSON?
+    - ¿Cuándo usar CSV?
+    - ¿Cuándo usar YAML?
+
+  + ¿Cómo escoger la base de datos adecuada para datos?
+    - ¿Cuándo usar SQL y cuándo usar NoSQL?
+      -- Orientación a reportes
+      -- Cuando el requisito es la integridad
+      -- Cuando el principal tráfico es para consulta
+    - Tabla comparativa entre los modelos más grandes del mundo (Dynamo, MySQL, Postgres, MS Server, BigQuery, Redis, Mongo, etc)
+  
+  + Normalización en bases de datos  
+    - ¿Qué es la normalización?
+    - ¿Qué es la primera forma normal?
+    - ¿Qué es la tercera forma normal?
+    - 1ra forma normal vs 3ra forma normal
+    - Elegir la forma de los datos (1ra o 3ra forma normal)
+    - ¿Cuándo normalizar y cuándo no? 
+    - Ejemplos
+      -- Reportes desnormalizados para velocidad de consulta 
+      -- Usualmente no se usan BD relacionales para reportes porque están optimizadas para escritura
+      -- Las acciones del usuario y sus consecuencias son escrituras constantes, se almacenan en 3ra forma normal para evitar redundancia y garantizar integridad
+  ","- Comprender que el formato de transporte no es una elección estética, sino de eficiencia y contexto
+
+- Desarrollar el pensamiento arquitectónico de ""Trade-offs"" (costo-beneficio) al elegir bases de datos
+
+- Interiorizar la dualidad y fricción entre la Escritura y la Lectura de datos (OLTP vs OLAP)",,"- CSV para datos tabulares masivos: Usar CSV para reportes. Solo tiene una fila de cabecera y el resto son datos puros 1,A \n 2,B. Es ligero y fácil de procesar.
+
+- JSON como Rey de la Web: Usar JSON para comunicación Cliente-Servidor. Es nativo de JavaScript, ligero y soporta jerarquías.
+
+- YAML para Configuración: Usar YAML (docker-compose.yml). Permite comentarios #, es muy legible para humanos y limpio.
+
+- SQL para Integridad / NoSQL para Flexibilidad:
+
+• SQL: Facturación, inventario, usuarios (Relaciones estrictas).
+
+• NoSQL (Doc): Catálogos de productos con atributos dinámicos, logs, perfiles flexibles.
+
+- Persistencia según proósito:
+• Transacciones -> SQL.
+• Caché/Sesiones -> Redis (Clave-Valor).
+• Búsqueda de texto -> ElasticSearch.
+
+- Bases Columnares (BigQuery / Redshift): Usar bases de datos analíticas donde los datos se guardan por columnas, no por filas, optimizando agregaciones masivas a segundos.
+
+- Tercera Forma Normal (3NF): Las facturas solo guardan el cliente_id. La tabla Clientes tiene el nombre. Si el nombre cambia, se actualiza en un solo lugar. Garantiza integridad.
+
+- Desnormalización (Flattening): Crear una tabla separada (o usar una DB orientada a reportes) donde los datos ya estén pre-calculados y ""aplanados"" (ej. tabla Ventas_Diarias_Resumen). Optimizado para lectura rápida.","- JSON para exportaciones masivas: Enviar un reporte de 1 millón de filas en JSON. Cada fila repite el nombre de las columnas {""id"":1, ""nombre"":""A""}, {""id"":2, ""nombre"":""B""}, inflando el peso del archivo un 300%.
+
+- XML o YAML para respuestas de API Web: Usar YAML en el tráfico de red de una app React. Sus parsers son lentos y no es nativo del navegador.
+
+- JSON para archivos de configuración humana: Usar JSON para un archivo de CI/CD. No permite comentarios y una coma faltante rompe todo.
+
+- NoSQL por pereza (Hype Driven Development): Usar MongoDB para un sistema bancario ""porque no quiero escribir esquemas rígidos"". (Resultado: transferencias perdidas y dinero fantasma porque no hay transacciones ACID fuertes).
+
+- La Base de Datos ""Ombligo"": Usar una única base de datos Postgres para todo: guardar compras, manejar el chat en vivo, servir métricas y guardar caché. El servidor colapsará.
+
+- Big Data en SQL Tradicional: Intentar hacer un SELECT AVG(ventas) sobre 5 billones de filas en MySQL. Tomará horas.
+
+- Datos Redundantes (1NF): Guardar el ""Nombre del Cliente"" en cada registro de la tabla Facturas. Si el cliente cambia su nombre, tienes que actualizar 1,000 facturas (Riesgo de inconsistencia).
+
+- JOINs Masivos en Producción: Generar un ""Dashboard de Ventas Anuales"" haciendo 15 JOINs en vivo contra la base de datos de producción a las 12:00 PM. Los usuarios no podrán comprar porque la DB estará bloqueada pensando.",
+,,,,,,,
+16,47,Skill: Identificar oportunidades de recolección de datos en escenarios reales que permitan optimizar compañías,,,,,
+,Approved,"> Teoría: 
++ Arquitectura y diseño de mecanismos de telemetría
+  - Data and telemetry have become more and more important; we need to collect and process telemetry
+  - Throttling 
+  - Batch vs stream
+    -- Processing a stream (atomic activity)
+    -- Processing a batch (big chunks)
+  - Viabilidad de enviar los datos (serialización, mecanismo/formato de envío)
+  - Procesar en el dispositivo cliente (frontend, dispositivo, otro backend) vs procesar en el dispositivo servidor (backend)
+
++ Casos más representativos en telemetría: 
+  - Telemetría de producto y experiencia de usuario
+    -- Spotify registra cada skip, replay y búsqueda fallida para ajustar su algoritmo de recomendación.
+    -- Netflix mide el tiempo hasta el primer play, la tasa de abandono por episodio y los patrones de pausa para decidir qué contenido renovar.
+  - Infraestructura y DevOps (Observabilidad)
+    -- Google fue pionero con sus SRE y el concepto de error budget (si tu servicio tiene 99,9% de SLA, tienes exactamente 8,7 horas de caída tolerada al año).
+    -- OpenTelemetry como estándar emergente
+  - Ciberseguridad (SIEM y EDR)
+    -- Cloudflare procesa más de 50 millones de peticiones HTTP por segundo y usa esa telemetría para mitigar ataques DDoS en tiempo real
+  - IoT e industria (Mantenimiento predictivo)
+    -- Tesla recibe de cada vehículo datos de batería, temperatura, frenado y comportamiento del motor que alimentan actualizaciones OTA y predicen fallos
+  - Negocio y conversión (Business Analytics)
+    -- Amazon usa telemetría para la optimización de funnels: cada clic, scroll y tiempo en página tiene un peso en decisiones de pricing, layouts y recomendaciones. 
+    -- Stripe monitoriza patrones de transacción para detectar fraude en milisegundos. 
+    -- Airbnb para sus modelos de precios dinámicos por zona, temporada y demanda observada.
+  - Vehículos conectados y logística
+    -- Waymo, los famosos vehículos autónomos de San Francisco con tecnologías (LiDAR, cámaras, radar y GPS generan terabytes de telemetría por hora de conducción)
+    -- Uber combina GPS, datos de tráfico y comportamiento del conductor para optimizar rutas en tiempo real. 
+    -- DHL usa telemetría de flota para prever retrasos, optimizar la ""última milla"" y reducir emisiones.","- La telemetría no se genera por tener datos
+- La telemetría es la oportunidad para obtener datos de tus clientes
+- Cada dato en telemetría debe tener un propósito (con capto el clic de un estudiante solo porque puede ser un dato en el futuro)
+- Empezar por una hipótesis. 
+- AI es un commodity; los datos no. 
+- Una IA es tan buena como sus datos
+
+- Pensar cómo se van a enviar los datos para definir cómo se van a formatear: Si tengo que medir cada segundo es mucha información enviarlo de forma individual. Si acumulo muchos mensajes puede tardar mucho el envío.
+
+
+- Menos eventos, mejor definidos, ganan a muchos eventos ruidosos.","- cada evento responde a una hipótesis / métrica / decisión
+- JSON pequeño y predecible
+- Idempotencia: eventId único + dedupe server-side.
+- Correlación: sessionId + requestId/traceId para unir front/back/logs.
+- Sanitización: limpiar URLs, query params, headers; bloquear texto libre salvo allowlist.
+- Allowlist de propiedades por evento: evita fugas accidentales y mantiene calidad.
+- Si no puedes explicar para qué sirve un evento, no lo crees.
+- Si un dato puede ser sensible, asume que lo es hasta demostrar lo contrario.
+- Front: batch + throttle + consent. Back: validar + dedupe + enriquecer.","- Event Envelope: event + timestamp + user/session + context + properties + schemaVersion.
+- Taxonomía de eventos: verbos consistentes (*_viewed, *_clicked, *_submitted, *_failed).
+- Separación de PII: IDs opacos/hashes en telemetría; PII solo en sistemas de identidad/CRM.
+- Throttle/debounce para alta frecuencia (scroll, resize, keypress).
+- Batching adaptativo: lotes más grandes en buena red; más pequeños en mala red (opcional).
+- Lazy context: calcular contexto solo al enviar (evita coste por evento).","- “Trackear todo”: genera ruido, coste y riesgo; nadie lo mantiene.
+- Eventos genéricos (click, event1) sin contexto ni propiedades útiles.
+- Sin eventId: duplicados imposibles de detectar.
+- Secretos en telemetría",
+,Proyecto pendiente aprobación,"> Proyecto:
+Pensar en un caso real e identificar los datos
+-- Sanz Clima, empresa española de alcance internacional especializada en climatización, obtiene datos de funcionamiento de sus equipos de climatización y el ambiente del vehículo para analizar el funcionamiento y predecir la necesidad de revisión y mantenimiento.
+Identifica posibles valores que sería necesario incluir en la telemetría para hacer un análisis correcto..
+
+> Proyecto 2: 
+  - Identifica 3 KPIs que son principales en tu empresa asignada.",,,,,
+16,48,Skill: Collecting telemetry and context-related info from the user and your application,,,,,
+,Approved,"> Teoría:
++ Entendiendo la telemetría desde el frontend
+  - ¿Qué es la telemetría? ¿Por qué es importante y útil?
+  - ¿Qué datos almacenar? (categorías mínimas)
+    -- Identidad / sesión
+    -- Perfil de usuario (personalización): role/persona, plan, language, timezone, country, preferences (tema, notificaciones), accessibility.
+    -- Contexto de ejecución: appVersion, env, route, referrer, utm, featureFlags, tenant/academyId.
+    -- Uso del producto (telemetría): eventos de navegación, clicks clave, funnels, tiempos, errores, búsquedas internas.
+    -- Rendimiento: Web Vitals, API latency, CSR/SSR timings, re-renders (si aplica).
+    -- Calidad / soporte: errorId, stack (sanitizado), networkState, apiStatus.
+    -- Privacidad y consentimiento: consent.analytics, consent.marketing, consent.functional.
+  - ¿Para/Por qué almacenar esos datos? (objetivos claros)
+    -- Personalización: contenido/UX según role, idioma, preferencias.
+    -- Analítica de producto: entender rutas, drop-offs, features usadas, cohortes.
+    -- Observabilidad: detectar errores, degradación de performance, incidencias por versión.
+    -- Experimentos: A/B testing y feature flags (impacto y segmentación).
+    -- Soporte: reproducibilidad (session + contexto + breadcrumbs).
+  - “User profile” vs “usage data” (separación práctica)
+    -- User profile: se guarda como estado (persistente) y se actualiza cuando cambia (ej. PATCH /users/me).
+    -- Usage data: se envía como eventos (append-only) a telemetry/events.
+
++ Capturar telemetría en Next
+  - Router: page views (routeChangeComplete).
+  - Acciones clave: submit, enroll, search, checkout, “copied”, etc.
+  - Errores comunes:
+    -- Frontend: window.onerror, unhandledrejection, Error Boundaries.
+    -- API client: interceptores (fetch/axios) para latencia/códigos.
+    -- Performance: Web Vitals (reportWebVitals en Next) + tiempos de API.
+
++ Enviando telemetría desde el frontend de mi aplicación
+  - ¿Cómo se deben almacenar los datos? (formato y contrato)
+    -- Modelo por evento (recomendado): JSON consistente.
+    -- Campos base: event (string), timestamp (ISO), user (obj), session (obj), context (obj), properties (obj).
+    -- Propiedades tipadas y estables (evitar cambios frecuentes de nombres).
+    -- Información de identificación personal minimizada: email/teléfono no en telemetría; usar IDs hash/opaque.
+  - ¿Cómo transmitirlos al backend? (React/Next)
+    -- Endpoint único: POST /telemetry/events (Batch + debounce: enviar arrays (events: []) cada X segundos o al llegar a N eventos)
+    -- Auth: token/cookie; si anónimo, anonymousId persistido (localStorage/cookie).
+    -- Fiabilidad: navigator.sendBeacon en visibilitychange/pagehide para flush.
+    -- Retransmisión: cola local (memoria/localStorage) y reintentos con backoff.
+    -- Correlación: incluir requestId/traceId si tu backend lo devuelve en headers.
+  - Patrones de implementación mental (checklist rápido)
+    -- Pregunta → dato: “¿Qué decisión habilita este dato?”
+    -- Dato → fuente: “¿sale del usuario, del navegador o del estado de la app?”
+    -- Fuente → riesgo: “¿puede incluir PII/secretos?”
+    -- Riesgo → control: “allowlist/scrub/sampling/consent”
+    -- Control → contrato: “esquema estable + versión”
+    -- Contrato → transporte: “batch + retry + beacon + dedupe”
+
++ Mejores prácticas en telemetría (Guardrails)
+  - Consent-first: no enviar analítica si consent.analytics=false.
+  - Redacción/sanitización: no mandar inputs libres (comentarios, textos) sin scrub.
+  - Allowlist de propiedades: solo claves permitidas (evita fuga accidental).
+  - Sampling: performance/verbose logs con muestreo (p.ej. 10%).
+  - Ambientes: dev vs prod (no mezclar).
+
+","- Por qué es importante la telemetría
+- Planificar la implementación de la telemetría al inicio del desarrollo y no como idea de último momento
+- Intencionalidad de los datos
+- “lo mínimo útil”
+- Privacidad por defecto: evaluar sensibilidad de los datos antes de implementar
+- capturar lo necesario para entender “qué pasó” sin necesidad de ver el código o preguntar al usuario
+- calidad analítica: definir eventos que midan valor real (funnel, activación, retención).","- Nunca activar la telemetría de análisis sin el consentimiento explícito del usuario
+- Definir conjuntos de datos delimitados y evitar fuga de datos adicionales.","- Event envelope estándar: event + timestamp + user/session + context + properties + schemaVersion.
+- Taxonomía de eventos: convención clara (p.ej. screen_viewed, cta_clicked, form_submitted, api_failed).
+- Propiedades con allowlist: lista explícita de keys permitidas por evento (bloquea fugas).
+- Batch + flush: cola local, envío por lotes, sendBeacon en salida y reintentos con backoff.
+- Correlación: sessionId + requestId/traceId para unir frontend–backend–logs.
+- Consent gating: capa única que decide si se trackea y qué (analytics vs functional).
+- Sanitización sistemática: scrub de URLs, query params, headers, y bloqueo de texto libre salvo casos justificados.
+- Errores con fingerprints: agrupar por errorCode/fingerprint y adjuntar breadcrumbs limitados.
+- Sampling: performance y verbose events muestreados; críticos al 100%.
+- Schema versioning: cambios incompatibles → nueva versión o evento nuevo.","- “Loggear todo”
+- datos sensibles en eventos: emails, teléfonos, nombres, tokens, comentarios, payloads completos.
+- Eventos sin propósito: “click” genérico sin where/what/why → datos inútiles.
+- renombrar eventos/propiedades cada sprint
+- Mezclar perfil con telemetría
+- Contexto inconsistente: rutas sin normalizar, timestamps locales, timezone omitida.
+- Capturar en componentes a lo loco: tracking disperso, duplicado y difícil de mantener.
+- Texto libre sin control en lugar de cumplir un contrato
+- No respetar consentimiento sobre la trazabilidad",
+,,Aplicar telemetría al proyecto de ,,,,,
+17,49,Skill: Building a report from the telemetry or user data,,,,,
+,Approved,"> Teoria:
+  + De datos crudos a reportes: transformando lo que ya tienes
+    - Cómo transformar datos existentes para generar reportes
+      -- Cargar los datos crudos en un DataFrame de Pandas
+      -- Filtrar por criterio relevante (solo completados, solo última semana)
+      -- Convertir timestamps a datetime para agrupar por día/semana
+      -- Agrupar con groupby() por dimensión temporal
+      -- Aplicar la función de agregación (count, sum, mean)
+      -- Servir el resultado como JSON o almacenarlo para consulta
+    - Datos transaccionales vs datos analíticos
+      -- Datos almacenados para CRUD no sirven directamente para reportes
+      -- Una tabla de TODOs no responde ""¿cuántos TODOs completa el usuario por día?""
+    - Ejemplo paso a paso de un reporte semanal de TODOs completados por día
+
+  + Agregación, agrupamiento y métrica
+    - Una métrica es la pregunta que quieres responder
+      -- Tasa de completitud, promedio diario, total semanal
+      -- Siempre combina una agregación con una dimensión de agrupamiento
+      -- ""TODOs completados por día"" = count + groupby fecha
+    - El agrupamiento es cómo segmentas los datos
+      -- Por día, por usuario, por categoría, por estado
+      -- Sin agrupamiento solo tienes un número global; con agrupamiento tienes contexto
+      -- df['status'].count() = 45 (poco útil) vs df.groupby('date')['status'].count() (accionable)
+    - La agregación es la operación que reduce muchas filas a un valor
+      -- .count(), .sum(), .mean(), .min(), .max(), .agg()
+      -- .agg() permite múltiples agregaciones a la vez
+    - La fórmula mental es MÉTRICA = AGREGACIÓN(columna) agrupada por DIMENSIÓN
+      -- El ejemplo es df.groupby('date')['id'].count().mean() que da el promedio diario de TODOs completados
+    - Los mismos conceptos aparecen en SQL (GROUP BY, COUNT, SUM) y en herramientas de dashboards
+","
+- Comprender que los datos crudos nunca son la respuesta: una tabla de TODOs almacenada para CRUD responde ""¿qué hay guardado?"" pero no responde ""¿cuántos TODOs completa el usuario por día?"". Transformar es obligatorio.
+- Entender que la fórmula mental de cualquier métrica es siempre la misma: agregación sobre una columna, agrupada por una dimensión. Antes de escribir código, definir qué pregunta se quiere responder.
+- Comprender que un pipeline de datos es simplemente una secuencia de pasos reproducible: el mismo código debe producir el mismo resultado en cualquier máquina, con cualquier subconjunto de datos válido.
+- Entender que agrupar antes de agregar es el orden correcto de pensamiento: primero decido cómo segmento (por día, por usuario) y luego qué calculo sobre cada grupo, no al revés.","- Definir la métrica antes de escribir código: saber exactamente qué pregunta responde el reporte evita transformaciones innecesarias.
+- Separar datos transaccionales (CRUD) de datos analíticos (reportes): no diseñar la base de datos pensando en ambos usos a la vez.
+- Usar groupby() + función de agregación como unidad mínima del pipeline, combinable y reutilizable en cualquier contexto.
+- Convertir siempre los timestamps a datetime antes de agrupar por dimensión temporal para evitar agrupamientos incorrectos.","- Fórmula estándar de reporte: cargar → filtrar → convertir tipos → agrupar → agregar → servir o persistir. Siempre en ese orden.
+- Métrica como función reutilizable: encapsular cada cálculo (todos_completados_por_dia()) en una función independiente, testeable y llamable desde el pipeline o desde un endpoint.
+- Separación transaccional/analítica: los datos se almacenan optimizados para escritura (CRUD) y se transforman en una capa separada optimizada para lectura (reportes).","- Calcular el reporte en el endpoint: recalcular agregaciones en cada request es costoso e innecesario cuando los datos no cambian en segundos.
+- Agrupar sin limpiar tipos primero: hacer groupby('date') sobre una columna que mezcla strings y timestamps produce grupos incorrectos sin lanzar ningún error visible.
+- Diseñar una sola tabla para CRUD y reportes: los datos almacenados para operaciones transaccionales rara vez tienen la estructura correcta para responder preguntas analíticas sin transformación.
+- Métricas sin dimensión de agrupamiento: un único número global (count = 45) no es accionable. Sin contexto de agrupamiento no hay información útil.
+- Pipelines no reproducibles: transformaciones que dependen del entorno, del orden de llegada de los datos o de variables externas producen resultados distintos en cada ejecución.",
+HITO 06,,"📊 Hito 6 — Telemetría y Data Pipelines
+ Recolectar → transformar → agregar → reportar. Construir telemetría para la empresa.",,,,,
+,,### ASYNCHRONOUS PROCESSING AND OFFLOADING ### ,,,,,
+17,50,Skill: Background processing,,,,,
+,Approved,"> Teoría:
+  + Introducción procesamiento en segundo plano (Background processing)
+    - ¿Qué es la ejecución en segundo plano? (Ejecución fuera del ciclo request-response)
+    - Principios indispensables en el procesamiento del segundo plano
+      -- Delegación de tareas: Mueve tareas de larga duración (envío de emails, procesamiento de imágenes, generación de reportes) fuera del hilo principal de la aplicación.
+      -- Idempotencia: si una tarea se ejecuta varias veces debido a reintentos, el resultado final debe ser el mismo que si se hubiera ejecutado una sola vez (Evitar la duplicación de datos)
+      -- Desacoplamiento: Permitir que el sistema emisor y el receptor funcionen de manera independiente (colas de mensajes)
+      -- Observabilidad (poder saber qué pasó)
+      -- Durabilidad: que la ""función"" no se detenga en su ejecución, sino cuando deba detenerse.
+    - Buenas prácticas en procesamiento de segundo plano
+      -- Reintentos automáticos (Retry Logic)
+      -- Manejo de Errores
+      -- Persistencia
+
+  + Tipos de disparadores de procesamiento en segundo plano:
+    - ¿Qué es un disparador o trigger?
+    - User-triggered background processing
+    - Telemetry (or machine) triggered background processing
+    - Cronjob triggered background processing
+    - 3rd part triggered background processing
+    - Chained processing (internal workflow or data pipeline)
+    - ¿Cuándo utilizar cada uno?
+
+  + Procesamiento en segundo plano con Cronjobs:
+    - ¿Qué es un Cronjob?
+    - ¿Cómo configurar cronjobs?
+      - Por sistema (crontab)
+      - Por framework (fastapi-utilities)
+    - Observabilidad de un cronjob (Timestamp y estado éxito/fallo)
+      -- Background processing is better done if we assign a status to the data chunk that is being processed
+    - Cómo usar cronjobs para construir un reporte
+    - Casos comunes:
+      -- Solapamiento de cronjobs (Overlapping)
+      -- Gestión de fallos: poder saber lo que pasó
+    - Buenas prácticas
+","- Entender que en sistemas de alto tráfico no podemos prometerle al usuario un resultado inmediato.
+- Desarrollar la empatía técnica para diseñar interfaces y flujos de datos asíncronos (prometer que la tarea se hará ""eventualmente"" y diseñar mecanismos como polling o notificaciones para avisar cuando esté lista).
+- Comprender que un dato en procesamiento en segundo plano no existe solo como ""datos"", sino que tiene un ciclo de vida (Pendiente, Procesando, Completado, Fallido)
+- Asumir ""como regla inquebrantable"" que todo script en segundo plano fallará en algún momento (por reinicios, caídas de red o timeouts)
+- Desarrollar la habilidad de escribir código que, si se ejecuta dos o cien veces sobre la misma orden, el resultado final siempre sea el mismo sin duplicar operaciones.
+",- Generar logs de ejecución,"- Máquina de Estados (State Machine): El chunk de datos cambia de estado: pending -> processing (para que otro worker no lo tome) -> completed o failed.
+
+- Distributed Locks (Bloqueos Mutuos): Al iniciar, el cronjob escribe un ""candado"" en la BD o en Redis (lock_reporte_mensual = true). Si la siguiente ejecución ve el candado, aborta silenciosamente.
+
+- Dead Letter Queue / Max Retries: Establecer un max_retries = 3. Si falla 3 veces, el estado pasa a failed y lanza una alerta al equipo (Observabilidad).","- Solapamiento (Race Conditions): Dos ejecuciones del mismo cronjob corriendo en paralelo pisándose los datos porque el primero fue muy lento.
+
+- Lectura Ciega (Blind Read): El cronjob hace un SELECT * FROM reportes_pendientes, empieza a procesarlos y falla. En el siguiente ciclo, vuelve a intentar los mismos sin saber dónde se quedó.
+
+- Procesamiento en RAM (In-Memory BackgroundTasks): Usar las utilidades básicas de FastAPI (que corren en el mismo hilo de la app) para tareas críticas de 1 hora. Si FastAPI se reinicia por un deploy, se pierde el trabajo para siempre.
+
+- Fallo Silencioso / Infinito: Si falla un envío de email, el estado se queda en processing para siempre (Zombie task).
+
+- El Secuestro de la API (Blocking): El usuario pide un reporte PDF, el backend lo genera durante 30 segundos y luego responde. Si el usuario cierra el navegador al segundo 15, el proceso se corta o queda huérfano.",
+,Proyecto pendiente aprobación,,,,,,
+17,51,Skill: Implementar colas de procesos,,,,,
+,Approved,"> Teoría: 
+  + Gestión de Colas
+    - ¿Qué es y cómo funciona una cola? Principio FIFO  
+    - ¿Cuándo utilizar una cola? 
+    - Diferentes tipos de cola (Simple, circular y prioridad, de tamaños estático o dinámico) 
+    - Aplicaciones más comunes de las colas (Colas de mensaje)
+
+","
+
+- Interiorizar que cambiar el estado antes de hacer el trabajo es la única forma de evitar la concurrencia destructiva (que dos workers procesen lo mismo).
+- ¿Qué pasa con el frontend o backend cliente cuando un proceso es asíncrono y está encolado
+- ¿Qué información es realmente útil en una cola de mensajes/ejecución?
+- Pensar en función del fallo de la ejecución ¿cómo actuar si hay un fallo (evitar duplicación de ejecuciones, retomar la ejecución)?
+- ¿Cuándo ejecutar en el servidor y cuándo delegar a una cola?",,"- Desacoplamiento Físico: El Worker es un programa completamente separado (ej. un proceso Celery). Puede estar instalado en otro servidor diferente al de la API.
+
+- Persistencia de la Cola: Si el servidor web muere, el mensaje ya está seguro en el Broker. Cuando el Worker vuelva a encender, tomará el mensaje donde lo dejó.
+
+- Dead Letter Queue (DLQ): Establecer max_retries = 3. Si a la tercera falla, el mensaje se saca de la cola principal y se envía a una ""Cola de Mensajes Muertos"" (DLQ) para que un humano lo revise el lunes por la mañana.
+
+","- El Worker Monolítico: Ejecutar la tarea pesada en el mismo hilo/proceso que el servidor web (ej. BackgroundTasks en FastAPI sin separar procesos). Si la tarea consume 100% de CPU, la web deja de responder a otros usuarios.
+
+- Pérdida por Amnesia: Reiniciar el servidor web y perder todas las tareas que estaban ""en memoria"" esperando a ser procesadas.",
+,Proyecto pendiente aprobación,"> Ejercicios: Crear un learnpack incremental con algunos ejercicios de colas en Python
+
+> Proyecto: 
+  + Gestor de atención de clientes en un banco (collections.deque)
+
+  + Gestión de pacientes en emergencia 
+
+
+from collections import deque
+
+# Inicializar
+fila_banco = deque()
+
+# Llegada de clientes (Encolar)
+fila_banco.append(""Cliente 1"")
+fila_banco.append(""Cliente 2"")
+fila_banco.append(""Cliente 3"")
+
+# Atender clientes (Desencolar)
+while fila_banco:
+    atendido = fila_banco.popleft()
+    print(f""Atendiendo a: {atendido}"")
+
+# Resultado:
+# Atendiendo a: Cliente 1
+# Atendiendo a: Cliente 2
+# Atendiendo a: Cliente 3",,,,,
+18,52,Skill: Using queues and tasks to delegate,,,,,
+,Teoría pendiente aprobación,"> Teoría:
+   + Procesamiento asíncrono con colas (Offloading)
+     - ¿Cómo funciona el procesamiento asíncrono con colas? (Recibir solicitud -> Encolar solicitud -> Procesar solicitud en cola)
+     - 
+     - El Patrón ""Worker""
+     - Colas de Mensajes / Message Brokers (Concepto): Mencionas ""User triggered"", pero ¿dónde ""espera"" ese trabajo si el servidor está ocupado? 
+    - Debes introducir conceptualmente las Colas (Queues) y los Workers (ej. Redis Queue, Celery, o AWS SQS), que son la verdadera garantía de Durabilidad.
+     - Comunicación del progreso al Frontend
+     - Gestión de Reintentos y Fallos (Dead Letter Queue - DLQ): ¿Qué pasa si el procesamiento falla por un error de red externo? ¿Se reintenta automáticamente? ¿Se descarta? ¿Se guarda en una ""tabla de fallos"" para revisión manual?
+     - Enfoques de implementación: 
+       -- Resiliencia y diseño (idempotencia obligatoria, retry y dead-letter queue...)
+       -- Rendimiento y operaciones (Mensajes ligeros, escalabilidad horizontal, priorización de tareas, observabilidad..)
+
++ Implementación de colas de mensajes con RabbitMQ 
+  - ¿Qué es RabbitMQ?
+  - ¿Cómo funciona RabbitMQ?:
+    -- Arquitectura central (productor/remitente, intercambiador/cartero, cola/buzón, worker/consumidor)
+    -- Notificación del procesamiento del mensaje (confiabilidad): Mensaje procesado con éxito (ACK) y error al procesar mensaje (NACK)
+    -- Múltiples workers para no tener cuellos de botella
+  - ¿Cómo implementar RabbitMQ con Docker? (Referencia a imagen de Docker de RabbitMQ)",,,,,
+,,"Building a queue that process incoming leads and detects entry errors
+",,,,,
+,,"### LLMs, TRAINING & RAG ###",,,,,
+18,53,Skill: Predictions Model,,,,,
+,Teoría pendiente aprobación,"> Teoría:
++ Modelos de predicción
+  - ¿Qué es un modelo de predicción?
+  - ¿Para qué sirve? Aplicaciones más comunes
+  - ¿Cómo funciona un modelo clasificador? (predecir una categoría)
+  - ¿Cómo funciona un modelo de regresión? (predicción de un número)
+    
+
++ Cómo buscar y utilizar modelos ya creados
+  - ¿En qué sitios puedo conseguir modelos existentes?
+  - ¿Cómo elegir un módelo?
+  - ¿Cómo utilizar un módelo ya existente? ","
+Selección de modelos:
+
+-  Identificar modelos pre-entrenados y en qué situaciones utilizarlos. 
+
+-  Aprender a seleccionar y filtrar modelos según las necesidades.
+
+- Aprender a integrar un modelo existente, por ejemplo uno de Hugging Face. ","
+
+
+",,,
+,,"Proyecto: Se usaran modelos existentes. Es decir, es un modelo que se debe descargar, pasarle los parámetros y obtener un resultados. Como si usaramos un proyecto final de un alumno de DS
+
+Posibles proyectos:
+
+- Predecir generos a partir de un nombre
+
+- Destacados de una web (predice segun las compras que destacados mostrarle a un usuario)
+
+- Analisis de sentimiento en reviews 
+
+- Sistema de etiquetado automatico de tickets
+
+- Prediccion de demandas de stock segun el inventario ",,,,,
+18,54,Skill: Data preparation for training,,,,,
+,Teoría pendiente aprobación,"> Teoria:   
++ Preparar datos para el entrenamiento de un modelo:
+   - ¿Qué es un ETL? (Referencia rápida y corta)
+   - ¿En qué consiste la transformación de datos? (Introductorio. Se asume que en este punto el alumno sabe de ""collect"" e ""ingest"" porque en los módulos anteriores ya hemos consumido APIs, hemos hecho scraping, hemos conectado con bases de datos y consumido CSVs)
+   - Modify data so it becomes useful.
+     -- Includes: cleaning, validation, normalization, enrichment, deduplication, and business rules.
+   - Load: Persist the transformed data into a target system. Targets: lake, warehouse, analytics DB, feature store.
+
+","- Data preparation for training
+Without clean, properly scaled and encoded data, no model trains correctly. Garbage in, garbage out — this is the last gate before touching the algorithm.
+
+",,,,
+,,,,,,,
+19,55,Skill: Model selection and training,,,,,
+,Teoría pendiente aprobación,"> Teoría: 
+
++ Cómo entrenar un modelo de Clasificación (predice una categoría)
+
++ Cómo entrenar un modelo de Regresión (predice un número)","
+- Model selection and training
+This is the core act of supervised learning. Students need to know that algorithm choice is a decision, not a default, and that fitting a model is the beginning of a process, not the end.
+.",,,,
+,,,,"Skill B (Día 2): Regresión, Evaluación y Generalización",,,
+19,56,Skill: Hyperparameter tunning  ,,,,,
+,Teoría pendiente aprobación,"Parámetros de modelos vs hiperparámetros. 
+Cuales hiperparámetros existen según los módelos y clasificaciones
+Define a hyperparameter search space for a given model
+Run a grid search and random search using GridSearchCV / RandomizedSearchCV
+Select the best model from a tuning experiment without data leakage","
+- Hyperparameter tuning
+A model trained with default parameters is rarely the best version of that model. Students need to know how to systematically improve performance without guessing.
+","Objetivo: Predecir números continuos y diagnosticar la salud del modelo.Modelos de Regresión: ¿Cómo encontramos la línea de mejor ajuste? (Predecir un número: Precio de casa, Temperatura).Evaluación de Modelos (¡Faltaba en tu temario!):Métricas para Clasificación: Por qué la Accuracy (Exactitud) miente. Introducción a Precision y Recall (Matriz de Confusión).Métricas para Regresión: Error Cuadrático Medio (MSE) y $R^2$.Diagnóstico de Modelos (Conceptos vitales):Underfitting (El modelo es muy tonto).Overfitting (El modelo memorizó los datos en lugar de aprender).",,,
+,,"Proyectos: debido a que el módulo es corto, debemos pensar en 4 proyectos o casos de uso. 
+- Correr un Grid Search (Grid Search CV) y un Random Search (Random Search CV).
+- ",,,,,
+19,57,Skill: Model evaluation,,,,,
+,Teoría pendiente aprobación,"Concepto de ""Evals""
+Choose the correct evaluation metric for a classification or regression problem
+Interpret a confusion matrix and derive precision, recall, and F1 from it
+Plot and read a learning curve to diagnose underfitting or overfitting
+Apply k-fold cross-validation and report results with mean and standard deviation","
+- Model evaluation
+Training a model means nothing if you can’t measure whether it works. This module is what separates a model that ran from a model that performs.
+",,,,
+,,,,,,,
+20,58,Skill: Model debugging and integration,,,,,
+,Teoría pendiente aprobación,"> Teoria:   
+
++ ¿Cómo debuguear el modelo?
+
++ ¿Cómo orquestar datos? 
+
+   - Orchestrate
+        Coordinate the steps and define dependencies.
+        Includes: scheduling, DAGs, retries, notifications.
+   - Monitor
+     Track health, quality, freshness, and failures.
+     Includes: metrics, lineage, alerts, SLAs, anomaly detection.","
+- Debugging and iteration
+Real datasets produce real problems — overfitting, imbalanced classes, poor generalization. Students need a systematic way to diagnose and fix, not just re-run hoping for better results.
+",,,,
+,,,,,,,
+20,59,Skill: Vector DBs,,,,,
+,Teoría pendiente aprobación,"- Entrenamiento de un clasificador (predice una categoría)
+- Regresión (predice un número) ",,,,,
+,,,,,,,
+20,60,Skill: Implementar técnicas de RAG para implementar la base de conocimientos de un modelo,,,,,
+,Teoría pendiente aprobación,"Chunking
+
+ Embeddings
+
+",,,,,
+HITO 07,,"🧩 Hito 7 — RAG y Memoria
+ Fragmentación de datos (Chunking), incrustaciones de datos (embeddings), búsqueda vectorial. Añadir la capa de conocimiento de la empresa.",,,,,
+,,### AGENTIC ENGINEERING ###,,,,,
+21,61,Skill x: Building an AI Agent capable of calling tools (functions),,,,,
+,Teoría pendiente aprobación,The customer support AI Agent will be capable of fetching company info and answer in real time.,"5. Principios de diseño que conviene enseñar
+Principio 1
+
+El LLM no es el sistema, es un componente.
+
+Principio 2
+
+Las tools expanden capacidades del modelo.
+
+Principio 3
+
+El loop controla el comportamiento del agente.
+
+Principio 4
+
+La arquitectura debe minimizar ambigüedad para el modelo.",,"validación
+
+retries
+
+herramientas deterministas",- Esperar precisión absoluta del LLM: Los agentes deben diseñarse para tolerar errores del modelo.,
+,,,,,,,
+21,62,Skill: Implementar agentes seguros estableciendo Guardrails como mecanismo de seguridad y control ,,,,,
+,Teoría pendiente aprobación,"Safety mechanisms and control layers that monitor, filter, and govern input/output in artificial intelligence systems to ensure they operate safely, legally, and ethically",,,"- Guardrails (Restricciones para evitar comportamientos inesperados. Ejemplos: límite de iteraciones, validación de argumentos, whitelist de tools)
+
+- Fallback (Si una tool falla: intentar alternativa responder parcialmente pedir clarificación)",,
+,,,,,,,
+21,63,Skill: Proveer de herramientas a un Agente mediante CLIs,,,,,
+,Teoría pendiente aprobación,"> Teoría:
+ + CLIs
+   - Qué es un CLI
+   - Por qué son útiles los CLIs para los humanos (especialmente desarrolladores)
+   - ¿Cómo crear un CLI exitoso?
+
+ + CLIs y la IA
+   - Por qué los CLIs son útiles para la IA
+   - ¿Cómo la IA usa los CLIs?
+   - Aspectos fundamentales para un buen CLI para una IA
+",,"- Fine-tuning
+- Criterios de comportamiento y tipo de respuesta",,,
+,,,,,,,
+22,64,Skills: Extender las capacidades de un agente mediante MCPs,,,,,
+,Teoría pendiente aprobación,"> Teoría:
+
++ Introducción a MCPs: 
+  - ¿Qué es un MCP? Definición y analogías
+  - Tipos de MCP: Client vs Server
+  - ¿Cuándo usar un MCP?
+  - Arquitectura general de los MCPs (Estructura de referencia)
+
++ MCP Server:
+  - ¿Qué es un MCP Server?
+  - Aplicaciones más comunes
+  - ¿Cómo crear un MCP Server en Python?
+
++ MCP Client:
+  - ¿Qué es un MCP Client?
+  - Aplicaciones más comunes
+  - ¿Cómo crear un MCP Client en Typescript?
+",,"- Fine-tuning
+- Criterios de comportamiento y tipo de respuesta",,,
+,,"
+> Proyecto 1: ¿Construir un MCP Server?",,,,,
+22,65,Skill x: Dotar de memoria a un agente,,,,,
+,,,,,,,
+,,,,,,,
+HITO 08,,"🤖 Hito 8 — Ingeniería de Agentes
+ Reglas, bancos de memoria (memory bank), llamada a herramientas (tool calling), planificación multiagente. Construir los agentes de la empresa.",,,,,
+,,### WORKFLOW AUTOMATIONS ###,,,,,
+22,66,Skill x: Representar la lógica de negocio de forma visual mediante diagramas de flujo de trabajo,,,,,
+,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
+Se reutilizarán el contenido del curso de n8n",,,,,
+,,,,,,,
+23,67,Skill x: Implementar flujos de trabajo básicos mediante herramientas de automatización como n8n,,,,,
+,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
+Se reutilizarán el contenido del curso de n8n",,,,,
+,,,,,,,
+23,68,Skill x: Integrar LLMs y aplicaciones de terceros en flujos de trabajo de n8n,,,,,
+,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
+Se reutilizarán el contenido del curso de n8n",,,,,
+,,,,,,,
+23,69,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
+,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
+Se reutilizarán el contenido del curso de n8n",,,,,
+,,,,,,,
+24,70,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
+,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
+Se reutilizarán el contenido del curso de n8n",,,,,
+,,,,,,,
+,,### AGENTIC WORKFLOWS ###,,,,,
+24,71,Multi-Agent Systems,,,,,
+,," Routing 
+Arbitration 
+Multi-agent planning 
+Memory compartida
+
+LangGraph",,"- Keep rules under 500 lines
+- Split large rules into multiple, composable rules
+- Provide concrete examples or referenced files
+- Avoid vague guidance. Write rules like clear internal docs
+- Reuse rules when repeating prompts in chat
+
+
+6.3 Best Practices for AI-Optimized Codebases (https://github.com/ipospelov/vibe-coding-architectures?tab=readme-ov-file#63-best-practices-for-ai-optimized-codebases)
+- Prioritize Familiar Patterns: Use well-established architectural patterns that LLMs have seen frequently
+- Optimize Token Efficiency: Design codebases that require minimal context for AI understanding
+- Maintain Clear Boundaries: Ensure architectural layers and components have well-defined responsibilities
+- Consider Chain Effects: Be aware of how changes propagate through the architecture
+- Context Management: Design for effective context window utilization",- Uso de Readme en todos los proyectos a partir de ahora,"- No usar Tailwind
+- ",- Usar un modelo viejo como sonnet 3.5 ¿Cambiar a un Gemini o ChatGPT viejo para variar?
+,,,,,,,
+24,72,Skill 32:  Assign status to the chunk and start a cronjob every day to process,,,,,
+,Teoría pendiente aprobación,,,,,,
+,,,,,,,
+25,73,Skill 33: Calling a serverless durable funcion,,,,,
+,Teoría pendiente aprobación,Using vercel to build a user-machin chat with an LLM in the background,,,,,
+HITO 09,,"🔄 Hito 9 — Generación de Workflows Agentic
+ Usar LLMs para analizar el caso de empresa, generar flujos internos, validarlos e implementarlos como pipelines de automatización (serverless, colas, cronjobs o n8n).",,,,,
+,,### REAL-TIME ###,,,,,
+25,74,,,,,,
+,,"     En algun proyecto se debe usar 
+-- Webhooks
+ -- Pub/Sub",,,,,
+,,,,,,,- No IA
+25,75,Building a customer support chat with real time communication to an LLM,,,,,
+,,"- Websockets
+- Streaming
+  -- Yield
+- Event oriente architecture
+- LLM SDK",,,,,
+HITO 10,,"⚡ Hito 10 — Sistemas en Tiempo Real
+ Streaming, sockets, pub/sub. Habilitar interacciones en tiempo real para datos, clientes, IA o empleados.",,,,,
+26,76,Skill x: Integration Plan,,,,,
+,,"> Teoría:
+ - Introducción a la gestión de proyectos ágil y profesional 
+ - Plan de implementación
+ - Historias de usuario
+ - Intro a CS 
+",,,- MCP,,
+,,,,,,,
+,,### CYBERSECURITY IN AI APPLICATIONS ###,,,,,
+26,77,Skill x: Identificar y corregir las vulnerabilidades más comunes a las que se está expuesta una aplicación en internet,,,,,
+,,"> Teoría: 
++ OWASP Top 10
+
++ Prácticas esenciales en servidores: 
+  - Definir permisos de carpetas
+  - Crear un usuario de acceso y proteger al usuario root
+  - Configurar un firewall y restringir puertos
+  - Acceso SSH",,,,,
+,,,,,,,
+26,78,Skill x: Implementar prácticas seguras en la integración de IA en sistemas,,,,,
+,,"> Teoría: 
+
+https://owaspai.org/docs/ai_security_overview/",,,,,
+,,,,,,,
+27,79,Skill x: Usando LLMs para auditorias de CS,,,,,
+,,"  - Owasp Top 10
+  - guard rails
+  - alineacion y moderación ",,,- MCP,,
+,,### CAPSTONE ###,,,,,
+27,80,Skill x: Desarrollar con IA orientad,,,,,
+,,,,,,,
+HITO CAPSTONE,,"🚀 Capstone — Empresa completamente transformada con IA
+ Los estudiantes entregan la transformación total de su empresa:
+Frontend generado por IA
+
+
+API + autenticación
+
+
+Telemetría + pipeline de reporting
+
+
+Automatización de workflows (generados por agentes)
+
+
+Capa de conocimiento RAG
+
+
+Agentes con tool calling
+
+
+Capa de comunicación en tiempo real",,,,,
+27,81,,,,,,
+,,,,,,,
+,,,,,,,
+28,82,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,Para agregar en etapa de proyecto final como contenido Extre,,,,,
+,," + Reflexión:
+    - Optimización de algoritmos: recalcar el objetivo actual: aprender como primer paso. 
+      -- Ordenamiento (sólo referencial)
+      -- Búsqueda (sólo referencia)
+      -- Big O Notation (sólo referencial)
+      -- Prototypes js
+
+  - Abstract Base Classes (ABCs): (El equivalente a Interfaces de Typescript)
+
+  + Aspectos avanzados de objetos en Python:
+    - Decoradores
+      -- @classmethod vs @staticmethod
+    - Atributos públicos, privados y protegidos
+    - Métodos puros (getters y setters)
+",,,,,
+,,"  + Control de Tráfico (Traffic Control & Resiliency)
+     - Rate Limiting (Limitación de Tasa) 
+     - Throttling
+     - Circuit Breakers (Cortocircuitos)
+
+   + El Patrón BFF (Backend for Frontend)
+      - ¿Qué es? Crear una capa intermedia (o API Gateway ligero) que agrupa múltiples llamadas a microservicios en una sola, diseñada específicamente para lo que necesita el cliente web (o móvil).
+      - Beneficios: Reduce la latencia de red, ya que el cliente hace 1 sola petición al BFF, y el BFF hace 5 peticiones ultrarrápidas a los microservicios internos en la misma red.",,,,,
