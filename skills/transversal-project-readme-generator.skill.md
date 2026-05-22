@@ -1,6 +1,6 @@
 ---
-name: transversal-project-readme-generator
-description: Generates the universal project statement (README.md + README.es.md) for a single milestone of a 4Geeks Academy transversal project. The README is written in generic "your company" framing — no sector, no company name — so it applies equally to every student regardless of their assigned scenario. Use this skill when a milestone needs a new README from scratch, or when an existing README needs to be rewritten. Trigger on phrases like "write the README for milestone N", "create the project statement for hito X", "generate the universal statement for this milestone", or "rewrite the milestone README". Do NOT use this skill to generate CONTEXT files — use transversal-project-context-generator for that.
+name: 4geeks-transversal-project-readme-generator
+description: Generates the universal project statement (README.md + README.es.md) for a single milestone of a 4Geeks Academy transversal project. The README is written in generic "your company" framing — no sector, no company name — so it applies equally to every student regardless of their assigned scenario. Use this skill when a milestone needs a new README from scratch, or when an existing README needs to be rewritten. Trigger on phrases like "write the README for milestone N", "create the project statement for hito X", "generate the universal statement for this milestone", or "rewrite the milestone README". Do NOT use this skill to generate CONTEXT files — use 4geeks-transversal-context-generator for that.
 ---
 
 # 4Geeks Academy — Transversal README Generator
@@ -33,6 +33,31 @@ Write in second person, direct professional tone. The company is always "your co
 
 **Do:** `Your company has been running on gut feeling for too long.`
 **Don't:** `Nexova Solutions needs a pipeline.` / `The logistics company requires tracking.`
+
+### In-company communication register
+
+The challenge narrative and the CTO/manager brief must use the vocabulary that reflects how work is actually requested and communicated inside a company. This is deliberate: it exposes students to professional register before they enter the workforce.
+
+**Preferred terms — use them naturally, not all at once:**
+
+| Term | When to use it |
+|------|---------------|
+| **RFI** (Request for Information) | A department is evaluating options and asks the tech team to clarify feasibility, scope, or technology choices before committing. |
+| **RFP** (Request for Proposal) | A stakeholder asks the tech team to propose a solution to a defined problem, including approach, timeline, and trade-offs. |
+| **RFQ** (Request for Quotation) | The business needs an effort estimate or cost breakdown before approving work. |
+| **Brief** | A short, informal document a stakeholder sends to initiate a request — common for product or design work. Use when the request is exploratory or early-stage. |
+| **PRD** (Product Requirements Document) | A formal document defining what to build. Use when describing the artifact the student must produce or reference. |
+| **Ticket / Issue** | A tracked unit of work in an issue tracker. Use when describing tasks scoped to implementation. |
+| **Stakeholder** | Anyone outside the tech team who has an interest in the outcome: business owner, analyst, ops manager. |
+| **Acceptance criteria** | The specific, testable conditions a deliverable must meet to be considered done. Use in evaluation sections. |
+| **Handoff** | The moment the tech team delivers a result to a stakeholder or to the next stage of a process. |
+| **Sign-off** | Formal approval from a stakeholder. Use to frame what it means to "complete" the milestone. |
+
+**Do:** `The operations team filed an RFI asking whether the current data pipeline can support real-time alerts. Your tech lead has forwarded it to your squad.`
+**Do:** `Your manager shared a brief from the analytics department: they need a dashboard before the quarterly review.`
+**Don't:** `You need to build a dashboard.` (too flat — no professional context)
+
+Place at least one of these terms in the CTO/manager brief blockquote and at least one in the opening paragraph of the challenge narrative.
 
 ### The CONTEXT anchor — mandatory
 
@@ -147,6 +172,7 @@ Each file must link to its counterpart, written in the language of the target do
 ## Quality Self-Check Before Delivering
 
 - [ ] No sector name, company name, or industry reference anywhere in the README
+- [ ] At least one in-company communication term (RFI, RFP, brief, PRD, ticket, stakeholder, acceptance criteria, handoff, or sign-off) appears in both the challenge narrative opening and the CTO/manager brief
 - [ ] CONTEXT anchor present in both the metadata block and the task checklist
 - [ ] At least two or three requirements embedded in the challenge narrative (not only in checklists)
 - [ ] Prior milestone continuity sentence present (if not milestone 1)
