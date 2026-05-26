@@ -1,11 +1,11 @@
 ---
 name: syllabus-context-reader
 description: >
-  Reads the AI Engineer (or AI Native Full Stack) syllabus CSV and extracts the
-  full pedagogical context for a specific course day: skill being developed,
-  content outline, how-to-think guidance, best practices, design patterns,
-  anti-patterns, and known limitations. Also provides the list of prior skills
-  so content is always coherent with what students already know.
+  Official syllabus source: the planning CSV (e.g. New Syllabus AI Engineer -
+  Planificación del programa.csv). NOT syllabus.md — that file is a derived export
+  and may be out of date. Reads the CSV and extracts full pedagogical context for
+  a course day: skill, content, how-to-think, best practices, patterns,
+  anti-patterns, limitations, and prior_skills.
 
   Use this skill whenever a request involves creating, reviewing, or adapting
   course content (lessons, exercises, projects, assessments, quizzes, README
@@ -20,6 +20,22 @@ description: >
 
 Extrae el contexto pedagógico completo de un día del curso desde el CSV de
 planificación del programa **AI Engineer** (o **AI Native Full Stack**).
+
+---
+
+## 0. Fuente oficial del syllabus
+
+| Archivo                                                         | Rol                                                                                |
+| --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **`New Syllabus AI Engineer - Planificación del programa.csv`** | **Fuente oficial** — semana, día, skill, teoría, proyecto, thinking framework      |
+| **`syllabus.md`**                                               | Export derivado (Excel/conversor) — **no usar como fuente** para alinear contenido |
+| **GitHub raw URL de `syllabus.md`**                             | Igual que arriba — evitar                                                          |
+
+Si `syllabus.md` y el CSV **no coinciden**, gana el **CSV** (vía `parse_syllabus.py`).
+
+**AI Engineer (ruta canónica en este repo):**
+
+`course-outline-generator/ai-engineering/New Syllabus AI Engineer - Planificación del programa.csv`
 
 ---
 
@@ -40,16 +56,14 @@ planificación del programa **AI Engineer** (o **AI Native Full Stack**).
 
 Los CSVs de planificación se encuentran en:
 
-| Programa             | Ruta                                                                                                         |
-| -------------------- | ------------------------------------------------------------------------------------------------------------ |
-| AI Engineer          | `course-outline-generator/ai-engineering/New Syllabus AI Engineer - Planificación del programa.csv`          |
-| AI Native Full Stack | `course-outline-generator/ai-engineering/New Syllabus AI Native Full Stack - Planificación del programa.csv` |
+| Programa    | Ruta                                                                                                |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+| AI Engineer | `course-outline-generator/ai-engineering/New Syllabus AI Engineer - Planificación del programa.csv` |
 
 Rutas absolutas (workspace `/Users/marcogonzalo/Projects/4Geeks/AIE-Projects`):
 
 ```
 /Users/marcogonzalo/Projects/4Geeks/AIE-Projects/course-outline-generator/ai-engineering/New Syllabus AI Engineer - Planificación del programa.csv
-/Users/marcogonzalo/Projects/4Geeks/AIE-Projects/course-outline-generator/ai-engineering/New Syllabus AI Native Full Stack - Planificación del programa.csv
 ```
 
 Si el contexto no especifica el programa, usar el CSV de **AI Engineer** por
@@ -88,7 +102,7 @@ Ejemplos de valores válidos:
 - `--week 0 --day "-4 y -3"`
 - `--week "HITO 01" --day "En Syllabus"` ← usar con comillas si hay espacios
 
-**Incluir skills previas** (contexto acumulado hasta ese día):
+**Incluir skills previas** (modo _smart_ por defecto: hitos previos + últimas N lecciones regulares):
 
 ```bash
 python3 scripts/parse_syllabus.py \
@@ -98,13 +112,30 @@ python3 scripts/parse_syllabus.py \
   --include-prior
 ```
 
-**Buscar por palabra clave** (cuando no se conoce el día exacto):
+Opciones de `prior_skills`:
+
+| Flag                      | Efecto                                                                             |
+| ------------------------- | ---------------------------------------------------------------------------------- |
+| `--include-prior`         | Modo **smart** (default): todos los hitos previos + últimas 15 lecciones regulares |
+| `--prior-window N`        | Cambia N en modo smart (default `15`)                                              |
+| `--prior-full`            | Todas las lecciones anteriores (máximo detalle, más tokens)                        |
+| `--prior-milestones-only` | Solo hitos previos                                                                 |
+
+**Buscar por palabra clave** (índice ligero; luego extraer el día):
 
 ```bash
 python3 scripts/parse_syllabus.py \
   --csv <ruta_al_csv> \
   --search "tailwind"
 ```
+
+Devuelve `matches` con `week`, `day`, `skill` — **no** el contenido completo. Después:
+
+```bash
+python3 scripts/parse_syllabus.py --csv <ruta> --week <w> --day <d> --include-prior
+```
+
+**Salida compacta** (default): JSON en una línea. Para depurar: `--pretty`.
 
 ---
 
@@ -142,9 +173,28 @@ python3 scripts/parse_syllabus.py \
 
   // Solo presente con --include-prior
   "prior_skills": [
-    { "week": "0", "day": "-6", "skill": "..." },
+    { "week": "0", "day": "-6", "skill": "...", "is_milestone": false },
     ...
-  ]
+  ],
+  "prior_skills_meta": {
+    "mode": "smart",
+    "window": 15,
+    "total_prior": 29,
+    "returned": 18
+  }
+}
+```
+
+**Búsqueda** (`--search`):
+
+```jsonc
+{
+  "query": "tailwind",
+  "count": 2,
+  "matches": [
+    { "week": "3", "day": "12", "skill": "...", "is_milestone": false },
+  ],
+  "next": "Run --week and --day on a match for full lesson context.",
 }
 ```
 
@@ -155,9 +205,11 @@ Cualquier campo puede ser `null` si el CSV no tiene información para esa celda.
 ## 5. Flujo de trabajo recomendado
 
 ```
-1. Ejecutar --list para confirmar semana y día exactos
+1. Si semana/día desconocidos: --search "tema" → elegir match → --week/--day
+   (o --list si hace falta ver todo el índice)
 2. Ejecutar --week X --day Y --include-prior
-3. Leer el JSON resultado:
+   (usar --prior-full solo si hace falta el historial completo)
+3. Leer el JSON resultado (compacto; no pegarlo entero al usuario):
    a. `current.skill`        → objetivo pedagógico del día
    b. `current.content`      → temario y proyectos
    c. `current.how_to_think` → mentalidad/razonamiento a desarrollar
@@ -208,8 +260,8 @@ Usar `--list` primero si hay dudas.
 
 **Búsqueda por tecnología / tema**
 Cuando el usuario menciona "Tailwind", "React", "API", etc. sin especificar
-semana/día, usar `--search` para localizar la lección relevante, luego
-extraer con `--week`/`--day`.
+semana/día: `--search` (índice ligero) → `--week`/`--day` con `--include-prior`.
+No usar `--search-full` salvo depuración.
 
 ---
 

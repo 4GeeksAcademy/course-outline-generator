@@ -8,8 +8,9 @@ Usage:
   python3 parse_syllabus.py --csv <path> --list
   python3 parse_syllabus.py --csv <path> --search "keyword"
 
-Output: JSON with the lesson context (skill, content, how_to_think, best_practices,
-        patterns, anti_patterns, limitaciones) plus optional cumulative prior skills.
+Output: compact JSON by default (use --pretty for indented). Search returns index
+        rows only; run --week/--day for full lesson context. With --include-prior,
+        prior_skills uses smart mode (all prior milestones + last N regular lessons).
 """
 
 import argparse
@@ -17,7 +18,80 @@ import json
 import math
 import re
 import sys
+
 import pandas as pd
+
+DEFAULT_PRIOR_WINDOW = 15
+
+
+# ---------------------------------------------------------------------------
+# Output helpers
+# ---------------------------------------------------------------------------
+
+def _dump(data, *, pretty: bool = False) -> None:
+    """Print JSON; compact by default to reduce token usage."""
+    if pretty:
+        print(json.dumps(data, ensure_ascii=False, indent=2))
+    else:
+        print(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
+
+
+def _lesson_ref(lesson: dict) -> dict:
+    return {
+        "week": lesson["week"],
+        "day": lesson["day"],
+        "skill": lesson["skill_name"],
+        "is_milestone": lesson["is_milestone"],
+    }
+
+
+def build_prior_skills(
+    lessons: list[dict],
+    idx: int,
+    *,
+    mode: str = "smart",
+    window: int = DEFAULT_PRIOR_WINDOW,
+) -> tuple[list[dict], dict]:
+    """
+    Build prior_skills list and metadata.
+
+    Modes:
+      full       — every lesson before idx
+      milestones — milestones only
+      smart      — all prior milestones + last `window` regular (non-milestone) lessons
+    """
+    prior = lessons[:idx]
+    total = len(prior)
+
+    if mode == "full":
+        refs = [_lesson_ref(l) for l in prior]
+        return refs, {"mode": "full", "total_prior": total, "returned": len(refs)}
+
+    if mode == "milestones":
+        refs = [_lesson_ref(l) for l in prior if l["is_milestone"]]
+        return refs, {
+            "mode": "milestones",
+            "total_prior": total,
+            "returned": len(refs),
+        }
+
+    # smart: milestones in order + recent regular lessons
+    regular_positions = [
+        i for i, lesson in enumerate(prior) if not lesson["is_milestone"]
+    ]
+    recent_positions = set(
+        regular_positions[-window:]) if window > 0 else set()
+    refs = [
+        _lesson_ref(lesson)
+        for i, lesson in enumerate(prior)
+        if lesson["is_milestone"] or i in recent_positions
+    ]
+    return refs, {
+        "mode": "smart",
+        "window": window,
+        "total_prior": total,
+        "returned": len(refs),
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -63,10 +137,8 @@ def _extract_milestone_title(milestone_id: str, content: str) -> str:
         line = line.strip()
         if not line:
             continue
-        # Match patterns like "Hito N —", "🎨 Hito N —", "⚛️ Hito 3 —"
         if re.search(r"[Hh]ito\s+\d+\s*[—–-]", line):
             return f"[{milestone_id}] {line}"
-    # Fallback: first non-empty line
     first = next((l.strip() for l in content.splitlines() if l.strip()), "")
     return f"[{milestone_id}] {first[:80]}" if first else milestone_id
 
@@ -110,9 +182,6 @@ def load_syllabus(csv_path: str) -> list[dict]:
     current_lesson = None
 
     for _, row in df.iterrows():
-        week_val = _clean(row.iloc[0])
-
-        # Section separator rows (---) — skip
         content_val = _clean(row.iloc[2])
         if content_val and content_val.startswith("---"):
             if current_lesson:
@@ -120,16 +189,13 @@ def load_syllabus(csv_path: str) -> list[dict]:
                 current_lesson = None
             continue
 
-        # Section header rows (### ... ###) — skip
         if content_val and content_val.startswith("###"):
             continue
 
-        # Milestone row
         if _is_milestone_row(row):
             if current_lesson:
                 lessons.append(current_lesson)
             milestone_id = _clean(row.iloc[0])
-            # Try to find a human-readable title: "Hito N —..." or emoji-prefixed lines
             skill_name = _extract_milestone_title(
                 milestone_id, content_val or "")
             current_lesson = {
@@ -141,13 +207,11 @@ def load_syllabus(csv_path: str) -> list[dict]:
                 "milestone_id": milestone_id,
                 "blocks":       [],
             }
-            # Milestone row itself may have a content block
             block = _build_content_block(row)
             if any(v for v in block.values()):
                 current_lesson["blocks"].append(block)
             continue
 
-        # Day / session row
         if _is_day_row(row):
             if current_lesson:
                 lessons.append(current_lesson)
@@ -163,7 +227,6 @@ def load_syllabus(csv_path: str) -> list[dict]:
             }
             continue
 
-        # Content / project row — attach to current lesson
         if current_lesson is not None and content_val:
             block = _build_content_block(row)
             current_lesson["blocks"].append(block)
@@ -224,6 +287,14 @@ def format_lesson(lesson: dict, include_raw: bool = False) -> dict:
     return out
 
 
+def _search_haystack(lesson: dict) -> str:
+    return (
+        lesson["skill_name"]
+        + lesson["skill_raw"]
+        + " ".join(b.get("content") or "" for b in lesson["blocks"])
+    ).lower()
+
+
 # ---------------------------------------------------------------------------
 # CLI entry point
 # ---------------------------------------------------------------------------
@@ -234,55 +305,125 @@ def main():
     parser.add_argument("--csv", required=True,
                         help="Path to the syllabus CSV file")
     parser.add_argument("--week", help="Week number (e.g. 1, 2, 0)")
-    parser.add_argument("--day",  help="Day number (e.g. 1, -1, 4 y 5)")
-    parser.add_argument("--include-prior", action="store_true",
-                        help="Also return a summary of all prior skills")
-    parser.add_argument("--list", action="store_true",
-                        help="List all lessons (week, day, skill_name)")
+    parser.add_argument("--day", help="Day number (e.g. 1, -1, 4 y 5)")
     parser.add_argument(
-        "--search", help="Search for a keyword across all lessons")
+        "--include-prior",
+        action="store_true",
+        help=(
+            "Include prior_skills (default mode: all prior milestones + last "
+            f"{DEFAULT_PRIOR_WINDOW} regular lessons; use --prior-full for all)"
+        ),
+    )
+    parser.add_argument(
+        "--prior-full",
+        action="store_true",
+        help="With --include-prior: return every lesson before the target day",
+    )
+    parser.add_argument(
+        "--prior-milestones-only",
+        action="store_true",
+        help="With --include-prior: return only prior milestones",
+    )
+    parser.add_argument(
+        "--prior-window",
+        type=int,
+        metavar="N",
+        default=DEFAULT_PRIOR_WINDOW,
+        help=(
+            f"With --include-prior (smart mode): include last N regular lessons "
+            f"(default {DEFAULT_PRIOR_WINDOW})"
+        ),
+    )
+    parser.add_argument("--list", action="store_true",
+                        help="List all lessons (week, day, skill)")
+    parser.add_argument(
+        "--search",
+        help="Search keyword; returns index rows only (then run --week/--day)",
+    )
+    parser.add_argument(
+        "--search-full",
+        action="store_true",
+        help="With --search: return full lesson payloads (legacy, token-heavy)",
+    )
+    parser.add_argument(
+        "--pretty",
+        action="store_true",
+        help="Pretty-print JSON with indentation (default: compact)",
+    )
+    parser.add_argument(
+        "--include-raw",
+        action="store_true",
+        help="Include skill_raw on the current lesson",
+    )
     args = parser.parse_args()
 
-    lessons = load_syllabus(args.csv)
+    if args.prior_window < 0:
+        parser.error("--prior-window must be >= 0")
 
-    # --list
+    lessons = load_syllabus(args.csv)
+    pretty = args.pretty
+
     if args.list:
-        index = [{"week": l["week"], "day": l["day"], "skill": l["skill_name"],
-                  "is_milestone": l["is_milestone"]} for l in lessons]
-        print(json.dumps(index, ensure_ascii=False, indent=2))
+        index = [_lesson_ref(l) for l in lessons]
+        _dump(index, pretty=pretty)
         return
 
-    # --search
     if args.search:
         kw = args.search.lower()
-        results = []
+        matches = []
         for lesson in lessons:
-            haystack = (lesson["skill_name"] + lesson["skill_raw"] +
-                        " ".join(b.get("content") or "" for b in lesson["blocks"])).lower()
-            if kw in haystack:
-                results.append(format_lesson(lesson))
-        print(json.dumps(results, ensure_ascii=False, indent=2))
+            if kw in _search_haystack(lesson):
+                if args.search_full:
+                    matches.append(format_lesson(lesson))
+                else:
+                    matches.append(_lesson_ref(lesson))
+        _dump(
+            {
+                "query": args.search,
+                "count": len(matches),
+                "matches": matches,
+                "next": (
+                    "Run --week and --day on a match for full lesson context."
+                    if matches and not args.search_full
+                    else None
+                ),
+            },
+            pretty=pretty,
+        )
         return
 
-    # --week + --day
     if not args.week or not args.day:
         parser.error("Provide --week and --day (or --list / --search).")
 
     idx = _lesson_index(lessons, args.week, args.day)
     if idx is None:
-        print(json.dumps({"error": f"No lesson found for week={args.week} day={args.day}"},
-                         ensure_ascii=False))
+        _dump(
+            {"error": f"No lesson found for week={args.week} day={args.day}"},
+            pretty=pretty,
+        )
         sys.exit(1)
 
-    result = {"current": format_lesson(lessons[idx], include_raw=True)}
+    result = {
+        "current": format_lesson(lessons[idx], include_raw=args.include_raw),
+    }
 
     if args.include_prior and idx > 0:
-        result["prior_skills"] = [
-            {"week": l["week"], "day": l["day"], "skill": l["skill_name"]}
-            for l in lessons[:idx]
-        ]
+        if args.prior_full:
+            mode = "full"
+        elif args.prior_milestones_only:
+            mode = "milestones"
+        else:
+            mode = "smart"
+        prior, meta = build_prior_skills(
+            lessons,
+            idx,
+            mode=mode,
+            window=args.prior_window,
+        )
+        result["prior_skills"] = prior
+        result["prior_skills_meta"] = meta
 
-    print(json.dumps(result, ensure_ascii=False, indent=2))
+    _dump(result, pretty=pretty)
 
 
 if __name__ == "__main__":

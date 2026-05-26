@@ -1,6 +1,6 @@
 ---
 name: module-guidelines-generator
-description: Generates pedagogical guidelines (lineamientos) for the theoretical and practical content of each skill or module in 4Geeks Academy courses. Produces two bilingual texts per skill (Spanish and English): (1) for students — short, motivating header (3–5 lines, plain text); (2) for professors — outcome-focused guide covering what students must learn, reflect on, be aware of, do, and avoid, plus project link and evaluation priorities. Use when asked to "generate guidelines for module X", "create lineamientos for this skill", "haz cabecera para estudiantes y guía para profesor", "lineamientos por skill/día", or "instrucciones del módulo según syllabus". Trigger on "lineamientos", "guidelines for students and teachers", "instrucciones para módulo", "cabecera de módulo", or "guía docente por resultados esperados".
+description: Generates pedagogical guidelines (lineamientos) for the theoretical and practical content of each skill or module in 4Geeks Academy courses. Produces two bilingual texts per skill (Spanish and English): (1) for students — short, motivating header (3–5 lines, plain text); (2) for professors — outcome-focused guide covering what students must learn, reflect on, be aware of, do, and avoid, plus project link and evaluation priorities. ALWAYS loads syllabus context via the syllabus-context-reader skill (CSV parser) before generating. Use when asked to "generate guidelines for module X", "create lineamientos for this skill", "haz cabecera para estudiantes y guía para profesor", "lineamientos por skill/día", "w8 d22", or "instrucciones del módulo según syllabus". Trigger on "lineamientos", "guidelines for students and teachers", "instrucciones para módulo", "cabecera de módulo", or "guía docente por resultados esperados".
 ---
 
 # 4Geeks Academy — Module Guidelines Generator
@@ -9,20 +9,55 @@ This skill generates **two bilingual guideline texts per skill/module**: one for
 
 ---
 
-## Source of Truth: Syllabus
+## Source of Truth: Syllabus (via `syllabus-context-reader`)
 
-**Before generating any output**, fetch and read the syllabus from its canonical URL:
+**MANDATORY — before generating any output**, load syllabus context using the **`syllabus-context-reader`** skill:
 
+- Skill path: `course-outline-generator/skills/syllabus-context-reader/SKILL.md`
+- Follow its workflow end-to-end (run `scripts/parse_syllabus.py`; do **not** read `syllabus.md`, a GitHub raw URL, or the CSV by hand).
+
+**Do NOT** use these as primary sources:
+
+- `course-outline-generator/ai-engineering/syllabus.md`
 - <https://raw.githubusercontent.com/4GeeksAcademy/course-outline-generator/refs/heads/main/ai-engineering/syllabus.md>
 
-Use it to extract, for the target skill:
+**Official source:** `New Syllabus AI Engineer - Planificación del programa.csv` (or the AI Native Full Stack CSV when that program applies). `syllabus.md` is a derived export only — if it disagrees with the CSV, the CSV wins.
 
-- Exact skill name, day/week position, and scope.
-- Theory content (Teoría).
-- Thinking Framework sections: **Thinking Development, Best Practices, Patterns, Anti-patterns, Constraints & Limitations**.
-- Project(s) or context referenced for that skill.
+The parser normalizes week/day, merges multi-row content, and exposes prior skills.
 
-Do not invent learning objectives or concepts that are not present or clearly implied by the syllabus. If a Thinking Framework section is missing (`_Not introduced in this learnpack_`), infer only from the available theory and avoid adding advanced assumptions.
+### Required parser invocation
+
+1. If week/day are unknown, run `--list` or `--search` (see `syllabus-context-reader`).
+2. Always extract the target day with **`--include-prior`**:
+
+```bash
+python3 course-outline-generator/skills/syllabus-context-reader/scripts/parse_syllabus.py \
+  --csv "course-outline-generator/ai-engineering/New Syllabus AI Engineer - Planificación del programa.csv" \
+  --week <semana> \
+  --day <día> \
+  --include-prior
+```
+
+Use the **AI Native Full Stack** CSV only when the user explicitly names that program.
+
+### Map JSON output → guideline inputs
+
+From `current` in the parser JSON:
+
+| Parser field     | Use in guidelines as                                                |
+| ---------------- | ------------------------------------------------------------------- |
+| `skill`          | Skill name, scope, `skill_name`                                     |
+| `content`        | Theory, projects (`main_concepts`, `project_name`, `project_focus`) |
+| `how_to_think`   | Thinking Development → **Learn**, **Reflect**                       |
+| `best_practices` | **Be aware of**, evaluation priorities                              |
+| `patterns`       | **Do**, patterns to reinforce                                       |
+| `anti_patterns`  | **Avoid** (required; do not omit)                                   |
+| `limitaciones`   | **Be aware of**, constraints in class and project                   |
+| `week` + `day`   | Position in course (e.g. Week 8 — Day 22)                           |
+
+From `prior_skills`: calibrate tone and prerequisites only — **do not** teach content from future days; **do not** assume knowledge beyond what `prior_skills` lists. Default parser mode is **smart** (prior milestones + last 15 regular lessons). If you need the full course history, re-run with `--prior-full`. Check `prior_skills_meta.total_prior` vs `returned`.
+
+Do not invent learning objectives or concepts absent from the parser output. If a framework field is `null` or empty, infer only from `content` and `skill`; avoid advanced assumptions.
 
 ---
 
@@ -55,7 +90,7 @@ Confirm you have (or ask for) the following. If any are missing, ask for **all m
 | `project_name`  | Name or short description of the module project                              | Required                     |
 | `project_focus` | What the project emphasizes (e.g. KPIs, edge cases, semantic structure)      | Optional but recommended     |
 
-If the syllabus already provides these values, extract them from there; ask the user only for items not found in the syllabus.
+If the parser output already provides these values, extract them from `current` (and `content` for project details); ask the user only for items still missing after the CSV extraction.
 
 ---
 
@@ -132,12 +167,13 @@ Always produce **two distinct texts** for the same skill. Both must be **bilingu
 
 ## Workflow
 
-1. **Fetch the syllabus** — Read the canonical URL above. Locate the target skill. Extract: title, theory, Thinking Framework (Thinking Development, Best Practices, Patterns, Anti-patterns, Constraints).
-2. **Gather inputs** — Confirm `skill_name`, `main_concepts`, `key_actions`, `project_name`. Use syllabus values where available; ask only for missing items.
-3. **Choose skill type** — If `skill_type` or project name matches a known pattern, apply the corresponding focus (see Skill-Type Examples below).
-4. **Generate student guidelines** — 3 lines per language (max 5), plain text, motivating. Same meaning in both languages. Deliver with `### Español` / `### English` structure.
-5. **Generate professor guidelines** — Cover all 5 outcome dimensions + project link + evaluation priorities. ~120–180 words per language. Same content in both languages. Deliver with `### Español` / `### English` structure.
-6. **Deliver both texts** — Present clearly labeled: "Para estudiantes" and "Para profesor". Follow the output format below.
+1. **Load syllabus context (mandatory)** — Invoke **`syllabus-context-reader`**: read `SKILL.md`, run `parse_syllabus.py` with `--week`, `--day`, and **`--include-prior`**. Resolve week/day from the user request (e.g. `w8 d22` → `--week 8 --day 22`). If ambiguous, run `--list` or `--search` first; never guess from `syllabus.md`.
+2. **Map parser JSON** — Populate `skill_name`, `main_concepts`, `key_actions`, `project_name`, `project_focus` from `current` and `prior_skills` (see table above).
+3. **Gather inputs** — Ask only for fields still missing after step 2.
+4. **Choose skill type** — If `skill_type` or project name matches a known pattern, apply the corresponding focus (see Skill-Type Examples below).
+5. **Generate student guidelines** — 3 lines per language (max 5), plain text, motivating. Same meaning in both languages.
+6. **Generate professor guidelines** — Cover all 5 outcome dimensions + project link + evaluation priorities. ~120–180 words per language. Ground **Avoid** in `anti_patterns` from the parser.
+7. **Deliver both texts** — Present clearly labeled: "Para estudiantes" and "Para profesor". Follow the output format below.
 
 ---
 
@@ -200,7 +236,9 @@ If the user needs integration into a platform (e.g. CMS fields or `learn.json`),
 
 ## Quality Self-Check Before Delivering
 
-- [ ] Syllabus URL consulted; guidelines align with the skill's theory and Thinking Framework.
+- [ ] **`syllabus-context-reader` used**: `parse_syllabus.py` ran with `--include-prior`; `syllabus.md` / GitHub URL **not** used as source.
+- [ ] Guidelines align with parser `current` (`skill`, `content`, `how_to_think`, `best_practices`, `patterns`, `anti_patterns`, `limitaciones`).
+- [ ] No content from days after the target day; tone matches `prior_skills`.
 - [ ] Both texts generated (student + professor) for the same skill.
 - [ ] Student text: 3 lines per language (max 5), plain text, motivating.
 - [ ] Student text states what the student will learn and what they should be able to do.
