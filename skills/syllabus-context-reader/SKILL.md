@@ -46,6 +46,7 @@ Si `syllabus.md` y el CSV **no coinciden**, gana el **CSV** (vía `parse_syllabu
 - Diseñar **rúbricas** o **criterios de evaluación**.
 - Producir **quizzes**, **checklists** o **material de apoyo**.
 - Verificar que el contenido sea coherente con **lo que el estudiante ya sabe**.
+- Consumida por `module-guidelines-generator` para crear lineamientos (estudiantes + profesor) alineados al día del syllabus.
 
 > Regla de oro: nunca referenciar contenido de días futuros. El parser
 > entrega `prior_skills` para evitar este error.
@@ -62,7 +63,7 @@ Los CSVs de planificación se encuentran en:
 
 Rutas absolutas (workspace `/Users/marcogonzalo/Projects/4Geeks/AIE-Projects`):
 
-```
+```text
 /Users/marcogonzalo/Projects/4Geeks/AIE-Projects/course-outline-generator/ai-engineering/New Syllabus AI Engineer - Planificación del programa.csv
 ```
 
@@ -204,7 +205,7 @@ Cualquier campo puede ser `null` si el CSV no tiene información para esa celda.
 
 ## 5. Flujo de trabajo recomendado
 
-```
+```text
 1. Si semana/día desconocidos: --search "tema" → elegir match → --week/--day
    (o --list si hace falta ver todo el índice)
 2. Ejecutar --week X --day Y --include-prior
