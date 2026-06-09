@@ -40,18 +40,18 @@ The challenge narrative and the CTO/manager brief must use the vocabulary that r
 
 **Preferred terms — use them naturally, not all at once:**
 
-| Term | When to use it |
-|------|---------------|
-| **RFI** (Request for Information) | A department is evaluating options and asks the tech team to clarify feasibility, scope, or technology choices before committing. |
-| **RFP** (Request for Proposal) | A stakeholder asks the tech team to propose a solution to a defined problem, including approach, timeline, and trade-offs. |
-| **RFQ** (Request for Quotation) | The business needs an effort estimate or cost breakdown before approving work. |
-| **Brief** | A short, informal document a stakeholder sends to initiate a request — common for product or design work. Use when the request is exploratory or early-stage. |
-| **PRD** (Product Requirements Document) | A formal document defining what to build. Use when describing the artifact the student must produce or reference. |
-| **Ticket / Issue** | A tracked unit of work in an issue tracker. Use when describing tasks scoped to implementation. |
-| **Stakeholder** | Anyone outside the tech team who has an interest in the outcome: business owner, analyst, ops manager. |
-| **Acceptance criteria** | The specific, testable conditions a deliverable must meet to be considered done. Use in evaluation sections. |
-| **Handoff** | The moment the tech team delivers a result to a stakeholder or to the next stage of a process. |
-| **Sign-off** | Formal approval from a stakeholder. Use to frame what it means to "complete" the milestone. |
+| Term                                    | When to use it                                                                                                                                                |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **RFI** (Request for Information)       | A department is evaluating options and asks the tech team to clarify feasibility, scope, or technology choices before committing.                             |
+| **RFP** (Request for Proposal)          | A stakeholder asks the tech team to propose a solution to a defined problem, including approach, timeline, and trade-offs.                                    |
+| **RFQ** (Request for Quotation)         | The business needs an effort estimate or cost breakdown before approving work.                                                                                |
+| **Brief**                               | A short, informal document a stakeholder sends to initiate a request — common for product or design work. Use when the request is exploratory or early-stage. |
+| **PRD** (Product Requirements Document) | A formal document defining what to build. Use when describing the artifact the student must produce or reference.                                             |
+| **Ticket / Issue**                      | A tracked unit of work in an issue tracker. Use when describing tasks scoped to implementation.                                                               |
+| **Stakeholder**                         | Anyone outside the tech team who has an interest in the outcome: business owner, analyst, ops manager.                                                        |
+| **Acceptance criteria**                 | The specific, testable conditions a deliverable must meet to be considered done. Use in evaluation sections.                                                  |
+| **Handoff**                             | The moment the tech team delivers a result to a stakeholder or to the next stage of a process.                                                                |
+| **Sign-off**                            | Formal approval from a stakeholder. Use to frame what it means to "complete" the milestone.                                                                   |
 
 **Do:** `The operations team filed an RFI asking whether the current data pipeline can support real-time alerts. Your tech lead has forwarded it to your squad.`
 **Do:** `Your manager shared a brief from the analytics department: they need a dashboard before the quarterly review.`
@@ -65,12 +65,33 @@ The README must reference `CONTEXT-company.md` (link to https://github.com/4Geek
 
 1. **In the hidden metadata block** — a note before the student starts.
 2. **In the task checklist** — a `⚠️ IMPORTANT` warning that a generic implementation ignoring the context will not be accepted.
-
-This is the mechanism that enforces contextualization. Without it, students treat the README as a standalone assignment and ignore their scenario.
+   This is the mechanism that enforces contextualization. Without it, students treat the README as a standalone assignment and ignore their scenario.
 
 ### Embed requirements in prose
 
 The challenge narrative must contain at least two or three requirements that the student has to extract by reading carefully — not everything goes in checklists. This mirrors how real briefs work.
+
+### Company monorepo reminder — mandatory
+
+At the very beginning of the **🎯 The Challenge** section (before the narrative opens), insert a short callout block reminding students that this project belongs to the company they were assigned at the start of the course and must be worked on in their own fork of the company monorepo.
+
+Use this exact callout (adapt the language to match the document language):
+
+**English:**
+
+```markdown
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+```
+
+**Spanish:**
+
+```markdown
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+```
+
+This callout must appear as the **first element inside the 🎯 The Challenge section**, before any narrative text or blockquote.
+
+---
 
 ### Prior milestone continuity
 
@@ -93,6 +114,7 @@ Follow this structure exactly, in this order:
 2. Hidden metadata block
 3. --- separator
 4. The Challenge (🎯)
+   └── Company monorepo callout (mandatory — first element)
    └── [optional] complementary knowledge subsection
    └── CTO/manager brief in nested blockquotes
 5. How to Start the Project (🌱)
@@ -171,6 +193,7 @@ Each file must link to its counterpart, written in the language of the target do
 
 ## Quality Self-Check Before Delivering
 
+- [ ] Company monorepo callout present as the first element inside the 🎯 The Challenge section (both language versions)
 - [ ] No sector name, company name, or industry reference anywhere in the README
 - [ ] At least one in-company communication term (RFI, RFP, brief, PRD, ticket, stakeholder, acceptance criteria, handoff, or sign-off) appears in both the challenge narrative opening and the CTO/manager brief
 - [ ] CONTEXT anchor present in both the metadata block and the task checklist
