@@ -1,11 +1,27 @@
 ---
 name: module-guidelines-generator
-description: Generates debate-first pedagogical guidelines (lineamientos) per module/day. Produces two bilingual texts per skill: (1) students — short motivating header (3–5 lines, plain text) + 1–2 preview questions ("before class"); (2) professors — compact hybrid debate kit delivered as plain Markdown (copy-paste ready with headings/lists intact), with concise Summary (ends with class checkpoint), Debate pacing, opening/closing, and 5 dimension subsections (Learn/Reflect/Be aware of/Do/Avoid) with compact representative aspects + 1–2 Socratic reflexive questions per dimension, optional bridge, facilitator probes (Reflect/Avoid only), and Participation criteria. ALWAYS loads syllabus context via `syllabus-context-reader` (CSV parser) before generating. Use when asked to "generate guidelines for module X", "generate lineamientos", "generate guidelines", "student guidelines", "mentor guidelines", "class debate", "reflective questions", or "w8 d22". Trigger on "lineamientos", "teaching guide", "debate", "guidelines".
+description: Generates debate-first pedagogical guidelines (lineamientos) per module/day, **content-first**: theory topics from the syllabus CSV drive every section; the day’s project is referenced only as the application/deliverable hook. Produces two bilingual texts per skill: (1) students — short motivating header (3–5 lines, plain text) + 1–2 preview questions ("before class"); (2) professors — compact hybrid debate kit delivered as plain Markdown (copy-paste ready with headings/lists intact), with concise Summary (ends with class checkpoint), Debate pacing, opening/closing, and 5 dimension subsections (Learn/Reflect/Be aware of/Do/Avoid) with compact representative aspects + 1–2 Socratic reflexive questions per dimension, optional bridge, facilitator probes (Reflect/Avoid only), and Participation criteria. **MANDATORY:** run `syllabus-context-reader` (`parse_syllabus.py` on the planning CSV) before generating — never invent or assume day content. Use when asked to "generate guidelines for module X", "generate lineamientos", "generate guidelines", "student guidelines", "mentor guidelines", "class debate", "reflective questions", or "w8 d22". Trigger on "lineamientos", "teaching guide", "debate", "guidelines".
 ---
 
 # 4Geeks Academy — Module Guidelines Generator
 
 This skill generates **two bilingual guideline texts per skill/module**: one for **students** (short motivating header) and one for **professors** (outcome-focused teaching guide). Both are always delivered in **Spanish and English**. All outputs must be returned in **Markdown**.
+
+## Content-first principle (mandatory)
+
+Guidelines are **about the class content** — what students learn and discuss that day. The **project names the application context**; it does **not** replace or overshadow the theory plan.
+
+| Priority                 | Source                                                                        | Role in guidelines                                                                                                       |
+| ------------------------ | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **1 — Primary**          | `content` **before** `---` (theory topics from CSV)                           | Drives summary, must-discuss, Learn/Reflect/Be aware of/Do/Avoid aspects, preview questions, opening/closing             |
+| **2 — Framework**        | `how_to_think`, `best_practices`, `patterns`, `anti_patterns`, `limitaciones` | Shapes dimensions and facilitator probes                                                                                 |
+| **3 — Application hook** | `content` **after** `---` (project definition)                                | Referenced in student “by end” line, summary project link, class checkpoint, closing — **not** the main debate narrative |
+
+**Agent rule:** never generate guidelines without running `parse_syllabus.py` for the target week/day. Extract theory topics from parser output; **do not** write project-led guidelines that skip or underweight syllabus theory bullets.
+
+**Bad (project-led):** debate centers on “Voice Agent” wiring while ignoring Pydantic validation, HTTP methods, or API docs listed in theory.
+
+**Good (content-led):** debate centers on CRUD endpoints, Pydantic contracts, and API documentation; Voice Agent is where students apply those concepts.
 
 ### Chat delivery format (mandatory)
 
@@ -110,16 +126,16 @@ Use the **AI Native Full Stack** CSV only when the user explicitly names that pr
 
 From `current` in the parser JSON:
 
-| Parser field     | Use in guidelines as                                                                                                                                                                                       |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `skill`          | Skill name, scope, `skill_name`                                                                                                                                                                            |
-| `content`        | Full class content plan: theory topics (before `---`) + project definition (after `---`). Source for `theory_topics`, `main_concepts`, `project_name`, `project_focus`. **Both must feed the guidelines.** |
-| `how_to_think`   | Thinking development → **Learn**, **Reflect**                                                                                                                                                              |
-| `best_practices` | **Be aware of**, evaluation priorities                                                                                                                                                                     |
-| `patterns`       | **Do**, patterns to reinforce                                                                                                                                                                              |
-| `anti_patterns`  | **Avoid** (required; do not omit)                                                                                                                                                                          |
-| `limitaciones`   | **Be aware of**, constraints in class and project                                                                                                                                                          |
-| `week` + `day`   | Position in course (e.g. Week 8 — Day 22)                                                                                                                                                                  |
+| Parser field     | Use in guidelines as                                                                                                                                                                                                                                                          |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `skill`          | Skill name, scope, `skill_name`                                                                                                                                                                                                                                               |
+| `content`        | **Split on `---`:** (1) **before** → `theory_topics`, `main_concepts`, `key_actions` — **primary** source for all debate dimensions; (2) **after** → `project_name`, `project_focus` — application hook only. Never let the project section override missing theory coverage. |
+| `how_to_think`   | Thinking development → **Learn**, **Reflect**                                                                                                                                                                                                                                 |
+| `best_practices` | **Be aware of**, evaluation priorities                                                                                                                                                                                                                                        |
+| `patterns`       | **Do**, patterns to reinforce                                                                                                                                                                                                                                                 |
+| `anti_patterns`  | **Avoid** (required; do not omit)                                                                                                                                                                                                                                             |
+| `limitaciones`   | **Be aware of**, constraints in class and project                                                                                                                                                                                                                             |
+| `week` + `day`   | Position in course (e.g. Week 8 — Day 22)                                                                                                                                                                                                                                     |
 
 From `prior_skills`: calibrate tone and prerequisites only — **do not** teach content from future days; **do not** assume knowledge beyond what `prior_skills` lists. Default parser mode is **smart** (prior milestones + last 15 regular lessons). If you need the full course history, re-run with `--prior-full`. Check `prior_skills_meta.total_prior` vs `returned`.
 
@@ -147,15 +163,15 @@ Use when:
 
 Confirm you have (or ask for) the following. If any are missing, ask for **all missing items at once**.
 
-| Input           | Description                                                                                | Required                     |
-| --------------- | ------------------------------------------------------------------------------------------ | ---------------------------- |
-| `skill_name`    | Name of the skill or module                                                                | Required                     |
-| `skill_type`    | Category: `web-fundamentals`, `styling-ui`, `programming-logic`, `milestone`               | Optional — helps tailor tone |
-| `theory_topics` | Core theory topics covered in class (extracted from `content`, before the `---` separator) | Required                     |
-| `main_concepts` | 3–5 core concepts this skill teaches                                                       | Required                     |
-| `key_actions`   | 2–4 things the student should be able to do by the end                                     | Required                     |
-| `project_name`  | Name or short description of the module project(s)                                         | Required                     |
-| `project_focus` | What the project emphasizes (e.g. KPIs, edge cases, semantic structure)                    | Optional but recommended     |
+| Input           | Description                                                                                                                                            | Required                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- |
+| `skill_name`    | Name of the skill or module                                                                                                                            | Required                     |
+| `skill_type`    | Category: `web-fundamentals`, `styling-ui`, `programming-logic`, `milestone`                                                                           | Optional — helps tailor tone |
+| `theory_topics` | Core theory topics covered in class (extracted from `content`, before the `---` separator) — **primary input**; must be parsed from CSV before writing | Required                     |
+| `main_concepts` | 3–5 core concepts this skill teaches                                                                                                                   | Required                     |
+| `key_actions`   | 2–4 things the student should be able to do by the end                                                                                                 | Required                     |
+| `project_name`  | Name or short description of the module project(s) — **application hook only**                                                                         | Required                     |
+| `project_focus` | What the project emphasizes — used to link theory to deliverable, not to replace theory                                                                | Optional but recommended     |
 
 If the parser output already provides these values, extract them from `current` (theory topics and project details both live in `content`); ask the user only for items still missing after the CSV extraction.
 
@@ -169,18 +185,19 @@ Always produce **two distinct texts** for the same skill. Both must be **bilingu
 
 ### 1. Student Guidelines (Lineamientos para estudiantes)
 
-**Purpose:** A short, motivating class opener in natural language that tells students what they are about to build/practice, what they should be able to do by the end, and includes 1–2 preview questions to activate reflection before class.
+**Purpose:** A short, motivating class opener in natural language that tells students **what theory content they will cover**, what they should be able to do by the end **applied in the day’s project**, and includes 1–2 preview questions grounded in **syllabus theory topics** (not project mechanics alone).
 
 **Rules:**
 
+- **Content-first:** lead with theory topics from `content` (before `---`); name the project as the place to apply them — not as the sole subject of the opener.
 - **Target: 3–5 lines per language. Maximum: 5 lines total**, including preview questions (inline, not bullet lists).
 - **Plain text preferred** — avoid bullet lists unless explicitly requested.
 - Motivating and clear; use second person (tú/vos or usted, per course convention).
 - **Forward-looking tone** — students read this **before or at the start of class**; describe what they **will do/learn that day**, not what they are doing now. **Do not** require "Today you will…" / "Hoy vas a…" every time.
   - EN: use **"You will…"** (e.g. "You will create…", "You will learn…") and/or direct imperative (**"Create…"**, **"Build…"**). Optional: "By the end you will be able to…". Avoid present for the main action (not "You create…" / "You are building…").
   - ES: use **"Vas a…"** / **"Crearás…"** / **"Aprenderás…"** and/or imperative (**"Crea…"**, **"Construye…"**). Optional: "Al final podrás…". Avoid present for the main action (not "Creas…" / "Estás construyendo…").
-- Must state: what the student **will** learn (theory topics) + what they **will** be able to do by the end (applied in the project).
-- Include **1–2 preview questions** students can reflect on before class (drawn from opening + one high-signal dimension aspect).
+- Must state: what the student **will** learn (**theory topics from syllabus**) + what they **will** be able to do by the end (applied in the project).
+- Include **1–2 preview questions** students can reflect on before class — at least one must reference a **theory topic** from the CSV content plan, not only the project name.
 - Encourage steady progress: "By the end you should feel capable of...", "Don't aim for perfection on the first try."
 - Both language versions must convey the same meaning.
 - Spanish must read as native classroom Spanish (not literal translation from English). Adapt phrasing and rhythm while preserving intent.
@@ -203,10 +220,11 @@ Always produce **two distinct texts** for the same skill. Both must be **bilingu
 
 ### 2. Professor Guidelines (Lineamientos para profesor)
 
-**Purpose:** Debate-first teaching kit. Turn the 5 Thinking Framework dimensions into a reflexive discussion so students internalize _why_ each concept matters for excelling as an AI Engineer.
+**Purpose:** Debate-first teaching kit centered on **that day’s syllabus content**. Turn the 5 Thinking Framework dimensions into a reflexive discussion so students internalize _why_ each **theory concept** matters for excelling as an AI Engineer — with the project as proof of application.
 
 **Rules:**
 
+- **Content-first:** summary, must-discuss, dimension aspects, and reflective questions must trace to **theory bullets** in `content` (before `---`). Reference the project to show application and in the class checkpoint — do not make the project the only subject of debate.
 - Direct, imperative or neutral third person.
 - Structured debate flow (not one dense paragraph).
 - Must explicitly address the following **5 outcome dimensions** as their own `####` subsections:
@@ -216,7 +234,7 @@ Always produce **two distinct texts** for the same skill. Both must be **bilingu
   4. **Do**
   5. **Avoid**
 - Include (inside the kit):
-  - **Content plan + project link / what good looks like:** how theory topics covered connect to the module project(s), and what applying both well looks like.
+  - **Content plan + project link / what good looks like:** enumerate or summarize **theory topics from the syllabus** first; then how those topics connect to the module project(s) and what applying both well looks like.
   - **Evaluation priorities:** understanding over memorization; application in the project over ticking checklists; meaningful intent.
   - **Class checkpoint line (#7):** the last line inside **Summary** tying debate outputs to both theory coverage and a concrete project deliverable.
 - Questions must be **open-ended, Socratic** (no answer keys embedded).
@@ -391,11 +409,11 @@ Sondeos del facilitador:
 ## Workflow
 
 1. **Load syllabus context (mandatory)** — Invoke **`syllabus-context-reader`**: read `SKILL.md`, run `parse_syllabus.py` with `--week`, `--day`, and **`--include-prior`**. Resolve week/day from the user request (e.g. `w8 d22` → `--week 8 --day 22`). If ambiguous, run `--list` or `--search` first; never guess from `syllabus.md`.
-2. **Map parser JSON** — Populate `skill_name`, `theory_topics`, `main_concepts`, `key_actions`, `project_name`, `project_focus` from `current` and `prior_skills` (see table above). Extract theory topics from `content` (before the `---` separator) and project definition (after the `---` separator) separately. Treat `prior_skills` as prerequisites only (tone/expectations). Do not teach content from future days.
-3. **Internal: representative aspects per dimension** _(process-visible, result-hidden)_ — For each dimension (Learn/Reflect/Be aware of/Do/Avoid) derive **1–3 compact** aspects/cases, then render them as **one inline sentence** in final output (no subsection title):
-   - Learn/Reflect: `content` (theory topics), `how_to_think`, `skill`
-   - Be aware: `best_practices`, `limitaciones`
-   - Do: `patterns` + theory activities and project moments in `content`
+2. **Map parser JSON (content-first)** — Populate inputs from `current` (see table above). **First:** parse `content` before `---` into an explicit `theory_topics` list (every `+` / `-` bullet in the CSV theory block). **Second:** extract `project_name` / `project_focus` from after `---`. Derive `main_concepts` and `key_actions` from theory topics + `how_to_think`/`patterns`, not from project title alone. Treat `prior_skills` as prerequisites only (tone/expectations). Do not teach content from future days. **Stop** if parser was not run — do not generate from memory or `syllabus.md`.
+3. **Internal: representative aspects per dimension** _(process-visible, result-hidden)_ — For each dimension (Learn/Reflect/Be aware of/Do/Avoid) derive **1–3 compact** aspects/cases from **theory topics first**, then render them as **one inline sentence** in final output (no subsection title):
+   - Learn/Reflect: `content` (**theory topics before `---`**), `how_to_think`, `skill`
+   - Be aware: `best_practices`, `limitaciones`, theory constraints in `content`
+   - Do: `patterns` + **theory activities** in `content`; project application only as supporting example
    - Avoid: `anti_patterns` (**required; never omit**)
    - If a field is `null`, infer only from `content` + `skill`.
      Also run **Bridge check**: scan `prior_skills` + CSV module boundaries (`### … ###` in planning). Bridge **only** if the immediately relevant prior lesson is in the **same module** as today and sets up today's skill. Extract **topic label** from that prior `skill` (not week/day). If no same-module link, set bridge = omit.
@@ -406,13 +424,13 @@ Sondeos del facilitador:
    - Milestone days (`current.is_milestone` true): target **1 question (max 2) per dimension** (keep total questions small; emphasize "what good looks like").
    - Add exactly **1 opening** career-impact question (whole class).
    - Add exactly **1 closing** question tied to how decisions show up in both the theory content and the module project / next milestone.
-   - **Quality bar:** prefer concrete scenarios from theory topics, project moments, or anti-patterns; avoid yes/no unless followed by "why"; questions must be discussable (trade-offs, "what if", production impact).
+   - **Quality bar:** prefer concrete scenarios from **syllabus theory topics** first, then project application or anti-patterns; avoid yes/no unless followed by "why"; questions must be discussable (trade-offs, "what if", production impact). At least **3 of 5** dimension aspect sentences must name a theory topic from the CSV content plan.
    - **Bilingual parity:** same intent in ES/EN.
    - **Translation quality bar:** do not perform literal ES<->EN translation; rewrite Spanish naturally for teaching context while preserving semantic intent.
-5. **Generate student guidelines** — 3–5 lines per language, plain text, motivating, **forward-looking** ("You will…" / imperative; no mandatory "Today you will"). Must include what students will learn (theory topics) + what they will be able to do by the end (applied in the project). Add **1–2 preview questions** (inline, not bullet lists). Spanish must sound natural, not literal. In agent chat: heading `#### Students — English` / `#### Students — Español` **before** each ` ```text ` fence; fence contains only the student guideline text to copy.
+5. **Generate student guidelines** — 3–5 lines per language, plain text, motivating, **forward-looking** ("You will…" / imperative; no mandatory "Today you will"). **Lead with theory topics from syllabus**; mention project as application. Add **1–2 preview questions** (inline, not bullet lists) grounded in content plan. Spanish must sound natural, not literal. In agent chat: heading `#### Students — English` / `#### Students — Español` **before** each ` ```text ` fence; fence contains only the student guideline text to copy.
 6. **Generate professor guidelines (debate-first hybrid kit)** —
-   - **Expected outcomes summary**: concise (**~45–60 words**), cover theory topics + all 5 dimensions + project link + evaluation priorities, and end with **class checkpoint line** tying both content coverage and project deliverable.
-   - **Debate pacing (#1)**: order + must-discuss (2–3) + if-time + time guide (~45–60 min debate + practice).
+   - **Expected outcomes summary**: concise (**~45–60 words**), **name or summarize theory topics first**, then project link + evaluation priorities; end with **class checkpoint line** tying **content mastery** to a concrete project deliverable.
+   - **Debate pacing (#1)**: order + must-discuss (**2–3 items from theory plan**, not project steps alone) + if-time + time guide (~45–60 min debate + practice).
    - **Bridge within the module** (from Bridge check): include section only when same-module continuity exists; one bullet referencing **prior topic** in natural language (EN/ES); never week/day codes.
    - **Participation criteria (#13)**: exactly 3 bullets.
    - **Opening**: opening career-impact question.
@@ -427,7 +445,7 @@ Sondeos del facilitador:
 
 ## Skill-Type Examples (Reference)
 
-Use these to tailor tone and focus; do not copy verbatim.
+Use these to tailor tone and focus; do not copy verbatim. Each example is **content-led** (theory topics named first) with the project as application — match that pattern, not project-only narratives.
 
 ### Web fundamentals (HTML, CSS, SEO, accessibility)
 
@@ -545,9 +563,11 @@ If the user needs integration into a platform (e.g. CMS fields or `learn.json`),
 
 ## Quality Self-Check Before Delivering
 
-- [ ] **`syllabus-context-reader` used**: `parse_syllabus.py` ran with `--include-prior`; `syllabus.md` / GitHub URL **not** used as source.
+- [ ] **`syllabus-context-reader` used**: `parse_syllabus.py` ran with `--include-prior`; `syllabus.md` / GitHub URL **not** used as source; guidelines **not** generated from memory or guesswork.
+- [ ] **Content-first**: theory topics from `content` (before `---`) drive summary, must-discuss, dimensions, and preview questions; project referenced as application hook, not sole narrative.
 - [ ] Guidelines align with parser `current` (`skill`, `content`, `how_to_think`, `best_practices`, `patterns`, `anti_patterns`, `limitaciones`).
-- [ ] Theory topics extracted from `content` (before `---`) and project details extracted from `content` (after `---`) — both used to build guidelines.
+- [ ] Theory topics extracted from `content` (before `---`) and project details extracted from `content` (after `---`) — theory leads; project supports.
+- [ ] At least **3 of 5** dimension aspect sentences and **2 of 3** must-discuss items name concrete theory topics from the CSV content plan.
 - [ ] No content from days after the target day; tone matches `prior_skills`.
 - [ ] Both texts generated (student + professor) for the same skill.
 - [ ] Student text: 3–5 lines per language (max 5), plain text, motivating, **forward-looking** (EN: "You will…" and/or imperative; ES: "Vas a…" / "-arás" / imperative; no required "Today/Hoy").

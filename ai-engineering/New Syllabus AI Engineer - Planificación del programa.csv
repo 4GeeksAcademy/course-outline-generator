@@ -1406,16 +1406,6 @@ Escribe el codigo, no lo copies
 ,En Syllabus,"> Teoría:
   - (Hacer mención a Skill 8.1)
 
-  + Funciones Python
-    - ¿Qué es un bloque de código?
-    - Dar nombre a un bloque de código (creando una función)
-    - Párametros (cómo pasar valores a una función)  
-      - Incluye breve referencia a *args y **kwargs
-    - ¿Cómo devuelve valores una función? (funcionamiento del return y especificación del tipo de dato devuelto) 
-    - Métodos vs funciones vs procedimientos (funciones que devuelven valor y funciones que no)
-    - Métodos y funciones para trabajar con datos primitivos (string, number, etc)  
-    - funciones anónimas (lambdas)
-
   + Listas y diccionarios en Python
     - Listas (Array)
       -- Iteradores más comunes: Map y Filter
@@ -1428,19 +1418,14 @@ Escribe el codigo, no lo copies
 ","""- Desarrollar un flujo si hay un objetivo solo, que son: 
  -- Mutar un valor de un proceso global
  -- obtener un valor y retornarlo
-- Reconocer los valores que necesita mi funcion para lograr su objetivo
-- Reconocer el tipo de funcion que requiero
-- Mantener el principio de responsabilidad única
 - Comprender diferencia entre listas, duplas, conjuntos
 - Definir y manipular una lista, dupla o conjunto
 - Buscar elementos en una lista, dupla o conjunto
 - Ordenar listas
-- Identificar cuando existe un """"paso por referencia"""" y cuando es un """"paso por valor""""
 - Construir y manipular diccionarios","-  Aprender a gestionar listas con bucles y con métodos del lenguaje.
 
 - No memorizar.  Investiga cada que necesites usar un método
-
-- Elegir un nombre adecuado en las funciones, el nombre debe ser descriptivo a lo quehace la misma ","
+","
 
 - Homogeneidad en arrays/colección
 
@@ -1449,10 +1434,33 @@ Escribe el codigo, no lo copies
 - Mutación durante iteración 
 
 - Acceso:        Usar lista[100] sin verificar el tamaño, devuelve error.
+",- No IA
+,En Syllabus,> Proyecto: To-do List CLI (Reutilizado),,,,,
+10,28,Skill: Implementar colecciones y diccionarios en Python siguiendo la lógica de la solución a implementar,,,,,
+,En Syllabus,"> Teoría:
+  - (Hacer mención a Skill 8.1)
 
+  + Funciones Python
+    - ¿Qué es un bloque de código?
+    - Dar nombre a un bloque de código (creando una función)
+    - Párametros (cómo pasar valores a una función)  
+      - Incluye breve referencia a *args y **kwargs
+    - ¿Cómo devuelve valores una función? (funcionamiento del return y especificación del tipo de dato devuelto) 
+    - Métodos vs funciones vs procedimientos (funciones que devuelven valor y funciones que no)
+    - Métodos y funciones para trabajar con datos primitivos (string, number, etc)  
+    - funciones anónimas (lambdas)
+","
+- Reconocer los valores que necesita mi funcion para lograr su objetivo
+- Reconocer el tipo de funcion que requiero
+- Mantener el principio de responsabilidad única
+
+- Identificar cuando existe un """"paso por referencia"""" y cuando es un """"paso por valor""""
+","
+
+- Elegir un nombre adecuado en las funciones, el nombre debe ser descriptivo a lo quehace la misma ",,"
 - Abuso de funciones lambda",- No IA
 ,En Syllabus,> Proyecto: To-do List CLI (Reutilizado),,,,,
-10,28,Skill: Trabajar con datos estructurados de tipo objeto en Python,,,,,
+10,29,Skill: Trabajar con datos estructurados de tipo objeto en Python,,,,,
 ,En Syllabus,"> Teoría:
   + Programación Orientada a Objetos en Python:
     - ¿Qué es una clase?
@@ -1498,7 +1506,7 @@ Datos Primitivos: coche.rueda1_presion, coche.rueda2_presion.
 Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se desincroniza.",
 ,En Syllabus,Ejercicios de representación de clases.,,,,,
 ,,### BACKEND DEVELOPMENT WITH CODING AGENTS ###,,,,,
-10,29,Skill: Diseñar la arquitectura del backend según la naturaleza de la solución y las necesidades del negocio,,,,,
+10,30,Skill: Diseñar la arquitectura del backend según la naturaleza de la solución y las necesidades del negocio,,,,,
 ,En Syllabus,"> Teoría:
   + Arquitecturas más comunes en el backend
     - MVC
@@ -1528,7 +1536,7 @@ Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se d
 - Identificar las ventajas de una estructura modularizada en cuanto a organización, mantenibilidad y eficiencia de código
 - Reconocer los elementos principales de la estructura de un proyecto usando un framework como FastAPI",,,,
 ,En Syllabus,Proyecto: Hacer una propuesta de organización de la arquitectura de backend para el proyecto transversal.,,,,,
-10,30,Skill: Answering front end user-triggered requests using APIs,,,,,
+11,31,Skill: Answering front end user-triggered requests using APIs,,,,,
 ,En Syllabus,"> Teoría: 
   (Referencia a la Skill 14)
 
@@ -1592,7 +1600,7 @@ Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se d
 
 Sugerir un prompt que le indique a la IA que examine el código del backend e identifique oportunidades de mejora de serialización como payload size y otros antipatrones. (A modo de sugerencia para completar el prompt, no dar completo)
 ",,,,,
-11,31,Skill: Procesar datos almacenados en archivos de tipo CSV mediante scripts de Python,,,,,
+11,32,Skill: Procesar datos almacenados en archivos de tipo CSV mediante scripts de Python,,,,,
 ,En Syllabus,"> Teoría:
 
   + Trabajar con ficheros en Python
@@ -1613,7 +1621,7 @@ Sugerir un prompt que le indique a la IA que examine el código del backend e id
 - readlines() en archivos grandes",
 ,En Syllabus,"> Proyecto: Incident Report File Processor
 ",,,,,
-11,32,"Skill: Creating basic Agent Loops in Python, integrating LLMs with APIs",,,,,
+11,33,"Skill: Creating basic Agent Loops in Python, integrating LLMs with APIs",,,,,
 ,En Syllabus,"> Teoría:
 
 + Introducción a agentes
@@ -1667,7 +1675,7 @@ Sugerir un prompt que le indique a la IA que examine el código del backend e id
 - No definir condición de finalización",
 ,En Syllabus,"Proyecto: Crear un Agent Loop (con un .py que llame a la API mediante tools). Guardar la conversación en un CSV a medida que se genera (actor, message, tool_call, timestamp)
 ",,,,,
-11,33,Skill: Implementar mecanismos de almacenamiento con bases de datos ligeras,,,,,
+12,34,Skill: Implementar mecanismos de almacenamiento con bases de datos ligeras,,,,,
 ,En Syllabus,"> Teoría: 
   + Almacenando información (en cualquier lugar)
     - ¿Qué es una base de datos? Como concepto general
@@ -1686,7 +1694,7 @@ Sugerir un prompt que le indique a la IA que examine el código del backend e id
 ,En Syllabus,"> Proyecto: Implementar un directorio de proveedores sencillo con TinyDB como base de datos (Directorio de Proveedores)
  ",,,,,
 ,,### AUTHENTICATION IN WEB APPLICATIONS ###,,,,,
-12,34,Skill: Implementar mecanismos de autenticación y restricción de rutas en FastAPI,,,,,
+12,35,Skill: Implementar mecanismos de autenticación y restricción de rutas en FastAPI,,,,,
 ,En Syllabus,"> Teoría:
   + Autenticación
     - ¿Qué es la autenticación y por qué es importante?
@@ -1735,7 +1743,7 @@ Sugerir un prompt que le indique a la IA que examine el código del backend e id
 ,En Syllabus,"Proyecto: autenticación de la API del monorepo (Securing the API: Authentication and Route Restriction in FastAPI)
 
 ",,,,,
-12,35,Skill: Creating authentication flows,,,,,
+12,36,Skill: Creating authentication flows,,,,,
 ,En Syllabus,"> Teoría:
    + Sesiones en el Frontend
      - ¿Qué es una sesión? ¿Para qué sirve?
@@ -1785,7 +1793,7 @@ Sugerir un prompt que le indique a la IA que examine el código del backend e id
 - No enviar datos sensibles en el payload del token ",
 ,En Syllabus,Proyecto: Flujo de autenticación en eI frontend del monorepo (Connecting the Lock: Authentication Flows in the Frontend),,,,,
 ,,"### ERROR HANDLING, DEBUGGING AND TESTING ###",,,,,
-12,36,Skill: Comprender la naturaleza de los errores de ejecución en un código y cómo gestionarlos,,,,,
+13,37,Skill: Comprender la naturaleza de los errores de ejecución en un código y cómo gestionarlos,,,,,
 ,En Syllabus,"> Teoría:
     
   + Error handling: La aplicación no debe explotar
@@ -1822,7 +1830,7 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
 ,En Syllabus,"> Proyecto 1: Generar un gestor de incidentes centralizado para la empresa del proyecto transversal
 
 > Proyecto 2: Aplicar gestión de errores y excepciones a todo el código previamente generado en el monorepo",,,,,
-13,37,Skill: Desarrollo de aplicaciones robustas mediante la implementación de baterías de pruebas,,,,,
+13,38,Skill: Desarrollo de aplicaciones robustas mediante la implementación de baterías de pruebas,,,,,
 ,En Syllabus,"> Teoría:
   + Introducción al testing
     - ¿Por qué probar un código?
@@ -1857,7 +1865,7 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
  + Actividad extra:
     - Revisar todos los proyectos de backend anteriores y aplicar pruebas unitarias",,,,,
 ,,### MANAGING RELATIONAL DATABASES WITH FASTAPI ###,,,,,
-13,38,Skill: Construir consultas SQL para la obtención de tablas en bases de datos relacionales,,,,,
+13,39,Skill: Construir consultas SQL para la obtención de tablas en bases de datos relacionales,,,,,
 ,En Syllabus,"> Teoría:
   + Bases de datos (solo informativo)
     - ¿Qué es una base de datos?
@@ -1914,7 +1922,7 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
   - Se provee un SQL que poble una BD con un conjunto de datos para ejecutarlo en el SQL Editor de Supabase
   - Buscar y filtrar filas y extraer ciertos datos.
   - Luego, al estilo de CMD Challenge, deberán borrar una fila en específico, actualizar otra...",,,,,
-13,39,Skill: Gestionar datos en bases de datos relacionales mediante consultas SQL involucrando múltiples tablas,,,,,
+14,40,Skill: Gestionar datos en bases de datos relacionales mediante consultas SQL involucrando múltiples tablas,,,,,
 ,En Syllabus,"> Teoría:
   + Gestionando tablas relacionadas con SQL
     - ¿Qué es una relación en bases de datos?
@@ -1939,7 +1947,7 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
 ,En Syllabus,"> Práctica: Ejercicios de modelados con diagram.4geeks.com
 > Proyecto en clases:
   Se provee un SQL que poble una BD con diversas tablas relacionadas entre sí con un conjunto de datos para trabajar con ellas",,,,,
-14,40,Skill: Relacionar objetos de una aplicación con su representación en tablas en bases de datos mediante la utilización de ORMs,,,,,
+14,41,Skill: Relacionar objetos de una aplicación con su representación en tablas en bases de datos mediante la utilización de ORMs,,,,,
 ,En Syllabus,"> Teoría:
   + Object-Relational Mapping: El traductor universal
     - ¿Qué es un ORM?
@@ -1978,10 +1986,9 @@ HITO 05,Proyecto pendiente aprobación,"> Proyecto:
 > Proyecto transversal: 🗄️ Hito 5 — Backend para Frontends con IA
  APIs, fundamentos de BD, autenticación. Crear el backend de la empresa.
 Actividades:
-- Pasar la gestión del Incident Manager de Tiny DB a Supabase implementando un ORM y conectando los servicios al ORM.
-",,,,,
+- Implementar un gestor de inventarios que almacene en Supabase y hacer que convivan dos bases de datos en el mismo proyecto.",,,,,
 ,,### CONTAINER APPLICATIONS WITH DOCKER ###,,,,,
-14,41,Skill: Construir aplicaciones production-ready empleando contenedores,,,,,
+14,42,Skill: Construir aplicaciones production-ready empleando contenedores,,,,,
 ,En Syllabus,"> Teoría:
   + Contenedores (Sin hablar de Docker)
     - ¿Qué es un contenedor?
@@ -2121,7 +2128,7 @@ Actividades:
 - No manejar persistencia",
 ,En Syllabus,> Proyecto: Contenedorizar el monorepo,,,,,
 ,,### ARCHITECHTURE OPTIMIZATION ###,,,,,
-14,42,Skill: Implementar estrategias para la optimización del desempeño de aplicaciones de frontend,,,,,
+15,43,Skill: Implementar estrategias para la optimización del desempeño de aplicaciones de frontend,,,,,
 ,Approved,"Teoría:
 
   + Midiendo el desempeño del frontend (Core Web Vitals)
@@ -2196,7 +2203,7 @@ Actividades:
   -- Registrar un análisis de los resultados, identificando los principales problemas que lo pueden estar causando.
   -- Entregar un reporte de las mejoras aplicadas y su impacto en la puntuación original obtenida en Lighthouse
   -- Captura de las mediciones antes y después de aplicar cambios producto de la auditoría.",,,,,
-15,43,Skill: Preparar la arquitectura del backend para alto tráfico empleando Serializers,,,,,
+15,44,Skill: Preparar la arquitectura del backend para alto tráfico empleando Serializers,,,,,
 ,Approved,"> Teoría:
 
   + Serializers
@@ -2241,7 +2248,7 @@ Actividades:
   - Analizar todos los endpoints de la aplicación. 
   - Identificar cuáles de ellos requieren mejoras y apuntar qué clases de mejoras implementar en cuanto a serialización y optimización del payload.
   - Como mínimo: implementar serialización en todos los endpoints",,,,,
-15,44,Skill: Optimizar la arquitectura del backend para alto tráfico empleando Caching,,,,,
+15,45,Skill: Optimizar la arquitectura del backend para alto tráfico empleando Caching,,,,,
 ,Approved,"> Teoría:
   + Caching
     - ¿Qué es el caching?
@@ -2299,7 +2306,7 @@ Actividades:
     -- Caching en el frontend, por ejemplo, con useMemo 
   - Analizar todos los endpoints de la aplicación y determinar en cuáles podría cachearse su respuesta. ",,,,,
 ,,### TELEMETRY ### ,,,,,
-15,45,Skill: Identificar oportunidades de recolección de datos en escenarios reales que permitan optimizar compañías,,,,,
+16,46,Skill: Identificar oportunidades de recolección de datos en escenarios reales que permitan optimizar compañías,,,,,
 ,Approved,"> Teoría: 
 + Arquitectura y diseño de mecanismos de telemetría
   - Data and telemetry have become more and more important; we need to collect and process telemetry
@@ -2355,15 +2362,15 @@ Actividades:
 - Eventos genéricos (click, event1) sin contexto ni propiedades útiles.
 - Sin eventId: duplicados imposibles de detectar.
 - Secretos en telemetría",
-,Proyecto pendiente aprobación,"> Proyecto:
-Pensar en un caso real e identificar los datos
--- Sanz Clima, empresa española de alcance internacional especializada en climatización, obtiene datos de funcionamiento de sus equipos de climatización y el ambiente del vehículo para analizar el funcionamiento y predecir la necesidad de revisión y mantenimiento.
-Identifica posibles valores que sería necesario incluir en la telemetría para hacer un análisis correcto..
+,Approved,"> Proyecto módulo: Sanz Clima, empresa española de alcance internacional especializada en climatización, obtiene datos de funcionamiento de sus equipos de climatización y el ambiente del vehículo para analizar el funcionamiento y predecir la necesidad de revisión y mantenimiento.
+  - Investigar sobre cómo funciona un sistema de climatización para comprender el producto, sus estados y valores más representativos.
+  - Identificar posibles valores que sería necesario incluir en la telemetría para hacer un análisis correcto.
 
-> Proyecto 2: 
-  - Identifica 3 KPIs que son principales en tu empresa asignada.",,,,,
-16,46,Skill: Collecting telemetry and context-related info from the user and your application,,,,,
-,Approved,"> Teoría:
+> Proyecto compañía: Análisis KPIs del sistema de inventario para el mapeo de oportunidades en telemetría (el ""qué y por qué""):
+  - Identificar al menos 3 KPIs principales para el caso de la empresa asignada.
+  - Proponer oportunidades de telemetría para esos indicadores.",,,,,
+16,47,Skill: Collecting telemetry and context-related info from the user and your application,,,,,
+,Pending,"> Teoría:
 + Entendiendo la telemetría desde el frontend
   - ¿Qué es la telemetría? ¿Por qué es importante y útil?
   - ¿Qué datos almacenar? (categorías mínimas)
@@ -2412,13 +2419,34 @@ Identifica posibles valores que sería necesario incluir en la telemetría para 
     -- Control → contrato: “esquema estable + versión”
     -- Contrato → transporte: “batch + retry + beacon + dedupe”
 
-+ Mejores prácticas en telemetría (Guardrails)
++ Mejores prácticas en telemetría (Guardrails) 
   - Consent-first: no enviar analítica si consent.analytics=false.
   - Redacción/sanitización: no mandar inputs libres (comentarios, textos) sin scrub.
   - Allowlist de propiedades: solo claves permitidas (evita fuga accidental).
   - Sampling: performance/verbose logs con muestreo (p.ej. 10%).
   - Ambientes: dev vs prod (no mezclar).
 
++ Fundamentos del almacenamiento de datos de telemetría:
+  - Problemas comunes al almacenar telemetría:
+    -- La telemetría escribe constantemente — el patrón es distinto al CRUD convencional
+    -- Por qué una tabla genérica sin diseño temporal falla rápido
+    -- La pregunta central: ¿dónde y cómo guardo lo que ya estoy capturando? (Rápida referencia a opciones como tablas SQL, NoSQL, y a TSDB como nueva tecnología)
+  - Estructura de la tabla
+    -- Columnas fijas: timestamp, service, event_type, level, value, message
+    -- Columna flexible: tags como JSONB para atributos variables
+    -- Los tres índices y por qué cada uno existe
+  - Inserción correcta
+    -- Anti-patrón: un INSERT por evento en tiempo real
+    -- Patrón correcto: acumulación en lista + escritura en batch
+    -- Ejemplo de código mínimo funcional (pensando en frontend en React/Next y backend en FastAPI)
+  - Consultas temporales básicas
+    -- Consulta por rango: ¿qué pasó en los últimos N minutos?
+    -- Agrupación por ventana con DATE_TRUNC
+    -- Filtro por tags con JSONB
+  - Retención
+    -- La retención como concepto — los datos tienen TTL
+    -- Los datos de telemetría no se guardan para siempre
+    -- Qué conservar y a qué granularidad — el razonamiento, no la automatización
 ","- Por qué es importante la telemetría
 - Planificar la implementación de la telemetría al inicio del desarrollo y no como idea de último momento
 - Intencionalidad de los datos
@@ -2444,8 +2472,20 @@ Identifica posibles valores que sería necesario incluir en la telemetría para 
 - Capturar en componentes a lo loco: tracking disperso, duplicado y difícil de mantener.
 - Texto libre sin control en lugar de cumplir un contrato
 - No respetar consentimiento sobre la trazabilidad",
-,,Aplicar telemetría al proyecto de ,,,,,
-16,47,Skill: Building a report from the telemetry or user data,,,,,
+,Approved,"> Proyecto compañía: Generar telemetría desde el frontend
+  - Implementar la telemetría en el sistema de manejo de inventario
+  - Implementar telemetría en el proceso de autenticación (actividad adicional)",,,,,
+16,48,Skill: Manipular conjuntos de datos y prepararlos para su procesamiento,,,,,
+,NO GENERAR LEARNPACK,"> Teoría: (Reutilizar Los  de Data Science)
+  + Introducción a Numpy
+
+  + Manejo de datasets con Pandas
+    - Observabilidad, Introspección, Acumulación, 
+    - Nuevas columnas
+    - Datos nulos
+    - Limpieza y reporte",,,,,"- No loops, solo acumuladores"
+,Proyecto pendiente aprobación,> Prácticas de numpy y pandas creadas en DS.,,,,,
+17,49,Skill: Building a report from the telemetry or user data,,,,,
 ,Approved,"> Teoria:
   + De datos crudos a reportes: transformando lo que ya tienes
     - Cómo transformar datos existentes para generar reportes
@@ -2489,21 +2529,10 @@ Identifica posibles valores que sería necesario incluir en la telemetría para 
 - Diseñar una sola tabla para CRUD y reportes: los datos almacenados para operaciones transaccionales rara vez tienen la estructura correcta para responder preguntas analíticas sin transformación.
 - Métricas sin dimensión de agrupamiento: un único número global (count = 45) no es accionable. Sin contexto de agrupamiento no hay información útil.
 - Pipelines no reproducibles: transformaciones que dependen del entorno, del orden de llegada de los datos o de variables externas producen resultados distintos en cada ejecución.",
-HITO 06,,"📊 Hito 6 — Telemetría y Data Pipelines
- Recolectar → transformar → agregar → reportar. Construir telemetría para la empresa.",,,,,
+,,,,,,,
 ,,### DATA PIPELINES ###,,,,,
-16,48,Skill: Manipular conjuntos de datos y prepararlos para su procesamiento,,,,,
-,NO GENERAR LEARNPACK,"> Teoría: (Reutilizar Los  de Data Science)
-  + Introducción a Numpy
-
-  + Manejo de datasets con Pandas
-    - Observabilidad, Introspección, Acumulación, 
-    - Nuevas columnas
-    - Datos nulos
-    - Limpieza y reporte",,,,,"- No loops, solo acumuladores"
-,Proyecto pendiente aprobación,> Prácticas de numpy y pandas creadas en DS.,,,,,
-17,49,"Skill: Optimizar el almacenamiento para reporte, integridad, consulta o transporte",,,,,
-,Approved,"> Teoría: 
+17,50,"Skill: Optimizar el almacenamiento para reporte, integridad, consulta o transporte",,,,,
+,Pending,"> Teoría: 
   + ¿Cómo escoger el formato de transporte de los datos?
     - ¿Por qué es importante escoger el formato de datos adecuado?
     - ¿Cuándo usar JSON?
@@ -2546,7 +2575,9 @@ HITO 06,,"📊 Hito 6 — Telemetría y Data Pipelines
 
 - Reconocer los procesos asociados a un sistema ETL y definir estrategias para su correcta implementación
 
-- Desarrollar el pensamiento de implementación de data pipelines ",,"- CSV para datos tabulares masivos: Usar CSV para reportes. Solo tiene una fila de cabecera y el resto son datos puros 1,A \n 2,B. Es ligero y fácil de procesar.
+- Desarrollar el pensamiento de implementación de data pipelines 
+
+- Interiorizar que el dato muta de forma según quién lo va a consumir. El dato no es estático; tiene un ciclo de vida.",,"- CSV para datos tabulares masivos: Usar CSV para reportes. Solo tiene una fila de cabecera y el resto son datos puros 1,A \n 2,B. Es ligero y fácil de procesar.
 
 - JSON como Rey de la Web: Usar JSON para comunicación Cliente-Servidor. Es nativo de JavaScript, ligero y soporta jerarquías.
 
@@ -2591,8 +2622,8 @@ Por ejemplo:
 - Si el pipeline falla a mitad de la fase de carga. ¿Qué estrategia aplicarías para que la siguiente ejecución no corrompa los datos ya cargados? (idempotencia)
 - ¿Qué datos mínimos deberías registrar en un log de ejecución para poder auditar un pipeline de producción?
 - ¿Qué diferencia a un pipeline de datos robusto de uno que simplemente funciona? Menciona al menos tres características concretas.",,,,,
-17,50,Skill: Building a data pipeline from the application data,,,,,
-,Approved,"> Teoría:
+17,51,Skill: Building a data pipeline from the application data,,,,,
+,Pending,"> Teoría:
   + Intro to datapipelines with Prefect: https://github.com/PrefectHQ/prefect
     - Core concepts
       -- What Prefect is and where it fits (orchestration vs. execution)
@@ -2622,8 +2653,8 @@ Por ejemplo:
       -- Using PREFECT_API_URL to switch between local/cloud environments","- Los datos en una aplicación no fluyen solos: pasan por etapas definidas 
 - Saltarse etapas del flujo de datos produce datos incorrectos o no usables por un modelo de AI.",- Los modelos de AI nunca consumen datos directamente de la fuente: siempre existe una etapa de transformación intermedia reproducible.,,,
 ,,,,,,,
-17,51,Skill: Making resilient flows to avoid datapipeline interruptions,,,,,
-,Approved,"> Teoria:
+18,52,Skill: Making resilient flows to avoid datapipeline interruptions,,,,,
+,Pending,"> Teoria:
   + Enhancing data pipelines with Prefect
     - Nested flows (subflows)
     - Managing failures and errors
@@ -2645,10 +2676,11 @@ Por ejemplo:
       -- Work pools and workers: where and how tasks run
       -- Infrastructure blocks (focused on Docker)","- Los datos en una aplicación no fluyen solos: pasan por etapas definidas 
 - Saltarse etapas del flujo de datos produce datos incorrectos o no usables por un modelo de AI.",- Los modelos de AI nunca consumen datos directamente de la fuente: siempre existe una etapa de transformación intermedia reproducible.,,,
-,,,,,,,
+HITO 06,,"📊 Hito 6 — Telemetría y Data Pipelines
+ Recolectar → transformar → agregar → reportar. Construir telemetría para la empresa.",,,,,
 ,,### ASYNCHRONOUS PROCESSING AND OFFLOADING ### ,,,,,
-16,48,Skill: Background processing,,,,,
-,Approved,"> Teoría:
+17,50,Skill: Background processing,,,,,
+,Pending,"> Teoría:
   + Introducción procesamiento en segundo plano (Background processing)
     - ¿Qué es la ejecución en segundo plano? (Ejecución fuera del ciclo request-response)
     - Principios indispensables en el procesamiento del segundo plano
@@ -2702,7 +2734,7 @@ Por ejemplo:
 
 - El Secuestro de la API (Blocking): El usuario pide un reporte PDF, el backend lo genera durante 30 segundos y luego responde. Si el usuario cierra el navegador al segundo 15, el proceso se corta o queda huérfano.",
 ,Proyecto pendiente aprobación,,,,,,
-17,49,Skill: Implementar colas de procesos,,,,,
+17,51,Skill: Implementar colas de procesos,,,,,
 ,Approved,"> Teoría: 
   + Gestión de Colas
     - ¿Qué es y cómo funciona una cola? Principio FIFO  
@@ -2752,8 +2784,8 @@ while fila_banco:
 # Atendiendo a: Cliente 1
 # Atendiendo a: Cliente 2
 # Atendiendo a: Cliente 3",,,,,
-17,50,Skill: Using queues and tasks to delegate,,,,,
-,Approved,"> Teoría:
+18,52,Skill: Using queues and tasks to delegate,,,,,
+,Pending,"> Teoría:
    + Procesamiento asíncrono con colas (Offloading)
      - ¿Cómo funciona el procesamiento asíncrono con colas? (Recibir solicitud -> Encolar solicitud -> Procesar solicitud en cola)
      - 
@@ -2776,8 +2808,8 @@ while fila_banco:
 ,,"Building a queue that process incoming leads and detects entry errors
 ",,,,,
 ,,### MODEL TRAINING & RAG ###,,,,,
-17,51,Skill: Aplicar modelos de predicción en casos reales,,,,,
-,Approved,"> Teoría:
+18,53,Skill: Aplicar modelos de predicción en casos reales,,,,,
+,Pending,"> Teoría:
 
 + Introducción al aprendizaje de máquina
   - ¿Qué es el aprendizaje de máquina?
@@ -2803,7 +2835,6 @@ while fila_banco:
   - ¿En qué sitios puedo conseguir modelos existentes? (Por ejemplo: HuggingFace)
   - ¿Cómo elegir un modelo?
   - ¿Cómo utilizar un modelo ya existente? ","Un estudiante debería salir del día introductorio entendiendo que hacer ML no es solo “elegir un algoritmo”, sino seguir un proceso:
-
 1. Definir el problema
 2. Conseguir datos
 3. Preparar los datos
@@ -2823,15 +2854,15 @@ Conceptos fundamentales en el aprendizaje de máquina que el estudiante debe ten
 
 Selección de modelos:
 
--  Identificar modelos pre-entrenados y en qué situaciones utilizarlos. 
+-  Identificar modelos preentrenados y en qué situaciones utilizarlos. 
 
 -  Aprender a seleccionar y filtrar modelos según las necesidades.
 
-- Aprender a integrar un modelo existente, por ejemplo uno de Hugging Face. ","
+- Aprender a integrar un modelo existente","
 
 
 ",,,
-,Approved,"Proyecto: Se usaran modelos existentes. Es decir, es un modelo que se debe descargar, pasarle los parámetros y obtener un resultados. Como si usaramos un proyecto final de un alumno de DS
+,Pending,"Proyecto: Se usaran modelos existentes. Es decir, es un modelo que se debe descargar, pasarle los parámetros y obtener un resultados. Como si usaramos un proyecto final de un alumno de DS
 
 - Sistema de etiquetado automático de tickets: Recuperar el Centralized Incident Manager para incorporarle un clasificador de tickets
 - Modelo (descargar): Dragneel/ticket-classification-v1
@@ -2850,8 +2881,8 @@ Posibles proyectos:
 - Clasificar tickets de soporte (urgente / no urgente, o por departamento)
 - Clasificar reseñas de clientes (sentimiento, o por tipo de problema)
 - Clasificar CVs o texto de job postings por categoría",,,,,
-18,52,Skill: Preparar datos para el entrenamiento de modelos de predicción,,,,,
-,Approved,"> Teoria:   
+18,54,Skill: Preparar datos para el entrenamiento de modelos de predicción,,,,,
+,Pending,"> Teoria:   
 + Preparar datos para el entrenamiento de un modelo:
    - ¿En qué consiste la transformación de datos? (Introductorio. Se asume que en este punto el alumno sabe de ""collect"" e ""ingest"" porque en los módulos anteriores ya hemos consumido APIs, hemos hecho scraping, hemos conectado con bases de datos y consumido CSVs)
      -- Ejemplo de ingest: consumo de APIs, procesamiento de CSVs.
@@ -2865,8 +2896,8 @@ Without clean, properly scaled and encoded data, no model trains correctly. Garb
 
 ",,,,
 ,,,,,,,
-18,53,Skill: Seleccionar y entrenar modelos de clasificación,,,,,
-,Approved,"> Teoría: 
+19,55,Skill: Seleccionar y entrenar modelos de clasificación,,,,,
+,Pending,"> Teoría: 
 
 + Modelos de clasificación:
   - ¿Cómo funciona un modelo de clasificación? (predecir una categoría)
@@ -2895,8 +2926,8 @@ Proyectos opcionales:
 - Image Classifier: https://github.com/4GeeksAcademy/image-classifier-project-tutorial
 - Housing clustering: https://github.com/4GeeksAcademy/k-means-project-tutorial
 ",,,,,
-18,54,Skill: Seleccionar y entrenar modelos de regresión,,,,,
-,Approved,"> Teoría: 
+19,56,Skill: Seleccionar y entrenar modelos de regresión,,,,,
+,Pending,"> Teoría: 
 
 + Modelos de regresión:
   - ¿Cómo funciona un modelo de regresión? (predecir una categoría)
@@ -2928,8 +2959,8 @@ El dataset de origen se generará con los siguientes aspectos:
 - Mínimo de 3-5 años de datos (el más reciente para prueba y el resto para entrenamiento)
 - Siempre crecer, pero no siempre igual. Por ejemplo, siendo X el crecimiento anual, Y la variación de ese crecimiento, con [X >= 0, Y entero, X + Y >= 0], entonces: si el año 1 crece X%, el año dos crece d=((X+Y) | (X-Y)) donde d es el porcentaje de crecimiento de ese año y siempre [d > 0 ^ d < 0.1 o 10%]
 ",,"Skill B (Día 2): Regresión, Evaluación y Generalización",,,
-19,55,Skill: Hyperparameter tunning  ,,,,,
-,Approved,"> Teoría:
+19,57,Skill: Hyperparameter tunning  ,,,,,
+,Pending,"> Teoría:
 
 + Hiperparámetros
   - ¿Qué son los hiperparámetros?
@@ -2950,8 +2981,8 @@ A model trained with default parameters is rarely the best version of that model
 ,,"Proyectos: debido a que el módulo es corto, debemos pensar en 4 proyectos o casos de uso. 
 - Correr un Grid Search (Grid Search CV) y un Random Search (Random Search CV).
 - ",,,,,
-19,56,Skill: Model evaluation,,,,,
-,Approved,"> Teoría: 
+20,58,Skill: Model evaluation,,,,,
+,Teoría pendiente aprobación,"> Teoría: 
 + Evaluación de modelos:
   - Concepto de ""Evals""
   - ¿Qué es underfitting? ¿Cómo detectarlo? ¿Cómo prevenirlo?
@@ -2965,8 +2996,8 @@ A model trained with default parameters is rarely the best version of that model
 Training a model means nothing if you can’t measure whether it works. This module is what separates a model that ran from a model that performs.
 ",,,,
 ,,,,,,,
-19,57,Skill: Model debugging and integration,,,,,
-,Approved,"> Teoria:   
+20,59,Skill: Model debugging and integration,,,,,
+,Teoría pendiente aprobación,"> Teoria:   
 
 + Consumir el modelo:
   - ¿Cómo desplegar el modelo?
@@ -2992,7 +3023,7 @@ Training a model means nothing if you can’t measure whether it works. This mod
 Real datasets produce real problems — overfitting, imbalanced classes, poor generalization. Students need a systematic way to diagnose and fix, not just re-run hoping for better results.
 ",,,,
 ,,,,,,,
-20,58,Skill: Implementar técnicas de RAG para implementar la base de conocimientos de un modelo,,,,,
+20,60,Skill: Implementar técnicas de RAG para implementar la base de conocimientos de un modelo,,,,,
 ,Pending,"> Teoría:
 
   + RAG:
@@ -3057,8 +3088,8 @@ Escoger para el enunciado un caso:
 - Sistema de tickets similares
 - Sistema de recomendaciones (Para RRHH: obtener CVs, perfiles menospreciados; para HealthCare: pólizas de seguros)",,,,,
 ,,### AGENTIC ENGINEERING ###,,,,,
-20,59,Skill x: Building an AI Agent capable of calling tools (functions),,,,,
-,Approved,"The customer support AI Agent will be able to fetch company information and respond in real time.
+21,61,Skill x: Building an AI Agent capable of calling tools (functions),,,,,
+,Teoría pendiente aprobación,"The customer support AI Agent will be able to fetch company information and respond in real time.
 
 + Conceptos fundamentales en Ingeniería Agéntica
   - estado (state)
@@ -3101,7 +3132,7 @@ herramientas deterministas",- Esperar precisión absoluta del LLM: Los agentes d
 - Retry hasta obtener algo adecuado
 - Chat
 ",,,,,
-20,60,Skill: Implementar agentes seguros estableciendo Guardrails y Harness como mecanismo de seguridad y control ,,,,,
+21,62,Skill: Implementar agentes seguros estableciendo Guardrails y Harness como mecanismo de seguridad y control ,,,,,
 ,Teoría pendiente aprobación,"Safety mechanisms and control layers that monitor, filter, and govern input/output in artificial intelligence systems to ensure they operate safely, legally, and ethically
 
 Harnesss Engineering
@@ -3112,8 +3143,8 @@ Guardrails","- ¿Cómo evito que mis visitas usen mi agente como un ChatGPT libr
 
 - Fallback (Si una tool falla: intentar alternativa responder parcialmente pedir clarificación)",,
 ,,,,,,,
-21,61,Skill: Proveer de herramientas a un Agente mediante CLIs,,,,,
-,Approved,"> Teoría:
+21,63,Skill: Proveer de herramientas a un Agente mediante CLIs,,,,,
+,Teoría pendiente aprobación,"> Teoría:
  + CLIs
    - Qué es un CLI
    - Por qué son útiles los CLIs para los humanos (especialmente desarrolladores)
@@ -3126,8 +3157,8 @@ Guardrails","- ¿Cómo evito que mis visitas usen mi agente como un ChatGPT libr
 ",,"- Fine-tuning
 - Criterios de comportamiento y tipo de respuesta",,,
 ,,,,,,,
-21,62,Skills: Extender las capacidades de un agente mediante MCPs,,,,,
-,Approved,"> Teoría:
+22,64,Skills: Extender las capacidades de un agente mediante MCPs,,,,,
+,Teoría pendiente aprobación,"> Teoría:
 
 + Introducción a MCPs: 
   - ¿Qué es un MCP? Definición y analogías
@@ -3149,7 +3180,7 @@ Guardrails","- ¿Cómo evito que mis visitas usen mi agente como un ChatGPT libr
 - Criterios de comportamiento y tipo de respuesta",,,
 ,,"
 > Proyecto 1: ¿Construir un MCP Server?",,,,,
-21,63,Skill x: Dotar de memoria a un agente,,,,,
+22,65,Skill x: Dotar de memoria a un agente,,,,,
 ,Teoría pendiente aprobación,"> Teoría:
 
 + Arquitecturas de memoria:
@@ -3163,28 +3194,28 @@ Guardrails","- ¿Cómo evito que mis visitas usen mi agente como un ChatGPT libr
 HITO 08,,"🤖 Hito 8 — Ingeniería de Agentes
  Reglas, bancos de memoria (memory bank), llamada a herramientas (tool calling), planificación multiagente. Construir los agentes de la empresa.",,,,,
 ,,### WORKFLOW AUTOMATIONS ###,,,,,
-22,64,Skill x: Representar la lógica de negocio de forma visual mediante diagramas de flujo de trabajo,,,,,
+22,66,Skill x: Representar la lógica de negocio de forma visual mediante diagramas de flujo de trabajo,,,,,
 ,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
-22,65,Skill x: Implementar flujos de trabajo básicos mediante herramientas de automatización como n8n,,,,,
+23,67,Skill x: Implementar flujos de trabajo básicos mediante herramientas de automatización como n8n,,,,,
 ,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
-22,66,Skill x: Integrar LLMs y aplicaciones de terceros en flujos de trabajo de n8n,,,,,
+23,68,Skill x: Integrar LLMs y aplicaciones de terceros en flujos de trabajo de n8n,,,,,
 ,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
-23,67,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
+23,69,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
 ,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
-23,68,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
+24,70,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
 ,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
 ,,### AGENTIC WORKFLOWS ###,,,,,
-23,69,Multi-Agent Systems,,,,,
+24,71,Multi-Agent Systems,,,,,
 ,,"> Teoría:
 
 + Introducción a sistemas multiagente:
@@ -3212,20 +3243,20 @@ LangGraph",,"- Keep rules under 500 lines
 - Context Management: Design for effective context window utilization",- Uso de Readme en todos los proyectos a partir de ahora,"- No usar Tailwind
 - ",- Usar un modelo viejo como sonnet 3.5 ¿Cambiar a un Gemini o ChatGPT viejo para variar?
 ,,,,,,,
-24,70,Skill 32:  Assign status to the chunk and start a cronjob every day to process,,,,,
+24,72,Skill 32:  Assign status to the chunk and start a cronjob every day to process,,,,,
 ,Teoría pendiente aprobación,,,,,,
 ,,,,,,,
-24,71,Skill 33: Calling a serverless durable funcion,,,,,
+25,73,Skill 33: Calling a serverless durable funcion,,,,,
 ,Teoría pendiente aprobación,Using vercel to build a user-machin chat with an LLM in the background,,,,,
 HITO 09,,"🔄 Hito 9 — Generación de Workflows Agentic
  Usar LLMs para analizar el caso de empresa, generar flujos internos, validarlos e implementarlos como pipelines de automatización (serverless, colas, cronjobs o n8n).",,,,,
 ,,### REAL-TIME ###,,,,,
-24,72,,,,,,
+25,74,,,,,,
 ,,"     En algun proyecto se debe usar 
 -- Webhooks
  -- Pub/Sub",,,,,
 ,,,,,,,- No IA
-25,73,Building a customer support chat with real time communication to an LLM,,,,,
+25,75,Building a customer support chat with real time communication to an LLM,,,,,
 ,,"- Websockets
 - Streaming
   -- Yield
@@ -3233,7 +3264,7 @@ HITO 09,,"🔄 Hito 9 — Generación de Workflows Agentic
 - LLM SDK",,,,,
 HITO 10,,"⚡ Hito 10 — Sistemas en Tiempo Real
  Streaming, sockets, pub/sub. Habilitar interacciones en tiempo real para datos, clientes, IA o empleados.",,,,,
-25,74,Skill x: Integration Plan,,,,,
+26,76,Skill x: Integration Plan,,,,,
 ,,"> Teoría:
  - Introducción a la gestión de proyectos ágil y profesional 
  - Plan de implementación
@@ -3242,7 +3273,7 @@ HITO 10,,"⚡ Hito 10 — Sistemas en Tiempo Real
 ",,,- MCP,,
 ,,,,,,,
 ,,### CYBERSECURITY IN AI-FIRST APPLICATIONS ###,,,,,
-25,75,Skill x: Identificar y corregir las vulnerabilidades más comunes a las que se está expuesta una aplicación en internet,,,,,
+26,77,Skill x: Identificar y corregir las vulnerabilidades más comunes a las que se está expuesta una aplicación en internet,,,,,
 ,,"> Teoría: 
 + Principales amenazas y vulnerabilidades en ciberseguridad  
   - ¿Qué es el OWASP TOP 10?
@@ -3256,7 +3287,7 @@ HITO 10,,"⚡ Hito 10 — Sistemas en Tiempo Real
   - Definir permisos de carpetas
   - Configurar un firewall y restringir puertos",,,,,
 ,,,,,,,
-26,76,Skill x: Implementar prácticas seguras en la integración de IA en sistemas,,,,,
+26,78,Skill x: Implementar prácticas seguras en la integración de IA en sistemas,,,,,
 ,,"> Teoría: 
 
 + Seguridad en sistemas agénticos
@@ -3277,12 +3308,12 @@ HITO 10,,"⚡ Hito 10 — Sistemas en Tiempo Real
 ","- ¿Cómo estructurar prompts para minimizar la exposición de datos sensibles?
 - ¿Qué debo tener en cuenta cuando incluyo mensajes de un usuario ",,,,
 ,,,,,,,
-26,77,Skill x: Usando LLMs para auditorias de CS,,,,,
+27,79,Skill x: Usando LLMs para auditorias de CS,,,,,
 ,,"  - 
   - guardrails
   - alineacion y moderación ",,,- MCP,,
 ,,### CAPSTONE ###,,,,,
-26,78,Skill x: Desarrollar con IA orientad,,,,,
+27,80,Skill x: Desarrollar con IA orientad,,,,,
 ,,,,,,,
 HITO CAPSTONE,,"🚀 Capstone — Empresa completamente transformada con IA
  Los estudiantes entregan la transformación total de su empresa:
@@ -3305,10 +3336,10 @@ Agentes con tool calling
 
 
 Capa de comunicación en tiempo real",,,,,
-27,79,,,,,,
+27,81,,,,,,
 ,,https://x.com/zodchiii/status/2056319284641460626?s=12,,,,,
 ,,,,,,,
-27,80,,,,,,
+28,82,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
