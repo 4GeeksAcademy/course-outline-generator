@@ -1,6 +1,6 @@
 ---
 name: module-guidelines-generator
-description: Generates debate-first pedagogical guidelines (lineamientos) per module/day. Produces two bilingual texts per skill: (1) students — short motivating header (3–5 lines, plain text) + 1–2 preview questions ("before class"); (2) professors — compact hybrid debate kit delivered as plain Markdown (copy-paste ready with headings/lists intact), with concise Summary (ends with project checkpoint), Debate pacing, opening/closing, and 5 dimension subsections (Learn/Reflect/Be aware of/Do/Avoid) with compact representative aspects + 1–2 Socratic reflexive questions per dimension, optional bridge, facilitator probes (Reflect/Avoid only), and Participation criteria. ALWAYS loads syllabus context via `syllabus-context-reader` (CSV parser) before generating. Use when asked to "generate guidelines for module X", "generate lineamientos", "generate guidelines", "student guidelines", "mentor guidelines", "class debate", "reflective questions", or "w8 d22". Trigger on "lineamientos", "teaching guide", "debate", "guidelines".
+description: Generates debate-first pedagogical guidelines (lineamientos) per module/day. Produces two bilingual texts per skill: (1) students — short motivating header (3–5 lines, plain text) + 1–2 preview questions ("before class"); (2) professors — compact hybrid debate kit delivered as plain Markdown (copy-paste ready with headings/lists intact), with concise Summary (ends with class checkpoint), Debate pacing, opening/closing, and 5 dimension subsections (Learn/Reflect/Be aware of/Do/Avoid) with compact representative aspects + 1–2 Socratic reflexive questions per dimension, optional bridge, facilitator probes (Reflect/Avoid only), and Participation criteria. ALWAYS loads syllabus context via `syllabus-context-reader` (CSV parser) before generating. Use when asked to "generate guidelines for module X", "generate lineamientos", "generate guidelines", "student guidelines", "mentor guidelines", "class debate", "reflective questions", or "w8 d22". Trigger on "lineamientos", "teaching guide", "debate", "guidelines".
 ---
 
 # 4Geeks Academy — Module Guidelines Generator
@@ -9,27 +9,68 @@ This skill generates **two bilingual guideline texts per skill/module**: one for
 
 ### Chat delivery format (mandatory)
 
-En chat del agente, **Students** y **Mentors** se entregan en bloques copiables (el chat renderiza Markdown suelto y no sirve para copiar).
+In the agent chat, **Students** and **Mentors** are delivered as copyable blocks (rendered Markdown in chat is not suitable for copying).
 
-**Estudiantes — texto plano**
+**Block titles (outside the fence)**
 
-- Bloques ` ```text ` titulados **Copiar desde aquí — Students (English)** y **Copiar desde aquí — Students (Español)**.
-- 3–5 líneas por idioma; sin listas ni encabezados Markdown; español natural (no literal).
+- Put a **visible heading before each copy block** so the user can identify what they are copying.
+- Use these exact headings:
+  - `#### Students — English`
+  - `#### Students — Español`
+  - `#### Mentors — English`
+  - `#### Mentors — Español`
+- Headings stay **outside** the code fence — never inside the copyable content.
 
-**Profesores — Markdown plano**
+**Students — plain text**
 
-**Las instrucciones del profesor deben entregarse en Markdown plano**, listas para copiar y pegar en CMS, Notion, Google Docs u otra plataforma **conservando el formato** (títulos, listas, negritas).
+- After each Students heading, open a ` ```text ` fence containing **only** the student guideline text to copy (3–5 lines).
+- No bullet lists or Markdown headings inside; natural Spanish (not literal).
 
-- Entregar la sección **Mentors** como bloque Markdown real, no como texto explicativo alrededor.
-- En **chat del agente**, el kit docente va dentro de un bloque ` ```markdown ` titulado **Copiar desde aquí** (así se copia el fuente y al pegar en CMS/Notion/Docs se conserva el formato). No entregar solo Markdown renderizado en la respuesta.
-- No añadir comentarios meta del agente (“aquí tienes…”, “copia esto…”) dentro del contenido del profesor.
-- Usar solo sintaxis Markdown estándar: `#`–`####`, listas `-` / numeradas, `**negrita**` donde aplique.
-- El profesor debe poder seleccionar **Mentors → English** o **Mentors → Spanish** y pegar directamente con formato visible.
-- **En chat del agente (Cursor):** obligatorio entregar **cuatro bloques** (o dos si el usuario pide solo un idioma/audiencia):
-  - Students: ` ```text ` — **Copiar desde aquí — Students (English/Español)**
-  - Mentors: ` ```markdown ` — **Copiar desde aquí — Mentors (English/Español)**
-- No repetir Students ni Mentors solo como texto renderizado en chat.
-- No usar archivos en disco salvo que el usuario lo pida explícitamente.
+**Mentors — plain Markdown**
+
+**Mentor instructions must be delivered as plain Markdown**, ready to paste into CMS, Notion, Google Docs, or any platform **preserving formatting** (headings, lists, bold).
+
+- Deliver the **Mentors** section inside a ` ```markdown ` fence containing **only** the teaching kit to copy — summary, debate pacing, dimensions, closing (e.g. starts with the summary paragraph or `### Debate pacing`).
+- The fence must contain guideline content only: no block titles, no agent commentary, no copy instructions.
+- Use only standard Markdown syntax: `#`–`####`, `-` lists / numbered lists, `**bold**` where applicable.
+- The professor should be able to select **Mentors → English** or **Mentors → Spanish** and paste directly with visible formatting.
+- **In agent chat (Cursor):** mandatory to deliver **four blocks** (or two if the user requests only one language/audience), each with its heading **before** the fence:
+  - `#### Students — English` → ` ```text ` …
+  - `#### Students — Español` → ` ```text ` …
+  - `#### Mentors — English` → ` ```markdown ` …
+  - `#### Mentors — Español` → ` ```markdown ` …
+- Do not repeat Students or Mentors as rendered chat text only.
+- Do not use disk files unless the user explicitly requests it.
+
+**Example (agent chat layout):**
+
+````markdown
+#### Students — English
+
+```text
+You will learn...
+```
+
+#### Students — Español
+
+```text
+Aprenderás...
+```
+
+#### Mentors — English
+
+```markdown
+Students cover theory on...
+**Class checkpoint:** ...
+```
+
+#### Mentors — Español
+
+```markdown
+Los estudiantes cubren teoría sobre...
+**Checkpoint de la clase:** ...
+```
+````
 
 ---
 
@@ -69,16 +110,16 @@ Use the **AI Native Full Stack** CSV only when the user explicitly names that pr
 
 From `current` in the parser JSON:
 
-| Parser field     | Use in guidelines as                                                |
-| ---------------- | ------------------------------------------------------------------- |
-| `skill`          | Skill name, scope, `skill_name`                                     |
-| `content`        | Theory, projects (`main_concepts`, `project_name`, `project_focus`) |
-| `how_to_think`   | Thinking Development → **Learn**, **Reflect**                       |
-| `best_practices` | **Be aware of**, evaluation priorities                              |
-| `patterns`       | **Do**, patterns to reinforce                                       |
-| `anti_patterns`  | **Avoid** (required; do not omit)                                   |
-| `limitaciones`   | **Be aware of**, constraints in class and project                   |
-| `week` + `day`   | Position in course (e.g. Week 8 — Day 22)                           |
+| Parser field     | Use in guidelines as                                                                                                                                                                                       |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `skill`          | Skill name, scope, `skill_name`                                                                                                                                                                            |
+| `content`        | Full class content plan: theory topics (before `---`) + project definition (after `---`). Source for `theory_topics`, `main_concepts`, `project_name`, `project_focus`. **Both must feed the guidelines.** |
+| `how_to_think`   | Thinking development → **Learn**, **Reflect**                                                                                                                                                              |
+| `best_practices` | **Be aware of**, evaluation priorities                                                                                                                                                                     |
+| `patterns`       | **Do**, patterns to reinforce                                                                                                                                                                              |
+| `anti_patterns`  | **Avoid** (required; do not omit)                                                                                                                                                                          |
+| `limitaciones`   | **Be aware of**, constraints in class and project                                                                                                                                                          |
+| `week` + `day`   | Position in course (e.g. Week 8 — Day 22)                                                                                                                                                                  |
 
 From `prior_skills`: calibrate tone and prerequisites only — **do not** teach content from future days; **do not** assume knowledge beyond what `prior_skills` lists. Default parser mode is **smart** (prior milestones + last 15 regular lessons). If you need the full course history, re-run with `--prior-full`. Check `prior_skills_meta.total_prior` vs `returned`.
 
@@ -106,16 +147,17 @@ Use when:
 
 Confirm you have (or ask for) the following. If any are missing, ask for **all missing items at once**.
 
-| Input           | Description                                                                  | Required                     |
-| --------------- | ---------------------------------------------------------------------------- | ---------------------------- |
-| `skill_name`    | Name of the skill or module                                                  | Required                     |
-| `skill_type`    | Category: `web-fundamentals`, `styling-ui`, `programming-logic`, `milestone` | Optional — helps tailor tone |
-| `main_concepts` | 3–5 core concepts this skill teaches                                         | Required                     |
-| `key_actions`   | 2–4 things the student should be able to do by the end                       | Required                     |
-| `project_name`  | Name or short description of the module project                              | Required                     |
-| `project_focus` | What the project emphasizes (e.g. KPIs, edge cases, semantic structure)      | Optional but recommended     |
+| Input           | Description                                                                                | Required                     |
+| --------------- | ------------------------------------------------------------------------------------------ | ---------------------------- |
+| `skill_name`    | Name of the skill or module                                                                | Required                     |
+| `skill_type`    | Category: `web-fundamentals`, `styling-ui`, `programming-logic`, `milestone`               | Optional — helps tailor tone |
+| `theory_topics` | Core theory topics covered in class (extracted from `content`, before the `---` separator) | Required                     |
+| `main_concepts` | 3–5 core concepts this skill teaches                                                       | Required                     |
+| `key_actions`   | 2–4 things the student should be able to do by the end                                     | Required                     |
+| `project_name`  | Name or short description of the module project(s)                                         | Required                     |
+| `project_focus` | What the project emphasizes (e.g. KPIs, edge cases, semantic structure)                    | Optional but recommended     |
 
-If the parser output already provides these values, extract them from `current` (and `content` for project details); ask the user only for items still missing after the CSV extraction.
+If the parser output already provides these values, extract them from `current` (theory topics and project details both live in `content`); ask the user only for items still missing after the CSV extraction.
 
 ---
 
@@ -134,12 +176,12 @@ Always produce **two distinct texts** for the same skill. Both must be **bilingu
 - **Target: 3–5 lines per language. Maximum: 5 lines total**, including preview questions (inline, not bullet lists).
 - **Plain text preferred** — avoid bullet lists unless explicitly requested.
 - Motivating and clear; use second person (tú/vos or usted, per course convention).
-- **Forward-looking tone** — students read this **before or at the start of class**; describe what they **will do/learn that day**, not what they are doing now. **Do not** require “Today you will…” / “Hoy vas a…” every time.
-  - EN: use **“You will…”** (e.g. “You will create…”, “You will learn…”) and/or direct imperative (**“Create…”**, **“Build…”**). Optional: “By the end you will be able to…”. Avoid present for the main action (not “You create…” / “You are building…”).
-  - ES: use **“Vas a…”** / **“Crearás…”** / **“Aprenderás…”** and/or imperative (**“Crea…”**, **“Construye…”**). Optional: “Al final podrás…”. Avoid present for the main action (not “Creas…” / “Estás construyendo…”).
-- Must state: what the student **will** learn + what they **will** be able to do by the end.
+- **Forward-looking tone** — students read this **before or at the start of class**; describe what they **will do/learn that day**, not what they are doing now. **Do not** require "Today you will…" / "Hoy vas a…" every time.
+  - EN: use **"You will…"** (e.g. "You will create…", "You will learn…") and/or direct imperative (**"Create…"**, **"Build…"**). Optional: "By the end you will be able to…". Avoid present for the main action (not "You create…" / "You are building…").
+  - ES: use **"Vas a…"** / **"Crearás…"** / **"Aprenderás…"** and/or imperative (**"Crea…"**, **"Construye…"**). Optional: "Al final podrás…". Avoid present for the main action (not "Creas…" / "Estás construyendo…").
+- Must state: what the student **will** learn (theory topics) + what they **will** be able to do by the end (applied in the project).
 - Include **1–2 preview questions** students can reflect on before class (drawn from opening + one high-signal dimension aspect).
-- Encourage steady progress: "By the end you should feel capable of...", "Don’t aim for perfection on the first try."
+- Encourage steady progress: "By the end you should feel capable of...", "Don't aim for perfection on the first try."
 - Both language versions must convey the same meaning.
 - Spanish must read as native classroom Spanish (not literal translation from English). Adapt phrasing and rhythm while preserving intent.
 
@@ -174,9 +216,9 @@ Always produce **two distinct texts** for the same skill. Both must be **bilingu
   4. **Do**
   5. **Avoid**
 - Include (inside the kit):
-  - **Project link / what good looks like:** how theory + practice connect to the module project.
+  - **Content plan + project link / what good looks like:** how theory topics covered connect to the module project(s), and what applying both well looks like.
   - **Evaluation priorities:** understanding over memorization; application in the project over ticking checklists; meaningful intent.
-  - **Project checkpoint line (#7):** the last line inside **Summary** tying debate outputs to a concrete project deliverable.
+  - **Class checkpoint line (#7):** the last line inside **Summary** tying debate outputs to both theory coverage and a concrete project deliverable.
 - Questions must be **open-ended, Socratic** (no answer keys embedded).
 - Keep it concise: **Summary ~45–60 words**; avoid long paragraphs.
 - Per dimension, include aspects **inline in one compact paragraph** (no subsection title), using 1–3 short phrases/cases.
@@ -190,7 +232,7 @@ Always produce **two distinct texts** for the same skill. Both must be **bilingu
 | English                                | Español                              |
 | -------------------------------------- | ------------------------------------ |
 | A summary                              | Un resumen                           |
-| **Project checkpoint:**                | **Checkpoint del proyecto:**         |
+| **Class checkpoint:**                  | **Checkpoint de la clase:**          |
 | Debate pacing                          | Ritmo del debate                     |
 | Bridge within the module (if applies)  | Puente dentro del módulo (si aplica) |
 | Participation criteria                 | Criterios de participación           |
@@ -205,27 +247,27 @@ Always produce **two distinct texts** for the same skill. Both must be **bilingu
 | Facilitator probes:                    | Sondeos del facilitador:             |
 | Closing — Excellence as an AI Engineer | Cierre — Excelencia como AI Engineer |
 
-- **Entrega obligatoria en Markdown plano (profesor):** el kit docente se devuelve como Markdown renderizable al copiar/pegar; no como prosa del agente ni como bloque de código.
+- **Mandatory plain Markdown delivery (mentor):** the teaching kit is returned as renderable Markdown when copy-pasted; not as agent prose or code block.
 - Mentor output must be **plain Markdown copy-ready**: clean headings + lists only, no meta commentary, no decorative prefixes, no escaped formatting artifacts.
 
-**Bridge (puente) — rules**
+**Bridge — rules**
 
-- Include **Bridge within the module** only when today’s skill **directly continues** a lesson from the **same module** (same CSV module block, e.g. between `### MODULE NAME ###` markers or equivalent section in `content`).
-- **Do not** bridge across modules or hitos (e.g. do not link “Working with AI coding agents” to “Next.js APIs” unless they share the same module block).
-- If there is no same-module continuity, **omit the Bridge section entirely** (do not leave an empty “if applies”).
-- When bridging, reference the **prior topic/skill in natural language** — never cite week/day (`w7 d21`, “day 21”, “semana 8”).
-- Good EN: “From connecting frontend and data with APIs, now you govern how AI behaves across iterations.”
-- Good ES: “Tras conectar frontend y datos con APIs, ahora gobiernas cómo se comporta la IA en cada iteración.”
-- Bad: “From `w7 d21`…” / “Desde la semana 7 día 21…”
+- Include **Bridge within the module** only when today's skill **directly continues** a lesson from the **same module** (same CSV module block, e.g. between `### MODULE NAME ###` markers or equivalent section in `content`).
+- **Do not** bridge across modules or hitos (e.g. do not link "Working with AI coding agents" to "Next.js APIs" unless they share the same module block).
+- If there is no same-module continuity, **omit the Bridge section entirely** (do not leave an empty "if applies").
+- When bridging, reference the **prior topic/skill in natural language** — never cite week/day (`w7 d21`, "day 21", "semana 8").
+- Good EN: "From connecting frontend and data with APIs, now you govern how AI behaves across iterations."
+- Good ES: "Tras conectar frontend y datos con APIs, ahora gobiernas cómo se comporta la IA en cada iteración."
+- Bad: "From `w7 d21`…" / "Desde la semana 7 día 21…"
 
 **Output structure (professor — paste as-is):**
 
 ```markdown
 ## English
 
-[Summary (~45–60 words)]
+[Summary (~45–60 words, covering theory topics + project link + evaluation priorities)]
 
-**Project checkpoint:** [...]
+**Class checkpoint:** [...]
 
 ### Debate pacing
 
@@ -233,7 +275,7 @@ Always produce **two distinct texts** for the same skill. Both must be **bilingu
 
 ### Bridge within the module (if applies)
 
-[One bullet: prior topic → today’s skill. Omit this whole section if not same module. No week/day references.]
+[One bullet: prior topic → today's skill. Omit this whole section if not same module. No week/day references.]
 
 ### Participation criteria
 
@@ -287,7 +329,7 @@ Facilitator probes:
 
 ... (Resumen)
 
-**Checkpoint del proyecto:** [...]
+**Checkpoint de la clase:** [...]
 
 ### Ritmo del debate
 
@@ -349,34 +391,34 @@ Sondeos del facilitador:
 ## Workflow
 
 1. **Load syllabus context (mandatory)** — Invoke **`syllabus-context-reader`**: read `SKILL.md`, run `parse_syllabus.py` with `--week`, `--day`, and **`--include-prior`**. Resolve week/day from the user request (e.g. `w8 d22` → `--week 8 --day 22`). If ambiguous, run `--list` or `--search` first; never guess from `syllabus.md`.
-2. **Map parser JSON** — Populate `skill_name`, `main_concepts`, `key_actions`, `project_name`, `project_focus` from `current` and `prior_skills` (see table above). Treat `prior_skills` as prerequisites only (tone/expectations). Do not teach content from future days.
+2. **Map parser JSON** — Populate `skill_name`, `theory_topics`, `main_concepts`, `key_actions`, `project_name`, `project_focus` from `current` and `prior_skills` (see table above). Extract theory topics from `content` (before the `---` separator) and project definition (after the `---` separator) separately. Treat `prior_skills` as prerequisites only (tone/expectations). Do not teach content from future days.
 3. **Internal: representative aspects per dimension** _(process-visible, result-hidden)_ — For each dimension (Learn/Reflect/Be aware of/Do/Avoid) derive **1–3 compact** aspects/cases, then render them as **one inline sentence** in final output (no subsection title):
-   - Learn/Reflect: `content`, `how_to_think`, `skill`
+   - Learn/Reflect: `content` (theory topics), `how_to_think`, `skill`
    - Be aware: `best_practices`, `limitaciones`
-   - Do: `patterns` + project moments in `content`
+   - Do: `patterns` + theory activities and project moments in `content`
    - Avoid: `anti_patterns` (**required; never omit**)
    - If a field is `null`, infer only from `content` + `skill`.
-     Also run **Bridge check**: scan `prior_skills` + CSV module boundaries (`### … ###` in planning). Bridge **only** if the immediately relevant prior lesson is in the **same module** as today and sets up today’s skill. Extract **topic label** from that prior `skill` (not week/day). If no same-module link, set bridge = omit.
-   - **Hidden internal rule:** do not include this “Phase 2 analysis” in the final student/professor text; only carry the _selected_ aspects and resulting questions forward.
+     Also run **Bridge check**: scan `prior_skills` + CSV module boundaries (`### … ###` in planning). Bridge **only** if the immediately relevant prior lesson is in the **same module** as today and sets up today's skill. Extract **topic label** from that prior `skill` (not week/day). If no same-module link, set bridge = omit.
+   - **Hidden internal rule:** do not include this "Phase 2 analysis" in the final student/professor text; only carry the _selected_ aspects and resulting questions forward.
 4. **Internal: debate questions kit** _(process-visible, result-hidden)_ —
    - Create **open-ended Socratic questions** from the representative aspects.
    - Regular days: **1–2 questions per dimension**.
-   - Milestone days (`current.is_milestone` true): target **1 question (max 2) per dimension** (keep total questions small; emphasize “what good looks like”).
+   - Milestone days (`current.is_milestone` true): target **1 question (max 2) per dimension** (keep total questions small; emphasize "what good looks like").
    - Add exactly **1 opening** career-impact question (whole class).
-   - Add exactly **1 closing** question tied to how decisions show up in the module project / next milestone.
-   - **Quality bar:** prefer concrete scenarios from project moments or anti-patterns; avoid yes/no unless followed by “why”; questions must be discussable (trade-offs, “what if”, production impact).
+   - Add exactly **1 closing** question tied to how decisions show up in both the theory content and the module project / next milestone.
+   - **Quality bar:** prefer concrete scenarios from theory topics, project moments, or anti-patterns; avoid yes/no unless followed by "why"; questions must be discussable (trade-offs, "what if", production impact).
    - **Bilingual parity:** same intent in ES/EN.
    - **Translation quality bar:** do not perform literal ES<->EN translation; rewrite Spanish naturally for teaching context while preserving semantic intent.
-5. **Generate student guidelines** — 3–5 lines per language, plain text, motivating, **forward-looking** (“You will…” / imperative; no mandatory “Today you will”). Must include what students will learn + what they will be able to do by the end. Add **1–2 preview questions** (inline, not bullet lists). Spanish must sound natural, not literal. In agent chat: deliver inside ` ```text ` blocks **Copiar desde aquí — Students (EN/ES)**.
+5. **Generate student guidelines** — 3–5 lines per language, plain text, motivating, **forward-looking** ("You will…" / imperative; no mandatory "Today you will"). Must include what students will learn (theory topics) + what they will be able to do by the end (applied in the project). Add **1–2 preview questions** (inline, not bullet lists). Spanish must sound natural, not literal. In agent chat: heading `#### Students — English` / `#### Students — Español` **before** each ` ```text ` fence; fence contains only the student guideline text to copy.
 6. **Generate professor guidelines (debate-first hybrid kit)** —
-   - **Expected outcomes summary**: concise (**~45–60 words**), include all 5 dimensions + project link + evaluation priorities, and end with **project checkpoint line (#7)**.
+   - **Expected outcomes summary**: concise (**~45–60 words**), cover theory topics + all 5 dimensions + project link + evaluation priorities, and end with **class checkpoint line** tying both content coverage and project deliverable.
    - **Debate pacing (#1)**: order + must-discuss (2–3) + if-time + time guide (~45–60 min debate + practice).
    - **Bridge within the module** (from Bridge check): include section only when same-module continuity exists; one bullet referencing **prior topic** in natural language (EN/ES); never week/day codes.
    - **Participation criteria (#13)**: exactly 3 bullets.
    - **Opening**: opening career-impact question.
    - For each dimension: `####` section with **inline aspects sentence** (1-3 compact phrases/cases, no title) + **Reflective questions** (1-2). Under **Reflect** and **Avoid** add **Facilitator probes (#3)** (1-2 "If they say X, ask Y" probes; no answer keys).
    - Spanish mentor version must be adapted, fluent, and non-literal; **all section headings in Spanish** (see mapping table).
-   - In agent chat: deliver student EN/ES in ` ```text ` blocks; mentor EN/ES in ` ```markdown ` blocks (default; no disk files unless user asks).
+   - In agent chat: deliver with headings `#### Mentors — English` / `#### Mentors — Español` **before** each ` ```markdown ` fence; fence contains only the mentor kit to copy. Default; no disk files unless user asks.
    - For CMS paste: user copies block interior; headings, bullets, bold preserved on paste.
 7. **Dedup pass (#5)** — Ensure no two questions across dimensions share the same intent. If overlap, merge, rephrase, or drop the weaker one.
 8. **Deliver both texts** — Return a single Markdown block in the required output format with both languages and clear audience separation.
@@ -393,11 +435,11 @@ Use these to tailor tone and focus; do not copy verbatim.
 
 - **Professor (mini kit):**
   - **Learn:** semantics + hierarchy. Question: what changes when you replace `div` with semantic tags for both humans and assistants?
-  - **Reflect:** speed vs semantic quality trade-off. Question: when does “moving fast” create debt, and how would you justify slowing down?
-  - **Be aware of:** contrast/alt text/headings. Question: what minimum criteria define “accessible enough” for this class stage?
+  - **Reflect:** speed vs semantic quality trade-off. Question: when does "moving fast" create debt, and how would you justify slowing down?
+  - **Be aware of:** contrast/alt text/headings. Question: what minimum criteria define "accessible enough" for this class stage?
   - **Do:** review structure via DOM/inspection tools. Question: what would you verify first before asking AI to rewrite markup?
-  - **Avoid:** anti-patterns like “layout without semantics.” Question: what would AI do if you let it pick tags by intuition without rules?
-  - **Facilitator probes (Reflect/Avoid):** “If they say ‘it doesn’t matter,’ ask about real accessibility/SEO impact”; “If they reduce SEO to keywords, ask about document structure.”
+  - **Avoid:** anti-patterns like "layout without semantics." Question: what would AI do if you let it pick tags by intuition without rules?
+  - **Facilitator probes (Reflect/Avoid):** "If they say 'it doesn't matter,' ask about real accessibility/SEO impact"; "If they reduce SEO to keywords, ask about document structure."
 
 ### Tailwind and dashboards
 
@@ -407,9 +449,9 @@ Use these to tailor tone and focus; do not copy verbatim.
   - **Learn:** information design (KPI/driver/operational layers). Question: why should layout follow decisions, not just components?
   - **Reflect:** density vs readability trade-off. Question: what would you cut first if the dashboard becomes unreadable on mobile?
   - **Be aware of:** contrast, spacing, and scanability. Question: which human metric would you use (time to understand, clarity, navigation quality)?
-  - **Do:** repeatable component structure. Question: what rule would you write so AI does not alter layout “randomly”?
+  - **Do:** repeatable component structure. Question: what rule would you write so AI does not alter layout "randomly"?
   - **Avoid:** style copy/paste without intent. Question: how do you detect when AI optimizes aesthetics but harms usability?
-  - **Facilitator probes (Reflect/Avoid):** “If they only discuss colors, ask how quickly users can read KPIs (e.g., in 5 seconds).”
+  - **Facilitator probes (Reflect/Avoid):** "If they only discuss colors, ask how quickly users can read KPIs (e.g., in 5 seconds)."
 
 ### Programming / TypeScript (logic, algorithms)
 
@@ -420,8 +462,8 @@ Use these to tailor tone and focus; do not copy verbatim.
   - **Reflect:** simplification vs edge-case coverage trade-off. Question: what would you decide if AI suggests a shortcut that reduces correctness?
   - **Be aware of:** edge cases and validation. Question: which business rule is hidden inside this edge case?
   - **Do:** testable, readable implementation. Question: what would you verify before accepting a PR?
-  - **Avoid:** imperative coding without plan / ambiguous logic. Question: which anti-pattern appears when code “works” but is not maintainable?
-  - **Facilitator probes (Reflect/Avoid):** “If they say ‘it works,’ ask for the smallest failing test”; “If they justify by intuition, ask for invariants.”
+  - **Avoid:** imperative coding without plan / ambiguous logic. Question: which anti-pattern appears when code "works" but is not maintainable?
+  - **Facilitator probes (Reflect/Avoid):** "If they say 'it works,' ask for the smallest failing test"; "If they justify by intuition, ask for invariants."
 
 ### Working with coding agents (context, rules, memory bank)
 
@@ -429,23 +471,23 @@ Use these to tailor tone and focus; do not copy verbatim.
 
 - **Professor (mini kit):**
   - **Learn:** context engineering, rules (user vs project, globs, alwaysApply), and memory-bank. Question: when do many small contexts outperform one large context, and how does that affect cost and quality?
-  - **Reflect:** implementation plan vs imperative prompt-by-prompt commands. Question: at what point does “moving fast with AI” break the plan, and how would you detect it in the repo?
+  - **Reflect:** implementation plan vs imperative prompt-by-prompt commands. Question: at what point does "moving fast with AI" break the plan, and how would you detect it in the repo?
   - **Be aware of:** file references, project structure, and business context (not only technical context). Question: what minimum information must live in `memory-bank` so a new agent does not hallucinate the product?
   - **Do:** fork project, commit by meaningful step, write `.agents/rules`, maintain `memory-bank`. Question: what would you validate in an agent summary against real code before trusting it?
-  - **Avoid:** planless imperative development, “Global Dictator” rule overrides, ambiguous rules, blind trust in proactivity, dumping huge chat logs. Question: what happens when your rules are vague or leave too much autonomy to AI?
-  - **Facilitator probes (Reflect/Avoid):** “If they say ‘AI already knows,’ ask which file proves it”; “If they want to override team rules, ask who pays that production cost.”
+  - **Avoid:** planless imperative development, "Global Dictator" rule overrides, ambiguous rules, blind trust in proactivity, dumping huge chat logs. Question: what happens when your rules are vague or leave too much autonomy to AI?
+  - **Facilitator probes (Reflect/Avoid):** "If they say 'AI already knows,' ask which file proves it"; "If they want to override team rules, ask who pays that production cost."
 
 ### OpenClaw modules (personal assistants, integrations, security)
 
 - **Student:** You will configure your first OpenClaw assistant on a VPS, set up `openclaw.json`, and connect it to Telegram to operate it safely. By the end, you should be able to assign concrete tasks without exposing secrets or giving full system access. Before class, reflect on this: what capability would you allow by default, and what would you deny by default?
 
 - **Professor (mini kit):**
-  - **Learn:** OpenClaw as an assistant that “knows nothing until taught”; model selection by task; API → skills/workflows. Question: why is installing OpenClaw not enough to get a useful agent without architecture?
+  - **Learn:** OpenClaw as an assistant that "knows nothing until taught"; model selection by task; API → skills/workflows. Question: why is installing OpenClaw not enough to get a useful agent without architecture?
   - **Reflect:** automation speed vs attack surface (MCP/integrations). Question: which integration should be connected first, and which should wait for stronger policies?
   - **Be aware of:** security risks, secrets handling, minimum permissions, and installation discipline. Question: which sensitive data must never remain in agent workspace/context?
-  - **Do:** configure Telegram/MCP with bounded scope; transform an API into a reproducible skill. Question: how would you prove a correct execution without “trusting the chat transcript”?
+  - **Do:** configure Telegram/MCP with bounded scope; transform an API into a reproducible skill. Question: how would you prove a correct execution without "trusting the chat transcript"?
   - **Avoid:** exposed keys, sensitive data access, full access permissions, assuming Zapier-MCP is the only path. Question: what happens if the agent gets write access to systems it should not touch?
-  - **Facilitator probes (Reflect/Avoid):** “If they say ‘connect everything,’ ask for a tool allowlist”; “If they downplay security, ask for worst-case impact of one leaked key.”
+  - **Facilitator probes (Reflect/Avoid):** "If they say 'connect everything,' ask for a tool allowlist"; "If they downplay security, ask for worst-case impact of one leaked key."
 
 ### Agent loop (Python, LLM + tools, observe-decide-act)
 
@@ -454,10 +496,10 @@ Use these to tailor tone and focus; do not copy verbatim.
 - **Professor (mini kit):**
   - **Learn:** observe → decide → act → observe cycle; LLM/code/tool/loop roles. Question: which part of the flow must live in code instead of prompt?
   - **Reflect:** tool count vs agent clarity trade-off. Question: how many tools are too many for a class loop, and how would you measure that?
-  - **Be aware of:** explicit objective, observable state, and finish condition. Question: which objective signal would you use to stop the loop without relying on “looks done”?
+  - **Be aware of:** explicit objective, observable state, and finish condition. Question: which objective signal would you use to stop the loop without relying on "looks done"?
   - **Do:** build `.py` calling API via tools; persist CSV log (`actor`, `message`, `tool_call`, `timestamp`). Question: which CSV pattern would alert you to infinite looping or poorly defined tools?
-  - **Avoid:** heavy logic inside tools, ambiguous tools, monolithic prompt, no stop condition. Question: what anti-pattern appears when one tool does everything and the LLM only “approves” it?
-  - **Facilitator probes (Reflect/Avoid):** “If the prompt is 3 pages long, ask what should move to code”; “If there is no stop condition, ask for the test proving termination.”
+  - **Avoid:** heavy logic inside tools, ambiguous tools, monolithic prompt, no stop condition. Question: what anti-pattern appears when one tool does everything and the LLM only "approves" it?
+  - **Facilitator probes (Reflect/Avoid):** "If the prompt is 3 pages long, ask what should move to code"; "If there is no stop condition, ask for the test proving termination."
 
 ---
 
@@ -465,37 +507,37 @@ Use these to tailor tone and focus; do not copy verbatim.
 
 Present the result in a single block:
 
-````markdown
+```markdown
 # Guidelines — [Skill]
 
 ## Students
 
 ### English
 
-[Student guidelines in English: header (3–5 lines, max 5) + 1–2 “before class” preview questions.]
+[Student guidelines in English: header (3–5 lines, max 5) + 1–2 "before class" preview questions.]
 
 ---
 
 ### Spanish
 
-[Student guidelines in Spanish: opener (3–5 lines, max 5), natural phrasing + 1–2 “before class” preview questions.]
+[Student guidelines in Spanish: opener (3–5 lines, max 5), natural phrasing + 1–2 "before class" preview questions.]
 
 ## Mentors
 
-> **Regla de entrega:** todo lo que sigue bajo `## Mentors` debe ser **Markdown plano copiable** (sin envolver en ```). El usuario pega directamente en su herramienta y conserva títulos y listas.
+> **Delivery rule:** everything under `## Mentors` must be **plain copyable Markdown** (not wrapped in code fences). The user pastes directly into their tool and headings/lists are preserved.
 
 ### English
 
-[Professor guidelines in English — plain Markdown only: Summary (with checkpoint) + Debate pacing + Opening + Learn/Reflect/Be aware of/Do/Avoid (inline aspects + questions, probes in Reflect/Avoid) + Bridge within module only if same module (topic-based, no w/d) + Closing + Participation criteria. No code fence around this block.]
+[Professor guidelines in English — plain Markdown only: Summary (with class checkpoint) + Debate pacing + Opening + Learn/Reflect/Be aware of/Do/Avoid (inline aspects + questions, probes in Reflect/Avoid) + Bridge within module only if same module (topic-based, no w/d) + Closing + Participation criteria. No code fence around this block.]
 
 ---
 
 ### Spanish
 
-[Professor guidelines in Spanish — mismo formato Markdown plano copiable; **títulos de sección en español**; español natural, no traducción literal.]
-````
+[Professor guidelines in Spanish — same plain copyable Markdown format; **section headings in Spanish**; natural Spanish, not literal translation.]
+```
 
-**Chat delivery (default):** four copy blocks — Students EN/ES (` ```text `) + Mentors EN/ES (` ```markdown `), each titled **Copiar desde aquí — …**. **Do not** rely on rendered chat text alone. Disk files only if user requests.
+**Chat delivery (default):** four copy blocks with visible headings **before** each fence — `#### Students — English`, `#### Students — Español`, `#### Mentors — English`, `#### Mentors — Español`. Each fence contains **only** the guideline content to copy. Do not rely on rendered chat text alone. Disk files only if user requests.
 
 If the user needs integration into a platform (e.g. CMS fields or `learn.json`), offer a compact key-value structure (`guidelines_student_es`, `guidelines_student_en`, `guidelines_professor_es`, `guidelines_professor_en`) upon request — values still in plain Markdown for professor fields.
 
@@ -505,35 +547,37 @@ If the user needs integration into a platform (e.g. CMS fields or `learn.json`),
 
 - [ ] **`syllabus-context-reader` used**: `parse_syllabus.py` ran with `--include-prior`; `syllabus.md` / GitHub URL **not** used as source.
 - [ ] Guidelines align with parser `current` (`skill`, `content`, `how_to_think`, `best_practices`, `patterns`, `anti_patterns`, `limitaciones`).
+- [ ] Theory topics extracted from `content` (before `---`) and project details extracted from `content` (after `---`) — both used to build guidelines.
 - [ ] No content from days after the target day; tone matches `prior_skills`.
 - [ ] Both texts generated (student + professor) for the same skill.
-- [ ] Student text: 3–5 lines per language (max 5), plain text, motivating, **forward-looking** (EN: “You will…” and/or imperative; ES: “Vas a…” / “-arás” / imperative; no required “Today/Hoy”).
-- [ ] Student text states what the student **will** learn and what they **will** be able to do by end of class.
+- [ ] Student text: 3–5 lines per language (max 5), plain text, motivating, **forward-looking** (EN: "You will…" and/or imperative; ES: "Vas a…" / "-arás" / imperative; no required "Today/Hoy").
+- [ ] Student text states what the student **will** learn (theory topics) and what they **will** be able to do by end of class (applied in project).
 - [ ] Student text is bilingual (### Español and ### English) with the same meaning and natural Spanish (non-literal).
-- [ ] Professor text includes the summary (ending with project checkpoint line), Debate pacing, and Participation criteria (exactly 3 bullets).
+- [ ] Professor text includes the summary (ending with class checkpoint line covering both content and project), Debate pacing, and Participation criteria (exactly 3 bullets).
 - [ ] Professor text covers all 5 outcome dimensions as `####` subsections: Learn, Reflect, Be aware of, Do, Avoid.
 - [ ] Anti-patterns explicitly mentioned under "avoid".
-- [ ] Professor text includes project link / what good looks like and evaluation priorities inside the summary.
+- [ ] Professor text includes content plan coverage + project link / what good looks like and evaluation priorities inside the summary.
 - [ ] Professor text is bilingual (### Español and ### English) with the same content and natural Spanish adaptation (non-literal).
 - [ ] Spanish mentor kit uses **Spanish section headings** (Resumen, Ritmo del debate, Aprender, Preguntas reflexivas, etc.) — no English titles in ES version.
 - [ ] Bridge included **only** for same-module continuity; omitted when not applicable (no empty bridge).
-- [ ] Bridge references **prior topic/skill**, never week/day (`w7 d21`, “día 21”, etc.).
-- [ ] Student content in chat: ` ```text ` blocks **Copiar desde aquí — Students** per language (EN + ES); plain text only.
-- [ ] Mentor content in chat: ` ```markdown ` blocks **Copiar desde aquí — Mentors** per language (EN + ES); no meta-commentary inside professor content.
+- [ ] Bridge references **prior topic/skill**, never week/day (`w7 d21`, "día 21", etc.).
+- [ ] Each copy block has a visible heading **before** the fence: `#### Students — English`, `#### Students — Español`, `#### Mentors — English`, `#### Mentors — Español`.
+- [ ] Student content in chat: ` ```text ` fences per language contain **only** the student guideline text to copy.
+- [ ] Mentor content in chat: ` ```markdown ` fences per language contain **only** the mentor kit to copy (no block titles, agent commentary, or copy instructions inside the fence).
 - [ ] Student preview questions exist (1–2) inline in each language.
 - [ ] Facilitator probes appear only under Reflect and Avoid, and never as full answer keys.
 - [ ] Per dimension limits respected: aspects written inline (no title) with 1–3 compact phrases/cases; reflective questions 1–2.
 - [ ] Milestone days (`is_milestone`) keep per-dimension questions to 1 (max 2) and emphasize demo/evaluation.
-- [ ] No internal analysis / “Phase 2 analysis” appears in final student/professor text.
+- [ ] No internal analysis / "Phase 2 analysis" appears in final student/professor text.
 - [ ] No duplicate question intent across dimensions (dedup rule #5).
 - [ ] No mixed audiences: one text is clearly for "Students", the other for "Mentors".
-- [ ] Skill name, project name, and main concepts reflected correctly in both texts.
+- [ ] Skill name, theory topics, project name, and main concepts reflected correctly in both texts.
 - [ ] Output is valid Markdown.
 
 ---
 
 ## Manual spot-check (before committing this skill)
 
-- Run the generator for **Week 8 Day 22**: verify `Debate pacing` exists, `Facilitator probes` appears under Reflect/Avoid, the summary ends with project checkpoint; **no Bridge** to week 7 (different module: “Working with AI coding agents” starts at w8); if bridging w8 d23 from d22, use topic labels only.
+- Run the generator for **Week 8 Day 22**: verify `Debate pacing` exists, `Facilitator probes` appears under Reflect/Avoid, the summary ends with class checkpoint; **no Bridge** to week 7 (different module: "Working with AI coding agents" starts at w8); if bridging w8 d23 from d22, use topic labels only.
 - Pick a **sparse day** from the CSV (null/empty `anti_patterns` or `limitaciones`): verify questions still exist, and Avoid/Be aware degrade gracefully without inventing concepts.
 - Pick an **HITO / milestone day**: verify reduced per-dimension questions (target 1–2) and deliverable-focused Summary/opening/closing.
