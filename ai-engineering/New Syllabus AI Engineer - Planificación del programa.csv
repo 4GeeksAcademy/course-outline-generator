@@ -39,7 +39,7 @@ Skill: Comprender cómo funciona internet",,,,,
 - Esperar a que todo me lo expliquen
 - No usar los canales de comunicación",- No IA
 0,2,"Skill: Conocer los fundamentos de HTML, CSS y Git para entregar un primer proyecto",,,,,
-,En Syllabus,"> Teoría: 
+,,"> Teoría: 
 
 + Introducción a HTML y CSS (Se dejará lo actual)
 
@@ -131,7 +131,7 @@ https://vibemanifesto.org/
   6. Pedir a Copilot que genere una línea de código para obtener un valor aleatorio del array quién, otro valor aleatorio del array acción y otro del array qué y el array cuándo
   7. Pedir a Copilot que concatene todos los valores obtenidos con un espacio en blanco de por medio y lo inserte en una variable
   8. Pedir a Copilot que inserte un console.log para imprimir el valor de la variable en la terminal.",,,,,"- No se imprime por html para reducir la complejidad con el tema del DOM, que los estudiantes se ponen a investigar porque no entienden por qué esos comandos"
-,,--- INICIO DEL CURSO ---,,,,,
+,,--- CURSO ---,,,,,
 ,,### WEB UI FUNDAMENTALS WITH TAILWIND ###,,,,,
 1,1,Skill: Desarrollar interfaces sencillas con HTML y CSS cumpliendo con normas de accesibilidad y principios de SEO/GEO,,,,,
 ,En Syllabus,"- Se dan 30 minutos de repaso de prework
@@ -1202,7 +1202,25 @@ HITO 03,En Syllabus,"
 
 ",,,,,
 ,,### WORKING WITH AI CODING AGENTS ###,,,,,
-8,23,Skill: Construir un banco de memoria y reglas de contexto a partir de un código base preexistente,,,,,
+8,23,Skill: Gestionar adecuadamente el uso del agente de código para un desarrollo eficiente y una buena economía de tokens,,,,,
+,En Syllabus,"> Teoría:
++ AI Engineering Fundamentals: Introduction to AI-Assisted Development
++ Speaking AI's Language: Structured Formats
++ Token Efficiency
++ Coding agents working modes
+  - Ask
+  - Plan
+  - Agent
+  - Debug","- What is the best agent mode for what I want to do
+- How to use the agent modes along my feature development
+- How to use agents and models efficiently","- Auto mode by default
+- Start talking with the agent
+","- Think -> Talk -> Implement
+- Identify when I need a more/less powerful model for a task","- Doing everything with the most powerful model
+- Talk with the agent in agent mode
+",
+,En Syllabus,,,,,,
+8,24,Skill: Construir un banco de memoria y reglas de contexto a partir de un código base preexistente,,,,,
 ,En Syllabus,"> Teoría:
 
 + Estrategias en la comunicación con la IA (Context & Anatomy):
@@ -1252,7 +1270,7 @@ https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agent
 > 6. Genera una carpeta `memory-bank` con al menos: descripción del producto, stack tecnológico y estado actual del proyecto.
 
 ",,,,,
-8,24,Skill: Escribir especificaciones claras y ejecutables garantizando que el producto cumpla con los requisitos definidos,,,,,
+9,25,Skill: Escribir especificaciones claras y ejecutables garantizando que el producto cumpla con los requisitos definidos,,,,,
 ,En Syllabus,">Teoría: 
 
 + Spec Driven Development
@@ -1266,7 +1284,7 @@ https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agent
 
 ",,,,,
 ,En Syllabus,Proyecto: Desarrollar algunas especificaciones adicionales en el proyecto del día anterior,,,,,
-9,25,Skill: Sintentizar acciones y reglas como habilidades (Skills) para que los agentes puedan ejecutar acciones claras y precisas,,,,,
+9,26,Skill: Sintentizar acciones y reglas como habilidades (Skills) para que los agentes puedan resolver problemas complejos de forma clara y precisa,,,,,
 ,En Syllabus,"> Teoría: 
   + Skills: ¿Cómo puede tu agente aprender habilidades casi como Neo en Matrix?
    - ¿Qué son las skills para los agentes?
@@ -1334,14 +1352,10 @@ HITO 04,En Syllabus,"
     - Elaborar prompts de especificaciones y generación de componentes.
     - Reconstruir la UI de la empresa mediante IA.",,,,,
 ,,### CODING FUNDAMENTALS WITH PYTHON ###,,,,,
-9,26,Skill: Entender los fundamentos de Python y su sintaxis aplicar el concepto de algoritmos mediante código,,,,,
+9,27,Skill: Entender los fundamentos de Python y su sintaxis para aplicar el concepto de algoritmos mediante código en Python,,,,,
 ,En Syllabus,"> Teoría:
   - (Mención a Skills 6 y 7)
 
-  + Introducción al backend
-    - ¿Qué es el backend?
-      -- ¿Cuál es el rol del backend?
-      -- Lenguajes de backend más utilizados
 
   + Intro to Python
     - ¿Qué es Python?
@@ -1402,7 +1416,7 @@ Escribe el codigo, no lo copies
 
 - Exceso de anidación de condicionales: if dentro de if dentro de if... formando una flecha a la derecha. ",- No IA
 ,En Syllabus,Ejercicios de JS que deban traducirse a Python.,,,,,- No IA
-9,27,Skill: Implementar colecciones y diccionarios en Python siguiendo la lógica de la solución a implementar,,,,,
+10,28,Skill: Implementar colecciones y diccionarios en Python siguiendo la lógica de la solución a implementar,,,,,
 ,En Syllabus,"> Teoría:
   - (Hacer mención a Skill 8.1)
 
@@ -1435,8 +1449,8 @@ Escribe el codigo, no lo copies
 
 - Acceso:        Usar lista[100] sin verificar el tamaño, devuelve error.
 ",- No IA
-,En Syllabus,> Proyecto: To-do List CLI (Reutilizado),,,,,
-10,28,Skill: Implementar colecciones y diccionarios en Python siguiendo la lógica de la solución a implementar,,,,,
+,En Syllabus,Ejercicios de JS que deban traducirse a Python.,,,,,
+10,29,Skill: Escribir código reutilizable mediante la implementación de funciones,,,,,
 ,En Syllabus,"> Teoría:
   - (Hacer mención a Skill 8.1)
 
@@ -1449,7 +1463,24 @@ Escribe el codigo, no lo copies
     - Métodos vs funciones vs procedimientos (funciones que devuelven valor y funciones que no)
     - Métodos y funciones para trabajar con datos primitivos (string, number, etc)  
     - funciones anónimas (lambdas)
-","
+
+ + CLIs
+   - Qué es un CLI
+   - Por qué son útiles los CLIs para los humanos (especialmente desarrolladores)
+   - ¿Cómo crear un CLI exitoso? (incluir diferencia entre una CLI y un script)
+
+ + CLIs y la IA
+   - Por qué los CLIs son útiles para la IA
+   - ¿Cómo la IA usa los CLIs?
+   - Aspectos fundamentales para un buen CLI para una IA:
+     -- Salida estructurada y parseable
+     -- Códigos de salida y errores predecibles
+     -- Idempotencia  y operaciones no interactivas
+     -- Discoverabilidad sin contexto humano (--help exhaustivo)
+     -- Determinismo
+     -- Operaciones atómicas y de bajo riesgo por defecto
+     -- Límites de contexto/tamaño de salida
+     -- Versionado y estabilidad de la interfaz","
 - Reconocer los valores que necesita mi funcion para lograr su objetivo
 - Reconocer el tipo de funcion que requiero
 - Mantener el principio de responsabilidad única
@@ -1457,10 +1488,18 @@ Escribe el codigo, no lo copies
 - Identificar cuando existe un """"paso por referencia"""" y cuando es un """"paso por valor""""
 ","
 
-- Elegir un nombre adecuado en las funciones, el nombre debe ser descriptivo a lo quehace la misma ",,"
-- Abuso de funciones lambda",- No IA
+- Elegir un nombre adecuado en las funciones, el nombre debe ser descriptivo a lo quehace la misma 
+
+
+
+","- Determinismo. A una misma entrada , la misma salida","
+- Abuso de funciones lambda
+
+
+- Entradas de datos por stdin en CLIs
+",- No IA
 ,En Syllabus,> Proyecto: To-do List CLI (Reutilizado),,,,,
-10,29,Skill: Trabajar con datos estructurados de tipo objeto en Python,,,,,
+10,30,Skill: Representar objetos de la vida real mediante datos estructurados de tipo objeto en Python,,,,,
 ,En Syllabus,"> Teoría:
   + Programación Orientada a Objetos en Python:
     - ¿Qué es una clase?
@@ -1506,8 +1545,14 @@ Datos Primitivos: coche.rueda1_presion, coche.rueda2_presion.
 Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se desincroniza.",
 ,En Syllabus,Ejercicios de representación de clases.,,,,,
 ,,### BACKEND DEVELOPMENT WITH CODING AGENTS ###,,,,,
-10,30,Skill: Diseñar la arquitectura del backend según la naturaleza de la solución y las necesidades del negocio,,,,,
+11,31,Skill: Diseñar la arquitectura del backend según la naturaleza de la solución y las necesidades del negocio,,,,,
 ,En Syllabus,"> Teoría:
+
+  + Introducción al backend
+    - ¿Qué es el backend?
+      -- ¿Cuál es el rol del backend?
+      -- Lenguajes de backend más utilizados
+
   + Arquitecturas más comunes en el backend
     - MVC
     - Arquitectura en capas (introducción a la arquitectura hexagonal, muy light)
@@ -1524,21 +1569,30 @@ Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se d
     - ¿Por qué es importante un framework para construir una API?
     - ¿Qué es FastAPI?
     - Elementos principales de FastAPI (estructura base, endpoints, ApiRouter, modelos)
-    - Instalando FastAPI
+    - Instalando FastAPI con uv
+
+  + Documentación de APIs
+    - ¿En qué consiste documentar una API?
+    - ¿Por qué es importante documentar una API?
+      -- Relevancia para LLMs y agentes
+    - Buenas prácticas en documentación de APIs
+      -- Para humanos
+      -- Para agentes
+    - Documentación en FastAPI","- Pensar en la arquitectura desde el inicio, sin sobrediseño.
+- Reconocer la importancia de generar estructura en el backend
+- Identificar las ventajas de una estructura modularizada en cuanto a organización, mantenibilidad y eficiencia de código
+- Reconocer los elementos principales de la estructura de un proyecto usando un framework como FastAPI",,,,
+,En Syllabus,Proyecto: Hacer una propuesta de organización de la arquitectura de backend para el proyecto transversal.,,,,,
+11,32,Skill: Answering front end user-triggered requests using APIs,,,,,
+,En Syllabus,"> Teoría: 
+  (Referencia a la Skill 14)
 
   + Gestión del virtual env en python
     - ¿Qué es un virtual env?
     - ¿Qué es uv? (la herramienta de gestión de paquetes creada por Astra y adquirida por OpenAI en 2026 por su velocidad en gestión de paquetes)
     - Comandos principales de `uv` para gestionar paquetes (instalar, actualizar...)
     - uv vs pipenv vs. pip + venv
-    - Buenas prácticas en la gestión de virtual env usando `uv`","- Pensar en la arquitectura desde el inicio, sin sobrediseño.
-- Reconocer la importancia de generar estructura en el backend
-- Identificar las ventajas de una estructura modularizada en cuanto a organización, mantenibilidad y eficiencia de código
-- Reconocer los elementos principales de la estructura de un proyecto usando un framework como FastAPI",,,,
-,En Syllabus,Proyecto: Hacer una propuesta de organización de la arquitectura de backend para el proyecto transversal.,,,,,
-11,31,Skill: Answering front end user-triggered requests using APIs,,,,,
-,En Syllabus,"> Teoría: 
-  (Referencia a la Skill 14)
+    - Buenas prácticas en la gestión de virtual env usando `uv`
 
   + Building a Python API to serve the frontend
     - ¿Qué es una API? (refrescamiento de conocimientos)
@@ -1549,21 +1603,21 @@ Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se d
     - ¿Por qué es fundamental realizar validaciones en todos los endpoints?
     - Serializando la respuesta como la quiere el frontend 
 
-  + Validando y serializando datos de APIs con Pydantic
+  + Validando datos de APIs con Pydantic
     - ¿Qué es Pydantic?
     - Por qué es importante el uso de Pydantic
     - ¿Cómo modelar objetos con Pydantic?
     - ¿Cómo usar Pydantic para validar la entrada de datos en un endpoint?
     - ¿Cómo usar Pydantic para definir la estructura de la respuesta de un endpoint? 
-  
-  + Documentación de APIs
-    - ¿En qué consiste documentar una API?
-    - ¿Por qué es importante documentar una API?
-      -- Relevancia para LLMs y agentes
-    - Buenas prácticas en documentación de APIs
-      -- Para humanos
-      -- Para agentes
-    - Documentación en FastAPI","- Las APIs se prueban con tests y clientes HTTP (Postman, Insomnia...) no con frontend
+
+  + Serializers
+    - ¿Qué es un serializador?
+    - ¿Para qué se utiliza?
+      -- validación de inputs (prompt, parámetros)
+      -- outputs grandes (streaming, chunking)
+      -- formatos (JSON, multipart)
+    - Data Transfer Objects (DTOs) vs Modelos de BD: Por qué NUNCA se debe serializar el modelo de la base de datos directamente hacia el frontend.
+    - Seguridad en la Deserialización","- Las APIs se prueban con tests y clientes HTTP (Postman, Insomnia...) no con frontend
 - Asociar métodos HTTP con acciones concretas de un endpoint
 - Comprender que el backend no persiste datos.
 - Entender las necesidades del frontend para dar respuestas acordes
@@ -1571,7 +1625,22 @@ Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se d
 - la documentación se genera sola si usas bien los tipos Pydantic.
 - FastAPI usa Pydantic para validar que los datos sean correctos antes de que entren a tu función.
 - Recursos (Sustantivos): POST /users, GET /users. La URL define qué es, el método define qué haces.
-",- Acompañar un código HTTP con un mensaje siempre que se considere necesario y útil.,"- Endpoints con métodos HTTP específicos (no generalistas)
+
+- El serializer define el contrato de comunicación
+- El serializer se convierte en una capa de seguridad y validación
+- Los modelos internos no deben exponerse directamente
+- La serialización también implica: tamaño de datos, formato, velocidad de transferencia.
+- Especialmente relevante en: resultados de IA, embeddings, streaming de texto.
+- La API debe diseñarse pensando en la pantalla que consume los datos.
+- ¿El cliente realmente necesita todos estos datos?","- Acompañar un código HTTP con un mensaje siempre que se considere necesario y útil.
+
+- Validar siempre inputs
+- Usar DTOs para APIs
+- Devolver solo los campos necesarios
+- Limitar tamaño de payloads
+
+- Sanitizar datos antes de serializar
+","- Endpoints con métodos HTTP específicos (no generalistas)
 - Serializar las respuestas de los endpoints
 - Principio de única responsabilidad (single-responsibility, S en SOLID)
 - Siempre responder con el código HTTP correcto
@@ -1581,12 +1650,26 @@ Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se d
 - Python Moderno (Type Hints)
 - Recursos (Sustantivos): POST /users, GET /users.
 - Consistencia de recursos: mantener el sustantivo de recurso, una vez definido para todos sus metodos http.
-- Mapping / Alias: Configurar Pydantic para que acepte/envíe camelCase (JSON) pero tu código Python use snake_case. O acordar un estándar único.","- Reinventar la Rueda: Intentar parsear el JSON del body manualmente o escribir un servidor de sockets desde cero ""para aprender"".
+- Mapping / Alias: Configurar Pydantic para que acepte/envíe camelCase (JSON) pero tu código Python use snake_case. O acordar un estándar único.
+
+- DTOs
+- Input Validation Layer
+- Output Transformation
+- Streaming Serialization
+- Response Shaping
+- Pagination
+- Backend for Frontend (BFF)","- Reinventar la Rueda: Intentar parsear el JSON del body manualmente o escribir un servidor de sockets desde cero ""para aprender"".
 - Overfetching: serializar 30 campos cuando el cliente usa 3
 - Nested Deep Objects: serializar más de 2 niveles de profundidad. (Si es necesario, solo colocar id)
 - No Pagination.
 - Incluir blobs o imágenes en un serializador.
-",- Sin BD
+
+- Serializar modelos de base de datos directamente
+- Validar en la lógica de negocio
+- Deserialización insegura
+- Payloads excesivos - over-fetching
+- Payloads insuficientes - Under-fetching
+- Exponer estructura interna""",- Sin BD
 ,En Syllabus,"> Proyecto: Voice Agent
  - Se proveerá de una interfaz de voz al estudiante que genere la transcripción (via navegador).
  - La interfaz hace una llamada a la API de Groq y envía la transcripción con la instrucción par obtener una etiqueta de lo que quiere el usuario.
@@ -1600,7 +1683,7 @@ Arrays Paralelos: Tener nombres = [] y edades = []. Si ordenas uno, el otro se d
 
 Sugerir un prompt que le indique a la IA que examine el código del backend e identifique oportunidades de mejora de serialización como payload size y otros antipatrones. (A modo de sugerencia para completar el prompt, no dar completo)
 ",,,,,
-11,32,Skill: Procesar datos almacenados en archivos de tipo CSV mediante scripts de Python,,,,,
+11,33,Skill: Almacenar y procesar datos almacenados en archivos de tipo CSV mediante scripts de Python,,,,,
 ,En Syllabus,"> Teoría:
 
   + Trabajar con ficheros en Python
@@ -1621,7 +1704,7 @@ Sugerir un prompt que le indique a la IA que examine el código del backend e id
 - readlines() en archivos grandes",
 ,En Syllabus,"> Proyecto: Incident Report File Processor
 ",,,,,
-11,33,"Skill: Creating basic Agent Loops in Python, integrating LLMs with APIs",,,,,
+12,34,"Skill: Creating basic Agent Loops in Python, integrating LLMs with APIs",,,,,
 ,En Syllabus,"> Teoría:
 
 + Introducción a agentes
@@ -1675,7 +1758,7 @@ Sugerir un prompt que le indique a la IA que examine el código del backend e id
 - No definir condición de finalización",
 ,En Syllabus,"Proyecto: Crear un Agent Loop (con un .py que llame a la API mediante tools). Guardar la conversación en un CSV a medida que se genera (actor, message, tool_call, timestamp)
 ",,,,,
-12,34,Skill: Implementar mecanismos de almacenamiento con bases de datos ligeras,,,,,
+12,35,Skill: Implementar mecanismos de almacenamiento de datos con bases de datos ligeras,,,,,
 ,En Syllabus,"> Teoría: 
   + Almacenando información (en cualquier lugar)
     - ¿Qué es una base de datos? Como concepto general
@@ -1694,7 +1777,7 @@ Sugerir un prompt que le indique a la IA que examine el código del backend e id
 ,En Syllabus,"> Proyecto: Implementar un directorio de proveedores sencillo con TinyDB como base de datos (Directorio de Proveedores)
  ",,,,,
 ,,### AUTHENTICATION IN WEB APPLICATIONS ###,,,,,
-12,35,Skill: Implementar mecanismos de autenticación y restricción de rutas en FastAPI,,,,,
+12,36,Skill: Asegurar APIs mediante autenticación y restricción de rutas en FastAPI,,,,,
 ,En Syllabus,"> Teoría:
   + Autenticación
     - ¿Qué es la autenticación y por qué es importante?
@@ -1743,7 +1826,7 @@ Sugerir un prompt que le indique a la IA que examine el código del backend e id
 ,En Syllabus,"Proyecto: autenticación de la API del monorepo (Securing the API: Authentication and Route Restriction in FastAPI)
 
 ",,,,,
-12,36,Skill: Creating authentication flows,,,,,
+13,37,Skill: Desarrollar flujos de autenticación de aplicaciones,,,,,
 ,En Syllabus,"> Teoría:
    + Sesiones en el Frontend
      - ¿Qué es una sesión? ¿Para qué sirve?
@@ -1793,7 +1876,7 @@ Sugerir un prompt que le indique a la IA que examine el código del backend e id
 - No enviar datos sensibles en el payload del token ",
 ,En Syllabus,Proyecto: Flujo de autenticación en eI frontend del monorepo (Connecting the Lock: Authentication Flows in the Frontend),,,,,
 ,,"### ERROR HANDLING, DEBUGGING AND TESTING ###",,,,,
-13,37,Skill: Comprender la naturaleza de los errores de ejecución en un código y cómo gestionarlos,,,,,
+13,38,Skill: Comprender la naturaleza de los errores de ejecución en un código y cómo gestionarlos,,,,,
 ,En Syllabus,"> Teoría:
     
   + Error handling: La aplicación no debe explotar
@@ -1830,7 +1913,7 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
 ,En Syllabus,"> Proyecto 1: Generar un gestor de incidentes centralizado para la empresa del proyecto transversal
 
 > Proyecto 2: Aplicar gestión de errores y excepciones a todo el código previamente generado en el monorepo",,,,,
-13,38,Skill: Desarrollo de aplicaciones robustas mediante la implementación de baterías de pruebas,,,,,
+13,39,Skill: Desarrollar aplicaciones robustas mediante la implementación de baterías de pruebas,,,,,
 ,En Syllabus,"> Teoría:
   + Introducción al testing
     - ¿Por qué probar un código?
@@ -1865,7 +1948,7 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
  + Actividad extra:
     - Revisar todos los proyectos de backend anteriores y aplicar pruebas unitarias",,,,,
 ,,### MANAGING RELATIONAL DATABASES WITH FASTAPI ###,,,,,
-13,39,Skill: Construir consultas SQL para la obtención de tablas en bases de datos relacionales,,,,,
+14,40,Skill: Construir consultas SQL para la obtención de tablas en bases de datos relacionales,,,,,
 ,En Syllabus,"> Teoría:
   + Bases de datos (solo informativo)
     - ¿Qué es una base de datos?
@@ -1922,7 +2005,7 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
   - Se provee un SQL que poble una BD con un conjunto de datos para ejecutarlo en el SQL Editor de Supabase
   - Buscar y filtrar filas y extraer ciertos datos.
   - Luego, al estilo de CMD Challenge, deberán borrar una fila en específico, actualizar otra...",,,,,
-14,40,Skill: Gestionar datos en bases de datos relacionales mediante consultas SQL involucrando múltiples tablas,,,,,
+14,41,Skill: Gestionar datos en bases de datos relacionales mediante consultas SQL involucrando múltiples tablas,,,,,
 ,En Syllabus,"> Teoría:
   + Gestionando tablas relacionadas con SQL
     - ¿Qué es una relación en bases de datos?
@@ -1947,7 +2030,7 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
 ,En Syllabus,"> Práctica: Ejercicios de modelados con diagram.4geeks.com
 > Proyecto en clases:
   Se provee un SQL que poble una BD con diversas tablas relacionadas entre sí con un conjunto de datos para trabajar con ellas",,,,,
-14,41,Skill: Relacionar objetos de una aplicación con su representación en tablas en bases de datos mediante la utilización de ORMs,,,,,
+14,42,Skill: Relacionar objetos de una aplicación con su representación en tablas en bases de datos mediante la utilización de ORMs,,,,,
 ,En Syllabus,"> Teoría:
   + Object-Relational Mapping: El traductor universal
     - ¿Qué es un ORM?
@@ -1981,14 +2064,14 @@ Bloque Finally: Usar finally { setLoading(false) } para asegurar que el spinner 
 - Problema N+1: iterar sobre una lista de objetos y acceder a sus relaciones dentro del loop genera una query adicional por cada elemento, degradando el rendimiento silenciosamente.
 - Sesión global: crear la sesión fuera de cualquier contexto de request genera condiciones de carrera cuando múltiples usuarios hacen peticiones simultáneas.
 - create_all() en producción: sobreescribe o ignora cambios de esquema existentes y no deja historial de cambios, haciendo imposible revertir o reproducir el estado de la base de datos.",
-HITO 05,Proyecto pendiente aprobación,"> Proyecto: 
+HITO 05,En Syllabus,"> Proyecto: 
 
 > Proyecto transversal: 🗄️ Hito 5 — Backend para Frontends con IA
  APIs, fundamentos de BD, autenticación. Crear el backend de la empresa.
 Actividades:
 - Implementar un gestor de inventarios que almacene en Supabase y hacer que convivan dos bases de datos en el mismo proyecto.",,,,,
 ,,### CONTAINER APPLICATIONS WITH DOCKER ###,,,,,
-14,42,Skill: Construir aplicaciones production-ready empleando contenedores,,,,,
+15,43,Skill: Construir aplicaciones production-ready empleando contenedores,,,,,
 ,En Syllabus,"> Teoría:
   + Contenedores (Sin hablar de Docker)
     - ¿Qué es un contenedor?
@@ -2126,10 +2209,11 @@ Actividades:
 - Mezclar responsabilidades
 - Usar localhost entre contenedores
 - No manejar persistencia",
-,En Syllabus,> Proyecto: Contenedorizar el monorepo,,,,,
-,,### ARCHITECHTURE OPTIMIZATION ###,,,,,
-15,43,Skill: Implementar estrategias para la optimización del desempeño de aplicaciones de frontend,,,,,
-,Approved,"Teoría:
+,En Syllabus,"> Proyecto módulo: Preparar los contenedores para un básico generado con IA
+> Proyecto compañía: Contenedorizar el monorepo",,,,,
+,,### ARCHITECTURE OPTIMIZATION ###,,,,,
+15,44,Skill: Implementar estrategias para la optimización del desempeño de aplicaciones de frontend,,,,,
+,En Syllabus,"Teoría:
 
   + Midiendo el desempeño del frontend (Core Web Vitals)
     - ¿Por qué es importante medir y optimizar el frontend?: No puedes mejorar lo que no mides. 
@@ -2191,7 +2275,7 @@ Actividades:
 - Fetch en cada Click: Volver a pedir la lista de usuarios cada vez que vuelves a la pestaña ""Usuarios"".
 
 ",
-,Approved,">  Proyecto transversal:
+,En Syllabus,">  Proyecto transversal:
 - Ejecutar Lighthouse desde las DevTools verificar el rendimiento del frontend tanto en la web de la compañía como en el backoffice.
 - Analizar el código para identificar qué componentes se están repitiendo y pueden ser creados como un componente reutilizable o un Custom Hook.
 - Instalar una skill de corrección de errores de web vitals
@@ -2203,53 +2287,12 @@ Actividades:
   -- Registrar un análisis de los resultados, identificando los principales problemas que lo pueden estar causando.
   -- Entregar un reporte de las mejoras aplicadas y su impacto en la puntuación original obtenida en Lighthouse
   -- Captura de las mediciones antes y después de aplicar cambios producto de la auditoría.",,,,,
-15,44,Skill: Preparar la arquitectura del backend para alto tráfico empleando Serializers,,,,,
-,Approved,"> Teoría:
-
-  + Serializers
-    - ¿Qué es un serializador?
-    - ¿Para qué se utiliza?
-      -- validación de inputs (prompt, parámetros)
-      -- outputs grandes (streaming, chunking)
-      -- formatos (JSON, multipart)
-    - Data Transfer Objects (DTOs) vs Modelos de BD: Por qué NUNCA se debe serializar el modelo de la base de datos directamente hacia el frontend.
-    - Seguridad en la Deserialización
-
+15,45,Skill: Optimizar la arquitectura del backend para alto tráfico empleando Caching,,,,,
+,En Syllabus,"> Teoría:
   + Optimización de Payload (Over-fetching): (Contenido corto)
     - Solo devolver exactamente lo que la pantalla actual necesita. 
     - Mención rápida a GraphQL vs REST optimizado.
- 
-","- El serializer define el contrato de comunicación
-- El serializer se convierte en una capa de seguridad y validación
-- Los modelos internos no deben exponerse directamente
-- La serialización también implica: tamaño de datos, formato, velocidad de transferencia.
-- Especialmente relevante en: resultados de IA, embeddings, streaming de texto.
-- La API debe diseñarse pensando en la pantalla que consume los datos.
-- ¿El cliente realmente necesita todos estos datos?","- Validar siempre inputs
-- Usar DTOs para APIs
-- Devolver solo los campos necesarios
-- Limitar tamaño de payloads
 
-- Sanitizar datos antes de serializar
-- ","- DTOs
-- Input Validation Layer
-- Output Transformation
-- Streaming Serialization
-
-- Response Shaping
-- Pagination
-- Backend for Frontend (BFF)","- Serializar modelos de base de datos directamente
-- Validar en la lógica de negocio
-- Deserialización insegura
-- Payloads excesivos - over-fetching
-- Payloads insuficientes - Under-fetching
-- Exponer estructura interna",
-,Approved,"> Proyecto transversal:
-  - Analizar todos los endpoints de la aplicación. 
-  - Identificar cuáles de ellos requieren mejoras y apuntar qué clases de mejoras implementar en cuanto a serialización y optimización del payload.
-  - Como mínimo: implementar serialización en todos los endpoints",,,,,
-15,45,Skill: Optimizar la arquitectura del backend para alto tráfico empleando Caching,,,,,
-,Approved,"> Teoría:
   + Caching
     - ¿Qué es el caching?
     - ¿Qué es la memoria caché?
@@ -2300,15 +2343,16 @@ Actividades:
 - No invalidar caché
 
 ",
-,Approved,"> Proyecto transversal:
+,En Syllabus,"> Proyecto transversal:
   - Analizar el frontend e identificar qué aspectos podrían beneficiarse si son procesados con:
     -- Lazy Loading
     -- Caching en el frontend, por ejemplo, con useMemo 
   - Analizar todos los endpoints de la aplicación y determinar en cuáles podría cachearse su respuesta. ",,,,,
-,,### TELEMETRY ### ,,,,,
+,,### APPLICATION TELEMETRY ### ,,,,,
 16,46,Skill: Identificar oportunidades de recolección de datos en escenarios reales que permitan optimizar compañías,,,,,
-,Approved,"> Teoría: 
-+ Arquitectura y diseño de mecanismos de telemetría
+,En Syllabus,"> Teoría: 
++ Introducción a la telemetría:
+  - ¿Qué es la telemetría? ¿Por qué es importante y útil?
   - Data and telemetry have become more and more important; we need to collect and process telemetry
   - Throttling 
   - Batch vs stream
@@ -2362,7 +2406,7 @@ Actividades:
 - Eventos genéricos (click, event1) sin contexto ni propiedades útiles.
 - Sin eventId: duplicados imposibles de detectar.
 - Secretos en telemetría",
-,Approved,"> Proyecto módulo: Sanz Clima, empresa española de alcance internacional especializada en climatización, obtiene datos de funcionamiento de sus equipos de climatización y el ambiente del vehículo para analizar el funcionamiento y predecir la necesidad de revisión y mantenimiento.
+,En Syllabus,"> Proyecto módulo: Sanz Clima, empresa española de alcance internacional especializada en climatización, obtiene datos de funcionamiento de sus equipos de climatización y el ambiente del vehículo por medio de sensores IoT para analizar el funcionamiento y predecir la necesidad de revisión y mantenimiento de los equipos.
   - Investigar sobre cómo funciona un sistema de climatización para comprender el producto, sus estados y valores más representativos.
   - Identificar posibles valores que sería necesario incluir en la telemetría para hacer un análisis correcto.
 
@@ -2370,27 +2414,7 @@ Actividades:
   - Identificar al menos 3 KPIs principales para el caso de la empresa asignada.
   - Proponer oportunidades de telemetría para esos indicadores.",,,,,
 16,47,Skill: Collecting telemetry and context-related info from the user and your application,,,,,
-,Pending,"> Teoría:
-+ Entendiendo la telemetría desde el frontend
-  - ¿Qué es la telemetría? ¿Por qué es importante y útil?
-  - ¿Qué datos almacenar? (categorías mínimas)
-    -- Identidad / sesión
-    -- Perfil de usuario (personalización): role/persona, plan, language, timezone, country, preferences (tema, notificaciones), accessibility.
-    -- Contexto de ejecución: appVersion, env, route, referrer, utm, featureFlags, tenant/academyId.
-    -- Uso del producto (telemetría): eventos de navegación, clicks clave, funnels, tiempos, errores, búsquedas internas.
-    -- Rendimiento: Web Vitals, API latency, CSR/SSR timings, re-renders (si aplica).
-    -- Calidad / soporte: errorId, stack (sanitizado), networkState, apiStatus.
-    -- Privacidad y consentimiento: consent.analytics, consent.marketing, consent.functional.
-  - ¿Para/Por qué almacenar esos datos? (objetivos claros)
-    -- Personalización: contenido/UX según role, idioma, preferencias.
-    -- Analítica de producto: entender rutas, drop-offs, features usadas, cohortes.
-    -- Observabilidad: detectar errores, degradación de performance, incidencias por versión.
-    -- Experimentos: A/B testing y feature flags (impacto y segmentación).
-    -- Soporte: reproducibilidad (session + contexto + breadcrumbs).
-  - “User profile” vs “usage data” (separación práctica)
-    -- User profile: se guarda como estado (persistente) y se actualiza cuando cambia (ej. PATCH /users/me).
-    -- Usage data: se envía como eventos (append-only) a telemetry/events.
-
+,En Syllabus,"> Teoría:
 + Capturar telemetría en Next
   - Router: page views (routeChangeComplete).
   - Acciones clave: submit, enroll, search, checkout, “copied”, etc.
@@ -2419,51 +2443,57 @@ Actividades:
     -- Control → contrato: “esquema estable + versión”
     -- Contrato → transporte: “batch + retry + beacon + dedupe”
 
-+ Mejores prácticas en telemetría (Guardrails) 
++ Aspectos básicos del almacenamiento de datos de telemetría:
+  - Problemas comunes al almacenar telemetría:
+    -- La telemetría escribe constantemente — el patrón es distinto al CRUD convencional
+    -- Por qué una tabla genérica sin diseño temporal falla rápido
+    -- La pregunta central: ¿dónde y cómo guardo lo que ya estoy capturando? (Rápida referencia a opciones como tablas SQL, NoSQL, y a TSDB como nueva tecnología)
+  - ¿Para/Por qué almacenar esos datos? (objetivos claros)
+    -- Personalización: contenido/UX según role, idioma, preferencias.
+    -- Analítica de producto: entender rutas, drop-offs, features usadas, cohortes.
+    -- Observabilidad: detectar errores, degradación de performance, incidencias por versión.
+    -- Experimentos: A/B testing y feature flags (impacto y segmentación).
+    -- Soporte: reproducibilidad (session + contexto + breadcrumbs).
+  - ¿Qué datos almacenar? (categorías mínimas)
+    -- Identidad / sesión
+    -- Perfil de usuario (personalización): role/persona, plan, language, timezone, country, preferences (tema, notificaciones), accessibility.
+    -- Contexto de ejecución: appVersion, env, route, referrer, utm, featureFlags, tenant/academyId.
+    -- Uso del producto (telemetría): eventos de navegación, clicks clave, funnels, tiempos, errores, búsquedas internas.
+    -- Rendimiento: Web Vitals, API latency, CSR/SSR timings, re-renders (si aplica).
+    -- Calidad / soporte: errorId, stack (sanitizado), networkState, apiStatus.
+    -- Privacidad y consentimiento: consent.analytics, consent.marketing, consent.functional.
+  - Recomendaciones para la estructura de la tabla:
+    -- Columnas fijas: timestamp, service, event_type, level, value, message
+    -- Columna flexible: tags como JSONB para atributos variables
+    -- Los tres índices (timestamp, service, tags) y por qué cada uno existe
+  - “User profile” vs “usage data” (separación práctica)
+    -- User profile: se guarda como estado (persistente) y se actualiza cuando cambia (ej. PATCH /users/me).
+    -- Usage data: se envía como eventos (append-only) a telemetry/events.
+
++ Mejores prácticas en telemetría (Guardrails)  [referencia corta: menos de 6 páginas]
   - Consent-first: no enviar analítica si consent.analytics=false.
   - Redacción/sanitización: no mandar inputs libres (comentarios, textos) sin scrub.
   - Allowlist de propiedades: solo claves permitidas (evita fuga accidental).
   - Sampling: performance/verbose logs con muestreo (p.ej. 10%).
   - Ambientes: dev vs prod (no mezclar).
-
-+ Fundamentos del almacenamiento de datos de telemetría:
-  - Problemas comunes al almacenar telemetría:
-    -- La telemetría escribe constantemente — el patrón es distinto al CRUD convencional
-    -- Por qué una tabla genérica sin diseño temporal falla rápido
-    -- La pregunta central: ¿dónde y cómo guardo lo que ya estoy capturando? (Rápida referencia a opciones como tablas SQL, NoSQL, y a TSDB como nueva tecnología)
-  - Estructura de la tabla
-    -- Columnas fijas: timestamp, service, event_type, level, value, message
-    -- Columna flexible: tags como JSONB para atributos variables
-    -- Los tres índices y por qué cada uno existe
-  - Inserción correcta
-    -- Anti-patrón: un INSERT por evento en tiempo real
-    -- Patrón correcto: acumulación en lista + escritura en batch
-    -- Ejemplo de código mínimo funcional (pensando en frontend en React/Next y backend en FastAPI)
-  - Consultas temporales básicas
-    -- Consulta por rango: ¿qué pasó en los últimos N minutos?
-    -- Agrupación por ventana con DATE_TRUNC
-    -- Filtro por tags con JSONB
-  - Retención
-    -- La retención como concepto — los datos tienen TTL
-    -- Los datos de telemetría no se guardan para siempre
-    -- Qué conservar y a qué granularidad — el razonamiento, no la automatización
 ","- Por qué es importante la telemetría
 - Planificar la implementación de la telemetría al inicio del desarrollo y no como idea de último momento
 - Intencionalidad de los datos
-- “lo mínimo útil”
+- Qué conservar y a qué granularidad — el razonamiento, no la automatización: “lo mínimo útil”
 - Privacidad por defecto: evaluar sensibilidad de los datos antes de implementar
 - capturar lo necesario para entender “qué pasó” sin necesidad de ver el código o preguntar al usuario
 - calidad analítica: definir eventos que midan valor real (funnel, activación, retención).","- Nunca activar la telemetría de análisis sin el consentimiento explícito del usuario
 - Definir conjuntos de datos delimitados y evitar fuga de datos adicionales.","- Event envelope estándar: event + timestamp + user/session + context + properties + schemaVersion.
 - Taxonomía de eventos: convención clara (p.ej. screen_viewed, cta_clicked, form_submitted, api_failed).
 - Propiedades con allowlist: lista explícita de keys permitidas por evento (bloquea fugas).
-- Batch + flush: cola local, envío por lotes, sendBeacon en salida y reintentos con backoff.
+- acumulación en lista + escritura en batch: Batch + flush: cola local, envío por lotes, sendBeacon en salida y reintentos con backoff.
 - Correlación: sessionId + requestId/traceId para unir frontend–backend–logs.
 - Consent gating: capa única que decide si se trackea y qué (analytics vs functional).
 - Sanitización sistemática: scrub de URLs, query params, headers, y bloqueo de texto libre salvo casos justificados.
 - Errores con fingerprints: agrupar por errorCode/fingerprint y adjuntar breadcrumbs limitados.
 - Sampling: performance y verbose events muestreados; críticos al 100%.
-- Schema versioning: cambios incompatibles → nueva versión o evento nuevo.","- “Loggear todo”
+- Schema versioning: cambios incompatibles → nueva versión o evento nuevo.
+- los datos de telemetría tienen TTL, no se guardan para siempre","- “Loggear todo”
 - datos sensibles en eventos: emails, teléfonos, nombres, tokens, comentarios, payloads completos.
 - Eventos sin propósito: “click” genérico sin where/what/why → datos inútiles.
 - renombrar eventos/propiedades cada sprint
@@ -2471,12 +2501,13 @@ Actividades:
 - Contexto inconsistente: rutas sin normalizar, timestamps locales, timezone omitida.
 - Capturar en componentes a lo loco: tracking disperso, duplicado y difícil de mantener.
 - Texto libre sin control en lugar de cumplir un contrato
-- No respetar consentimiento sobre la trazabilidad",
-,Approved,"> Proyecto compañía: Generar telemetría desde el frontend
+- No respetar consentimiento sobre la trazabilidad
+-  un INSERT por evento en tiempo real",
+,En Syllabus,"> Proyecto compañía: Generar telemetría desde el frontend
   - Implementar la telemetría en el sistema de manejo de inventario
   - Implementar telemetría en el proceso de autenticación (actividad adicional)",,,,,
 16,48,Skill: Manipular conjuntos de datos y prepararlos para su procesamiento,,,,,
-,NO GENERAR LEARNPACK,"> Teoría: (Reutilizar Los  de Data Science)
+,En Syllabus,"> Teoría: (Reutilizar Los  de Data Science)
   + Introducción a Numpy
 
   + Manejo de datasets con Pandas
@@ -2484,9 +2515,16 @@ Actividades:
     - Nuevas columnas
     - Datos nulos
     - Limpieza y reporte",,,,,"- No loops, solo acumuladores"
-,Proyecto pendiente aprobación,> Prácticas de numpy y pandas creadas en DS.,,,,,
-17,49,Skill: Building a report from the telemetry or user data,,,,,
-,Approved,"> Teoria:
+,En Syllabus,"> Prácticas de numpy y pandas creadas en DS.
+
+> Proyecto compañía: Almacenar la telemetría
+  - Capturar la telemetría enviándola al backend
+  - Almacenar la telemetría
+  - Incluir en el contenido las recomendaciones para la estructura de la tabla:
+    -- Columnas fijas: timestamp, service, event_type, level, value, message
+    -- Columna flexible: tags como JSONB para atributos variables",,,,,
+17,49,Skill: Prepare and expose the telemetry or user data to be reported,,,,,
+,En Syllabus,"> Teoria:
   + De datos crudos a reportes: transformando lo que ya tienes
     - Cómo transformar datos existentes para generar reportes
       -- Cargar los datos crudos en un DataFrame de Pandas
@@ -2529,10 +2567,10 @@ Actividades:
 - Diseñar una sola tabla para CRUD y reportes: los datos almacenados para operaciones transaccionales rara vez tienen la estructura correcta para responder preguntas analíticas sin transformación.
 - Métricas sin dimensión de agrupamiento: un único número global (count = 45) no es accionable. Sin contexto de agrupamiento no hay información útil.
 - Pipelines no reproducibles: transformaciones que dependen del entorno, del orden de llegada de los datos o de variables externas producen resultados distintos en cada ejecución.",
-,,,,,,,
-,,### DATA PIPELINES ###,,,,,
+,En Syllabus,> Proyecto de compañía: Desarrollar un endpoint `/report` que exponga los datos adecuados para poder generar reportes de telemetría ,,,,,
+,,### IMPLEMENTING DATA PIPELINES ###,,,,,
 17,50,"Skill: Optimizar el almacenamiento para reporte, integridad, consulta o transporte",,,,,
-,Pending,"> Teoría: 
+,En Syllabus,"> Teoría: 
   + ¿Cómo escoger el formato de transporte de los datos?
     - ¿Por qué es importante escoger el formato de datos adecuado?
     - ¿Cuándo usar JSON?
@@ -2613,7 +2651,7 @@ Actividades:
 - Datos Redundantes (1NF): Guardar el ""Nombre del Cliente"" en cada registro de la tabla Facturas. Si el cliente cambia su nombre, tienes que actualizar 1,000 facturas (Riesgo de inconsistencia).
 
 - JOINs Masivos en Producción: Generar un ""Dashboard de Ventas Anuales"" haciendo 15 JOINs en vivo contra la base de datos de producción a las 12:00 PM. Los usuarios no podrán comprar porque la DB estará bloqueada pensando.",
-,Approved,"> Proyecto: Se presenta una escenario para la implementación de un Data Pipeline y un ETL. El enfoque es de planificación y diseño del Data pipeline y el ETL, no en su implementación.
+,En Syllabus,"> Proyecto: Se presenta una escenario para la implementación de un Data Pipeline y un ETL. El enfoque es de planificación y diseño del Data pipeline y el ETL, no en su implementación.
 Por ejemplo:
 - Cuál es el propósito de este pipeline.
 - ¿Cuál es el formato de extracción de los datos?. ¿Considerarías una opción diferente?
@@ -2623,10 +2661,10 @@ Por ejemplo:
 - ¿Qué datos mínimos deberías registrar en un log de ejecución para poder auditar un pipeline de producción?
 - ¿Qué diferencia a un pipeline de datos robusto de uno que simplemente funciona? Menciona al menos tres características concretas.",,,,,
 17,51,Skill: Building a data pipeline from the application data,,,,,
-,Pending,"> Teoría:
+,En Syllabus,"> Teoría:
   + Intro to datapipelines with Prefect: https://github.com/PrefectHQ/prefect
     - Core concepts
-      -- What Prefect is and where it fits (orchestration vs. execution)
+      -- What Prefect is and where it fits (orchestration vs. execution). Educational analogy example: “The cook and the chef”
       -- Flows and tasks: the fundamental building blocks
       -- The difference between defining a pipeline and running it
     - Flows
@@ -2651,10 +2689,15 @@ Por ejemplo:
       -- Prefect's execution model (local vs. remote)
       -- Running flows locally without a Prefect server
       -- Using PREFECT_API_URL to switch between local/cloud environments","- Los datos en una aplicación no fluyen solos: pasan por etapas definidas 
-- Saltarse etapas del flujo de datos produce datos incorrectos o no usables por un modelo de AI.",- Los modelos de AI nunca consumen datos directamente de la fuente: siempre existe una etapa de transformación intermedia reproducible.,,,
-,,,,,,,
+- Saltarse etapas del flujo de datos produce datos incorrectos o no usables por un modelo de AI.
+- Entender que Prefect no ""acelera"" el código ni procesa datos matemáticamente. Prefect es un semáforo
+- Comprender la importancia de indicar el estado de una etapa para la correcta gestión del flujo y recuperación.
+- Comprender que en un pipeline de datos se pasa de tener ""2 estados"" (true o false, ejecutado/detenido) a multiples estados (ej: pending, running, failed, completed, etc.) que permiten describir su situacion actual
+- ",- Los modelos de AI nunca consumen datos directamente de la fuente: siempre existe una etapa de transformación intermedia reproducible.,,,
+,En Syllabus,"> Proyecto de módulo: Implementar el pipeline según el diseño del módulo previo
+> Proyecto de compañía: Implementar el pipeline según el diseño del módulo previo",,,,,
 18,52,Skill: Making resilient flows to avoid datapipeline interruptions,,,,,
-,Pending,"> Teoria:
+,En Syllabus,"> Teoria:
   + Enhancing data pipelines with Prefect
     - Nested flows (subflows)
     - Managing failures and errors
@@ -2674,13 +2717,17 @@ Por ejemplo:
       -- What a deployment is and why it matters
       -- Creating a deployment via prefect deploy or the Python API
       -- Work pools and workers: where and how tasks run
-      -- Infrastructure blocks (focused on Docker)","- Los datos en una aplicación no fluyen solos: pasan por etapas definidas 
-- Saltarse etapas del flujo de datos produce datos incorrectos o no usables por un modelo de AI.",- Los modelos de AI nunca consumen datos directamente de la fuente: siempre existe una etapa de transformación intermedia reproducible.,,,
-HITO 06,,"📊 Hito 6 — Telemetría y Data Pipelines
+      -- Infrastructure blocks (focused on Docker)","- Nested flows como aplicación de principio DRY y ""divide y vencerás""
+- Un data pipeline debe tener mecanismos de ""defensa"" ante entradas inválidas, ante fallos, ante pérdida de datos, ataques de inyección.
+- Un data pipeline requiere mecanismos de recuperación para datos de gran valor y evitar la pérdida de información
+- Es necesario evitar sobrecargar el data pipeline de consultas para garantizar su efectividad: Cachear consultas/resultados por períodos que no afecten su veracidad
+-  ",,"- Implementar mecanismos de recuperación de datos cuando lo transmitido es de alto valor
+- Cuidar la unicidad de los datos enviados cuando se hacen retrys",,
+HITO 06,En Syllabus,"📊 Hito 6 — Telemetría y Data Pipelines
  Recolectar → transformar → agregar → reportar. Construir telemetría para la empresa.",,,,,
 ,,### ASYNCHRONOUS PROCESSING AND OFFLOADING ### ,,,,,
-17,50,Skill: Background processing,,,,,
-,Pending,"> Teoría:
+18,53,Skill: Delegar la ejecución de procesos secundarios en segundo plano,,,,,
+,En Syllabus,"> Teoría:
   + Introducción procesamiento en segundo plano (Background processing)
     - ¿Qué es la ejecución en segundo plano? (Ejecución fuera del ciclo request-response)
     - Principios indispensables en el procesamiento del segundo plano
@@ -2733,15 +2780,22 @@ HITO 06,,"📊 Hito 6 — Telemetría y Data Pipelines
 - Fallo Silencioso / Infinito: Si falla un envío de email, el estado se queda en processing para siempre (Zombie task).
 
 - El Secuestro de la API (Blocking): El usuario pide un reporte PDF, el backend lo genera durante 30 segundos y luego responde. Si el usuario cierra el navegador al segundo 15, el proceso se corta o queda huérfano.",
-,Proyecto pendiente aprobación,,,,,,
-17,51,Skill: Implementar colas de procesos,,,,,
-,Approved,"> Teoría: 
-  + Gestión de Colas
+,En Syllabus,"> Proyecto transversal: Hacer que cada madrugada se ejecute un script/endpoint que vuelque toda la telemetría del último día en un CSV y ejecute el pipeline desarrollado, usando ese archivo de entrada para preparar el reporte.
+",,,,,
+18,54,Skill: Implementar algoritmos de gestión de colas en sistemas sencillos,,,,,
+,En Syllabus,"> Teoría: 
+  + Gestión colas:
     - ¿Qué es y cómo funciona una cola? Principio FIFO  
+    - Diferencias entre una cola y un array
     - ¿Cuándo utilizar una cola? 
     - Diferentes tipos de cola (Simple, circular y prioridad, de tamaños estático o dinámico) 
     - Aplicaciones más comunes de las colas (Colas de mensaje)
 
+  + Convirtiendo un proceso síncrono en asíncrono (trabajo de diseño e ingeniería, no de implementación):
+    - Dado un escenario de un flujo con varias cajas, elegir cuáles cajas encadenadas en el flujo pueden convertirse en un proceso en segundo plano
+    - Si una caja falla, cómo hacer que reintente el proceso y cómo gestionar el fallo.
+    - Cómo prevenir el ""retry storm"" y para qué funciona el jitter.
+    - Cómo gestionar la concurrencia de los workers: CPU Bound (casos que requieren mucho trabajo de CPU) vs I/O Bound (casos que requieren llamadas a terceros o BB.DD.)
 ","
 
 - Interiorizar que cambiar el estado antes de hacer el trabajo es la única forma de evitar la concurrencia destructiva (que dos workers procesen lo mismo).
@@ -2758,12 +2812,6 @@ HITO 06,,"📊 Hito 6 — Telemetría y Data Pipelines
 
 - Pérdida por Amnesia: Reiniciar el servidor web y perder todas las tareas que estaban ""en memoria"" esperando a ser procesadas.",
 ,Approved,"> Ejercicios: Crear un learnpack incremental con algunos ejercicios de colas en Python
-
-> Proyecto: 
-  + Gestor de atención de clientes en un banco (collections.deque)
-
-  + Gestión de pacientes en emergencia 
-
 
 from collections import deque
 
@@ -2783,46 +2831,136 @@ while fila_banco:
 # Resultado:
 # Atendiendo a: Cliente 1
 # Atendiendo a: Cliente 2
-# Atendiendo a: Cliente 3",,,,,
-18,52,Skill: Using queues and tasks to delegate,,,,,
-,Pending,"> Teoría:
+# Atendiendo a: Cliente 3
+
+
+> Proyecto: 
+  + Gestor de atención de clientes en un banco (collections.deque)
+
+  + Gestión de pacientes en emergencia 
+",,,,,
+19,55,Skill: Implementar procesos asíncronos delegando tareas mediante el uso de colas de mensajes,,,,,
+,En Syllabus,"> Teoría:
    + Procesamiento asíncrono con colas (Offloading)
      - ¿Cómo funciona el procesamiento asíncrono con colas? (Recibir solicitud -> Encolar solicitud -> Procesar solicitud en cola)
-     - 
+     - Fundamental concepts:
+       -- Producer / Consumer — one process puts messages in, another reads them. They're decoupled and don't need to run at the same time.
+       -- Message — the unit of data in transit (a JSON event, a file path, a record batch, etc.)
+       -- Broker — the middleware that holds messages between producer and consumer (RabbitMQ, Kafka, Redis Streams, SQS, etc.)
      - El Patrón ""Worker""
      - Colas de Mensajes / Message Brokers (Concepto): Mencionas ""User triggered"", pero ¿dónde ""espera"" ese trabajo si el servidor está ocupado? 
-    - Debes introducir conceptualmente las Colas (Queues) y los Workers (ej. Redis Queue, Celery, o AWS SQS), que son la verdadera garantía de Durabilidad.
-     - Comunicación del progreso al Frontend
-     - Gestión de Reintentos y Fallos (Dead Letter Queue - DLQ): ¿Qué pasa si el procesamiento falla por un error de red externo? ¿Se reintenta automáticamente? ¿Se descarta? ¿Se guarda en una ""tabla de fallos"" para revisión manual?
+     - Introducir conceptualmente las colas (queues) y los workers (p. ej., Redis Queue, Celery o AWS SQS), que son la verdadera garantía de durabilidad.
+     - Mejores prácticas:
+       -- Comunicación del progreso al Frontend
+       -- Gestión de Reintentos y Fallos (Dead Letter Queue - DLQ): ¿Qué pasa si el procesamiento falla por un error de red externo? ¿Se reintenta automáticamente? ¿Se descarta? ¿Se guarda en una ""tabla de fallos"" para revisión manual?
+       -- Tiempo límite a todas las tareas
      - Enfoques de implementación: 
        -- Resiliencia y diseño (idempotencia obligatoria, retry y dead-letter queue...)
        -- Rendimiento y operaciones (Mensajes ligeros, escalabilidad horizontal, priorización de tareas, observabilidad..)
 
-+ Implementación de colas de mensajes con RabbitMQ 
-  - ¿Qué es RabbitMQ?
-  - ¿Cómo funciona RabbitMQ?:
-    -- Arquitectura central (productor/remitente, intercambiador/cartero, cola/buzón, worker/consumidor)
-    -- Notificación del procesamiento del mensaje (confiabilidad): Mensaje procesado con éxito (ACK) y error al procesar mensaje (NACK)
-    -- Múltiples workers para no tener cuellos de botella
-  - ¿Cómo implementar RabbitMQ con Docker? (Referencia a imagen de Docker de RabbitMQ)",,,,,
-,,"Building a queue that process incoming leads and detects entry errors
-",,,,,
++ Colas de mensajes con Redis
+  - ¿Qué es Redis?
+    -- Base de datos en memoria (key-value store)
+    -- Casos de uso: caché, sesiones, pub/sub y colas de tareas
+    -- Por qué es una opción válida como broker de mensajes (simplicidad, velocidad, bajo overhead)
+  - ¿Cómo funciona Redis como broker de mensajes?
+    -- Arquitectura: productor → broker (Redis) → cola (lista o stream) → worker/consumidor
+    -- Estructuras de datos relevantes: listas (LPUSH/BRPOP) y Redis Streams
+    -- Confiabilidad en el procesamiento:
+      --- Confirmación exitosa (ACK): el mensaje se elimina de la cola
+      --- Error en el procesamiento (NACK / reintento): el mensaje vuelve a la cola o va a una Dead Letter Queue
+    -- Múltiples workers: consumidores compitiendo sobre la misma cola para escalar horizontalmente y evitar cuellos de botella
+  - ¿Cómo levantar Redis con Docker?
+    -- Imagen oficial: Redis en Docker Hub
+    -- Comando básico: docker run -d -p 6379:6379 redis
+    -- Referencia a docker-compose para integrarlo con la aplicación y los workers
+
++ Gestionando colas de mensajes desde FastAPI usando Redis y Celery
+  - ¿Qué es Celery y por qué se usa con Redis?
+    -- Celery como sistema de ejecución de tareas asíncronas y distribuidas
+    -- Redis como broker (transporta las tareas) y como backend de resultados (guarda el estado)
+    -- Cuándo usar Celery + Redis: procesamiento en segundo plano, tareas programadas, pipelines con múltiples pasos
+  - ¿Cómo usar Redis y Celery para gestionar colas?
+    -- Configuración mínima: conexión de Celery a Redis como broker
+    -- Definir y encolar una tarea (@app.task + .delay())
+    -- Levantar un worker (celery -A app worker)
+    -- Monitorear tareas (Flower como herramienta de observabilidad)
+    -- Patrones comunes: reintentos automáticos, prioridad de colas, encadenamiento de tareas (chains)","- You may need queues in a data pipeline when:
+  -- High-volume event-driven ingestion 
+  -- Decoupling producers/consumers across distributed systems
+- Reducir y mantener al mínimo el tamaño del payload de los argumentos de los mensajes/tareas
+- Todos los payload deben ser tratados como String.
+- Tiempo límite a todas las tareas
+-  Hay que ponerle prioridades a las tareas y a las colas
+- Monitoreo constante de la ""queue depth""
+- ¿Qué pasa si el número de tareas pendientes crece rápidamente?
+- Revisar cuáles tareas deben tener idempotencia (Ej: que sea imposible cobrarle o cargarle dinero al cliente dos veces por la misma transacción)
+- Los workers sólo deben compartir los estados propios de Redis y de la BD. No usar estados globales.","- Keep messages lightweight — pass IDs/references, not full payloads
+- Set timeouts on every task — never let a worker hang indefinitely
+- Use separate queues by priority — don't mix critical and background tasks
+- Always define retry logic with exponential backoff
+- Log task ID, attempt count, and error reason on every failure
+- Use ACK only after successful processing — not on receipt
+
+- Enable Redis persistence (AOF or RDB) if durability matters
+- Run Redis with a memory eviction policy appropriate to the use case (noeviction for queues)
+
+- Scale workers horizontally — add consumers, not threads, for I/O-bound tasks
+- Set queue depth alerts — a growing queue signals under-provisioned workers","- Implement DLQ (Dead Letter Queue) for all failure paths and discards
+- Design every task for idempotency — re-running must produce the same result
+
+- Use Redis Streams over raw LPUSH/BRPOP for production workloads — built-in ACK, consumer groups, replay
+- Use BRPOP over polling loops — blocks efficiently until a message arrives
+
+- Tag tasks with queue, task_id, attempt, origin for traceability
+","- Storing large blobs in the message (images, full documents) — use object storage + pass the path
+- Tasks that assume exactly-one execution — network failures cause retries
+- No timeout → zombie workers that block the pool
+- Single queue for everything → low-priority tasks starve high-priority ones
+- ACK-on-receive → message lost if worker crashes mid-task
+- Infinite retries with no backoff → thundering herd on a failing dependency
+- Silent discard on error → invisible data loss
+- No DLQ → failed tasks disappear with no audit trail
+
+- Using Redis as a queue with no persistence → data loss on restart
+- Using raw lists (LPUSH/BRPOP) for complex pipelines → no ACK, no replay, no consumer groups
+- Sharing the same Redis instance for cache AND queue → cache eviction kills queued tasks
+- No connection pooling → connection exhaustion under load
+
+- Frontend polling every 500ms → unnecessary load, poor UX
+- Returning final result synchronously from the enqueue endpoint → blocks the request cycle
+
+- No observability on queue depth or task latency → blind to bottlenecks
+- All workers in one pool → one bad task type starves all others",
+,En Syllabus,"> Proyecto: implementar un sistema de workers y colas de mensajes para poder delegar tanto el procesamiento de:
+  - El procesamiento de la entrada de datos de telemetría a medida que entran para no secuestrar al procesador.
+  - El procesamiento de los datos diarios de la telemetría recogidos el día anterior.",,,,,
 ,,### MODEL TRAINING & RAG ###,,,,,
-18,53,Skill: Aplicar modelos de predicción en casos reales,,,,,
-,Pending,"> Teoría:
+19,56,Skill: Aplicar modelos de predicción en casos reales,,,,,
+,En Syllabus,"> Teoría:
 
 + Introducción al aprendizaje de máquina
   - ¿Qué es el aprendizaje de máquina?
   - ¿Cómo aprende una máquina?
+  - Principales conceptos en el aprendizaje de máquina:
+    -- Dataset
+    -- Variable objetivo / target
+    -- Features / características
+    -- Etiquetas
+    -- Observaciones / filas
+    -- Predicción
   - Revisión rápida de los tipos de aprendizaje de máquina (ejemplo didáctico y caso real de cada uno)
     -- Principalmente (más detallado) Supervisado y No supervisado 
     -- Mencionar de forma breve: Autosupervisado, Por refuerzo, Aprendizaje profundo
-  - ¿Qué lugar ocupan las redes neuronales dentro del ML?
-  - Cuándo tiene sentido usar redes neuronales y cuándo no
 
++ Breve introducción a las redes neuronales
+  - ¿Qué es una red neuronal? (explicación breve)
+  - ¿Qué lugar ocupan las redes neuronales dentro del Machine Learning?
+  - ¿Cuándo tiene sentido usar redes neuronales y cuándo no?
+  - Ejemplos reales de aplicación de redes neuronales
 
 + Aprendizaje supervisado: predicción con datos etiquetados
-  - Qué es un modelo
+  - Qué es un modelo (en términos de Machine Learning)
   - Qué significa entrenar
   - Qué significa predecir
   - ¿Cómo funcionan los modelos de predicción?
@@ -2853,36 +2991,48 @@ Conceptos fundamentales en el aprendizaje de máquina que el estudiante debe ten
   - Predicción
 
 Selección de modelos:
+  -  Identificar modelos preentrenados y en qué situaciones utilizarlos. 
+  -  Aprender a seleccionar y filtrar modelos según las necesidades.
+  - Aprender a integrar un modelo existente
 
--  Identificar modelos preentrenados y en qué situaciones utilizarlos. 
+- ML learns patterns from data; traditional code executes explicit rules
+- Frame supervised vs unsupervised by what the data looks like, not by the algorithm name
+- Teach neural networks as one tool within ML, not as synonymous with it
+- Use the ""when NOT to use NNs"" conversation early — prevents cargo-culting
 
--  Aprender a seleccionar y filtrar modelos según las necesidades.
+","- Always split data: train / validation / test — never evaluate on training data
+- Check baseline performance first (e.g., majority class predictor) before measuring model value
+- Prefer models with high downloads + recent updates + active maintainer on HuggingFace
+- Test the model on your own data sample before committing to it
+- Pin the model version — don't load model-name/latest in production","- Match model type to problem: classification → discrete output, regression → continuous output","- Training and evaluating on the same dataset → inflated, misleading metrics
+- Treating accuracy as the only metric — fails completely on imbalanced datasets
+- Ignoring the data distribution — a model trained on one population won't generalize to another
 
-- Aprender a integrar un modelo existente","
+- Using a model without reading what it was trained on — domain mismatch kills performance silently
+- Assuming a high-rated model generalizes to your specific use case
+- Loading a model at request time in production → massive latency spike; load once at startup
+- No validation step after integration — trusting output without sampling real predictions",
+,En Syllabus,"> Proyecto de módulo: Identificar qué sentimientos reflejan las reviews de una empresa.
+  - Contexto del enunciado: La empresa WeLoveReviews entrega 500 valoraciones de una empresa que tiene un 4.5 de puntuación promedio, pero quiere saber si el sentimiento de las reseñas lo acompaña para poder dar un reporte a su cliente.
+  - Se usarán modelos existentes. Es decir, es un modelo que se debe descargar, pasarle los parámetros y obtener un resultado. Como si usáramos un proyecto final de un alumno de DS.
+  - En el enunciado se debe indicar que no se debe meter el modelo en el repositorio sino que se debe descargar (Better approach for the project: don't store the model in the repo — download it at runtime via pipeline() or from_pretrained(), which caches it in the Codespace's local filesystem (~/.cache/huggingface). That keeps the repo clean and is standard practice.)
+  - Se usará el modelo `prajjwal1/bert-mini` de HuggingFace
+
+> Proyecto de módulo: Recomendador de productos en tienda en línea
+  - Contexto del enunciado: A small e-commerce company wants to show ""you might also like"" suggestions on the post-purchase confirmation page. Students receive a product catalog (CSV) and a purchase history (CSV). They must embed all products, then for each purchased item, return the top 3 most semantically similar products from the catalog.
+  - Usar el modelo `sentence-transformers/all-MiniLM-L6-v2` de HuggingFace
+  - 
 
 
-",,,
-,Pending,"Proyecto: Se usaran modelos existentes. Es decir, es un modelo que se debe descargar, pasarle los parámetros y obtener un resultados. Como si usaramos un proyecto final de un alumno de DS
 
-- Sistema de etiquetado automático de tickets: Recuperar el Centralized Incident Manager para incorporarle un clasificador de tickets
-- Modelo (descargar): Dragneel/ticket-classification-v1
-- Dataset (descargar): https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets
-
-- Instalar dependencias 
-- Meter el modelo en el backend, en una carpeta /ml-models
-
-- Meter el dataset en 
-
-Posibles proyectos:
-- Predecir géneros a partir de un nombre
-- Destacados de una web (predice según las compras que destacados mostrarle a un usuario)
-- Análisis de sentimiento en reviews 
-- Predicción de demandas de stock según el inventario 
-- Clasificar tickets de soporte (urgente / no urgente, o por departamento)
-- Clasificar reseñas de clientes (sentimiento, o por tipo de problema)
-- Clasificar CVs o texto de job postings por categoría",,,,,
-18,54,Skill: Preparar datos para el entrenamiento de modelos de predicción,,,,,
-,Pending,"> Teoria:   
+> Proyecto de compañía: Sistema de etiquetado automático de tickets: Recuperar el Centralized Incident Manager para incorporarle un clasificador de tickets
+  - Modelo (descargar): Dragneel/ticket-classification-v1
+  - Dataset (descargar): https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets
+  - Instalar dependencias 
+  - Meter el modelo en el backend, en una carpeta /ml-models
+  - Meter el dataset en /data/raw",,,,,
+19,57,Skill: Preparar datos para el entrenamiento de modelos de predicción,,,,,
+,En Syllabus,"> Teoria:   
 + Preparar datos para el entrenamiento de un modelo:
    - ¿En qué consiste la transformación de datos? (Introductorio. Se asume que en este punto el alumno sabe de ""collect"" e ""ingest"" porque en los módulos anteriores ya hemos consumido APIs, hemos hecho scraping, hemos conectado con bases de datos y consumido CSVs)
      -- Ejemplo de ingest: consumo de APIs, procesamiento de CSVs.
@@ -2891,13 +3041,24 @@ Posibles proyectos:
    - Load: Persist the transformed data into a target system. 
    - Mención a diversos Targets: datalake, warehouse, analytics DB, feature store, knowledge base.
 
-+ Scikit learn","- Data preparation for training
+","- Data preparation for training
 Without clean, properly scaled and encoded data, no model trains correctly. Garbage in, garbage out — this is the last gate before touching the algorithm.
 
-",,,,
-,,,,,,,
-19,55,Skill: Seleccionar y entrenar modelos de clasificación,,,,,
-,Pending,"> Teoría: 
+","- Fit scalers/encoders only on training data, then apply to validation/test
+- Validate schema and data types at ingestion — catch problems before transformation
+- Document every transformation rule as code, not tribal knowledge",,"- Dropping nulls without investigating why they exist — missing data is often signal
+- Normalizing categorical variables numerically (e.g., encoding city names as 1/2/3 implying order)
+- Preprocessing outside the pipeline → leakage guaranteed when cross-validating
+- Saving only the model, not the scaler/encoder → prediction pipeline breaks in production
+- Calling .fit() on test data at any point — ever
+",
+,IGNORE,"> Proyecto: Realizar un EDA con IA sobre un conjunto de datos y preparar los datos para el entrenamiento de un modelo. 
+  - El proyecto dará indicaciones de cómo aprovechar la IA para la realización del EDA
+  - El estudiante deberá insertar el archivo de datos original en un commit del repo y luego hacer todos los trabajos que considere relevantes registrándolos como commits hasta que obtenga el resultado, incluyendo la implementación de scripts y pipelines si fuera necesario.
+  - El estudiante deberá entregar un documento MD explicando los hallazgos y las acciones ejecutadas.
+",,,,,
+20,58,Skill: Seleccionar y entrenar modelos de clasificación,,,,,
+,En Syllabus,"> Teoría: 
 
 + Modelos de clasificación:
   - ¿Cómo funciona un modelo de clasificación? (predecir una categoría)
@@ -2919,18 +3080,32 @@ Without clean, properly scaled and encoded data, no model trains correctly. Garb
 - Model selection and training
 This is the core act of supervised learning. Students need to know that algorithm choice is a decision, not a default, and that fitting a model is the beginning of a process, not the end.
 - ¿Qué pasa si las clases no están repartidas en los grupos?
-- ¿Cómo verifico que no se sobreentrena al modelo?",,,,
-,Approved,"Clasificador de reseñas: https://github.com/4GeeksAcademy/naive-bayes-project-tutorial
+- ¿Cómo verifico que no se sobreentrena al modelo?
+
+- Aprender a desconfiar del éxito fácil. Si el modelo saca un 95% de precisión en el primer intento, la primera reacción no debe ser celebrar, sino pensar: ""¿Hubo Data Leakage? ¿Están las clases desbalanceadas?"".
+
+- El ""mejor modelo matemáticamente"" no siempre es el ""mejor modelo para la empresa""
+
+- Entender que el conjunto de pruebas es sagrado y representa la realidad futura. Si tocan, miran o ajustan el modelo basándose en el grupo de pruebas, se está arruinando el experimento.",,"- Dividir Primero, Transformar Después
+- Si el vacío tiene un significado de negocio, rellenar con un valor constante (ej. ""Desconocido"")
+- Entrenar siempre primero un modelo tonto o súper simple para establecer una línea base. Si el ensamblaje avanzado solo mejora un 1%, no vale la pena la complejidad.
+- Asegurar que la proporción de clases se mantenga idéntica en Entrenamiento, Validación y Prueba.","- Escalar antes de Dividir
+- Borrar masivamente filas o columnas solo porque tienen un valor vacío. Se pierde información valiosa (el hecho de que algo esté vacío a veces es predictivo).
+- Lanzar el algoritmo más complejo (Ensamblaje avanzado) al problema el primer día sin tener un punto de referencia.
+- Ignorar el Desbalanceo",No hablar sobre F1-Score
+,En Syllabus,"> Proyecto de módulo: No generar uno nuevo. Se reutilizarán proyectos de DS.
+
+- Clasificador de reseñas: https://github.com/4GeeksAcademy/naive-bayes-project-tutorial
 
 Proyectos opcionales:
 - Image Classifier: https://github.com/4GeeksAcademy/image-classifier-project-tutorial
 - Housing clustering: https://github.com/4GeeksAcademy/k-means-project-tutorial
 ",,,,,
-19,56,Skill: Seleccionar y entrenar modelos de regresión,,,,,
-,Pending,"> Teoría: 
+20,59,Skill: Seleccionar y entrenar modelos de regresión,,,,,
+,En Syllabus,"> Teoría: 
 
 + Modelos de regresión:
-  - ¿Cómo funciona un modelo de regresión? (predecir una categoría)
+  - ¿Cómo funciona un modelo de regresión? (predecir un número)
   - Decision Tree y Ensamblig también pueden usarse en regresiones pero las decisiones son según el resultado de una función estadística
   - Algoritmos más comunes y cuándo utilizarlos (con ejemplos por casos reales de compañías)
     -- XGBoost
@@ -2944,23 +3119,55 @@ Proyectos opcionales:
     -- Escalado (variables en unidades similares para garantizar que el modelo puede escalar y para evitar que haga comparaciones erróneas)
   - Evaluación del modelo (métricas)
     -- MSE (menos relevante)
-    -- PSI
+    -- PSI (mide qué tanto cambiaron los datos con el tiempo (Data Drift), no mide qué tan bien predice el modelo)
     -- Gini
     -- K2 Score
-
 ","
 - Model selection and training
 This is the core act of supervised learning. Students need to know that algorithm choice is a decision, not a default, and that fitting a model is the beginning of a process, not the end.
-.",,,,
-,Approved,"Proyecto: Entrenar un modelo de regresión (XGBoost o Random Forest) con los datos de los últimos 5 años de ventas de la empresa.
+.
 
-El dataset de origen se generará con los siguientes aspectos:
-- Uno o dos meses al año con caída en ventas (explicable por estacionalidad del mercado, vacaciones colectivas, auditoría, etc...) o subida en ventas (eventos especiales en la ciudad, períodos de alta viralidad en el sector salud...)
-- Mínimo de 3-5 años de datos (el más reciente para prueba y el resto para entrenamiento)
-- Siempre crecer, pero no siempre igual. Por ejemplo, siendo X el crecimiento anual, Y la variación de ese crecimiento, con [X >= 0, Y entero, X + Y >= 0], entonces: si el año 1 crece X%, el año dos crece d=((X+Y) | (X-Y)) donde d es el porcentaje de crecimiento de ese año y siempre [d > 0 ^ d < 0.1 o 10%]
+- Desarrollar la habilidad de juzgar el modelo según el contexto: dejar de ver el error como un número abstracto matemático (ej. ""Tengo un MAE de 40"") y empezar a traducirlo a impacto de negocio.
+
+- Aprender a moldear el comportamiento de la IA eligiendo la métrica de castigo correcta (Por ejemplo, MSE vs MAE).","- Choose the algorithm based on data size, feature types, and interpretability requirements — not familiarity
+- Use Random Forest as the default ensemble baseline before trying XGBoost
+- Use XGBoost when you need maximum predictive performance and have time to tune
+- Understand that Decision Trees in regression predict via leaf node averages, not class labels — teach the distinction explicitly
+
+- Use three splits: train (fit), validation (tune hyperparameters), test (final unbiased evaluation — touch once)
+- Stratify splits on the target distribution when it is skewed
+- Fix the random seed for reproducibility across experiments
+
+- Use PSI (Population Stability Index) to detect input distribution drift between training and production data
+- Use Gini coefficient to measure model discrimination power (common in credit/risk models)
+- Use K2 Score to test whether residuals follow the expected distribution
+- Report MSE alongside interpretable metrics — MSE alone is hard to communicate to stakeholders
+- Always pair a performance metric with a stability metric (PSI) — a model can score well and still be drifting","- Baseline-First Pattern — always train a simple linear regression first; it sets the performance floor every ensemble must beat
+- Algorithm Selection Matrix — map problem characteristics (size, noise, interpretability need) to algorithm choice before writing any code
+
+- Holdout-then-CV Pattern — hold out test set permanently; run k-fold CV on train+validation to tune, then evaluate once on test
+
+- Metric Stack Pattern — define one primary metric (Gini or RMSE), one stability metric (PSI), and one residual diagnostic (K2) per experiment","- Defaulting to XGBoost on every regression problem — it's powerful but overkill and opaque for simple relationships
+- Using a single Decision Tree for regression in production — high variance, unstable predictions
+- Choosing an algorithm without considering whether the stakeholder needs to explain the prediction
+
+- Using only train/test — hyperparameter tuning on the test set invalidates it as an unbiased estimator
+- Evaluating on the test set more than once — each look inflates confidence in the result
+- No fixed random seed → splits change between runs, results are not reproducible
+
+- Reporting only MSE — it's scale-dependent and non-intuitive for business audiences
+- No stability metric in production → model degrades silently as input distribution shifts
+- Optimizing exclusively for training-set metrics without checking PSI on the serving population",
+,En Syllabus,"> Proyecto transversal: Entrenar un modelo de regresión (XGBoost o Random Forest) con los datos de los últimos 10 años de ventas de la empresa para predecir el comportamiento de las ventas.
+  - Sugerir utilizar los primeros 8 años para entrenamiento y los dos más recientes como comprobación/comparación de la predicción
+  - Pedir a la IA que genere una visualización donde se pueda ver la estimación y el área de variabilidad de resultado final.
+  - El dataset de origen se generará con los siguientes aspectos:
+    -- Uno o dos meses al año con caída en ventas (explicable por estacionalidad del mercado, vacaciones colectivas, auditoría, etc...) o subida en ventas (eventos especiales en la ciudad, períodos de alta viralidad en el sector salud...)
+    -- Mínimo de 6-7 años de datos.
+    -- Siempre crecer, pero no siempre igual. Por ejemplo, siendo X el crecimiento anual, Y la variación de ese crecimiento, con [X >= 0, Y entero, X + Y >= 0], entonces: si el año 1 crece X%, el año dos crece d=((X+Y) | (X-Y)) donde d es el porcentaje de crecimiento de ese año y siempre [d > 0 ^ d < 0.1 o 10%]
 ",,"Skill B (Día 2): Regresión, Evaluación y Generalización",,,
-19,57,Skill: Hyperparameter tunning  ,,,,,
-,Pending,"> Teoría:
+20,60,Skill: Hyperparameter tunning  ,,,,,
+,En Syllabus,"> Teoría:
 
 + Hiperparámetros
   - ¿Qué son los hiperparámetros?
@@ -2975,14 +3182,23 @@ El dataset de origen se generará con los siguientes aspectos:
   - ¿Cuál es el modelo final resultante tras la optimización de los hiperparámetros?
   - Select the best model from a tuning experiment without data leakage
 ","
-- Hyperparameter tuning
-A model trained with default parameters is rarely the best version of that model. Students need to know how to systematically improve performance without guessing.
-","Objetivo: Predecir números continuos y diagnosticar la salud del modelo.Modelos de Regresión: ¿Cómo encontramos la línea de mejor ajuste? (Predecir un número: Precio de casa, Temperatura).Evaluación de Modelos (¡Faltaba en tu temario!):Métricas para Clasificación: Por qué la Accuracy (Exactitud) miente. Introducción a Precision y Recall (Matriz de Confusión).Métricas para Regresión: Error Cuadrático Medio (MSE) y $R^2$.Diagnóstico de Modelos (Conceptos vitales):Underfitting (El modelo es muy tonto).Overfitting (El modelo memorizó los datos en lugar de aprender).",,,
-,,"Proyectos: debido a que el módulo es corto, debemos pensar en 4 proyectos o casos de uso. 
-- Correr un Grid Search (Grid Search CV) y un Random Search (Random Search CV).
-- ",,,,,
-20,58,Skill: Model evaluation,,,,,
-,Teoría pendiente aprobación,"> Teoría: 
+- Hyperparameter tuning: A model trained with default parameters is rarely the best version of that model. Students need to know how to systematically improve performance without guessing.
+- Use RandomizedSearchCV first for large spaces, GridSearchCV only to refine a small region
+","- Always run search inside a pipeline — preprocessing must be part of the CV loop
+- Use RandomizedSearchCV first for large spaces, GridSearchCV only to refine a small region
+- Set refit=True (default) — the best estimator is automatically retrained on the full training set
+- Use n_jobs=-1 to parallelize — grid search is embarrassingly parallel
+- Evaluate with scoring aligned to the actual business metric, not default accuracy
+",,"- Using default hyperparameters and reporting results as final — always at least sanity-check them
+- Running GridSearchCV on a large space — combinatorial explosion, computationally wasteful
+- Fitting the search on the full dataset → data leakage, optimistic results
+- Selecting best_estimator_ and then re-fitting it manually — refit=True already handles this; re-fitting introduces leakage risk
+- Using the test set to compare candidate models during tuning — test set is for final evaluation only, once
+- Ignoring cv_results_ — it contains variance info across folds; a model with lower mean but tighter variance may be the better production choice",
+,En Syllabus,"> Proyecto de módulo: Correr un Grid Search (Grid Search CV) y un Random Search (Random Search CV).
+  - Dado que el módulo es corto, debemos pensar en 4 proyectos o casos de uso. ",,,,,
+21,61,Skill: Evaluate a trained model ,,,,,
+,En Syllabus,"> Teoría: 
 + Evaluación de modelos:
   - Concepto de ""Evals""
   - ¿Qué es underfitting? ¿Cómo detectarlo? ¿Cómo prevenirlo?
@@ -2994,37 +3210,64 @@ A model trained with default parameters is rarely the best version of that model
     -- k-fold cross-validation ","
 - Model evaluation
 Training a model means nothing if you can’t measure whether it works. This module is what separates a model that ran from a model that performs.
-",,,,
-,,,,,,,
-20,59,Skill: Model debugging and integration,,,,,
-,Teoría pendiente aprobación,"> Teoria:   
+","- Diagnose using learning curves — plot train vs validation error across training set sizes
+- Underfitting → increase model complexity, add features, reduce regularization
+- Overfitting → add regularization, reduce complexity, get more data, use dropout/pruning
+- Treat the bias-variance tradeoff as a spectrum to navigate, not a binary to fix
 
-+ Consumir el modelo:
-  - ¿Cómo desplegar el modelo?
+- Choose the metric before training, based on the cost of each error type (FP vs FN)
+- Imbalanced classes → use F1, precision, recall, ROC-AUC — never raw accuracy
+- Regression → use MAE when outliers should not dominate; RMSE when they should
+- Always report multiple metrics — no single number tells the full story
+- Use the confusion matrix to understand where the model fails, not just how much
+
+- Use k-fold CV (k=5 or 10) as the default evaluation strategy — single splits have high variance
+- Use stratified k-fold for classification — preserves class distribution across folds
+- Use time-series split for temporal data — never shuffle time-ordered data
+- Report mean ± std across folds — variance across folds is signal, not noise",,"- Adding more data as the first response to overfitting — diagnose first
+- Increasing model complexity as the first response to underfitting — check feature quality first
+- Reading only final train/test accuracy — without learning curves, you're flying blind
+
+- Using accuracy on imbalanced datasets — a model predicting the majority class 100% of the time looks good
+- Optimizing for a metric that doesn't match the business cost of errors
+- Reporting only aggregate metrics — disaggregate by class and by data segment
+
+- Shuffling time-series data before splitting → future leaks into past, results are invalid
+- Using k-fold without stratification on imbalanced data → folds with no minority class examples
+- Running CV after fitting a scaler on the full dataset → leakage, inflated scores
+- Treating a single high-fold score as reliable — always look at variance across folds",
+,En Syllabus,> Proyecto transversal: Hacer una evaluación técnica sobre el entrenamiento del modelo de regresión para la predicción de ventas y determinar si ha sido bien entrenado o si tiene (under/over)fitting,,,,,
+21,62,Skill: Model debugging and integration,,,,,
+,En Syllabus,"> Teoría:   
+
++ Desplegar un modelo de ML entrenado:
+  - Recordatorio de que para desplegar un modelo debe definirse un flujo y establecer un pipeline.
+  - ¿Cómo desplegar el modelo? Principales aspectos a tener en cuenta para ponerlo en producción.
   - Formas de consumir el modelo
     -- Emplearlo en procesamiento por lotes
     -- Invocarlo en un backend (APIs)
+  - Cómo integrar el modelo dentro de un pipeline de Prefect
 
-
-+ ¿Cómo debuguear el modelo?
-  - Técnicas de interpretabilidad: ¿Por qué el modelo dice lo que dice?
-  - ¿Qué es responsabilidad del modelo? ¿Qué es responsabilidad de los datos?
-  - Si mi modelo predice mal, puede que la tendencia o comportamiento de los datos hayan cambiado respecto a los datos de entrenamiento.
-
-+ ¿Cómo orquestar datos? 
-
-   - Orchestrate
-        Coordinate the steps and define dependencies.
-        Includes: scheduling, DAGs, retries, notifications.
-   - Monitor (interpretabilidad a partir del modelo)
-     Track health, quality, freshness, and failures.
-     Includes: metrics, lineage, alerts, SLAs, and anomaly detection.","
-- Debugging and iteration
-Real datasets produce real problems — overfitting, imbalanced classes, poor generalization. Students need a systematic way to diagnose and fix, not just re-run hoping for better results.
-",,,,
-,,,,,,,
-20,60,Skill: Implementar técnicas de RAG para implementar la base de conocimientos de un modelo,,,,,
-,Pending,"> Teoría:
++ Monitoreo de salud de un modelo
+   - ¿Por qué es importante monitorear a un modelo?
+   - Track health, quality, freshness, and failures.
+   - Métricas comunes con Prefect
+     -- Runs completadas / fallos → Prefect registra el estado de cada ejecución en su base de datos interna.
+     -- Duración media → diferencia entre start_time y end_time de cada run.
+     -- Filas cargadas → esto sí requiere que tú lo registres explícitamente, por ejemplo con return len(df) en load() o usando prefect.context / artefactos.
+   - ¿Qué debe mostrar un dashboard de monitorización de un modelo?","- Real datasets produce real problems — overfitting, imbalanced classes, poor generalization. 
+- It's necessary to have a systematic way to diagnose and fix, not just re-run, hoping for better results.
+","- Serialize the full pipeline (preprocessing + model), not just the model weights — use joblib
+- Version every deployed artifact — model file, preprocessing config, and training data snapshot
+- Expose the model via a typed API contract — define input schema and output schema explicitly
+- Separate batch and online serving paths — they have different latency, throughput, and failure profiles
+- Gate deployment with a minimum performance threshold — never deploy a model without a quality bar",,"- Deploying only the model without the scaler/encoder → prediction pipeline breaks silently
+- No versioning → impossible to roll back when a new model degrades
+- Running batch inference inside a web request → blocks the API, wrong tool for the job
+- Hardcoding preprocessing logic in the serving layer separately from training → train/serve skew",
+,IGNORE,> Proyecto de compañía: Basado en la conversación https://claude.ai/chat/aae7f23a-12ae-4774-ac79-83acf75bfddb desarrollar un proyecto para generar un ligero sistema de monitorización de la ejecución del modelo. ,,,,,
+21,63,Skill: Implementar técnicas de RAG para implementar la base de conocimientos de un modelo,,,,,
+,En Syllabus,"> Teoría:
 
   + RAG:
     - ¿Qué es un RAG? 
@@ -3036,14 +3279,26 @@ Real datasets produce real problems — overfitting, imbalanced classes, poor ge
     - Data poisoning: Entender que los datos de entrenamiento o de augmentación (vectorDB en RAG) pueden ser manipulados para alterar el comportamiento del modelo.
 
   + Vectorial databases
-    - ¿Qué es una bd vectorial? 
+    - ¿Qué es una bd vectorial
     - ¿Para qué sirve?
+    - Conceptos y elementos principales en bases de datos vectoriales
     - ¿Cómo funciona una bd vectorial?
+    - Why traditional DBs (SQL, even NoSQL) can't do similarity search efficiently
 
   + Using Qdrant
     - ¿Qué es Qdrant?
-    - ¿
-  
+    - Core Qdrant concepts overview (with analogies, avoiding too technical-mathematical explanations)
+      -- Collections — the equivalent of a table; stores vectors of a fixed dimension with a distance metric (cosine, dot product, Euclidean)
+      -- Points — a record: {id, vector, payload}; payload is arbitrary JSON metadata
+      -- Vectors — Qdrant supports dense vectors for semantic similarity, sparse vectors for full-text/keyword search, and multivectors for late-interaction models like ColBERT 
+      -- Why is Qdrant fast? (Very simple overview of HNSW index — Qdrant uses Hierarchical Navigable Small World (HNSW) graphs for efficient ANN search with low latency and high recall)
+    - Basic operations (hands-on)
+      -- Create a collection with the right vector size and distance metric
+      -- Upsert points (insert/update)
+      -- Query: search() with a vector → get top-K similar results
+      -- Filter by payload during search (this is a key differentiator vs. FAISS)
+      -- Delete points; update payload
+
   + Chunking y Embedding
     - ¿Qué es el chunking?
     - ¿Qué es el embedding?
@@ -3059,15 +3314,28 @@ Real datasets produce real problems — overfitting, imbalanced classes, poor ge
       -- Recomendaciones personalizadas
     - Resumen en tabla indicando caso de uso, a qué hacer embedding, el chunking y el modelo sugerido (pasarle imagen en https://www.awesomescreenshot.com/image/60606493?key=3693c603abf173f3701ee5cc52bfab37)
     - Comparativa de modelos de embeddings: https://www.awesomescreenshot.com/image/60606596?key=384f6e1ebdb4bf252167e9dd7518576c 
-
- 
-
-",,"- Dejar que el LLM sintetice los embeddings para obtener el mejor resultado, en lugar de seleccionar el aparentemente ""mejor"".
+","- Cuándo es necesario un RAG
+- Por qué RAG no debe ser precisamente considerado una Memoria, sino una base de conocimiento
+- Cómo afecta el tamaño de mis chunks a un RAG
+- ","- Dejar que el LLM sintetice los embeddings para obtener el mejor resultado, en lugar de seleccionar el aparentemente ""mejor"".
 - Siempre decirle a la IA cómo usar los chunks
-- Siempre decir indicarle a la IA que diga que no sabe algo para evitar improvizaciones y alucinaciones.
+- Siempre decirle a la IA que diga que no sabe algo para evitar improvisaciones y alucinaciones.
 - Mantener la cantidad de chunks baja y de buena calidad para evitar ""lost in the middle"".
 
-",,"- Chunks muy grandes o muy pequeños
+- Chunk documents by semantic unit (section, paragraph), not by fixed character count
+- Store both the chunk and its source metadata (doc ID, page, section title) in the vector store
+- Use a retrieval step that returns k candidates, then rerank before passing to the LLM
+- Set a similarity threshold — discard chunks below it rather than always forcing k results
+- Keep the retrieval pipeline and the generation prompt decoupled — they evolve at different rates
+- Evaluate retrieval and generation separately; a bad answer can fail at either layer
+- Embed at query time with the same model used at indexing time — never mix embedding models
+- Log retrieved chunks alongside the final answer for debugging and audit","- Chunking with overlap — small overlap between adjacent chunks prevents context loss at boundaries
+- Hybrid search — combine dense (vector) + sparse (BM25/keyword) retrieval, then merge results
+- Metadata filtering — pre-filter by date, category, or source before vector search to reduce noise
+- Prompt stuffing with source attribution — include chunk source in the context block so the LLM can cite it
+- Re-ranking — use a cross-encoder or LLM-based reranker to reorder the top-k before generation
+- Parent-child chunking — index small chunks for precision retrieval, expand to parent chunk for context
+- Query expansion — rephrase or expand the user query before retrieval to improve recall","- Chunks muy grandes o muy pequeños
 - No respetar los límites naturales del contenido (dejar la mitad de un párrafo en un chunk y la otra en otro)
 - No limpiar el contenido
 - No incluir el contexto del chunk. (Un chunk que dice ""como vimos anteriormente"" pero el chunk no sabe qué había anteriormente.
@@ -3077,21 +3345,24 @@ Real datasets produce real problems — overfitting, imbalanced classes, poor ge
 - No poner un puntaje mínimo de similaridad (Threshold demasiado bajo)
 - No instruir al LLM sobre cómo usar el contexto. 
 ",
-HITO 07,Pending,"🧩 Hito 7 — RAG y Memoria
- Fragmentación de datos (Chunking), incrustaciones de datos (embeddings), búsqueda vectorial. Añadir la capa de conocimiento de la empresa.
+HITO 07,En Syllabus,"🧩 Hito 7 — RAG y Memoria
+   Fragmentación de datos (Chunking), incrustaciones de datos (embeddings), búsqueda vectorial. Añadir la capa de conocimiento de la empresa.
 
-Escoger para el enunciado un caso:
-- Knowledge base
-- FAQs
-- Q&A
-- Catálogo de productos
-- Sistema de tickets similares
-- Sistema de recomendaciones (Para RRHH: obtener CVs, perfiles menospreciados; para HealthCare: pólizas de seguros)",,,,,
+> Proyecto transversal: Knowledge base de la empresa para responder preguntas desde la perspectiva del vendedor
+  - Generar una base de conocimientos mediante RAG, aplicando chunking y embeddings.
+  - Generar las cuatro funciones mínimas de setup, retrieve, query, embed.
+  - Generar endpoint de consulta (uso frecuente)
+  - Generar una interfaz que permita ingresar una consulta y devuelva una respuesta mediante una llamada al endpoint de consulta del RAG.
+  - Importante: 
+    -- Tener muy presente la modularización.
+    -- Un modelo debe generar la respuesta, no devolver directamente el hallazgo en la BD.
+",,,,,Sin LangChaing ni LangGraph.
 ,,### AGENTIC ENGINEERING ###,,,,,
-21,61,Skill x: Building an AI Agent capable of calling tools (functions),,,,,
-,Teoría pendiente aprobación,"The customer support AI Agent will be able to fetch company information and respond in real time.
+22,64,Skill: Building an AI Agent capable of calling tools (functions),,,,,
+,En Syllabus,"The customer support AI Agent will be able to fetch company information and respond in real time.
 
 + Conceptos fundamentales en Ingeniería Agéntica
+  - ¿Qué es un agente?
   - estado (state)
   - nodo (node)
   - dirección (edge)
@@ -3104,61 +3375,75 @@ Escoger para el enunciado un caso:
   - trace
   - evals
   - fitness
-  
+  - ¿En qué consiste la ingeniería de agentes?
+
++ Elementos fundamentales en configuración de la Ingeniería Agéntica
+  - ¿Componentes principales de un agente?
+    -- Modelo (LLM) / Conexión a una LLM API
+    -- System prompt
+    -- Temperature
+  - Understanding the agentic loop: prompt → model response → tool call detected → execute function → feed result back → next model response
+    -- How to detect a tool call in the response (tool_use block / finish_reason: tool_calls)
+    -- How to format tool results and re-inject them into the conversation history
+  - Minimum viable sequence:
+   -- Call a single tool manually (hardcoded) → understand the schema
+   -- Let the model decide when to call it (1 tool, 1 turn)
+   -- Build the loop (multi-turn, 1 tool)
+   -- Expand to multiple tools (routing logic)
+   -- Add error handling and stopping conditions 
 
 + Introducción a LangGraph:
   - ¿Qué es y para qué sirve LangGraph?
   - Ejemplo de un agente ingenuo (Agent loop básico en Python sin LangGraph)
   - Crear un agente básico con LangGraph
-","- Principios de diseño que conviene enseñar
-  -- Principio 1: El LLM no es el sistema, es un componente.
-  -- Principio 2: Las tools expanden capacidades del modelo.
-  -- Principio 3: El loop controla el comportamiento del agente.
-  -- Principio 4: La arquitectura debe minimizar ambigüedad para el modelo.
+","- ¿Qué diferencia a un agente de un chat?
+- ¿Por qué un agente debe tener responsabilidades específicas y no ser un ""todero""?
+- ¿cómo funciona un ciclo de agente? prompt → model response → tool call detected → execute function → feed result back → next model response
+","- Treat the LLM as one component inside a larger system — it decides, the system executes
+- Keep state minimal and explicit — only what the agent needs to make the next decision
+- Define edges based on output conditions, not hardcoded sequences
+- Implement checkpointing at every meaningful state transition — never at arbitrary intervals
+- Add evals and fitness checks as first-class steps in the graph, not afterthoughts
 
-- ¿Cómo abordar los principales retos de la ingeniería agéntica?
-  -- ¿Qué pasa cuando el tool call falla? ¿Cómo interrumpir al agente para obtener input del usuario? ¿Cómo establecer pasos según el resultado?
-  -- Es difícil extender al agente
-  -- No hay máquinas de estados
-  -- Si se cae el proceso se empieza de cero.
+- Every tool must have a typed input/output contract — the LLM cannot reason about ambiguous interfaces
+- Handle tool failure explicitly in the graph — define a failure edge, not just a success path
+- Make every tool idempotent — the agent will retry
+- Set timeouts on every tool call — an unresponsive tool stalls the entire loop
 
-- ",,"validación
+- Compile the graph before any execution — catch structural errors at build time, not runtime
+- Use yield for streaming intermediate outputs — never make the user wait for full completion
+- Design graphs so every node has a single clear responsibility — mirrors the Narrow Tool Pattern
+- Keep system prompt and graph architecture aligned — ambiguity in one amplifies ambiguity in the other","- State Machine Pattern — model agent behavior as explicit states + transitions, not free-form loops
+- Tool Registry Pattern — register tools declaratively; the LLM selects, the runtime executes
+- Interrupt-and-Resume Pattern — pause graph execution to collect human input, then resume from checkpoint
+- Trace-and-Eval Pattern — every run produces a trace; evals run against the trace, not live execution
 
-retries
+- Fallback Edge Pattern — on tool failure, route to a recovery node (retry, clarify, or escalate) rather than crashing
+- Human-in-the-Loop Pattern — use interrupt to pause and yield control to the user when the agent reaches ambiguity it cannot resolve autonomously
+- Narrow Tool Pattern — one tool, one responsibility; composability beats multi-purpose tools
 
-herramientas deterministas",- Esperar precisión absoluta del LLM: Los agentes deben diseñarse para tolerar errores del modelo.,
-,,"Proyectos: https://www.awesomescreenshot.com/image/60607495?key=f4e8fde35e77bf01c20e89a235699d22
+- Naive Agent → Structured Graph Migration Pattern — start with a raw Python loop to understand the problem, then formalize as a LangGraph state machine
+- Subgraph Pattern — encapsulate complex multi-step behavior (e.g., retrieval + rerank + respond) as a nested graph, callable as a single node
+- Conditional Edge Pattern — route graph execution based on structured output from the LLM (e.g., {action: ""escalate"" | ""respond"" | ""clarify""})","- Esperar precisión absoluta del LLM: Los agentes deben diseñarse para tolerar errores del modelo.
+- Letting the LLM control the loop directly — it should signal intent, not drive execution
+- Storing full conversation history in state — summarize or window it; unbounded state kills performance
+- No checkpointing → process crash = full restart from zero
+- Hardcoding edge conditions as prompt instructions instead of graph logic — the architecture must enforce constraints, not the prompt
 
-- Retry hasta obtener algo adecuado
-- Chat
-",,,,,
-21,62,Skill: Implementar agentes seguros estableciendo Guardrails y Harness como mecanismo de seguridad y control ,,,,,
-,Teoría pendiente aprobación,"Safety mechanisms and control layers that monitor, filter, and govern input/output in artificial intelligence systems to ensure they operate safely, legally, and ethically
+- Tools with side effects that aren't idempotent — retries cause duplicate actions (emails sent twice, records created twice)
+- No failure path in the graph → unhandled tool errors propagate as LLM context noise
+- Passing raw tool errors to the LLM without sanitizing — leaks internals, confuses reasoning
+- Tools that do too much — the LLM can't accurately predict behavior, leading to wrong calls
 
-Harnesss Engineering
+- Building directly in LangGraph without first understanding the naive loop — abstractions hide bugs when fundamentals are unclear
+- Monolithic single-node graphs — no observability, no retry granularity, no extensibility
+- Extending behavior by modifying the prompt instead of the graph — prompt-only architecture breaks as complexity grows
+- No trace instrumentation → debugging agentic failures without traces is guesswork",
+,Approved,"> Proyecto transversal 1: Reescribir el código del proyecto del RAG en LangGraph y establecer los flujos del agente, el tracing y la evaluación.
 
-Guardrails","- ¿Cómo evito que mis visitas usen mi agente como un ChatGPT libre? -> Guardrails 
-- ¿Cómo logro que mis agentes estén optimizados por caso de uso? (contexto, tools, modelos, memoria, evals)
-- Una vez optimizados mis agentes, hay que orquestarlos -> Harness",,"- Guardrails (Restricciones para evitar comportamientos inesperados. Ejemplos: límite de iteraciones, validación de argumentos, whitelist de tools)
-
-- Fallback (Si una tool falla: intentar alternativa responder parcialmente pedir clarificación)",,
-,,,,,,,
-21,63,Skill: Proveer de herramientas a un Agente mediante CLIs,,,,,
-,Teoría pendiente aprobación,"> Teoría:
- + CLIs
-   - Qué es un CLI
-   - Por qué son útiles los CLIs para los humanos (especialmente desarrolladores)
-   - ¿Cómo crear un CLI exitoso?
-
- + CLIs y la IA
-   - Por qué los CLIs son útiles para la IA
-   - ¿Cómo la IA usa los CLIs?
-   - Aspectos fundamentales para un buen CLI para una IA
-",,"- Fine-tuning
-- Criterios de comportamiento y tipo de respuesta",,,
-,,,,,,,
-22,64,Skills: Extender las capacidades de un agente mediante MCPs,,,,,
-,Teoría pendiente aprobación,"> Teoría:
+> Proyecto transversal 2: Incorporar una tool para que el agente pueda traer información dinámica fuera del RAG (por ejemplo: Tickets de Customer Support, y extra, Información de productos en el inventario)",,,,,
+22,65,Skills: Extender las capacidades de un agente mediante MCPs,,,,,
+,En Syllabus,"> Teoría:
 
 + Introducción a MCPs: 
   - ¿Qué es un MCP? Definición y analogías
@@ -3171,129 +3456,430 @@ Guardrails","- ¿Cómo evito que mis visitas usen mi agente como un ChatGPT libr
   - ¿Qué es un MCP Server?
   - Aplicaciones más comunes
   - ¿Cómo crear un MCP Server en Python? (Usando FastMCP https://github.com/PrefectHQ/fastmcp)
+  - Errores comunes de seguridad a evitar desde el día uno: Exponer un servidor MCP sin autenticación, dar permisos excesivos a un servidor, un servidor MCP sin auth es una vulnerabilidad real.
 
 + MCP Client:
   - ¿Qué es un MCP Client?
   - Aplicaciones más comunes
   - ¿Cómo crear un MCP Client en Typescript?
-",,"- Fine-tuning
-- Criterios de comportamiento y tipo de respuesta",,,
-,,"
-> Proyecto 1: ¿Construir un MCP Server?",,,,,
-22,65,Skill x: Dotar de memoria a un agente,,,,,
-,Teoría pendiente aprobación,"> Teoría:
+","- ¿Qué problema resuelve MCP ?
+- Al usar MCPs el agente consume servidores
+- Las primitivas básicas de un servidor: Tools, Resources y Prompts
+- ¿Cuándo aplicar cada transporte?: stdio (local, proceso hijo, rápido, un solo cliente) y Streamable HTTP (remoto, múltiples clientes, requiere auth).
+- MCP no reemplaza function calling, lo extiende
+- Las tools ejecutan código arbitrario — un junior debe internalizar que invocar una tool no es gratis ni inocuo.
+- El host debe pedir consentimiento explícito antes de ejecutar una tool con argumentos visibles.
+- nunca confiar ciegamente en la descripción de una tool si el servidor no es de una fuente conocida.","- Rate limiting en tools que llaman APIs externas o son costosas en cómputo
+- Validación de contexto, no solo de input
+- Diseñar para múltiples réplicas, health checks (/health, /ready) y despliegues sin downtime.","- Descubrimiento y permisos explícitos
+- Principio de mínimo privilegio
+- exigir OAuth 2.1 con PKCE y Resource Indicators (RFC 8707) para evitar que un servidor malicioso reutilice un token destinado a otro servidor
+- Una responsabilidad clara por servidor
+- Seguridad por diseño
+
+","- MCP sin autenticación
+- No limitar privilegios",
+,Approved,"> Proyecto transversal: Construir un MCP Server para que los agentes puedan interactuar con la compañía mediante una API Key de autenticación/autorización. Con el MCP Server un agente podrá gestionar tickets del Incidents Manager y solo consultar, no editar, datos del inventario. ",,,,,
+22,66,Skill: Implementar sistemas seguros de orquestación de agentes,,,,,
+,Approved,"> Teoría:
+
+  + Harnesss Engineering
+    - Agent = Model + Harness — (el modelo decide, el harness ejecuta, orquesta herramientas y mantiene estado). 
+    - El harness es todo lo que envuelve al modelo (orquestación de tools, loops de verificación, contexto/memoria, guardrails y observabilidad) para convertir la inteligencia cruda del modelo en un agente confiable y accionable
+    - Cinco capas del harness de producción (referencial, poca profundidad): orquestación de tools, loops de verificación, contexto y memoria, guardrails, y observabilidad
+    - ¿Por qué el Harness es importante?
+      -- Caso de evidencia: En marzo de 2026, el equipo de LangChain subió su agente de codificación del puesto 30 al puesto 5 en Terminal Bench 2.0 sin cambiar el modelo subyacente — la mejora vino enteramente de optimizar el harness.
+
+  + Guardrails
+    - ¿Qué son los Guardrails o Guardarraíles?
+    - ¿Por qué es necesario aplicar guardrails?
+    - Los tres tipos de fallo que justifican guardrails: fallos estructurales (JSON malformado, campos faltantes), fallos de contenido (alucinaciones, fuga de PII, contenido dañino) y fallos de seguridad (inyección de prompt que manipula al modelo para ignorar instrucciones o exfiltrar datos)
+    - Ejemplos de casos de la vida real más conocidos en los que aplicar de Guardrails
+    - Mejores prácticas en guardrails
+
+","- Por qué un agente necesita guardrails y un chatbot simple no tanto (el agente actúa, no solo responde)
+- ¿Cómo evito que mis visitas usen mi agente como un ChatGPT libre? -> Guardrails 
+- ¿Cómo logro que mis agentes estén optimizados por caso de uso? (contexto, tools, modelos, memoria, evals)
+- Una vez optimizados mis agentes, hay que orquestarlos -> Harness
+- Cada tipo de fallo (estructural, de contenido, de seguridad/inyección) requiere estrategias y herramientas distintas.
+- ¿por qué un solo guardrail nunca es suficiente?
+
+- El principio fundacional del harnessing (mentalidad, no herramienta): ""Cada vez que un agente comete un error, se toma el tiempo de diseñar una solución para que el agente nunca vuelva a cometer ese error"" — la mayoría de las veces esa solución es un harness mejorado, no un modelo mejor.","- separar instrucciones del sistema de input del usuario
+- sanitizar inputs 
+- nunca confiar en texto que viene de una tool externa (web, documento) como si fueran instrucciones del sistema.","
+
+- Guardrails (Restricciones para evitar comportamientos inesperados. Ejemplos: límite de iteraciones, validación de argumentos, whitelist de tools)
+
+- Fallback (Si una tool falla: intentar alternativa responder parcialmente pedir clarificación)
+
+- Human-in-the-loop para acciones irreversibles
+","- Creer que ""no hagas nada inseguro"" protege al agente
+- Crear un único filtro de protección.
+- Multiagente cuando un solo agente bien diseñado bastaba (over-engineering).
+- Falta de contrato claro entre agentes (inputs/outputs no tipados).
+- Ausencia de mecanismo de terminación o resolución de desacuerdos entre agentes.",
+,Approved,"> Proyecto: Implementar los aspectos de protección y seguridad (harness y guardrails) que el agente requiere para funcionar correctamente como asistente de consulta de la base de conocimientos. 
+  - El agente debe permitir ciertas consultas no relacionadas con la empresa, pero sí responder en el contexto de la empresa.
+  - El agente no puede ser usado por una persona como un chatbot personal.
+  - El agente debe tener un system prompt seguro y no responder a solicitudes de cambios de indicaciones",,,,,
+23,67,Skill: Dotar de memoria a un agente,,,,,
+,Approved,"> Teoría:
++ Memoria para agentes:
+  - ¿Qué es la memoria de un agente inteligente?
+  - ¿Por qué es importante la memoria?
+  - ¿Cómo organizar la memoria de una gente?
+  - Errores más comunes al implementar la memoria de un agente
+  - Mejores prácticas en la creación de memoria de agentes
 
 + Arquitecturas de memoria:
   - Ventana de contexto (texto sin estado): la tarea cabe en una sesión y no requiere persistencia
   - Memoria externa (VectorDBs, RAGs): para buscar por similaridad semántica o si el contexto es muy grande
   - Knowledge graphs (GraphRAG, neo4j): para memoria con relaciones explícitas (dependencia, jerarquía, causalidad)
   - Memoria episódica (Prompt caching, Redis, key-value): Cuando el agente debe conocer su historial y personalizar. 
-  - Memoria en parámetros: Conocimiento estable y vale la pena reentrenar (finetunning) el modelo.
-  - Self-improving memory: Mecanismos para que la memoria se mantenga por sí sola.
-",,,,,
+  - Memoria en parámetros: Conocimiento estable y vale la pena reentrenar (fine-tuning) el modelo. Superficial y con referencia a que fine-tuning es una práctica muy costosa y por tanto en cierto desuso.
+  - Self-improving memory: Mecanismos para que la memoria se mantenga por sí sola.","- ¿Cuándo es necesaria la memoria?
+- Comprender el tipo de memoria según el caso de uso.
+","- Define what the agent must remember, for how long, and why before choosing an architecture
+- Separate memory by temporal scope: within-session (context window), across-session (external store), permanent (parameters)
+- Design memory as a first-class system component — not an afterthought bolted onto the prompt
+- Make memory reads and writes explicit in the graph — agents should not implicitly accumulate state
+
+- Use context window only when the full task fits in one session and persistence is not required
+- Use VectorDB / RAG when retrieval is semantic and the corpus is too large for the context window
+- Use Knowledge Graphs when relationships between entities matter — dependency, hierarchy, causality — not just similarity
+- Use episodic memory (Redis, key-value, prompt caching) when the agent must personalize based on interaction history
+- Treat parametric memory (fine-tuning) as a last resort — it is expensive, slow to update, and encodes knowledge that cannot be selectively forgotten
+- Implement self-improving memory with a cleanup and consolidation cycle — raw memory accumulation without curation degrades retrieval quality over time","- Memory Taxonomy Pattern — classify every piece of information the agent needs into: ephemeral / episodic / semantic / parametric before implementation
+- Explicit Memory Interface Pattern — memory is accessed through typed read/write operations, not by stuffing everything into the system prompt
+
+- Tiered Memory Pattern — context window for immediate task, episodic store for session history, VectorDB for knowledge retrieval; route queries to the appropriate tier
+RAG-as-Working-Memory Pattern — retrieve only the relevant chunks per query; never load the full knowledge base into context
+- GraphRAG Pattern — use knowledge graph traversal to retrieve relational context that vector similarity cannot capture (e.g., ""what depends on X"")
+- Memory Consolidation Pattern — periodically summarize and compress episodic memory; discard low-relevance entries to prevent retrieval noise","- Appending the full conversation history to every prompt — context bloat degrades reasoning and increases cost linearly
+- Choosing a memory architecture before defining the retrieval requirement — architecture must follow access pattern, not preference
+- Treating memory as a single unified store — different scopes require different backends
+
+- Using a VectorDB when relationships between entities are the actual retrieval requirement — cosine similarity is blind to structure
+- Fine-tuning to add recent or frequently changing knowledge — use RAG instead; fine-tuning is for stable behavioral patterns, not factual updates
+- No eviction or consolidation policy on episodic memory → unbounded growth, degraded retrieval precision over time
+- Self-improving memory with no human review gate → the agent reinforces its own errors autonomously",
 HITO 08,,"🤖 Hito 8 — Ingeniería de Agentes
- Reglas, bancos de memoria (memory bank), llamada a herramientas (tool calling), planificación multiagente. Construir los agentes de la empresa.",,,,,
-,,### WORKFLOW AUTOMATIONS ###,,,,,
-22,66,Skill x: Representar la lógica de negocio de forma visual mediante diagramas de flujo de trabajo,,,,,
+ Llamada a herramientas (tool calling). Construir el agente de la empresa.
+
+> Proyecto transversal: EL agente que se viene creando debe ser el ayudante principal de la empresa que conoce todo sobre la empresa y se le puede preguntar sobre prácticamente cualquier cosa. Es importante que el agente mejore en sus desenvolvimiento en la empresa y que aprenda de la interacción futura. 
+  - Hacer que el agente que se automejore mediante un flujo inspirado en lo indicado en esta imagen: https://awesomescreenshot.s3.amazonaws.com/image/3098882/60607495-9fdc44b2e2419c50571e72955c0127d7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20260716%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260716T153652Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=6830d1fc9c1f667771676996a510cdf0b0ae9c33d4026f34d09dcd91ce1ec12c
+  - 
+
+> Proyecto de módulo:
+  - Hacer que el agente que se automejore mediante un flujo inspirado en lo indicado en esta imagen: https://awesomescreenshot.s3.amazonaws.com/image/3098882/60607495-9fdc44b2e2419c50571e72955c0127d7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20260716%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260716T153652Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=6830d1fc9c1f667771676996a510cdf0b0ae9c33d4026f34d09dcd91ce1ec12c
+ https://www.awesomescreenshot.com/image/60607495?key=f4e8fde35e77bf01c20e89a235699d22",,,,,
+,,### NO CODE & AUTOMATIONS ###,,,,,
+23,68,Skill x: Representar la lógica de negocio de forma visual mediante diagramas de flujo de trabajo,,,,,
 ,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
-23,67,Skill x: Implementar flujos de trabajo básicos mediante herramientas de automatización como n8n,,,,,
+23,69,Skill x: Implementar flujos de trabajo básicos mediante herramientas de automatización como n8n,,,,,
 ,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
-23,68,Skill x: Integrar LLMs y aplicaciones de terceros en flujos de trabajo de n8n,,,,,
+24,70,Skill x: Integrar LLMs y aplicaciones de terceros en flujos de trabajo de n8n,,,,,
 ,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
-23,69,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
+24,71,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
 ,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
-24,70,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
+24,72,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
 ,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
 ,,### AGENTIC WORKFLOWS ###,,,,,
-24,71,Multi-Agent Systems,,,,,
-,,"> Teoría:
+25,73,Skill: Implement multi-agent systems to solve complex problems,,,,,
+,Approved,"> Teoría:
 
 + Introducción a sistemas multiagente:
-  - ¿Qué es la orquestación de agentes?
   - ¿Qué significa que un sistema sea multiagente?
+  - ¿Qué es la orquestación de agentes?
+  - Workflows and agentic systems are based on LLMs and the various augmentations you add to them. Tool calling, structured outputs, and short-term memory are a few options for tailoring LLMs to your needs.
+  - Importancia de los roles y especialización: agentes con propósitos acotados (planificador, ejecutor, verificador, orquestador) en lugar de un agente ""todólogo"".
+  - Diferencia entre un agente único y un sistema multiagente
+   
++ Orchestrating a multi-agent system in LangGraph
+  - What is an agent workflow
+    -- LLM is embedded in predefined code paths
+    -- LLM directs control flow through predefined code paths
+  - Referencia breve a los patrones de flujo que se verán en Learnpacks aparte (basada en https://docs.langchain.com/oss/python/langgraph/workflows-agents):
+    -- Pipeline secuencial (Prompt chaining)
+    -- Parallelization
+    -- Routing
+    -- Orchestrator-worker pattern (include the difference with routing)
+    -- Evaluator-optimizer
+  - ToolNode como evolución del ToolCalling en agentic workflows: replace manual tool dispatch logic with a ToolNode; tools read from and write to graph state directly
+  - Access graph state and context from tools
+
++ Comunicación y estado en sistemas multiagente:
+  - Paso de mensajes vs. memoria compartida: cómo los agentes intercambian contexto (mensajes estructurados, blackboard/estado compartido).
+  - Formato de los mensajes: JSON estructurado vs. lenguaje natural libre, y por qué la estructura reduce errores de interpretación entre agentes.
+  - Gestión de contexto: cada agente no necesita ver todo el historial; hay que diseñar qué contexto recibe cada uno.
+
++ Agentic workflow patterns: Router pattern (https://docs.langchain.com/oss/python/langgraph/workflows-agents#routing)
+  - Implementing the routing pattern in LangGraph
+  - Ejemplos de casos reales en los que se aplica el patrón
+
++ Agentic workflow patterns: Orchestrator-worker pattern (https://docs.langchain.com/oss/python/langgraph/workflows-agents#orchestrator-worker)
+  - Why an Orchestrator
+  - Why Workers
+  - Why a Synthesizer
+  - Creating workers in LangGraph
+  - Implementing an orchestrator-worker-synthetizer in LangGraph
+  - Ejemplos de casos reales en los que se aplica el patrón
+","- ¿Cuándo un solo agente con buenas herramientas es suficiente vs. cuándo conviene dividir responsabilidades entre varios.?
+- Saber determinar la estrategia adecuada según cada problema
+- Los agentes requieren de una comunicación clara para que el flujo sea exitoso
+- Routing vs Orchestration
+- Roles y responsabilidades claras y acotadas","- Assign one purpose per agent — planner, executor, verifier, orchestrator; never a generalist agent
+- Define explicit interfaces between agents — what goes in, what comes out, typed and documented
+- Design agents so they are replaceable — swapping one agent should not require rewriting the others
+- Keep the orchestrator stateless with respect to task logic — it routes and delegates, it does not execute
+
+- Use prompt chaining when steps are strictly sequential and each output feeds the next — simplest, most debuggable
+- Use parallelization only when subtasks are truly independent — don't parallelize for speed if outputs are interdependent
+- Use routing when the workflow path depends on the content of the LLM output — the LLM classifies, the graph routes
+- Prefer ToolNode over raw tool-calling loops — it handles tool dispatch, error capture, and state update consistently
+- Give each agent access to only the state slice it needs — not the full graph context
+
+- Use structured JSON messages between agents — free-form natural language between agents compounds errors at every hop
+- Design per-agent context windows explicitly — each agent receives only the state it needs to make its decision
+- Use a shared blackboard (graph state) for coordination data; use message passing for task handoffs
+- Version the message schema — agents evolve independently; schema mismatches must be caught at the boundary","- Orquestador-trabajador (orchestrator-worker): un agente central delega subtareas a agentes especializados.
+- Pipeline secuencial: salida de un agente alimenta al siguiente (útil para flujos tipo ETL de contenido/razonamiento).
+- Router: un agente clasifica la tarea y decide a qué agente/herramienta enviarla.
+
+- Role Specialization Pattern — each agent owns a bounded capability; compose agents to cover the full workflow
+- Orchestrator-Worker-Synthesizer Pattern — orchestrator decomposes the task, workers execute in parallel, synthesizer merges results
+
+- Blackboard Pattern — agents read/write to a shared state object; the orchestrator controls write access to prevent conflicts
+- Scoped Context Pattern — before invoking each agent, project the full state down to the minimal context that agent requires
+- Structured Handoff Pattern — task delegation is a typed message ({task, inputs, expected_output_schema}), not a natural language instruction
+","- Agentes ciegos, sin saber el estado del fluj
+- Building a single ""todólogo"" agent and adding tools until it breaks — complexity without structure
+- Orchestrator that executes domain logic — it becomes a bottleneck and a single point of failure
+- Agents without defined output schemas — downstream agents receive ambiguous input and hallucinate interpretations
+- Using routing where orchestrator-worker is needed — routing selects one path; orchestrator-worker decomposes into parallel tasks; they are not interchangeable
+- Parallelizing agents that share mutable state — race conditions corrupt the graph state
+- Accessing full conversation history from every tool — tools should read only the state keys they declare as dependencies
+- Passing full conversation history to every agent — context bloat degrades reasoning quality and increases latency
+- Free-form natural language as the inter-agent protocol — ambiguity compounds across hops; one misinterpretation cascades
+- No message schema versioning — a change in one agent's output silently breaks all downstream agents
+- Shared mutable state with no access control — multiple agents writing to the same key without coordination corrupts state",
+,Approved,"> Proyecto transversal Día 1/3: Generar un sistema multiagente para la revisión de RFPs.
+  - Implementar una interfaz para cargar documentos RFPs (modo tickets) que disparen un flujo agéntico y que muestre el estado del proceso (por ejemplo: analizando, esperando aprobación, terminado...)
+  - Implementar agent routing y el patrón orchestrator-worker-synthetizer
+  - El departamento de ventas recibe muchas solicitudes de propuesta económica (RFPs) y le cuesta entregarlas a tiempo porque no logra involucrar adecuadamente a los distintos departamentos que deben trabajar en ellas. Así que pide generar un flujo agéntico que analice los documentos de las peticiones que reciben para poder delegar a un agente todo lo que concerniente al departamento.
+  - Un primer agente siempre debe leer el documento para ver si es una RFP y si debe enrutar el documento al resto del flujo agéntico
+  - Para cada documento debe extraer metadatos y de legibilidad que puedan afectar el tiempo de procesamiento. (Sugerir usar py-readability-metrics)
+  - También debe extraer los aspectos clave que deben atenderse por departamento de modo que Ventas sepa qué hacer y a quién pedir qué.",,,,,
+25,74,Skill: Implement agents that have self-improvement abilities to optimize results,,,,,
+,Approved,"> Teoría:
+
++ Agentic workflow patterns: Evaluator-optimizer pattern
+  - Why an evaluator
+  - Implementing an evaluator in LangGraph
+  - Ejemplos de casos reales en los que se aplica el patrón",- Importancia de la evaluación como mecanismo de automejora,,,,
+,Approved,"> Proyecto transversal Día 2/3: Generar un sistema multiagente para la generación de respuestas a RFPs.
+  - Implementar el patrón generador-evaluador con varios evaluadores en paralelo por cada agente/departamento.
+  - El departamento ventas quiere reducir aún más el tiempo de respuesta a las solicitudes de propuesta económica (RFPs) y quiere entregar un borrador que cada departamento  verifique y apruebe
+  - Un agente orquestador recibe los metadatos y el resumen y delega la sección de cada departamento a un agente generador que luego pasa a agentes evaluadores.
+  - Los agentes evaluadores deben revisar legibilidad, pertinencia y cumplimiento de lineamientos de la empresa. (Sugerir usar py-readability-metrics)
+  - Una vez revisada la entrega, debe generar el resultado de la evaluación y el contenido generado.
+  - Si la evaluación es un fallo, debe devolver al agente generador con las indicaciones del fallo
 
 
- Routing 
-Arbitration 
-Multi-agent planning 
-Memory compartida
 
-LangGraph",,"- Keep rules under 500 lines
-- Split large rules into multiple, composable rules
-- Provide concrete examples or referenced files
-- Avoid vague guidance. Write rules like clear internal docs
-- Reuse rules when repeating prompts in chat
+",,,,,
+25,75,Skill: Implement multi-agent systems that have control and resuming systems,,,,,
+,Approved,"> Teoría:
 
++ Control de sistemas multiagentes
+  - Guardrails: validación de salidas antes de pasarlas al siguiente agente (evitar la propagación de errores en cascada).
+  - Límites de iteración/loops: evitar bucles infinitos entre agentes que se corrigen mutuamente sin converger.
+  - Trazabilidad: poder ver qué agente hizo qué, con qué input/output (esencial para debugging, ya que los fallos multiagente son más difíciles de rastrear que en un solo agente).
+  - Costos y latencia: cada agente adicional multiplica las llamadas al modelo; hay que enseñar el trade-off entre complejidad y costo.
+  - Arbitration
 
-6.3 Best Practices for AI-Optimized Codebases (https://github.com/ipospelov/vibe-coding-architectures?tab=readme-ov-file#63-best-practices-for-ai-optimized-codebases)
-- Prioritize Familiar Patterns: Use well-established architectural patterns that LLMs have seen frequently
-- Optimize Token Efficiency: Design codebases that require minimal context for AI understanding
-- Maintain Clear Boundaries: Ensure architectural layers and components have well-defined responsibilities
-- Consider Chain Effects: Be aware of how changes propagate through the architecture
-- Context Management: Design for effective context window utilization",- Uso de Readme en todos los proyectos a partir de ahora,"- No usar Tailwind
-- ",- Usar un modelo viejo como sonnet 3.5 ¿Cambiar a un Gemini o ChatGPT viejo para variar?
-,,,,,,,
-24,72,Skill 32:  Assign status to the chunk and start a cronjob every day to process,,,,,
-,Teoría pendiente aprobación,,,,,,
-,,,,,,,
-25,73,Skill 33: Calling a serverless durable funcion,,,,,
-,Teoría pendiente aprobación,Using vercel to build a user-machin chat with an LLM in the background,,,,,
-HITO 09,,"🔄 Hito 9 — Generación de Workflows Agentic
- Usar LLMs para analizar el caso de empresa, generar flujos internos, validarlos e implementarlos como pipelines de automatización (serverless, colas, cronjobs o n8n).",,,,,
++ Checkpointing and interruptions
+  - Checkpointing and interruptions como implementación técnica del Human-in-the-loop mediante puntos de control donde un humano aprueba antes de continuar.
+    -- implementación técnica: interrupt + checkpointer + resume
+  - Checkpointing
+    -- Qué es: persistencia del state del grafo en puntos determinados de la ejecución.
+    -- Por qué importa: reanudación tras fallo, human-in-the-loop, debugging/time-travel.
+    -- Mecanismo en LangGraph: checkpointer (memoria, SQLite, Postgres) + thread_id para identificar ejecuciones independientes.
+  - Interruptions
+    -- Qué es: pausa explícita de la ejecución antes de un nodo crítico o irreversible.
+    -- Relación con checkpointing: la interrupción solo es útil porque el estado quedó persistido — sin checkpoint, no hay ""dónde"" reanudar.
+    -- Distinción clave a remarcar: interrupción = feature (pausar para aprobación humana); checkpointing = infraestructura (que hace posible reanudar exactamente donde se pausó).
+  - Importancia de implementar bien el ""resume"".
+",- Comprender el trade-off entre complejidad y costo,"- Validate every inter-agent output before passing it downstream — schema, type, and domain constraints
+- Fail fast and explicitly at the boundary — a rejected output must return a typed error, not null or a warning
+- Design guardrails as separate nodes, not inline prompt instructions — the graph enforces constraints, not the model
+- Define the acceptable output envelope per agent during design, not after the first failure
+
+- Set a max_iterations hard ceiling on every loop — never rely solely on convergence conditions
+- Define arbitration rules before deployment — what happens when two agents produce conflicting outputs
+- Track iteration count as an explicit state key — makes loop limits a trivial conditional edge
+- Assign a designated arbitrator node for conflicts — do not let agents resolve disagreements among themselves
+
+- Log agent_id, input, output, timestamp, and iteration on every node execution
+- Treat trace data as a first-class artifact — store it, version it, query it
+- Account for cost per agent call at design time — every additional agent multiplies model invocations
+- Profile latency per node before scaling — identify the bottleneck agent before adding parallelism
+
+- Checkpoint at every meaningful state transition — before irreversible actions, after expensive computations
+- Use thread_id to isolate independent executions — never share a checkpoint store across unrelated runs without namespacing
+- Choose the checkpointer backend by durability requirement: in-memory for dev, SQLite for single-node, Postgres for production
+- Treat the checkpoint as the source of truth for resume — never reconstruct state from logs
+
+- Treat interruption and checkpointing as a pair — an interruption without a checkpoint has nowhere to resume from
+- Place interruptions before critical or irreversible nodes — not after
+- Implement resume as an explicit graph entry point — not a retry of the full flow from the start
+- Validate human input on resume before re-entering the graph — treat it as untrusted external input","- Boundary Validation Pattern — insert a lightweight validator node between every producer and consumer agent; it passes or blocks, never transforms
+- Error Propagation Firewall Pattern — on validation failure, route to a recovery node; never forward a malformed output to the next agent
+
+- Hard Stop Pattern — conditional edge checks iteration >= max_iterations before re-entering the loop; routes to synthesizer or failure handler
+- Arbitration Node Pattern — dedicated node receives conflicting outputs with their scores and applies a deterministic resolution rule (highest score, human escalation, or domain rule)
+
+- Trace-as-State Pattern — append a trace entry to graph state on every node execution; the full execution history travels with the run
+- Cost Budget Pattern — define a max token/call budget per flow; the orchestrator checks remaining budget before delegating to a new agent
+
+- Pre-Irreversible-Action Checkpoint Pattern — always checkpoint immediately before any node that sends an email, writes to a database, or calls an external API
+- Time-Travel Debug Pattern — use checkpoints to replay execution from any prior state; essential for diagnosing multi-agent failures
+
+- Interrupt-Checkpoint-Resume Pattern — interrupt signals pause → checkpointer persists state → human provides input → graph resumes from the exact checkpoint with the new input injected into state
+- Approval Gate Pattern — wrap any irreversible action in an interrupt; the action node only executes after explicit human approval is recorded in state","- No versionar ni limpiar checkpoints (crecimiento descontrolado de almacenamiento).
+Interrumpir sin haber configurado checkpointer (la pausa no es reanudable, se pierde el estado).
+- Usar interrupciones como sustituto de guardrails automáticos — la interrupción es para juicio humano en decisiones ambiguas, no para validaciones que un guardrail debería resolver solo.
+
+- Trusting that the upstream agent produced valid output — validate always, regardless of agent source
+- Embedding validation logic in the consuming agent's prompt — downstream agents should not compensate for upstream failures
+- Silent failure on invalid output → malformed data propagates, error surfaces three hops later with no traceable origin
+
+- Two agents that mutually correct each other with no convergence criterion → infinite loop
+- Arbitration logic embedded in an LLM prompt — non-deterministic, untestable, not auditable
+- No iteration counter in state → loop limit cannot be enforced by the graph
+
+- No per-agent logging → multi-agent failures are untraceable; you see the final wrong output with no path to the cause
+- Adding agents to improve quality without measuring cost impact — complexity has a compounding cost
+- Assuming parallelism reduces cost — it reduces latency, not token consumption
+
+- Checkpointing only at the end of the flow → crash mid-execution = full restart
+- Using in-memory checkpointer in production → state lost on process restart
+- No thread_id namespacing → concurrent runs corrupt each other's checkpoints
+
+- Interrupting without checkpointing → state is lost; resume is impossible without replaying the full flow
+- Resume that restarts the flow from node 0 — defeats the purpose of checkpointing entirely
+- Skipping input validation on resume → a human can inject malformed state that corrupts the rest of the graph",
+HITO 09,Approved,"🔄 Hito 9 — Generación de Workflows Agentic
+ Usar LLMs para analizar el caso de empresa, generar flujos internos, validarlos e implementarlos como pipelines de automatización (serverless, colas, cronjobs o n8n).
+
+> Proyecto transversal día 3/3: Implementar el sistema de aprobación de la generación de propuesta económica por departamento y completar la generación del documento. 
+  - Implementar checkpointing e interruptions 
+  - El sistema de agentes debe registrar el contenido asociado a cada departamento para que sea aprobado
+  - Implementar interfaz de aprobación de peticiones
+  - Cuando todos los contenidos estén aprobados, se debe reactivar el sintetizador final y generar el documento resultado.
+  - Implementar la recepción de la propuesta económica en el ticket de registro de la RFP",,,,,
 ,,### REAL-TIME ###,,,,,
-25,74,,,,,,
-,,"     En algun proyecto se debe usar 
--- Webhooks
- -- Pub/Sub",,,,,
+26,76,,,,,,
+,Teoría pendiente aprobación,"> Teoría:
+ + Comunicación en tiempo real
+   - ¿Por qué es necesaria la comunicación en tiempo real?
+   - ¿Qué significa que sea en tiempo real?
+   - ¿Por qué no basta con request/response tradicional (HTTP clásico)?
+     -- Casos que lo exigen: chat, notificaciones live, streaming de LLM, colaboración multiusuario, agentes que necesitan ser interrumpidos. 
+   - Breve referencia a los modelos de comunicación: 
+     -- Polling / long-polling → Lo que siempre se ha hecho con fetch.
+     -- HTTP Streaming (chunked transfer encoding) ← el servidor mantiene la conexión abierta y envía la respuesta en fragmentos (Transfer-Encoding: chunked), en lugar de esperar a tener el body completo.
+        - Por qué importa: es el mecanismo de bajo nivel que hace posible todo lo demás — cuando el estudiante ve response.body.getReader() en JS o itera un stream en Python, está tocando esto directamente.
+     -- SSE (unidireccional servidor→cliente) → el caso más simple de ""push"" real.
+     -- WebSockets (bidireccional) → cuando el cliente también necesita hablar.
+   - Tabla comparativa de los modelos de comunicación: dirección, complejidad, overhead, caso de uso típico.
+
+  + Errores comunes y buenas prácticas en comunicaciones en tiempo real
+    - Reconexión y backoff.
+    - Backpressure.
+    - Nombramiento de eventos y diseño de payloads.
+    - Idempotencia en entrega de mensajes.
+
+  + Transmisión de datos: Streaming vs Batch
+    - ¿Qué es batch?
+    - ¿Qué es streaming?
+    - Streaming vs Batch
+    - Cómo se implementa streaming en Python con yield
+    - Streaming modes de LangGraph (values, updates, messages, custom): cómo LangGraph expone distintos ""niveles"" de eventos.
+
+  + Server-Sent Events:
+    - conexión unidireccional servidor→cliente sobre HTTP
+    - Es el mecanismo detrás del streaming de tokens de OpenAI/Anthropic/etc. 
+    - Es, literalmente, como llega la respuesta de un LLM token por token a la UI. ","- Explicar la diferencia entre SSE y WebSockets y cuándo usar cada uno.
+- Consumir un stream de LLM con SSE en un cliente (fetch + ReadableStream, o librería del SDK).
+- Reconocer cuándo un requisito (""el usuario debe poder interrumpir al agente"") implica necesariamente un canal bidireccional.",,"- Usar un backplane pub/sub (Redis) para escalar WebSockets horizontalmente — sin esto, sticky sessions se vuelven un cuello de botella.
+- idempotencia y control de ""at-least-once delivery"" cuando el canal en tiempo real se combina con colas de mensajes.","- hacer polling agresivo (cada 500ms) en vez de usar SSE/WS — desperdicia recursos y no escala.
+- no manejar reconexión/backoff en el cliente — las conexiones WS se caen y el estudiante junior suele olvidar ese caso.",
 ,,,,,,,- No IA
-25,75,Building a customer support chat with real time communication to an LLM,,,,,
-,,"- Websockets
-- Streaming
-  -- Yield
-- Event oriente architecture
-- LLM SDK",,,,,
+26,77,Building a customer support chat with real time communication to an LLM,,,,,
+,Teoría pendiente aprobación,"> Teoría:
+  + WebSockets: 
+    - ¿Qué es un socket? Conexión bidireccional persistente. Es necesaria cuando el cliente también necesita enviar datos en tiempo real (voz, interrupciones del usuario, colaboración multiagente).
+    - cómo se implementa (mínimo sin framework) 
+    - errores comunes
+    - buenas prácticas
+    - ejemplo real
+
+  + Patrón Pub/Sub
+    - ¿En qué consiste el patrón pub/sub?
+    - Cómo desacopla productores de consumidores de eventos.
+    - ¿Cómo publicar?
+    - ¿Cómo suscribirse?
+    - Principales errores
+    - Mejores prácticas en el nombre de los eventos y en los payloads
+    - Ejemplo de pub/sub en casos reales (chat, yield de agentes y otro más tradicional)
+
+  + La IA en tiempo real:
+    - Cómo llega un token de un LLM a la UI (SSE).
+    - Cómo un agente reporta progreso o permite interrupción (WS o pub/sub).
+    - Ejemplo mínimo sin framework: stream directo de la API de OpenAI/Anthropic.
+
+  + Tiempo real en flujos agénticos con LangGraph:
+    - Streaming modes de LangGraph (values, updates, messages, custom): esto es literalmente la aplicación práctica de la sección 2-3 (SSE/streaming vs batch) — el estudiante ya sabe qué es streaming, ahora ve cómo LangGraph expone distintos ""niveles"" de eventos.
+    - Interrupciones y HITL (interrupt(), checkpointing): esto conecta directamente con el punto de WebSockets/bidireccionalidad — una interrupción real requiere que el cliente pueda ""hablar de vuelta"" mientras el grafo está pausado, no solo recibir tokens.
+    - Comunicación entre nodos/agentes: aquí es donde Pub/Sub deja de ser abstracto — en sistemas multiagente con LangGraph, el paso de estado entre nodos y la comunicación agente-a-agente son una aplicación directa del patrón visto en la sección 4.
+    - Checkpointing como mecanismo de persistencia del estado en tiempo real: útil para cerrar el círculo con tu currículo actual (checkpointing, memoria de agentes).",,,,,
 HITO 10,,"⚡ Hito 10 — Sistemas en Tiempo Real
- Streaming, sockets, pub/sub. Habilitar interacciones en tiempo real para datos, clientes, IA o empleados.",,,,,
-26,76,Skill x: Integration Plan,,,,,
-,,"> Teoría:
- - Introducción a la gestión de proyectos ágil y profesional 
- - Plan de implementación
- - Historias de usuario
- - Intro a CS 
-",,,- MCP,,
-,,,,,,,
+ Streaming, sockets, pub/sub. Habilitar interacciones en tiempo real para datos, clientes, IA o empleados.
+
+Conectar LangGraph con el frontend para que muestre en tiempo real el desarrollo del procesamiento de la RFP, los documentos que van generando, las acciones...",,,,,
 ,,### CYBERSECURITY IN AI-FIRST APPLICATIONS ###,,,,,
-26,77,Skill x: Identificar y corregir las vulnerabilidades más comunes a las que se está expuesta una aplicación en internet,,,,,
-,,"> Teoría: 
+26,78,Skill x: Identificar y corregir las vulnerabilidades más comunes a las que se está expuesta una aplicación en internet,,,,,
+,Teoría pendiente aprobación,"> Teoría: 
 + Principales amenazas y vulnerabilidades en ciberseguridad  
   - ¿Qué es el OWASP TOP 10?
   - Principales amenazas según OWASP TOP 10:2025
 
 + SANS/CWE Top 25 Most Dangerous Software Errors (NO DESARROLLAR, YA EXISTE)
 
-+ Prácticas esenciales en servidores: 
++ Buenas prácticas de ciberseguridad esenciales en servidores: 
   - Acceso SSH
   - Crear un usuario de acceso y proteger al usuario root
   - Definir permisos de carpetas
   - Configurar un firewall y restringir puertos",,,,,
 ,,,,,,,
-26,78,Skill x: Implementar prácticas seguras en la integración de IA en sistemas,,,,,
-,,"> Teoría: 
+27,79,Skill x: Implementar prácticas seguras en la integración de IA en sistemas,,,,,
+,Teoría pendiente aprobación,"> Teoría: 
 
 + Seguridad en sistemas agénticos
   - ¿Por qué el lenguaje humano hace a los agentes tan vulnerables?
   - Principio de least model privilege
-  - cuándo el sistema debe pedir confirmación antes de actuar.
+  - Cuándo el sistema debe pedir confirmación antes de actuar.
   - Protección ante la Prompt Injection 
     -- System prompts
   - input/output confidentiality
@@ -3303,19 +3889,64 @@ HITO 10,,"⚡ Hito 10 — Sistemas en Tiempo Real
 + Gobierno de la IA:
   - Inventario de sistemas AI.
   - Responsabilidad de controles (¿quién es responsable de qué cuando el modelo lo provee un tercero?).
-  - Introducción al marco regulatorio (EU AI Act, OWASP LLM Top 10).
+  - Introducción al marco regulatorio en Europa (EU AI Act, GDPR).
+  - Introducción al marco regulatorio en América: FERPA y HIPAA
 
-","- ¿Cómo estructurar prompts para minimizar la exposición de datos sensibles?
++ NIST Security Checklist 
+  - What is NIST and why is it important?
+  - NIST function groups: Govern, Identify, Protect, Detect, Respond, and Recover
+  - 🏛️ GOVERN (GV): Establishes organizational context, accountability, and risk strategy.
+    -- Define organizational mission, risk appetite, and regulatory obligations
+    -- Establish and communicate a cybersecurity policy endorsed by leadership
+    -- Assign roles, responsibilities, and authority for cybersecurity decisions
+    -- Integrate cybersecurity into enterprise risk management (ERM)
+    -- Manage cybersecurity supply chain risks (third parties, vendors, suppliers)
+    -- Maintain an ongoing cybersecurity awareness and workforce training program
+    -- Review and update governance strategy periodically
+  - 🔍 IDENTIFY (ID): Understand the organization's current cybersecurity risk exposure.
+    -- Maintain an up-to-date inventory of hardware and software assets
+    -- Identify data assets, their classification, and sensitivity
+    -- Map business processes that depend on information systems
+    -- Conduct and document risk assessments regularly
+    -- Identify applicable legal, regulatory, and contractual cybersecurity requirements
+    -- Assess vulnerabilities in systems and prioritize by criticality
+  - 🛡️ PROTECT (PR): Implement safeguards to prevent or reduce cybersecurity risks.
+    -- Enforce identity management and access control (least privilege, MFA)
+    -- Apply security awareness training for all personnel
+    -- Implement data security controls (encryption, data loss prevention)
+    -- Establish secure configuration baselines for all systems
+    -- Enable automatic patching and software updates
+    -- Perform regular data backups and test recovery procedures
+    -- Secure network infrastructure (segmentation, firewalls, VPNs)
+    -- Manage physical security for facilities and devices
+  - 📡 DETECT (DE): Identify cybersecurity events and anomalies in a timely manner.
+    -- Deploy continuous monitoring across systems, networks, and assets
+    -- Implement logging and audit trail capabilities
+    -- Define and tune detection alerts for anomalous behavior
+    -- Monitor for unauthorized access and insider threats
+    -- Correlate threat intelligence with internal detection signals
+    -- Test detection capabilities regularly (e.g., red team exercises)
+  - 🚨 RESPOND (RS): Take action when a cybersecurity incident is detected.
+    -- Develop and maintain an incident response plan (IRP)
+    -- Define escalation paths and assign incident response roles
+    -- Establish communication protocols (internal and external, including regulators)
+    -- Contain incidents to prevent further damage
+    -- Analyze incidents to determine root cause
+    -- Document all response actions and decisions
+    -- Coordinate with external parties if needed (law enforcement, CERTs)
+  - ♻️ RECOVER (RC): Restore capabilities and services after a cybersecurity incident.
+    -- Develop and test a recovery plan aligned with business continuity objectives
+    -- Define recovery time objectives (RTO) and recovery point objectives (RPO)
+    -- Restore affected systems from validated backups
+    -- Communicate recovery status to stakeholders
+    -- Conduct post-incident review and update plans based on lessons learned
+    -- Track improvements and validate that vulnerabilities are remediated","- ¿Cómo estructurar prompts para minimizar la exposición de datos sensibles?
 - ¿Qué debo tener en cuenta cuando incluyo mensajes de un usuario ",,,,
 ,,,,,,,
-27,79,Skill x: Usando LLMs para auditorias de CS,,,,,
-,,"  - 
-  - guardrails
-  - alineacion y moderación ",,,- MCP,,
 ,,### CAPSTONE ###,,,,,
 27,80,Skill x: Desarrollar con IA orientad,,,,,
 ,,,,,,,
-HITO CAPSTONE,,"🚀 Capstone — Empresa completamente transformada con IA
+HITO CAPSTONE,Teoría pendiente aprobación,"🚀 Capstone — Empresa completamente transformada con IA
  Los estudiantes entregan la transformación total de su empresa:
 Frontend generado por IA
 
@@ -3340,31 +3971,10 @@ Capa de comunicación en tiempo real",,,,,
 ,,https://x.com/zodchiii/status/2056319284641460626?s=12,,,,,
 ,,,,,,,
 28,82,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,Para agregar en etapa de proyecto final como contenido Extra,,,,,
-,," + Reflexión:
-    - Optimización de algoritmos: recalcar el objetivo actual: aprender como primer paso. 
-      -- Ordenamiento (sólo referencial)
-      -- Búsqueda (sólo referencia)
-      -- Big O Notation (sólo referencial)
-      -- Prototypes js
-
-  - Abstract Base Classes (ABCs): (El equivalente a Interfaces de Typescript)
-
-  + Aspectos avanzados de objetos en Python:
-    - Decoradores
-      -- @classmethod vs @staticmethod
-    - Atributos públicos, privados y protegidos
-    - Métodos puros (getters y setters)
-",,,,,
-,,"  + Control de Tráfico (Traffic Control & Resiliency)
-     - Rate Limiting (Limitación de Tasa) 
-     - Throttling
-     - Circuit Breakers (Cortocircuitos)
-
-   + El Patrón BFF (Backend for Frontend)
-      - ¿Qué es? Crear una capa intermedia (o API Gateway ligero) que agrupa múltiples llamadas a microservicios en una sola, diseñada específicamente para lo que necesita el cliente web (o móvil).
-      - Beneficios: Reduce la latencia de red, ya que el cliente hace 1 sola petición al BFF, y el BFF hace 5 peticiones ultrarrápidas a los microservicios internos en la misma red.",,,,,
+26,78,Skill x: Integration Plan,,,,,
+,Teoría pendiente aprobación,"> Teoría:
+ - Introducción a la gestión de proyectos ágil y profesional 
+ - Plan de implementación
+ - Historias de usuario
+ - Intro a CS 
+",,,- MCP,,
