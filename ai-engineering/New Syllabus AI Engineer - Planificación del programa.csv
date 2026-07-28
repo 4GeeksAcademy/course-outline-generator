@@ -3442,7 +3442,7 @@ HITO 07,En Syllabus,"🧩 Hito 7 — RAG y Memoria
 ,Approved,"> Proyecto transversal 1: Reescribir el código del proyecto del RAG en LangGraph y establecer los flujos del agente, el tracing y la evaluación.
 
 > Proyecto transversal 2: Incorporar una tool para que el agente pueda traer información dinámica fuera del RAG (por ejemplo: Tickets de Customer Support, y extra, Información de productos en el inventario)",,,,,
-22,65,Skills: Extender las capacidades de un agente mediante MCPs,,,,,
+22,65,Skill: Extender las capacidades de un agente mediante MCPs,,,,,
 ,En Syllabus,"> Teoría:
 
 + Introducción a MCPs: 
@@ -3481,7 +3481,7 @@ HITO 07,En Syllabus,"🧩 Hito 7 — RAG y Memoria
 - No limitar privilegios",
 ,Approved,"> Proyecto transversal: Construir un MCP Server para que los agentes puedan interactuar con la compañía mediante una API Key de autenticación/autorización. Con el MCP Server un agente podrá gestionar tickets del Incidents Manager y solo consultar, no editar, datos del inventario. ",,,,,
 22,66,Skill: Implementar sistemas seguros de orquestación de agentes,,,,,
-,Approved,"> Teoría:
+,En Syllabus,"> Teoría:
 
   + Harnesss Engineering
     - Agent = Model + Harness — (el modelo decide, el harness ejecuta, orquesta herramientas y mantiene estado). 
@@ -3523,7 +3523,7 @@ HITO 07,En Syllabus,"🧩 Hito 7 — RAG y Memoria
   - El agente no puede ser usado por una persona como un chatbot personal.
   - El agente debe tener un system prompt seguro y no responder a solicitudes de cambios de indicaciones",,,,,
 23,67,Skill: Dotar de memoria a un agente,,,,,
-,Approved,"> Teoría:
+,En Syllabus,"> Teoría:
 + Memoria para agentes:
   - ¿Qué es la memoria de un agente inteligente?
   - ¿Por qué es importante la memoria?
@@ -3563,7 +3563,7 @@ RAG-as-Working-Memory Pattern — retrieve only the relevant chunks per query; n
 - Fine-tuning to add recent or frequently changing knowledge — use RAG instead; fine-tuning is for stable behavioral patterns, not factual updates
 - No eviction or consolidation policy on episodic memory → unbounded growth, degraded retrieval precision over time
 - Self-improving memory with no human review gate → the agent reinforces its own errors autonomously",
-HITO 08,,"🤖 Hito 8 — Ingeniería de Agentes
+HITO 08,Approved,"🤖 Hito 8 — Ingeniería de Agentes
  Llamada a herramientas (tool calling). Construir el agente de la empresa.
 
 > Proyecto transversal: EL agente que se viene creando debe ser el ayudante principal de la empresa que conoce todo sobre la empresa y se le puede preguntar sobre prácticamente cualquier cosa. Es importante que el agente mejore en sus desenvolvimiento en la empresa y que aprenda de la interacción futura. 
@@ -3573,25 +3573,25 @@ HITO 08,,"🤖 Hito 8 — Ingeniería de Agentes
 > Proyecto de módulo:
   - Hacer que el agente que se automejore mediante un flujo inspirado en lo indicado en esta imagen: https://awesomescreenshot.s3.amazonaws.com/image/3098882/60607495-9fdc44b2e2419c50571e72955c0127d7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20260716%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260716T153652Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=6830d1fc9c1f667771676996a510cdf0b0ae9c33d4026f34d09dcd91ce1ec12c
  https://www.awesomescreenshot.com/image/60607495?key=f4e8fde35e77bf01c20e89a235699d22",,,,,
-,,### NO CODE & AUTOMATIONS ###,,,,,
+,IGNORE,### NO CODE & AUTOMATIONS ###,,,,,
 23,68,Skill x: Representar la lógica de negocio de forma visual mediante diagramas de flujo de trabajo,,,,,
-,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
+,IGNORE,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
 23,69,Skill x: Implementar flujos de trabajo básicos mediante herramientas de automatización como n8n,,,,,
-,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
+,IGNORE,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
 24,70,Skill x: Integrar LLMs y aplicaciones de terceros en flujos de trabajo de n8n,,,,,
-,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
+,IGNORE,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
 24,71,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
-,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
+,IGNORE,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
 24,72,Skill x: Desplegar flujos de trabajo automatizados mantenibles y con gestión de errores ,,,,,
-,NO GENERAR LEARNPACK,"Teoría (IGNORAR): 
+,IGNORE,"Teoría (IGNORAR): 
 Se reutilizarán el contenido del curso de n8n",,,,,
 ,,,,,,,
 ,,### AGENTIC WORKFLOWS ###,,,,,
@@ -3780,7 +3780,7 @@ Interrumpir sin haber configurado checkpointer (la pausa no es reanudable, se pi
 - Resume that restarts the flow from node 0 — defeats the purpose of checkpointing entirely
 - Skipping input validation on resume → a human can inject malformed state that corrupts the rest of the graph",
 HITO 09,Approved,"🔄 Hito 9 — Generación de Workflows Agentic
- Usar LLMs para analizar el caso de empresa, generar flujos internos, validarlos e implementarlos como pipelines de automatización (serverless, colas, cronjobs o n8n).
+ Usar LLMs para analizar el caso de empresa, generar flujos internos, validarlos e implementarlos como pipelines de automatización (empleando colas y cronjobs de ser necesarios).
 
 > Proyecto transversal día 3/3: Implementar el sistema de aprobación de la generación de propuesta económica por departamento y completar la generación del documento. 
   - Implementar checkpointing e interruptions 
@@ -3789,8 +3789,8 @@ HITO 09,Approved,"🔄 Hito 9 — Generación de Workflows Agentic
   - Cuando todos los contenidos estén aprobados, se debe reactivar el sintetizador final y generar el documento resultado.
   - Implementar la recepción de la propuesta económica en el ticket de registro de la RFP",,,,,
 ,,### REAL-TIME ###,,,,,
-26,76,,,,,,
-,Teoría pendiente aprobación,"> Teoría:
+26,76,Skill: Implementar sistemas de tiempo real con conexiones unidireccionales,,,,,
+,Approved,"> Teoría:
  + Comunicación en tiempo real
    - ¿Por qué es necesaria la comunicación en tiempo real?
    - ¿Qué significa que sea en tiempo real?
@@ -3820,14 +3820,28 @@ HITO 09,Approved,"🔄 Hito 9 — Generación de Workflows Agentic
   + Server-Sent Events:
     - conexión unidireccional servidor→cliente sobre HTTP
     - Es el mecanismo detrás del streaming de tokens de OpenAI/Anthropic/etc. 
-    - Es, literalmente, como llega la respuesta de un LLM token por token a la UI. ","- Explicar la diferencia entre SSE y WebSockets y cuándo usar cada uno.
-- Consumir un stream de LLM con SSE en un cliente (fetch + ReadableStream, o librería del SDK).
-- Reconocer cuándo un requisito (""el usuario debe poder interrumpir al agente"") implica necesariamente un canal bidireccional.",,"- Usar un backplane pub/sub (Redis) para escalar WebSockets horizontalmente — sin esto, sticky sessions se vuelven un cuello de botella.
-- idempotencia y control de ""at-least-once delivery"" cuando el canal en tiempo real se combina con colas de mensajes.","- hacer polling agresivo (cada 500ms) en vez de usar SSE/WS — desperdicia recursos y no escala.
-- no manejar reconexión/backoff en el cliente — las conexiones WS se caen y el estudiante junior suele olvidar ese caso.",
+    - Es, literalmente, como llega la respuesta de un LLM token por token a la UI. ","- Consumir un stream de LLM con SSE en un cliente (fetch + ReadableStream, o librería del SDK).
+- Choose the communication model based on directionality and latency requirement — not familiarity
+- Use HTTP Streaming when you control both ends and need the simplest possible server-push without a protocol upgrade
+- Use SSE when the server pushes a stream and the client only listens — LLM token streaming, notifications
+- Avoid polling in new systems — use it only when SSE/WebSockets are explicitly unavailable in the target environment
+
+
+","- Always set Content-Type: text/event-stream and Cache-Control: no-cache — missing either breaks SSE in most clients
+- Use named events (event: token, event: error, event: done) — unnamed data: streams are untyped and hard to evolve
+- Send a heartbeat event on a fixed interval — prevents proxies and load balancers from closing idle connections
+- Terminate the stream with an explicit [DONE] event — the client must know when the stream ends, not infer it from silence
+- Use namespaced, verb-noun event names — agent.tool_called, llm.token_received, task.completed
+- Keep payloads minimal and typed — include only what the consumer needs to act; no internal state leakage","- idempotencia y control de ""at-least-once delivery"" cuando el canal en tiempo real se combina con colas de mensajes.
+- Protocol Selection Matrix Pattern — map (directionality × persistence × complexity) to the correct model before writing any code
+- SSE-First Pattern — default to SSE for server-push use cases; upgrade to WebSockets only when bidirectionality is proven necessary
+- Event Envelope Pattern — every event has {id, type, timestamp, payload}; the envelope is stable, the payload evolves per type","- hacer polling agresivo (cada 500ms) en vez de usar SSE/WS — desperdicia recursos, añade latencia y no escala.
+- Long-polling in new agent systems — it is a workaround, not an architecture; SSE exists for this
+- no manejar reconexión/backoff en el cliente — las conexiones WS se caen y el estudiante junior suele olvidar ese caso.
+- Leaking internal agent state in the payload → couples the consumer to an implementation detail",
 ,,,,,,,- No IA
-26,77,Building a customer support chat with real time communication to an LLM,,,,,
-,Teoría pendiente aprobación,"> Teoría:
+26,77,Skill: Implementar sistemas con conexiones bidireccionales en tiempo real,,,,,
+,Approved,"> Teoría:
   + WebSockets: 
     - ¿Qué es un socket? Conexión bidireccional persistente. Es necesaria cuando el cliente también necesita enviar datos en tiempo real (voz, interrupciones del usuario, colaboración multiagente).
     - cómo se implementa (mínimo sin framework) 
@@ -3853,44 +3867,77 @@ HITO 09,Approved,"🔄 Hito 9 — Generación de Workflows Agentic
     - Streaming modes de LangGraph (values, updates, messages, custom): esto es literalmente la aplicación práctica de la sección 2-3 (SSE/streaming vs batch) — el estudiante ya sabe qué es streaming, ahora ve cómo LangGraph expone distintos ""niveles"" de eventos.
     - Interrupciones y HITL (interrupt(), checkpointing): esto conecta directamente con el punto de WebSockets/bidireccionalidad — una interrupción real requiere que el cliente pueda ""hablar de vuelta"" mientras el grafo está pausado, no solo recibir tokens.
     - Comunicación entre nodos/agentes: aquí es donde Pub/Sub deja de ser abstracto — en sistemas multiagente con LangGraph, el paso de estado entre nodos y la comunicación agente-a-agente son una aplicación directa del patrón visto en la sección 4.
-    - Checkpointing como mecanismo de persistencia del estado en tiempo real: útil para cerrar el círculo con tu currículo actual (checkpointing, memoria de agentes).",,,,,
+    - Checkpointing como mecanismo de persistencia del estado en tiempo real: útil para cerrar el círculo con tu currículo actual (checkpointing, memoria de agentes).","- Explicar la diferencia entre SSE y WebSockets y cuándo usar cada uno.
+- Reconocer cuándo un requisito (""el usuario debe poder interrumpir al agente"") implica necesariamente un canal bidireccional.
+- Use WebSockets only when the client must also send messages after the connection is open — collaborative editing, chat, agent interruption
+- Client must not infer when the conversation or message finishes, it must be clear
+- WebSockets es la moda y es poderoso, pero no debe ser escogido por eso sino porque la complejidad y la doble dirección de la comunicación lo requieren.
+","- Handle connection lifecycle explicitly: onopen, onmessage, onerror, onclose — all four, always
+
+- Stream LLM output token by token via SSE from the backend — never buffer the full response before sending
+- Separate the LLM API call from the HTTP response — the backend opens the LLM stream and pipes it directly into the SSE response
+- Send a typed [DONE] event when the stream ends — the client must not infer completion from silence
+- Use WebSocket or pub/sub for agent interruption — SSE is unidirectional; a user interrupting an agent mid-stream requires a back-channel
+
+- Choose the streaming mode by consumer need: messages for token-level UI rendering, updates for step-level agent progress, values for full state inspection, custom for domain-specific events
+- Use interrupt() before irreversible nodes — checkpointing must be configured for interrupt to be resumable
+- Treat inter-node state passing as pub/sub — a node publishes its output to graph state; downstream nodes subscribe by reading their required keys
+- Expose agent progress via custom stream events — do not force the frontend to parse updates to infer what the agent is doing","- Usar un backplane pub/sub (Redis) para escalar WebSockets horizontalmente — sin esto, sticky sessions se vuelven un cuello de botella.
+- Message Envelope Pattern — {id, type, timestamp, payload} on every message; type drives client-side routing
+- Heartbeat/Ping-Pong Pattern — server sends ping every 30s; client responds pong; server closes connection on missed responses
+- Reconnect-with-Resume Pattern — client tracks last received message_id; sends it on reconnect so server can replay missed messages
+
+- In pub/sub Publishers never know who is subscribed — if a publisher references a specific consumer, it is not pub/sub
+- In pub/sub Use namespaced, hierarchical topic names — agent.{id}.token, task.{id}.completed, user.{id}.notification
+- In pub/sub Keep payloads minimal and typed — the event tells what happened; the consumer fetches details if needed
+- In pub/sub  Make every subscriber handler idempotent — the broker may deliver the same event more than once
+- In pub/sub Define a dead letter topic for unprocessable events — never silently discard
+
+- Pipe-Through Streaming Pattern — backend receives LLM chunks → immediately forwards each chunk as an SSE event → client renders token by token; no buffering at any layer
+- Dual-Channel Pattern — SSE for server→client token stream; WebSocket back-channel for client→server interruptions and input during agent execution
+
+- Stream-Mode-per-Consumer Pattern — UI token display → messages; progress indicator → updates; debug tooling → values; domain events → custom
+- Checkpoint-then-Interrupt Pattern — checkpointer persists state → interrupt() pauses execution → WebSocket back-channel receives human input → resume() injects input into state and continues from checkpoint
+- Node-as-Publisher Pattern — each node writes only to its declared state keys; downstream nodes read only their declared dependencies; graph state is the broker","- Awaiting the full LLM response before streaming — destroys perceived latency; the user waits for the slowest token
+
+- No [DONE] event — client spinner hangs after the last token; UX breaks silently
+
+- Using values mode for UI token streaming — sends full state snapshots on every node execution; expensive and noisy
+- interrupt() without a configured checkpointer — the pause has nowhere to resume from; execution cannot continue
+- Nodes reading keys they did not declare as dependencies — creates hidden coupling between agents that breaks when state schema evolves
+- Inferring agent progress from updates parsing in the frontend — fragile; emit explicit custom events for consumer-facing progress signals",
 HITO 10,,"⚡ Hito 10 — Sistemas en Tiempo Real
  Streaming, sockets, pub/sub. Habilitar interacciones en tiempo real para datos, clientes, IA o empleados.
 
 Conectar LangGraph con el frontend para que muestre en tiempo real el desarrollo del procesamiento de la RFP, los documentos que van generando, las acciones...",,,,,
 ,,### CYBERSECURITY IN AI-FIRST APPLICATIONS ###,,,,,
-26,78,Skill x: Identificar y corregir las vulnerabilidades más comunes a las que se está expuesta una aplicación en internet,,,,,
-,Teoría pendiente aprobación,"> Teoría: 
-+ Principales amenazas y vulnerabilidades en ciberseguridad  
-  - ¿Qué es el OWASP TOP 10?
-  - Principales amenazas según OWASP TOP 10:2025
-
-+ SANS/CWE Top 25 Most Dangerous Software Errors (NO DESARROLLAR, YA EXISTE)
-
-+ Buenas prácticas de ciberseguridad esenciales en servidores: 
-  - Acceso SSH
-  - Crear un usuario de acceso y proteger al usuario root
-  - Definir permisos de carpetas
-  - Configurar un firewall y restringir puertos",,,,,
-,,,,,,,
-27,79,Skill x: Implementar prácticas seguras en la integración de IA en sistemas,,,,,
-,Teoría pendiente aprobación,"> Teoría: 
-
-+ Seguridad en sistemas agénticos
-  - ¿Por qué el lenguaje humano hace a los agentes tan vulnerables?
-  - Principio de least model privilege
-  - Cuándo el sistema debe pedir confirmación antes de actuar.
-  - Protección ante la Prompt Injection 
-    -- System prompts
-  - input/output confidentiality
-  - Data poisoning (breve referencia)
-  - AI Resource Exhaustion / DoS
+26,78,Skill: Implementar prácticas seguras en la integración de IA en sistemas,,,,,
+,Approved,"> Teoría: 
 
 + Gobierno de la IA:
   - Inventario de sistemas AI.
   - Responsabilidad de controles (¿quién es responsable de qué cuando el modelo lo provee un tercero?).
   - Introducción al marco regulatorio en Europa (EU AI Act, GDPR).
   - Introducción al marco regulatorio en América: FERPA y HIPAA
+
++ Principios de la seguridad por diseño:
+  - Principios generales (aplicables a cualquier software)
+    -- Least privilege: cada componente, API key o servicio debe tener solo los permisos mínimos necesarios.
+    -- Defense in depth: no confiar en una sola capa de protección (validación en frontend Y backend, por ejemplo).
+    -- Fail securely: si algo falla, debe fallar cerrado (denegando acceso), no abierto.
+    -- Nunca confiar en el input del usuario: validar y sanitizar todo lo que entra al sistema.
+    -- Secrets management: nunca hardcodear API keys o credenciales en el código; usar variables de entorno o vaults.
+  - Riesgos específicos de aplicaciones con LLMs
+    -- Prompt injection: el input del usuario puede intentar sobrescribir las instrucciones del sistema. Un junior debe entender la diferencia entre instrucciones de sistema y contenido de usuario, y por qué nunca se debe tratar el output de un LLM como código o comando confiable sin validación.
+    -- Indirect prompt injection: cuando el LLM lee contenido externo (documentos, resultados de búsqueda, páginas web) que puede contener instrucciones maliciosas ocultas.
+    -- Data leakage / exfiltración: evitar que información sensible (system prompts, datos de otros usuarios, secrets) termine en un output visible.
+    -- Output validation: si el LLM genera código, SQL, o llamadas a herramientas, ese output debe tratarse como no confiable hasta validarse (evitar SQL injection generado por el propio modelo, por ejemplo).
+    -- Excessive agency: cuando un agente tiene permisos para ejecutar acciones (tools, APIs, bash), hay que limitar el alcance de esas acciones y pedir confirmación humana en las irreversibles (borrar datos, enviar dinero, mandar emails).
+  - Buenas prácticas concretas para ejercicios/proyectos
+    -- Sandboxing de cualquier código generado o ejecutado por el modelo.
+    -- Rate limiting y control de costos (evitar loops infinitos de llamadas a la API).
+    -- Logging y trazabilidad de qué hizo el agente y por qué (auditoría).
+    -- Human-in-the-loop para acciones sensibles.
 
 + NIST Security Checklist 
   - What is NIST and why is it important?
@@ -3940,41 +3987,45 @@ Conectar LangGraph con el frontend para que muestre en tiempo real el desarrollo
     -- Restore affected systems from validated backups
     -- Communicate recovery status to stakeholders
     -- Conduct post-incident review and update plans based on lessons learned
-    -- Track improvements and validate that vulnerabilities are remediated","- ¿Cómo estructurar prompts para minimizar la exposición de datos sensibles?
-- ¿Qué debo tener en cuenta cuando incluyo mensajes de un usuario ",,,,
-,,,,,,,
-,,### CAPSTONE ###,,,,,
-27,80,Skill x: Desarrollar con IA orientad,,,,,
-,,,,,,,
-HITO CAPSTONE,Teoría pendiente aprobación,"🚀 Capstone — Empresa completamente transformada con IA
- Los estudiantes entregan la transformación total de su empresa:
-Frontend generado por IA
+    -- Track improvements and validate that vulnerabilities are remediated
 
++ Seguridad en sistemas agénticos
+  - ¿Por qué el lenguaje humano hace a los agentes tan vulnerables?
+  - Principio de least model privilege
+  - Cuándo el sistema debe pedir confirmación antes de actuar.
+  - Protección ante la Prompt Injection 
+    -- System prompts
+  - input/output confidentiality
+  - Data poisoning (breve referencia)
+  - AI Resource Exhaustion / DoS
 
-API + autenticación
+","- ¿Cómo estructurar prompts para minimizar la exposición de datos sensibles?
+- ¿Qué debo tener en cuenta cuando incluyo mensajes de un usuario 
+- ¿Por qué es importante implementar la seguridad desde el diseño?
+- ¿Por qué debo preocuparme por tener buenos tests, gestión de errores, privacidad de datos para tener un sistema seguro?
+- ¿Por qué es importante tener un plan de gobierno de IA que evolucione con mi aplicación?
+- ¿Cómo puede una mala ciberseguridad hacer que la IA que funciona en mi sistema vulnerara y expusiera datos de mi sistema y por qué es peligroso?",- Security by design,,"- No analizar las entradas de prompts de usuarios
+- ",
+,Approved,"> Proyecto de compañía: 
+  - Elaborar un informe basado en la Checklist de NIST para establecer una ruta de mejoras para la plataforma de la compañía",,,,,
+27,79,Skill: Identificar y corregir las vulnerabilidades más comunes a las que se está expuesta una aplicación en internet,,,,,
+,Approved,"> Teoría: 
 
++ Buenas prácticas de ciberseguridad esenciales en servidores: 
+  - Acceso SSH
+  - Crear un usuario de acceso y proteger al usuario root
+  - Definir permisos de carpetas
+  - Configurar un firewall y restringir puertos
 
-Telemetría + pipeline de reporting
++ Principales amenazas y vulnerabilidades en ciberseguridad  
+  - ¿Qué es el OWASP TOP 10?
+  - Principales amenazas según OWASP TOP 10:2025
 
-
-Automatización de workflows (generados por agentes)
-
-
-Capa de conocimiento RAG
-
-
-Agentes con tool calling
-
-
-Capa de comunicación en tiempo real",,,,,
-27,81,,,,,,
-,,https://x.com/zodchiii/status/2056319284641460626?s=12,,,,,
-,,,,,,,
-28,82,,,,,,
-26,78,Skill x: Integration Plan,,,,,
-,Teoría pendiente aprobación,"> Teoría:
- - Introducción a la gestión de proyectos ágil y profesional 
- - Plan de implementación
- - Historias de usuario
- - Intro a CS 
-",,,- MCP,,
++ SANS/CWE Top 25 Most Dangerous Software Errors (NO DESARROLLAR, YA EXISTE)
+","- ¿Cómo puedo hacer una buena auditoría de OWASP TOP 10?
+- ¿Qué aspectos de mi servidor deben estar controlados para evitar que ingresen y me roben datos o manipulen mi aplicación?
+- ¿Por qué es importante tener en cuenta las principales amenazas y auditar mi sistema respecto a ellas?",- Verificación constante de amenazas existentes y de vulnerabilidades en mi sistema.,,"- conexión a root por defecto
+",
+,Approved,"> Proyecto de compañía: 
+  - Hacer una auditoría de Ciberseguridad basada en el OWASP TOP 10 a las aplicaciones de la empresa.
+  - Implementar las mejoras necesarias para que la aplicación y el sistema agéntico sean seguros.",,,,,
